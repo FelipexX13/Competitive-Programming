@@ -1,0 +1,8 @@
+# Artefactos de compilacion
+output/
+*.exe
+*.o
+*.out
+
+# El notebook.pdf SI se versiona (generado por generate_notebook.py)
+!notebook.pdf

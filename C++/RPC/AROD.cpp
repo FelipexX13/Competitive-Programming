@@ -1,3 +1,8 @@
+// <3
+// Tema: Geometry / Triangle Classification
+// Clasifica triángulos en una grilla de p×q puntos como agudos, rectos, obtusos o degenerados.
+// Utiliza análisis de productos para determinar el tipo de ángulo en cada triángulo.
+
 #include <bits/stdc++.h>
 using namespace std;
 

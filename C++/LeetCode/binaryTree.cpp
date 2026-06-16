@@ -1,3 +1,9 @@
+// <3
+// Tema: Data Structures / Tree Construction
+// Resuelve "Create Binary Tree From Descriptions": dado un arreglo de tripletas
+// [parent, child, isLeft], construye el arbol enlazando cada hijo a su padre y devuelve la raiz
+// (el unico nodo que nunca aparece como hijo).
+
 #include <bits/stdc++.h>;
 
 using namespace std;

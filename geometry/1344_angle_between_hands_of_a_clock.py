@@ -1,5 +1,6 @@
 class Solution:
     def angleClock(self, hour: int, minutes: int) -> float:
-        vech = (360/12*hour + 360/12/60*minutes)%360
-        vecm = (360/60*minutes)%360
-        return min(abs(vech-vecm),abs(vecm-vech),abs(vech-vecm-360),abs(vecm-vech-360))
+        minAng = (360/60)*minutes
+        hourAng = ((360/12)*((hour+minutes/60)%24))%360
+
+        return min(abs(minAng-hourAng),abs(hourAng-minAng), 360-abs(minAng-hourAng), 360-abs(hourAng-minAng))

@@ -1,3 +1,16 @@
+// <3
+// Tema: String Algorithms / Suffix Array + LCP
+// Resuelve "Couple of BipBop" (Maratona SBC de Programacao 2024, Problem C): Bob y Charlie
+// empiezan a bailar cada uno en un verso aleatorio de una cancion de N versos y siguen la
+// coreografia hasta desincronizarse o llegar al final de la cancion; hay que calcular el valor
+// esperado de versos que bailaran en sincronia, expresado como fraccion irreducible P/Q, si
+// ambos eligen su verso inicial de forma uniforme e independiente.
+// El valor esperado equivale a sumar, sobre todos los pares de posiciones iniciales (i,j), el
+// largo del prefijo comun de los sufijos que empiezan en i y en j. El codigo construye el suffix
+// array (suffix_array) y el arreglo de LCP (kasai) de la secuencia de movimientos, y luego usa
+// una pila monotona para sumar en O(N) la suma de minimos de LCP sobre todos los subarreglos
+// (sumPairs), equivalente a la suma de LCP entre todos los pares de sufijos.
+
 #include <bits/stdc++.h>
 using namespace std;
 

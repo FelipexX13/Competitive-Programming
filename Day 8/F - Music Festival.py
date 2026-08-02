@@ -1,3 +1,15 @@
+# <3
+# Tema: Dynamic Programming / Bitmask DP
+# Resuelve "Music Festival": hay N <= 10 escenarios, cada uno con varios shows con horario
+# [inicio,fin) y una cantidad de canciones conocidas del artista; hay que elegir un show por
+# cada escenario (viendolo completo, sin faltar a ningun escenario) tal que los horarios
+# elegidos no se superpongan entre si, maximizando la suma de canciones conocidas, o -1 si no
+# hay forma valida.
+# Ordena todos los shows por inicio, precalcula con bisect_left el siguiente show compatible
+# (next_show) tras terminar cada uno, y usa dp[i][mask] = mejor puntaje considerando shows
+# desde el indice i en adelante con "mask" marcando que escenarios ya quedaron cubiertos,
+# transicionando a next_show[i] al tomar el show i (o saltandolo).
+
 from bisect import bisect_left
 
 n = int(input())

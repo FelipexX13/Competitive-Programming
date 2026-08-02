@@ -1,3 +1,15 @@
+// <3
+// Tema: Geometry / 2D Difference Array (Coordinate Compression)
+// Resuelve "Office Space" (Kattis): en una oficina rectangular de w x h pies, hasta 20
+// empleados piden un cubiculo rectangular (esquinas suroeste y noreste); pide reportar el area
+// total, el area sin reclamar, el area en conflicto (solicitada por 2 o mas empleados) y, para
+// cada empleado, el area que tiene garantizada (lo que pidio menos lo que se solapa con otros).
+// Comprime las coordenadas x/y de las esquinas de todos los rectangulos en `xs`/`ys`, y usa un
+// arreglo de diferencias 2D (`grid`) para contar cuantas solicitudes cubren cada celda
+// comprimida, junto con un arreglo paralelo `sumIdx` que acumula (indice+1) del empleado para
+// identificar sin ambiguedad al unico dueno cuando una celda queda cubierta exactamente una
+// vez; una suma prefija 2D final obtiene el conteo y dueno real de cada celda.
+
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;

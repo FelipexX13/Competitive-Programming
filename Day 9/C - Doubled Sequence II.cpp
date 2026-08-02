@@ -1,3 +1,15 @@
+// <3
+// Tema: Constructive Algorithms / Secuencias de Langford
+// Resuelve "Doubled Sequence II": para un n dado, construir una secuencia de
+// longitud 2n donde cada valor de 1 a n aparece exactamente dos veces y, para
+// cada i, la distancia entre sus dos ocurrencias es exactamente i+1 (esto es
+// una variante de las secuencias de Langford/Skolem). Solo existe solucion
+// cuando n % 4 es 0 o 3; en otro caso imprime -1. Cuando existe, usa la
+// construccion explicita de Davies (1959) (funciones build4m y
+// build4mMinus1) que arma la secuencia por bloques crecientes/decrecientes de
+// paridad fija (appendRange) segun n sea 4m o 4m-1, con casos base para
+// n=3 y n=4.
+
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,3 +1,14 @@
+// <3
+// Tema: Game Theory / Nim con Segment Tree
+// Resuelve "Juan vs Frank": Frank y Juan juegan duelos de Nim sobre un rango
+// de columnas [l,r], donde cada columna es un monton de fragmentos y en cada
+// turno se retiran fragmentos de una sola columna; pierde quien no puede
+// mover. Por la teoria de Nim, el primer jugador (Frank) gana si y solo si
+// el XOR de los valores del rango es distinto de cero. Mantiene un segment
+// tree que guarda el XOR de rangos (arreglo seg) con soporte de update
+// puntual (rituales que suman x a una columna) y query de rango (profecias),
+// respondiendo "FRANK" si el XOR del rango es != 0 y "JUAN" si es 0.
+
 #include <bits/stdc++.h>
 using namespace std;
 

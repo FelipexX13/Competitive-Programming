@@ -1,3 +1,13 @@
+// <3
+// Tema: Data Structures / Fenwick Tree (Prefix Minimum, Dominancia 3D)
+// Resuelve "The day of the competitors" (Training Camp 2026, Day 4 problema J): cada uno de N
+// competidores tiene un ranking en 3 competencias distintas, un competidor es "excelente" si
+// ningun otro lo supera en las tres a la vez, y hay que contar cuantos competidores excelentes hay.
+// Ordena a los competidores por el primer ranking (a) y recorre en ese orden manteniendo un
+// Fenwick tree indexado por el segundo ranking (b) que guarda el minimo tercer ranking (c) visto;
+// para cada competidor consulta el minimo de c entre los que tienen b menor (queryPrefixMin(b-1)):
+// si ese minimo es >= c, nadie lo domina en las tres competencias y se cuenta como excelente.
+
 #include <bits/stdc++.h>
 using namespace std;
 

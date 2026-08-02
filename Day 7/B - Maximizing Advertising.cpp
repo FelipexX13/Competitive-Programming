@@ -1,3 +1,14 @@
+// <3
+// Tema: Greedy / Prefix Sums
+// Resuelve "Maximizing Advertising": dados N votantes con coordenadas (x,y) y preferencia 'b'
+// o 'w', hay que elegir dos rectangulos disjuntos de lados paralelos a los ejes (uno para PSD,
+// otro para PS) que maximicen la suma de votantes 'b' cubiertos por el primero mas los votantes
+// 'w' cubiertos por el segundo.
+// Como la particion optima siempre puede lograrse separando el plano con una linea vertical u
+// horizontal, bestSplit ordena los puntos por una coordenada (x o y) y usa sumas prefijas
+// (prefB, prefW) para probar, en cada corte posible, poner los 'b' de un lado y los 'w' del
+// otro (o viceversa); el main toma el mejor resultado entre cortar por X o por Y.
+
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;

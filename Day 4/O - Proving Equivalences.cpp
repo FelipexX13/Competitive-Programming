@@ -1,3 +1,13 @@
+// <3
+// Tema: Graph / Strongly Connected Components (Tarjan)
+// Resuelve "Proving Equivalences" (Training Camp 2026, Day 4 problema O): dadas n proposiciones y
+// m implicaciones ya probadas entre ellas, hay que calcular el minimo numero de implicaciones
+// adicionales necesarias para probar que todas son equivalentes entre si.
+// Calcula las componentes fuertemente conexas con el algoritmo de Tarjan (tarjanSCC), condensa el
+// grafo en un DAG de SCCs y cuenta cuantas componentes no tienen aristas entrantes (hasIn) ni
+// salientes (hasOut) en ese DAG; la respuesta es el maximo entre la cantidad de fuentes y
+// sumideros (0 si ya es una unica SCC), que es la minima cantidad de aristas para volverlo fuerte.
+
 #include <bits/stdc++.h>
 using namespace std;
 

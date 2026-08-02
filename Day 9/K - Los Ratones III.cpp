@@ -1,3 +1,15 @@
+// <3
+// Tema: Graph / Heavy-Light Decomposition
+// Resuelve "Los Ratones III": un arbol de n casas conectadas por calles con
+// valor, donde Q cartas piden la suma de los valores de las aristas en el
+// camino entre u y v despues de multiplicar TODO ese camino por x, y las
+// modificaciones son persistentes (afectan a las cartas siguientes). Usa
+// Heavy-Light Decomposition (dfs para pesos/hijo pesado, decompose para
+// aplanar el arbol en posiciones de arreglo) sobre un segment tree con lazy
+// propagation MULTIPLICATIVO (push, seg[node].lazy) para poder multiplicar y
+// sumar rangos de aristas en el camino en O(log^2 N) por consulta
+// (path_update/path_query), todo modulo 1e9+7.
+
 #include <bits/stdc++.h>
 using namespace std;
 

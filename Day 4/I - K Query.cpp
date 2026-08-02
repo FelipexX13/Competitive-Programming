@@ -1,3 +1,13 @@
+// <3
+// Tema: Data Structures / Fenwick Tree (Offline Queries)
+// Resuelve "K-query" (Training Camp 2026, Day 4 problema I): dado un arreglo de N numeros y
+// varias consultas (i, j, k), hay que responder cuantos elementos del subarreglo [i, j] son
+// mayores que k.
+// Ordena las consultas por k descendente y los elementos del arreglo por valor descendente
+// (cmpQuery, cmpElement); recorre las consultas insertando en un Fenwick tree (bit) todos los
+// elementos con valor mayor a k acumulados hasta el momento, de forma que una consulta de rango
+// sobre el Fenwick (rangeQuery) cuenta exactamente los elementos > k dentro de [l, r].
+
 #include <bits/stdc++.h>
 using namespace std;
 

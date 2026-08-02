@@ -1,3 +1,19 @@
+// <3
+// Tema: Math / Criba de Factor Primo Minimo + Inclusion-Exclusion
+// Resuelve "Ingredients that may Harm You" (Maratona SBC de Programacao 2024, Problem I): en un
+// restaurante self-service con N platillos identificados por numeros (donde cada primo que los
+// divide representa un ingrediente basico, con multiplicidad), cada uno de Q comensales tiene un
+// numero X que identifica sus alergias (los primos que dividen a X); para cada comensal hay que
+// contar cuantos subconjuntos de platillos se pueden combinar sin que ninguno de ellos contenga
+// un ingrediente al que sea alergico.
+// El codigo precalcula el menor factor primo (spf) hasta 1e6 con una criba, para factorizar
+// rapido cualquier numero, y para cada platillo enumera por mascara de bits (mask) todos los
+// divisores libres de cuadrados formados por sus primos, acumulando cnt[d]. Para cada consulta
+// factoriza X y aplica inclusion-exclusion sobre los divisores de X (sumando o restando cnt[d]
+// segun la paridad de bits del mask) para contar cuantos platillos son coprimos con X; la
+// respuesta final es 2^(coprimos) mod 1e9+7, ya que cada platillo compatible puede incluirse o
+// no libremente en el plato.
+
 #include <bits/stdc++.h>
 using namespace std;
 

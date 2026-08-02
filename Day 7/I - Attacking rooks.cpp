@@ -1,3 +1,14 @@
+// <3
+// Tema: Graph / Bipartite Matching
+// Resuelve "Attacking rooks": en un tablero NxN con algunas casillas ocupadas por peones ('X'),
+// dos torres se atacan si comparten fila o columna sin un peon entre medio; hay que colocar el
+// maximo numero de torres en casillas vacias sin que se ataquen entre si.
+// Modela cada tramo horizontal maximal de casillas vacias entre peones como un nodo "fila"
+// (rowId) y cada tramo vertical como un nodo "columna" (colId); cada casilla vacia conecta su
+// tramo de fila con su tramo de columna. El maximo de torres no atacantes es entonces el maximo
+// matching bipartito entre tramos-fila y tramos-columna, calculado con el algoritmo de
+// Hopcroft-Karp (BFS por capas + DFS de caminos aumentantes, struct HopcroftKarp).
+
 #include <bits/stdc++.h>
 using namespace std;
 

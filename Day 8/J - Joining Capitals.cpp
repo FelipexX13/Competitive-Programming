@@ -1,3 +1,15 @@
+// <3
+// Tema: Dynamic Programming / Steiner Tree
+// Resuelve "Joining Capitals": un reino tiene N ciudades, K de ellas capitales; hay que
+// construir lineas de transmision (costo = distancia euclidiana) de forma que todas las
+// capitales queden conectadas entre si por un camino, cada capital este conectada directamente
+// a una sola otra ciudad, y el costo total sea minimo.
+// Como cada capital debe tener grado 1, el arbol de Steiner solo se ramifica en las ciudades
+// no-capitales: dp[mask][idx] (algoritmo de Dreyfus-Wagner) guarda el costo minimo de conectar
+// el subconjunto "mask" de capitales usando como punto de union la no-capital "nonCap[idx]",
+// combinando submascaras disjuntas (paso MERGE) y extendiendo con un Dijkstra O(M^2) entre
+// no-capitales (paso EXTEND) para propagar el costo por las ciudades intermedias.
+
 #include <bits/stdc++.h>
 using namespace std;
 

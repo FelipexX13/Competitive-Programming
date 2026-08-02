@@ -1,3 +1,15 @@
+# <3
+# Tema: Dynamic Programming / Binary Search
+# Resuelve "Patches" (Maratona de Programacao da SBC 2013, problem I): una llanta de
+# circunferencia C tiene N agujeros a distancias F_i desde una marca de referencia; hay dos
+# tipos de parche, de largo T1 y T2, y cada parche cubre de forma continua todos los agujeros
+# que caigan dentro de su longitud. Hay que cubrir todos los agujeros usando el menor largo
+# total de parches.
+# rec(voy) es una recursion memoizada sobre el indice del siguiente agujero sin cubrir: prueba
+# colocar un parche de largo t1 o de largo t2 empezando en l[voy], usa bisect_right para hallar
+# en O(log N) el primer agujero que ya queda fuera del parche, y se queda con el minimo entre
+# ambas opciones (largo del parche mas lo que falte cubrir despues, rec(i1) o rec(i2)).
+
 from bisect import bisect_right
 
 memo = {}

@@ -1,3 +1,14 @@
+// <3
+// Tema: Graph / Bipartite Matching (Algoritmo de Kuhn)
+// Resuelve "School Dance" (Contest 05 [Avanzados], problema G): hay N chicos y M chicas, y una
+// lista de K parejas potenciales (chico, chica) dispuestos a bailar juntos; hay que hallar el
+// maximo numero de parejas de baile que se pueden formar (cada chico y cada chica en a lo sumo
+// una pareja) y mostrar una asignacion que lo logre.
+// Implementa matching bipartito con el algoritmo de Kuhn: para cada chico intenta encontrar,
+// via la funcion tryMatch (DFS de caminos aumentantes sobre el arreglo matchGirl), una chica
+// libre o reasignable, marcando visited para no repetir chicos durante la busqueda de un mismo
+// camino aumentante.
+
 #include <bits/stdc++.h>
 using namespace std;
 

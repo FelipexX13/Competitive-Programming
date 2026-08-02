@@ -1,3 +1,14 @@
+# <3
+# Tema: Data Structures / Persistencia (DFS + Rollback)
+# Resuelve "The Declaration of Independence" (Contest 05 [Avanzados], problema D): el documento
+# empieza vacio (version 0) y cada query crea una nueva version a partir de otra version v ya
+# existente: "E v x" copia la version v y agrega la oracion x al final, "D v" copia la version v
+# y elimina la primera oracion; para cada query D hay que imprimir la oracion eliminada.
+# Modela las versiones como un arbol (dicc[v] guarda los hijos que se crearon a partir de v) y
+# recorre ese arbol con un DFS (funcion dfs) manteniendo un unico deque global "arr" que
+# representa el documento actual; al entrar a un nodo aplica su operacion (append o popleft) y
+# al salir la deshace (rollback), simulando asi todas las versiones sin copiar el documento.
+
 import sys
 from collections import deque
 

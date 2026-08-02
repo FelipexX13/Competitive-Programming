@@ -1,3 +1,16 @@
+// <3
+// Tema: Math / Number Theory (GCD y Divisores)
+// Resuelve "The Seals of Shanghai": eligiendo un modulo fijo M > 1, cada sello con
+// numero A_i se desbloquea en la ronda de su residuo A_i mod M; hay que hallar el
+// minimo numero de residuos distintos (rondas) necesarias y cuantos M distintos logran
+// ese minimo. Usa que dos elementos caen en el mismo residuo sii M divide su diferencia:
+// calcula D = gcd de todas las diferencias contra A[0]; si D=0 el costo minimo es 1 para
+// todo M (MAXM-1 valores); si D>=2 el costo minimo es 1 y la cuenta es el numero de
+// divisores de D mayores a 1 (countDivisorsGt1); si D=1 el minimo es 2, y por pigeonhole
+// sobre un triple de valores distintos, todo M valido debe dividir alguna de sus 3
+// diferencias, por lo que basta probar los divisores de esas 3 diferencias (candidates)
+// y, para cada uno, contar residuos distintos con una tabla hash reutilizable.
+
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;

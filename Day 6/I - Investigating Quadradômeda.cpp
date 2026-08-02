@@ -1,3 +1,15 @@
+// <3
+// Tema: Math / Recurrencias y busqueda de intervalo factible
+// Resuelve "Investigating Quadradomeda" (Maratona SBC de Programacao 2025, Problem I): N
+// estrellas alineadas consecutivamente en horizontal o vertical deben orbitarse con radios
+// enteros R_i >= 1, cada uno estrictamente menor que la distancia d_i a la siguiente estrella, y
+// la condicion de tangencia al pasar de una orbita a la siguiente obliga a que R_{i+1} = d_i -
+// R_i (recurrencia alternante). Hay que hallar el mayor R_1 entero para el cual existe una
+// asignacion valida de todos los R_i (o -1 si no existe ninguna). El codigo acumula C_i via
+// C_{i+1} = d_i - C_i (con R_i = +-R_1 + C_i segun la paridad de i), y va combinando, para cada
+// indice, una cota inferior L (de los i impares, R_1 >= 1 - C_i) o superior U (de los i pares,
+// R_1 <= C_i - 1); si L <= U al final, la respuesta es U, si no, -1.
+
 #include <bits/stdc++.h>
 using namespace std;
 

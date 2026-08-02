@@ -1,3 +1,14 @@
+// <3
+// Tema: Data Structures / Mo's Algorithm
+// Resuelve "Wine Production": dadas las temperaturas de N dias y Q consultas de rango [l,r],
+// hay que calcular para cada rango la "calidad" x maxima tal que existan al menos x
+// temperaturas distintas que se repitan al menos x veces dentro de ese rango (un indice tipo
+// h-index sobre las frecuencias de temperatura).
+// Usa el algoritmo de Mo (offline, ordenando las consultas por bloques de tamano sqrt(N)) para
+// mover los punteros l/r y mantener freqArr (frecuencia de cada valor comprimido) junto con
+// B[k] (cantidad de valores distintos con frecuencia >= k); la variable h se ajusta
+// incrementalmente en addElem/removeElem para responder cada consulta en O(1) amortizado.
+
 #include <bits/stdc++.h>
 using namespace std;
 

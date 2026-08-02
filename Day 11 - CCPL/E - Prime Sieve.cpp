@@ -1,3 +1,12 @@
+// <3
+// Tema: Math / Sieve of Eratosthenes
+// Resuelve "Prime Sieve" (Kattis): dado un limite n (hasta 10^8) y q consultas x, pide primero
+// cuantos numeros primos hay menores o iguales a n, y luego para cada consulta si x es primo
+// (1) o compuesto (0). Implementa una criba de Eratosthenes clasica sobre el vector `marked`
+// (marca compuestos empezando en i*i para evitar overflow con 1LL*i*i), contando los primos
+// menores o iguales al limite pedido en la variable `cont` mientras criba, y responde cada
+// consulta en O(1) revisando `marked[aa]`.
+
 #include <bits/stdc++.h>
 using namespace std;
 

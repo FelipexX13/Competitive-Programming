@@ -1,3 +1,13 @@
+// <3
+// Tema: Math / Divisors
+// Resuelve "Aesthetics in poetry": dado un poema de N versos con longitudes l_1..l_N, hay que
+// hallar el menor entero K>1 (K-elegante) tal que N sea multiplo de K y, para cada resto
+// i=0..K-1 al dividir las longitudes por K, haya exactamente N/K versos con ese resto (o -1 si
+// no existe tal K).
+// Genera todos los divisores de N (funcion divisores), los ordena ascendentemente y para cada
+// candidato k>=2 cuenta en cont[v%k] cuantos versos caen en cada resto, verificando que todos
+// los conteos sean iguales a n/k; el primer k que cumple es la respuesta minima.
+
 #include <bits/stdc++.h>
 typedef long long ll;
 using namespace std;

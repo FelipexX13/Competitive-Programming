@@ -1,3 +1,17 @@
+// <3
+// Tema: Dynamic Programming / Bitmask SOS DP
+// Resuelve "El Juego del Calamar": una torre de n pisos con k <= 15
+// habitaciones por piso (capacidad C[i][j]) y escaleras que solo suben de
+// piso i a i+1; en cada turno se descartan jugadores sobrantes por capacidad
+// y luego los sobrevivientes deben subir por una escalera o son eliminados.
+// Para cada turno t (de forma independiente) se busca el maximo de
+// jugadores que pueden seguir vivos. Como k es chico, representa por
+// bitmask que habitaciones del piso actual se usan, y con una transformada
+// tipo SOS (Sum over Subsets, arreglos r/h/g/Nmask) calcula en O(2^k * k) el
+// cuello de botella (min-cut) entre el conjunto de habitaciones alcanzadas y
+// las capacidades del siguiente piso, propagando piso a piso hasta el turno
+// t.
+
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;

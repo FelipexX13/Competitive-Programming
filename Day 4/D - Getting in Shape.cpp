@@ -1,3 +1,14 @@
+// <3
+// Tema: Math / Fibonacci (Zeckendorf-like Greedy)
+// Resuelve "Getting in Shape" (Training Camp 2026, Day 4 problema D): dado N, hay que construir
+// una secuencia de ejercicios tipo A/B (terminada en B) tal que la cantidad de formas de
+// completarla saltandose opcionalmente el ejercicio siguiente a cada A sea exactamente N, y
+// devolver la lexicograficamente menor, o "IMPOSSIBLE" si no existe.
+// El numero de formas de un bloque "A^(k-1)B" resulta ser Fib(k+1), y las formas de sufijos se
+// suman; solveSum busca en forma greedy el mayor Fib(k+2) que divida el resto S para minimizar el
+// largo del bloque de A's (dando el prefijo lexicografico mas chico), y solve arma la respuesta de
+// forma recursiva y memoizada (memo) para evitar recomputo exponencial entre llamadas repetidas.
+
 #include <bits/stdc++.h>
 using namespace std;
 

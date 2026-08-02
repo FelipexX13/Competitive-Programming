@@ -1,3 +1,14 @@
+// <3
+// Tema: Strings / Suffix Automaton
+// Resuelve "Beautiful Words" (Training Camp 2026, Day 4 problema A): dado un string A de N
+// caracteres y un conjunto S de M strings, el score de una permutacion ciclica B_i de A es el
+// largo del substring mas largo de B_i que tambien aparece como substring de algun string de S;
+// hay que hallar el minimo score sobre todas las N permutaciones ciclicas posibles.
+// Construye un suffix automaton (struct SAM) con las cadenas de S invertidas y separadores entre
+// ellas, recorre el string A duplicado e invertido para obtener en G[i] el largo del match mas
+// largo terminado en cada posicion, y usa busqueda binaria sobre la respuesta (funcion feasible)
+// para encontrar la minima cota que deje una ventana de N caracteres sin matches mas largos.
+
 #include <bits/stdc++.h>
 using namespace std;
 

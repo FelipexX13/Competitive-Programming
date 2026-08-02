@@ -1,3 +1,18 @@
+# <3
+# Tema: Graph / Tree Reconstruction (BFS por capas)
+# Resuelve "Expansion of the road network" (Maratona SBC de Programacao 2025, Problem E): el
+# mapa actual de N ciudades y M caminos pudo haber surgido de un arbol original (un camino unico
+# entre cada par de ciudades) al que se le agrego una carretera directa entre cada par de
+# ciudades cuyo camino original pasaba por exactamente una ciudad intermedia (distancia 2 en el
+# arbol). Hay que decidir si el mapa actual es consistente con ese proceso y, de serlo,
+# reconstruir un arbol original valido (o imprimir "*" si es imposible). El codigo hace BFS desde
+# el nodo 1 para ubicar una hoja candidata del arbol original (la de menor grado en la ultima
+# capa), luego hace BFS desde esa hoja para obtener las capas "layer[]", identifica los posibles
+# vertices "soporte" intersectando pares de padres de los nodos de profundidad >= 2, construye el
+# arbol candidato asignando "parent[]" capa por capa segun la paridad de profundidad, y por
+# ultimo "verify" comprueba que los caminos de distancia 1 y 2 de ese arbol coincidan exactamente
+# con las M aristas dadas antes de imprimirlo.
+
 import sys
 from collections import deque
 

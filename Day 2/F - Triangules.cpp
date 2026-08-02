@@ -1,3 +1,14 @@
+// <3
+// Tema: Math / Prefix Sums
+// Resuelve "Triangles" (Maratona de Programacao da SBC 2013, problem F): dados N puntos sobre
+// un circulo, descritos por las longitudes de arco entre puntos consecutivos, cuenta cuantos
+// triangulos equilateros distintos se pueden formar usando esos puntos como vertices.
+// Convierte los arcos en posiciones absolutas sobre el circulo con una suma prefija (tot),
+// marcando cada posicion ocupada en el arreglo booleano nums[]. Un triangulo equilatero solo
+// puede existir si el perimetro total es multiplo de 3 (tri = tot/3); para cada posicion
+// marcada i, verifica si i+tri e i+2*tri tambien estan marcadas, y de ser asi cuenta un
+// triangulo y desmarca las tres posiciones para no reutilizarlas.
+
 #include <bits/stdc++.h>
 using namespace std;
 

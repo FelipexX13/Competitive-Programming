@@ -1,3 +1,17 @@
+// <3
+// Tema: Greedy / DP
+// Resuelve "Exhibition of Clownfish" (Maratona de Programacao da SBC 2019, Day 1 problem E): N
+// peceras con M machos y F hembras cada una; si al final de la noche una pecera queda con
+// machos pero sin hembras, uno de ellos muta a hembra. Zelius puede mover un pez por noche entre
+// peceras y quiere el numero minimo de movimientos para que todos los peces terminen siendo
+// hembra. Para cada pecera define v = 1 + M - F (cuanto "aporta" dejarla vacia de machos vs.
+// usarla como colector) y separa peceras vacias, solo-hembras y mixtas (con v positivo o
+// negativo). Arma greedily una "familia" alrededor de un colector maximizando la suma de v de
+// las mixtas positivas mas las vacias disponibles, y cuando faltan colectores vacios usa una DP
+// tipo knapsack (dp[j] = costo minimo en v para "cubrir" un deficit de peso j) para decidir que
+// peceras mixtas conviene sacrificar. El total de movimientos es 2*S menos el mejor ahorro
+// encontrado (S = total de machos).
+
 #include <bits/stdc++.h>
 using namespace std;
 

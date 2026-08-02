@@ -1,3 +1,14 @@
+// <3
+// Tema: Graphs / LCA (Binary Lifting)
+// Resuelve "Subway Lines": en un sistema de subte con forma de arbol, las lineas de tren van
+// y vuelven entre pares de estaciones terminales (hojas), pasando por el unico camino entre
+// ellas; dadas Q consultas con dos pares de terminales (A,B) y (C,D), hay que calcular cuantas
+// estaciones tienen en comun los caminos que definen esas dos lineas.
+// Precalcula profundidad y ancestros con binary lifting (bfsSetup/up_) para responder lca(u,v)
+// y dist(u,v) en O(log N), y solveQuery halla la interseccion de los dos caminos comparando
+// las profundidades de lca(a,b) y lca(c,d), usando lca/isAncestor para ubicar los extremos
+// de la interseccion y devolver su longitud (dist+1) o 0 si los caminos no se cruzan.
+
 #include <bits/stdc++.h>
 using namespace std;
 

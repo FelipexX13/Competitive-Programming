@@ -1,3 +1,14 @@
+// <3
+// Tema: Recursion / Constructive
+// Resuelve "A story about tea": N botes deben viajar de Portugal a Inglaterra usando China como
+// puerto auxiliar, siguiendo las reglas de las Torres de Hanoi (cada viaje mueve el bote mas
+// chico entre las dos pilas involucradas, y nunca hay dos viajes simultaneos), en exactamente K
+// viajes; hay que decidir si es posible y, de serlo, imprimir la secuencia de K viajes.
+// El minimo de viajes es 2^N - 1 (funcion h, la recursion clasica de Hanoi); si K es mayor,
+// completa la diferencia con pares de movimientos "de relleno" A-B-A que no cambian el estado
+// (delta/2 veces) y, si sobra un viaje impar, usa la variante g que gasta un movimiento extra
+// en el ultimo bote; si K < 2^N - 1 no hay solucion posible ("N").
+
 #include <bits/stdc++.h>
 using namespace std;
 

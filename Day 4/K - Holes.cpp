@@ -1,3 +1,14 @@
+// <3
+// Tema: Data Structures / Sqrt Decomposition
+// Resuelve "Holes" (Training Camp 2026, Day 4 problema K): hay N agujeros en fila, cada uno con
+// una potencia que hace saltar la bola a la posicion i+a_i, y hay que soportar M operaciones que
+// cambian la potencia de un agujero o tiran una bola por un agujero, reportando cuantos saltos da
+// y desde que agujero sale de la fila.
+// Divide la fila en bloques de tamano sqrt(N) y precalcula por bloque, para cada posicion, a
+// donde sale del bloque (jmp_), cuantos saltos (cnt_) y desde que agujero deja la fila si aplica
+// (last_); una actualizacion solo recalcula su bloque (recomputeBlock) y una consulta encadena
+// esos saltos precomputados bloque a bloque en O(sqrt(N)) por operacion.
+
 #include <bits/stdc++.h>
 using namespace std;
 

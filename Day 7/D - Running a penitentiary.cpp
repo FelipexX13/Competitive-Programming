@@ -1,3 +1,13 @@
+// <3
+// Tema: Data Structures / Segment Tree
+// Resuelve "Running a penitentiary": N guardias vigilan cada uno un intervalo de celdas [L,R],
+// y hay que soportar Q operaciones: cambiar el intervalo de un guardia, o, dado un rango de
+// guardias [a,b], calcular cuantas celdas son vigiladas simultaneamente por TODOS los guardias
+// de ese rango (la interseccion de sus intervalos).
+// Usa un segment tree doble (treeL guarda el maximo de los L en el rango, treeR el minimo de
+// los R) con point update (updatePos) y range query (query); la interseccion resultante tiene
+// longitud max(0, minR - maxL + 1).
+
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;

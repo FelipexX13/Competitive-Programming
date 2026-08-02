@@ -1,3 +1,13 @@
+// <3
+// Tema: Math / Modular Arithmetic
+// Resuelve "Creating Multiples" (Training Camp 2026, Day 4 problema B): dado un numero N de L
+// digitos en base B, hay que reducir (nunca aumentar) como mucho un digito para que el numero
+// resultante M sea multiplo de B+1, eligiendo la solucion que minimice M.
+// Usa que B es congruente con -1 modulo B+1, por lo que el resto de N modulo B+1 es la suma
+// alternada de sus digitos (variable rem); recorre los digitos de izquierda a derecha calculando
+// cuanto hay que restarle a cada uno (delta) para anular ese resto, y toma la primera posicion
+// valida, que por ser la mas significativa da el M mas chico posible.
+
 #include <bits/stdc++.h>
 using namespace std;
 

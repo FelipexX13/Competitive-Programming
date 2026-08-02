@@ -1,3 +1,13 @@
+// <3
+// Tema: Math / Brute Force
+// Resuelve "Antiarithmetic?" (Kattis): dada una permutacion de 0..n-1, determina si es
+// antiaritmetica, es decir si no existen tres indices i<j<k tales que los valores p_i,p_j,p_k
+// formen una progresion aritmetica (ninguna subsecuencia de longitud mayor a 2 puede ser una
+// progresion aritmetica). Para cada par de indices (i,k) calcula el valor promedio v=(p_i+p_k)/2
+// (cuando la suma es par) y usa el arreglo inverso `pos` (posicion de cada valor dentro de la
+// permutacion) para ubicar en O(1) donde esta v; si esa posicion j queda entre i y k, existe una
+// progresion aritmetica y la permutacion no es antiaritmetica.
+
 #include <bits/stdc++.h>
 using namespace std;
 

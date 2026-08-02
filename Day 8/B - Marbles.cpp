@@ -1,3 +1,15 @@
+// <3
+// Tema: Game Theory / Sprague-Grundy
+// Resuelve "Marbles": en un tablero indexado por filas y columnas, un jugador elige una
+// canica en (l,c) y un entero u>0 y la mueve a (l-u,c), (l,c-u) o (l-u,c-u) sin salir del
+// tablero; el primero en llevar una canica a (0,0) gana y el Emperador siempre juega primero.
+// Dado el reparto inicial de N canicas, hay que decidir si el Emperador puede ganar jugando
+// optimo. Modela el juego como la suma de N subjuegos independientes (teoria de Sprague-
+// Grundy): precomputeGrundy calcula el numero de Grundy de cada posicion (l,c) via mex de
+// posiciones alcanzables (marcando INSTA cuando l==0, c==0 o l==c, movimiento ganador
+// inmediato), y el XOR de los Grundy de todas las canicas (mas el chequeo instaWin) decide si
+// hay victoria.
+
 #include <bits/stdc++.h>
 using namespace std;
 

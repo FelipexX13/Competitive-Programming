@@ -1,3 +1,14 @@
+# <3
+# Tema: Graph / DFS
+# Resuelve "Artwork" (Maratona de Programacao da SBC 2019, Day 1 problem A): un ladron debe
+# cruzar una sala rectangular M x N, desde la esquina de entrada (0,0) hasta la esquina opuesta
+# donde esta la obra, sin acercarse a menos de Si metros de ningun sensor de movimiento i.
+# Modela los sensores que se tocan entre si (distancia entre centros <= suma de radios) como
+# componentes conexas; si una componente que toca un borde de la sala llega a tocar el borde
+# opuesto o perpendicular, bloquea el paso del ladron. DFS desde cada sensor que toca un borde,
+# propagandose por los sensores superpuestos y marcando visitados, para decidir si queda un
+# camino libre ('S') o no ('N').
+
 m, n, s = list(map(int, input().split()))
 sensors = []
 

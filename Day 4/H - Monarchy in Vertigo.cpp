@@ -1,3 +1,14 @@
+// <3
+// Tema: Trees / Segment Tree
+// Resuelve "Monarchy in Vertigo" (Training Camp 2026, Day 4 problema H): se mantiene un arbol
+// genealogico donde nacen hijos (agregados al final de la lista de hijos de su padre) y mueren
+// personas, y tras cada muerte hay que reportar quien es el nuevo monarca recorriendo el arbol
+// con la regla "primero los hijos, de mayor a menor edad".
+// Ese recorrido es exactamente un preorder del arbol final (el orden de nacimiento ya respeta
+// "hijos antes que hermanos, mayor antes que menor"), asi que precalcula el rango preorder de
+// cada persona (rankOf) y usa un segment tree con OR para marcar vivos/muertos y encontrar en
+// O(log N) la primera posicion viva del preorder (queryFirstAlive), que es el monarca actual.
+
 #include <bits/stdc++.h>
 using namespace std;
 

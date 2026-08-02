@@ -1,3 +1,14 @@
+// <3
+// Tema: Strings / Brute Force Matching
+// Resuelve "Enigma": dado un mensaje cifrado y un crib (palabra que se asume esta en el
+// mensaje original), hay que contar en cuantas posiciones puede empezar el crib dentro del
+// mensaje cifrado, sabiendo que la maquina Enigma nunca reemplaza una letra por si misma (o
+// sea, en una posicion valida ninguna letra del crib puede coincidir con la letra del mensaje
+// en esa misma posicion).
+// Para cada posicion i de arranque, compara letra a letra el crib contra el substring del
+// mensaje de ese largo (variable "tempi"), y descarta la posicion apenas encuentra una letra
+// igual (bandera "ok"); cuenta en "god" las posiciones donde ninguna letra coincidio, en
+// fuerza bruta O(n*m).
 
 #include <bits/stdc++.h>
 using namespace std;

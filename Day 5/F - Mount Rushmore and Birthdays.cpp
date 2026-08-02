@@ -1,3 +1,13 @@
+// <3
+// Tema: Math / Probabilidad (Paradoja del cumpleanos)
+// Resuelve "Mount Rushmore and Birthdays" (Contest 05 [Avanzados], problema F): dado N, el
+// numero de dias que tiene un anio, hay que hallar la minima cantidad de personas necesarias en
+// un cuarto para que la probabilidad de que dos compartan cumpleanos sea mayor a 50%.
+// Calcula iterativamente, persona por persona, la probabilidad "prob" de que todos los
+// cumpleanos sigan siendo distintos (multiplicando (n-personas)/n en cada paso, la
+// generalizacion de la formula clasica de la paradoja del cumpleanos), y se detiene apenas
+// 1 - prob supera 0.5, devolviendo esa cantidad de personas.
+
 #include <bits/stdc++.h>
 using namespace std;
 

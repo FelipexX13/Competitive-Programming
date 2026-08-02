@@ -1,3 +1,15 @@
+// <3
+// Tema: Combinatorics / Euler's Formula
+// Resuelve "Pizza Cutter": el abuelo Giuseppe corta una pizza rectangular con H cortes que
+// entran por el lado izquierdo y salen por el derecho, y V cortes que entran por abajo y
+// salen por arriba (cada corte es una curva continua, sin tres cortes concurrentes ni cortes
+// tangentes); dado donde entra y sale cada corte, hay que contar en cuantas piezas queda
+// dividida la pizza. Usa la formula de Euler para arreglos de curvas en el plano (piezas = 1 +
+// #cortes + #cruces): cada par de cortes de tipos opuestos siempre se cruza una vez (aporta
+// H*V cruces), y los cruces entre cortes del mismo tipo se cuentan como inversiones (hh, vv)
+// del orden de sus extremos derecho/superior via countInversions (merge sort), sumando todo
+// en "answer".
+
 #include <bits/stdc++.h>
 using namespace std;
 

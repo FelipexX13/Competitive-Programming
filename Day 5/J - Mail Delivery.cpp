@@ -1,3 +1,14 @@
+// <3
+// Tema: Graph / Circuito Euleriano (Algoritmo de Hierholzer)
+// Resuelve "Mail Delivery" (Contest 05 [Avanzados], problema J): dado un plano de n cruces y m
+// calles bidireccionales, hay que encontrar una ruta que empiece y termine en la oficina postal
+// (cruce 1) y recorra cada calle exactamente una vez, o determinar que es imposible.
+// Primero verifica las condiciones de existencia de un circuito euleriano: todo vertice debe
+// tener grado par, y todos los vertices con aristas deben ser alcanzables desde el vertice 1
+// (BFS). Luego construye el circuito con el algoritmo de Hierholzer de forma iterativa (pila st
+// y arreglo ptr por vertice, marcando usedEdge), y revierte el resultado para obtener la ruta
+// final.
+
 #include <bits/stdc++.h>
 using namespace std;
 

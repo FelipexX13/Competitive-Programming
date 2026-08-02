@@ -1,3 +1,16 @@
+// <3
+// Tema: Search / State-Space BFS
+// Resuelve "Folding Machine" (Maratona de Programacao da SBC 2013, problem D): una cinta de N
+// celdas se puede doblar por cualquier punto entre celdas adyacentes (incluso en los extremos,
+// lo que invierte la cinta), sumando los valores de las celdas que quedan superpuestas. Dado un
+// tape de entrada y uno de salida, determina si existe una secuencia de dobleces que transforme
+// el primero en el segundo.
+// Como cada doblez real reduce estrictamente el largo de la cinta, genera todos los estados
+// alcanzables agrupandolos por longitud (states[len]), probando cada pliegue posible de h
+// celdas desde la izquierda o la derecha; normalized() reduce cada estado a su forma canonica
+// (el minimo entre la cinta y su reverso) para no explorar duplicados. Al final solo compara si
+// el output normalizado aparece entre los estados generados de longitud M.
+
 #include <bits/stdc++.h>
 using namespace std;
 

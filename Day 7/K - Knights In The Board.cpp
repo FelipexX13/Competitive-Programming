@@ -1,3 +1,15 @@
+// <3
+// Tema: Graph / Bipartite Matching
+// Resuelve "Knights In The Board": dado un tablero NxN con K caballos ya colocados, hay que
+// hallar el minimo numero de caballos a remover para que ninguno ataque a otro (movimiento en
+// L de ajedrez).
+// El grafo de ataques entre caballos es bipartito, ya que un caballo en una casilla de un color
+// (segun (fila+columna)%2, ver color_) solo puede atacar caballos del color opuesto. Por el
+// teorema de Konig, el minimo vertex cover (minimo de caballos a remover para romper todos los
+// conflictos) equivale al maximo matching bipartito. Construye adj solo desde los caballos de
+// color 0 hacia sus vecinos alcanzables con movimiento de caballo, y calcula el maximo matching
+// con el algoritmo de Kuhn (tryKuhn), que es directamente la respuesta pedida.
+
 #include <bits/stdc++.h>
 using namespace std;
 

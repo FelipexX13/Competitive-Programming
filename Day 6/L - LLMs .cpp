@@ -1,3 +1,16 @@
+// <3
+// Tema: Simulation / Brute Force
+// Resuelve "LLMs" (Maratona SBC de Programacao 2025, Problem L): Bruno arma un predictor de
+// palabras "SBC" a partir de un diccionario de palabras con vectores 2D, un texto base de
+// conocimiento y consultas; para cada consulta, se buscan en el texto base todas las ocurrencias
+// consecutivas de las ultimas K palabras (ventana de contexto), se toman las palabras
+// siguientes como "candidatas" (si no hay ninguna, se baja K en 1 y se repite hasta K=0), y se
+// elige la palabra del diccionario que maximiza el producto punto de su vector contra la suma de
+// los vectores candidatos (empate: la mas comun, primera en el diccionario). El codigo hace esto
+// de forma directa: busqueda por fuerza bruta de "ctx" dentro de "kb" con bucles anidados para
+// armar "candidates", suma sus vectores en (sumX, sumY), y recorre linealmente las N palabras del
+// diccionario para hallar el maximo "bestS" de dictVec[i].x*sumX + dictVec[i].y*sumY.
+
 #include <bits/stdc++.h>
 using namespace std;
 

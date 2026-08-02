@@ -1,3 +1,16 @@
+// <3
+// Tema: Math / Number Theory (LCM via Factorizacion de Ciclos)
+// Resuelve "Permutation Rounds": partiendo del arreglo ordenado [1..n], en cada ronda
+// todo elemento en la posicion i se mueve a la posicion p_i segun una permutacion fija;
+// hay que hallar tras cuantas rondas el arreglo vuelve a estar ordenado por primera vez,
+// modulo 1e9+7. La respuesta es el LCM de las longitudes de todos los ciclos de la
+// permutacion vista como grafo funcional. El codigo recorre cada posicion no visitada
+// siguiendo p[] para medir la longitud de su ciclo (length), factoriza esa longitud en
+// primos y actualiza maxPower[primo] con el mayor exponente visto entre todos los
+// ciclos (equivalente a construir el LCM por factorizacion en vez de multiplicar
+// longitudes directamente, evitando overflow); al final multiplica primo^maxPower mod
+// MOD para cada primo usando exponenciacion modular (power_mod).
+
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;

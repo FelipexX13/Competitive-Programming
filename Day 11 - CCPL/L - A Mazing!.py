@@ -1,3 +1,14 @@
+# <3
+# Tema: Graph / DFS
+# Resuelve "A Mazing!" (Kattis): un problema interactivo donde hay que explorar un laberinto de
+# celdas cuadradas moviendose (up/down/left/right) segun las respuestas del juez ("wall", "ok",
+# "solved"), sin conocer el mapa de antemano, hasta encontrar una salida o determinar que no
+# existe ninguna (reportando "no way out"). Implementa un DFS iterativo sobre el grafo implicito
+# de celdas: `todo` guarda por celda las direcciones aun no probadas (en un deque, excluyendo la
+# direccion opuesta a la usada para entrar a esa celda) y `parent` guarda la celda predecesora;
+# al agotar las direcciones de la celda actual, retrocede (backtrack) hacia su padre repitiendo
+# el movimiento inverso, como una pila explicita de DFS.
+
 import sys
 from collections import deque
 

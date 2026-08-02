@@ -1,3 +1,14 @@
+// <3
+// Tema: Graph / BFS
+// Resuelve "Boss" (Maratona de Programacao da SBC 2013, problem C): en un organigrama de N
+// empleados donde X maneja directamente a Y, la operacion "T A B" intercambia las POSICIONES
+// que ocupan A y B dentro del organigrama (que nunca cambia), y "P E" pregunta la edad del jefe
+// mas joven, directo o indirecto, de E.
+// Guarda el grafo invertido rev[Y] = jefes directos de una posicion, y los arreglos
+// empPos/posEmp para saber que empleado ocupa cada posicion despues de cada swap.
+// Cada consulta hace BFS desde la posicion de E sobre rev, visita todas las posiciones jefe
+// (ancestros) y se queda con la edad minima entre los empleados que hoy las ocupan.
+
 #include <bits/stdc++.h>
 using namespace std;
 

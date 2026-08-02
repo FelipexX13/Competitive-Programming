@@ -1,3 +1,16 @@
+# <3
+# Tema: Brute Force / Backtracking (Enumeracion de bits desconocidos)
+# Resuelve "Harmonics with Interference" (Maratona SBC de Programacao 2024, Problem H): Arthur
+# envia un mensaje binario M junto con una secuencia de control N tal que el entero representado
+# por M es divisible por el entero representado por N; Bruna recibe M' y N' donde algunos bits se
+# perdieron y aparecen como '*' (a lo sumo 16 simbolos '*' en total entre ambos), y hay que
+# reconstruir un M valido compatible con lo recibido, o determinar que no existe.
+# El codigo genera por backtracking (generateBins) todos los valores posibles de N' rellenando
+# sus '*' con 0 o 1, y luego, tambien por backtracking (generateAndCheck), prueba todas las
+# combinaciones de los '*' restantes en M' (peso guarda el valor posicional de cada '*'),
+# devolviendo el primer M cuyo valor entero sea divisible por algun N generado; como el total de
+# incognitas nunca supera 16, la enumeracion completa (2^16 en el peor caso) es factible.
+
 import copy
 import sys
 

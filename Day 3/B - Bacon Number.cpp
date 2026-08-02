@@ -1,3 +1,15 @@
+// <3
+// Tema: Graph / BFS
+// Resuelve "Bacon Number" (Maratona SBC de Programacao 2024, Problem B): dadas N peliculas con
+// sus actores, hay que responder Q consultas que piden conectar dos actores x e y mediante una
+// secuencia alternada actor-pelicula-actor-...-pelicula-actor, donde cada actor consecutivo
+// comparte la pelicula que los une con el siguiente, o determinar que no es posible.
+// Construye un grafo cuyos nodos son peliculas y donde hay arista entre dos peliculas si
+// comparten al menos un actor (agrupando peliculas por actor en actorMovies), y corre un BFS
+// desde cada pelicula (dist, parent) para precalcular caminos minimos entre peliculas; luego,
+// para cada consulta, prueba todas las combinaciones de peliculas donde aparecen x e y y
+// reconstruye el camino de actores/peliculas siguiendo el arreglo parent.
+
 #include <bits/stdc++.h>
 using namespace std;
 

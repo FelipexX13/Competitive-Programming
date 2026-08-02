@@ -1,3 +1,14 @@
+// <3
+// Tema: Graphs / Max Flow (Binary Search + Dinic)
+// Resuelve "Gasoline": hay P gasolineras con demanda D_i y R refinerias con stock E_j, con
+// solo algunos pares (refineria,gasolinera) habilitados por contrato y un tiempo de viaje T
+// conocido para esos pares; hay que hallar el menor tiempo t tal que, usando solo rutas con
+// T<=t, se pueda abastecer completamente a todas las gasolineras (repartiendo entre varias
+// refinerias si hace falta), o -1 si nunca alcanza.
+// Hace busqueda binaria sobre los tiempos distintos y, para cada candidato t, feasible(t)
+// arma una red fuente->refineria->gasolinera->sumidero (capacidades = stock, infinito solo
+// si tiempo<=t, y demanda) y corre Dinic (network::max_flow) comparando contra sumD.
+
 #include <bits/stdc++.h>
 using namespace std;
 

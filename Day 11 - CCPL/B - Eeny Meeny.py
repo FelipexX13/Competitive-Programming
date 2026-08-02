@@ -1,3 +1,14 @@
+# <3
+# Tema: Simulation / Circular Queue
+# Resuelve "Eeny Meeny" (Kattis): un grupo de ninios en circulo es dividido en dos equipos
+# aplicando repetidamente una rima (como "eeny meeny miny moe"): se cuenta en sentido horario,
+# saltando a los ninios ya elegidos, hasta la ultima palabra de la rima, que selecciona al
+# siguiente ninio para el equipo actual, alternando de equipo en cada ronda. Pide reconstruir
+# los dos equipos en el orden en que fueron elegidos. Simula la ronda con un indice `curr` que
+# recorre circularmente la lista `people`, el conjunto `fuera` para saltar a los ya
+# seleccionados, y un contador `currN` que cuenta palabras hasta llegar a `n` (longitud de la
+# rima), alternando el equipo destino `group` cada vez que se elige a alguien.
+
 n = input().split()
 
 n = len(n)

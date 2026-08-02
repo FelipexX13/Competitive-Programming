@@ -1,6 +1,17 @@
+// <3
+// Tema: Greedy / Binary Search
+// Resuelve "Maratona Brasileira de Popcorn" (Maratona de Programacao da SBC 2019, Day 1
+// problem M): N bolsas de palomitas en fila deben repartirse en C tramos contiguos (uno por
+// competidor), cada competidor come a lo sumo T unidades por segundo, y se quiere minimizar el
+// tiempo total (el maximo de todas las bolsas que come cada competidor, dividido T). Busqueda
+// binaria sobre la cota maxima S que puede cargar un competidor: la funcion gruposNecesarios
+// hace un particionado greedy (como el problema clasico de asignacion de libros/pintores)
+// contando cuantos tramos contiguos hacen falta para que ninguno supere S, y se busca el menor
+// S factible con a lo sumo C tramos. La respuesta final es ceil(S / T).
+
 #include <bits/stdc++.h>
 using namespace std;
- 
+
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);

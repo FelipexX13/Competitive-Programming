@@ -1,3 +1,12 @@
+// <3
+// Tema: Math / Combinatoria (Factoriales Modulares)
+// Resuelve "Binomial Coefficients": calcula n coeficientes binomiales C(a,b) modulo
+// 1e9+7. Precomputa fact[i] = i! mod MOD para todo i hasta MAXN=1e6, y su inverso
+// modular invFact[i] de atras hacia adelante en O(MAXN) (calculando solo una
+// exponenciacion modular invFact[MAXN] = fact[MAXN]^(MOD-2) via Fermat, y derivando el
+// resto con invFact[i-1] = invFact[i]*i). Cada consulta responde en O(1) con la formula
+// fact[a] * invFact[b] * invFact[a-b] mod MOD.
+
 #include <bits/stdc++.h>
 using namespace std;
 

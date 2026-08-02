@@ -1,3 +1,15 @@
+// <3
+// Tema: Greedy / Prefijos sobre Secuencias Balanceadas
+// Resuelve "Incompatible Pairs": una secuencia de N bailarines Yang ('(') y Yin (')')
+// donde cada Yang debe emparejarse con un Yin posterior; un par (i, j) es incompatible
+// si al formarlo los bailarines restantes ya no pueden emparejarse todos entre si (rompe
+// el balance tipo parentesis). Usa el balance de prefijos prefix[k] (+1 por '(', -1 por
+// ')'); para cada Yang en la posicion i, f[i] es la primera posicion k>=i donde el balance
+// vuelve a 0 (fin del segmento balanceado que arranca en i): cualquier Yin ubicado despues
+// de f[i] forma un par incompatible con ese Yang, porque deja un '(' suelto sin '(' extra
+// donde absorberlo. Suma, para cada '(' en la posicion i, la cantidad de ')' que hay
+// despues de f[i] (precomputada en suffixClose) para obtener el total de pares incompatibles.
+
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;

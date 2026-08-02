@@ -1,3 +1,13 @@
+// <3
+// Tema: Trees / Small-to-Large Merging (DSU on Tree)
+// Resuelve "Distinct Colors" (Training Camp 2026, Day 4 problema M): dado un arbol con raiz en el
+// nodo 1 donde cada nodo tiene un color, hay que calcular para cada nodo la cantidad de colores
+// distintos en su subarbol.
+// Hace un DFS iterativo para obtener un orden donde cada hijo aparece antes que su padre (order
+// invertido), y procesa los nodos en ese orden fusionando el set de colores de cada hijo
+// (colorSet) dentro del set mas grande entre padre e hijo (swap + insert), tecnica small-to-large
+// que garantiza complejidad O(N log^2 N) en vez de copiar sets completos en cada fusion.
+
 #include <bits/stdc++.h>
 using namespace std;
 

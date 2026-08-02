@@ -1,3 +1,16 @@
+// <3
+// Tema: Graph / Kruskal Reconstruction Tree
+// Resuelve "Trucks" (Maratona de Programacao da SBC 2013, problem J): Nlogonia es un
+// archipielago de N islas unidas por M puentes, cada uno con un limite maximo de peso W; para
+// S sitios de competencia hay que hallar el mayor peso que puede transportarse por camion entre
+// el almacen H y el sitio L, es decir, el maximo sobre todos los caminos posibles del minimo W
+// en ese camino (cuello de botella maximo).
+// Ordena los puentes por peso decreciente y los va uniendo con un DSU al estilo Kruskal, pero
+// en vez de solo unir arma un arbol binario de reconstruccion (nodeRepr/leftChild/rightChild)
+// donde cada fusion crea un nodo interno con el peso del puente. El ancestro comun mas bajo
+// (LCA, calculado con binary lifting) de dos hojas en ese arbol es justamente el nodo cuyo peso
+// es la respuesta a la consulta.
+
 #include <bits/stdc++.h>
 using namespace std;
 

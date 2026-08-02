@@ -1,3 +1,16 @@
+// <3
+// Tema: Graph / Dijkstra con Nodos Virtuales
+// Resuelve "Chinese Innovation": un imperio de n ciudades con m caminos bidireccionales
+// con costo, mas k tipos de teletransportadores; dos ciudades con teletransportador del
+// mismo tipo se conectan instantaneamente, pero el costo de usarlo depende de la ciudad
+// de origen (cada mayor cobra su propia tarifa de salida). Hay que hallar el costo minimo
+// de viajar de la ciudad 1 a la ciudad n. Modela cada tipo de teletransportador t como un
+// nodo virtual (virtual_node = n + t): cada ciudad con ese tipo agrega una arista dirigida
+// hacia el nodo virtual con peso igual a su tarifa de salida, y el nodo virtual agrega
+// aristas de costo 0 hacia todas esas ciudades; asi, saltar entre ciudades del mismo tipo
+// cuesta solo la tarifa de la ciudad de origen. Corre Dijkstra estandar (con priority_queue
+// y distancias en un unordered_map) desde 1 hasta n sobre este grafo ampliado.
+
 #include <bits/stdc++.h>
 using namespace std;
 

@@ -1,3 +1,15 @@
+# <3
+# Tema: Math / Bit Manipulation
+# Resuelve "Meme Wars": la palabra S(x) se define recursivamente como S(x) = S(p(x)) + x + S(p(x))
+# (con S('a')='a', y p(x) la letra anterior), y hay que hallar la letra en la posicion n de la
+# enorme palabra S('z').
+# Esta es la clasica "ruler sequence": la letra en la posicion n depende unicamente de la mayor
+# potencia de 2 que divide exactamente a n (su valuacion 2-adica). El diccionario dic mapea cada
+# potencia de 2 a su letra correspondiente, y el bucle recorre las potencias en orden creciente
+# guardando en 'cual' la ultima potencia que divide a n, hasta encontrar la primera que no lo
+# divide; en ese momento imprime la letra asociada a esa ultima potencia (equivalente a contar
+# los ceros finales de n en binario).
+
 dic = {
     1: "a",
     2: "b",

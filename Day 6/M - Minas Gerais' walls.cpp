@@ -1,3 +1,15 @@
+// <3
+// Tema: Binary Search / Greedy (busqueda binaria sobre la respuesta)
+// Resuelve "Minas Gerais' walls" (Maratona SBC de Programacao 2025, Problem M): una muralla de N
+// segmentos consecutivos con alturas x_i se refuerza una unica vez eligiendo un segmento, que
+// recibe K bloques extra, el segmento a su izquierda K-1, y asi en forma de escalera hasta sumar
+// solo 1 bloque o quedarse sin segmentos a la izquierda; la fortaleza de la muralla es su altura
+// minima, y hay que maximizar esa altura minima tras el unico refuerzo. El codigo hace busqueda
+// binaria sobre la altura candidata H usando "feasible(H)": para cada H calcula el rango de
+// posiciones p de refuerzo que alcanzarian a subir todo segmento deficitario (x_i < H) hasta al
+// menos H, a partir de la formula del escalon p <= i + K - H + x_i, y verifica que ese rango
+// [lo, hi] sea no vacio y quede dentro de [1, N].
+
 #include <bits/stdc++.h>
 using namespace std;
 typedef long long ll;

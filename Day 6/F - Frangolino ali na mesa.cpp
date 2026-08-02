@@ -1,6 +1,18 @@
+// <3
+// Tema: Math / Probabilidad (Valor esperado con inverso modular)
+// Resuelve "Frangolino ali na mesa" (Maratona SBC de Programacao 2025, Problem F): un robot
+// mesero recibe Q comandos, cada uno con un argumento X_i, pero cada comando es en realidad "ir
+// a la mesa X_i" o "pedir X_i milanesas en la mesa actual" con 50% de probabilidad cada uno
+// (empezando en la mesa 1); hay que calcular, para cada mesa, el valor esperado de milanesas
+// servidas, modulo 1e9+7. El codigo usa linealidad de la esperanza: arma coeff[i] = X_i *
+// inv2^i, calcula sumas por sufijo "suffix[i]" de esos coeficientes, inicializa ans[1] con
+// suffix[1] (caso en que el robot nunca se movio) y le suma a ans[X_i] el termino pow2[i-1] *
+// suffix[i+1] (la contribucion esperada de que el comando i sea el ultimo movimiento hacia esa
+// mesa), todo con aritmetica modular precomputada de potencias e inversos de 2.
+
 #include <bits/stdc++.h>
 using namespace std;
- 
+
 static const int MOD = 1000000007;
  
 int main() {

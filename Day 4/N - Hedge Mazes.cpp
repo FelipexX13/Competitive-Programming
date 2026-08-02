@@ -1,3 +1,13 @@
+// <3
+// Tema: Graph / Biconnected Components (Block-Cut Tree) + LCA
+// Resuelve "Hedge Mazes" (Training Camp 2026, Day 4 problema N): dado un laberinto de R salas y C
+// corredores, para cada consulta (S, T) hay que decidir si existe exactamente un camino simple
+// entre S y T (si hay un ciclo en el medio, existiria mas de un camino simple).
+// Construye las componentes biconexas (buildBiconnected, via low-link) y arma el arbol de bloques
+// y puntos de corte (block-cut tree), donde cada bloque de tamano >= 3 vertices representa un
+// ciclo; usando LCA con binary lifting (bfsBuildLCA/queryPath) calcula el maximo tamano de bloque
+// en el camino entre S y T, y responde 'Y' solo si ese maximo es <= 2 (solo aristas, sin ciclos).
+
 #include <bits/stdc++.h>
 using namespace std;
 

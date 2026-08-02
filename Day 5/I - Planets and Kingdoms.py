@@ -1,3 +1,14 @@
+# <3
+# Tema: Graph / Componentes Fuertemente Conexas (Kosaraju)
+# Resuelve "Planets and Kingdoms" (Contest 05 [Avanzados], problema I): dados n planetas y m
+# teleportadores dirigidos, dos planetas pertenecen al mismo reino si y solo si existe una ruta
+# de a a b y de b a a; hay que hallar todos los reinos (componentes fuertemente conexas) y
+# asignarle a cada planeta la etiqueta de su reino.
+# Implementa Kosaraju con DFS iterativos: primero un DFS sobre el grafo original (matrix) que
+# llena la pila "cam" en orden de finalizacion, luego recorre "cam" en reversa haciendo DFS
+# sobre el grafo transpuesto (matrix2, funcion dfs_gay) para etiquetar cada componente conexa
+# como un reino distinto en "respuesta".
+
 import sys
 sys.setrecursionlimit(300000)
 

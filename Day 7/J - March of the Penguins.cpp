@@ -1,3 +1,15 @@
+// <3
+// Tema: Graph / Max Flow
+// Resuelve "March of the Penguins": hay N tempanos de hielo con coordenadas (x,y), cada uno con
+// n_i pinguinos y un limite m_i de saltos que se pueden dar desde el (un pinguino puede saltar
+// de un tempano a otro si la distancia entre ellos es <= D); hay que hallar todos los tempanos
+// donde TODOS los pinguinos puedan terminar reunidos sin que ningun tempano se quede sin saltos.
+// Para cada tempano candidato t, arma una red de flujo con nodos entrada/salida por tempano
+// (in=i, out=N+i) donde la arista in->out tiene capacidad m_i (presupuesto de saltos), una
+// fuente S conectada a cada tempano con capacidad n_i (pinguinos que parten de ahi), y aristas
+// de capacidad infinita entre tempanos alcanzables saltando; corre Dinic (maxflow) de S a t y,
+// si el flujo maximo iguala al total de pinguinos, t es una respuesta valida.
+
 #include <bits/stdc++.h>
 using namespace std;
 

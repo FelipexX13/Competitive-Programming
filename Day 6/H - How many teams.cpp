@@ -1,3 +1,16 @@
+// <3
+// Tema: Bitmask DP / SOS (Sum over Subsets) + Inclusion-Exclusion
+// Resuelve "How many teams?" (Maratona SBC de Programacao 2025, Problem H): N estudiantes
+// tienen cada uno un subconjunto de K habilidades (representado como bitmask), un equipo de 3
+// estudiantes tiene como conjunto de habilidades la union de las de sus miembros, y se dan M
+// subconjuntos especiales; para cada uno hay que contar cuantos equipos de 3 estudiantes
+// distintos tienen union de habilidades exactamente igual a ese subconjunto. El codigo cuenta
+// primero f[mask] = cantidad de estudiantes con esa mascara exacta, aplica SOS (sum over
+// subsets) para que f[mask] pase a contar estudiantes cuya mascara es submascara de mask, calcula
+// h[mask] = C(f[mask], 3) (tripletas cuya union esta contenida en mask), y luego aplica Mobius /
+// inclusion-exclusion (SOS inverso) sobre h[] para recuperar el conteo exacto por union, de modo
+// que cada consulta se responde en O(1).
+
 #include <bits/stdc++.h>
 using namespace std;
 

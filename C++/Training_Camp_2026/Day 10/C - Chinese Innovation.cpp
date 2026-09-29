@@ -1,0 +1,92 @@
+// <3
+// Tema: Graph / Dijkstra con Nodos Virtuales
+// Resuelve "Chinese Innovation" (Day 10, problema C - Contest 09 [Avanzados]): un imperio de n
+// ciudades con m caminos bidireccionales con costo, mas k tipos de teletransportadores; dos
+// ciudades con teletransportador del mismo tipo se conectan instantaneamente, pero el costo de
+// usarlo depende de la ciudad de origen (cada mayor cobra su propia tarifa de salida). Hay que
+// hallar el costo minimo de viajar de la ciudad 1 a la ciudad n. Modela cada tipo de
+// teletransportador t como un nodo virtual (virtual_node = n + t): cada ciudad con ese tipo agrega
+// una arista dirigida hacia el nodo virtual con peso igual a su tarifa de salida, y el nodo
+// virtual agrega aristas de costo 0 hacia todas esas ciudades; asi, saltar entre ciudades del
+// mismo tipo cuesta solo la tarifa de la ciudad de origen. Corre Dijkstra estandar (con
+// priority_queue y distancias en un unordered_map) desde 1 hasta n sobre este grafo ampliado.
+
+#include <bits/stdc++.h>
+using namespace std;
+
+using pii = pair<long long, int>;
+
+const long long INF = 1e18;
+
+long long dijkstra(unordered_map<int, vector<pair<int, int>>> &graph, int start, int target) {
+    unordered_map<int, long long> dist;
+    unordered_set<int> visited;
+
+    priority_queue<pii, vector<pii>, greater<pii>> pq;
+
+    dist[start] = 0;
+    pq.push({0, start});
+
+    while (!pq.empty()) {
+        auto [d, u] = pq.top();
+        pq.pop();
+
+        if (visited.count(u))
+            continue;
+        visited.insert(u);
+
+        if (u == target)
+            return d;
+
+        for (auto [v, w] : graph[u]) {
+
+            long long nd = d + w;
+
+            if (!dist.count(v) || nd < dist[v]) {
+                dist[v] = nd;
+                pq.push({nd, v});
+            }
+        }
+    }
+
+    if (dist.count(target))
+        return dist[target];
+    return INF;
+}
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(nullptr);
+
+    int n, m, k;
+    cin >> n >> m >> k;
+
+    unordered_map<int, vector<pair<int, int>>> graph;
+
+    for (int i = 0; i < m; i++) {
+        int a, b, w;
+        cin >> a >> b >> w;
+        graph[a].push_back({b, w});
+        graph[b].push_back({a, w});
+    }
+
+    for (int i = 1; i <= n; i++) {
+        int tel;
+        cin >> tel;
+
+        for (int j = 0; j < tel; j++) {
+            int t, w;
+            cin >> t >> w;
+
+            int virtual_node = n + t;
+
+            graph[i].push_back({virtual_node, w});
+            graph[virtual_node].push_back({i, 0});
+        }
+    }
+
+    long long costo = dijkstra(graph, 1, n);
+    cout << costo << "\n";
+
+    return 0;
+}

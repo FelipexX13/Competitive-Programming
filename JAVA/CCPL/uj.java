@@ -1,5 +1,5 @@
 // <3
-// Tema: Math / Big Exponentiation
+// Tema: Number Theory / Big Exponentiation
 // Calcula N^D usando BigInteger para manejar resultados con exponentes muy grandes.
 
 import java.util.*;

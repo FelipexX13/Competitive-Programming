@@ -1,5 +1,5 @@
 // <3
-// Tema: Math / Big Exponentiation
+// Tema: Number Theory / Big Exponentiation
 // Calcula p^q usando aritmética de precisión arbitraria (boost::multiprecision)
 // para manejar resultados con exponentes muy grandes.
 

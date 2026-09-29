@@ -1,5 +1,5 @@
 // <3
-// Tema: Math / GCD and LCM
+// Tema: Number Theory / GCD and LCM
 // Calcula a dividido entre mcd(a,b), que es el multiplicador para obtener mcm(a,b) desde b.
 
 #include <bits/stdc++.h>

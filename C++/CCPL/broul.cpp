@@ -1,5 +1,5 @@
 // <3
-// Tema: Math / Modular Arithmetic
+// Tema: Number Theory / Modular Arithmetic
 // Calcula el número mínimo de saltos de tamaño 3*b necesarios para cubrir la distancia vertical abs(a-c),
 // o determina si no es posible porque la distancia no es múltiplo de b.
 

@@ -4,5 +4,9 @@ output/
 *.o
 *.out
 
+# Cache de Python
+__pycache__/
+*.pyc
+
 # El notebook.pdf SI se versiona (generado por generate_notebook.py)
 !notebook.pdf

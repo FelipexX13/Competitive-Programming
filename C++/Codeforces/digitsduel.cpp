@@ -1,5 +1,5 @@
 // <3
-// Tema: Math / Game Theory
+// Tema: Game Theory / Posiciones Perdedoras (potencias de 2)
 // Determina el ganador de un juego analizando si N+2 es potencia de 2.
 // Si lo es, el segundo jugador gana ("mastermei"), si no, el primero ("the greatest").
 

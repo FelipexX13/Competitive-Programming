@@ -1,3 +1,13 @@
+# <3
+# Tema: Implementation / Maquina de Estados por Objeto
+# NO ES MIO: codigo de Stiven Correa, del repo del equipo (carpeta RPC/).
+# Resuelve "Fraud" (RPC 2026-07, problema F): una lista de pickup y putdown; decir si la secuencia
+# es consistente, o sea que cada objeto se recoge una vez y se suelta una vez.
+# Tecnica: un diccionario con el estado de cada objeto, 0 sin tocar, 1 recogido y 2 soltado. Un
+# pickup solo vale desde 0 y un putdown solo desde 1. Al final se exige que TODOS hayan quedado
+# en 2, que es el chequeo que se olvida: la secuencia puede ser valida paso a paso y dejar un
+# objeto en la mano.
+
 from collections import defaultdict
 
 n = int(input())

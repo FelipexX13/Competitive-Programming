@@ -163,12 +163,13 @@ SEPARATOR_COLOR = HexColor("#cccccc")
 def scan_files(root: Path):
     """Busca archivos de codigo y extrae tema, subtema, descripcion y contenido.
 
-    Solo mira C++/ y JAVA/. Las carpetas leetcode/ y Training_Camp_2026/ de la
-    raiz vienen del subtree del Hub y son ejercicios sueltos en Python que no
-    sirven en un contest de C++: entraban al notebook como "Uncategorized" y lo
-    inflaban con decenas de paginas. Siguen versionadas, solo no se imprimen.
+    Se mira C++/ y JAVA/ (codigo propio) y las tres carpetas que vienen del
+    subtree del Hub del equipo: leetcode/, Training_Camp_2026/ y RPC/.
+    La lista es explicita para no barrer la raiz entera y que un .py suelto
+    (un script de prueba, por ejemplo) no se cuele al notebook como
+    "Uncategorized".
     """
-    CARPETAS = ("C++", "JAVA")
+    CARPETAS = ("C++", "JAVA", "leetcode", "Training_Camp_2026", "RPC")
 
     files = []
     for ext in EXTENSIONS:
@@ -241,6 +242,21 @@ def scan_files(root: Path):
             carpeta = partes[i + 1] if i + 1 < len(partes) - 1 else "Sin Carpeta"
             topic = "CSES: " + carpeta
 
+        # Los de leetcode/ van igual: apartado propio al final, subdividido por
+        # la carpeta del Hub (arrays, graphs, string, ...). Van aparte a
+        # proposito y NO mezclados en las secciones por tema, porque no son
+        # codigo nuestro: los escribieron Juan Jose Lozano y Stiven Correa y
+        # cada encabezado lo dice. Son referencia, no algo que uno vaya a copiar
+        # en un contest sin leerlo. Training_Camp_2026/ y RPC/ si entran a las
+        # secciones normales: son problemas de contest que ya vienen con su
+        # "Tema:" puesto.
+        if partes and partes[0] == "leetcode":
+            carpeta = partes[1] if len(partes) > 2 else "Sin Carpeta"
+            bonito = carpeta.replace("_", " ").title()
+            # title() deja "Dp" y "Dsu"; las siglas van en mayuscula sostenida.
+            bonito = {"Dp": "DP", "Dsu": "DSU"}.get(bonito, bonito)
+            topic = "Hub LeetCode: " + bonito
+
         entries.append({
             "name": fp.stem,
             "topic": TOPIC_ALIASES.get(topic, topic),
@@ -282,6 +298,11 @@ def source_tag(path):
         if p in ("Codeforces", "LeetCode", "RPC", "CCPL", "CSES",
                   "Notebook", "Formulario"):
             return p
+    # leetcode/ en minuscula es la carpeta del subtree del Hub, no la carpeta
+    # propia C++/LeetCode/. La etiqueta "Hub" es justo para poder distinguir de
+    # un vistazo lo que escribimos nosotros de lo que vino del repo del equipo.
+    if parts and parts[0] == "leetcode":
+        return "Hub"
     return ""
 
 
@@ -295,9 +316,14 @@ def group_by_topic(entries):
 
     known = set(SECTION_ORDER)
     extra = sorted(set(e["topic"] for e in entries if e["topic"] not in known))
-    # CSES de ultimo, siempre, sin importar el alfabeto.
+    # Al final van, en este orden: lo demas, CSES, y de ultimo el Hub. El Hub
+    # queda atras porque es material de consulta ajeno, no la parte del notebook
+    # que uno abre en medio de un contest.
     es_cses = lambda t: t.startswith("CSES: ")
-    extra = [t for t in extra if not es_cses(t)] + [t for t in extra if es_cses(t)]
+    es_hub = lambda t: t.startswith("Hub LeetCode: ")
+    extra = ([t for t in extra if not es_cses(t) and not es_hub(t)]
+             + [t for t in extra if es_cses(t)]
+             + [t for t in extra if es_hub(t)])
     for topic in extra:
         group = [e for e in entries if e["topic"] == topic]
         if group:
@@ -315,16 +341,20 @@ def group_by_topic(entries):
             plano = lambda x: re.sub(r"[^a-z0-9]", "", x.lower())
             if plano(nombre) in plano(item["subtopic"]):
                 item["label"] = item["subtopic"]
-            elif item["topic"].startswith("CSES: "):
-                # En CSES manda el nombre del problema: uno los busca por
-                # titulo, no por tecnica. La tecnica va detras como apoyo.
+            elif item["topic"].startswith(("CSES: ", "Hub LeetCode: ")):
+                # En CSES y en el Hub manda el nombre del problema: uno los
+                # busca por titulo (o por numero), no por tecnica. La tecnica va
+                # detras como apoyo.
                 item["label"] = f"{nombre} - {item['subtopic']}"
             else:
                 item["label"] = f"{item['subtopic']} - {nombre}"
 
-        # Los de CSES se ordenan por nombre de problema (el resto va por
-        # subtema). Se hace aqui y no arriba porque "problem" recien se calculo.
-        if items and items[0]["topic"].startswith("CSES: "):
+        # Los de CSES y del Hub se ordenan por nombre de problema (el resto va
+        # por subtema). Se hace aqui y no arriba porque "problem" recien se
+        # calculo. En el Hub el nombre del archivo trae el numero de LeetCode
+        # delante, pero pretty_name se lo quita, asi que el orden es alfabetico
+        # por titulo y no por numero.
+        if items and items[0]["topic"].startswith(("CSES: ", "Hub LeetCode: ")):
             items.sort(key=lambda e: e["problem"].lower())
 
         # Si dos quedan con la misma etiqueta, desempatar con el lenguaje.
@@ -426,6 +456,25 @@ class NotebookPDF:
         self.c.drawString(x + 5, self.y - h + 4, f"{number} - {title}")
         self.y -= h + 5
 
+    def recortar(self, texto, fuente, tamano):
+        """Corta el texto para que quepa en una columna, con puntos al final.
+
+        Es para las lineas de UNA sola linea (subtitulo y ruta), que no se
+        pueden partir como la descripcion. Sin esto, un nombre de problema largo
+        se sale de la columna y entra al area que la impresora no imprime.
+        """
+        disponible = self.col_width - 4
+        if pdfmetrics.stringWidth(texto, fuente, tamano) <= disponible:
+            return texto
+        puntos = pdfmetrics.stringWidth("...", fuente, tamano)
+        corte = len(texto)
+        while corte > 0:
+            ancho = pdfmetrics.stringWidth(texto[:corte], fuente, tamano)
+            if ancho + puntos <= disponible:
+                break
+            corte -= 1
+        return texto[:corte].rstrip() + "..."
+
     def wrap_desc(self, desc):
         """Parte la descripcion midiendo el ancho REAL de cada linea.
 
@@ -467,16 +516,21 @@ class NotebookPDF:
         self.c.line(x, self.y, x + self.col_width, self.y)
         self.y -= 3
 
-        # Subtema como titulo
+        # Subtema como titulo. Se recorta al ancho de la columna: el subtitulo
+        # sale de "{nombre del problema} - {tecnica}" y con un nombre largo se
+        # pasaba de la columna y se metia al margen de la impresora.
         self.c.setFillColor(TEXT_BLACK)
         self.c.setFont(TITLE_FONT, SUBSECTION_TITLE_SIZE)
-        self.c.drawString(x + 2, self.y - 8, f"{number}  {subtopic}")
+        titulo = self.recortar(f"{number}  {subtopic}",
+                              TITLE_FONT, SUBSECTION_TITLE_SIZE)
+        self.c.drawString(x + 2, self.y - 8, titulo)
         self.y -= 11
 
         # Path en gris
         self.c.setFont(TEXT_FONT, 4.5)
         self.c.setFillColor(TEXT_LIGHT)
-        self.c.drawString(x + 2, self.y - 1, path)
+        self.c.drawString(x + 2, self.y - 1,
+                          self.recortar(path, TEXT_FONT, 4.5))
         self.y -= 7
 
         # Descripcion en italica

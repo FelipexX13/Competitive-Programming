@@ -1,3 +1,13 @@
+# <3
+# Tema: Greedy / Emparejar Extremos
+# NO ES MIO: codigo de Stiven Correa, del repo del equipo (carpeta RPC/).
+# Resuelve "Axles" (RPC 2026-07, problema A): las ruedas se agrupan por eje y en cada eje se
+# emparejan de dos en dos; minimizar la suma de los desbalances.
+# Tecnica: por cada eje se ordenan los diametros en un deque y se emparejan el MAS PEQUENO con
+# el MAS GRANDE (popleft con pop), se sigue hacia el centro y se acumula log(mayor/menor).
+# El logaritmo convierte el producto de razones en una suma, que es lo que se puede acumular
+# en un solo acumulador sin desbordar ni perder precision.
+
 from collections import defaultdict, deque
 import math
 

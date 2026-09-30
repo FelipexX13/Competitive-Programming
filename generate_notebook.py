@@ -161,13 +161,24 @@ SEPARATOR_COLOR = HexColor("#cccccc")
 # ─────────────────────── ESCANEO DE ARCHIVOS ─────────────────────────
 
 def scan_files(root: Path):
-    """Busca archivos de codigo y extrae tema, subtema, descripcion y contenido."""
+    """Busca archivos de codigo y extrae tema, subtema, descripcion y contenido.
+
+    Solo mira C++/ y JAVA/. Las carpetas leetcode/ y Training_Camp_2026/ de la
+    raiz vienen del subtree del Hub y son ejercicios sueltos en Python que no
+    sirven en un contest de C++: entraban al notebook como "Uncategorized" y lo
+    inflaban con decenas de paginas. Siguen versionadas, solo no se imprimen.
+    """
+    CARPETAS = ("C++", "JAVA")
+
     files = []
     for ext in EXTENSIONS:
         for filepath in root.rglob(f"*{ext}"):
             if filepath.name in ("generate_notebook.py",):
                 continue
             if any(part.startswith(".") for part in filepath.parts):
+                continue
+            rel = filepath.relative_to(root).parts
+            if not rel or rel[0] not in CARPETAS:
                 continue
             files.append(filepath)
 

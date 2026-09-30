@@ -1,5 +1,7 @@
 // <3
 // Tema: Data Structures / Ordered Set (PBDS)
+// O: (log n) insertar, borrar, find_by_order y order_of_key
+// Uso: s.find_by_order(k) -> k-esimo (0-indexado); s.order_of_key(x) -> menores
 // Estructura basada en politicas de GNU: funciona como un set<> normal pero ademas esta
 // indexada internamente, lo que da dos operaciones que un set no tiene, ambas en O(log n):
 // find_by_order(k) devuelve un iterador al k-esimo elemento (0-indexado, o end() si k >=

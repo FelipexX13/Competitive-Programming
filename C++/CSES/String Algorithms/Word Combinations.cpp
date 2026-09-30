@@ -1,5 +1,7 @@
 // <3
 // Tema: CSES / Trie + DP de Segmentacion (Conteo)
+// O: (n * largo maximo) tras armar el trie
+// Uso: Node con nxt[26] y end; dp[j+1] += dp[i] al cerrar una palabra
 // Cuantas formas hay de partir s en palabras del diccionario. dp[i] = formas de armar el prefijo
 // s[0..i), con dp[0] = 1, y cada palabra que empiece en i y termine en j suma dp[i] a dp[j+1].
 // EL TRIE ES LO QUE HACE QUE QUEPA: probar cada palabra del diccionario en cada posicion seria

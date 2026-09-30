@@ -1,5 +1,7 @@
 // <3
 // Tema: Geometry / Punto en Poligono Convexo (O(log n))
+// O: (n log n) el hull, (log n) cada consulta
+// Uso: h = convexHull(p); inside(h,q) con h antihorario y sin colineales
 // Arma el casco convexo de un conjunto de puntos y luego responde muchas consultas del tipo
 // "este punto esta dentro?" en O(log n) cada una, en vez de O(n) revisando arista por arista.
 // Todo se hace con enteros (el cross devuelve long long), asi que no hay error de precision.

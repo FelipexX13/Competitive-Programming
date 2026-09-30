@@ -1,5 +1,7 @@
 // <3
 // Tema: Geometry / Coordenadas Polares
+// O: (1) cada conversion, (n log n) ordenar por angulo
+// Uso: aPolar(x,y) -> {r,th}; normalizar(th) deja th en [0,2pi)
 // Pasar de (x, y) a (r, theta) y al contrario. Las formulas son de colegio, pero en competitiva
 // lo que tumba la solucion son los detalles de implementacion, y por eso vale la ficha.
 // 1) EL ANGULO SE SACA CON atan2(y, x), NUNCA CON atan(y/x). atan(y/x) pierde el cuadrante

@@ -1,5 +1,7 @@
 // <3
 // Tema: CSES / Fenwick con Descenso Binario (k-esimo)
+// O: (log^2 n) por consulta, o (log n) con descenso binario
+// Uso: fw con 1 en cada vivo; busca el k-esimo vivo y pon 0 al sacarlo
 // Fenwick de unos y ceros (1 = la posicion todavia esta) donde lo interesante es kth(): encontrar
 // la k-esima posicion viva sin busqueda binaria por fuera.
 // EL DESCENSO SOBRE EL BIT: se arranca en la potencia de 2 mas grande y se va bajando, probando en

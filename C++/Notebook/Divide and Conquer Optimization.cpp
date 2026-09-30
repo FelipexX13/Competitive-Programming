@@ -1,5 +1,7 @@
 // <3
 // Tema: Dynamic Programming / Divide and Conquer Optimization
+// O: (n log n) por capa, en vez de O(n^2)
+// Uso: compute(1,n,1,n,C,prev,cur,opt); exige desigualdad de Monge
 // Optimiza DPs por capas del tipo dp[i][m] = min sobre k de (dp[i-1][k] + C(k,m)), tipicos de
 // "partir un arreglo en i grupos". Baja cada capa de O(n^2) a O(n log n).
 // Se apoya en que el punto de corte optimo es monotono: si opt[m] es el mejor k para m,

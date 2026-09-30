@@ -1,5 +1,7 @@
 // <3
 // Tema: CSES / Fenwick de Diferencias
+// O: (log n) por operacion
+// Uso: add(l,+x) y add(r+1,-x); sum(i) da el valor de la posicion i
 // La vuelta de tuerca: en vez de guardar los valores, el Fenwick guarda las DIFERENCIAS. Sumar x
 // a todo el rango [a,b] son dos operaciones puntuales, add(a, x) y add(b+1, -x), y consultar la
 // posicion k es la suma de prefijo hasta k. O sea que el mismo Fenwick que hace

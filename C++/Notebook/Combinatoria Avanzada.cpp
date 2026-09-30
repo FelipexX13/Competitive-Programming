@@ -1,5 +1,7 @@
 // <3
 // Tema: Combinatorics / Combinatoria Avanzada (Lucas, Catalan, Stirling)
+// O: (1) por C tras precomputar(); Lucas O(log_p n)
+// Uso: precomputar() una vez; luego C(n,k), multinomial(v), catalan(n)
 // Formulas combinatorias que van mas alla del C(n,k) basico con factoriales precomputados
 // (ese caso ya esta resuelto en "Binomial Coefficients"). Aqui van cuatro herramientas:
 // Lucas, para cuando n y k son gigantes (hasta 1e18) pero el modulo es un primo pequeno,

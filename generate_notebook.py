@@ -76,6 +76,142 @@ SECTION_ORDER = [
     "Formulario",
 ]
 
+# ─────────────────────────── HOJA DE GATILLOS ─────────────────────────
+# La pagina que se lee cuando NO se reconoce el problema.
+#
+# El resto del notebook tiene tres puertas de entrada: por tema (el indice),
+# por nombre de problema (el indice alfabetico) y por tecnica (el subtema va
+# primero en cada etiqueta). Las tres sirven cuando uno YA sabe que esta
+# buscando. Esta hoja es la cuarta puerta y cubre el caso dificil: leiste el
+# enunciado, no te suena a nada, y necesitas convertir una senal del texto en
+# el nombre de una tecnica. Con ese nombre ya funcionan las otras tres puertas.
+#
+# Cada fila es (senal en el enunciado, tecnica, seccion donde vive). La seccion
+# se escribe por NOMBRE y el numero se resuelve al dibujar: si se agrega o quita
+# una seccion, los numeros de esta hoja siguen bien solos.
+GATILLOS = [
+    ("Cuanto aguanta cada complejidad (~10^8 operaciones en 1 s)", [
+        ("n <= 11",                    "O(n!) - permutaciones, next_permutation", ""),
+        ("n <= 20",                    "O(2^n * n) - bitmask DP", "Dynamic Programming"),
+        ("n <= 25",                    "O(2^n) - si no cabe, meet in the middle", ""),
+        ("n <= 40",                    "meet in the middle, O(2^(n/2))", ""),
+        ("n <= 450",                   "O(n^3) - Floyd, DP de intervalos", "Graph"),
+        ("n <= 5.000",                 "O(n^2 log n)", ""),
+        ("n <= 10.000",                "O(n^2) - DP de dos indices", "Dynamic Programming"),
+        ("n <= 100.000",               "O(n sqrt n) - Mo, bloques", "Data Structures"),
+        ("n <= 200.000",               "O(n log^2 n) - binaria + estructura", ""),
+        ("n <= 1.000.000",             "O(n log n) - sort, Fenwick, Dijkstra", "Data Structures"),
+        ("n <= 100.000.000",           "O(n) - dos punteros, criba, prefijos", ""),
+        ("n hasta 10^18",              "formula cerrada, log, o binaria", "Math"),
+    ]),
+    ("Lo que dice el enunciado -> la tecnica", [
+        ("maximizar el minimo / minimizar el maximo",
+         "binaria sobre la respuesta", "Binary Search"),
+        ("cuantas formas hay, modulo 10^9+7",
+         "DP, o combinatoria con inverso modular", "Combinatorics"),
+        ("el k-esimo mas grande / mas pequeno",
+         "binaria + contar, o heap de tamano k", "Binary Search"),
+        ("minimo numero de movimientos o pasos",
+         "BFS (todas las aristas pesan 1)", "Graph"),
+        ("los pesos son solo 0 y 1",
+         "BFS 0-1 con deque", "Graph"),
+        ("pesos cualesquiera, ninguno negativo",
+         "Dijkstra con heap", "Graph"),
+        ("puede haber pesos negativos",
+         "Bellman-Ford", "Graph"),
+        ("distancia entre TODOS los pares",
+         "Floyd-Warshall (n <= 450)", "Graph"),
+        ("conectar todo al menor costo",
+         "MST: Kruskal + DSU", "Graph"),
+        ("quedaron en el mismo grupo?",
+         "DSU (union-find)", "Graph"),
+        ("hay ciclo en un grafo dirigido?",
+         "Kahn, o DFS de tres colores", "Graph"),
+        ("dependencias, en que orden hacerlo",
+         "orden topologico", "Graph"),
+        ("dos nodos se alcanzan mutuamente",
+         "SCC (Kosaraju o Tarjan)", "Graph"),
+        ("si quito esta arista se desconecta?",
+         "puentes y puntos de articulacion", "Graph"),
+        ("emparejar dos grupos, uno a uno",
+         "Kuhn, o flujo maximo", "Graph"),
+        ("separar / cortar al menor costo",
+         "min cut = max flow (Dinic)", "Graph"),
+        ("recorrer cada arista exactamente una vez",
+         "camino o circuito euleriano", "Graph"),
+        ("ancestro comun, o distancia en un arbol",
+         "LCA con binary lifting", "Graph"),
+        ("aplicar el mismo salto k veces",
+         "binary lifting en grafo funcional", "Graph"),
+        ("a lo sumo k de algo, en un tramo",
+         "ventana deslizante", "Implementation"),
+        ("subarreglo de suma maxima",
+         "Kadane", "Dynamic Programming"),
+        ("consultas de rango y el arreglo NO cambia",
+         "prefijos, o sparse table para min/max", "Data Structures"),
+        ("consultas de rango y SI cambia",
+         "Fenwick si es suma, segtree si no", "Data Structures"),
+        ("sumar un valor a todo un rango",
+         "segment tree con lazy propagation", "Data Structures"),
+        ("contar pares desordenados",
+         "inversiones: merge sort o Fenwick", "Data Structures"),
+        ("el primer mayor (o menor) a la derecha",
+         "pila monotona", "Data Structures"),
+        ("existe una asignacion verdadero/falso?",
+         "2-SAT", "Graph"),
+        ("cuantos numeros entre A y B cumplen X",
+         "digit DP", "Dynamic Programming"),
+        ("palindromos, todos los centros",
+         "Manacher", "String"),
+        ("donde aparece este patron",
+         "KMP, o funcion Z", "String"),
+        ("muchas comparaciones de subcadenas",
+         "hashing doble", "String"),
+        ("prefijos de un diccionario",
+         "trie", "String"),
+        ("valores gigantes pero pocos distintos",
+         "compresion de coordenadas", "Data Structures"),
+        ("subsecuencia creciente mas larga",
+         "LIS en O(n log n) con lower_bound", "Dynamic Programming"),
+        ("mochila, escoger con un tope",
+         "DP de mochila", "Dynamic Programming"),
+        ("dos juegan optimo, quien gana",
+         "Grundy / Nim, o DP de estados", "Game Theory"),
+        ("area, contener, o cruzarse en el plano",
+         "primitivas: cross, dot, orientacion", "Geometry"),
+        ("el poligono mas chico que cubre los puntos",
+         "convex hull", "Geometry"),
+        ("cuantos divisores, o factorizar muchos",
+         "criba con menor factor primo", "Number Theory"),
+        ("dividir en modulo",
+         "inverso modular (Fermat)", "Number Theory"),
+        ("congruencias simultaneas",
+         "teorema chino del resto", "Number Theory"),
+    ]),
+    ("Trampas que cuestan el problema entero", [
+        ("dos numeros de 10^9 multiplicados",
+         "se sale de int: long long siempre", "Formulario"),
+        ("tres numeros de 10^9 multiplicados",
+         "se sale de long long: __int128", "Formulario"),
+        ("Fenwick con indice 0",
+         "es 1-indexado: i & -i con i=0 no avanza", "Data Structures"),
+        ("el enunciado pide el orden de ENTRADA",
+         "no ordenes ni uses set: guarda el indice", ""),
+        ("hay empates",
+         "ordena por (clave, indice) y define el criterio", ""),
+        ("aparecen decimales",
+         "nunca ==, usa eps; mejor aun, pasa a enteros", "Formulario"),
+        ("el grafo puede venir desconectado",
+         "el DFS va en un for por TODOS los nodos", "Graph"),
+        ("n = 0 y n = 1",
+         "el borde que siempre se olvida", ""),
+        ("la respuesta cabe pero el intermedio no",
+         "reordena la formula o divide antes", "Formulario"),
+        ("recursion profunda en Python",
+         "sys.setrecursionlimit, o hazlo iterativo", ""),
+    ]),
+]
+
 # Layout
 PAGE_W, PAGE_H = landscape(letter)  # 792 x 612 pts = carta apaisada
 # Margenes pensados para IMPRIMIR, no para leer en pantalla. Una impresora
@@ -139,8 +275,16 @@ TITLE_FONT          = TEXT_FONT_BOLD
 SECTION_TITLE_SIZE  = 10
 SUBSECTION_TITLE_SIZE = 7.5
 
-DESC_FONT = TEXT_FONT_ITALIC
-DESC_SIZE = 6.2
+# La descripcion es lo mas valioso de cada entrada y estaba en gris italica a
+# 6.2 pt, que es justo lo primero que se vuelve ilegible impreso en blanco y
+# negro en una laser corriente. Ahora va redonda, a 7 pt y casi negra. Se
+# distingue del codigo porque el codigo es monoespaciado.
+DESC_FONT = TEXT_FONT
+DESC_SIZE = 7.0
+
+# Campos O: y Uso:, en negrita debajo del titulo.
+META_FONT = TEXT_FONT_BOLD
+META_SIZE = 6.5
 
 TOC_FONT      = TEXT_FONT
 TOC_SIZE      = 7.5
@@ -153,6 +297,7 @@ TEXT_WHITE     = white
 TEXT_BLACK     = black
 TEXT_GRAY      = HexColor("#666666")
 TEXT_LIGHT     = HexColor("#999999")
+DESC_COLOR     = HexColor("#1a1a1a")   # casi negro: aguanta la impresora barata
 LINE_NUM_COLOR = HexColor("#aaaaaa")
 CODE_BG_ALT    = HexColor("#f0f0f0")  # filas alternadas
 SEPARATOR_COLOR = HexColor("#cccccc")
@@ -196,6 +341,14 @@ def scan_files(root: Path):
         topic = "Uncategorized"
         subtopic = ""
         description = ""
+        # Campos cortos que se sacan de la descripcion y se pintan aparte, en
+        # negrita, pegados al titulo. La descripcion en prosa sirve para
+        # entender; estos dos sirven para PEGAR el codigo sin equivocarse, y por
+        # eso tienen que verse de un vistazo y no enterrados en un parrafo.
+        #   // O: (n log n)            -> costo
+        #   // Uso: fw.add(i, x)       -> como se llama, y 0- o 1-indexado
+        complejidad = ""
+        uso = ""
         code_lines = []
         meta_ended = False
 
@@ -204,9 +357,13 @@ def scan_files(root: Path):
         else:
             comment_prefix = "//"
 
+        pre = re.escape(comment_prefix)
+
         for line in lines:
             stripped = line.strip()
-            m_topic = re.match(rf"^{re.escape(comment_prefix)}\s*Tema:\s*(.+)", stripped)
+            m_topic = re.match(rf"^{pre}\s*Tema:\s*(.+)", stripped)
+            m_o = re.match(rf"^{pre}\s*O:\s*(.+)", stripped)
+            m_uso = re.match(rf"^{pre}\s*Uso:\s*(.+)", stripped)
 
             if m_topic and not meta_ended:
                 raw = m_topic.group(1).strip()
@@ -217,10 +374,14 @@ def scan_files(root: Path):
                 else:
                     topic = raw
                     subtopic = raw
+            elif m_o and not meta_ended:
+                complejidad = m_o.group(1).strip()
+            elif m_uso and not meta_ended:
+                uso = m_uso.group(1).strip()
             elif stripped == f"{comment_prefix} <3" and not meta_ended:
                 continue
             elif stripped.startswith(comment_prefix) and not meta_ended:
-                desc_match = re.match(rf"^{re.escape(comment_prefix)}\s*(.*)", stripped)
+                desc_match = re.match(rf"^{pre}\s*(.*)", stripped)
                 if desc_match:
                     desc_text = desc_match.group(1).strip()
                     if desc_text and desc_text != "<3" and not desc_text.startswith("Tema:"):
@@ -267,6 +428,8 @@ def scan_files(root: Path):
             "topic": TOPIC_ALIASES.get(topic, topic),
             "subtopic": subtopic,
             "description": description,
+            "complejidad": complejidad,
+            "uso": uso,
             "code": "\n".join(code_lines),
             "path": str(fp.relative_to(root)),
             "extension": fp.suffix,
@@ -387,6 +550,9 @@ class NotebookPDF:
         self.c.setTitle("Notebook - " + UNIVERSITY)
         self.c.setAuthor(UNIVERSITY)
         self.page_num = 0
+        # Titulo de la entrada que se esta pintando, para rotular "(cont.)"
+        # cuando el bloque se parte de columna.
+        self.bloque_actual = ""
 
         self.col_width = (PAGE_W - MARGIN_LEFT - MARGIN_RIGHT - COL_GAP) / 2
         # debajo de la barra del encabezado (SAFE_INSET + alto de barra + aire)
@@ -461,14 +627,17 @@ class NotebookPDF:
         self.c.drawString(x + 5, self.y - h + 4, f"{number} - {title}")
         self.y -= h + 5
 
-    def recortar(self, texto, fuente, tamano):
+    def recortar(self, texto, fuente, tamano, disponible=None):
         """Corta el texto para que quepa en una columna, con puntos al final.
 
-        Es para las lineas de UNA sola linea (subtitulo y ruta), que no se
-        pueden partir como la descripcion. Sin esto, un nombre de problema largo
-        se sale de la columna y entra al area que la impresora no imprime.
+        Es para las lineas de UNA sola linea (subtitulo, ruta, O:, Uso:), que no
+        se pueden partir como la descripcion. Sin esto, un nombre de problema
+        largo se sale de la columna y entra al area que la impresora no imprime.
+        `disponible` es para cuando algo ya ocupo parte del ancho, como la
+        etiqueta "Uso:" antes de su valor.
         """
-        disponible = self.col_width - 4
+        if disponible is None:
+            disponible = self.col_width - 4
         if pdfmetrics.stringWidth(texto, fuente, tamano) <= disponible:
             return texto
         puntos = pdfmetrics.stringWidth("...", fuente, tamano)
@@ -500,14 +669,21 @@ class NotebookPDF:
             lineas.append(linea)
         return lineas
 
-    def draw_subsection_title(self, number, subtopic, desc, path, bookmark_key):
+    def draw_subsection_title(self, number, subtopic, desc, path, bookmark_key,
+                              complejidad="", uso=""):
         needed = 12
+        if complejidad or uso:
+            needed += (bool(complejidad) + bool(uso)) * (META_SIZE + 2)
         if desc:
             desc_lines = len(self.wrap_desc(desc))
             needed += desc_lines * (DESC_SIZE + 2) + 2
 
         self.ensure_space(needed + CODE_LEADING * 3)
         x = self.col_x()
+
+        # Lo guarda para que draw_code pueda rotular "(cont.)" si el bloque se
+        # parte de columna o de pagina.
+        self.bloque_actual = f"{number}  {subtopic}"
 
         # Registrar posicion para el link del TOC
         self.bookmarks[bookmark_key] = (self.page_num, self.y)
@@ -529,23 +705,45 @@ class NotebookPDF:
         titulo = self.recortar(f"{number}  {subtopic}",
                               TITLE_FONT, SUBSECTION_TITLE_SIZE)
         self.c.drawString(x + 2, self.y - 8, titulo)
-        self.y -= 11
+        # 14 y no 11: el titulo va a 7.5 pt y lo que sigue a 6.5 o 7, y con 11
+        # el ascendente de la linea de abajo se le metia al descendente del
+        # titulo (la "g" de "Segment" contra la "O:"). Verificado midiendo las
+        # cajas de los spans en el PDF, no a ojo.
+        self.y -= 14
 
-        # Path en gris
+        # O: y Uso:, lo primero que se mira para pegar el codigo. En negrita,
+        # pegados al titulo y antes de todo lo demas a proposito: el costo y la
+        # convencion de llamada se necesitan en dos segundos, la prosa se lee
+        # despues y la ruta del archivo casi nunca.
+        for etiqueta, valor in (("O:", complejidad), ("Uso:", uso)):
+            if not valor:
+                continue
+            self.c.setFont(META_FONT, META_SIZE)
+            self.c.setFillColor(TEXT_BLACK)
+            self.c.drawString(x + 2, self.y - 1, etiqueta)
+            ancho = pdfmetrics.stringWidth(etiqueta + " ", META_FONT, META_SIZE)
+            self.c.setFont(CODE_FONT, META_SIZE)
+            self.c.drawString(x + 2 + ancho, self.y - 1,
+                              self.recortar(valor, CODE_FONT, META_SIZE,
+                                            self.col_width - 4 - ancho))
+            self.y -= META_SIZE + 2
+
+        # Descripcion
+        if desc:
+            self.c.setFont(DESC_FONT, DESC_SIZE)
+            self.c.setFillColor(DESC_COLOR)
+            for linea in self.wrap_desc(desc):
+                self.c.drawString(x + 2, self.y - 1, linea)
+                self.y -= DESC_SIZE + 2
+            self.y -= 1
+
+        # Ruta del archivo, de ultimo y en gris claro. Sirve para volver al
+        # fuente en el repo, no durante el contest, asi que no estorba arriba.
         self.c.setFont(TEXT_FONT, 4.5)
         self.c.setFillColor(TEXT_LIGHT)
         self.c.drawString(x + 2, self.y - 1,
                           self.recortar(path, TEXT_FONT, 4.5))
         self.y -= 7
-
-        # Descripcion en italica
-        if desc:
-            self.c.setFont(DESC_FONT, DESC_SIZE)
-            self.c.setFillColor(TEXT_GRAY)
-            for linea in self.wrap_desc(desc):
-                self.c.drawString(x + 2, self.y - 1, linea)
-                self.y -= DESC_SIZE + 2
-            self.y -= 1
 
     def _draw_digit_paths(self, x, y, digit_str, size):
         """Dibuja digitos como mini-paths vectoriales (no texto), asi no se copian."""
@@ -710,7 +908,7 @@ class NotebookPDF:
                 sangria = len(linea) - len(linea.lstrip())
                 for trozo in self.wrap_ancho(linea.strip(), TEXT_FONT_ITALIC, DESC_SIZE,
                                              self.col_width - 10 - sangria * 1.5):
-                    self.ensure_space(interlinea + 1)
+                    self.espacio_cont(interlinea + 1)
                     x = self.col_x()
                     self.c.setFont(TEXT_FONT_ITALIC, DESC_SIZE)
                     self.c.setFillColor(TEXT_GRAY)
@@ -720,7 +918,7 @@ class NotebookPDF:
                 # Formula o tabla: monoespaciado, que es lo que mantiene las columnas.
                 trozo = linea
                 while True:
-                    self.ensure_space(interlinea + 1)
+                    self.espacio_cont(interlinea + 1)
                     x = self.col_x()
                     self.c.setFont(CODE_FONT, CODE_SIZE)
                     self.c.setFillColor(TEXT_BLACK)
@@ -732,6 +930,25 @@ class NotebookPDF:
             primera = False
 
         self.y -= 4
+
+    def espacio_cont(self, needed):
+        """ensure_space, pero rotulando la continuacion si cambio de columna."""
+        antes = (self.page_num, self.col)
+        self.ensure_space(needed)
+        if (self.page_num, self.col) != antes:
+            self.marcar_continuacion()
+
+    def marcar_continuacion(self):
+        """Rotula '<numero> <titulo> (cont.)' arriba de una columna partida."""
+        if not getattr(self, "bloque_actual", ""):
+            return
+        x = self.col_x()
+        self.c.setFont(TEXT_FONT_ITALIC, 5.5)
+        self.c.setFillColor(TEXT_GRAY)
+        self.c.drawString(x + 2, self.y - 4,
+                          self.recortar(self.bloque_actual + "  (cont.)",
+                                        TEXT_FONT_ITALIC, 5.5))
+        self.y -= 8
 
     def draw_code(self, code):
         lines = code.split("\n")
@@ -750,7 +967,11 @@ class NotebookPDF:
             processed_lines.append((i + 1, expanded, True))
 
         for line_num, text, is_first in processed_lines:
-            self.ensure_space(CODE_LEADING + 1)
+            # Si el bloque se pasa a otra columna o a otra pagina, se rotula
+            # arriba. Sin esto uno se encuentra con codigo suelto sin saber de
+            # que entrada es, que en pleno contest es exactamente el momento en
+            # que se pierden dos minutos hojeando hacia atras.
+            self.espacio_cont(CODE_LEADING + 1)
 
             curr_x = self.col_x()
             code_curr_x = curr_x + line_num_width
@@ -890,6 +1111,141 @@ class NotebookPDF:
         self.c.showPage()
         self.page_num += 1
 
+    def draw_gatillos(self):
+        """Hoja de gatillos: del enunciado a la tecnica.
+
+        Va de segunda, justo despues del reparto, porque es la que mas se
+        consulta y las dos posiciones faciles de un impreso son el frente y el
+        final. El final ya lo ocupa el indice alfabetico.
+        """
+        # Nombre de seccion -> numero, resuelto de los grupos reales. Asi los
+        # numeros de esta hoja no se desincronizan cuando cambian las secciones.
+        num_de = {nombre: i for i, nombre in enumerate(self.groups, 1)}
+
+        self.col = 0
+        # content_top ya viene por debajo de la barra del encabezado; arrancar
+        # mas arriba mete el titulo encima de la barra negra.
+        self.y = self.content_top
+
+        self.c.setFillColor(TEXT_BLACK)
+        self.c.setFont(TEXT_FONT_BOLD, 15)
+        self.c.drawString(MARGIN_LEFT, self.y - 12,
+                          "GATILLOS  -  del enunciado a la tecnica")
+        self.y -= 24
+        self.c.setFont(TEXT_FONT, 7.4)
+        self.c.setFillColor(TEXT_GRAY)
+        self.c.drawString(
+            MARGIN_LEFT, self.y,
+            "Para cuando el problema no te suena a nada. Busca la senal, "
+            "quedate con el nombre de la tecnica y de ahi usa el indice. "
+            "El numero de la derecha es la seccion.")
+        self.y -= 12
+        self.c.setStrokeColor(BG_MID)
+        self.c.setLineWidth(0.6)
+        self.c.line(MARGIN_LEFT, self.y, PAGE_W - MARGIN_RIGHT, self.y)
+        self.y -= 10
+
+        tope = self.y
+        alto_fila = 8.6
+        # La senal es lo que se escanea (uno compara contra el texto del
+        # enunciado), asi que se queda con la mayor parte del ancho.
+        ancho_senal = self.col_width * 0.52
+
+        # El mapa de secciones se arma solo de los grupos reales, asi que nunca
+        # queda desactualizado, y llena la columna derecha (que si no, con solo
+        # los tres bloques fijos, queda medio vacia). Es el "a que pestana
+        # salto" que convierte esta hoja en un solo salto de verdad.
+        #
+        # Las secciones del Hub se colapsan en una sola fila: son 22 y aqui
+        # serian puro ruido, porque nadie resuelve un problema de contest
+        # saltando a "Hub LeetCode: Trie". Es material de consulta, va al final.
+        plural = lambda k: "1 entrada" if k == 1 else "%d entradas" % k
+        mapa, hub_desde, hub_hasta, hub_n = [], None, None, 0
+        for nombre, items in self.groups.items():
+            if nombre.startswith("Hub LeetCode: "):
+                if hub_desde is None:
+                    hub_desde = num_de[nombre]
+                hub_hasta = num_de[nombre]
+                hub_n += len(items)
+            else:
+                mapa.append((nombre, plural(len(items)), nombre))
+        if hub_desde is not None:
+            mapa.append(("Hub LeetCode (referencia, del equipo)",
+                         "%s, secciones %d-%d" % (plural(hub_n), hub_desde,
+                                                  hub_hasta), ""))
+        bloques = list(GATILLOS) + [("Secciones del notebook", mapa)]
+
+        for titulo, filas in bloques:
+            # Un titulo de bloque solo no debe quedar al final de la columna.
+            if self.y - (alto_fila * 3 + 16) < MARGIN_BOTTOM:
+                if self.col == 0:
+                    self.col = 1
+                    self.y = tope
+                else:
+                    self._draw_header()
+                    self.c.showPage()
+                    self.page_num += 1
+                    self.col = 0
+                    self.y = self.content_top
+                    tope = self.y
+
+            x = self.col_x()
+            self.y -= 4
+            self.c.setFont(TEXT_FONT_BOLD, 7.8)
+            self.c.setFillColor(TEXT_BLACK)
+            self.c.drawString(x, self.y - 7, titulo)
+            self.y -= 10
+            self.c.setStrokeColor(SEPARATOR_COLOR)
+            self.c.setLineWidth(0.4)
+            self.c.line(x, self.y + 1, x + self.col_width, self.y + 1)
+            self.y -= 3
+
+            for i, (senal, tecnica, seccion) in enumerate(filas):
+                if self.y - alto_fila < MARGIN_BOTTOM:
+                    if self.col == 0:
+                        self.col = 1
+                        self.y = tope
+                    else:
+                        self._draw_header()
+                        self.c.showPage()
+                        self.page_num += 1
+                        self.col = 0
+                        self.y = self.content_top
+                        tope = self.y
+                    x = self.col_x()
+                    self.c.setFont(TEXT_FONT_ITALIC, 6.2)
+                    self.c.setFillColor(TEXT_GRAY)
+                    self.c.drawString(x, self.y - 6, titulo + "  (cont.)")
+                    self.y -= 10
+                x = self.col_x()
+
+                if i % 2 == 1:
+                    self.c.setFillColor(CODE_BG_ALT)
+                    self.c.rect(x, self.y - alto_fila + 2, self.col_width,
+                                alto_fila, fill=True, stroke=False)
+
+                base = self.y - alto_fila + 4.4
+                self.c.setFont(TEXT_FONT, 6.4)
+                self.c.setFillColor(TEXT_BLACK)
+                self.c.drawString(x + 2, base,
+                                  self.recortar(senal, TEXT_FONT, 6.4,
+                                                ancho_senal - 6))
+                self.c.setFont(TEXT_FONT_BOLD, 6.4)
+                self.c.drawString(
+                    x + ancho_senal, base,
+                    self.recortar(tecnica, TEXT_FONT_BOLD, 6.4,
+                                  self.col_width - ancho_senal - 20))
+                if seccion in num_de:
+                    self.c.setFont(TEXT_FONT, 6.4)
+                    self.c.setFillColor(TEXT_GRAY)
+                    self.c.drawRightString(x + self.col_width - 2, base,
+                                           str(num_de[seccion]))
+                self.y -= alto_fila
+
+        self._draw_header()
+        self.c.showPage()
+        self.page_num += 1
+
     def draw_cover(self, groups):
         """Portada con info del equipo y TOC con links."""
         # ---- HEADER OSCURO ----
@@ -1011,17 +1367,23 @@ class NotebookPDF:
                     advance_column()
 
                 sub_num = f"{section_num}.{idx + 1}"
-                label = f"    {sub_num}  {item['label']}"
+                # El ancho reservado para el numero es fijo (ANCHO_NUM) para que
+                # la pasada sin numeros y la pasada con numeros produzcan el
+                # mismo layout.
+                ANCHO_NUM = 18
+                # La etiqueta se recorta dejando sitio al numero. Sin esto, un
+                # nombre largo ("Minimum Moves To Clean The Classroom") se
+                # escribia ENCIMA de su propio numero de pagina y quedaban los
+                # dos ilegibles, que es justo la linea que uno necesita leer.
+                label = self.recortar(
+                    f"    {sub_num}  {item['label']}", TOC_FONT, TOC_SIZE - 1,
+                    toc_col_width - 18 - ANCHO_NUM - 6)
 
                 bookmark_key = f"sec_{section_num}_{idx}"
                 self.c.setFont(TOC_FONT, TOC_SIZE - 1)
                 self.c.setFillColor(TEXT_GRAY)
                 self.c.drawString(toc_x + 8, toc_y, label)
 
-                # Numero de pagina donde arranca este subtitulo. El ancho
-                # reservado es fijo (ANCHO_NUM) para que la pasada sin numeros
-                # y la pasada con numeros produzcan el mismo layout.
-                ANCHO_NUM = 18
                 num = self.page_of.get(bookmark_key)
                 if num:
                     self.c.setFont(TOC_FONT_BOLD, TOC_SIZE - 1)
@@ -1127,6 +1489,9 @@ class NotebookPDF:
         # Hoja de reparto, antes que todo lo demas
         self.draw_asignacion()
 
+        # Gatillos: de segunda, es la hoja que mas se consulta
+        self.draw_gatillos()
+
         # Portada/TOC
         self.draw_cover(self.groups)
 
@@ -1145,6 +1510,8 @@ class NotebookPDF:
                     item["description"],
                     item["path"],
                     bookmark_key,
+                    item.get("complejidad", ""),
+                    item.get("uso", ""),
                 )
                 if section_name == "Formulario":
                     self.draw_formulario(item["code"])

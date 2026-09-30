@@ -1,5 +1,7 @@
 // <3
 // Tema: CSES / Truco de p[i] mas y menos i
+// O: (log n) por operacion, dos segment trees de minimo
+// Uso: un arbol para a[i]+i y otro para a[i]-i; la respuesta es el menor
 // Hay que minimizar p[j] + |i - j| sobre todo j, con actualizaciones. El valor absoluto es lo que
 // estorba, y el truco es partirlo en los dos casos y meter el indice DENTRO del valor guardado:
 //     si j <= i:  p[j] + i - j  =  (p[j] - j) + i

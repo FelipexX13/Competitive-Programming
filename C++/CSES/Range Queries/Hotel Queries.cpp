@@ -1,5 +1,7 @@
 // <3
 // Tema: CSES / Segment Tree con Descenso
+// O: (log n) por consulta, con descenso por el arbol
+// Uso: ST st; st.find(x) -> primer hotel con cupo >= x, 0 si no hay
 // Segment tree de MAXIMOS, pero lo interesante no es la consulta sino el DESCENSO: para hallar el
 // primer hotel con capacidad suficiente, en vez de buscar con una consulta y despues actualizar
 // (dos O(log n) y una busqueda binaria por fuera), se baja una sola vez desde la raiz preguntando

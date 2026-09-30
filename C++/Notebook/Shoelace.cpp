@@ -1,5 +1,7 @@
 // <3
 // Tema: Geometry / Shoelace (Area de Poligono)
+// O: (n)
+// Uso: area2(p) = 2*area con signo; puntosInteriores(p) por Pick
 // Area de CUALQUIER poligono simple en O(n), convexo o concavo, dando solo sus vertices en
 // orden. Suma cruzada de cada arista con la siguiente: sum(x_i*y_{i+1} - x_{i+1}*y_i), y el
 // area es la mitad del valor absoluto.

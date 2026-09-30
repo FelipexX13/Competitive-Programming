@@ -1,5 +1,7 @@
 // <3
 // Tema: Combinatorics / Triangulos en Poligono Convexo
+// O: (1), es C(n,3)
+// Uso: c3(n) = n*(n-1)*(n-2)/6  // todo trio de un convexo es triangulo
 // Dado n, cuantos triangulos distintos salen escogiendo 3 vertices de un poligono regular
 // convexo de n lados. La respuesta es simplemente C(n,3) = n*(n-1)*(n-2)/6. Con n = 5 da 10,
 // que son exactamente los diez del dibujo del enunciado.

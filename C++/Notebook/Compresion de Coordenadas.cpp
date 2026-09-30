@@ -1,5 +1,7 @@
 // <3
 // Tema: Data Structures / Compresion de Coordenadas
+// O: (n log n) construir, (log n) consultar
+// Uso: cp.construir(vals); i = cp.comp(x); x = cp.orig(i)  // 0-indexado
 // Cuando los VALORES llegan a 1e9 pero solo hay n <= 2e5 distintos, se reemplaza cada valor por
 // su POSICION en la lista ordenada de valores distintos. Asi un arreglo indexado por valor pasa
 // de 1e9 casillas a n, y de golpe caben Fenwick, segment tree o arreglos de diferencias.

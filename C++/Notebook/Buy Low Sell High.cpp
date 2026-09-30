@@ -1,5 +1,7 @@
 // <3
 // Tema: Greedy / Buy Low Sell High (Comprar y Vender Acciones)
+// O: (n) las tres primeras, (n*K) la de K transacciones
+// Uso: maxProfit(p) -> {ganancia,{compra,venta}}; maxProfitK(p,K)
 // Precio de una accion por dia: comprar un dia y vender un dia POSTERIOR (una transaccion)
 // maximizando la ganancia. Un solo recorrido O(n), O(1) de memoria: se guarda el dia mas
 // barato visto hasta ahora (el mejor momento para haber comprado) y cada dia se prueba vender

@@ -1,5 +1,7 @@
 // <3
 // Tema: Number Theory / Factorizacion en Digitos
+// O: (log n * 8) probando divisores de 9 a 2
+// Uso: recursive(num) -> string con los digitos, o vacio si no se puede
 // Halla el menor numero cuyos digitos multiplicados dan N. La idea greedy: dividir siempre
 // por el mayor factor posible entre 9 y 2, porque usar factores grandes minimiza la cantidad
 // de digitos, y al final ordenar los digitos de menor a mayor da el numero mas chico posible

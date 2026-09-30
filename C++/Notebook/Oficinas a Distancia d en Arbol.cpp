@@ -1,5 +1,7 @@
 // <3
 // Tema: Greedy / Maximo Conjunto a Distancia d en Arbol
+// O: (n), un BFS para ordenar y un barrido de hojas a raiz
+// Uso: lee el arbol por stdin; el greedy va de las hojas hacia la raiz
 // Hay n ciudades en forma de arbol, cada una con una oficina, y hay que cerrar la MENOR cantidad
 // posible de oficinas para que cualesquiera dos de las que queden esten a distancia al menos d.
 // Cerrar lo minimo es lo mismo que dejar lo maximo, asi que esto es el maximo conjunto de

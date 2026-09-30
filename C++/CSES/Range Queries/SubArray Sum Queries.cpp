@@ -1,5 +1,7 @@
 // <3
 // Tema: CSES / Segment Tree de Maximo Subarreglo
+// O: (log n) por operacion
+// Uso: Node = {sum, pref, suff, best}; merge cruza suff izq con pref der
 // El nodo compuesto clasico, con cuatro campos: sum, pref (mejor prefijo), suff (mejor sufijo) y
 // best (el mejor subarreglo de adentro). Es Kadane metido en un segment tree, y por eso aguanta
 // actualizaciones que Kadane suelto no aguanta.

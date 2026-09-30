@@ -1,5 +1,7 @@
 // <3
 // Tema: Implementation / Lectura de Entrada
+// O: (1) por token, es E/S
+// Uso: los seis patrones de lectura: EOF, centinela, T casos, bloques, linea, n
 // Catalogo de patrones para leer entradas "raras": hasta EOF, con centinela, con T casos,
 // bloques separados por lineas en blanco, grids de caracteres, tokens con separadores
 // mixtos y enteros gigantes como string. La regla practica: si el problema NO da un T

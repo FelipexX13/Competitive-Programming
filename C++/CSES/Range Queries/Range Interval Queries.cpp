@@ -1,5 +1,7 @@
 // <3
 // Tema: CSES / Barrido Offline con Fenwick
+// O: ((n+q) log n) con barrido de eventos
+// Uso: ordenar Event por posicion y responder offline con el Fenwick
 // Contar cuantos elementos de [l,r] tienen valor en [a,b], sin actualizaciones. Es una consulta en
 // DOS dimensiones (posicion y valor), y la tecnica es bajarla a una sola con un barrido offline.
 // COMO: cada consulta se parte en dos eventos por la resta de prefijos sobre el VALOR, uno con

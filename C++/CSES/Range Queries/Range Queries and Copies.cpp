@@ -1,5 +1,7 @@
 // <3
 // Tema: CSES / Segment Tree Persistente
+// O: (log n) por operacion, (n log n) de memoria
+// Uso: raiz[k]=update(raiz[j],1,n,pos,x); query(raiz[k],1,n,l,r)  // persistente
 // Segment tree PERSISTENTE: cada actualizacion no modifica nodos, crea copias nuevas SOLO del
 // camino de la raiz a la hoja, O(log n) nodos, y todo lo demas se comparte con la version
 // anterior. Asi cada version tiene su propia raiz y se puede consultar cualquiera.

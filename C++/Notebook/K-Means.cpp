@@ -1,5 +1,7 @@
 // <3
 // Tema: Geometry / K-Means (Clustering)
+// O: (iteraciones * n * k * d)
+// Uso: kmeansOnce(p,k,rng,maxIter) -> centroides y etiquetas; correr varias veces
 // Agrupa n puntos (de cualquier dimension d) en k clusters minimizando el SSE: la suma de las
 // distancias al cuadrado de cada punto al centroide de su cluster.
 // Algoritmo de Lloyd: (1) asignar cada punto al centroide mas cercano, (2) mover cada

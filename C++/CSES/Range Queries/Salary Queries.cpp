@@ -1,5 +1,7 @@
 // <3
 // Tema: CSES / Fenwick con Compresion Offline
+// O: (log n) por operacion, sobre valores comprimidos
+// Uso: add(comp(v),+1); sum(comp(hi))-sum(comp(lo)-1)   // 1-INDEXADO
 // Fenwick sobre VALORES en vez de posiciones, para contar cuantos salarios caen en un rango. Como
 // los valores llegan a 10^9 hay que comprimirlos, y aqui esta el detalle que hace el problema:
 // las consultas se leen TODAS primero, porque los valores que van a aparecer en las actualizaciones

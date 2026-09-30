@@ -1,5 +1,7 @@
 // <3
 // Tema: CSES / Segment Tree (Minimo)
+// O: (log n) update y query, (n) build
+// Uso: st.build(1,1,n,a); st.update(1,1,n,pos,v); st.query(1,1,n,l,r)
 // Segment tree de minimos con actualizacion puntual, en O(log n) cada operacion. El nodo p cubre
 // [l,r] y sus hijos son 2p y 2p+1; por eso el arreglo se reserva de tamano 4n, que es la cota
 // segura para cualquier n (no solo potencias de 2).

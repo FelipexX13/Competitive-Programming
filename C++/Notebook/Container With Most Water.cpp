@@ -1,5 +1,7 @@
 // <3
 // Tema: Greedy / Two Pointers (Container With Most Water)
+// O: (n), dos punteros desde los extremos
+// Uso: maxArea(h) -> {area, {i, j}}
 // Paredes verticales de altura h[i] en la posicion i: elegir dos que, junto con el eje x,
 // formen el recipiente de mayor area (j - i) * min(h[i], h[j]). Fuerza bruta es O(n^2);
 // con dos punteros desde los extremos es O(n).

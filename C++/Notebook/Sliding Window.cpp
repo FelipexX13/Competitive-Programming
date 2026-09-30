@@ -1,5 +1,7 @@
 // <3
 // Tema: Greedy / Sliding Window
+// O: (n) amortizado, cada elemento entra y sale una vez
+// Uso: exige condicion monotona; con negativos NO sirve, usa prefijos + map
 // Ventana de tamano variable para hallar el subarreglo mas largo que cumple una condicion
 // monotona (suma <= K, a lo sumo K distintos, etc). Cada elemento entra y sale de la ventana
 // a lo sumo una vez, asi que el costo total es O(n) aunque haya dos ciclos anidados.

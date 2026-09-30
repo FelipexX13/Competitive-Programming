@@ -1,5 +1,7 @@
 // <3
 // Tema: String / Parentesis Balanceados (Todas las Variantes)
+// O: (n) todas las variantes
+// Uso: valido(s); validoTipos(s); parejas(s)[i] = pareja de i, o -1
 // Todo problema de parentesis sale de UNA idea: el BALANCE, +1 por cada '(' y -1 por cada ')'.
 // Una cadena es valida si y solo si el balance nunca baja de 0 y termina en 0. Las variantes de
 // abajo son esa misma idea mirada desde distintos angulos. Todas verificadas contra fuerza bruta.

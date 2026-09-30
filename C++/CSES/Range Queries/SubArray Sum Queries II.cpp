@@ -1,5 +1,7 @@
 // <3
 // Tema: CSES / Maximo Subarreglo en un Rango
+// O: (log n) por operacion
+// Uso: mismo Node de la I; aqui el merge se usa tambien en la consulta
 // El MISMO nodo de cuatro campos que "SubArray Sum Queries", con el merge identico, pero
 // respondiendo otra pregunta: alla se actualiza una posicion y se pide el mejor subarreglo de TODO
 // el arreglo (se lee la raiz), y aqui no hay actualizaciones y se pide el mejor subarreglo DENTRO

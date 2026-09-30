@@ -1,5 +1,7 @@
 // <3
 // Tema: CSES / Mo's Algorithm
+// O: ((n+q) sqrt n) con Mo
+// Uso: ordenar Query por (bloque de l, r); add(i) y remove(i) mueven la ventana
 // CUANDO USAR MO: esta es la pregunta importante, porque Mo no es la primera opcion casi nunca.
 // Antes de llegar aqui hay que descartar lo demas, en este orden:
 //   - Suma, xor o cualquier operacion con INVERSA  -> prefix sums, O(1) por consulta.

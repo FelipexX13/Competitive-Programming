@@ -1,5 +1,7 @@
 // <3
 // Tema: Implementation / Template Base
+// O: (1), es el esqueleto
+// Uso: punto de partida: fast IO, lectura de matriz, gcd/lcm, setprecision
 // Plantilla de arranque para cualquier problema: includes, alias de tipos, constantes
 // (MOD, INF, LLINF, EPS, PI), macros de recorrido (all, forn, forr, ford) y la
 // desincronizacion de cin/cout que hace la lectura casi tan rapida como scanf.

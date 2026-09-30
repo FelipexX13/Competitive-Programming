@@ -1,5 +1,7 @@
 // <3
 // Tema: Geometry / Rotating Calipers (Par Mas Lejano)
+// O: (n log n) el hull, (n) el diametro
+// Uso: h = convexHull(p); diameter(h) -> {dist^2, {P,Q}}  // dist^2, no dist
 // Par de puntos mas lejano (diametro del conjunto) en O(n log n). El par optimo siempre son
 // dos vertices del casco convexo, asi que se arma el casco y se recorre con dos punteros:
 // para cada arista (i, i+1) se avanza j mientras el triangulo (i, i+1, j) crezca en area.

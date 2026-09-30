@@ -1,5 +1,7 @@
 // <3
 // Tema: CSES / Segment Tree con Nodo Compuesto
+// O: (log n) por operacion; el Node guarda suma y mejor prefijo
+// Uso: SegmentTree st(a); st.update(1,1,n,pos,v); st.query(1,1,n,l,r)
 // Segment tree donde cada nodo guarda DOS cosas: la suma del rango y el mejor prefijo del rango.
 // Es el ejemplo mas chico de la tecnica que hace al segment tree util de verdad: si la respuesta
 // sola no se puede combinar, se guarda tambien lo que haga falta para poder combinarla.

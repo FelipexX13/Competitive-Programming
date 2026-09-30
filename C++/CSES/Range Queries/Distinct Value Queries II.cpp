@@ -1,5 +1,7 @@
 // <3
 // Tema: CSES / Segment Tree sobre Ocurrencia Anterior
+// O: (log n) por operacion
+// Uso: SegmentTree sobre el anterior-igual; Operation guarda el historial
 // Saber si en [x,y] hay valores repetidos, y la idea es preciosa: para cada posicion i se calcula
 // prev[i], la ultima posicion antes de i con el mismo valor (o 0 si no hay). Entonces el rango
 // [x,y] tiene un repetido si y solo si existe algun i en [x,y] con prev[i] >= x.

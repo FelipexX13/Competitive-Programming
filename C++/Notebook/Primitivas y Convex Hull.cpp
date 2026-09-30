@@ -1,5 +1,7 @@
 // <3
 // Tema: Geometry / Primitivas y Convex Hull
+// O: (n log n) el hull, (1) las primitivas
+// Uso: cross(a,b,c)>0 izquierda; convexHull(p) antihorario; polygonArea(P)
 // Base de todo problema geometrico: struct Pt con operadores, producto punto y producto cruz.
 // El cruz es la herramienta central: su signo dice si tres puntos giran a la izquierda,
 // a la derecha o son colineales, y con eso se resuelve casi todo. Nunca comparar doubles con

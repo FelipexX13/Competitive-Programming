@@ -1,5 +1,7 @@
 // <3
 // Tema: Greedy / Huffman
+// O: (n log n) con priority_queue
+// Uso: lee frecuencias por stdin; el costo es la suma de las fusiones
 // Costo minimo para combinar N elementos de a dos, donde cada combinacion cuesta la suma de
 // los dos elementos y el resultado vuelve a la mesa. Aparece disfrazado como "unir cuerdas",
 // "mezclar archivos ordenados" o "juntar montones de piedras".

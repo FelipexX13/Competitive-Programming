@@ -1,5 +1,7 @@
 // <3
 // Tema: Number Theory / Modulo de Entero Gigante
+// O: (largo de la cadena)
+// Uso: modString(P,N) con P el numero como string y N el modulo
 // Cuando el numero de entrada tiene miles de digitos no cabe en long long, asi que se lee
 // como string y se calcula el resto digito por digito con la regla de Horner: se arrastra
 // el resto parcial y en cada paso se hace rem = (rem*10 + digito) % N. Como rem siempre es

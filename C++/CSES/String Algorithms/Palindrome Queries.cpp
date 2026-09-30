@@ -1,5 +1,7 @@
 // <3
 // Tema: CSES / Hashing Doble con Segment Tree
+// O: (log n) por operacion, hashing doble en segment tree
+// Uso: un arbol con la cadena y otro con la invertida; palindromo si coinciden
 // Consultas de "el tramo [l,r] es palindromo?" sobre una cadena que ademas CAMBIA: hay
 // actualizaciones de un caracter mezcladas con las preguntas.
 // LA IDEA: un segment tree donde cada nodo guarda DOS hashes del tramo, el de izquierda a derecha

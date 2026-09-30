@@ -1,5 +1,7 @@
 // <3
 // Tema: CSES / Fenwick Tree (BIT)
+// O: (log n) add y query, (n log n) construir
+// Uso: Fenwick fw(n); fw.add(i,x); fw.query(l,r)   // 1-INDEXADO
 // Fenwick (o BIT): sumas de prefijo con actualizacion puntual, ambas en O(log n), en ~10 lineas.
 // Toda la magia esta en i & -i, que aisla el bit mas bajo encendido: sumando ese valor se sube a
 // los padres (add) y restandolo se baja recorriendo bloques (sum).

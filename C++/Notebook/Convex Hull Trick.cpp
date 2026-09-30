@@ -1,5 +1,7 @@
 // <3
 // Tema: Dynamic Programming / Convex Hull Trick
+// O: (n) amortizado, add y query juntos
+// Uso: cht.add(m,b) con m DECRECIENTE; cht.query(x) con x CRECIENTE
 // Optimiza DPs de la forma dp[i] = min sobre j de (m[j]*x[i] + b[j]), es decir, cuando cada
 // estado anterior aporta una recta y hay que evaluar la envolvente inferior en x[i]. Baja de
 // O(n^2) a O(n) amortizado.

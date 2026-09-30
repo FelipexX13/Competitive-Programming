@@ -1,5 +1,7 @@
 // <3
 // Tema: Math / Numeros Romanos
+// O: (1), tabla fija de 13 valores
+// Uso: toRoman(n) con 1 <= n <= 3999
 // Convierte un entero a numeral romano con un greedy sobre una tabla de valores ordenada de
 // mayor a menor. El truco esta en incluir en la tabla los seis casos sustractivos (CM, CD,
 // XC, XL, IX, IV) como si fueran simbolos propios: asi el greedy de "restar el mayor valor

@@ -1,5 +1,7 @@
 // <3
 // Tema: Dynamic Programming / Distancia de Damerau-Levenshtein
+// O: (n*m) tiempo y memoria
+// Uso: lee dos cadenas por stdin; la DP esta en main, extraer el doble for
 // Minimo numero de operaciones para convertir a en b, con CUATRO operaciones de costo 1:
 // insertar, borrar, sustituir e intercambiar dos caracteres ADYACENTES. Es la distancia de
 // edicion de toda la vida mas la transposicion, que es justo lo que modela los errores de tipeo.

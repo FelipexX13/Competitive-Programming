@@ -1,5 +1,7 @@
 // <3
 // Tema: Game Theory / Misere Nim y Grundy Acotado
+// O: (n) misere_nim, (1) grundy_bounded
+// Uso: misere_nim(pilas) -> gana el primero?; grundy_bounded(n,k) = n % (k+1)
 // Dos variantes del Nim que NO se resuelven con el XOR normal (ese caso ya esta cubierto en
 // "Marbles" con Sprague-Grundy). Misere Nim invierte la condicion de victoria: pierde quien
 // hace el ultimo movimiento, y la regla cambia solo en el caso degenerado en que todos los

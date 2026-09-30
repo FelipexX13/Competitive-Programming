@@ -1,5 +1,7 @@
 // <3
 // Tema: Data Structures / Hash Map y Ordenamiento
+// O: (n log n) por el sort del volcado
+// Uso: mp cuenta; luego vector<pair<string,int>> v(mp.begin(), mp.end())
 // Diferencia clave: unordered_map es tabla hash, O(1) promedio pero SIN orden; map es arbol
 // rojo-negro, O(log n) pero siempre ordenado por clave. Ninguno de los dos se puede ordenar
 // por el valor (second) directamente, asi que el patron obligado es volcarlo a un

@@ -1,5 +1,7 @@
 // <3
 // Tema: Geometry / Area Circulo-Poligono
+// O: (n) por circulo, con n = lados del poligono
+// Uso: circleRectangleArea(cx,cy,r,w,h); triangleCircleArea(p,q,r)
 // Area de la interseccion entre un circulo y un poligono, usando el truco de sumar areas con
 // signo arista por arista: se traslada todo para dejar el circulo en el origen y se recorre el
 // poligono sumando triangleCircleArea de cada arista, de modo que las contribuciones de fuera

@@ -1,5 +1,7 @@
 // <3
 // Tema: Dynamic Programming / Digit DP
+// O: (digitos * estados * 10), aqui 20*200*2*10
+// Uso: solve_digitdp(B,d) - solve_digitdp(A-1,d)  // rango [A,B]
 // Cuenta cuantos numeros de 0 a X cumplen una propiedad definida sobre sus digitos (aqui:
 // que la suma de digitos sea divisible por D). Se recorre el numero digito por digito
 // llevando dos cosas en el estado: el acumulado de la propiedad (s) y el flag tight, que

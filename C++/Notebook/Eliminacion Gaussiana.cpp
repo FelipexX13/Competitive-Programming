@@ -1,5 +1,7 @@
 // <3
 // Tema: Math / Eliminacion Gaussiana (mod p)
+// O: (n^2 * m) en modulo p primo
+// Uso: gauss(a,m,sol,incompatible,p) -> grados de libertad; determinante(a,p)
 // Resuelve sistemas lineales A x = b sobre Z_p con p PRIMO, que es lo que aparece cuando el
 // problema pide contar soluciones de un sistema, resolver ecuaciones modulares, o sacar el
 // determinante y el rango de una matriz modulo un primo.

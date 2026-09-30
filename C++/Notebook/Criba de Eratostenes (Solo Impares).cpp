@@ -1,5 +1,7 @@
 // <3
 // Tema: Number Theory / Criba de Eratostenes (Solo Impares)
+// O: (n log log n), memoria n/2 bits
+// Uso: vector<int> p = criba(n);  // devuelve los primos hasta n
 // La criba que uno deberia escribir por defecto: como el 2 es el unico primo par, no vale la pena
 // reservar ni recorrer las posiciones pares. El arreglo solo guarda los impares, con el indice k
 // representando al numero 2k+1, asi que ocupa la MITAD de memoria y hace la mitad del trabajo.

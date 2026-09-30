@@ -1,5 +1,7 @@
 // <3
 // Tema: Greedy / Interval Scheduling
+// O: (n log n), ordenar por FIN y tomar el que no choque
+// Uso: ordenar por v[i].second y avanzar mientras inicio >= ultimo_fin
 // Maximo numero de intervalos que se pueden elegir sin que se solapen (tareas con hora de
 // inicio y fin, salones, reservas). Es el greedy clasico y no debe confundirse con la DP de
 // intervalos de "Yuyuan Market", que optimiza otra cosa (cantidad y luego costo).

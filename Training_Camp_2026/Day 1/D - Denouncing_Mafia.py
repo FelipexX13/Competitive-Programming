@@ -1,3 +1,14 @@
+# <3
+# Tema: Graph / DFS
+# Resuelve "Denouncing Mafia" (Maratona de Programacao da SBC 2019, Day 1 problem D): un arbol
+# enraizado de N miembros de mafia (el 1 es el jefe, cada quien tiene un superior directo) donde
+# interrogar a alguien obliga a subir denunciando a su superior hasta llegar al jefe; con un
+# vidente que solo puede senalar a K miembros iniciales, se busca el maximo numero de mafiosos
+# que se pueden arrestar en total. DFS que para cada nodo se queda con la rama de mayor
+# profundidad para "seguir gratis" hacia la raiz, y registra el costo extra (diferencia de
+# profundidad) de las demas ramas como candidatas; al final toma las K ramas de mayor costo y
+# las suma.
+
 import copy
 import sys
 

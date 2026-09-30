@@ -163,13 +163,18 @@ SEPARATOR_COLOR = HexColor("#cccccc")
 def scan_files(root: Path):
     """Busca archivos de codigo y extrae tema, subtema, descripcion y contenido.
 
-    Se mira C++/ y JAVA/ (codigo propio) y las tres carpetas que vienen del
-    subtree del Hub del equipo: leetcode/, Training_Camp_2026/ y RPC/.
-    La lista es explicita para no barrer la raiz entera y que un .py suelto
-    (un script de prueba, por ejemplo) no se cuele al notebook como
-    "Uncategorized".
+    Se mira C++/ y JAVA/ (codigo propio) y dos carpetas que vienen del subtree
+    del Hub del equipo: leetcode/ y RPC/.
+
+    OJO con Training_Camp_2026/ de la raiz: NO entra. Es el mismo material que
+    C++/Training_Camp_2026/, archivo por archivo (los 108), asi que cada
+    problema del camp salia DOS VECES en el indice. La copia que manda es la de
+    C++/, que es la que se mantiene a mano; la de la raiz es un reflejo del Hub.
+
+    La lista es explicita para no barrer la raiz entera y que un .py suelto (un
+    script de prueba, por ejemplo) no se cuele al notebook como "Uncategorized".
     """
-    CARPETAS = ("C++", "JAVA", "leetcode", "Training_Camp_2026", "RPC")
+    CARPETAS = ("C++", "JAVA", "leetcode", "RPC")
 
     files = []
     for ext in EXTENSIONS:

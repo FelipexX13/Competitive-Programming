@@ -1,3 +1,11 @@
+# <3
+# Tema: LeetCode Hub / Recorrido de Matriz
+# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+#
+# LeetCode 463 "Island Perimeter": perimetro de la isla dibujada con 1 en una matriz.
+# Tecnica: por cada celda de tierra se cuentan sus vecinos de tierra y se aporta 4 - vecinos.
+# No hace falta DFS ni marcar visitados, es un solo barrido.
+
 class Solution(object):
     def islandPerimeter(self, grid):
         n = len(grid)

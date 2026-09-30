@@ -1,3 +1,13 @@
+# <3
+# Tema: LeetCode Hub / Elemento Mayoritario
+# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+#
+# LeetCode 169 "Majority Element": el que aparece mas de n/2 veces.
+# Tecnica: diccionario de frecuencias y se toma el maximo. O(n) tiempo, O(n) memoria.
+# El algoritmo de Boyer-Moore lo hace con O(1) de memoria: se lleva un candidato y un contador,
+# se suma si coincide y se resta si no; cuando llega a 0 se cambia de candidato. Vale la pena
+# conocerlo, aparece en maraton.
+
 class Solution:
     def majorityElement(self, nums: List[int]) -> int:
         l = {}

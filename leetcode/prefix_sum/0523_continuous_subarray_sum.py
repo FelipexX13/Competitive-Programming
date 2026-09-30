@@ -1,3 +1,14 @@
+# <3
+# Tema: LeetCode Hub / Residuos de Prefijos
+# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+#
+# LeetCode 523 "Continuous Subarray Sum": decir si hay un subarreglo de largo al menos 2 con
+# suma multiplo de k.
+# Tecnica: la suma de [i+1..j] es multiplo de k si los prefijos i y j dejan el MISMO residuo.
+# Se guarda en un diccionario el residuo -> primera posicion donde aparecio, y se exige que la
+# distancia sea al menos 2. El dic arranca con {0: -1} para cubrir el prefijo vacio.
+# Guardar solo la PRIMERA aparicion es lo que maximiza la distancia.
+
 class Solution:
     def checkSubarraySum(self, nums: List[int], k: int) -> bool:
         if(len(nums)==1):

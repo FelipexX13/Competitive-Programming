@@ -1,3 +1,15 @@
+# <3
+# Tema: LeetCode Hub / Pila Monotona (version enredada)
+# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+#
+# LeetCode 84 "Largest Rectangle in Histogram": el rectangulo de area maxima bajo el histograma.
+# Tecnica del codigo: dos pasadas con pila guardando para cada altura los rangos donde sobrevive,
+# y despues cruza los rangos en diccionarios.
+# OJO, ESTE ARCHIVO NO SIRVE DE PLANTILLA: tiene un caso cableado, if heights[0] == 7303, que
+# responde otra cosa para pasar un caso de prueba especifico, y deja prints adentro del ciclo.
+# Lo correcto es la pila monotona de una sola pasada: se mantiene la pila con alturas crecientes
+# y al sacar una se calcula su area con el ancho hasta el indice actual. Son 12 lineas.
+
 from collections import Counter
 class Solution:
     def largestRectangleArea(self, heights: List[int]) -> int:

@@ -1,3 +1,14 @@
+# <3
+# Tema: LeetCode Hub / Insertion Sort en Lista Ligada
+# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+#
+# LeetCode 147 "Insertion Sort List": ordenar una lista ligada con insercion.
+# Tecnica: se va armando una lista ordenada aparte y cada nodo se inserta buscando su lugar desde
+# el inicio. Guardar siguiente ANTES de mover actual.next es lo unico delicado, si no se pierde
+# el resto de la lista.
+# Es O(n^2). En lista ligada el que si sirve en serio es merge sort, que baja a O(n log n) sin
+# necesitar acceso por indice.
+
 class Solution:
     def insertionSortList(self, head: ListNode | None) -> ListNode | None:
 

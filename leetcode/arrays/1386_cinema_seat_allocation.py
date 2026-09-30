@@ -1,3 +1,14 @@
+# <3
+# Tema: LeetCode Hub / Grupos de Sillas por Fila
+# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+#
+# LeetCode 1386 "Cinema Seat Allocation": maximo de familias de 4 que se pueden sentar juntas, con
+# algunas sillas reservadas.
+# Tecnica: en cada fila solo hay tres bloques posibles de 4 sillas contiguas sin cruzar el pasillo,
+# 2-5, 4-7 y 6-9, y los bloques 1 y 3 son los unicos que caben a la vez. Se revisa cada fila con
+# reservas y las n - f filas vacias aportan 2 cada una.
+# La clave es no recorrer las n filas (n llega a 10^9), solo las que aparecen en la lista.
+
 class Solution:
     def maxNumberOfFamilies(self, n: int, reservedSeats: List[List[int]]) -> int:
         filas = {}

@@ -1,3 +1,14 @@
+# <3
+# Tema: LeetCode Hub / DSU sobre Parejas
+# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+#
+# LeetCode 765 "Couples Holding Hands": intercambios minimos para que cada pareja quede junta.
+# Tecnica: se piensa por SILLAS, no por personas. Cada par de sillas (0,1), (2,3), ... es un nodo,
+# y si las dos personas sentadas ahi son de parejas distintas se unen los dos nodos con DSU. La
+# respuesta es la suma de (tamano del grupo - 1) sobre todos los grupos.
+# Un ciclo de k parejas mal sentadas se arregla con k-1 intercambios, y eso es lo que se esta
+# sumando.
+
 from collections import defaultdict
 class Solution:
     def minSwapsCouples(self, row: List[int]) -> int:

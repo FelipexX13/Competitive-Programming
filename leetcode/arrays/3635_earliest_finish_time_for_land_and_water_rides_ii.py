@@ -1,3 +1,15 @@
+# <3
+# Tema: LeetCode Hub / Fijar el Mejor Primero
+# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+#
+# LeetCode 3635 "Earliest Finish Time for Land and Water Rides II": lo mismo que el 3633, pero con
+# arreglos grandes.
+# Tecnica: no hace falta probar todos los pares. Para la primera atraccion solo interesa la que
+# termina mas temprano (el minimo de inicio + duracion), porque llegar antes a la segunda nunca es
+# peor. Con eso quedan dos barridos lineales, uno por cada orden.
+# Esa reduccion de O(n*m) a O(n+m) es la diferencia entre la version I y la II.
+# OJO: deja un print(val) adentro del ciclo.
+
 class Solution:
     def earliestFinishTime(self, landStartTime: List[int], landDuration: List[int], waterStartTime: List[int], waterDuration: List[int]) -> int:
         res1 = [x + y for x, y in zip(landStartTime, landDuration)]

@@ -1,3 +1,12 @@
+# <3
+# Tema: LeetCode Hub / DFS con Visitados
+# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+#
+# LeetCode 1306 "Jump Game III": desde start se salta arr[i] a izquierda o derecha; llegar a un 0.
+# Tecnica: DFS marcando visitados. Cada posicion tiene dos salidas, i+arr[i] e i-arr[i], asi que
+# es un grafo y el set de visitados es lo que evita dar vueltas.
+# Con BFS sale igual y ademas da la cantidad minima de saltos si la pidieran.
+
 class Solution:
     
     def numeri(self, nums, start, l, tam):

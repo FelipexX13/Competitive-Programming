@@ -1,3 +1,15 @@
+# <3
+# Tema: LeetCode Hub / DFS que Sube Informacion
+# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+#
+# LeetCode 2265 "Count Nodes Equal to Average of Subtree": cuantos nodos valen exactamente el
+# promedio entero de su subarbol.
+# Tecnica: DFS que devuelve DOS valores hacia arriba, la suma y la cantidad de nodos del
+# subarbol. Con eso el promedio sale en el padre sin volver a recorrer nada. Es el patron
+# tipico de DFS que retorna un resumen.
+# OJO: usa -1 como marca de no hay hijo y un contador global. Con valores negativos en el
+# arbol la marca se confundiria con un valor real.
+
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):

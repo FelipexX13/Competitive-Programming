@@ -1,3 +1,14 @@
+# <3
+# Tema: LeetCode Hub / Dos Ventanas sin Traslape
+# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+#
+# LeetCode 1477 "Find Two Non-overlapping Sub-arrays Each With Target Sum": dos subarreglos que
+# sumen target cada uno y que juntos sean lo mas cortos posible.
+# Tecnica: primero una ventana deslizante saca TODOS los subarreglos con suma target (los valores
+# son positivos, por eso la ventana funciona). Despues se ordenan por donde terminan y con un
+# puntero se va guardando el mas corto que termina ANTES de que empiece el actual.
+# Ese mejor-hasta-ahora es lo que evita comparar todos los pares.
+
 class Solution:
     def minSumOfLengths(self, arr: list[int], target: int) -> int:
         rango = {}

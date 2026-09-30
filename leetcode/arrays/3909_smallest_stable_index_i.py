@@ -1,3 +1,13 @@
+# <3
+# Tema: LeetCode Hub / Maximo por Prefijo y Minimo por Sufijo
+# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+#
+# LeetCode 3909 "Smallest Stable Index I": la version chica del 3904.
+# Tecnica: la misma, pero guardando los dos arreglos completos, maximos por prefijo y minimos por
+# sufijo, y comparandolos posicion por posicion. Se lee mas facil que la version II.
+# OJO: usa insert(0, ...) para llenar el arreglo de minimos, que es O(n) cada vez y deja el total
+# en O(n^2). Con append y luego [::-1] queda lineal.
+
 class Solution:
     def firstStableIndex(self, nums: list[int], k: int) -> int:
         mayor = 0

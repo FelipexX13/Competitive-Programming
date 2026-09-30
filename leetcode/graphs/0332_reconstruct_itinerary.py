@@ -1,3 +1,14 @@
+# <3
+# Tema: LeetCode Hub / Camino Euleriano (Hierholzer)
+# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+#
+# LeetCode 332 "Reconstruct Itinerary": usar todos los tiquetes una sola vez, empezando en JFK y
+# escogiendo el itinerario lexicograficamente menor.
+# Tecnica: Hierholzer iterativo. Se avanza consumiendo aristas hasta quedarse atascado; el nodo
+# donde uno se atasca se fija al camino y se retrocede. Al final se INVIERTE el camino.
+# Ordenar los destinos y sacarlos en orden es lo que garantiza el menor lexicografico.
+# OJO: deja un diccionario itinerarios cableado que no se usa para nada.
+
 from collections import defaultdict
 
 class Solution:
@@ -14,7 +25,7 @@ class Solution:
                     siguiente_nodo = grafo_copia[nodo_actual].pop()
                     pila.append(siguiente_nodo)
                 else:
-                    # Si no hay más aristas salientes, fijamos el nodo en el camino
+                    # Si no hay mas aristas salientes, fijamos el nodo en el camino
                     camino.append(pila.pop())
 
             camino.reverse()

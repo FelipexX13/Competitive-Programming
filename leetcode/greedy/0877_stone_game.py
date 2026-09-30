@@ -1,3 +1,14 @@
+# <3
+# Tema: LeetCode Hub / Greedy que Acierta por Casualidad
+# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+#
+# LeetCode 877 "Stone Game": dos jugadores toman de los extremos de una fila de montones y gana
+# quien junte mas piedras.
+# Tecnica del codigo: ordena los montones y los reparte alternando de mayor a menor.
+# OJO: eso NO es el juego, en el juego solo se puede tomar de los EXTREMOS. Pasa porque con
+# una cantidad par de montones el primero siempre gana y la respuesta es True siempre, como
+# dice el comentario del final. Sirve de ejemplo de que pasar no es lo mismo que estar bien.
+
 class Solution:
     def stoneGame(self, piles: List[int]) -> bool:
         piles = sorted(piles)

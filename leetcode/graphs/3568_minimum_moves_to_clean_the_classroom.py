@@ -1,3 +1,18 @@
+# <3
+# Tema: LeetCode Hub / Dijkstra sobre (nodo, bitmask) con Poda de Pareto
+# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+#
+# LeetCode 3568 "Minimum Moves to Clean the Classroom": recoger toda la basura L de una cuadricula
+# con energia limitada, recargando en las R.
+# Tecnica: el estado es (posicion especial, mascara de basura recogida) y se explora con heap,
+# o sea Dijkstra sobre estados. Primero comprime la cuadricula a un grafo solo entre las celdas
+# que importan (S, L y R) con BFS, y despues corre el Dijkstra sobre ese grafo chico.
+# Lo mas interesante: la energia NO entra en la llave del estado, se maneja con PODA DE PARETO.
+# Un estado se descarta si ya existe otro con menos o iguales pasos Y mas o igual energia. Eso
+# es lo que hace que el espacio de estados no explote.
+# Es el archivo mas avanzado de esta carpeta y el patron (comprimir a nodos clave + bitmask +
+# frente de Pareto) es directamente util en problemas de maraton.
+
 from collections import deque
 from heapq import heappush, heappop
 from typing import List
@@ -38,7 +53,7 @@ class Solution:
             return 0
 
         # ---------------------------------------------------------
-        # 2. Posición -> nodo
+        # 2. Posicion -> nodo
         # ---------------------------------------------------------
 
         indice_especial = {}
@@ -213,7 +228,7 @@ class Solution:
                 nueva_clave = (siguiente, nuevo_mask)
 
                 # -------------------------------------------------
-                # ¿El nuevo estado está dominado?
+                # El nuevo estado esta dominado?
                 # -------------------------------------------------
 
                 estados = frontera.get(nueva_clave, [])
@@ -233,7 +248,7 @@ class Solution:
                     continue
 
                 # -------------------------------------------------
-                # El nuevo estado elimina estados que él domina
+                # El nuevo estado elimina estados que el domina
                 # -------------------------------------------------
 
                 nuevos_estados = []

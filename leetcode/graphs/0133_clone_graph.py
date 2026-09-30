@@ -1,3 +1,13 @@
+# <3
+# Tema: LeetCode Hub / Clonar Grafo con Diccionario
+# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+#
+# LeetCode 133 "Clone Graph": copia profunda de un grafo no dirigido.
+# Tecnica: DFS con un diccionario original -> copia. Antes de recorrer los vecinos se registra la
+# copia en el diccionario, y ese orden es lo que evita el ciclo infinito cuando el grafo tiene
+# ciclos. Si el nodo ya esta en el mapa se devuelve la copia que ya existia.
+# Es el mismo patron que pide LeetCode 138 (lista con puntero random).
+
 class Solution:
     def cloneGraph(self, node: Optional['Node']) -> Optional['Node']:
 

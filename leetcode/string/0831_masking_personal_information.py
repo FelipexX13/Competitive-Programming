@@ -1,3 +1,15 @@
+# <3
+# Tema: LeetCode Hub / Enmascarar por Formato
+# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+#
+# LeetCode 831 "Masking Personal Information": tapar un correo o un telefono segun reglas fijas.
+# Tecnica: primero decide si es telefono o correo intentando convertir el ultimo caracter a
+# entero; si falla, es correo. Para el telefono se sacan solo los digitos y el prefijo de asteriscos
+# depende de cuantos queden (10, 11, 12 o 13). Para el correo se deja la primera letra, cinco
+# asteriscos, la ultima letra del nombre y el dominio en minusculas.
+# Es puro manejo de casos; lo que se lleva uno es la idea de detectar el formato por el ultimo
+# caracter en vez de buscar la arroba.
+
 class Solution:
     def maskPII(self, s: str) -> str:
         #NUMERO

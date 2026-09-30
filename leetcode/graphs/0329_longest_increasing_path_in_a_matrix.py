@@ -1,3 +1,12 @@
+# <3
+# Tema: LeetCode Hub / DFS con Memoizacion en Matriz
+# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+#
+# LeetCode 329 "Longest Increasing Path in a Matrix": el camino mas largo que siempre sube.
+# Tecnica: DFS con memoizacion. Como solo se puede ir a celdas MAYORES, el grafo no tiene ciclos
+# y se puede memoizar sin peligro: dicc[(i,j)] guarda el camino mas largo que arranca ahi.
+# Esa es la idea clave, la condicion de crecer es la que vuelve el grafo un DAG.
+
 from collections import defaultdict
 
 class Solution:

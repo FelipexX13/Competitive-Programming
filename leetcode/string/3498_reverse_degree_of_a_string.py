@@ -1,3 +1,12 @@
+# <3
+# Tema: LeetCode Hub / Suma Ponderada
+# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+#
+# LeetCode 3498 "Reverse Degree of a String": sumar, por cada letra, su posicion invertida en el
+# alfabeto (a vale 26, z vale 1) por su posicion en la cadena.
+# Tecnica: diccionario con los 26 valores y un solo ciclo. El valor invertido tambien sale con
+# 27 - (ord(c) - ord('a') + 1), sin escribir la tabla.
+
 class Solution:
     def reverseDegree(self, s: str) -> int:
         le = {

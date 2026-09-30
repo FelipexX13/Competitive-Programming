@@ -1,3 +1,13 @@
+# <3
+# Tema: LeetCode Hub / Prefijos Pares e Impares por Separado
+# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+#
+# LeetCode 1664 "Ways to Make a Fair Array": cuantos indices se pueden borrar para que la suma
+# de posiciones pares quede igual a la de impares.
+# Tecnica: DOS arreglos de prefijos, uno de las posiciones pares y otro de las impares. Al
+# borrar un indice, todo lo que esta a la derecha CAMBIA de paridad, asi que la suma par nueva
+# es (par hasta i) + (impar desde i+1 hasta el final). Ese cruce es todo el problema.
+
 class Solution:
     def waysToMakeFair(self, nums: List[int]) -> int:
         par = [0]

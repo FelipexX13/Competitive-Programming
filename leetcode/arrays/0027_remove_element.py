@@ -1,3 +1,13 @@
+# <3
+# Tema: LeetCode Hub / Filtrar en el Sitio
+# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+#
+# LeetCode 27 "Remove Element": quitar todas las apariciones de val y devolver cuantos quedaron.
+# Tecnica: remove() en un while hasta que no quede ninguno, y despues rellena el final.
+# OJO: rellena con el string "_" en un arreglo de enteros. Funciona porque el juez solo revisa los
+# primeros k elementos, pero es un tipo mezclado. Lo limpio es el puntero de escritura: se recorre
+# el arreglo y se copia hacia adelante solo lo que no es val.
+
 class Solution:
     def removeElement(self, nums: List[int], val: int) -> int:
         cont2 = 0

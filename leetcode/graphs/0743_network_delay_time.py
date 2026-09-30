@@ -1,3 +1,13 @@
+# <3
+# Tema: LeetCode Hub / Dijkstra
+# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+#
+# LeetCode 743 "Network Delay Time": cuanto tarda una senal en llegar a todos los nodos.
+# Tecnica: Dijkstra con heap. La respuesta es la MAYOR de las distancias minimas; si alguna quedo
+# en infinito, hay nodos inalcanzables y se responde -1.
+# El if dist_actual > distancias[nodo] es la poda que evita reprocesar entradas viejas del heap,
+# y es lo que hace que Dijkstra con heap sea O(m log n) sin necesitar decrease-key.
+
 import heapq
 from collections import defaultdict
 

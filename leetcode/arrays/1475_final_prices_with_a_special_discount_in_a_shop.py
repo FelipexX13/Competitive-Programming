@@ -1,3 +1,13 @@
+# <3
+# Tema: LeetCode Hub / Siguiente Menor o Igual
+# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+#
+# LeetCode 1475 "Final Prices With a Special Discount in a Shop": a cada precio se le resta el
+# primer precio posterior que sea menor o igual.
+# Tecnica: busqueda hacia adelante, O(n^2). Con n hasta 500 pasa.
+# Es otra vez el patron de pila monotona (siguiente menor), que lo dejaria en O(n). Vale la pena
+# reconocerlo: cuando el enunciado dice el PRIMER elemento a la derecha que cumple algo, es pila.
+
 class Solution:
     def finalPrices(self, prices: List[int]) -> List[int]:
         fi = []

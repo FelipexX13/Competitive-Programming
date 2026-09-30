@@ -1,3 +1,14 @@
+# <3
+# Tema: LeetCode Hub / Prefijos y Sufijos
+# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+#
+# LeetCode 1658 "Minimum Operations to Reduce X to Zero": se quitan elementos solo de los
+# extremos hasta sumar exactamente x; minimo de operaciones.
+# Tecnica: lo que se quita es un PREFIJO mas un SUFIJO. Se arman las dos sumas acumuladas y
+# dos diccionarios suma -> primera posicion, y para cada prefijo se busca el sufijo que
+# complete x. La condicion i + pos + 2 <= n evita que se traslapen.
+# La otra forma es sliding window sobre el subarreglo del medio, que debe sumar total - x.
+
 class Solution:
     def minOperations(self, nums: list[int], x: int) -> int:
         suma1 = []

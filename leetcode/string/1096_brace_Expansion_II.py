@@ -1,3 +1,13 @@
+# <3
+# Tema: LeetCode Hub / Expansion Recursiva de Llaves
+# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+#
+# LeetCode 1096 "Brace Expansion II": expandir una expresion con llaves y comas anidadas.
+# Tecnica: se busca la PRIMERA llave que cierra y su llave que abre mas cercana hacia atras
+# (rfind). Eso aisla el grupo mas interno, se reemplaza por cada opcion separada por comas y se
+# vuelve a llamar. El set junta y quita duplicados y el sorted ordena al final.
+# Atacar siempre el grupo mas interno es lo que hace que la recursion sea tan corta.
+
 class Solution:
     def braceExpansionII(self, expression):
         ans = set()

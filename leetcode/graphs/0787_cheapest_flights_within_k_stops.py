@@ -1,3 +1,13 @@
+# <3
+# Tema: LeetCode Hub / DP con Estado (nodo, saltos)
+# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+#
+# LeetCode 787 "Cheapest Flights Within K Stops": el vuelo mas barato con a lo mas k escalas.
+# Tecnica: no es Dijkstra puro porque el limite de escalas mete una dimension mas. El estado es
+# (nodo actual, vuelos restantes) y se memoiza con @cache. Ese decorador ahorra escribir la tabla
+# a mano y vale la pena recordarlo en Python.
+# La otra forma es Bellman-Ford limitado a k+1 rondas, que es la version clasica.
+
 from collections import defaultdict
 from functools import cache
 

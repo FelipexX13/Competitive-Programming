@@ -1,3 +1,15 @@
+# <3
+# Tema: LeetCode Hub / Busqueda en Arreglo Rotado
+# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+#
+# LeetCode 33 "Search in Rotated Sorted Array": buscar un valor en un arreglo ordenado que fue
+# rotado.
+# Tecnica del codigo: binaria con casos, y cuando no puede decidir de que lado esta el objetivo
+# encoge los dos extremos de uno en uno.
+# OJO: ese ini += 1 / fin -= 1 hace que en el peor caso sea O(n), no O(log n). Ademas deja un
+# print adentro del ciclo. La forma limpia: mirar si nums[ini] <= nums[m] para saber cual mitad
+# esta ordenada, y ahi decidir con un solo if.
+
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
         ini = 0

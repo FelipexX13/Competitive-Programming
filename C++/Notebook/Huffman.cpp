@@ -1,14 +1,15 @@
 // <3
 // Tema: Greedy / Huffman
+// Resumen: Costo minimo para combinar N elementos de a dos
 // O: (n log n) con priority_queue
 // Uso: lee frecuencias por stdin; el costo es la suma de las fusiones
-// Costo minimo para combinar N elementos de a dos, donde cada combinacion cuesta la suma de
-// los dos elementos y el resultado vuelve a la mesa. Aparece disfrazado como "unir cuerdas",
-// "mezclar archivos ordenados" o "juntar montones de piedras".
-// El greedy correcto es siempre combinar los dos MAS PEQUENOS disponibles, porque cada
-// elemento paga su valor una vez por cada combinacion en la que participa, y los mas grandes
-// deben participar en la menor cantidad posible. Un priority_queue de minimo lo resuelve en
-// O(n log n). Cuidado: el acumulador debe ser long long, la suma crece rapido.
+// Detalle: Costo minimo para combinar N elementos de a dos, donde cada combinacion cuesta la
+// suma de los dos elementos y el resultado vuelve a la mesa. Aparece disfrazado como "unir
+// cuerdas", "mezclar archivos ordenados" o "juntar montones de piedras". El greedy correcto es
+// siempre combinar los dos MAS PEQUENOS disponibles, porque cada elemento paga su valor una vez
+// por cada combinacion en la que participa, y los mas grandes deben participar en la menor
+// cantidad posible. Un priority_queue de minimo lo resuelve en O(n log n). Cuidado: el
+// acumulador debe ser long long, la suma crece rapido.
 
 #include <bits/stdc++.h>
 

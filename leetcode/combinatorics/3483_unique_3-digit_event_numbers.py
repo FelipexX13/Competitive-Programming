@@ -1,12 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Conteo con Frecuencias
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3483 "Unique 3-Digit Event Numbers": cuantos numeros distintos de 3 cifras se pueden
-# armar con los digitos dados, que sean pares y no empiecen por 0.
-# Tecnica: arreglo de frecuencias y tres ciclos, uno por posicion, restando y devolviendo la
-# frecuencia al entrar y salir (backtracking barato). El set al final quita los repetidos.
-# Este mismo problema esta resuelto en C++ en la carpeta LeetCode del notebook.
+# armar con los digitos dados, que sean pares y no empiecen por 0. Tecnica: arreglo de
+# frecuencias y tres ciclos, uno por posicion, restando y devolviendo la frecuencia al entrar y
+# salir (backtracking barato). El set al final quita los repetidos. Este mismo problema esta
+# resuelto en C++ en la carpeta LeetCode del notebook.
 
 class Solution:
     def totalNumbers(self, digits: List[int]) -> int:

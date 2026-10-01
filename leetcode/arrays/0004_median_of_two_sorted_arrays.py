@@ -1,12 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Avanzar hasta la Mitad
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
-# LeetCode 4 "Median of Two Sorted Arrays": la mediana de dos arreglos ordenados.
-# Tecnica: dos punteros que avanzan como en un merge, pero sin construir el arreglo fusionado, solo
-# contando hasta llegar a la posicion del medio y guardando el anterior para el caso par.
-# Es O(n+m). El problema en realidad pide O(log(n+m)), que se logra con binaria sobre el punto de
-# corte de uno de los dos arreglos; esa version es bastante mas dificil de escribir bien.
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# LeetCode 4 "Median of Two Sorted Arrays": la mediana de dos arreglos ordenados. Tecnica: dos
+# punteros que avanzan como en un merge, pero sin construir el arreglo fusionado, solo contando
+# hasta llegar a la posicion del medio y guardando el anterior para el caso par. Es O(n+m). El
+# problema en realidad pide O(log(n+m)), que se logra con binaria sobre el punto de corte de uno
+# de los dos arreglos; esa version es bastante mas dificil de escribir bien.
 
 class Solution:
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> float:

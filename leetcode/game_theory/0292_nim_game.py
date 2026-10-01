@@ -1,10 +1,11 @@
 # <3
 # Tema: LeetCode Hub / Posiciones Perdedoras
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 292 "Nim Game": se quitan 1, 2 o 3 piedras por turno y pierde quien no puede mover.
-# Tecnica: quien recibe un multiplo de 4 pierde, porque el rival siempre puede completar 4
-# entre los dos turnos. Todo el problema es n % 4 != 0.
+# Tecnica: quien recibe un multiplo de 4 pierde, porque el rival siempre puede completar 4 entre
+# los dos turnos. Todo el problema es n % 4 != 0.
 
 class Solution:
     def canWinNim(self, n: int) -> bool:

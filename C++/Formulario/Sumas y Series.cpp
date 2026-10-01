@@ -1,9 +1,11 @@
 // <3
 // Tema: Formulario / Sumas y Series
-// Las sumas cerradas que mas se repiten, cada una con sus primeros valores para reconocer
-// el patron directamente en el ejemplo del enunciado: si la salida crece 1, 3, 6, 10, 15 es
-// Gauss; 1, 4, 9, 16 son cuadrados; 1, 5, 14, 30 es suma de cuadrados; 1, 9, 36, 100 es suma
-// de cubos. Identificar la sucesion en los casos de prueba suele ser mas rapido que derivar.
+// Resumen: Las sumas cerradas que mas se repiten
+// Detalle: Las sumas cerradas que mas se repiten, cada una con sus primeros valores para
+// reconocer el patron directamente en el ejemplo del enunciado: si la salida crece 1, 3, 6, 10,
+// 15 es Gauss; 1, 4, 9, 16 son cuadrados; 1, 5, 14, 30 es suma de cuadrados; 1, 9, 36, 100 es
+// suma de cubos. Identificar la sucesion en los casos de prueba suele ser mas rapido que
+// derivar.
 
 // =============== SUMAS Y SERIES ===============
 //

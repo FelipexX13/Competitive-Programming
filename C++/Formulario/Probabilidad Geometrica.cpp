@@ -1,13 +1,15 @@
 // <3
 // Tema: Formulario / Probabilidad Geometrica y Areas Raras
-// Para los problemas que en realidad son matematica pura y lo dificil no es programarlos sino
-// plantear el area: "cual es la probabilidad de que un punto al azar del jardin caiga dentro
-// de algun circulo", "cuanto vale en promedio", "que tan seguido se encuentran dos personas".
-// La idea unica de toda la ficha: probabilidad = area favorable / area total, y el valor
-// esperado es la suma de cada valor por su probabilidad, sin necesitar independencia.
-// Trae las areas que no se sacan de memoria: interseccion de dos circulos, circulo con
-// rectangulo, y los clasicos de la cita, el palito y la aguja de Buffon.
-// Todo verificado con Monte Carlo en este mismo equipo.
+// Resumen: Para los problemas que en realidad son matematica pura y lo dificil no es
+// programarlos sino plantear el...
+// Detalle: Para los problemas que en realidad son matematica pura y lo dificil no es
+// programarlos sino plantear el area: "cual es la probabilidad de que un punto al azar del
+// jardin caiga dentro de algun circulo", "cuanto vale en promedio", "que tan seguido se
+// encuentran dos personas". La idea unica de toda la ficha: probabilidad = area favorable /
+// area total, y el valor esperado es la suma de cada valor por su probabilidad, sin necesitar
+// independencia. Trae las areas que no se sacan de memoria: interseccion de dos circulos,
+// circulo con rectangulo, y los clasicos de la cita, el palito y la aguja de Buffon. Todo
+// verificado con Monte Carlo en este mismo equipo.
 
 // =============== PROBABILIDAD GEOMETRICA Y AREAS RARAS ===============
 //

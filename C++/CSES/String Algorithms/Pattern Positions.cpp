@@ -1,14 +1,15 @@
 // <3
 // Tema: CSES / Aho-Corasick (Primera Aparicion)
+// Resumen: Donde empieza la primera aparicion de cada patron, o -1 si no esta
 // O: (suma de patrones + |s| + 26*nodos)
 // Uso: search() guarda min(first); getFirst(p) devuelve first - |p| + 1, o -1
-// La posicion donde EMPIEZA la primera aparicion de cada patron, o -1 si no aparece.
+// Detalle: La posicion donde EMPIEZA la primera aparicion de cada patron, o -1 si no aparece.
 // Mismo esqueleto de Aho-Corasick, cambiando el contador por un minimo: en vez de cnt se guarda
 // first, la posicion mas temprana en que el recorrido del texto paso por ese nodo. Se propaga
-// igual por los suffix links al reves, pero con min en vez de suma.
-// EL DETALLE: first guarda donde TERMINA la ocurrencia, asi que para devolver donde empieza hay
-// que restar el largo del patron, first - |p| + 1. Equivocarse ahi da respuestas corridas.
-// El INT_MAX como marca de 'nunca aparecio' sobrevive la propagacion porque min(INF, INF) = INF.
+// igual por los suffix links al reves, pero con min en vez de suma. EL DETALLE: first guarda
+// donde TERMINA la ocurrencia, asi que para devolver donde empieza hay que restar el largo del
+// patron, first - |p| + 1. Equivocarse ahi da respuestas corridas. El INT_MAX como marca de
+// 'nunca aparecio' sobrevive la propagacion porque min(INF, INF) = INF.
 
 #include <bits/stdc++.h>
 using namespace std;

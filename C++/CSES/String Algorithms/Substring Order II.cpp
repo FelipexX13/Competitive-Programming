@@ -1,17 +1,16 @@
 // <3
 // Tema: CSES / Descenso por el Suffix Automaton (con Repetidas)
+// Resumen: La k-esima subcadena en orden alfabetico, contando las repetidas
 // O: (26*n) construir y bajar
 // Uso: dp[v] suma occ de los hijos; cada subcadena pesa cuantas veces aparece
-// La k-esima subcadena en orden alfabetico, pero contando las REPETIDAS tantas veces como
-// aparecen.
-// Es el Substring Order I con un cambio de peso: en la version I cada subcadena distinta vale 1,
-// aqui vale occ, o sea cuantas veces aparece en la cadena. Por eso primero se propagan las
-// ocurrencias por los suffix links (calculateOccurrences) y el dp suma occ[to] + dp[to] en vez de
-// 1 + dp[to].
-// Al bajar hay que restar occ[to] antes de seguir, que son las apariciones del prefijo actual
-// exacto; si k cae dentro de esas, la respuesta es justo lo que se lleva escrito.
-// Comparar este archivo con el de la version I es la mejor forma de ver que un suffix automaton
-// responde muchas preguntas distintas cambiando solo el peso del dp.
+// Detalle: La k-esima subcadena en orden alfabetico, pero contando las REPETIDAS tantas veces
+// como aparecen. Es el Substring Order I con un cambio de peso: en la version I cada subcadena
+// distinta vale 1, aqui vale occ, o sea cuantas veces aparece en la cadena. Por eso primero se
+// propagan las ocurrencias por los suffix links (calculateOccurrences) y el dp suma occ[to] +
+// dp[to] en vez de 1 + dp[to]. Al bajar hay que restar occ[to] antes de seguir, que son las
+// apariciones del prefijo actual exacto; si k cae dentro de esas, la respuesta es justo lo que
+// se lleva escrito. Comparar este archivo con el de la version I es la mejor forma de ver que
+// un suffix automaton responde muchas preguntas distintas cambiando solo el peso del dp.
 
 #include <bits/stdc++.h>
 using namespace std;

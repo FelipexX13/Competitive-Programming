@@ -1,33 +1,32 @@
 // <3
 // Tema: Greedy / Maximo Conjunto a Distancia d en Arbol
+// Resumen: Hay n ciudades en forma de arbol, cada una con una oficina
 // O: (n), un BFS para ordenar y un barrido de hojas a raiz
 // Uso: lee el arbol por stdin; el greedy va de las hojas hacia la raiz
-// Hay n ciudades en forma de arbol, cada una con una oficina, y hay que cerrar la MENOR cantidad
-// posible de oficinas para que cualesquiera dos de las que queden esten a distancia al menos d.
-// Cerrar lo minimo es lo mismo que dejar lo maximo, asi que esto es el maximo conjunto de
-// vertices a distancia mutua >= d en un arbol. En un grafo cualquiera seria NP-dificil, pero en
-// arbol el greedy de hojas a raiz lo resuelve exacto en O(n).
-// La idea que hace que funcione: procesando de abajo hacia arriba, de todo el subarbol de v lo
-// UNICO que el resto del arbol necesita saber es a que distancia esta la oficina superviviente
-// mas cercana a v, porque cualquier oficina de afuera tiene que pasar por v para llegar. Eso es
-// dist[v], y rep[v] guarda cual es esa oficina para poder marcarla si toca cerrarla.
-// Al pegar un hijo c a su padre p, la oficina mas cercana del lado de c queda a dc = dist[c]+1.
-// Si dist[p] + dc < d, esas dos se pisan y hay que cerrar una. Se cierra SIEMPRE la mas cercana
-// a p: quedarse con la mas lejana deja dist[p] lo mas grande posible, y dist[p] grande es pura
-// ganancia porque lo unico que falta por decidir esta hacia arriba. Es un intercambio clasico,
-// ninguna solucion optima empeora al cambiarle la cercana por la lejana.
-// Y basta cerrar UNA sola, no hace falta revisar el resto del subarbol: las demas oficinas de p
-// ya cumplen >= d contra rep[p], y eso mismo las deja lo bastante lejos de rep[c].
-// Si no hay choque, solo se actualiza el minimo: dist[p] = min(dist[p], dc).
-// Verificado contra fuerza bruta sobre 2^n y contra un DP exacto de arbol, ademas de la salida
-// en si (que todo par sobreviviente quede a >= d).
-// Detalles que importan: dist[v] arranca en 0 y rep[v] = v porque TODA ciudad empieza con
-// oficina, esa es la condicion inicial del problema. El recorrido es BFS iterativo, no DFS
-// recursivo, asi que un camino de 200 mil nodos no revienta la pila. Medido: n = 200000 en
-// menos de 200 ms.
-// OJO con el formato de salida: deja un espacio sobrante antes del salto de linea. La mayoria
-// de jueces lo ignora, pero si uno sale estricto, ahi esta el problema.
-// Entrada: n y d, despues las n-1 aristas. Salida: cuantas oficinas quedan y cuales.
+// Detalle: Hay n ciudades en forma de arbol, cada una con una oficina, y hay que cerrar la
+// MENOR cantidad posible de oficinas para que cualesquiera dos de las que queden esten a
+// distancia al menos d. Cerrar lo minimo es lo mismo que dejar lo maximo, asi que esto es el
+// maximo conjunto de vertices a distancia mutua >= d en un arbol. En un grafo cualquiera seria
+// NP-dificil, pero en arbol el greedy de hojas a raiz lo resuelve exacto en O(n). La idea que
+// hace que funcione: procesando de abajo hacia arriba, de todo el subarbol de v lo UNICO que el
+// resto del arbol necesita saber es a que distancia esta la oficina superviviente mas cercana a
+// v, porque cualquier oficina de afuera tiene que pasar por v para llegar. Eso es dist[v], y
+// rep[v] guarda cual es esa oficina para poder marcarla si toca cerrarla. Al pegar un hijo c a
+// su padre p, la oficina mas cercana del lado de c queda a dc = dist[c]+1. Si dist[p] + dc < d,
+// esas dos se pisan y hay que cerrar una. Se cierra SIEMPRE la mas cercana a p: quedarse con la
+// mas lejana deja dist[p] lo mas grande posible, y dist[p] grande es pura ganancia porque lo
+// unico que falta por decidir esta hacia arriba. Es un intercambio clasico, ninguna solucion
+// optima empeora al cambiarle la cercana por la lejana. Y basta cerrar UNA sola, no hace falta
+// revisar el resto del subarbol: las demas oficinas de p ya cumplen >= d contra rep[p], y eso
+// mismo las deja lo bastante lejos de rep[c]. Si no hay choque, solo se actualiza el minimo:
+// dist[p] = min(dist[p], dc). Verificado contra fuerza bruta sobre 2^n y contra un DP exacto de
+// arbol, ademas de la salida en si (que todo par sobreviviente quede a >= d). Detalles que
+// importan: dist[v] arranca en 0 y rep[v] = v porque TODA ciudad empieza con oficina, esa es la
+// condicion inicial del problema. El recorrido es BFS iterativo, no DFS recursivo, asi que un
+// camino de 200 mil nodos no revienta la pila. Medido: n = 200000 en menos de 200 ms. OJO con
+// el formato de salida: deja un espacio sobrante antes del salto de linea. La mayoria de jueces
+// lo ignora, pero si uno sale estricto, ahi esta el problema. Entrada: n y d, despues las n-1
+// aristas. Salida: cuantas oficinas quedan y cuales.
 
 #include <bits/stdc++.h>
 using namespace std;

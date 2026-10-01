@@ -1,10 +1,12 @@
 // <3
 // Tema: Arrays / Prefix Sums
-// Misma idea que countMajoritySubarrays.cpp pero en O(n): transforma el arreglo a +1 (target) /
-// -1 (cualquier otro valor) y cuenta subarreglos con suma positiva. Como el balance (prefijo
-// acumulado desplazado por n) cambia en +-1 en cada paso, usa un arreglo pre[] indexado por ese
-// balance para llevar, sin necesitar un Fenwick tree, cuantos prefijos anteriores tuvieron un
-// balance menor al actual, actualizando presum incrementalmente en O(1) por posicion.
+// Resumen: Misma idea que countMajoritySubarrays.cpp pero en O(n)
+// Detalle: Misma idea que countMajoritySubarrays.cpp pero en O(n): transforma el arreglo a +1
+// (target) / -1 (cualquier otro valor) y cuenta subarreglos con suma positiva. Como el balance
+// (prefijo acumulado desplazado por n) cambia en +-1 en cada paso, usa un arreglo pre[]
+// indexado por ese balance para llevar, sin necesitar un Fenwick tree, cuantos prefijos
+// anteriores tuvieron un balance menor al actual, actualizando presum incrementalmente en O(1)
+// por posicion.
 
 #include <bits/stdc++.h>
 

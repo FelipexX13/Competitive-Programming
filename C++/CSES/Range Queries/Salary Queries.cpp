@@ -1,19 +1,21 @@
 // <3
 // Tema: CSES / Fenwick con Compresion Offline
+// Resumen: Fenwick sobre VALORES en vez de posiciones, para contar cuantos salarios caen en un
+// rango
 // O: (log n) por operacion, sobre valores comprimidos
 // Uso: add(comp(v),+1); sum(comp(hi))-sum(comp(lo)-1)   // 1-INDEXADO
-// Fenwick sobre VALORES en vez de posiciones, para contar cuantos salarios caen en un rango. Como
-// los valores llegan a 10^9 hay que comprimirlos, y aqui esta el detalle que hace el problema:
-// las consultas se leen TODAS primero, porque los valores que van a aparecer en las actualizaciones
-// futuras tambien tienen que entrar en la compresion. Si uno comprime solo con los valores
-// iniciales, la primera actualizacion a un valor nuevo no tiene indice donde ir.
-// Eso obliga a que el problema sea OFFLINE: leer todo, comprimir, y despues procesar en orden.
-// El Fenwick guarda la CANTIDAD de empleados con cada valor comprimido, asi que cambiar un salario
-// es add(viejo, -1) y add(nuevo, +1), y contar en un rango es la resta de dos prefijos.
-// CUANDO USAR: contar elementos en un rango de VALORES con actualizaciones. Es el patron de
-// "cuantos hay menores que x" con cambios. La alternativa online es un segment tree dinamico o
-// sobre los valores sin comprimir, que gasta mas memoria pero no obliga a leer todo antes.
-// OJO: usa structured bindings (auto [a, b]), que piden C++17. En CSES compila, pero con
+// Detalle: Fenwick sobre VALORES en vez de posiciones, para contar cuantos salarios caen en un
+// rango. Como los valores llegan a 10^9 hay que comprimirlos, y aqui esta el detalle que hace
+// el problema: las consultas se leen TODAS primero, porque los valores que van a aparecer en
+// las actualizaciones futuras tambien tienen que entrar en la compresion. Si uno comprime solo
+// con los valores iniciales, la primera actualizacion a un valor nuevo no tiene indice donde
+// ir. Eso obliga a que el problema sea OFFLINE: leer todo, comprimir, y despues procesar en
+// orden. El Fenwick guarda la CANTIDAD de empleados con cada valor comprimido, asi que cambiar
+// un salario es add(viejo, -1) y add(nuevo, +1), y contar en un rango es la resta de dos
+// prefijos. CUANDO USAR: contar elementos en un rango de VALORES con actualizaciones. Es el
+// patron de "cuantos hay menores que x" con cambios. La alternativa online es un segment tree
+// dinamico o sobre los valores sin comprimir, que gasta mas memoria pero no obliga a leer todo
+// antes. OJO: usa structured bindings (auto [a, b]), que piden C++17. En CSES compila, pero con
 // un g++ viejo hay que volver a .first y .second.
 
 #include <bits/stdc++.h>

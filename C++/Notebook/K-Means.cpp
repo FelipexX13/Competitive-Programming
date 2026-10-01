@@ -1,18 +1,18 @@
 // <3
 // Tema: Geometry / K-Means (Clustering)
+// Resumen: Agrupa n puntos (de cualquier dimension d) en k clusters minimizando el SSE
 // O: (iteraciones * n * k * d)
 // Uso: kmeansOnce(p,k,rng,maxIter) -> centroides y etiquetas; correr varias veces
-// Agrupa n puntos (de cualquier dimension d) en k clusters minimizando el SSE: la suma de las
-// distancias al cuadrado de cada punto al centroide de su cluster.
-// Algoritmo de Lloyd: (1) asignar cada punto al centroide mas cercano, (2) mover cada
-// centroide al promedio de sus puntos, y repetir hasta que ninguna asignacion cambie. Cada
-// paso solo puede bajar el SSE, asi que siempre converge, pero a un optimo LOCAL que depende
-// de los centroides iniciales. Por eso se siembra con k-means++ (cada centroide nuevo sale con
-// probabilidad proporcional a su distancia^2 al centroide mas cercano, lo que los reparte) y
-// se corre con varias semillas quedandose con el menor SSE.
-// Lo que rompe la version ingenua: (a) un cluster puede quedar vacio y su promedio no existe;
-// aqui se re-siembra en el punto que peor encaja; (b) sin tope de iteraciones no hay cota
-// practica de tiempo. Costo: O(reinicios * iteraciones * n * k * d).
+// Detalle: Agrupa n puntos (de cualquier dimension d) en k clusters minimizando el SSE: la suma
+// de las distancias al cuadrado de cada punto al centroide de su cluster. Algoritmo de Lloyd:
+// (1) asignar cada punto al centroide mas cercano, (2) mover cada centroide al promedio de sus
+// puntos, y repetir hasta que ninguna asignacion cambie. Cada paso solo puede bajar el SSE, asi
+// que siempre converge, pero a un optimo LOCAL que depende de los centroides iniciales. Por eso
+// se siembra con k-means++ (cada centroide nuevo sale con probabilidad proporcional a su
+// distancia^2 al centroide mas cercano, lo que los reparte) y se corre con varias semillas
+// quedandose con el menor SSE. Lo que rompe la version ingenua: (a) un cluster puede quedar
+// vacio y su promedio no existe; aqui se re-siembra en el punto que peor encaja; (b) sin tope
+// de iteraciones no hay cota practica de tiempo. Costo: O(reinicios * iteraciones * n * k * d).
 // OJO: el optimo exacto es NP-hard. Si el problema es 1D y pide el optimo, ordenar y hacer DP
 // de particion en segmentos contiguos (O(k n^2), o menos con Divide and Conquer Optimization).
 

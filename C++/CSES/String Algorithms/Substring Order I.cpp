@@ -1,16 +1,16 @@
 // <3
 // Tema: CSES / Descenso por el Suffix Automaton (Distintas)
+// Resumen: La k-esima subcadena DISTINTA en orden alfabetico
 // O: (26*n) construir y bajar
 // Uso: dp[v] = cuantas subcadenas salen de v; se baja eligiendo letra con k
-// La k-esima subcadena DISTINTA en orden alfabetico.
-// dp[v] = cuantos caminos salen del estado v, que es cuantas subcadenas distintas empiezan con lo
-// que lleva uno escrito. Se calcula en orden inverso de largo (otra vez counting sort).
-// Despues se BAJA por el automata: en cada estado se prueban las letras de la 'a' a la 'z' y si
-// k es mayor que dp[to] se descarta ese bloque entero y se resta; si no, la respuesta empieza por
-// esa letra y se entra. Es la misma idea de 'buscar el k-esimo bajando por una estructura' que se
-// usa en Fenwick o segment tree, pero sobre el automata.
-// El dp arranca en 1 porque cuenta tambien la cadena vacia del propio estado; por eso el corte es
-// k == 1 y no k == 0.
+// Detalle: La k-esima subcadena DISTINTA en orden alfabetico. dp[v] = cuantos caminos salen del
+// estado v, que es cuantas subcadenas distintas empiezan con lo que lleva uno escrito. Se
+// calcula en orden inverso de largo (otra vez counting sort). Despues se BAJA por el automata:
+// en cada estado se prueban las letras de la 'a' a la 'z' y si k es mayor que dp[to] se
+// descarta ese bloque entero y se resta; si no, la respuesta empieza por esa letra y se entra.
+// Es la misma idea de 'buscar el k-esimo bajando por una estructura' que se usa en Fenwick o
+// segment tree, pero sobre el automata. El dp arranca en 1 porque cuenta tambien la cadena
+// vacia del propio estado; por eso el corte es k == 1 y no k == 0.
 
 #include <bits/stdc++.h>
 using namespace std;

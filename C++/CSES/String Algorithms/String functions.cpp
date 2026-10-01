@@ -1,17 +1,18 @@
 // <3
 // Tema: CSES / Funcion Z y Funcion de Prefijos
+// Resumen: Funcion Z y funcion de prefijos, las dos lado a lado
 // O: (n) cada una
 // Uso: zFunction(s) -> z; prefixFunction(s) -> pi  // ambos 0-indexados
-// Las dos funciones basicas de cadenas, una al lado de la otra.
-// z[i] = largo del prefijo comun mas largo entre s y s[i..]. La ventana [l, r] es el truco: es la
-// coincidencia mas a la derecha que se conoce, y mientras i cae adentro se reusa el valor ya
-// calculado z[i - l] en vez de comparar desde cero. Eso es lo que la deja lineal.
-// pi[i] = largo del borde mas largo de s[0..i], o sea el prefijo propio mas largo que tambien es
-// sufijo. El while que baja j = pi[j-1] es el mismo salto de fallo de KMP.
-// LAS DOS SIRVEN PARA LO MISMO casi siempre, y cual usar es cuestion de gusto: la funcion Z se
-// lee mas facil para 'donde aparece el patron' (se busca z[i] == |patron| en patron + '#' + texto)
-// y la de prefijos es la que sirve para periodos, bordes y el automata de KMP.
-// OJO: aca z[0] se fuerza a 0. La convencion comun es z[0] = n; el juez de este problema pide 0.
+// Detalle: Las dos funciones basicas de cadenas, una al lado de la otra. z[i] = largo del
+// prefijo comun mas largo entre s y s[i..]. La ventana [l, r] es el truco: es la coincidencia
+// mas a la derecha que se conoce, y mientras i cae adentro se reusa el valor ya calculado z[i -
+// l] en vez de comparar desde cero. Eso es lo que la deja lineal. pi[i] = largo del borde mas
+// largo de s[0..i], o sea el prefijo propio mas largo que tambien es sufijo. El while que baja
+// j = pi[j-1] es el mismo salto de fallo de KMP. LAS DOS SIRVEN PARA LO MISMO casi siempre, y
+// cual usar es cuestion de gusto: la funcion Z se lee mas facil para 'donde aparece el patron'
+// (se busca z[i] == |patron| en patron + '#' + texto) y la de prefijos es la que sirve para
+// periodos, bordes y el automata de KMP. OJO: aca z[0] se fuerza a 0. La convencion comun es
+// z[0] = n; el juez de este problema pide 0.
 
 #include <bits/stdc++.h>
 using namespace std;

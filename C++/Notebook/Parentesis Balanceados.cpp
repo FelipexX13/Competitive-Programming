@@ -1,42 +1,36 @@
 // <3
 // Tema: String / Parentesis Balanceados (Todas las Variantes)
+// Resumen: El BALANCE, +1 por cada '(' y -1 por cada ')'
 // O: (n) todas las variantes
 // Uso: valido(s); validoTipos(s); parejas(s)[i] = pareja de i, o -1
-// Todo problema de parentesis sale de UNA idea: el BALANCE, +1 por cada '(' y -1 por cada ')'.
-// Una cadena es valida si y solo si el balance nunca baja de 0 y termina en 0. Las variantes de
-// abajo son esa misma idea mirada desde distintos angulos. Todas verificadas contra fuerza bruta.
-// CUAL USAR SEGUN LO QUE PIDAN:
-//   1  valido               un solo tipo: basta un contador, sin pila, O(n) y O(1) de memoria.
-//   2  validoTipos          ()[]{}: ahi SI hace falta pila, porque "([)]" tiene balance bien en
-//                           cada tipo por separado y aun asi es invalida.
-//   3  parejas/profundidad  la pareja de cada parentesis (para recorrer la estructura como un
-//                           arbol) y el anidamiento maximo, que es el balance maximo.
-//   4  minInserciones       los ')' que llegan sin '(' abierto piden uno, y los '(' que quedan
-//                           abiertos al final piden un ')'. Suma de sueltos.
-//   5  minVolteos           cambiar '(' por ')' o al reves. Tras cancelar las parejas queda
-//                           ")))(((": con c cerrados y a abiertos sueltos son ceil(c/2) + ceil(a/2).
-//                           Con largo impar es imposible.
-//   6  borrarMinimo         se marcan los sueltos (los ')' sin pareja y los '(' que quedan en la
-//                           pila) y se borran. Sirve aunque la cadena tenga letras mezcladas.
-//   7  masLarga             la pila guarda el indice ANTES de donde empieza el tramo valido
-//                           actual; arranca en -1 y cada ')' suelto pasa a ser el nuevo tope.
-//   8  contarSubcadenas     si el ')' de i casa con el '(' de j, las validas que terminan en i son
-//                           "(...)" mas cada valida que terminaba justo en j-1: dp[i+1] = dp[j]+1.
-//   9  validoComodines      '*' vale '(', ')' o nada: se lleva el balance MINIMO y el MAXIMO
-//                           posibles. Si el maximo baja de 0 no hay forma; el minimo se sube a 0
-//                           porque nunca conviene pasar por negativo. Al final el minimo debe ser 0.
-//   10 generar              backtracking: se pone '(' mientras queden, y ')' si hay mas abiertos
-//                           que cerrados. Sale en orden lexicografico y son Catalan(n).
-//   11 kEsima               sin generarlas todas: formas[i][b] = cuantas maneras hay de completar
-//                           i caracteres desde balance b. Si k cabe en las que empiezan con '(',
-//                           se pone '('; si no, se descuentan y se pone ')'. Hasta n de unos 30.
-//   12 SegTree              "subsecuencia balanceada mas larga en s[l..r]" con muchas consultas.
-//                           Cada nodo guarda (parejas, '(' sobrantes, ')' sobrantes); al unir, los
-//                           '(' sobrantes de la izquierda casan con los ')' sobrantes de la derecha.
-//   13 maxSubsecuenciaTipos con varios tipos y hay que BORRAR o INSERTAR, el greedy de pila ya no
-//                           es optimo: DP de intervalos O(n^3). El minimo de inserciones para
-//                           balancear es n menos ese largo.
-// Contar las secuencias validas de n pares es Catalan(n): ver la ficha de Combinatoria.
+// Detalle: Todo problema de parentesis sale de UNA idea: el BALANCE, +1 por cada '(' y -1 por
+// cada ')'. Una cadena es valida si y solo si el balance nunca baja de 0 y termina en 0. Las
+// variantes de abajo son esa misma idea mirada desde distintos angulos. Todas verificadas
+// contra fuerza bruta. CUAL USAR SEGUN LO QUE PIDAN: 1 valido un solo tipo: basta un contador,
+// sin pila, O(n) y O(1) de memoria. 2 validoTipos ()[]{}: ahi SI hace falta pila, porque "([)]"
+// tiene balance bien en cada tipo por separado y aun asi es invalida. 3 parejas/profundidad la
+// pareja de cada parentesis (para recorrer la estructura como un arbol) y el anidamiento
+// maximo, que es el balance maximo. 4 minInserciones los ')' que llegan sin '(' abierto piden
+// uno, y los '(' que quedan abiertos al final piden un ')'. Suma de sueltos. 5 minVolteos
+// cambiar '(' por ')' o al reves. Tras cancelar las parejas queda ")))(((": con c cerrados y a
+// abiertos sueltos son ceil(c/2) + ceil(a/2). Con largo impar es imposible. 6 borrarMinimo se
+// marcan los sueltos (los ')' sin pareja y los '(' que quedan en la pila) y se borran. Sirve
+// aunque la cadena tenga letras mezcladas. 7 masLarga la pila guarda el indice ANTES de donde
+// empieza el tramo valido actual; arranca en -1 y cada ')' suelto pasa a ser el nuevo tope. 8
+// contarSubcadenas si el ')' de i casa con el '(' de j, las validas que terminan en i son
+// "(...)" mas cada valida que terminaba justo en j-1: dp[i+1] = dp[j]+1. 9 validoComodines '*'
+// vale '(', ')' o nada: se lleva el balance MINIMO y el MAXIMO posibles. Si el maximo baja de 0
+// no hay forma; el minimo se sube a 0 porque nunca conviene pasar por negativo. Al final el
+// minimo debe ser 0. 10 generar backtracking: se pone '(' mientras queden, y ')' si hay mas
+// abiertos que cerrados. Sale en orden lexicografico y son Catalan(n). 11 kEsima sin generarlas
+// todas: formas[i][b] = cuantas maneras hay de completar i caracteres desde balance b. Si k
+// cabe en las que empiezan con '(', se pone '('; si no, se descuentan y se pone ')'. Hasta n de
+// unos 30. 12 SegTree "subsecuencia balanceada mas larga en s[l..r]" con muchas consultas. Cada
+// nodo guarda (parejas, '(' sobrantes, ')' sobrantes); al unir, los '(' sobrantes de la
+// izquierda casan con los ')' sobrantes de la derecha. 13 maxSubsecuenciaTipos con varios tipos
+// y hay que BORRAR o INSERTAR, el greedy de pila ya no es optimo: DP de intervalos O(n^3). El
+// minimo de inserciones para balancear es n menos ese largo. Contar las secuencias validas de n
+// pares es Catalan(n): ver la ficha de Combinatoria.
 
 #include <bits/stdc++.h>
 using namespace std;

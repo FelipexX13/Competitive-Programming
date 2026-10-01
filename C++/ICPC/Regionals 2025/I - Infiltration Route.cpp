@@ -1,21 +1,22 @@
 // <3
 // Tema: Graph / BFS sobre Grafo Producto (dos fichas a la vez)
-// Resuelve "Infiltration Route" (problema I, Regionals 2025): hay que mover DOS posiciones a la vez
-// por un grafo dirigido y llegar a una configuracion objetivo.
-// LA TECNICA ES EL GRAFO PRODUCTO: el estado no es un nodo sino un PAR (p1, p2), mas alguna bandera
-// extra segun lo que pida el problema. El BFS corre sobre esos estados, y desde cada uno se
-// ramifica moviendo una ficha o la otra. Con n nodos son n^2 estados, lo que acota n a unos pocos
-// cientos, y por eso MAXN es 505.
-// CUANDO USARLO: cualquier problema con dos entidades que se mueven y que interactuan (dos robots
-// que no pueden chocar, un perseguidor y un perseguido, dos tokens que deben encontrarse). Si las
-// entidades fueran independientes se resolverian por separado; el grafo producto es justamente para
-// cuando NO lo son.
-// El BFS da el camino minimo porque todos los movimientos cuestan lo mismo, y la reconstruccion se
-// hace guardando de que estado se vino, igual que en un BFS normal pero con el estado compuesto.
-// El toclear sirve para limpiar solo lo que se toco entre casos, en vez de reiniciar los n^2
-// estados enteros: util cuando hay muchos casos de prueba y el grafo es grande.
-// OJO: usa structured bindings (auto [a, b]), que piden C++17. En el juez compila, pero con
-// un g++ viejo hay que volver a .first y .second.
+// Resumen: Hay que mover DOS posiciones a la vez por un grafo dirigido y llegar a una
+// configuracion objetivo
+// Detalle: Resuelve "Infiltration Route" (problema I, Regionals 2025): hay que mover DOS
+// posiciones a la vez por un grafo dirigido y llegar a una configuracion objetivo. LA TECNICA
+// ES EL GRAFO PRODUCTO: el estado no es un nodo sino un PAR (p1, p2), mas alguna bandera extra
+// segun lo que pida el problema. El BFS corre sobre esos estados, y desde cada uno se ramifica
+// moviendo una ficha o la otra. Con n nodos son n^2 estados, lo que acota n a unos pocos
+// cientos, y por eso MAXN es 505. CUANDO USARLO: cualquier problema con dos entidades que se
+// mueven y que interactuan (dos robots que no pueden chocar, un perseguidor y un perseguido,
+// dos tokens que deben encontrarse). Si las entidades fueran independientes se resolverian por
+// separado; el grafo producto es justamente para cuando NO lo son. El BFS da el camino minimo
+// porque todos los movimientos cuestan lo mismo, y la reconstruccion se hace guardando de que
+// estado se vino, igual que en un BFS normal pero con el estado compuesto. El toclear sirve
+// para limpiar solo lo que se toco entre casos, en vez de reiniciar los n^2 estados enteros:
+// util cuando hay muchos casos de prueba y el grafo es grande. OJO: usa structured bindings
+// (auto [a, b]), que piden C++17. En el juez compila, pero con un g++ viejo hay que volver a
+// .first y .second.
 
 #include <bits/stdc++.h>
 using namespace std;

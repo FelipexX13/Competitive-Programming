@@ -1,12 +1,13 @@
 # <3
 # Tema: Simulation / Cycle Detection
-# Resuelve "Switches" (Day 8, problema I - Contest 08 [Avanzados]): hay N interruptores que
-# alternan (encienden/apagan) subconjuntos de M focos; el conserje los presiona en el orden fijo
-# 1,2,...,N,1,2,... y se detiene apenas todos los focos quedan apagados a la vez; dado el estado
-# inicial de los focos y los focos asociados a cada interruptor, hay que contar cuantas veces
-# presiona interruptores hasta lograrlo, o -1 si con esa estrategia nunca se apagan todos a la
-# vez. Simula presionando los interruptores en orden ciclico, y guarda en el set "pos" cada estado
-# visto como (configuracion de focos + indice del interruptor); si ese mismo par
+# Resumen: Hay N interruptores que alternan (encienden/apagan) subconjuntos de M focos
+# Detalle: Resuelve "Switches" (Day 8, problema I - Contest 08 [Avanzados]): hay N interruptores
+# que alternan (encienden/apagan) subconjuntos de M focos; el conserje los presiona en el orden
+# fijo 1,2,...,N,1,2,... y se detiene apenas todos los focos quedan apagados a la vez; dado el
+# estado inicial de los focos y los focos asociados a cada interruptor, hay que contar cuantas
+# veces presiona interruptores hasta lograrlo, o -1 si con esa estrategia nunca se apagan todos
+# a la vez. Simula presionando los interruptores en orden ciclico, y guarda en el set "pos" cada
+# estado visto como (configuracion de focos + indice del interruptor); si ese mismo par
 # (estado,interruptor) se repite antes de apagar todo, esta en un ciclo sin solucion y responde
 # -1.
 

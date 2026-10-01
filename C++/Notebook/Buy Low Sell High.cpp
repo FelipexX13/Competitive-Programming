@@ -1,17 +1,19 @@
 // <3
 // Tema: Greedy / Buy Low Sell High (Comprar y Vender Acciones)
+// Resumen: Precio de una accion por dia: comprar un dia y vender un dia POSTERIOR (una
+// transaccion) maximizando la...
 // O: (n) las tres primeras, (n*K) la de K transacciones
 // Uso: maxProfit(p) -> {ganancia,{compra,venta}}; maxProfitK(p,K)
-// Precio de una accion por dia: comprar un dia y vender un dia POSTERIOR (una transaccion)
-// maximizando la ganancia. Un solo recorrido O(n), O(1) de memoria: se guarda el dia mas
-// barato visto hasta ahora (el mejor momento para haber comprado) y cada dia se prueba vender
-// hoy contra ese minimo. Si el precio solo baja, la respuesta es 0 (no operar).
-// Es Kadane disfrazado: la ganancia es la suma maxima de un subarreglo de d[i] = p[i]-p[i-1].
-// Variantes tipicas (en todas no se puede tener dos acciones a la vez):
-//  - Ilimitadas: sumar cada subida max(0, d[i]); toda subida se puede cobrar.
-//  - Con comision por transaccion: DP de dos estados, cash (sin accion) y hold (con accion).
-//  - A lo sumo K transacciones: los mismos dos estados por cada transaccion, O(n*K).
-//    Con K >= n/2 ya no limita y equivale a ilimitadas (O(n)).
+// Detalle: Precio de una accion por dia: comprar un dia y vender un dia POSTERIOR (una
+// transaccion) maximizando la ganancia. Un solo recorrido O(n), O(1) de memoria: se guarda el
+// dia mas barato visto hasta ahora (el mejor momento para haber comprado) y cada dia se prueba
+// vender hoy contra ese minimo. Si el precio solo baja, la respuesta es 0 (no operar). Es
+// Kadane disfrazado: la ganancia es la suma maxima de un subarreglo de d[i] = p[i]-p[i-1].
+// Variantes tipicas (en todas no se puede tener dos acciones a la vez): - Ilimitadas: sumar
+// cada subida max(0, d[i]); toda subida se puede cobrar. - Con comision por transaccion: DP de
+// dos estados, cash (sin accion) y hold (con accion). - A lo sumo K transacciones: los mismos
+// dos estados por cada transaccion, O(n*K). Con K >= n/2 ya no limita y equivale a ilimitadas
+// (O(n)).
 
 #include <bits/stdc++.h>
 

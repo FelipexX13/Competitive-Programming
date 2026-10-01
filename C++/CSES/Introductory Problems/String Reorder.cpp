@@ -1,15 +1,17 @@
 // <3
 // Tema: CSES / Greedy Lexicografico con Cota de Factibilidad
-// Se arma la respuesta caracter por caracter tomando siempre la letra mas chica posible, pero
-// antes de fijarla se verifica que lo que queda TODAVIA se pueda terminar. La cota es la clave:
-// con r caracteres por poner, ninguna letra puede quedar con mas de (r+1)/2 copias, porque si no
-// dos de ellas quedarian pegadas por fuerza.
-// POR QUE ESTO ES EL PATRON GENERAL: un greedy lexicografico solo funciona si se puede decidir en
-// O(1) o O(alfabeto) si la eleccion deja el problema resoluble. Sin ese chequeo, tomar siempre la
-// letra mas chica lleva a callejones sin salida. La estructura "elegir el menor + verificar
-// factibilidad del resto" aparece en un monton de problemas de construccion lexicografica.
-// CUANDO USAR: "la cadena lexicograficamente menor que cumple X". Casi nunca hace falta
-// backtracking si se encuentra la cota de factibilidad.
+// Resumen: Se arma la respuesta caracter por caracter tomando siempre la letra mas chica
+// posible
+// Detalle: Se arma la respuesta caracter por caracter tomando siempre la letra mas chica
+// posible, pero antes de fijarla se verifica que lo que queda TODAVIA se pueda terminar. La
+// cota es la clave: con r caracteres por poner, ninguna letra puede quedar con mas de (r+1)/2
+// copias, porque si no dos de ellas quedarian pegadas por fuerza. POR QUE ESTO ES EL PATRON
+// GENERAL: un greedy lexicografico solo funciona si se puede decidir en O(1) o O(alfabeto) si
+// la eleccion deja el problema resoluble. Sin ese chequeo, tomar siempre la letra mas chica
+// lleva a callejones sin salida. La estructura "elegir el menor + verificar factibilidad del
+// resto" aparece en un monton de problemas de construccion lexicografica. CUANDO USAR: "la
+// cadena lexicograficamente menor que cumple X". Casi nunca hace falta backtracking si se
+// encuentra la cota de factibilidad.
 
 #include <bits/stdc++.h>
 using namespace std;

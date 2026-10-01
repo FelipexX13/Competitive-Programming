@@ -1,14 +1,16 @@
 // <3
 // Tema: Combinatorics / Permutation Cycles
-// Resuelve "Lines of Containers" (Day 2, problema G - Maratona de Programacao da SBC 2013): un
-// cargamento de L filas por C columnas de contenedores, numerados 1..LC en orden, fue desordenado
-// moviendo filas y columnas completas con una grua; hay que determinar si la grua puede
-// devolverlos a su posicion original y, de ser posible, el minimo numero de swaps de filas y
-// columnas necesario. Para cada fila (y cada columna) actual deduce a que fila/columna ORIGINAL
-// deberia pertenecer segun los ids, usando (id-1)/C y (id-1)%C, y valida que sea consistente y
-// forme una permutacion valida. Con eso arma rowPerm y colPerm; minSwaps() descompone cada
-// permutacion en ciclos y suma (tamano_del_ciclo - 1) por ciclo, que es el minimo de swaps para
-// ordenarla.
+// Resumen: Resuelve "Lines of Containers" (Day 2, problema G - Maratona de Programacao da SBC
+// 2013)
+// Detalle: Resuelve "Lines of Containers" (Day 2, problema G - Maratona de Programacao da SBC
+// 2013): un cargamento de L filas por C columnas de contenedores, numerados 1..LC en orden, fue
+// desordenado moviendo filas y columnas completas con una grua; hay que determinar si la grua
+// puede devolverlos a su posicion original y, de ser posible, el minimo numero de swaps de
+// filas y columnas necesario. Para cada fila (y cada columna) actual deduce a que fila/columna
+// ORIGINAL deberia pertenecer segun los ids, usando (id-1)/C y (id-1)%C, y valida que sea
+// consistente y forme una permutacion valida. Con eso arma rowPerm y colPerm; minSwaps()
+// descompone cada permutacion en ciclos y suma (tamano_del_ciclo - 1) por ciclo, que es el
+// minimo de swaps para ordenarla.
 
 #include <bits/stdc++.h>
 using namespace std;

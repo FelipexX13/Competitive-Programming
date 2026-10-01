@@ -1,14 +1,15 @@
 // <3
 // Tema: CSES / Suffix Automaton + Arreglo de Diferencias
+// Resumen: Cuantas subcadenas distintas hay de cada largo, de 1 hasta n
 // O: (n), un barrido de estados mas uno de largos
 // Uso: por cada estado v, diff[len[link]+1]++ y diff[len[v]+1]--; prefijos
-// Cuantas subcadenas distintas hay de cada largo 1, 2, ..., n.
-// Cada estado del suffix automaton aporta UN rango contiguo de largos, de len[link]+1 hasta
-// len[v], y aporta exactamente una subcadena distinta por cada largo de ese rango. Entonces en
-// vez de sumar uno por uno se marca el rango con un ARREGLO DE DIFERENCIAS (+1 al inicio, -1
-// despues del fin) y al final una pasada de sumas acumuladas da la respuesta de todos los largos.
-// Esa combinacion de 'cada estado es un intervalo' + 'arreglo de diferencias' es lo que convierte
-// un problema de O(n^2) subcadenas en O(n).
+// Detalle: Cuantas subcadenas distintas hay de cada largo 1, 2, ..., n. Cada estado del suffix
+// automaton aporta UN rango contiguo de largos, de len[link]+1 hasta len[v], y aporta
+// exactamente una subcadena distinta por cada largo de ese rango. Entonces en vez de sumar uno
+// por uno se marca el rango con un ARREGLO DE DIFERENCIAS (+1 al inicio, -1 despues del fin) y
+// al final una pasada de sumas acumuladas da la respuesta de todos los largos. Esa combinacion
+// de 'cada estado es un intervalo' + 'arreglo de diferencias' es lo que convierte un problema
+// de O(n^2) subcadenas en O(n).
 
 #include <bits/stdc++.h>
 using namespace std;

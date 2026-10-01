@@ -1,15 +1,14 @@
 // <3
 // Tema: CSES / Periodos = n - Bordes
-// Un periodo p de s es un desplazamiento tal que s[i] = s[i+p] para todo i valido. La
-// equivalencia que resuelve el problema:
-//     p es periodo  <=>  n - p es un borde
-// porque "s[i] = s[i+p] para todo i" dice exactamente que el prefijo de largo n-p es igual al
-// sufijo de largo n-p.
-// Asi que los periodos son n menos cada borde de la cadena de "Finding Borders", mas el periodo
-// trivial n (que corresponde al borde vacio). Se juntan y se ordenan.
-// CUANDO USAR: "la cadena es repeticion de un bloque", "el periodo mas corto", "cuantas veces se
-// repite". El periodo mas corto es n - pi[n-1]; y s es una repeticion EXACTA de un bloque si y
-// solo si ese periodo divide a n. Esa ultima condicion es la que se olvida.
+// Resumen: Un periodo p de s es un desplazamiento tal que s[i] = s[i+p] para todo i valido
+// Detalle: Un periodo p de s es un desplazamiento tal que s[i] = s[i+p] para todo i valido. La
+// equivalencia que resuelve el problema: p es periodo <=> n - p es un borde porque "s[i] =
+// s[i+p] para todo i" dice exactamente que el prefijo de largo n-p es igual al sufijo de largo
+// n-p. Asi que los periodos son n menos cada borde de la cadena de "Finding Borders", mas el
+// periodo trivial n (que corresponde al borde vacio). Se juntan y se ordenan. CUANDO USAR: "la
+// cadena es repeticion de un bloque", "el periodo mas corto", "cuantas veces se repite". El
+// periodo mas corto es n - pi[n-1]; y s es una repeticion EXACTA de un bloque si y solo si ese
+// periodo divide a n. Esa ultima condicion es la que se olvida.
 
 #include <bits/stdc++.h>
 using namespace std;

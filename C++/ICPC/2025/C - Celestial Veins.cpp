@@ -1,32 +1,28 @@
 // <3
 // Tema: Geometry / K Vecinos Mutuos y Clasificacion de Componentes
-// Resuelve "Celestial Veins" (problema C, ICPC 2025): cada estrella mira a sus K vecinas mas
-// cercanas, dos estrellas quedan unidas solo si CADA UNA esta entre las K de la otra (vinculo
-// mutuo), y hay que clasificar cada componente conexa en una de cinco formas y contarlas.
-// TRES COSAS QUE HAY QUE HACER BIEN Y SON FACILES DE ARRUINAR:
-//   1) EL DESEMPATE. Si dos candidatas quedan a la misma distancia, gana la que aparece antes en
-//      la entrada. Ordenando pares (distancia al cuadrado, indice) eso sale solo, porque el
-//      indice desempata. Con coordenadas hasta 10^9, dx*dx + dy*dy llega a 8*10^18 y cabe JUSTO
-//      en long long: en int o en double se rompe.
-//   2) EL VINCULO ES MUTUO. Que A tenga a B entre sus K no basta; hay que comprobar tambien al
-//      reves. Como cada estrella tiene a lo sumo 5 vecinas, revisarlo es O(K).
-//   3) EL ORDEN DE LA CLASIFICACION, que el enunciado fija: Cluster, Ouroboros, Claw, Path,
-//      Nebula. Importa porque las formas se solapan. Un triangulo es a la vez completo y un
-//      ciclo, y se cuenta como Cluster; un camino de 3 estrellas es a la vez garra y camino, y
-//      se cuenta como Claw. Evaluarlas en otro orden cambia las respuestas.
-// Cada forma se reconoce contando aristas y grados, sin recorrer nada mas:
-//     completo: E = V*(V-1)/2      ciclo: E = V y todos los grados valen 2
-//     garra:    E = V-1, un grado V-1 y los demas 1
-//     camino:   E = V-1 y ningun grado pasa de 2
-// Una estrella sola (V = 1) es Nebula, y cualquier otra cosa tambien.
-// El if de V == 1 va primero porque con V = 1 la formula del completo tambien se cumple (E = 0)
-// y la clasificaria mal como Cluster.
-// Costo O(n^2) por mapa para hallar las vecinas, que con n = 1500 son unos 2 millones de pares.
-// Medido: 5 mapas de n = 1500 con K = 5 en 93 ms, tanto con puntos al azar como en rejilla (que
-// es el caso con mas empates de distancia).
-// Verificado contra una implementacion independiente del enunciado en 1800 mapas, incluidos
-// puntos alineados y en rejilla para forzar empates, sin una sola diferencia, ademas de los dos
-// casos del sample.
+// Resumen: Cada estrella mira a sus K vecinas mas cercanas
+// Detalle: Resuelve "Celestial Veins" (problema C, ICPC 2025): cada estrella mira a sus K
+// vecinas mas cercanas, dos estrellas quedan unidas solo si CADA UNA esta entre las K de la
+// otra (vinculo mutuo), y hay que clasificar cada componente conexa en una de cinco formas y
+// contarlas. TRES COSAS QUE HAY QUE HACER BIEN Y SON FACILES DE ARRUINAR: 1) EL DESEMPATE. Si
+// dos candidatas quedan a la misma distancia, gana la que aparece antes en la entrada.
+// Ordenando pares (distancia al cuadrado, indice) eso sale solo, porque el indice desempata.
+// Con coordenadas hasta 10^9, dx*dx + dy*dy llega a 8*10^18 y cabe JUSTO en long long: en int o
+// en double se rompe. 2) EL VINCULO ES MUTUO. Que A tenga a B entre sus K no basta; hay que
+// comprobar tambien al reves. Como cada estrella tiene a lo sumo 5 vecinas, revisarlo es O(K).
+// 3) EL ORDEN DE LA CLASIFICACION, que el enunciado fija: Cluster, Ouroboros, Claw, Path,
+// Nebula. Importa porque las formas se solapan. Un triangulo es a la vez completo y un ciclo, y
+// se cuenta como Cluster; un camino de 3 estrellas es a la vez garra y camino, y se cuenta como
+// Claw. Evaluarlas en otro orden cambia las respuestas. Cada forma se reconoce contando aristas
+// y grados, sin recorrer nada mas: completo: E = V*(V-1)/2 ciclo: E = V y todos los grados
+// valen 2 garra: E = V-1, un grado V-1 y los demas 1 camino: E = V-1 y ningun grado pasa de 2
+// Una estrella sola (V = 1) es Nebula, y cualquier otra cosa tambien. El if de V == 1 va
+// primero porque con V = 1 la formula del completo tambien se cumple (E = 0) y la clasificaria
+// mal como Cluster. Costo O(n^2) por mapa para hallar las vecinas, que con n = 1500 son unos 2
+// millones de pares. Medido: 5 mapas de n = 1500 con K = 5 en 93 ms, tanto con puntos al azar
+// como en rejilla (que es el caso con mas empates de distancia). Verificado contra una
+// implementacion independiente del enunciado en 1800 mapas, incluidos puntos alineados y en
+// rejilla para forzar empates, sin una sola diferencia, ademas de los dos casos del sample.
 
 #include <iostream>
 #include <vector>

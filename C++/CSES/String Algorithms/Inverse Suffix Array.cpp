@@ -1,16 +1,17 @@
 // <3
 // Tema: CSES / Reconstruir la Cadena desde el Suffix Array
+// Resumen: Reconstruir la cadena mas chica que produce un suffix array dado
 // O: (n log n) por el segment tree de maximos
 // Uso: greedy sobre sa; seg guarda la letra usada indexada por rank[p+1]
-// Dado un suffix array, construir la cadena mas chica que lo produce, o -1 si no existe.
-// Se recorre el suffix array en orden y se asigna a cada sufijo la letra mas pequena posible. Dos
-// sufijos consecutivos del arreglo pueden compartir letra SOLO si el orden ya queda decidido por
-// lo que viene despues, o sea si rank[p+1] del anterior es menor que rank[p+1] del actual.
-// El segment tree de maximos responde justo eso: entre los sufijos ya colocados cuyo siguiente
-// sufijo va DESPUES del nuestro, cual es la letra mas grande. Si esa letra es la actual, hay
-// conflicto y toca subir a la siguiente.
-// El sufijo de largo 1 (p == n-1) va aparte porque no tiene siguiente y siempre obliga a subir.
-// Si se pasa de 26 letras no hay solucion y se responde -1.
+// Detalle: Dado un suffix array, construir la cadena mas chica que lo produce, o -1 si no
+// existe. Se recorre el suffix array en orden y se asigna a cada sufijo la letra mas pequena
+// posible. Dos sufijos consecutivos del arreglo pueden compartir letra SOLO si el orden ya
+// queda decidido por lo que viene despues, o sea si rank[p+1] del anterior es menor que
+// rank[p+1] del actual. El segment tree de maximos responde justo eso: entre los sufijos ya
+// colocados cuyo siguiente sufijo va DESPUES del nuestro, cual es la letra mas grande. Si esa
+// letra es la actual, hay conflicto y toca subir a la siguiente. El sufijo de largo 1 (p ==
+// n-1) va aparte porque no tiene siguiente y siempre obliga a subir. Si se pasa de 26 letras no
+// hay solucion y se responde -1.
 
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,14 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Ordenado y Rotado
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
-# LeetCode 1752 "Check if Array Is Sorted and Rotated": decir si el arreglo es una rotacion de su
-# version ordenada.
-# Tecnica del codigo: busca donde arranca el minimo y compara dando la vuelta contra el arreglo
-# ordenado. La parte enredada es escoger cual de las apariciones repetidas del minimo es el punto
-# de rotacion.
-# El truco de una linea: contar cuantas veces nums[i] > nums[i+1] dando la vuelta; si es 0 o 1,
-# es ordenado y rotado.
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# LeetCode 1752 "Check if Array Is Sorted and Rotated": decir si el arreglo es una rotacion de
+# su version ordenada. Tecnica del codigo: busca donde arranca el minimo y compara dando la
+# vuelta contra el arreglo ordenado. La parte enredada es escoger cual de las apariciones
+# repetidas del minimo es el punto de rotacion. El truco de una linea: contar cuantas veces
+# nums[i] > nums[i+1] dando la vuelta; si es 0 o 1, es ordenado y rotado.
 
 class Solution:
     def check(self, nums: List[int]) -> bool:

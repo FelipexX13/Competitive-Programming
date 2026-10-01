@@ -1,7 +1,8 @@
 // <3
 // Tema: Greedy / Budget Optimization
-// Dado un presupuesto c y costos a, b, calcula el maximo de posters que se pueden comprar
-// comprando al menos uno de cada tipo.
+// Resumen: Dado un presupuesto c y costos a, b
+// Detalle: Dado un presupuesto c y costos a, b, calcula el maximo de posters que se pueden
+// comprar comprando al menos uno de cada tipo.
 
 #include <bits/stdc++.h>
 using namespace std;

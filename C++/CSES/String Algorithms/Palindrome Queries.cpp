@@ -1,27 +1,25 @@
 // <3
 // Tema: CSES / Hashing Doble con Segment Tree
+// Resumen: Hay actualizaciones de un caracter mezcladas con las preguntas
 // O: (log n) por operacion, hashing doble en segment tree
 // Uso: un arbol con la cadena y otro con la invertida; palindromo si coinciden
-// Consultas de "el tramo [l,r] es palindromo?" sobre una cadena que ademas CAMBIA: hay
-// actualizaciones de un caracter mezcladas con las preguntas.
-// LA IDEA: un segment tree donde cada nodo guarda DOS hashes del tramo, el de izquierda a derecha
-// (fw) y el de derecha a izquierda (bw). El tramo es palindromo si los dos coinciden.
-// EL MERGE ES LO UNICO DELICADO, y es asimetrico a proposito:
-//     fw de (a + b) = a.fw * BASE^len(b) + b.fw     se lee a y despues b
-//     bw de (a + b) = b.bw * BASE^len(a) + a.bw     al reves se lee b y despues a
-// Por eso hace falta guardar el LARGO en cada nodo: sin el no se sabe por cuanto desplazar. Las
-// potencias de BASE van precalculadas en pw[], porque calcularlas en cada merge seria un log de mas.
-// El nodo neutro es el de largo 0, y el merge lo trata aparte para que las consultas que no cubren
-// nada no ensucien el hash.
-// POR QUE HASHING Y NO MANACHER: Manacher es O(n) pero para una cadena FIJA. Aqui hay
-// actualizaciones, y rehacerlo en cada cambio seria O(n) por consulta. El hash con segment tree da
-// O(log n) tanto para actualizar como para preguntar.
-// EL RIESGO DEL HASHING ES LA COLISION. Con un solo modulo de 10^9 y muchas consultas, la
-// probabilidad ya no es despreciable (paradoja del cumpleanos: con 10^5 consultas sobre 10^9
-// valores). En un juez adversario conviene hashing DOBLE, con dos pares (BASE, MOD) distintos, y
-// dar palindromo solo si coinciden los dos.
-// La BASE debe ser mayor que el alfabeto y los caracteres se mapean a 1..26, no a 0..25: si la 'a'
-// valiera 0, las cadenas "a", "aa" y "aaa" tendrian el mismo hash.
+// Detalle: Consultas de "el tramo [l,r] es palindromo?" sobre una cadena que ademas CAMBIA: hay
+// actualizaciones de un caracter mezcladas con las preguntas. LA IDEA: un segment tree donde
+// cada nodo guarda DOS hashes del tramo, el de izquierda a derecha (fw) y el de derecha a
+// izquierda (bw). El tramo es palindromo si los dos coinciden. EL MERGE ES LO UNICO DELICADO, y
+// es asimetrico a proposito: fw de (a + b) = a.fw * BASE^len(b) + b.fw se lee a y despues b bw
+// de (a + b) = b.bw * BASE^len(a) + a.bw al reves se lee b y despues a Por eso hace falta
+// guardar el LARGO en cada nodo: sin el no se sabe por cuanto desplazar. Las potencias de BASE
+// van precalculadas en pw[], porque calcularlas en cada merge seria un log de mas. El nodo
+// neutro es el de largo 0, y el merge lo trata aparte para que las consultas que no cubren nada
+// no ensucien el hash. POR QUE HASHING Y NO MANACHER: Manacher es O(n) pero para una cadena
+// FIJA. Aqui hay actualizaciones, y rehacerlo en cada cambio seria O(n) por consulta. El hash
+// con segment tree da O(log n) tanto para actualizar como para preguntar. EL RIESGO DEL HASHING
+// ES LA COLISION. Con un solo modulo de 10^9 y muchas consultas, la probabilidad ya no es
+// despreciable (paradoja del cumpleanos: con 10^5 consultas sobre 10^9 valores). En un juez
+// adversario conviene hashing DOBLE, con dos pares (BASE, MOD) distintos, y dar palindromo solo
+// si coinciden los dos. La BASE debe ser mayor que el alfabeto y los caracteres se mapean a
+// 1..26, no a 0..25: si la 'a' valiera 0, las cadenas "a", "aa" y "aaa" tendrian el mismo hash.
 
 #include <bits/stdc++.h>
 using namespace std;

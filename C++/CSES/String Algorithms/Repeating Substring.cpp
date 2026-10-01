@@ -1,15 +1,16 @@
 // <3
 // Tema: CSES / Suffix Automaton (Ocurrencias por Estado)
+// Resumen: La subcadena mas larga que aparece al menos dos veces
 // O: (n), construir mas ordenar por largo con counting sort
 // Uso: sam.longestRepeating(s) -> la subcadena mas larga que sale 2+ veces, o -1
-// La subcadena mas larga que aparece al menos dos veces.
-// Se cuenta cuantas veces ocurre cada estado: los estados creados como 'cur' valen 1 y los clones
-// valen 0, y despues se propaga por los suffix links de los estados LARGOS hacia los cortos. Para
-// recorrer en ese orden se ordenan los estados por len con COUNTING SORT, que es O(n) y es el
-// patron estandar en suffix automaton (ordenar con sort() seria O(n log n) y mas codigo).
-// Con occ listo, la respuesta es el estado de mayor len con occ >= 2. firstPos guarda donde
-// termino la primera ocurrencia, asi que la subcadena se recorta con substr(pos - len + 1, len).
-// Los clones arrancan en 0 a proposito: representan la misma posicion que q, y contarlos tambien
+// Detalle: La subcadena mas larga que aparece al menos dos veces. Se cuenta cuantas veces
+// ocurre cada estado: los estados creados como 'cur' valen 1 y los clones valen 0, y despues se
+// propaga por los suffix links de los estados LARGOS hacia los cortos. Para recorrer en ese
+// orden se ordenan los estados por len con COUNTING SORT, que es O(n) y es el patron estandar
+// en suffix automaton (ordenar con sort() seria O(n log n) y mas codigo). Con occ listo, la
+// respuesta es el estado de mayor len con occ >= 2. firstPos guarda donde termino la primera
+// ocurrencia, asi que la subcadena se recorta con substr(pos - len + 1, len). Los clones
+// arrancan en 0 a proposito: representan la misma posicion que q, y contarlos tambien
 // duplicaria las ocurrencias.
 
 #include <bits/stdc++.h>

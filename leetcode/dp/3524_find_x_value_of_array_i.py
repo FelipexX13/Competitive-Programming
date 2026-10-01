@@ -1,13 +1,13 @@
 # <3
 # Tema: LeetCode Hub / DP sobre Residuos
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3524 "Find X Value of Array I": para cada residuo, cuantos subarreglos tienen
-# producto congruente con ese residuo modulo k.
-# Tecnica: dp[i][r] = cuantos subarreglos que TERMINAN en i dejan residuo r. Cada uno se extiende
-# de dp[i-1] multiplicando por nums[i] mod k, mas el que empieza en i. Al final se acumula.
-# Es la version sin segment tree del 3525 que esta en la carpeta segment_tree.
-# OJO: usa try/except en vez de revisar si i es 0.
+# producto congruente con ese residuo modulo k. Tecnica: dp[i][r] = cuantos subarreglos que
+# TERMINAN en i dejan residuo r. Cada uno se extiende de dp[i-1] multiplicando por nums[i] mod
+# k, mas el que empieza en i. Al final se acumula. Es la version sin segment tree del 3525 que
+# esta en la carpeta segment_tree. OJO: usa try/except en vez de revisar si i es 0.
 
 class Solution:
     def resultArray(self, nums: List[int], k: int) -> List[int]:

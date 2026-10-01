@@ -1,13 +1,13 @@
 // <3
 // Tema: CSES / Aho-Corasick (Aparece o No)
+// Resumen: Si cada patron aparece o no en el texto, con todos a la vez
 // O: (suma de patrones + |s| + 26*nodos)
 // Uso: igual que Counting Patterns, pero appears(p) devuelve si cnt > 0
-// Decir, para cada patron, si aparece o no dentro del texto.
-// Es el mismo Aho-Corasick de Counting Patterns: el conteo propagado ya responde la pregunta, y
-// appears() solo mira si quedo mayor que cero. Vale la pena tener los dos lado a lado porque la
-// unica diferencia es la ultima linea.
-// Si solo hace falta el si/no, tambien sirve un suffix automaton del texto y caminar cada patron
-// por el; eso es O(suma de patrones) sin construir nada sobre los patrones.
+// Detalle: Decir, para cada patron, si aparece o no dentro del texto. Es el mismo Aho-Corasick
+// de Counting Patterns: el conteo propagado ya responde la pregunta, y appears() solo mira si
+// quedo mayor que cero. Vale la pena tener los dos lado a lado porque la unica diferencia es la
+// ultima linea. Si solo hace falta el si/no, tambien sirve un suffix automaton del texto y
+// caminar cada patron por el; eso es O(suma de patrones) sin construir nada sobre los patrones.
 
 #include <bits/stdc++.h>
 using namespace std;

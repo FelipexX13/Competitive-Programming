@@ -1,8 +1,10 @@
 // <3
 // Tema: String / Monotonic Stack
-// Resuelve "Remove Duplicate Letters": devuelve el menor string lexicografico que contiene
-// cada letra de s exactamente una vez. Usa una pila monotona, sacando letras mayores mientras
-// todavia aparezcan mas adelante (cnt > 0) y no esten ya en el resultado.
+// Resumen: Devuelve el menor string lexicografico que contiene cada letra de s exactamente una
+// vez
+// Detalle: Resuelve "Remove Duplicate Letters": devuelve el menor string lexicografico que
+// contiene cada letra de s exactamente una vez. Usa una pila monotona, sacando letras mayores
+// mientras todavia aparezcan mas adelante (cnt > 0) y no esten ya en el resultado.
 
 #include <bits/stdc++.h>
 

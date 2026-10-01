@@ -1,13 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Palindromo Lexicograficamente Menor
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3517 "Smallest Palindromic Rearrangement I": reordenar las letras para formar el
-# palindromo alfabeticamente menor.
-# Tecnica: se cuentan las letras, se parte cada cuenta a la mitad y la primera mitad se escribe en
-# orden alfabetico; el centro es la unica letra que quedo impar y la segunda mitad es el reverso.
-# Poner las letras chicas primero es lo que minimiza, y como el palindromo obliga a que la segunda
-# mitad sea el espejo, no hay nada mas que decidir.
+# palindromo alfabeticamente menor. Tecnica: se cuentan las letras, se parte cada cuenta a la
+# mitad y la primera mitad se escribe en orden alfabetico; el centro es la unica letra que quedo
+# impar y la segunda mitad es el reverso. Poner las letras chicas primero es lo que minimiza, y
+# como el palindromo obliga a que la segunda mitad sea el espejo, no hay nada mas que decidir.
 
 class Solution:
     def smallestPalindrome(self, s: str) -> str:

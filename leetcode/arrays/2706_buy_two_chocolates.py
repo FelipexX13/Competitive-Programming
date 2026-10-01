@@ -1,12 +1,12 @@
 # <3
 # Tema: LeetCode Hub / Los Dos mas Baratos
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
-# LeetCode 2706 "Buy Two Chocolates": comprar dos chocolates sin quedar en rojo, devolviendo lo que
-# sobra.
-# Tecnica: genera todas las parejas y toma la suma minima, O(n^2).
-# Basta con los dos precios mas pequenos, que salen en una sola pasada. La pareja mas barata siempre
-# son los dos minimos.
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# LeetCode 2706 "Buy Two Chocolates": comprar dos chocolates sin quedar en rojo, devolviendo lo
+# que sobra. Tecnica: genera todas las parejas y toma la suma minima, O(n^2). Basta con los dos
+# precios mas pequenos, que salen en una sola pasada. La pareja mas barata siempre son los dos
+# minimos.
 
 class Solution:
     def buyChoco(self, prices: List[int], money: int) -> int:

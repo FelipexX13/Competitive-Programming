@@ -1,18 +1,19 @@
 // <3
 // Tema: CSES / Lazy Propagation con Suma y Asignacion
-// Lazy propagation con DOS tipos de actualizacion (sumar x al rango y ASIGNAR x al rango), y todo
-// el problema es como se componen cuando se encuentran en un mismo nodo. Se mantiene el
-// invariante "lo pendiente es: primero asignar lazySet (si hasSet), despues sumar lazyAdd":
-//   - Una ASIGNACION borra cualquier suma pendiente: applySet pone lazyAdd en 0. La asignacion
-//     pisa todo lo anterior.
-//   - Una SUMA sobre un nodo que ya tiene una asignacion pendiente no se guarda como suma: se le
-//     suma al valor asignado (lazySet += x). Asignar S y despues sumar x es asignar S + x.
-//   - Al empujar, se baja primero la asignacion y despues la suma, en ese orden.
-// Equivocarse en cualquiera de las tres da respuestas que parecen bien en casos chicos y fallan
-// cuando las dos operaciones se mezclan sobre el mismo rango.
-// Se usa hasSet aparte en vez de un valor centinela porque asignar 0 es una operacion valida.
-// EL PATRON GENERAL: con varios tipos de lazy, antes de programar se escribe la tabla de "si
-// llega B encima de A, que queda". Si esa tabla cierra, el lazy funciona.
+// Resumen: Lazy propagation con DOS tipos de actualizacion (sumar x al rango y ASIGNAR x al
+// rango)
+// Detalle: Lazy propagation con DOS tipos de actualizacion (sumar x al rango y ASIGNAR x al
+// rango), y todo el problema es como se componen cuando se encuentran en un mismo nodo. Se
+// mantiene el invariante "lo pendiente es: primero asignar lazySet (si hasSet), despues sumar
+// lazyAdd": - Una ASIGNACION borra cualquier suma pendiente: applySet pone lazyAdd en 0. La
+// asignacion pisa todo lo anterior. - Una SUMA sobre un nodo que ya tiene una asignacion
+// pendiente no se guarda como suma: se le suma al valor asignado (lazySet += x). Asignar S y
+// despues sumar x es asignar S + x. - Al empujar, se baja primero la asignacion y despues la
+// suma, en ese orden. Equivocarse en cualquiera de las tres da respuestas que parecen bien en
+// casos chicos y fallan cuando las dos operaciones se mezclan sobre el mismo rango. Se usa
+// hasSet aparte en vez de un valor centinela porque asignar 0 es una operacion valida. EL
+// PATRON GENERAL: con varios tipos de lazy, antes de programar se escribe la tabla de "si llega
+// B encima de A, que queda". Si esa tabla cierra, el lazy funciona.
 
 #include <bits/stdc++.h>
 using namespace std;

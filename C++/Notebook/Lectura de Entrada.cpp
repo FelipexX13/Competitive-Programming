@@ -1,14 +1,16 @@
 // <3
 // Tema: Implementation / Lectura de Entrada
+// Resumen: Hasta EOF, con centinela, con T casos, bloques separados por lineas en blanco, grids
+// de caracteres
 // O: (1) por token, es E/S
 // Uso: los seis patrones de lectura: EOF, centinela, T casos, bloques, linea, n
-// Catalogo de patrones para leer entradas "raras": hasta EOF, con centinela, con T casos,
-// bloques separados por lineas en blanco, grids de caracteres, tokens con separadores
-// mixtos y enteros gigantes como string. La regla practica: si el problema NO da un T
-// inicial, piensa en EOF o centinela; si la entrada trae blancos o bloques, usa getline
-// mas istringstream en vez de cin >>; y si alternas cin >> con getline, consume siempre
-// el salto de linea pendiente con un getline extra o el parseo se descuadra.
-// Cada patron esta en su propia funcion para poder copiar solo el que se necesita.
+// Detalle: Catalogo de patrones para leer entradas "raras": hasta EOF, con centinela, con T
+// casos, bloques separados por lineas en blanco, grids de caracteres, tokens con separadores
+// mixtos y enteros gigantes como string. La regla practica: si el problema NO da un T inicial,
+// piensa en EOF o centinela; si la entrada trae blancos o bloques, usa getline mas
+// istringstream en vez de cin >>; y si alternas cin >> con getline, consume siempre el salto de
+// linea pendiente con un getline extra o el parseo se descuadra. Cada patron esta en su propia
+// funcion para poder copiar solo el que se necesita.
 
 #include <bits/stdc++.h>
 

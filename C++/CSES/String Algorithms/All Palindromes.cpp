@@ -1,15 +1,16 @@
 // <3
 // Tema: CSES / Manacher (Palindromo Mas Largo que Termina en Cada Posicion)
-// Para cada posicion, el palindromo mas largo que TERMINA ahi. Primero Manacher con centinelas
-// distintos en los extremos ('$' al inicio, '^' al final), que es el truco para que el while de
-// expansion no necesite chequear limites: al llegar a los bordes los centinelas nunca coinciden.
-// EL BARRIDO QUE LO RESUELVE: si un palindromo centrado en i llega hasta j o mas, entonces tambien
-// hay un palindromo centrado en i que termina EXACTAMENTE en j (se recorta simetrico). Y entre dos
-// centros que alcanzan j, el de mas a la izquierda da el palindromo mas largo. Asi que para cada
-// j basta el PRIMER centro, de izquierda a derecha, que lo alcanza.
-// Por eso el puntero j nunca retrocede: cada centro asigna las posiciones nuevas que alcanza y
-// que nadie antes alcanzo. Cada posicion se asigna una vez por pasada, y todo queda O(n).
-// Se hace una pasada para impares y otra para pares, quedandose con el maximo.
+// Resumen: Para cada posicion, el palindromo mas largo que TERMINA ahi
+// Detalle: Para cada posicion, el palindromo mas largo que TERMINA ahi. Primero Manacher con
+// centinelas distintos en los extremos ('$' al inicio, '^' al final), que es el truco para que
+// el while de expansion no necesite chequear limites: al llegar a los bordes los centinelas
+// nunca coinciden. EL BARRIDO QUE LO RESUELVE: si un palindromo centrado en i llega hasta j o
+// mas, entonces tambien hay un palindromo centrado en i que termina EXACTAMENTE en j (se
+// recorta simetrico). Y entre dos centros que alcanzan j, el de mas a la izquierda da el
+// palindromo mas largo. Asi que para cada j basta el PRIMER centro, de izquierda a derecha, que
+// lo alcanza. Por eso el puntero j nunca retrocede: cada centro asigna las posiciones nuevas
+// que alcanza y que nadie antes alcanzo. Cada posicion se asigna una vez por pasada, y todo
+// queda O(n). Se hace una pasada para impares y otra para pares, quedandose con el maximo.
 
 #include <bits/stdc++.h>
 using namespace std;

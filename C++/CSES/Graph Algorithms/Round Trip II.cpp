@@ -1,18 +1,19 @@
 // <3
 // Tema: CSES / Ciclo en Grafo Dirigido (DFS de Tres Colores)
-// Encontrar un ciclo en un grafo DIRIGIDO con DFS de tres colores: 0 = sin visitar, 1 = en la
-// pila (gris), 2 = terminado (negro). Hay ciclo si y solo si aparece una arista hacia un nodo
-// GRIS, porque ese nodo es un ancestro en la rama actual. Una arista hacia un negro NO es ciclo:
-// ese nodo ya se exploro entero por otra rama. Confundir gris con negro es EL error clasico
-// aqui, y por eso el "visitado si/no" de los grafos no dirigidos no sirve.
-// LO QUE HACE BIEN ESTE DFS ITERATIVO, y conviene copiarlo tal cual: la pila guarda el par
-// (nodo, indice de la siguiente arista por mirar). Asi un nodo sigue gris hasta que se revisaron
-// TODAS sus aristas, y solo ahi se vuelve negro. El DFS iterativo ingenuo (sacar el nodo de la
-// pila apenas se visita, como en "Round Trip (Stack)") no sirve para colores, porque pierde el
-// momento en que el nodo termina.
-// El ciclo se reconstruye subiendo por anterior[] desde x hasta z, e invirtiendo.
-// CUANDO USAR: detectar dependencias circulares, o como chequeo de que un grafo es un DAG antes
-// de hacerle DP. Si solo hace falta saber SI hay ciclo, Kahn (ver "Course Schedule") es mas corto.
+// Resumen: Encontrar un ciclo en un grafo DIRIGIDO con DFS de tres colores
+// Detalle: Encontrar un ciclo en un grafo DIRIGIDO con DFS de tres colores: 0 = sin visitar, 1
+// = en la pila (gris), 2 = terminado (negro). Hay ciclo si y solo si aparece una arista hacia
+// un nodo GRIS, porque ese nodo es un ancestro en la rama actual. Una arista hacia un negro NO
+// es ciclo: ese nodo ya se exploro entero por otra rama. Confundir gris con negro es EL error
+// clasico aqui, y por eso el "visitado si/no" de los grafos no dirigidos no sirve. LO QUE HACE
+// BIEN ESTE DFS ITERATIVO, y conviene copiarlo tal cual: la pila guarda el par (nodo, indice de
+// la siguiente arista por mirar). Asi un nodo sigue gris hasta que se revisaron TODAS sus
+// aristas, y solo ahi se vuelve negro. El DFS iterativo ingenuo (sacar el nodo de la pila
+// apenas se visita, como en "Round Trip (Stack)") no sirve para colores, porque pierde el
+// momento en que el nodo termina. El ciclo se reconstruye subiendo por anterior[] desde x hasta
+// z, e invirtiendo. CUANDO USAR: detectar dependencias circulares, o como chequeo de que un
+// grafo es un DAG antes de hacerle DP. Si solo hace falta saber SI hay ciclo, Kahn (ver "Course
+// Schedule") es mas corto.
 
 #include <iostream>
 #include <vector>

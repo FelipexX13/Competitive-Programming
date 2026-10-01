@@ -1,11 +1,12 @@
 # <3
 # Tema: LeetCode Hub / Frecuencias con Letras Repetidas
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1189 "Maximum Number of Balloons": cuantas veces se puede armar la palabra balloon.
-# Tecnica: contar b, a, l, o, n y dividir entre lo que pide la palabra. La trampa es que la l y la
-# o van DOS veces, asi que esas se dividen entre 2, y la respuesta es el minimo.
-# Con Counter sale en dos lineas: min(cnt[c] // necesita[c]) sobre las cinco letras.
+# Tecnica: contar b, a, l, o, n y dividir entre lo que pide la palabra. La trampa es que la l y
+# la o van DOS veces, asi que esas se dividen entre 2, y la respuesta es el minimo. Con Counter
+# sale en dos lineas: min(cnt[c] // necesita[c]) sobre las cinco letras.
 
 class Solution:
     def maxNumberOfBalloons(self, text: str) -> int:

@@ -1,13 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Liebre y Tortuga
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
-# LeetCode 141 "Linked List Cycle": decir si la lista tiene un ciclo.
-# Tecnica: dos punteros, uno avanza de a uno y el otro de a dos. Si hay ciclo se encuentran; si
-# no, el rapido llega al final. Es el algoritmo de Floyd y gasta O(1) de memoria, que es la
-# ventaja sobre el set de visitados (como dice el comentario del autor).
-# El mismo truco encuentra el INICIO del ciclo: al encontrarse, se manda uno a la cabeza y se
-# avanzan los dos de a uno hasta que coincidan.
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# LeetCode 141 "Linked List Cycle": decir si la lista tiene un ciclo. Tecnica: dos punteros, uno
+# avanza de a uno y el otro de a dos. Si hay ciclo se encuentran; si no, el rapido llega al
+# final. Es el algoritmo de Floyd y gasta O(1) de memoria, que es la ventaja sobre el set de
+# visitados (como dice el comentario del autor). El mismo truco encuentra el INICIO del ciclo:
+# al encontrarse, se manda uno a la cabeza y se avanzan los dos de a uno hasta que coincidan.
 
 # Definition for singly-linked list.
 # class ListNode:

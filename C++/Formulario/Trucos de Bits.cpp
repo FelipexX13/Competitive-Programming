@@ -1,11 +1,12 @@
 // <3
 // Tema: Formulario / Trucos de Bits
-// Identidades de bits con la situacion concreta en la que sirve cada una, que es la parte
-// que no se deduce: n & (n-1) es "potencia de 2", n & -n es el avance del Fenwick, y el xor
-// se usa porque a^a=0 deja solo lo que aparece un numero impar de veces.
-// Los valores de los builtins estan verificados corriendo el codigo, no de memoria.
-// La trampa mas cara de esta seccion: 1 << 40 da 0 porque el literal 1 es int; hay que
-// escribir 1LL << 40.
+// Resumen: Identidades de bits con la situacion concreta en la que sirve cada una, que es la
+// parte que no se deduce
+// Detalle: Identidades de bits con la situacion concreta en la que sirve cada una, que es la
+// parte que no se deduce: n & (n-1) es "potencia de 2", n & -n es el avance del Fenwick, y el
+// xor se usa porque a^a=0 deja solo lo que aparece un numero impar de veces. Los valores de los
+// builtins estan verificados corriendo el codigo, no de memoria. La trampa mas cara de esta
+// seccion: 1 << 40 da 0 porque el literal 1 es int; hay que escribir 1LL << 40.
 
 // =============== TRUCOS DE BITS ===============
 //

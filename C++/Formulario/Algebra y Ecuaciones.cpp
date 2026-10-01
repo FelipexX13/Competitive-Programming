@@ -1,10 +1,11 @@
 // <3
 // Tema: Formulario / Algebra y Ecuaciones
-// Resolver e igualar ecuaciones: cuadratica con discriminante, Vieta para sacar suma y
+// Resumen: Resolver e igualar ecuaciones: cuadratica con discriminante
+// Detalle: Resolver e igualar ecuaciones: cuadratica con discriminante, Vieta para sacar suma y
 // producto de raices sin calcularlas, sistemas 2x2 por Cramer, productos notables, leyes de
-// exponentes y logaritmos, y proporciones y promedios.
-// Incluye la version numericamente estable de la cuadratica, que importa cuando b^2 domina a
-// 4ac y la resta directa pierde todos los digitos. Vieta y Cramer estan verificados.
+// exponentes y logaritmos, y proporciones y promedios. Incluye la version numericamente estable
+// de la cuadratica, que importa cuando b^2 domina a 4ac y la resta directa pierde todos los
+// digitos. Vieta y Cramer estan verificados.
 
 // =============== ALGEBRA Y ECUACIONES ===============
 //

@@ -1,15 +1,16 @@
 // <3
 // Tema: CSES / Funcion de Prefijos (Cadena de Bordes)
-// Todos los bordes de s (prefijos que tambien son sufijos) salen de la funcion de prefijos, sin
-// buscar nada mas. El borde mas largo es pi[n-1]; y el siguiente mas largo es el borde mas largo
-// DE ESE BORDE, o sea pi[pi[n-1] - 1]; y asi hasta llegar a 0.
-// POR QUE LA CADENA LOS DA TODOS: un borde de s mas corto que el borde mas largo b tambien es
-// borde de b (es prefijo de s, luego prefijo de b; y es sufijo de s, luego sufijo de b). Asi que
-// los bordes de s son b y los bordes de b, recursivamente, y no se salta ninguno.
-// Salen de mayor a menor, por eso el reverse al final.
-// Esta cadena j -> pi[j-1] es la misma que usa KMP para retroceder, y es de las ideas mas
-// reusadas de strings: aparece en periodos, en el automata de KMP y en contar apariciones de
-// cada prefijo.
+// Resumen: Todos los bordes de s (prefijos que tambien son sufijos) salen de la funcion de
+// prefijos
+// Detalle: Todos los bordes de s (prefijos que tambien son sufijos) salen de la funcion de
+// prefijos, sin buscar nada mas. El borde mas largo es pi[n-1]; y el siguiente mas largo es el
+// borde mas largo DE ESE BORDE, o sea pi[pi[n-1] - 1]; y asi hasta llegar a 0. POR QUE LA
+// CADENA LOS DA TODOS: un borde de s mas corto que el borde mas largo b tambien es borde de b
+// (es prefijo de s, luego prefijo de b; y es sufijo de s, luego sufijo de b). Asi que los
+// bordes de s son b y los bordes de b, recursivamente, y no se salta ninguno. Salen de mayor a
+// menor, por eso el reverse al final. Esta cadena j -> pi[j-1] es la misma que usa KMP para
+// retroceder, y es de las ideas mas reusadas de strings: aparece en periodos, en el automata de
+// KMP y en contar apariciones de cada prefijo.
 
 #include <bits/stdc++.h>
 using namespace std;

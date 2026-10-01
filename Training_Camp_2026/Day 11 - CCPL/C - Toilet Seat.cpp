@@ -1,8 +1,10 @@
 // <3
 // Tema: Simulation / Ad Hoc
-// Resuelve "Toilet Seat" (Kattis): dada una secuencia de preferencias 'U' (arriba) o 'D'
-// (abajo) de personas que usan el bano una tras otra, donde el primer caracter es la posicion
-// inicial del asiento, pide calcular cuantos ajustes de asiento se necesitan bajo tres
+// Resumen: Dada una secuencia de preferencias 'U' (arriba) o 'D' (abajo) de personas que usan
+// el bano una tras otra
+// Detalle: Resuelve "Toilet Seat" (Kattis): dada una secuencia de preferencias 'U' (arriba) o
+// 'D' (abajo) de personas que usan el bano una tras otra, donde el primer caracter es la
+// posicion inicial del asiento, pide calcular cuantos ajustes de asiento se necesitan bajo tres
 // politicas: (1) siempre dejarlo arriba, (2) siempre dejarlo abajo, (3) dejarlo como a uno le
 // gustaria encontrarlo. Recorre la cadena una sola vez calculando en paralelo ans1 y ans2
 // (contando cuantas veces el asiento debe moverse segun cada politica fija) y ans3 (contando

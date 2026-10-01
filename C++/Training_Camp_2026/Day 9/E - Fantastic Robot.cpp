@@ -1,13 +1,14 @@
 // <3
 // Tema: Graph / Dijkstra
-// Resuelve "Fantastic Robot" (Day 9, problema E - Contest 08 [Inicial & Avanzado]): HERBIE debe
-// llegar desde una celda a otra en una matriz binaria (0 = libre, 1 = pared) pero no puede moverse
-// instruccion por instruccion, sino que debe ejecutar completa una de sus "ordenes" preprogramadas
-// (cadenas de movimientos U/D/L/R), donde cada movimiento bloqueado por una pared o el borde
-// simplemente no cuenta como paso. Modela cada orden como una arista de costo variable (los
-// "pasos" realmente efectivos) entre la celda inicial y la celda final de aplicar esa orden
-// completa (funcion generar_vecinos), y corre Dijkstra con priority_queue sobre ese grafo
-// implicito para hallar el minimo total de movimientos hasta la celda objetivo.
+// Resumen: HERBIE debe llegar desde una celda a otra en una matriz binaria (0 = libre
+// Detalle: Resuelve "Fantastic Robot" (Day 9, problema E - Contest 08 [Inicial & Avanzado]):
+// HERBIE debe llegar desde una celda a otra en una matriz binaria (0 = libre, 1 = pared) pero
+// no puede moverse instruccion por instruccion, sino que debe ejecutar completa una de sus
+// "ordenes" preprogramadas (cadenas de movimientos U/D/L/R), donde cada movimiento bloqueado
+// por una pared o el borde simplemente no cuenta como paso. Modela cada orden como una arista
+// de costo variable (los "pasos" realmente efectivos) entre la celda inicial y la celda final
+// de aplicar esa orden completa (funcion generar_vecinos), y corre Dijkstra con priority_queue
+// sobre ese grafo implicito para hallar el minimo total de movimientos hasta la celda objetivo.
 
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,12 +1,12 @@
 # <3
 # Tema: LeetCode Hub / Greedy sobre Ordenado
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1561 "Maximum Number of Coins You Can Get": se reparten los montones en tercias y de
-# cada tercia uno se queda con el del medio; maximizar lo propio.
-# Tecnica: ordenar y de cada tercia botar el mas grande (se lo lleva Alice), tomar el segundo
-# mas grande y botar el mas pequeno (se lo lleva Bob). Los pop() desde los dos extremos son
-# exactamente eso.
+# cada tercia uno se queda con el del medio; maximizar lo propio. Tecnica: ordenar y de cada
+# tercia botar el mas grande (se lo lleva Alice), tomar el segundo mas grande y botar el mas
+# pequeno (se lo lleva Bob). Los pop() desde los dos extremos son exactamente eso.
 
 class Solution:
     def maxCoins(self, piles: List[int]) -> int:

@@ -1,22 +1,22 @@
 // <3
 // Tema: CSES / Segment Tree sobre Ocurrencia Anterior
+// Resumen: Saber si en [x,y] hay valores repetidos, y la idea es preciosa
 // O: (log n) por operacion
 // Uso: SegmentTree sobre el anterior-igual; Operation guarda el historial
-// Saber si en [x,y] hay valores repetidos, y la idea es preciosa: para cada posicion i se calcula
-// prev[i], la ultima posicion antes de i con el mismo valor (o 0 si no hay). Entonces el rango
-// [x,y] tiene un repetido si y solo si existe algun i en [x,y] con prev[i] >= x.
-// Eso se convierte en una consulta de MAXIMO de prev[] sobre el rango, o como esta aqui, de minimo
-// sobre el arreglo complementario. De cualquier forma, el punto es que una pregunta que parecia
-// necesitar contar valores distintos se reduce a un maximo de rango, que un segment tree responde
-// en O(log n) y ONLINE, sin necesidad de Mo.
-// COMPARAR CON "Distinct Values Queries": ese cuenta CUANTOS distintos hay y por eso necesita Mo o
-// un BIT offline. Este solo pregunta SI hay repetidos, que es mucho mas debil, y esa debilidad es
-// justo lo que permite la reduccion a un maximo. Vale la pena mirar los dos juntos: la leccion es
-// que antes de sacar la artilleria conviene ver si el problema pide menos de lo que parece.
-// EL PATRON DE prev[i]: aparece en casi todos los problemas de "distintos en un rango". Se calcula
-// con un map de ultima posicion vista en una pasada.
-// OJO: usa structured bindings (auto [a, b]), que piden C++17. En CSES compila, pero con
-// un g++ viejo hay que volver a .first y .second.
+// Detalle: Saber si en [x,y] hay valores repetidos, y la idea es preciosa: para cada posicion i
+// se calcula prev[i], la ultima posicion antes de i con el mismo valor (o 0 si no hay).
+// Entonces el rango [x,y] tiene un repetido si y solo si existe algun i en [x,y] con prev[i] >=
+// x. Eso se convierte en una consulta de MAXIMO de prev[] sobre el rango, o como esta aqui, de
+// minimo sobre el arreglo complementario. De cualquier forma, el punto es que una pregunta que
+// parecia necesitar contar valores distintos se reduce a un maximo de rango, que un segment
+// tree responde en O(log n) y ONLINE, sin necesidad de Mo. COMPARAR CON "Distinct Values
+// Queries": ese cuenta CUANTOS distintos hay y por eso necesita Mo o un BIT offline. Este solo
+// pregunta SI hay repetidos, que es mucho mas debil, y esa debilidad es justo lo que permite la
+// reduccion a un maximo. Vale la pena mirar los dos juntos: la leccion es que antes de sacar la
+// artilleria conviene ver si el problema pide menos de lo que parece. EL PATRON DE prev[i]:
+// aparece en casi todos los problemas de "distintos en un rango". Se calcula con un map de
+// ultima posicion vista en una pasada. OJO: usa structured bindings (auto [a, b]), que piden
+// C++17. En CSES compila, pero con un g++ viejo hay que volver a .first y .second.
 
 #include <bits/stdc++.h>
 using namespace std;

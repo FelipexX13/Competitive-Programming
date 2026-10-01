@@ -1,10 +1,12 @@
 # <3
 # Tema: Combinatorics / Suma de Subconjuntos (2^n)
-# Resuelve "Group work" (Day 7, problema C - Contest 07 [Avanzados]): dada una clase de N
-# estudiantes, cuenta cuantos grupos distintos de al menos 2 estudiantes se pueden formar (dos
+# Resumen: Dada una clase de N estudiantes, cuenta cuantos grupos distintos de al menos 2
+# estudiantes se pueden formar...
+# Detalle: Resuelve "Group work" (Day 7, problema C - Contest 07 [Avanzados]): dada una clase de
+# N estudiantes, cuenta cuantos grupos distintos de al menos 2 estudiantes se pueden formar (dos
 # grupos son distintos si difieren en al menos un estudiante). La respuesta es la suma de
-# combinaciones C(n,m) para m=2..n (equivalente a 2^n menos los subconjuntos de tamano 0 y 1); el
-# codigo usa math.comb para sumar directamente esas combinaciones.
+# combinaciones C(n,m) para m=2..n (equivalente a 2^n menos los subconjuntos de tamano 0 y 1);
+# el codigo usa math.comb para sumar directamente esas combinaciones.
 
 import math
 n = int(input())

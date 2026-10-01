@@ -1,19 +1,19 @@
 // <3
 // Tema: CSES / Suffix Automaton (Contar Distintas)
+// Resumen: Cuantas subcadenas distintas tiene la cadena
 // O: (n) estados y transiciones, con alfabeto fijo
 // Uso: sam.add(c) por letra; sam.countDistinct()
-// Cuantas subcadenas DISTINTAS tiene la cadena.
-// El suffix automaton es el automata minimo que acepta todos los sufijos, y tiene a lo sumo 2n
-// estados y 3n transiciones, por eso se reserva 2*n. Cada estado representa un conjunto de
-// subcadenas que terminan en las mismas posiciones, y esas subcadenas son exactamente los largos
-// del intervalo (len[link] + 1 .. len[v]).
-// Entonces la respuesta es sumar len[v] - len[link[v]] sobre todos los estados menos la raiz.
-// Una linea, una vez construido el automata.
-// EL CLONE ES TODO EL TRUCO de la construccion: cuando el estado q al que se llega es mas largo
-// de lo que corresponde, se parte en dos para que cada estado siga representando un rango limpio
-// de largos. Si se omite, el automata deja de ser minimo y las cuentas se caen.
-// CUANDO USAR: cualquier pregunta sobre TODAS las subcadenas. Para sufijos ordenados, suffix
-// array; para subcadenas como conjunto, suffix automaton.
+// Detalle: Cuantas subcadenas DISTINTAS tiene la cadena. El suffix automaton es el automata
+// minimo que acepta todos los sufijos, y tiene a lo sumo 2n estados y 3n transiciones, por eso
+// se reserva 2*n. Cada estado representa un conjunto de subcadenas que terminan en las mismas
+// posiciones, y esas subcadenas son exactamente los largos del intervalo (len[link] + 1 ..
+// len[v]). Entonces la respuesta es sumar len[v] - len[link[v]] sobre todos los estados menos
+// la raiz. Una linea, una vez construido el automata. EL CLONE ES TODO EL TRUCO de la
+// construccion: cuando el estado q al que se llega es mas largo de lo que corresponde, se parte
+// en dos para que cada estado siga representando un rango limpio de largos. Si se omite, el
+// automata deja de ser minimo y las cuentas se caen. CUANDO USAR: cualquier pregunta sobre
+// TODAS las subcadenas. Para sufijos ordenados, suffix array; para subcadenas como conjunto,
+// suffix automaton.
 
 #include <bits/stdc++.h>
 using namespace std;

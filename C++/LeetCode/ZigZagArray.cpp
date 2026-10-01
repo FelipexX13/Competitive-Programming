@@ -1,9 +1,10 @@
 // <3
 // Tema: Dynamic Programming / Prefix Sums
-// Cuenta los arreglos "zigzag" de longitud n con valores en [l, r] (cada elemento alterna entre
-// mayor y menor que su vecino), modulo 1e9+7. DP sobre la longitud manteniendo, para cada valor,
-// cuantas secuencias terminan subiendo (up) o bajando (down); las transiciones se aceleran con
-// sumas de prefijos y sufijos en O(n * (r-l)).
+// Resumen: Cuenta los arreglos "zigzag" de longitud n con valores en [l
+// Detalle: Cuenta los arreglos "zigzag" de longitud n con valores en [l, r] (cada elemento
+// alterna entre mayor y menor que su vecino), modulo 1e9+7. DP sobre la longitud manteniendo,
+// para cada valor, cuantas secuencias terminan subiendo (up) o bajando (down); las transiciones
+// se aceleran con sumas de prefijos y sufijos en O(n * (r-l)).
 
 #include <bits/stdc++.h>
 

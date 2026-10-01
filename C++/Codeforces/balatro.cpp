@@ -1,6 +1,7 @@
 // <3
 // Tema: Greedy / Sorted Pairing
-// Calcula la suma de diferencias absolutas entre pares ordenados de dos arreglos.
+// Resumen: Calcula la suma de diferencias absolutas entre pares ordenados de dos arreglos
+// Detalle: Calcula la suma de diferencias absolutas entre pares ordenados de dos arreglos.
 // Ordena ambos y suma las diferencias elemento a elemento.
 
 #include <bits/stdc++.h>

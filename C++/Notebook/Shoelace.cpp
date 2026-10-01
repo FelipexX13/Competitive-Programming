@@ -1,18 +1,19 @@
 // <3
 // Tema: Geometry / Shoelace (Area de Poligono)
+// Resumen: Area de CUALQUIER poligono simple en O(n), convexo o concavo, dando solo sus
+// vertices en orden
 // O: (n)
 // Uso: area2(p) = 2*area con signo; puntosInteriores(p) por Pick
-// Area de CUALQUIER poligono simple en O(n), convexo o concavo, dando solo sus vertices en
-// orden. Suma cruzada de cada arista con la siguiente: sum(x_i*y_{i+1} - x_{i+1}*y_i), y el
-// area es la mitad del valor absoluto.
-// El truco que importa en competencia es no dividir entre 2: se devuelve el DOBLE del area
-// como long long, que con coordenadas enteras es exacto y evita por completo el punto
-// flotante. Si el problema pide el area y puede ser .5, imprime a2/2 y a2%2 por separado, o
-// multiplica todo por 2 desde el principio.
-// El signo tambien sirve: positivo significa que los vertices vienen en sentido antihorario,
-// negativo en sentido horario, asi que de paso detecta la orientacion gratis.
-// Requisitos: los vertices deben ir en orden alrededor del poligono y el borde no puede
-// cruzarse consigo mismo. No hace falta repetir el primer vertice al final.
+// Detalle: Area de CUALQUIER poligono simple en O(n), convexo o concavo, dando solo sus
+// vertices en orden. Suma cruzada de cada arista con la siguiente: sum(x_i*y_{i+1} -
+// x_{i+1}*y_i), y el area es la mitad del valor absoluto. El truco que importa en competencia
+// es no dividir entre 2: se devuelve el DOBLE del area como long long, que con coordenadas
+// enteras es exacto y evita por completo el punto flotante. Si el problema pide el area y puede
+// ser .5, imprime a2/2 y a2%2 por separado, o multiplica todo por 2 desde el principio. El
+// signo tambien sirve: positivo significa que los vertices vienen en sentido antihorario,
+// negativo en sentido horario, asi que de paso detecta la orientacion gratis. Requisitos: los
+// vertices deben ir en orden alrededor del poligono y el borde no puede cruzarse consigo mismo.
+// No hace falta repetir el primer vertice al final.
 
 #include <bits/stdc++.h>
 using namespace std;

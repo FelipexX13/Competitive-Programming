@@ -1,14 +1,15 @@
 // <3
 // Tema: CSES / BFS Multifuente + BFS de Escape
-// Dos BFS encadenados, y el primero es el truco que vale aprender: un BFS MULTIFUENTE, con TODOS
-// los monstruos encolados con distancia 0 a la vez. Eso da, en una sola pasada O(n*m), la
-// distancia de cada celda al monstruo mas cercano, que es lo mismo que correr un BFS por monstruo
-// pero sin pagar el costo de cada uno.
-// Despues va el BFS del jugador, que solo entra a una celda si llega ESTRICTAMENTE antes que el
-// monstruo mas cercano. Guardando la direccion de llegada se reconstruye la salida.
-// CUANDO USAR EL MULTIFUENTE: siempre que la pregunta sea "distancia al mas cercano de un
-// conjunto" en vez de "distancia desde un punto". Aparece en incendios que se propagan, celdas
-// contaminadas, o el tipico "cuanto tarda en llenarse todo".
+// Resumen: Dos BFS encadenados, y el primero es el truco que vale aprender
+// Detalle: Dos BFS encadenados, y el primero es el truco que vale aprender: un BFS MULTIFUENTE,
+// con TODOS los monstruos encolados con distancia 0 a la vez. Eso da, en una sola pasada
+// O(n*m), la distancia de cada celda al monstruo mas cercano, que es lo mismo que correr un BFS
+// por monstruo pero sin pagar el costo de cada uno. Despues va el BFS del jugador, que solo
+// entra a una celda si llega ESTRICTAMENTE antes que el monstruo mas cercano. Guardando la
+// direccion de llegada se reconstruye la salida. CUANDO USAR EL MULTIFUENTE: siempre que la
+// pregunta sea "distancia al mas cercano de un conjunto" en vez de "distancia desde un punto".
+// Aparece en incendios que se propagan, celdas contaminadas, o el tipico "cuanto tarda en
+// llenarse todo".
 
 #include <iostream>
 #include <vector>

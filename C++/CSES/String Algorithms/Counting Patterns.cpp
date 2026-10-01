@@ -1,18 +1,19 @@
 // <3
 // Tema: CSES / Aho-Corasick (Conteo de Ocurrencias)
+// Resumen: Cuantas veces aparece cada patron en el texto, con todos los patrones a la vez
 // O: (suma de patrones + |s| + 26*nodos)
 // Uso: ac.addString(p) por patron; build(); search(s); propagate(); getCount(p)
-// Cuantas veces aparece cada patron dentro del texto, con TODOS los patrones a la vez.
+// Detalle: Cuantas veces aparece cada patron dentro del texto, con TODOS los patrones a la vez.
 // Aho-Corasick es el trie de los patrones mas un suffix link por nodo, que apunta al nodo del
-// sufijo propio mas largo que tambien es prefijo de algun patron. Es la generalizacion del fallo
-// de KMP a varios patrones a la vez.
-// build() hace DOS cosas en el mismo BFS y por eso queda tan corto: calcula los suffix links y
-// ademas convierte el trie en AUTOMATA, rellenando las transiciones que no existen con las del
-// suffix link. Despues de eso next[u][c] nunca es -1 y recorrer el texto es un for sin whiles.
-// search() camina el texto y marca +1 en cada nodo por el que pasa. propagate() recorre el orden
-// BFS AL REVES sumando cada nodo a su suffix link: asi cada patron recibe tambien lo que conto
-// cualquier patron mas largo que lo contiene como sufijo. Ese paso es el que suele faltar.
-// CUANDO USAR: varios patrones contra un texto. Con un solo patron sobra KMP.
+// sufijo propio mas largo que tambien es prefijo de algun patron. Es la generalizacion del
+// fallo de KMP a varios patrones a la vez. build() hace DOS cosas en el mismo BFS y por eso
+// queda tan corto: calcula los suffix links y ademas convierte el trie en AUTOMATA, rellenando
+// las transiciones que no existen con las del suffix link. Despues de eso next[u][c] nunca es
+// -1 y recorrer el texto es un for sin whiles. search() camina el texto y marca +1 en cada nodo
+// por el que pasa. propagate() recorre el orden BFS AL REVES sumando cada nodo a su suffix
+// link: asi cada patron recibe tambien lo que conto cualquier patron mas largo que lo contiene
+// como sufijo. Ese paso es el que suele faltar. CUANDO USAR: varios patrones contra un texto.
+// Con un solo patron sobra KMP.
 
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,20 +1,21 @@
 // <3
 // Tema: CSES / Bellman-Ford (Ciclo Negativo)
-// Bellman-Ford usado no para hallar distancias sino para DETECTAR un ciclo negativo y devolverlo.
-// Se relaja n veces; si en la ultima pasada todavia hubo una mejora, esa mejora solo pudo venir de
-// un ciclo negativo, y el nodo donde ocurrio queda guardado.
-// EL TRUCO DE LA RECONSTRUCCION, que es lo que hay que copiar: el nodo donde se detecto la mejora
-// NO tiene por que estar dentro del ciclo, puede ser uno colgado mas adelante. La solucion es subir
-// n veces por el arreglo de padres: despues de n saltos es seguro que ya se entro al ciclo, porque
-// la cadena de padres tiene a lo sumo n nodos antes de enrollarse. Desde ahi se sigue a los padres
-// hasta volver al mismo nodo y ese es el ciclo.
-// Aqui las distancias arrancan TODAS en 0, no en infinito, y es a proposito: equivale a poner un
-// origen virtual conectado a todos con peso 0, asi se encuentran ciclos negativos en cualquier
-// componente y no solo en la que alcanza el nodo 1.
-// CUANDO USAR: detectar ciclos negativos, que es lo unico que Dijkstra no puede hacer. Aparece en
-// arbitraje de monedas (con logaritmos negados) y en sistemas de restricciones de diferencias.
-// OJO: usa structured bindings (auto [a, b]), que piden C++17. En CSES compila, pero con
-// un g++ viejo hay que volver a .first y .second.
+// Resumen: Bellman-Ford usado no para hallar distancias sino para DETECTAR un ciclo negativo y
+// devolverlo
+// Detalle: Bellman-Ford usado no para hallar distancias sino para DETECTAR un ciclo negativo y
+// devolverlo. Se relaja n veces; si en la ultima pasada todavia hubo una mejora, esa mejora
+// solo pudo venir de un ciclo negativo, y el nodo donde ocurrio queda guardado. EL TRUCO DE LA
+// RECONSTRUCCION, que es lo que hay que copiar: el nodo donde se detecto la mejora NO tiene por
+// que estar dentro del ciclo, puede ser uno colgado mas adelante. La solucion es subir n veces
+// por el arreglo de padres: despues de n saltos es seguro que ya se entro al ciclo, porque la
+// cadena de padres tiene a lo sumo n nodos antes de enrollarse. Desde ahi se sigue a los padres
+// hasta volver al mismo nodo y ese es el ciclo. Aqui las distancias arrancan TODAS en 0, no en
+// infinito, y es a proposito: equivale a poner un origen virtual conectado a todos con peso 0,
+// asi se encuentran ciclos negativos en cualquier componente y no solo en la que alcanza el
+// nodo 1. CUANDO USAR: detectar ciclos negativos, que es lo unico que Dijkstra no puede hacer.
+// Aparece en arbitraje de monedas (con logaritmos negados) y en sistemas de restricciones de
+// diferencias. OJO: usa structured bindings (auto [a, b]), que piden C++17. En CSES compila,
+// pero con un g++ viejo hay que volver a .first y .second.
 
 #include <iostream>
 #include <vector>

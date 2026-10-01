@@ -1,6 +1,8 @@
 // <3
 // Tema: Combinatorics / Ranking
-// Construye el k-esimo palindromo mas pequeno lexicograficamente que se puede formar
+// Resumen: Construye el k-esimo palindromo mas pequeno lexicograficamente que se puede formar
+// reordenando el string s...
+// Detalle: Construye el k-esimo palindromo mas pequeno lexicograficamente que se puede formar
 // reordenando el string s (o "" si no existen k reordenamientos posibles). Solo arma la mitad
 // izquierda del palindromo (mas el caracter central si el largo es impar) y la refleja: para
 // cada posicion prueba las letras disponibles de menor a mayor y usa comb()/perms() (conteo de

@@ -1,27 +1,26 @@
 // <3
 // Tema: Geometry / Convex Hull y Barrido Angular
-// Resuelve "Guard Deployment" (problema G, ICPC 2025): hay edificios rectangulares con altura, y
-// hay que dar el perimetro de la cerca convexa mas corta que los encierra y la altura minima comun
-// de las torres para que todas se vean entre si.
-// Son dos problemas sueltos pegados:
-//   1) EL PERIMETRO es el del convex hull de las cuatro esquinas de todos los edificios. La cerca
-//      mas corta que encierra un conjunto de puntos es siempre su envolvente convexa.
-//   2) LA ALTURA depende de que edificios se atraviesan. Una linea de vista entre dos torres pasa
-//      por encima de un edificio si el segmento que las une (visto desde arriba) toca ese
-//      rectangulo; y si pasa, hay que ir al menos un metro mas alto que el. La respuesta es el
-//      maximo de h+1 sobre los edificios atravesados, y nunca menos de 3.
-// LO INTERESANTE ES COMO DECIDE SI UN EDIFICIO SE ATRAVIESA, sin probar los O(H^2) pares de torres:
-// desde un vertice del hull, todas las direcciones que dan al rectangulo forman un INTERVALO
-// ANGULAR, delimitado por sus cuatro esquinas. Si otro vertice del hull cae dentro de ese
-// intervalo, el segmento entre ambos pasa por el edificio. Teniendo los angulos hacia los demas
-// vertices ordenados, cada consulta es una busqueda binaria.
-// El intervalo se obtiene al reves de lo que uno esperaria: se ordenan los angulos a las cuatro
-// esquinas, se busca el HUECO mas grande entre angulos consecutivos (en circulo), y el intervalo
-// bueno es el complemento de ese hueco. Es la forma de manejar el caso en que el intervalo cruza
-// el 0 sin escribir casos especiales.
-// Verificado contra una referencia que prueba cada par de torres contra cada edificio con
-// aritmetica entera exacta: 1600 casos con rectangulos alineados y rotados 45 grados, perimetro y
-// altura correctos en todos, ademas del sample. Medido: 10 casos de N = 1000 edificios en 200 ms.
+// Resumen: Hay edificios rectangulares con altura
+// Detalle: Resuelve "Guard Deployment" (problema G, ICPC 2025): hay edificios rectangulares con
+// altura, y hay que dar el perimetro de la cerca convexa mas corta que los encierra y la altura
+// minima comun de las torres para que todas se vean entre si. Son dos problemas sueltos
+// pegados: 1) EL PERIMETRO es el del convex hull de las cuatro esquinas de todos los edificios.
+// La cerca mas corta que encierra un conjunto de puntos es siempre su envolvente convexa. 2) LA
+// ALTURA depende de que edificios se atraviesan. Una linea de vista entre dos torres pasa por
+// encima de un edificio si el segmento que las une (visto desde arriba) toca ese rectangulo; y
+// si pasa, hay que ir al menos un metro mas alto que el. La respuesta es el maximo de h+1 sobre
+// los edificios atravesados, y nunca menos de 3. LO INTERESANTE ES COMO DECIDE SI UN EDIFICIO
+// SE ATRAVIESA, sin probar los O(H^2) pares de torres: desde un vertice del hull, todas las
+// direcciones que dan al rectangulo forman un INTERVALO ANGULAR, delimitado por sus cuatro
+// esquinas. Si otro vertice del hull cae dentro de ese intervalo, el segmento entre ambos pasa
+// por el edificio. Teniendo los angulos hacia los demas vertices ordenados, cada consulta es
+// una busqueda binaria. El intervalo se obtiene al reves de lo que uno esperaria: se ordenan
+// los angulos a las cuatro esquinas, se busca el HUECO mas grande entre angulos consecutivos
+// (en circulo), y el intervalo bueno es el complemento de ese hueco. Es la forma de manejar el
+// caso en que el intervalo cruza el 0 sin escribir casos especiales. Verificado contra una
+// referencia que prueba cada par de torres contra cada edificio con aritmetica entera exacta:
+// 1600 casos con rectangulos alineados y rotados 45 grados, perimetro y altura correctos en
+// todos, ademas del sample. Medido: 10 casos de N = 1000 edificios en 200 ms.
 
 #include <bits/stdc++.h>
 using namespace std;

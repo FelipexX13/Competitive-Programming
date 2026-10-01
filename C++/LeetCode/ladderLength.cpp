@@ -1,8 +1,11 @@
 // <3
 // Tema: Graph / BFS
-// Resuelve "Word Ladder": halla la longitud de la transformacion mas corta de beginWord a endWord
-// cambiando una letra a la vez, usando solo palabras de wordList. BFS por niveles donde cada
-// palabra es un nodo y dos palabras se conectan si difieren en exactamente una letra.
+// Resumen: Halla la longitud de la transformacion mas corta de beginWord a endWord cambiando
+// una letra a la vez
+// Detalle: Resuelve "Word Ladder": halla la longitud de la transformacion mas corta de
+// beginWord a endWord cambiando una letra a la vez, usando solo palabras de wordList. BFS por
+// niveles donde cada palabra es un nodo y dos palabras se conectan si difieren en exactamente
+// una letra.
 
 #include <bits/stdc++.h>
 

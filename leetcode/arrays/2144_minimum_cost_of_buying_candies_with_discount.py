@@ -1,12 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Greedy de Tercias
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
-# LeetCode 2144 "Minimum Cost of Buying Candies With Discount": por cada dos dulces comprados, el
-# tercero (mas barato de los tres) es gratis.
-# Tecnica: ordenar y recorrer DE MAYOR A MENOR pagando dos y saltando el tercero. Asi el regalo
-# siempre cae en el dulce mas caro posible, que es lo que minimiza el total.
-# El contador t es el que lleva la cuenta de dos pagados, uno gratis.
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# LeetCode 2144 "Minimum Cost of Buying Candies With Discount": por cada dos dulces comprados,
+# el tercero (mas barato de los tres) es gratis. Tecnica: ordenar y recorrer DE MAYOR A MENOR
+# pagando dos y saltando el tercero. Asi el regalo siempre cae en el dulce mas caro posible, que
+# es lo que minimiza el total. El contador t es el que lleva la cuenta de dos pagados, uno
+# gratis.
 
 class Solution:
     def minimumCost(self, cost: List[int]) -> int:

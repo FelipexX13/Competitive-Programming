@@ -1,21 +1,21 @@
 // <3
 // Tema: CSES / Segment Tree Persistente
+// Resumen: Segment tree PERSISTENTE: cada actualizacion no modifica nodos
 // O: (log n) por operacion, (n log n) de memoria
 // Uso: raiz[k]=update(raiz[j],1,n,pos,x); query(raiz[k],1,n,l,r)  // persistente
-// Segment tree PERSISTENTE: cada actualizacion no modifica nodos, crea copias nuevas SOLO del
-// camino de la raiz a la hoja, O(log n) nodos, y todo lo demas se comparte con la version
-// anterior. Asi cada version tiene su propia raiz y se puede consultar cualquiera.
-// LO QUE HACE ESTE PROBLEMA ELEGANTE: copiar un arreglo entero (la operacion 3) cuesta O(1).
-// Basta copiar el PUNTERO a la raiz, porque las dos versiones comparten todos los nodos hasta que
+// Detalle: Segment tree PERSISTENTE: cada actualizacion no modifica nodos, crea copias nuevas
+// SOLO del camino de la raiz a la hoja, O(log n) nodos, y todo lo demas se comparte con la
+// version anterior. Asi cada version tiene su propia raiz y se puede consultar cualquiera. LO
+// QUE HACE ESTE PROBLEMA ELEGANTE: copiar un arreglo entero (la operacion 3) cuesta O(1). Basta
+// copiar el PUNTERO a la raiz, porque las dos versiones comparten todos los nodos hasta que
 // alguna se modifique, y en ese momento la modificacion crea caminos nuevos sin tocar la otra.
 // Los nodos no pueden ir en el esquema 2p / 2p+1 de siempre, porque un nodo tiene varios padres
 // segun la version. Por eso cada nodo guarda los INDICES de sus hijos (l, r) y se sacan de un
-// arreglo grande con un contador.
-// EL TAMANO DEL POOL: el build usa 2n nodos y cada actualizacion unos log2(n)+1 = 19. Con 2*10^5
-// actualizaciones son ~4.2 millones, y el arreglo reserva 25 por posicion (5 millones). Quedarse
-// corto aqui da un error silencioso al pisar memoria. Ocupa unos 80 MB.
-// CUANDO USAR: "consultar el arreglo como estaba en el momento k", versiones, o la k-esima
-// estadistica en un rango (el clasico con persistencia sobre prefijos).
+// arreglo grande con un contador. EL TAMANO DEL POOL: el build usa 2n nodos y cada
+// actualizacion unos log2(n)+1 = 19. Con 2*10^5 actualizaciones son ~4.2 millones, y el arreglo
+// reserva 25 por posicion (5 millones). Quedarse corto aqui da un error silencioso al pisar
+// memoria. Ocupa unos 80 MB. CUANDO USAR: "consultar el arreglo como estaba en el momento k",
+// versiones, o la k-esima estadistica en un rango (el clasico con persistencia sobre prefijos).
 
 #include <bits/stdc++.h>
 using namespace std;

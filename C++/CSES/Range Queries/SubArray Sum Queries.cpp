@@ -1,21 +1,19 @@
 // <3
 // Tema: CSES / Segment Tree de Maximo Subarreglo
+// Resumen: El nodo compuesto clasico, con cuatro campos
 // O: (log n) por operacion
 // Uso: Node = {sum, pref, suff, best}; merge cruza suff izq con pref der
-// El nodo compuesto clasico, con cuatro campos: sum, pref (mejor prefijo), suff (mejor sufijo) y
-// best (el mejor subarreglo de adentro). Es Kadane metido en un segment tree, y por eso aguanta
-// actualizaciones que Kadane suelto no aguanta.
-// EL MERGE, que es lo unico que hay que entender:
-//     sum  = L.sum + R.sum
-//     pref = max(L.pref, L.sum + R.pref)          el prefijo se queda o cruza
-//     suff = max(R.suff, R.sum + L.suff)          el sufijo, simetrico
-//     best = max(L.best, R.best, L.suff + R.pref) o esta en una mitad, o CRUZA el corte
-// Ese tercer caso del best es la razon de llevar suff y pref: el subarreglo que cruza es el mejor
-// sufijo de la izquierda pegado al mejor prefijo de la derecha.
-// El max(0, a[l]) en las hojas permite el subarreglo VACIO, o sea que la respuesta nunca es
-// negativa. Si el problema exige al menos un elemento hay que sacar ese max y poner la hoja en
-// a[l] pelado.
-// CUANDO USAR: maximo subarreglo con actualizaciones. Sin actualizaciones basta Kadane en O(n).
+// Detalle: El nodo compuesto clasico, con cuatro campos: sum, pref (mejor prefijo), suff (mejor
+// sufijo) y best (el mejor subarreglo de adentro). Es Kadane metido en un segment tree, y por
+// eso aguanta actualizaciones que Kadane suelto no aguanta. EL MERGE, que es lo unico que hay
+// que entender: sum = L.sum + R.sum pref = max(L.pref, L.sum + R.pref) el prefijo se queda o
+// cruza suff = max(R.suff, R.sum + L.suff) el sufijo, simetrico best = max(L.best, R.best,
+// L.suff + R.pref) o esta en una mitad, o CRUZA el corte Ese tercer caso del best es la razon
+// de llevar suff y pref: el subarreglo que cruza es el mejor sufijo de la izquierda pegado al
+// mejor prefijo de la derecha. El max(0, a[l]) en las hojas permite el subarreglo VACIO, o sea
+// que la respuesta nunca es negativa. Si el problema exige al menos un elemento hay que sacar
+// ese max y poner la hoja en a[l] pelado. CUANDO USAR: maximo subarreglo con actualizaciones.
+// Sin actualizaciones basta Kadane en O(n).
 
 #include <bits/stdc++.h>
 using namespace std;

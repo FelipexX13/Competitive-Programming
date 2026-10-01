@@ -1,14 +1,15 @@
 # <3
 # Tema: LeetCode Hub / Intervalos Cerrados por Letra
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
-# LeetCode 1520 "Maximum Number of Non-Overlapping Substrings": la mayor cantidad de subcadenas que
-# no se traslapen y donde cada letra que aparece, aparezca COMPLETA.
-# Tecnica: para cada letra se toma el intervalo de su primera a su ultima aparicion y se va
-# extendiendo mientras alguna letra de adentro se salga; cuando ya cierra, es un candidato.
-# Despues se quedan los candidatos que no contienen a otro (los mas cortos), que es el greedy.
-# OJO: tiene un caso cableado, if s == 'cadaaedec' devuelve una respuesta fija, y el filtrado
-# final usa 'esta contenido como subcadena' en vez de comparar los rangos, que no es lo mismo.
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# LeetCode 1520 "Maximum Number of Non-Overlapping Substrings": la mayor cantidad de subcadenas
+# que no se traslapen y donde cada letra que aparece, aparezca COMPLETA. Tecnica: para cada
+# letra se toma el intervalo de su primera a su ultima aparicion y se va extendiendo mientras
+# alguna letra de adentro se salga; cuando ya cierra, es un candidato. Despues se quedan los
+# candidatos que no contienen a otro (los mas cortos), que es el greedy. OJO: tiene un caso
+# cableado, if s == 'cadaaedec' devuelve una respuesta fija, y el filtrado final usa 'esta
+# contenido como subcadena' en vez de comparar los rangos, que no es lo mismo.
 
 class Solution(object):
     def maxNumOfSubstrings(self, s):

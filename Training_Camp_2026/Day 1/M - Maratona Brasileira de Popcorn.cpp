@@ -1,7 +1,9 @@
 // <3
 // Tema: Greedy / Binary Search
-// Resuelve "Maratona Brasileira de Popcorn" (Maratona de Programacao da SBC 2019, Day 1
-// problem M): N bolsas de palomitas en fila deben repartirse en C tramos contiguos (uno por
+// Resumen: Resuelve "Maratona Brasileira de Popcorn" (Maratona de Programacao da SBC 2019, Day
+// 1 problem M)
+// Detalle: Resuelve "Maratona Brasileira de Popcorn" (Maratona de Programacao da SBC 2019, Day
+// 1 problem M): N bolsas de palomitas en fila deben repartirse en C tramos contiguos (uno por
 // competidor), cada competidor come a lo sumo T unidades por segundo, y se quiere minimizar el
 // tiempo total (el maximo de todas las bolsas que come cada competidor, dividido T). Busqueda
 // binaria sobre la cota maxima S que puede cargar un competidor: la funcion gruposNecesarios

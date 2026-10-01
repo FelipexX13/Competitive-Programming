@@ -1,10 +1,11 @@
 # <3
 # Tema: LeetCode Hub / Buscar Repetidos
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
-# LeetCode 217 "Contains Duplicate": decir si hay algun valor repetido.
-# Tecnica: diccionario como set, y se corta en el primer repetido. Cortar temprano es la unica
-# gracia; tambien sale con len(set(nums)) != len(nums).
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# LeetCode 217 "Contains Duplicate": decir si hay algun valor repetido. Tecnica: diccionario
+# como set, y se corta en el primer repetido. Cortar temprano es la unica gracia; tambien sale
+# con len(set(nums)) != len(nums).
 
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:

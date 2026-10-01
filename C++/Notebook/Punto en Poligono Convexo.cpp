@@ -1,17 +1,19 @@
 // <3
 // Tema: Geometry / Punto en Poligono Convexo (O(log n))
+// Resumen: Arma el casco convexo de un conjunto de puntos y luego responde muchas consultas del
+// tipo "este punto esta...
 // O: (n log n) el hull, (log n) cada consulta
 // Uso: h = convexHull(p); inside(h,q) con h antihorario y sin colineales
-// Arma el casco convexo de un conjunto de puntos y luego responde muchas consultas del tipo
-// "este punto esta dentro?" en O(log n) cada una, en vez de O(n) revisando arista por arista.
-// Todo se hace con enteros (el cross devuelve long long), asi que no hay error de precision.
-// El casco usa monotone chain de Andrew; descartar con cross <= 0 elimina los puntos
-// colineales y deja solo los vertices reales, devolviendo el hull en sentido antihorario.
-// La consulta triangula mentalmente el poligono en abanico desde h[0]: primero descarta el
-// punto si cae fuera de las dos aristas extremas (h[0]-h[1] y h[0]-h[n-1]), y si no, busca
+// Detalle: Arma el casco convexo de un conjunto de puntos y luego responde muchas consultas del
+// tipo "este punto esta dentro?" en O(log n) cada una, en vez de O(n) revisando arista por
+// arista. Todo se hace con enteros (el cross devuelve long long), asi que no hay error de
+// precision. El casco usa monotone chain de Andrew; descartar con cross <= 0 elimina los puntos
+// colineales y deja solo los vertices reales, devolviendo el hull en sentido antihorario. La
+// consulta triangula mentalmente el poligono en abanico desde h[0]: primero descarta el punto
+// si cae fuera de las dos aristas extremas (h[0]-h[1] y h[0]-h[n-1]), y si no, busca
 // binariamente el sector (h[0], h[lo], h[lo+1]) donde cae y comprueba de que lado esta de esa
-// arista. Los cross con >= 0 hacen que el borde cuente como dentro.
-// Contempla los casos degenerados en que el casco queda reducido a un punto o a un segmento.
+// arista. Los cross con >= 0 hacen que el borde cuente como dentro. Contempla los casos
+// degenerados en que el casco queda reducido a un punto o a un segmento.
 
 #include <bits/stdc++.h>
 using namespace std;

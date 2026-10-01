@@ -1,7 +1,9 @@
 # <3
 # Tema: Math / Combinatorics
-# Resuelve "Less Coin Tosses" (Maratona de Programacao da SBC 2019, Day 1 problem L): hay que
-# repartir las 2^N cadenas binarias de longitud N entre Carla y Daniel de forma que la
+# Resumen: Hay que repartir las 2^N cadenas binarias de longitud N entre Carla y Daniel de forma
+# que la probabilidad...
+# Detalle: Resuelve "Less Coin Tosses" (Maratona de Programacao da SBC 2019, Day 1 problem L):
+# hay que repartir las 2^N cadenas binarias de longitud N entre Carla y Daniel de forma que la
 # probabilidad de ganar sea igual sin importar el sesgo de la moneda, lo cual solo se logra
 # emparejando equitativamente las cadenas dentro de cada nivel de peso de Hamming k (ya que P(s)
 # depende solo de k), y pide el minimo numero de cadenas que quedan sin asignar. Por el teorema

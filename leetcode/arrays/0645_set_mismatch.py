@@ -1,12 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Repetido y Faltante
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 645 "Set Mismatch": en un arreglo de 1 a n, cual valor se duplico y cual falta.
-# Tecnica: ordenar y mirar los vecinos. Si dos son iguales, ese es el repetido; si la diferencia es
-# mayor que 1, el faltante es el de la mitad. Los if del final cubren cuando falta el 1 o el n, que
-# no tienen vecino de un lado.
-# Sin ordenar tambien sale con las sumas: la suma real menos la de Gauss da repetido - faltante.
+# Tecnica: ordenar y mirar los vecinos. Si dos son iguales, ese es el repetido; si la diferencia
+# es mayor que 1, el faltante es el de la mitad. Los if del final cubren cuando falta el 1 o el
+# n, que no tienen vecino de un lado. Sin ordenar tambien sale con las sumas: la suma real menos
+# la de Gauss da repetido - faltante.
 
 class Solution:
     def findErrorNums(self, nums: List[int]) -> List[int]:

@@ -1,15 +1,17 @@
 // <3
 // Tema: CSES / Fenwick Tree (BIT)
+// Resumen: Fenwick (o BIT): sumas de prefijo con actualizacion puntual, ambas en O(log n), en
+// ~10 lineas
 // O: (log n) add y query, (n log n) construir
 // Uso: Fenwick fw(n); fw.add(i,x); fw.query(l,r)   // 1-INDEXADO
-// Fenwick (o BIT): sumas de prefijo con actualizacion puntual, ambas en O(log n), en ~10 lineas.
-// Toda la magia esta en i & -i, que aisla el bit mas bajo encendido: sumando ese valor se sube a
-// los padres (add) y restandolo se baja recorriendo bloques (sum).
-// CUANDO USAR FENWICK EN VEZ DE SEGMENT TREE: si la operacion es SUMA (o cualquiera con inversa)
-// y las actualizaciones son puntuales, Fenwick es la respuesta: menos codigo, menos memoria y
-// mas rapido en la practica. El segment tree se necesita para min, max o gcd, que no se pueden
-// restar, y para lazy propagation.
-// Fenwick es 1-indexado a la fuerza: con i = 0, i & -i es 0 y el for no avanza nunca.
+// Detalle: Fenwick (o BIT): sumas de prefijo con actualizacion puntual, ambas en O(log n), en
+// ~10 lineas. Toda la magia esta en i & -i, que aisla el bit mas bajo encendido: sumando ese
+// valor se sube a los padres (add) y restandolo se baja recorriendo bloques (sum). CUANDO USAR
+// FENWICK EN VEZ DE SEGMENT TREE: si la operacion es SUMA (o cualquiera con inversa) y las
+// actualizaciones son puntuales, Fenwick es la respuesta: menos codigo, menos memoria y mas
+// rapido en la practica. El segment tree se necesita para min, max o gcd, que no se pueden
+// restar, y para lazy propagation. Fenwick es 1-indexado a la fuerza: con i = 0, i & -i es 0 y
+// el for no avanza nunca.
 
 #include <bits/stdc++.h>
 using namespace std;

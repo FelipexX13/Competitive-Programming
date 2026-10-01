@@ -1,16 +1,18 @@
 // <3
 // Tema: CSES / Fenwick 2D
-// Fenwick en dos dimensiones: un for anidado dentro de otro, cada uno con el mismo i & -i de
-// siempre. Actualizar una celda y consultar el rectangulo de (1,1) a (x,y) cuestan O(log^2 n), y
-// un rectangulo cualquiera sale por inclusion-exclusion con las cuatro esquinas, igual que en las
-// sumas prefijas 2D.
-// COMPARAR CON "Forest Queries": aquella no tenia cambios y le bastaban sumas prefijas 2D con
-// consulta O(1). Aqui los arboles se cortan y se plantan, y ese cambio es lo que obliga a pasar a
-// Fenwick: las sumas prefijas se tendrian que reconstruir enteras, O(n^2) por actualizacion.
-// El toggle se maneja guardando el estado actual en a[][] para saber si sumar +1 o -1. Sin ese
-// arreglo no hay forma de saber que hay en una celda sin hacer una consulta.
-// CUANDO USAR: sumas sobre rectangulos con actualizaciones puntuales y n de hasta unos 1000 (la
-// memoria es n^2). Si hay que actualizar RECTANGULOS enteros, esto no alcanza.
+// Resumen: Fenwick en dos dimensiones: un for anidado dentro de otro, cada uno con el mismo i &
+// -i de siempre
+// Detalle: Fenwick en dos dimensiones: un for anidado dentro de otro, cada uno con el mismo i &
+// -i de siempre. Actualizar una celda y consultar el rectangulo de (1,1) a (x,y) cuestan
+// O(log^2 n), y un rectangulo cualquiera sale por inclusion-exclusion con las cuatro esquinas,
+// igual que en las sumas prefijas 2D. COMPARAR CON "Forest Queries": aquella no tenia cambios y
+// le bastaban sumas prefijas 2D con consulta O(1). Aqui los arboles se cortan y se plantan, y
+// ese cambio es lo que obliga a pasar a Fenwick: las sumas prefijas se tendrian que reconstruir
+// enteras, O(n^2) por actualizacion. El toggle se maneja guardando el estado actual en a[][]
+// para saber si sumar +1 o -1. Sin ese arreglo no hay forma de saber que hay en una celda sin
+// hacer una consulta. CUANDO USAR: sumas sobre rectangulos con actualizaciones puntuales y n de
+// hasta unos 1000 (la memoria es n^2). Si hay que actualizar RECTANGULOS enteros, esto no
+// alcanza.
 
 #include <bits/stdc++.h>
 using namespace std;

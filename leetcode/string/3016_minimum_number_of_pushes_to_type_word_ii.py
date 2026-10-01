@@ -1,12 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Greedy por Frecuencia
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3016 "Minimum Number of Pushes to Type Word II": lo mismo pero con letras repetidas.
-# Tecnica: ahora SI importa el orden. Se cuentan frecuencias, se ordena de mayor a menor y se les
-# va dando el costo 1 a las 8 mas frecuentes, 2 a las 8 siguientes, etc. Es el greedy de darle la
-# posicion barata a lo que mas se usa, la misma idea que Huffman.
-# La diferencia con la version I es exactamente ese sorted por frecuencia.
+# Tecnica: ahora SI importa el orden. Se cuentan frecuencias, se ordena de mayor a menor y se
+# les va dando el costo 1 a las 8 mas frecuentes, 2 a las 8 siguientes, etc. Es el greedy de
+# darle la posicion barata a lo que mas se usa, la misma idea que Huffman. La diferencia con la
+# version I es exactamente ese sorted por frecuencia.
 
 class Solution:
     def minimumPushes(self, word: str) -> int:

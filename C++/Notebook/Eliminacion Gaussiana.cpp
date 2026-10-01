@@ -1,17 +1,17 @@
 // <3
 // Tema: Math / Eliminacion Gaussiana (mod p)
+// Resumen: Resuelve sistemas lineales A x = b sobre Z_p con p PRIMO
 // O: (n^2 * m) en modulo p primo
 // Uso: gauss(a,m,sol,incompatible,p) -> grados de libertad; determinante(a,p)
-// Resuelve sistemas lineales A x = b sobre Z_p con p PRIMO, que es lo que aparece cuando el
-// problema pide contar soluciones de un sistema, resolver ecuaciones modulares, o sacar el
-// determinante y el rango de una matriz modulo un primo.
-// La unica diferencia con el Gauss de toda la vida es que no se puede dividir: para normalizar
-// el pivote se multiplica por su inverso modular (Fermat, a^(p-2) mod p). Como p es primo,
-// TODO elemento distinto de cero tiene inverso, asi que no hace falta pivoteo parcial por
-// estabilidad numerica como en double; basta tomar el primer pivote no nulo.
-// Devuelve el rango. Con m incognitas, si el sistema es compatible hay exactamente
-// p^(m - rango) soluciones: rango == m significa solucion unica, y rango < m deja variables
-// libres (aqui se fijan en 0 para entregar una solucion cualquiera).
+// Detalle: Resuelve sistemas lineales A x = b sobre Z_p con p PRIMO, que es lo que aparece
+// cuando el problema pide contar soluciones de un sistema, resolver ecuaciones modulares, o
+// sacar el determinante y el rango de una matriz modulo un primo. La unica diferencia con el
+// Gauss de toda la vida es que no se puede dividir: para normalizar el pivote se multiplica por
+// su inverso modular (Fermat, a^(p-2) mod p). Como p es primo, TODO elemento distinto de cero
+// tiene inverso, asi que no hace falta pivoteo parcial por estabilidad numerica como en double;
+// basta tomar el primer pivote no nulo. Devuelve el rango. Con m incognitas, si el sistema es
+// compatible hay exactamente p^(m - rango) soluciones: rango == m significa solucion unica, y
+// rango < m deja variables libres (aqui se fijan en 0 para entregar una solucion cualquiera).
 // Costo O(n * m * min(n,m)). Si p no es primo la normalizacion falla; y si el sistema es sobre
 // GF(2), conviene la version con bitset, que va 64 veces mas rapido.
 

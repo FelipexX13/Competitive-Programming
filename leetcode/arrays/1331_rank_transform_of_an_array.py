@@ -1,11 +1,12 @@
 # <3
 # Tema: LeetCode Hub / Compresion de Coordenadas
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1331 "Rank Transform of an Array": reemplazar cada valor por su puesto en el orden.
 # Tecnica: sorted(set(arr)) y un diccionario valor -> puesto. Eso es exactamente COMPRESION DE
-# COORDENADAS, que es la herramienta para meter valores gigantes en un arreglo o un Fenwick.
-# El notebook tiene la version en C++ (sort + unique + lower_bound).
+# COORDENADAS, que es la herramienta para meter valores gigantes en un arreglo o un Fenwick. El
+# notebook tiene la version en C++ (sort + unique + lower_bound).
 
 class Solution:
     def arrayRankTransform(self, arr: List[int]) -> List[int]:

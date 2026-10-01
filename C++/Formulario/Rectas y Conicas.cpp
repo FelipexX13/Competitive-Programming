@@ -1,11 +1,12 @@
 // <3
 // Tema: Formulario / Rectas y Conicas
-// Geometria analitica de toda la vida: pendiente, las cuatro formas de escribir una recta,
-// cuando dos son paralelas o perpendiculares, donde se cortan, y las ecuaciones de
-// circunferencia, parabola, elipse e hiperbola.
-// El corte de dos rectas se resuelve por Cramer, que es lo mismo que "igualar las dos
-// ecuaciones" pero sin despejar a mano y sin dividir por cero sin darse cuenta: si el
-// determinante da 0, son paralelas. Formulas verificadas numericamente.
+// Resumen: Geometria analitica de toda la vida
+// Detalle: Geometria analitica de toda la vida: pendiente, las cuatro formas de escribir una
+// recta, cuando dos son paralelas o perpendiculares, donde se cortan, y las ecuaciones de
+// circunferencia, parabola, elipse e hiperbola. El corte de dos rectas se resuelve por Cramer,
+// que es lo mismo que "igualar las dos ecuaciones" pero sin despejar a mano y sin dividir por
+// cero sin darse cuenta: si el determinante da 0, son paralelas. Formulas verificadas
+// numericamente.
 
 // =============== RECTAS Y CONICAS ===============
 //

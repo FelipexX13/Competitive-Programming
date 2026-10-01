@@ -1,8 +1,9 @@
 // <3
 // Tema: String / Simulation
-// Procesa una cadena aplicando operaciones sobre un string acumulador: '*' borra el ultimo
-// caracter, '#' duplica el contenido actual, '%' lo invierte, y cualquier otro caracter se
-// agrega al final. Devuelve el string resultante.
+// Resumen: Procesa una cadena aplicando operaciones sobre un string acumulador
+// Detalle: Procesa una cadena aplicando operaciones sobre un string acumulador: '*' borra el
+// ultimo caracter, '#' duplica el contenido actual, '%' lo invierte, y cualquier otro caracter
+// se agrega al final. Devuelve el string resultante.
 
 #include <bits/stdc++.h>
 

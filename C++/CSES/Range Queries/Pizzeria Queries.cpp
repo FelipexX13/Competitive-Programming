@@ -1,18 +1,19 @@
 // <3
 // Tema: CSES / Truco de p[i] mas y menos i
+// Resumen: Hay que minimizar p[j] + |i - j| sobre todo j, con actualizaciones
 // O: (log n) por operacion, dos segment trees de minimo
 // Uso: un arbol para a[i]+i y otro para a[i]-i; la respuesta es el menor
-// Hay que minimizar p[j] + |i - j| sobre todo j, con actualizaciones. El valor absoluto es lo que
-// estorba, y el truco es partirlo en los dos casos y meter el indice DENTRO del valor guardado:
-//     si j <= i:  p[j] + i - j  =  (p[j] - j) + i
-//     si j >= i:  p[j] + j - i  =  (p[j] + j) - i
-// Como i es fijo durante la consulta, minimizar cada caso es minimizar (p[j] - j) a la izquierda y
-// (p[j] + j) a la derecha. O sea DOS segment trees de minimos, uno sobre p[j]-j y otro sobre
-// p[j]+j, y la respuesta es el menor de los dos resultados sumandole o restandole i.
-// CUANDO USAR ESTE TRUCO: cada vez que aparece un |i - j| junto a algo que depende de j. Sale en
-// problemas de "la tienda mas cercana con su costo", en DP con costos de distancia, y en cualquier
-// minimizacion sobre una recta. La regla es partir en j <= i y j >= i y absorber el indice en el
-// valor que se guarda; lo que quedaba dependiendo de i sale del minimo como constante.
+// Detalle: Hay que minimizar p[j] + |i - j| sobre todo j, con actualizaciones. El valor
+// absoluto es lo que estorba, y el truco es partirlo en los dos casos y meter el indice DENTRO
+// del valor guardado: si j <= i: p[j] + i - j = (p[j] - j) + i si j >= i: p[j] + j - i = (p[j]
+// + j) - i Como i es fijo durante la consulta, minimizar cada caso es minimizar (p[j] - j) a la
+// izquierda y (p[j] + j) a la derecha. O sea DOS segment trees de minimos, uno sobre p[j]-j y
+// otro sobre p[j]+j, y la respuesta es el menor de los dos resultados sumandole o restandole i.
+// CUANDO USAR ESTE TRUCO: cada vez que aparece un |i - j| junto a algo que depende de j. Sale
+// en problemas de "la tienda mas cercana con su costo", en DP con costos de distancia, y en
+// cualquier minimizacion sobre una recta. La regla es partir en j <= i y j >= i y absorber el
+// indice en el valor que se guarda; lo que quedaba dependiendo de i sale del minimo como
+// constante.
 
 #include <bits/stdc++.h>
 using namespace std;

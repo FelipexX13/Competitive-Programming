@@ -1,7 +1,8 @@
 # <3
 # Tema: Greedy / Sorting (Prefix Sums)
-# Resuelve "Coven Complications" (Kattis): un grafo de n comunidades brujas unidas por m
-# portales, donde las comunidades con f_i=0 son propias y las que tienen f_i>0 ferrets son
+# Resumen: Un grafo de n comunidades brujas unidas por m portales
+# Detalle: Resuelve "Coven Complications" (Kattis): un grafo de n comunidades brujas unidas por
+# m portales, donde las comunidades con f_i=0 son propias y las que tienen f_i>0 ferrets son
 # rivales. Cada dia se sella una comunidad propia sin sellar, y ese dia todas las demas
 # comunidades propias aun sin sellar pierden brujas iguales a la suma de ferrets de sus
 # comunidades rivales vecinas directas; pide el minimo total de brujas perdidas hasta sellar

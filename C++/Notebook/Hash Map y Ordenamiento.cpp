@@ -1,15 +1,16 @@
 // <3
 // Tema: Data Structures / Hash Map y Ordenamiento
+// Resumen: Diferencia clave: unordered_map es tabla hash, O(1) promedio pero SIN orden
 // O: (n log n) por el sort del volcado
 // Uso: mp cuenta; luego vector<pair<string,int>> v(mp.begin(), mp.end())
-// Diferencia clave: unordered_map es tabla hash, O(1) promedio pero SIN orden; map es arbol
-// rojo-negro, O(log n) pero siempre ordenado por clave. Ninguno de los dos se puede ordenar
-// por el valor (second) directamente, asi que el patron obligado es volcarlo a un
-// vector<pair<...>> y ordenar ese vector con un comparador lambda.
-// Aqui estan los comparadores mas usados: por clave ascendente/descendente, por valor
-// ascendente/descendente, y por valor con desempate por clave (el que piden casi siempre en
-// rankings y conteos de frecuencia). Tambien el truco de recorrer con structured bindings
-// para modificar valores in-place y el de invertir el mapa.
+// Detalle: Diferencia clave: unordered_map es tabla hash, O(1) promedio pero SIN orden; map es
+// arbol rojo-negro, O(log n) pero siempre ordenado por clave. Ninguno de los dos se puede
+// ordenar por el valor (second) directamente, asi que el patron obligado es volcarlo a un
+// vector<pair<...>> y ordenar ese vector con un comparador lambda. Aqui estan los comparadores
+// mas usados: por clave ascendente/descendente, por valor ascendente/descendente, y por valor
+// con desempate por clave (el que piden casi siempre en rankings y conteos de frecuencia).
+// Tambien el truco de recorrer con structured bindings para modificar valores in-place y el de
+// invertir el mapa.
 
 #include <bits/stdc++.h>
 

@@ -1,15 +1,15 @@
 # <3
 # Tema: LeetCode Hub / Busqueda con Vida Restante
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
-# LeetCode 3286 "Find a Safe Walk Through a Grid": cruzar la cuadricula sin que la vida llegue a 0,
-# perdiendo 1 en cada celda marcada.
-# Tecnica: busqueda con el estado (celda, vida) y la poda importante: si ya se visito esa celda
-# con MAS vida, volver con menos nunca sirve. Ese ant[celda] = mejor vida vista es lo que evita
-# la explosion.
-# OJO: la funcion se llama BFS pero es recursiva, o sea DFS, y usa str(m)+str(n) como clave, que
-# confunde 1,12 con 11,2. Con cuadriculas de hasta 50x50 no choca, pero es una llave mala.
-# Lo correcto es BFS 0-1 (deque) o Dijkstra sobre el estado (celda, vida).
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# LeetCode 3286 "Find a Safe Walk Through a Grid": cruzar la cuadricula sin que la vida llegue a
+# 0, perdiendo 1 en cada celda marcada. Tecnica: busqueda con el estado (celda, vida) y la poda
+# importante: si ya se visito esa celda con MAS vida, volver con menos nunca sirve. Ese
+# ant[celda] = mejor vida vista es lo que evita la explosion. OJO: la funcion se llama BFS pero
+# es recursiva, o sea DFS, y usa str(m)+str(n) como clave, que confunde 1,12 con 11,2. Con
+# cuadriculas de hasta 50x50 no choca, pero es una llave mala. Lo correcto es BFS 0-1 (deque) o
+# Dijkstra sobre el estado (celda, vida).
 
 class Solution:
     

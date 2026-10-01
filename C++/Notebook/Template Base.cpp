@@ -1,14 +1,15 @@
 // <3
 // Tema: Implementation / Template Base
+// Resumen: Includes, alias de tipos, constantes (MOD, INF, LLINF, EPS, PI), macros de recorrido
+// (all, forn, forr
 // O: (1), es el esqueleto
 // Uso: punto de partida: fast IO, lectura de matriz, gcd/lcm, setprecision
-// Plantilla de arranque para cualquier problema: includes, alias de tipos, constantes
-// (MOD, INF, LLINF, EPS, PI), macros de recorrido (all, forn, forr, ford) y la
-// desincronizacion de cin/cout que hace la lectura casi tan rapida como scanf.
-// Incluye ademas los utilitarios que mas se olvidan en competencia: crear una matriz,
-// imprimir con decimales fijos, borrar un rango de un vector, y obtener el indice (no el
-// valor) del maximo o minimo. Ojo: __gcd / std::gcd y std::lcm ya vienen en la STL, no
-// hace falta escribirlos a mano.
+// Detalle: Plantilla de arranque para cualquier problema: includes, alias de tipos, constantes
+// (MOD, INF, LLINF, EPS, PI), macros de recorrido (all, forn, forr, ford) y la desincronizacion
+// de cin/cout que hace la lectura casi tan rapida como scanf. Incluye ademas los utilitarios
+// que mas se olvidan en competencia: crear una matriz, imprimir con decimales fijos, borrar un
+// rango de un vector, y obtener el indice (no el valor) del maximo o minimo. Ojo: __gcd /
+// std::gcd y std::lcm ya vienen en la STL, no hace falta escribirlos a mano.
 
 #include <bits/stdc++.h>
 

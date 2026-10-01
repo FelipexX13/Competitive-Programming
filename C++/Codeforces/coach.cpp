@@ -1,7 +1,9 @@
 // <3
 // Tema: Math / Polynomial Composition
-// Calcula la composición de polinomios P(Q(x)) usando multiplicación polinómica modular.
-// El resultado es modular 998244353 y tiene grado máximo n*m.
+// Resumen: Calcula la composición de polinomios P(Q(x)) usando multiplicación polinómica
+// modular
+// Detalle: Calcula la composición de polinomios P(Q(x)) usando multiplicación polinómica
+// modular. El resultado es modular 998244353 y tiene grado máximo n*m.
 
 #include <bits/stdc++.h>
 using namespace std;

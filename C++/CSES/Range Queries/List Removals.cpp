@@ -1,19 +1,20 @@
 // <3
 // Tema: CSES / Fenwick con Descenso Binario (k-esimo)
+// Resumen: Fenwick de unos y ceros (1 = la posicion todavia esta) donde lo interesante es kth()
 // O: (log^2 n) por consulta, o (log n) con descenso binario
 // Uso: fw con 1 en cada vivo; busca el k-esimo vivo y pon 0 al sacarlo
-// Fenwick de unos y ceros (1 = la posicion todavia esta) donde lo interesante es kth(): encontrar
-// la k-esima posicion viva sin busqueda binaria por fuera.
-// EL DESCENSO SOBRE EL BIT: se arranca en la potencia de 2 mas grande y se va bajando, probando en
-// cada paso si el bloque que empieza en pos+p acumula menos de k. Si acumula menos, se avanza y se
-// le resta ese acumulado a k. Como los bloques del Fenwick son exactamente potencias de 2, ese
-// recorrido es un descenso por el arbol implicito y sale en O(log n) de una, contra O(log^2 n) de
-// hacer busqueda binaria llamando a sum() en cada paso.
-// CUANDO USAR: "el k-esimo elemento que queda", "el k-esimo mas chico", con inserciones y
-// borrados. Es el mismo patron que el descenso del segment tree (ver "Hotel Queries"): en vez de
-// buscar por fuera, se baja por la estructura aprovechando lo que ya guarda cada nodo.
-// OJO con el 1 << 18: tiene que ser una potencia de 2 mayor o igual a n. Con n mas grande hay que
-// subirlo, y ese es el error silencioso de esta plantilla.
+// Detalle: Fenwick de unos y ceros (1 = la posicion todavia esta) donde lo interesante es
+// kth(): encontrar la k-esima posicion viva sin busqueda binaria por fuera. EL DESCENSO SOBRE
+// EL BIT: se arranca en la potencia de 2 mas grande y se va bajando, probando en cada paso si
+// el bloque que empieza en pos+p acumula menos de k. Si acumula menos, se avanza y se le resta
+// ese acumulado a k. Como los bloques del Fenwick son exactamente potencias de 2, ese recorrido
+// es un descenso por el arbol implicito y sale en O(log n) de una, contra O(log^2 n) de hacer
+// busqueda binaria llamando a sum() en cada paso. CUANDO USAR: "el k-esimo elemento que queda",
+// "el k-esimo mas chico", con inserciones y borrados. Es el mismo patron que el descenso del
+// segment tree (ver "Hotel Queries"): en vez de buscar por fuera, se baja por la estructura
+// aprovechando lo que ya guarda cada nodo. OJO con el 1 << 18: tiene que ser una potencia de 2
+// mayor o igual a n. Con n mas grande hay que subirlo, y ese es el error silencioso de esta
+// plantilla.
 
 #include <bits/stdc++.h>
 using namespace std;

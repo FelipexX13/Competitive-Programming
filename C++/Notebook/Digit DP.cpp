@@ -1,15 +1,17 @@
 // <3
 // Tema: Dynamic Programming / Digit DP
+// Resumen: Cuenta cuantos numeros de 0 a X cumplen una propiedad definida sobre sus digitos
+// (aqui
 // O: (digitos * estados * 10), aqui 20*200*2*10
 // Uso: solve_digitdp(B,d) - solve_digitdp(A-1,d)  // rango [A,B]
-// Cuenta cuantos numeros de 0 a X cumplen una propiedad definida sobre sus digitos (aqui:
-// que la suma de digitos sea divisible por D). Se recorre el numero digito por digito
-// llevando dos cosas en el estado: el acumulado de la propiedad (s) y el flag tight, que
-// indica si el prefijo construido sigue pegado al prefijo de X.
-// El flag tight es la clave: si sigue activo, el digito actual solo puede llegar hasta el
-// digito correspondiente de X; si ya se rompio (se puso un digito menor), a partir de ahi se
-// puede poner cualquier cosa de 0 a 9 y el subarbol se memoiza y se reutiliza.
-// Para contar en un rango [A,B] se calcula solve(B) - solve(A-1).
+// Detalle: Cuenta cuantos numeros de 0 a X cumplen una propiedad definida sobre sus digitos
+// (aqui: que la suma de digitos sea divisible por D). Se recorre el numero digito por digito
+// llevando dos cosas en el estado: el acumulado de la propiedad (s) y el flag tight, que indica
+// si el prefijo construido sigue pegado al prefijo de X. El flag tight es la clave: si sigue
+// activo, el digito actual solo puede llegar hasta el digito correspondiente de X; si ya se
+// rompio (se puso un digito menor), a partir de ahi se puede poner cualquier cosa de 0 a 9 y el
+// subarbol se memoiza y se reutiliza. Para contar en un rango [A,B] se calcula solve(B) -
+// solve(A-1).
 
 #include <bits/stdc++.h>
 

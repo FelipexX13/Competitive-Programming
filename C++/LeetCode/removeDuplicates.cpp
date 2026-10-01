@@ -1,9 +1,10 @@
 // <3
 // Tema: String / Remove Duplicate Letters
-// Intento manual (greedy) de "Remove Duplicate Letters": busca construir el menor string
-// lexicografico que contiene cada letra una sola vez, escogiendo la siguiente letra mas pequena
-// posible que aun permita completar las letras restantes. Version explicativa de la idea greedy;
-// la implementacion limpia con pila monotona esta en removeDuplicates1.cpp.
+// Resumen: Busca construir el menor string lexicografico que contiene cada letra una sola vez
+// Detalle: Intento manual (greedy) de "Remove Duplicate Letters": busca construir el menor
+// string lexicografico que contiene cada letra una sola vez, escogiendo la siguiente letra mas
+// pequena posible que aun permita completar las letras restantes. Version explicativa de la
+// idea greedy; la implementacion limpia con pila monotona esta en removeDuplicates1.cpp.
 
 #include <bits/stdc++.h>
 

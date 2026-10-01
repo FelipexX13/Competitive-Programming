@@ -1,13 +1,14 @@
 # <3
 # Tema: LeetCode Hub / Compatibilidad de Tubos en Matriz
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
-# LeetCode 1391 "Check if There is a Valid Path in a Grid": una cuadricula de tubos numerados 1 a 6;
-# decir si se puede ir de la esquina de arriba a la de abajo.
-# Tecnica: DFS donde moverse solo vale si el tubo actual apunta hacia el vecino Y el vecino apunta
-# de vuelta. Las listas [1,3,5] y compania son justo los tubos que reciben por cada lado, y esa
-# tabla de compatibilidad es todo el problema.
-# Este mismo problema esta resuelto en C++ en la carpeta LeetCode del notebook.
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# LeetCode 1391 "Check if There is a Valid Path in a Grid": una cuadricula de tubos numerados 1
+# a 6; decir si se puede ir de la esquina de arriba a la de abajo. Tecnica: DFS donde moverse
+# solo vale si el tubo actual apunta hacia el vecino Y el vecino apunta de vuelta. Las listas
+# [1,3,5] y compania son justo los tubos que reciben por cada lado, y esa tabla de
+# compatibilidad es todo el problema. Este mismo problema esta resuelto en C++ en la carpeta
+# LeetCode del notebook.
 
 class Solution:
     

@@ -1,18 +1,19 @@
 // <3
 // Tema: Combinatorics / Formula Cerrada con Inverso Modular
-// Resuelve "Number of Sets of K Non-Overlapping Line Segments" (LeetCode 1621): con n puntos
-// alineados hay que contar de cuantas formas se dibujan k segmentos que no se solapen (si
-// pueden compartir un extremo), modulo 1e9+7.
-// Toda la DP se colapsa en un solo binomial: la respuesta es C(n+k-1, 2k). La idea es que
-// elegir k segmentos equivale a escoger 2k extremos de entre n+k-1 posiciones, porque cada
-// extremo compartido se "desdobla" agregando k-1 posiciones ficticias.
-// Como hay que dividir en modular, se precomputan factoriales y sus inversos: una sola
-// exponenciacion modular para inverso[limite] = factorial[limite]^(MOD-2) por Fermat, y el
-// resto baja con inverso[i-1] = inverso[i] * i. Asi cada binomial sale en O(1) en vez de pagar
-// un modpow por consulta. Costo total O(n + k + log MOD).
-// OJO con el indice: si 2k > limite, limite - 2k se sale del arreglo. No pasa dentro de las
-// restricciones del problema (k <= n-1 obliga a 2k <= n+k-1), pero si reusas este patron en
-// otro problema, valida el rango antes.
+// Resumen: Con n puntos alineados hay que contar de cuantas formas se dibujan k segmentos que
+// no se solapen (si pueden...
+// Detalle: Resuelve "Number of Sets of K Non-Overlapping Line Segments" (LeetCode 1621): con n
+// puntos alineados hay que contar de cuantas formas se dibujan k segmentos que no se solapen
+// (si pueden compartir un extremo), modulo 1e9+7. Toda la DP se colapsa en un solo binomial: la
+// respuesta es C(n+k-1, 2k). La idea es que elegir k segmentos equivale a escoger 2k extremos
+// de entre n+k-1 posiciones, porque cada extremo compartido se "desdobla" agregando k-1
+// posiciones ficticias. Como hay que dividir en modular, se precomputan factoriales y sus
+// inversos: una sola exponenciacion modular para inverso[limite] = factorial[limite]^(MOD-2)
+// por Fermat, y el resto baja con inverso[i-1] = inverso[i] * i. Asi cada binomial sale en O(1)
+// en vez de pagar un modpow por consulta. Costo total O(n + k + log MOD). OJO con el indice: si
+// 2k > limite, limite - 2k se sale del arreglo. No pasa dentro de las restricciones del
+// problema (k <= n-1 obliga a 2k <= n+k-1), pero si reusas este patron en otro problema, valida
+// el rango antes.
 
 class Solution {
 public:

@@ -1,38 +1,34 @@
 // <3
 // Tema: String / KMP sobre Cadena Recursiva (Duplicacion)
-// Resuelve "Song of the Sirens" (Codeforces, problema G): hay n+1 canciones definidas por
-// s_{i+1} = s_i + t[i] + s_i, y cada consulta pide cuantas veces aparece un nombre w dentro de
-// s_k, modulo 1e9+7. La cadena crece al doble en cada paso, asi que s_n puede medir 2^100000 y
-// construirla esta descartado de entrada.
-// LA RECURRENCIA ES TODO:
-//     f(i+1) = 2*f(i) + g(t[i])
+// Resumen: Hay n+1 canciones definidas por s_{i+1} = s_i + t[i] + s_i
+// Detalle: Resuelve "Song of the Sirens" (Codeforces, problema G): hay n+1 canciones definidas
+// por s_{i+1} = s_i + t[i] + s_i, y cada consulta pide cuantas veces aparece un nombre w dentro
+// de s_k, modulo 1e9+7. La cadena crece al doble en cada paso, asi que s_n puede medir 2^100000
+// y construirla esta descartado de entrada. LA RECURRENCIA ES TODO: f(i+1) = 2*f(i) + g(t[i])
 // Las apariciones de w en s_{i+1} son las de la copia izquierda, las de la derecha (de ahi el
-// 2*f(i)) y las que CRUZAN el caracter del medio. Esas ultimas son g.
-// POR QUE g SOLO DEPENDE DE LA LETRA Y NO DE LA POSICION, que es el paso que hay que ver: una
-// aparicion que cruza el centro tiene largo m, asi que no puede meterse mas de m-1 caracteres
-// hacia cada lado. O sea que solo depende del SUFIJO de largo m-1 de s_i, de la letra del medio,
-// y del PREFIJO de largo m-1 de s_i. Y como s_{i+1} empieza y termina con s_i, esos prefijos y
-// sufijos YA NO CAMBIAN en cuanto |s_i| >= m-1. Entonces g se calcula una sola vez para cada una
-// de las 26 letras, contando apariciones de w en (sufijo + letra + prefijo).
-// Por eso primero se hace crecer cur = s_k hasta que mida al menos m. Como se duplica cada vez,
-// eso son a lo sumo unos 20 pasos con |w| hasta 10^6, no n pasos.
-// DESENROLLANDO la recurrencia desde ese punto k:
-//     f(n) = f(k) * 2^(n-k) + suma desde i=k+1 hasta n de g(t[i-1]) * 2^(n-i)
-// Esa suma tiene hasta n terminos, y con q consultas seria O(n*q) = 10^10. El truco para
-// bajarla: como 2^(n-j-1) = 2^(n-1) * 2^(-j), se saca el 2^(n-1) afuera y lo que queda,
-// suma de 2^(-j) sobre las posiciones j donde t[j] es la letra c, se precalcula UNA vez en
-// prefijos por letra. Asi cada consulta cuesta O(26) en esa parte en vez de O(n).
-// INV2 = 500000004 es el inverso de 2 modulo 1e9+7, que sale de (MOD+1)/2 y evita tener que
-// llamar a una exponenciacion modular. Los 2^(-j) son potencias de ese inverso.
-// DETALLES DEL KMP: despues de un match se hace j = pi[j-1] en vez de j = 0, que es lo que
-// permite contar apariciones SOLAPADAS (con w = "aa" en "aaa" hay dos, no una). Y el mismo
-// arreglo pi se reusa para el conteo en cur y para los 26 strings de g, que por eso se pasa como
-// parametro en vez de recalcularlo.
-// Los limites cuadran porque la suma de todos los |w| no pasa de 10^6: cur mide ~2m y cada uno
-// de los 26 strings de g mide 2m-1, asi que el trabajo por consulta es O(m) veces una constante.
-// Si al terminar de crecer todavia |cur| < m, es que ni s_n alcanza el largo de w y la respuesta
-// es 0.
-// Este archivo entro al cuaderno sin la verificacion habitual, a pedido: ya venia aceptado.
+// 2*f(i)) y las que CRUZAN el caracter del medio. Esas ultimas son g. POR QUE g SOLO DEPENDE DE
+// LA LETRA Y NO DE LA POSICION, que es el paso que hay que ver: una aparicion que cruza el
+// centro tiene largo m, asi que no puede meterse mas de m-1 caracteres hacia cada lado. O sea
+// que solo depende del SUFIJO de largo m-1 de s_i, de la letra del medio, y del PREFIJO de
+// largo m-1 de s_i. Y como s_{i+1} empieza y termina con s_i, esos prefijos y sufijos YA NO
+// CAMBIAN en cuanto |s_i| >= m-1. Entonces g se calcula una sola vez para cada una de las 26
+// letras, contando apariciones de w en (sufijo + letra + prefijo). Por eso primero se hace
+// crecer cur = s_k hasta que mida al menos m. Como se duplica cada vez, eso son a lo sumo unos
+// 20 pasos con |w| hasta 10^6, no n pasos. DESENROLLANDO la recurrencia desde ese punto k: f(n)
+// = f(k) * 2^(n-k) + suma desde i=k+1 hasta n de g(t[i-1]) * 2^(n-i) Esa suma tiene hasta n
+// terminos, y con q consultas seria O(n*q) = 10^10. El truco para bajarla: como 2^(n-j-1) =
+// 2^(n-1) * 2^(-j), se saca el 2^(n-1) afuera y lo que queda, suma de 2^(-j) sobre las
+// posiciones j donde t[j] es la letra c, se precalcula UNA vez en prefijos por letra. Asi cada
+// consulta cuesta O(26) en esa parte en vez de O(n). INV2 = 500000004 es el inverso de 2 modulo
+// 1e9+7, que sale de (MOD+1)/2 y evita tener que llamar a una exponenciacion modular. Los
+// 2^(-j) son potencias de ese inverso. DETALLES DEL KMP: despues de un match se hace j =
+// pi[j-1] en vez de j = 0, que es lo que permite contar apariciones SOLAPADAS (con w = "aa" en
+// "aaa" hay dos, no una). Y el mismo arreglo pi se reusa para el conteo en cur y para los 26
+// strings de g, que por eso se pasa como parametro en vez de recalcularlo. Los limites cuadran
+// porque la suma de todos los |w| no pasa de 10^6: cur mide ~2m y cada uno de los 26 strings de
+// g mide 2m-1, asi que el trabajo por consulta es O(m) veces una constante. Si al terminar de
+// crecer todavia |cur| < m, es que ni s_n alcanza el largo de w y la respuesta es 0. Este
+// archivo entro al cuaderno sin la verificacion habitual, a pedido: ya venia aceptado.
 
 #include <bits/stdc++.h>
 using namespace std;

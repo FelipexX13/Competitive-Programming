@@ -1,20 +1,20 @@
 // <3
 // Tema: CSES / Floyd-Warshall
-// Floyd-Warshall, la solucion canonica de todos-contra-todos: tres for anidados donde el de AFUERA
-// es el nodo intermedio k. Ese orden no es negociable, y es el error numero uno de esta plantilla:
-// si k va por dentro, el algoritmo no considera caminos con varios intermedios y da respuestas mal.
-// La invariante es que despues de la iteracion k ya estan todos los caminos que solo usan
-// {0..k} como intermedios, y de ahi sale la induccion.
-// Se inicializa dist[i][i] = 0 y se guarda la arista MAS BARATA entre cada par, porque puede haber
-// carreteras repetidas. El continue cuando dist[i][k] es infinito no es solo optimizacion: evita
-// que se sumen dos infinitos y se desborde.
-// ESTE ARCHIVO ES LA OTRA SOLUCION del mismo problema que "Shortest Routes II", que ahi esta
-// resuelto con n Dijkstras. Vale la pena tener las dos y ver la diferencia: Floyd es O(n^3) y se
-// escribe en tres lineas, n Dijkstras es O(n*m log n) y gana solo si el grafo es disperso. Con
-// n <= 500, que es el limite tipico, Floyd es lo que uno escribe.
-// CUANDO USAR: n <= 500 y hacen falta todos los pares. Tambien sirve para cierre transitivo
-// (cambiando min y + por or y and) y para el cuello de botella minimax (cambiando + por max).
-// Aguanta pesos negativos siempre que no haya ciclos negativos.
+// Resumen: Floyd-Warshall, la solucion canonica de todos-contra-todos
+// Detalle: Floyd-Warshall, la solucion canonica de todos-contra-todos: tres for anidados donde
+// el de AFUERA es el nodo intermedio k. Ese orden no es negociable, y es el error numero uno de
+// esta plantilla: si k va por dentro, el algoritmo no considera caminos con varios intermedios
+// y da respuestas mal. La invariante es que despues de la iteracion k ya estan todos los
+// caminos que solo usan {0..k} como intermedios, y de ahi sale la induccion. Se inicializa
+// dist[i][i] = 0 y se guarda la arista MAS BARATA entre cada par, porque puede haber carreteras
+// repetidas. El continue cuando dist[i][k] es infinito no es solo optimizacion: evita que se
+// sumen dos infinitos y se desborde. ESTE ARCHIVO ES LA OTRA SOLUCION del mismo problema que
+// "Shortest Routes II", que ahi esta resuelto con n Dijkstras. Vale la pena tener las dos y ver
+// la diferencia: Floyd es O(n^3) y se escribe en tres lineas, n Dijkstras es O(n*m log n) y
+// gana solo si el grafo es disperso. Con n <= 500, que es el limite tipico, Floyd es lo que uno
+// escribe. CUANDO USAR: n <= 500 y hacen falta todos los pares. Tambien sirve para cierre
+// transitivo (cambiando min y + por or y and) y para el cuello de botella minimax (cambiando +
+// por max). Aguanta pesos negativos siempre que no haya ciclos negativos.
 
 #include <iostream>
 #include <vector>

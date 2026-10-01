@@ -1,11 +1,11 @@
 # <3
 # Tema: LeetCode Hub / Casos por Paridad
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 2481 "Minimum Cuts to Divide a Circle": cortes minimos para partir un circulo en n
-# pedazos iguales.
-# Tecnica: cada corte es un DIAMETRO y parte el circulo en dos, asi que con n par bastan n/2.
-# Con n impar los diametros no sirven y toca n. Y con n = 1 no se corta nada.
+# pedazos iguales. Tecnica: cada corte es un DIAMETRO y parte el circulo en dos, asi que con n
+# par bastan n/2. Con n impar los diametros no sirven y toca n. Y con n = 1 no se corta nada.
 
 class Solution:
     def numberOfCuts(self, n: int) -> int:

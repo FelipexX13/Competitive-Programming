@@ -1,11 +1,12 @@
 // <3
 // Tema: Formulario / Trigonometria
-// Conversion grados-radianes, la tabla de valores exactos, las identidades que se usan para
-// simplificar antes de programar, y las leyes de senos y cosenos para resolver un triangulo
-// del que solo se conocen algunos lados o angulos.
-// El detalle practico mas importante: en C++ sin, cos y tan reciben RADIANES, y para sacar
-// el angulo de un vector hay que usar atan2(y,x), no atan(y/x), que pierde el cuadrante.
-// Valores e identidades verificados numericamente.
+// Resumen: Conversion grados-radianes, la tabla de valores exactos
+// Detalle: Conversion grados-radianes, la tabla de valores exactos, las identidades que se usan
+// para simplificar antes de programar, y las leyes de senos y cosenos para resolver un
+// triangulo del que solo se conocen algunos lados o angulos. El detalle practico mas
+// importante: en C++ sin, cos y tan reciben RADIANES, y para sacar el angulo de un vector hay
+// que usar atan2(y,x), no atan(y/x), que pierde el cuadrante. Valores e identidades verificados
+// numericamente.
 
 // =============== TRIGONOMETRIA ===============
 //

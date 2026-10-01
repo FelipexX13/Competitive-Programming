@@ -1,19 +1,19 @@
 // <3
 // Tema: CSES / Monotonic Stack + Binary Lifting con Costos
-// Para cada consulta [l,r], el minimo de sumas para que el tramo quede no decreciente. La
-// solucion optima es subir cada elemento al MAXIMO DE PREFIJO del tramo, y ese maximo solo cambia
-// en los "siguientes mayores". Entonces el tramo se parte en bloques: desde i, todo hasta antes de
-// up[0][i] (el siguiente estrictamente mayor) se sube al valor a[i], y cuesta
-//     a[i] * (j - i - 1) - (pref[j-1] - pref[i])
-// El siguiente mayor sale con una pila monotona de derecha a izquierda, con a[n+1] = 1e18 de
-// centinela para que todos tengan a donde apuntar.
-// EL BINARY LIFTING GUARDA EL COSTO JUNTO CON EL SALTO: up[k][i] es a donde se llega con 2^k
-// saltos, y cost[k][i] lo que se paga en ese camino. Cada consulta baja de la potencia mas alta a
-// la mas baja mientras el salto no se pase de r, y el tramo final (de x hasta r, sin llegar al
-// siguiente mayor) se cobra aparte con la misma formula.
-// Es la misma combinacion que "Visible Building Queries", con una sola diferencia: aqui cada
-// salto ademas acumula un valor. Ese es el patron general: si un puntero define una funcion y
-// cada paso tiene un costo, el doubling precalcula a la vez el destino y la suma.
+// Resumen: Para cada consulta [l,r], el minimo de sumas para que el tramo quede no decreciente
+// Detalle: Para cada consulta [l,r], el minimo de sumas para que el tramo quede no decreciente.
+// La solucion optima es subir cada elemento al MAXIMO DE PREFIJO del tramo, y ese maximo solo
+// cambia en los "siguientes mayores". Entonces el tramo se parte en bloques: desde i, todo
+// hasta antes de up[0][i] (el siguiente estrictamente mayor) se sube al valor a[i], y cuesta
+// a[i] * (j - i - 1) - (pref[j-1] - pref[i]) El siguiente mayor sale con una pila monotona de
+// derecha a izquierda, con a[n+1] = 1e18 de centinela para que todos tengan a donde apuntar. EL
+// BINARY LIFTING GUARDA EL COSTO JUNTO CON EL SALTO: up[k][i] es a donde se llega con 2^k
+// saltos, y cost[k][i] lo que se paga en ese camino. Cada consulta baja de la potencia mas alta
+// a la mas baja mientras el salto no se pase de r, y el tramo final (de x hasta r, sin llegar
+// al siguiente mayor) se cobra aparte con la misma formula. Es la misma combinacion que
+// "Visible Building Queries", con una sola diferencia: aqui cada salto ademas acumula un valor.
+// Ese es el patron general: si un puntero define una funcion y cada paso tiene un costo, el
+// doubling precalcula a la vez el destino y la suma.
 
 #include <bits/stdc++.h>
 using namespace std;

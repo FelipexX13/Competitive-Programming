@@ -1,14 +1,16 @@
 // <3
 // Tema: CSES / K Caminos Mas Cortos
-// Los k caminos mas cortos al nodo n, con la variante de Dijkstra que en vez de UNA distancia por
-// nodo guarda las k mejores en un priority_queue de maximos por nodo. Cada nodo se puede sacar de
-// la cola hasta k veces, y ahi esta la clave: la k-esima vez que un nodo sale de la cola, sale con
-// su k-esima distancia mas corta. Por eso el contador usados[] y el corte cuando pasa de k.
-// El priority_queue de MAXIMOS por nodo es para poder botar el peor de los k que se llevan cuando
-// llega uno mejor. Es un heap acotado a tamano k.
-// CUANDO USAR: "los k caminos mas cortos", "el k-esimo mas corto", con repeticiones permitidas.
-// Costo O(k*m*log). Ojo que aqui los caminos pueden repetir nodos; si el problema pide caminos
-// DISJUNTOS o simples, esto no sirve y el problema es muchisimo mas duro.
+// Resumen: Los k caminos mas cortos al nodo n, con la variante de Dijkstra que en vez de UNA
+// distancia por nodo guarda...
+// Detalle: Los k caminos mas cortos al nodo n, con la variante de Dijkstra que en vez de UNA
+// distancia por nodo guarda las k mejores en un priority_queue de maximos por nodo. Cada nodo
+// se puede sacar de la cola hasta k veces, y ahi esta la clave: la k-esima vez que un nodo sale
+// de la cola, sale con su k-esima distancia mas corta. Por eso el contador usados[] y el corte
+// cuando pasa de k. El priority_queue de MAXIMOS por nodo es para poder botar el peor de los k
+// que se llevan cuando llega uno mejor. Es un heap acotado a tamano k. CUANDO USAR: "los k
+// caminos mas cortos", "el k-esimo mas corto", con repeticiones permitidas. Costo O(k*m*log).
+// Ojo que aqui los caminos pueden repetir nodos; si el problema pide caminos DISJUNTOS o
+// simples, esto no sirve y el problema es muchisimo mas duro.
 
 #include <iostream>
 #include <vector>

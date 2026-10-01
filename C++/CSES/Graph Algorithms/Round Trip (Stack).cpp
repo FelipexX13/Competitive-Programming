@@ -1,12 +1,14 @@
 // <3
 // Tema: CSES / Deteccion de Ciclo con Pila (DFS Iterativo)
-// El mismo problema que Round Trip pero cambiando la cola por una PILA, o sea DFS en vez de BFS,
-// escrito de forma iterativa.
-// Para detectar ciclos da igual cual de los dos se use, y esa es la ensenanza: la estructura es
-// lo unico que cambia entre BFS y DFS. Vale tener las dos versiones porque a veces el problema
-// pide el ciclo mas corto (BFS ayuda) y a veces cualquiera (DFS es mas directo).
-// POR QUE ITERATIVO: con n hasta 10^5 un DFS recursivo se arriesga a stack overflow. Pasar la
-// recursion a una pila explicita es la salida estandar, y es lo que hace este archivo.
+// Resumen: El mismo problema que Round Trip pero cambiando la cola por una PILA, o sea DFS en
+// vez de BFS
+// Detalle: El mismo problema que Round Trip pero cambiando la cola por una PILA, o sea DFS en
+// vez de BFS, escrito de forma iterativa. Para detectar ciclos da igual cual de los dos se use,
+// y esa es la ensenanza: la estructura es lo unico que cambia entre BFS y DFS. Vale tener las
+// dos versiones porque a veces el problema pide el ciclo mas corto (BFS ayuda) y a veces
+// cualquiera (DFS es mas directo). POR QUE ITERATIVO: con n hasta 10^5 un DFS recursivo se
+// arriesga a stack overflow. Pasar la recursion a una pila explicita es la salida estandar, y
+// es lo que hace este archivo.
 
 #include <iostream>
 #include <vector>

@@ -1,12 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Ordenar y Buscar
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3759 "Count Elements With At Least K Greater Values": cuantos elementos tienen al
-# menos k elementos estrictamente mayores.
-# Tecnica: ordenar y para cada posicion buscar con binaria el primer valor mayor que el actual;
-# si desde ahi quedan k o mas, cuenta. El break cuando faltan k o menos elementos es la poda.
-# Ordenado, tambien sale de un tiron: cuenta cuantos hay estrictamente mayores por frecuencias.
+# menos k elementos estrictamente mayores. Tecnica: ordenar y para cada posicion buscar con
+# binaria el primer valor mayor que el actual; si desde ahi quedan k o mas, cuenta. El break
+# cuando faltan k o menos elementos es la poda. Ordenado, tambien sale de un tiron: cuenta
+# cuantos hay estrictamente mayores por frecuencias.
 
 class Solution:
     def countElements(self, nums: List[int], k: int) -> int:

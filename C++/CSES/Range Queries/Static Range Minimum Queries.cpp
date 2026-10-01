@@ -1,13 +1,14 @@
 // <3
 // Tema: CSES / Sparse Table
-// Sparse table: st[k][i] es el minimo de los 2^k elementos que arrancan en i. Se construye en
-// O(n log n) partiendo cada rango en dos mitades de 2^(k-1), y cada consulta se responde en O(1)
-// cubriendo [l,r] con DOS bloques de tamano 2^k que se solapan. Solaparse no es problema, y esa
-// es la clave: el minimo es IDEMPOTENTE, contar un elemento dos veces no cambia nada.
-// CUANDO USAR: arreglo estatico y operacion idempotente (min, max, gcd, and, or). Consulta O(1),
-// mas rapido que cualquier segment tree.
-// CUANDO NO: si el arreglo cambia, la sparse table no se puede actualizar y toca segment tree. Y
-// para SUMA no sirve, porque solapar los dos bloques contaria de mas.
+// Resumen: Sparse table: st[k][i] es el minimo de los 2^k elementos que arrancan en i
+// Detalle: Sparse table: st[k][i] es el minimo de los 2^k elementos que arrancan en i. Se
+// construye en O(n log n) partiendo cada rango en dos mitades de 2^(k-1), y cada consulta se
+// responde en O(1) cubriendo [l,r] con DOS bloques de tamano 2^k que se solapan. Solaparse no
+// es problema, y esa es la clave: el minimo es IDEMPOTENTE, contar un elemento dos veces no
+// cambia nada. CUANDO USAR: arreglo estatico y operacion idempotente (min, max, gcd, and, or).
+// Consulta O(1), mas rapido que cualquier segment tree. CUANDO NO: si el arreglo cambia, la
+// sparse table no se puede actualizar y toca segment tree. Y para SUMA no sirve, porque solapar
+// los dos bloques contaria de mas.
 
 #include <bits/stdc++.h>
 using namespace std;

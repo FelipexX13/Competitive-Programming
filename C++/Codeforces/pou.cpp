@@ -1,6 +1,9 @@
 // <3
 // Tema: Math / Fibonacci Fast Doubling
-// Calcula el n-ésimo número de Fibonacci modulo 2026 usando exponenciación rápida de matriz.
+// Resumen: Calcula el n-ésimo número de Fibonacci modulo 2026 usando exponenciación rápida de
+// matriz
+// Detalle: Calcula el n-ésimo número de Fibonacci modulo 2026 usando exponenciación rápida de
+// matriz.
 
 #include <bits/stdc++.h>
 typedef long long ll;

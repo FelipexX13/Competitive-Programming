@@ -1,24 +1,24 @@
 // <3
 // Tema: Binary Search / Busqueda sobre la Respuesta con Fracciones Exactas
-// Resuelve "Clean Streets" (problema C, Regionals 2025): elegir trabajadores con tarifas y ventanas
-// de disponibilidad para limpiar S calles al menor costo.
-// Se busca sobre la RAZON r = costo por hora. Para un r fijo, un trabajador sirve si su intervalo
-// [L/H, U/H] contiene a r, y entre los que sirven se toman los mas baratos hasta juntar S calles:
-// un segment tree responde "cual es el costo minimo de tomar exactamente need calles entre los H
-// mas chicos" con un descenso por el arbol.
-// LOS CANDIDATOS SON FINITOS: la respuesta optima siempre cae en algun extremo de intervalo, o sea
-// en algun L_i/H_i. No hace falta busqueda binaria real sobre reales: se prueban esos O(N)
-// candidatos en orden, agregando trabajadores cuyo intervalo ya empezo y sacando los que ya
-// terminaron, como un barrido.
-// LO QUE HAY QUE COPIAR DE AQUI ES fracLess Y fracLE: comparar a/b contra c/d se hace con la
-// multiplicacion cruzada a*d < c*b, en ENTEROS. Usar double para ordenar fracciones es la forma mas
-// comun de fallar estos problemas, porque dos fracciones distintas pueden dar el mismo double y el
-// orden queda al azar. Ojo con el signo de los denominadores: la multiplicacion cruzada solo
-// conserva la desigualdad si ambos son positivos.
-// El costo final se reporta como fraccion (num * horas / den) en vez de convertirlo a decimal antes
-// de tiempo, para no arrastrar error.
-// OJO: usa structured bindings (auto [a, b]), que piden C++17. En el juez compila, pero con
-// un g++ viejo hay que volver a .first y .second.
+// Resumen: Elegir trabajadores con tarifas y ventanas de disponibilidad para limpiar S calles
+// al menor costo
+// Detalle: Resuelve "Clean Streets" (problema C, Regionals 2025): elegir trabajadores con
+// tarifas y ventanas de disponibilidad para limpiar S calles al menor costo. Se busca sobre la
+// RAZON r = costo por hora. Para un r fijo, un trabajador sirve si su intervalo [L/H, U/H]
+// contiene a r, y entre los que sirven se toman los mas baratos hasta juntar S calles: un
+// segment tree responde "cual es el costo minimo de tomar exactamente need calles entre los H
+// mas chicos" con un descenso por el arbol. LOS CANDIDATOS SON FINITOS: la respuesta optima
+// siempre cae en algun extremo de intervalo, o sea en algun L_i/H_i. No hace falta busqueda
+// binaria real sobre reales: se prueban esos O(N) candidatos en orden, agregando trabajadores
+// cuyo intervalo ya empezo y sacando los que ya terminaron, como un barrido. LO QUE HAY QUE
+// COPIAR DE AQUI ES fracLess Y fracLE: comparar a/b contra c/d se hace con la multiplicacion
+// cruzada a*d < c*b, en ENTEROS. Usar double para ordenar fracciones es la forma mas comun de
+// fallar estos problemas, porque dos fracciones distintas pueden dar el mismo double y el orden
+// queda al azar. Ojo con el signo de los denominadores: la multiplicacion cruzada solo conserva
+// la desigualdad si ambos son positivos. El costo final se reporta como fraccion (num * horas /
+// den) en vez de convertirlo a decimal antes de tiempo, para no arrastrar error. OJO: usa
+// structured bindings (auto [a, b]), que piden C++17. En el juez compila, pero con un g++ viejo
+// hay que volver a .first y .second.
 
 #include <bits/stdc++.h>
 using namespace std;

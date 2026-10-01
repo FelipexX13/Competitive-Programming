@@ -1,13 +1,13 @@
 // <3
 // Tema: CSES / Prefix Sums 2D
-// Prefix sums en dos dimensiones, donde lo unico nuevo es la inclusion-exclusion: al construir se
-// suma arriba e izquierda y se RESTA la diagonal, que se conto dos veces, y al consultar el
-// rectangulo se hace lo mismo al reves con las cuatro esquinas.
-// CUANDO USAR: consultas de suma sobre submatrices en una matriz que no cambia. Construccion
-// O(n^2), cada consulta O(1). Si la matriz cambia hay que irse a Fenwick 2D o segment tree 2D,
-// que es bastante mas codigo.
-// El truco de reservar (n+1)x(n+1) con la fila y columna 0 en cero es lo que hace que los indices
-// i-1 y j-1 nunca se salgan, sin un solo if de borde.
+// Resumen: Prefix sums en dos dimensiones, donde lo unico nuevo es la inclusion-exclusion
+// Detalle: Prefix sums en dos dimensiones, donde lo unico nuevo es la inclusion-exclusion: al
+// construir se suma arriba e izquierda y se RESTA la diagonal, que se conto dos veces, y al
+// consultar el rectangulo se hace lo mismo al reves con las cuatro esquinas. CUANDO USAR:
+// consultas de suma sobre submatrices en una matriz que no cambia. Construccion O(n^2), cada
+// consulta O(1). Si la matriz cambia hay que irse a Fenwick 2D o segment tree 2D, que es
+// bastante mas codigo. El truco de reservar (n+1)x(n+1) con la fila y columna 0 en cero es lo
+// que hace que los indices i-1 y j-1 nunca se salgan, sin un solo if de borde.
 
 #include <bits/stdc++.h>
 using namespace std;

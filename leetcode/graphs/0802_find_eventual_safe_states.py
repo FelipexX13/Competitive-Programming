@@ -1,13 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Nodos que No Llegan a un Ciclo
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
-# LeetCode 802 "Find Eventual Safe States": los nodos desde los que todo camino termina en un nodo
-# sin salidas.
-# Tecnica: DFS que devuelve True si desde el nodo no se alcanza ningun ciclo, con el set safe
-# como memoria de los ya confirmados.
-# OJO: hace visited.clear() antes de cada nodo, asi que repite trabajo. Lo limpio es el DFS de
-# tres colores (blanco, gris, negro) en una sola pasada, o Kahn sobre el grafo INVERTIDO.
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# LeetCode 802 "Find Eventual Safe States": los nodos desde los que todo camino termina en un
+# nodo sin salidas. Tecnica: DFS que devuelve True si desde el nodo no se alcanza ningun ciclo,
+# con el set safe como memoria de los ya confirmados. OJO: hace visited.clear() antes de cada
+# nodo, asi que repite trabajo. Lo limpio es el DFS de tres colores (blanco, gris, negro) en una
+# sola pasada, o Kahn sobre el grafo INVERTIDO.
 
 class Solution:
     def eventualSafeNodes(self, graph: List[List[int]]) -> List[int]:

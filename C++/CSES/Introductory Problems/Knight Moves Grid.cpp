@@ -1,14 +1,14 @@
 // <3
 // Tema: CSES / BFS en Grilla
-// BFS de caballo sobre la grilla: la distancia en SALTOS es el numero de aristas, y BFS la da
-// porque todos los movimientos cuestan lo mismo. Los 8 movimientos van en los arreglos dx y dy,
-// que es como se evitan 8 bloques de codigo repetido.
-// Se usa dist inicializada en -1 haciendo doble papel de distancia y de visitado, y se marca al
-// ENCOLAR.
+// Resumen: BFS de caballo sobre la grilla: la distancia en SALTOS es el numero de aristas
+// Detalle: BFS de caballo sobre la grilla: la distancia en SALTOS es el numero de aristas, y
+// BFS la da porque todos los movimientos cuestan lo mismo. Los 8 movimientos van en los
+// arreglos dx y dy, que es como se evitan 8 bloques de codigo repetido. Se usa dist
+// inicializada en -1 haciendo doble papel de distancia y de visitado, y se marca al ENCOLAR.
 // CUANDO USAR: distancia minima en grilla con pasos de costo uniforme. Si los pasos costaran
-// distinto seria Dijkstra, y con costos 0 y 1 seria 0-1 BFS con deque.
-// OJO: usa auto [x, y] (structured bindings), que necesita C++17. Con un compilador viejo hay que
-// volver a q.front().first y .second.
+// distinto seria Dijkstra, y con costos 0 y 1 seria 0-1 BFS con deque. OJO: usa auto [x, y]
+// (structured bindings), que necesita C++17. Con un compilador viejo hay que volver a
+// q.front().first y .second.
 
 #include <bits/stdc++.h>
 using namespace std;

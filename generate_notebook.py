@@ -286,6 +286,13 @@ SUBSECTION_TITLE_SIZE = 7.5
 DESC_FONT = TEXT_FONT
 DESC_SIZE = 7.0
 
+# Tope duro de lo que se imprime por entrada. El promedio venia en 8.8 lineas
+# de prosa por archivo (5492 en total, 92% de las entradas con 5 o mas, el peor
+# con 40), y un parrafo de ocho lineas no se lee durante un contest: se saltea.
+# Dos lineas se reconocen de reojo, que es para lo que sirve el notebook.
+# Lo que no cabe NO se pierde: vive en '// Detalle:' dentro del fuente.
+DESC_MAX_LINES = 2
+
 # Campos O: y Uso:, en negrita debajo del titulo.
 META_FONT = TEXT_FONT_BOLD
 META_SIZE = 6.5
@@ -353,6 +360,18 @@ def scan_files(root: Path):
         #   // Uso: fw.add(i, x)       -> como se llama, y 0- o 1-indexado
         complejidad = ""
         uso = ""
+        # Lo mismo pero para la prosa. 'Resumen:' es la linea que se lee de
+        # reojo y es la que se imprime; 'Detalle:' es el parrafo entero, que se
+        # queda en el fuente para estudiar y NO entra al PDF. Un comentario sin
+        # etiqueta sigue siendo descripcion, por compatibilidad, pero igual se
+        # corta a DESC_MAX_LINES al pintarlo.
+        resumen = ""
+        detalle = ""
+        # Un comentario sin etiqueta CONTINUA la ultima etiqueta abierta. Hace
+        # falta porque un Resumen largo se escribe en dos lineas y la segunda,
+        # sin esto, se perdia (156 archivos). Si no se abrio ninguna, el texto
+        # es descripcion suelta, como siempre.
+        ultima = None
         code_lines = []
         meta_ended = False
 
@@ -368,6 +387,8 @@ def scan_files(root: Path):
             m_topic = re.match(rf"^{pre}\s*Tema:\s*(.+)", stripped)
             m_o = re.match(rf"^{pre}\s*O:\s*(.+)", stripped)
             m_uso = re.match(rf"^{pre}\s*Uso:\s*(.+)", stripped)
+            m_res = re.match(rf"^{pre}\s*Resumen:\s*(.+)", stripped)
+            m_det = re.match(rf"^{pre}\s*Detalle:\s*(.*)", stripped)
 
             if m_topic and not meta_ended:
                 raw = m_topic.group(1).strip()
@@ -378,10 +399,19 @@ def scan_files(root: Path):
                 else:
                     topic = raw
                     subtopic = raw
+                ultima = None
             elif m_o and not meta_ended:
                 complejidad = m_o.group(1).strip()
+                ultima = None
             elif m_uso and not meta_ended:
                 uso = m_uso.group(1).strip()
+                ultima = None
+            elif m_res and not meta_ended:
+                resumen = (resumen + " " + m_res.group(1).strip()).strip()
+                ultima = "resumen"
+            elif m_det and not meta_ended:
+                detalle = (detalle + " " + m_det.group(1).strip()).strip()
+                ultima = "detalle"
             elif stripped == f"{comment_prefix} <3" and not meta_ended:
                 continue
             elif stripped.startswith(comment_prefix) and not meta_ended:
@@ -389,7 +419,12 @@ def scan_files(root: Path):
                 if desc_match:
                     desc_text = desc_match.group(1).strip()
                     if desc_text and desc_text != "<3" and not desc_text.startswith("Tema:"):
-                        description += (" " if description else "") + desc_text
+                        if ultima == "resumen":
+                            resumen += (" " if resumen else "") + desc_text
+                        elif ultima == "detalle":
+                            detalle += (" " if detalle else "") + desc_text
+                        else:
+                            description += (" " if description else "") + desc_text
             else:
                 meta_ended = True
                 code_lines.append(line)
@@ -431,7 +466,10 @@ def scan_files(root: Path):
             "name": fp.stem,
             "topic": TOPIC_ALIASES.get(topic, topic),
             "subtopic": subtopic,
-            "description": description,
+            # Lo que se imprime: el Resumen si existe, y si no la prosa suelta
+            # de siempre. En los dos casos lo corta wrap_desc.
+            "description": resumen or description,
+            "detalle": detalle,
             "complejidad": complejidad,
             "uso": uso,
             "code": "\n".join(code_lines),
@@ -658,6 +696,11 @@ class NotebookPDF:
 
         Antes se estimaba con un factor fijo de caracteres por linea y la
         mitad de las descripciones se salian de la columna y se cortaban.
+
+        Corta en DESC_MAX_LINES: el tope es del generador y no de quien escribe
+        el encabezado, asi que ningun archivo puede meter un parrafo al PDF, ni
+        los que ya estan ni los que se agreguen despues. El texto completo
+        sigue en el fuente, en '// Detalle:'.
         """
         disponible = self.col_width - 4
         lineas = []
@@ -667,10 +710,18 @@ class NotebookPDF:
             if linea and self.c.stringWidth(prueba, DESC_FONT, DESC_SIZE) > disponible:
                 lineas.append(linea)
                 linea = palabra
+                if len(lineas) == DESC_MAX_LINES:
+                    break
             else:
                 linea = prueba
-        if linea:
-            lineas.append(linea)
+        else:
+            if linea:
+                lineas.append(linea)
+            return lineas
+
+        # Quedo texto afuera: lo que se ve termina en "..." para que se note que
+        # hay mas, y no parezca una descripcion que se corto sola.
+        lineas[-1] = self.recortar(lineas[-1] + " ...", DESC_FONT, DESC_SIZE)
         return lineas
 
     def draw_subsection_title(self, number, subtopic, desc, path, bookmark_key,

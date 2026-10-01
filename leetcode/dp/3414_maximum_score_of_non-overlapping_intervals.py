@@ -1,14 +1,14 @@
 # <3
 # Tema: LeetCode Hub / DP de Intervalos con Binaria
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3414 "Maximum Score of Non-Overlapping Intervals": escoger hasta 4 intervalos que no
 # se traslapen maximizando el peso, y devolver los indices mas pequenos en orden lexicografico.
 # Tecnica: ordenar por extremo DERECHO y dp[i][j] = mejor puntaje usando los primeros i
-# intervalos con j escogidos. Para saltar a los compatibles se usa bisect_left, que encuentra
-# el primer intervalo que termina antes de que empiece el actual.
-# El desempate lexicografico se arrastra en una lista de indices paralela a la dp, que es la
-# parte molesta del problema.
+# intervalos con j escogidos. Para saltar a los compatibles se usa bisect_left, que encuentra el
+# primer intervalo que termina antes de que empiece el actual. El desempate lexicografico se
+# arrastra en una lista de indices paralela a la dp, que es la parte molesta del problema.
 
 class Solution:
     def maximumWeight(self, intervals: List[List[int]]) -> List[int]:

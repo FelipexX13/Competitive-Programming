@@ -1,13 +1,13 @@
 // <3
 // Tema: CSES / Barrido Lineal de Rachas
-// Una pasada llevando el largo de la racha actual y el maximo visto. Al cambiar el caracter se
-// cierra la racha y se reinicia en 1.
-// EL BUG CLASICO: la ultima racha nunca se cierra dentro del for, porque no hay un cambio de
-// caracter que la corte. Por eso hay que comparar contra el maximo OTRA VEZ despues del ciclo, y
-// es justamente lo que se olvida. Cada vez que se escribe un barrido de rachas hay que
-// preguntarse quien cierra la ultima.
-// CUANDO USAR: cualquier "cuantos consecutivos iguales", "el bloque mas largo de", en una pasada
-// O(n) y sin memoria.
+// Resumen: Una pasada llevando el largo de la racha actual y el maximo visto
+// Detalle: Una pasada llevando el largo de la racha actual y el maximo visto. Al cambiar el
+// caracter se cierra la racha y se reinicia en 1. EL BUG CLASICO: la ultima racha nunca se
+// cierra dentro del for, porque no hay un cambio de caracter que la corte. Por eso hay que
+// comparar contra el maximo OTRA VEZ despues del ciclo, y es justamente lo que se olvida. Cada
+// vez que se escribe un barrido de rachas hay que preguntarse quien cierra la ultima. CUANDO
+// USAR: cualquier "cuantos consecutivos iguales", "el bloque mas largo de", en una pasada O(n)
+// y sin memoria.
 
 #include <bits/stdc++.h>
 using namespace std;

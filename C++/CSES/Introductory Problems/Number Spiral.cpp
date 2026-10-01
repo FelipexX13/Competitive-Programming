@@ -1,14 +1,14 @@
 // <3
 // Tema: CSES / Formula por Capas
-// La espiral se lee por CAPAS: la capa k son las celdas con max(fila, columna) = k, y toda la capa
-// va entre (k-1)^2+1 y k^2. Segun la paridad de k la capa se recorre en un sentido o en el otro,
-// y de ahi salen las cuatro formulas de los ifs.
-// CUANDO USAR: el problema pide el valor en una coordenada de un patron infinito, con t consultas
-// y coordenadas hasta 10^9. Construir la tabla es imposible, asi que hay que encontrar la formula.
-// COMO SE ENCUENTRA: dibujar los primeros 4x4 o 5x5 a mano y buscar que se repite. Aqui lo que se
-// ve es que los cuadrados perfectos caen en la diagonal y que la direccion alterna con la
-// paridad. Sin dibujarlo no sale.
-// long long: y^2 con y = 10^9 es 10^18.
+// Resumen: La espiral se lee por CAPAS: la capa k son las celdas con max(fila, columna) = k
+// Detalle: La espiral se lee por CAPAS: la capa k son las celdas con max(fila, columna) = k, y
+// toda la capa va entre (k-1)^2+1 y k^2. Segun la paridad de k la capa se recorre en un sentido
+// o en el otro, y de ahi salen las cuatro formulas de los ifs. CUANDO USAR: el problema pide el
+// valor en una coordenada de un patron infinito, con t consultas y coordenadas hasta 10^9.
+// Construir la tabla es imposible, asi que hay que encontrar la formula. COMO SE ENCUENTRA:
+// dibujar los primeros 4x4 o 5x5 a mano y buscar que se repite. Aqui lo que se ve es que los
+// cuadrados perfectos caen en la diagonal y que la direccion alterna con la paridad. Sin
+// dibujarlo no sale. long long: y^2 con y = 10^9 es 10^18.
 
 #include <bits/stdc++.h>
 using namespace std;

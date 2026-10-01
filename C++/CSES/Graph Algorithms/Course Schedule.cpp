@@ -1,15 +1,16 @@
 // <3
 // Tema: CSES / Orden Topologico (Kahn)
-// Orden topologico con el algoritmo de Kahn: se meten a la cola los nodos con grado de entrada
-// 0 (nadie los obliga a esperar), y cada vez que se saca uno se le "quita" la arista a sus
-// vecinos; el que se queda sin prerrequisitos entra a la cola. El orden en que salen de la cola
-// es un orden topologico valido.
-// LO QUE HACE A KAHN MEJOR QUE EL DFS PARA ESTO: detecta el ciclo gratis. Si hay un ciclo, sus
-// nodos nunca llegan a grado 0 y jamas entran a la cola, asi que al final orden tiene MENOS de n
-// nodos. Esa sola comparacion (orden.size() != n) es todo el chequeo de IMPOSSIBLE.
-// CUANDO USAR: prerrequisitos, dependencias, "en que orden se hacen las tareas", y como primer
-// paso de cualquier DP sobre un DAG (ver "Game Routes" y "Longest Flight Route"). Si piden el
-// orden lexicograficamente menor, se cambia la queue por una priority_queue de minimos y ya.
+// Resumen: Orden topologico con el algoritmo de Kahn
+// Detalle: Orden topologico con el algoritmo de Kahn: se meten a la cola los nodos con grado de
+// entrada 0 (nadie los obliga a esperar), y cada vez que se saca uno se le "quita" la arista a
+// sus vecinos; el que se queda sin prerrequisitos entra a la cola. El orden en que salen de la
+// cola es un orden topologico valido. LO QUE HACE A KAHN MEJOR QUE EL DFS PARA ESTO: detecta el
+// ciclo gratis. Si hay un ciclo, sus nodos nunca llegan a grado 0 y jamas entran a la cola, asi
+// que al final orden tiene MENOS de n nodos. Esa sola comparacion (orden.size() != n) es todo
+// el chequeo de IMPOSSIBLE. CUANDO USAR: prerrequisitos, dependencias, "en que orden se hacen
+// las tareas", y como primer paso de cualquier DP sobre un DAG (ver "Game Routes" y "Longest
+// Flight Route"). Si piden el orden lexicograficamente menor, se cambia la queue por una
+// priority_queue de minimos y ya.
 
 #include <iostream>
 #include <vector>

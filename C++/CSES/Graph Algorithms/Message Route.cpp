@@ -1,12 +1,13 @@
 // <3
 // Tema: CSES / BFS de Camino Minimo con Reconstruccion
-// Mismo patron que Labyrinth pero en grafo general: BFS desde n hacia 1 guardando siguiente[] y
-// la distancia en cuantos[]. Arrancar del destino tiene su gracia: los punteros ya quedan
-// apuntando hacia adelante y el camino se imprime directo, sin invertir nada.
-// El cuantos[] hace doble trabajo, de contador de pasos y de marca de visitado (0 = no visto),
-// que es un truco comun para no llevar dos arreglos.
-// CUANDO USAR: grafo sin pesos y hay que devolver el camino, no solo su largo. Si el grafo
-// tuviera pesos, esto mismo pero con Dijkstra.
+// Resumen: Mismo patron que Labyrinth pero en grafo general
+// Detalle: Mismo patron que Labyrinth pero en grafo general: BFS desde n hacia 1 guardando
+// siguiente[] y la distancia en cuantos[]. Arrancar del destino tiene su gracia: los punteros
+// ya quedan apuntando hacia adelante y el camino se imprime directo, sin invertir nada. El
+// cuantos[] hace doble trabajo, de contador de pasos y de marca de visitado (0 = no visto), que
+// es un truco comun para no llevar dos arreglos. CUANDO USAR: grafo sin pesos y hay que
+// devolver el camino, no solo su largo. Si el grafo tuviera pesos, esto mismo pero con
+// Dijkstra.
 
 #include <iostream>
 #include <vector>

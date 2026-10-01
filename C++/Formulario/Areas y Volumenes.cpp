@@ -1,11 +1,12 @@
 // <3
 // Tema: Formulario / Areas y Volumenes
-// Areas de figuras planas y volumenes de cuerpos, incluidas las que uno cree recordar y
-// termina equivocando: el rombo es d1*d2/2 (no lado por lado), el cono y la piramide llevan
+// Resumen: Areas de figuras planas y volumenes de cuerpos, incluidas las que uno cree recordar
+// y termina equivocando
+// Detalle: Areas de figuras planas y volumenes de cuerpos, incluidas las que uno cree recordar
+// y termina equivocando: el rombo es d1*d2/2 (no lado por lado), el cono y la piramide llevan
 // el tercio, y el perimetro de la elipse NO tiene formula cerrada elemental, solo la
-// aproximacion de Ramanujan.
-// Todas las formulas de aqui se comprobaron contra integracion numerica o contra el area por
-// shoelace del poligono correspondiente.
+// aproximacion de Ramanujan. Todas las formulas de aqui se comprobaron contra integracion
+// numerica o contra el area por shoelace del poligono correspondiente.
 
 // =============== AREAS Y VOLUMENES ===============
 //

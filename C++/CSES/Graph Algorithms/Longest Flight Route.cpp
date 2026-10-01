@@ -1,15 +1,17 @@
 // <3
 // Tema: CSES / Camino Mas Largo en DAG (DFS con Memo)
-// Camino con mas nodos de 1 a n en un DAG, con DFS memoizado: mejor[u] = 1 + max de mejor[hijo].
-// En un grafo cualquiera el camino mas largo es NP-dificil; aqui es lineal SOLO porque no hay
-// ciclos, y eso hay que tenerlo presente antes de intentarlo en otro problema.
-// EL TRUCO DEL CERO: mejor[u] = 0 significa "desde u no se llega a n". Por eso un hijo solo se
+// Resumen: Camino con mas nodos de 1 a n en un DAG, con DFS memoizado: mejor[u] = 1 + max de
+// mejor[hijo]
+// Detalle: Camino con mas nodos de 1 a n en un DAG, con DFS memoizado: mejor[u] = 1 + max de
+// mejor[hijo]. En un grafo cualquiera el camino mas largo es NP-dificil; aqui es lineal SOLO
+// porque no hay ciclos, y eso hay que tenerlo presente antes de intentarlo en otro problema. EL
+// TRUCO DEL CERO: mejor[u] = 0 significa "desde u no se llega a n". Por eso un hijo solo se
 // toma si camino > 0; asi los callejones sin salida no contaminan el maximo, y si al final
-// mejor[0] vale 0 la respuesta es IMPOSSIBLE. El arreglo siguiente[] guarda por donde se fue
-// el maximo, y con eso se reconstruye la ruta.
-// OJO CON LA RECURSION: con un camino de 10^5 nodos la pila de llamadas llega a esa profundidad.
-// En CSES pasa, pero en un juez con pila chica puede dar error de ejecucion. La version sin
-// riesgo es la misma DP recorriendo en orden topologico con Kahn, como "Game Routes".
+// mejor[0] vale 0 la respuesta es IMPOSSIBLE. El arreglo siguiente[] guarda por donde se fue el
+// maximo, y con eso se reconstruye la ruta. OJO CON LA RECURSION: con un camino de 10^5 nodos
+// la pila de llamadas llega a esa profundidad. En CSES pasa, pero en un juez con pila chica
+// puede dar error de ejecucion. La version sin riesgo es la misma DP recorriendo en orden
+// topologico con Kahn, como "Game Routes".
 
 #include <iostream>
 #include <vector>

@@ -1,14 +1,15 @@
 // <3
 // Tema: Combinatorics / Combinatoria Avanzada (Lucas, Catalan, Stirling)
+// Resumen: Formulas combinatorias que van mas alla del C(n
 // O: (1) por C tras precomputar(); Lucas O(log_p n)
 // Uso: precomputar() una vez; luego C(n,k), multinomial(v), catalan(n)
-// Formulas combinatorias que van mas alla del C(n,k) basico con factoriales precomputados
-// (ese caso ya esta resuelto en "Binomial Coefficients"). Aqui van cuatro herramientas:
-// Lucas, para cuando n y k son gigantes (hasta 1e18) pero el modulo es un primo pequeno,
-// descomponiendo n y k en base p y multiplicando los binomiales de cada digito; multinomial,
-// para repartir n objetos en grupos de tamanos distintos; Catalan, que cuenta estructuras
-// balanceadas (parentesis validos, arboles binarios, caminos de Dyck); y Stirling de segunda
-// especie, que cuenta en cuantas formas se parten n elementos en k grupos no vacios.
+// Detalle: Formulas combinatorias que van mas alla del C(n,k) basico con factoriales
+// precomputados (ese caso ya esta resuelto en "Binomial Coefficients"). Aqui van cuatro
+// herramientas: Lucas, para cuando n y k son gigantes (hasta 1e18) pero el modulo es un primo
+// pequeno, descomponiendo n y k en base p y multiplicando los binomiales de cada digito;
+// multinomial, para repartir n objetos en grupos de tamanos distintos; Catalan, que cuenta
+// estructuras balanceadas (parentesis validos, arboles binarios, caminos de Dyck); y Stirling
+// de segunda especie, que cuenta en cuantas formas se parten n elementos en k grupos no vacios.
 // Las tres primeras necesitan que el modulo sea primo (usan el inverso via Fermat).
 
 #include <bits/stdc++.h>

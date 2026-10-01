@@ -1,12 +1,13 @@
 // <3
 // Tema: Simulation / Greedy
-// Resuelve "Escalator" (Training Camp 2026, Day 4 problema C): una escalera doble tarda 10
-// segundos en cruzar a cualquier persona, arranca en la direccion del primero que llega estando
-// detenida, y si alguien llega en direccion contraria a la que se mueve debe esperar a que pare;
-// hay que hallar el momento en que la escalera se detiene por ultima vez.
-// Simula el estado de la escalera con variables busy_until (cuando quedaria libre), dir (direccion
-// actual) y waiting (si hay alguien esperando un cambio de sentido), resolviendo en O(N) los
-// cambios de direccion pendientes antes de procesar la llegada de cada persona.
+// Resumen: Una escalera doble tarda 10 segundos en cruzar a cualquier persona
+// Detalle: Resuelve "Escalator" (Training Camp 2026, Day 4 problema C): una escalera doble
+// tarda 10 segundos en cruzar a cualquier persona, arranca en la direccion del primero que
+// llega estando detenida, y si alguien llega en direccion contraria a la que se mueve debe
+// esperar a que pare; hay que hallar el momento en que la escalera se detiene por ultima vez.
+// Simula el estado de la escalera con variables busy_until (cuando quedaria libre), dir
+// (direccion actual) y waiting (si hay alguien esperando un cambio de sentido), resolviendo en
+// O(N) los cambios de direccion pendientes antes de procesar la llegada de cada persona.
 
 #include <bits/stdc++.h>
 using namespace std;

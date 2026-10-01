@@ -1,11 +1,14 @@
 // <3
 // Tema: Math / Numeros Romanos
+// Resumen: Convierte un entero a numeral romano con un greedy sobre una tabla de valores
+// ordenada de mayor a menor
 // O: (1), tabla fija de 13 valores
 // Uso: toRoman(n) con 1 <= n <= 3999
-// Convierte un entero a numeral romano con un greedy sobre una tabla de valores ordenada de
-// mayor a menor. El truco esta en incluir en la tabla los seis casos sustractivos (CM, CD,
-// XC, XL, IX, IV) como si fueran simbolos propios: asi el greedy de "restar el mayor valor
-// que quepa" nunca se equivoca y no hace falta ningun caso especial. Funciona para 1..3999.
+// Detalle: Convierte un entero a numeral romano con un greedy sobre una tabla de valores
+// ordenada de mayor a menor. El truco esta en incluir en la tabla los seis casos sustractivos
+// (CM, CD, XC, XL, IX, IV) como si fueran simbolos propios: asi el greedy de "restar el mayor
+// valor que quepa" nunca se equivoca y no hace falta ningun caso especial. Funciona para
+// 1..3999.
 
 #include <bits/stdc++.h>
 

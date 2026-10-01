@@ -1,10 +1,11 @@
 # <3
 # Tema: LeetCode Hub / Formateo de Fecha
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
-# LeetCode 1507 "Reformat Date": pasar "20th Oct 2052" a "2052-10-20".
-# Tecnica: split, diccionario de mes a numero, y quitar las dos ultimas letras del dia (st, nd,
-# rd, th) con d[:-2]. El if de len(d) == 1 es para el cero de relleno.
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# LeetCode 1507 "Reformat Date": pasar "20th Oct 2052" a "2052-10-20". Tecnica: split,
+# diccionario de mes a numero, y quitar las dos ultimas letras del dia (st, nd, rd, th) con
+# d[:-2]. El if de len(d) == 1 es para el cero de relleno.
 
 class Solution:
     def reformatDate(self, date: str) -> str:

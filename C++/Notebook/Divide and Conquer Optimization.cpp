@@ -1,14 +1,15 @@
 // <3
 // Tema: Dynamic Programming / Divide and Conquer Optimization
+// Resumen: Optimiza DPs por capas del tipo dp[i][m] = min sobre k de (dp[i-1][k] + C(k,m))
 // O: (n log n) por capa, en vez de O(n^2)
 // Uso: compute(1,n,1,n,C,prev,cur,opt); exige desigualdad de Monge
-// Optimiza DPs por capas del tipo dp[i][m] = min sobre k de (dp[i-1][k] + C(k,m)), tipicos de
-// "partir un arreglo en i grupos". Baja cada capa de O(n^2) a O(n log n).
-// Se apoya en que el punto de corte optimo es monotono: si opt[m] es el mejor k para m,
-// entonces opt es no decreciente en m. Entonces se resuelve el m del medio buscando su optimo
-// en el rango [optl, optr], y con ese resultado se acota la busqueda de las dos mitades:
-// la izquierda solo puede tener su optimo en [optl, bestk] y la derecha en [bestk, optr].
-// Solo es valido si el costo C cumple la desigualdad cuadrangular (condicion de Monge).
+// Detalle: Optimiza DPs por capas del tipo dp[i][m] = min sobre k de (dp[i-1][k] + C(k,m)),
+// tipicos de "partir un arreglo en i grupos". Baja cada capa de O(n^2) a O(n log n). Se apoya
+// en que el punto de corte optimo es monotono: si opt[m] es el mejor k para m, entonces opt es
+// no decreciente en m. Entonces se resuelve el m del medio buscando su optimo en el rango
+// [optl, optr], y con ese resultado se acota la busqueda de las dos mitades: la izquierda solo
+// puede tener su optimo en [optl, bestk] y la derecha en [bestk, optr]. Solo es valido si el
+// costo C cumple la desigualdad cuadrangular (condicion de Monge).
 
 #include <bits/stdc++.h>
 

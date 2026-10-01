@@ -1,7 +1,9 @@
 // <3
 // Tema: String / Partition and Permutation
-// Divide una cadena en 3 partes, las reorganiza y verifica si forma otra cadena objetivo.
-// Si es posible, imprime ambas descomposiciones ordenadas.
+// Resumen: Divide una cadena en 3 partes, las reorganiza y verifica si forma otra cadena
+// objetivo
+// Detalle: Divide una cadena en 3 partes, las reorganiza y verifica si forma otra cadena
+// objetivo. Si es posible, imprime ambas descomposiciones ordenadas.
 
 #include <bits/stdc++.h>
 using namespace std;

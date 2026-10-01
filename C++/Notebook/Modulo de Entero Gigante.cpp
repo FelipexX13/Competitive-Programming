@@ -1,13 +1,14 @@
 // <3
 // Tema: Number Theory / Modulo de Entero Gigante
+// Resumen: Cuando el numero de entrada tiene miles de digitos no cabe en long long
 // O: (largo de la cadena)
 // Uso: modString(P,N) con P el numero como string y N el modulo
-// Cuando el numero de entrada tiene miles de digitos no cabe en long long, asi que se lee
-// como string y se calcula el resto digito por digito con la regla de Horner: se arrastra
+// Detalle: Cuando el numero de entrada tiene miles de digitos no cabe en long long, asi que se
+// lee como string y se calcula el resto digito por digito con la regla de Horner: se arrastra
 // el resto parcial y en cada paso se hace rem = (rem*10 + digito) % N. Como rem siempre es
-// menor que N, el producto rem*10 nunca desborda mientras N quepa comodo en long long.
-// Sirve para problemas de divisibilidad con numeros gigantes, o como paso previo antes de
-// aplicar exponenciacion modular sobre un exponente enorme.
+// menor que N, el producto rem*10 nunca desborda mientras N quepa comodo en long long. Sirve
+// para problemas de divisibilidad con numeros gigantes, o como paso previo antes de aplicar
+// exponenciacion modular sobre un exponente enorme.
 
 #include <bits/stdc++.h>
 

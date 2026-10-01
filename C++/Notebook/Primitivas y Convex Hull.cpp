@@ -1,16 +1,17 @@
 // <3
 // Tema: Geometry / Primitivas y Convex Hull
+// Resumen: Struct Pt con operadores, producto punto y producto cruz
 // O: (n log n) el hull, (1) las primitivas
 // Uso: cross(a,b,c)>0 izquierda; convexHull(p) antihorario; polygonArea(P)
-// Base de todo problema geometrico: struct Pt con operadores, producto punto y producto cruz.
-// El cruz es la herramienta central: su signo dice si tres puntos giran a la izquierda,
-// a la derecha o son colineales, y con eso se resuelve casi todo. Nunca comparar doubles con
-// == : usar sgn() con EPS.
-// Incluye interseccion de segmentos (dos pruebas de orientacion opuesta, mas los casos
-// degenerados colineales via onSeg), convex hull por monotone chain en O(n log n) (ordena por
-// coordenada y arma la cadena inferior y la superior descartando giros no convexos), y area
-// de poligono simple por la formula del cordon (shoelace), que vale para cualquier poligono
-// cerrado sin auto-intersecciones y devuelve el doble del area en valor absoluto entre dos.
+// Detalle: Base de todo problema geometrico: struct Pt con operadores, producto punto y
+// producto cruz. El cruz es la herramienta central: su signo dice si tres puntos giran a la
+// izquierda, a la derecha o son colineales, y con eso se resuelve casi todo. Nunca comparar
+// doubles con == : usar sgn() con EPS. Incluye interseccion de segmentos (dos pruebas de
+// orientacion opuesta, mas los casos degenerados colineales via onSeg), convex hull por
+// monotone chain en O(n log n) (ordena por coordenada y arma la cadena inferior y la superior
+// descartando giros no convexos), y area de poligono simple por la formula del cordon
+// (shoelace), que vale para cualquier poligono cerrado sin auto-intersecciones y devuelve el
+// doble del area en valor absoluto entre dos.
 
 #include <bits/stdc++.h>
 

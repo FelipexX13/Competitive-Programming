@@ -1,12 +1,14 @@
 // <3
 // Tema: Graph / Articulation Points (Tarjan)
-// Resuelve "Submerging Islands" (Day 4, problema L - Contest 04 [Avanzados]): dado un grafo de N
-// islas conectadas por M puentes, hay que contar cuantas islas, al sumergirse, desconectarian
-// partes de la ciudad. Es el clasico problema de puntos de articulacion: hace un DFS (funcion dfs)
-// calculando disc/low de cada nodo, marca como articulacion a todo nodo no raiz cuyo hijo v cumpla
-// low[v] >= disc[u], y a la raiz si tiene mas de un hijo en el arbol DFS, contando al final
-// cuantos nodos quedaron marcados (soporta grafos no conexos probando DFS desde cada nodo no
-// visitado).
+// Resumen: Dado un grafo de N islas conectadas por M puentes, hay que contar cuantas islas, al
+// sumergirse
+// Detalle: Resuelve "Submerging Islands" (Day 4, problema L - Contest 04 [Avanzados]): dado un
+// grafo de N islas conectadas por M puentes, hay que contar cuantas islas, al sumergirse,
+// desconectarian partes de la ciudad. Es el clasico problema de puntos de articulacion: hace un
+// DFS (funcion dfs) calculando disc/low de cada nodo, marca como articulacion a todo nodo no
+// raiz cuyo hijo v cumpla low[v] >= disc[u], y a la raiz si tiene mas de un hijo en el arbol
+// DFS, contando al final cuantos nodos quedaron marcados (soporta grafos no conexos probando
+// DFS desde cada nodo no visitado).
 
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,24 +1,23 @@
 // <3
 // Tema: Data Structures / Prefix Sums con Primera Aparicion
-// Resuelve "Account Qualifying" (problema A, ICPC 2025): de una lista de transacciones hay que dar
-// el mayor deposito d, el mayor retiro w (el mas negativo) y r, el largo del subperiodo mas largo
-// con TANTOS depositos como retiros.
-// EL TRUCO DE r: se mapea deposito a +1, retiro a -1 y consulta de saldo a 0. Entonces "tantos
-// depositos como retiros" es "la suma del tramo es 0", y con sumas de prefijo eso es
-// prefijo[j] == prefijo[i]. Guardando la PRIMERA posicion donde aparece cada valor de prefijo, el
-// tramo mas largo que termina en j sale restando esa primera aparicion. Por eso el mapa solo se
-// escribe cuando el valor es nuevo: reescribirlo acortaria los tramos.
-// El first[0] = -1 no es un detalle menor: cubre los tramos que arrancan en la posicion 0, donde
-// el prefijo vale 0 "antes de empezar".
-// OJO CON d Y w: si no hay depositos d vale 0, y si no hay retiros w vale 0. Tomar el maximo y el
-// minimo del arreglo a secas esta MAL, y el propio sample lo pilla: con 100 200 300 el minimo es
-// 100 pero la respuesta es 0. Por eso van acotados con max(0, ...) y min(0, ...). La primera
-// version de este archivo fallaba justo ahi.
-// Los ceros (consultas de saldo) no rompen nada: aportan 0 a la suma, asi que un tramo de puros
-// ceros cuenta como valido, que es lo que pide el enunciado.
-// Costo O(n) por caso. Medido: 5 casos de n = 10000 en 20 ms.
-// Verificado contra fuerza bruta en 2900 casos, incluidos los que no tienen depositos o no tienen
-// retiros.
+// Resumen: De una lista de transacciones hay que dar el mayor deposito d, el mayor retiro w (el
+// mas negativo) y r
+// Detalle: Resuelve "Account Qualifying" (problema A, ICPC 2025): de una lista de transacciones
+// hay que dar el mayor deposito d, el mayor retiro w (el mas negativo) y r, el largo del
+// subperiodo mas largo con TANTOS depositos como retiros. EL TRUCO DE r: se mapea deposito a
+// +1, retiro a -1 y consulta de saldo a 0. Entonces "tantos depositos como retiros" es "la suma
+// del tramo es 0", y con sumas de prefijo eso es prefijo[j] == prefijo[i]. Guardando la PRIMERA
+// posicion donde aparece cada valor de prefijo, el tramo mas largo que termina en j sale
+// restando esa primera aparicion. Por eso el mapa solo se escribe cuando el valor es nuevo:
+// reescribirlo acortaria los tramos. El first[0] = -1 no es un detalle menor: cubre los tramos
+// que arrancan en la posicion 0, donde el prefijo vale 0 "antes de empezar". OJO CON d Y w: si
+// no hay depositos d vale 0, y si no hay retiros w vale 0. Tomar el maximo y el minimo del
+// arreglo a secas esta MAL, y el propio sample lo pilla: con 100 200 300 el minimo es 100 pero
+// la respuesta es 0. Por eso van acotados con max(0, ...) y min(0, ...). La primera version de
+// este archivo fallaba justo ahi. Los ceros (consultas de saldo) no rompen nada: aportan 0 a la
+// suma, asi que un tramo de puros ceros cuenta como valido, que es lo que pide el enunciado.
+// Costo O(n) por caso. Medido: 5 casos de n = 10000 en 20 ms. Verificado contra fuerza bruta en
+// 2900 casos, incluidos los que no tienen depositos o no tienen retiros.
 
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,14 +1,15 @@
 // <3
 // Tema: CSES / Dijkstra con Priority Queue
-// Dijkstra clasico en O(m log n) con priority_queue de minimos. Los dos detalles que importan:
-// la cola guarda el par (distancia, nodo) en ese orden para que ordene por distancia, y el
-// if(dist > distancia[actual]) continue descarta las entradas viejas que quedaron en la cola
-// cuando un nodo mejoro su distancia. Sin ese filtro no esta mal, pero se procesa basura.
+// Resumen: Dijkstra clasico en O(m log n) con priority_queue de minimos
+// Detalle: Dijkstra clasico en O(m log n) con priority_queue de minimos. Los dos detalles que
+// importan: la cola guarda el par (distancia, nodo) en ese orden para que ordene por distancia,
+// y el if(dist > distancia[actual]) continue descarta las entradas viejas que quedaron en la
+// cola cuando un nodo mejoro su distancia. Sin ese filtro no esta mal, pero se procesa basura.
 // CUANDO USAR: camino minimo desde UN origen con pesos NO NEGATIVOS. Con un peso negativo
 // Dijkstra da respuestas mal y hay que irse a Bellman-Ford. Si todos los pesos son iguales, BFS
-// hace lo mismo mas rapido y sin cola de prioridad.
-// Ojo con LLONG_MAX como infinito: si se suma algo se desborda. Aqui no pasa porque solo se
-// compara, pero es el error clasico de esta plantilla.
+// hace lo mismo mas rapido y sin cola de prioridad. Ojo con LLONG_MAX como infinito: si se suma
+// algo se desborda. Aqui no pasa porque solo se compara, pero es el error clasico de esta
+// plantilla.
 
 #include <iostream>
 #include <vector>

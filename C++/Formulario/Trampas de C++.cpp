@@ -1,10 +1,11 @@
 // <3
 // Tema: Formulario / Trampas de C++
-// Los errores que compilan sin una sola advertencia y dan respuesta equivocada: division
-// entera con negativos, overflow porque int*int se calcula en int antes de guardarse en
-// long long, pow devolviendo 999999999999999 en vez de 10^15, y comparadores de sort que
-// rompen el programa por usar <= en vez de <.
-// Todos los valores de aqui estan verificados corriendo el codigo en este mismo equipo.
+// Resumen: Los errores que compilan sin una sola advertencia y dan respuesta equivocada
+// Detalle: Los errores que compilan sin una sola advertencia y dan respuesta equivocada:
+// division entera con negativos, overflow porque int*int se calcula en int antes de guardarse
+// en long long, pow devolviendo 999999999999999 en vez de 10^15, y comparadores de sort que
+// rompen el programa por usar <= en vez de <. Todos los valores de aqui estan verificados
+// corriendo el codigo en este mismo equipo.
 
 // =============== TRAMPAS DE C++ ===============
 //

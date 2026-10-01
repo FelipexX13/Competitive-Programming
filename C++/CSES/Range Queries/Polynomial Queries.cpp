@@ -1,17 +1,19 @@
 // <3
 // Tema: CSES / Lazy Propagation de Progresiones Aritmeticas
-// Lazy propagation donde la actualizacion no suma una constante sino 1, 2, 3, ... a lo largo del
-// rango. La clave es que una progresion aritmetica se describe con DOS numeros, el primer termino
-// A y la diferencia D, y que dos progresiones se SUMAN componente a componente. Por eso el lazy
-// es el par (A, D), y componer dos actualizaciones pendientes es sumar los pares.
-// Al empujar a los hijos, el izquierdo recibe (A, D) tal cual, pero el derecho arranca mas
-// adelante en la progresion: recibe (A + lenLeft*D, D). Ese corrimiento es lo unico nuevo respecto
-// a un lazy de suma normal.
-// La suma de la progresion sobre un nodo de largo len es len*(2A + (len-1)*D)/2, y la division es
-// exacta siempre: si len es par, listo; si es impar, (len-1)*D es par.
-// EL PATRON GENERAL: se puede hacer lazy de cualquier actualizacion que (1) se describa con pocos
-// numeros, (2) se pueda componer con otra del mismo tipo, y (3) permita recalcular la suma del
-// nodo sin bajar a las hojas. Las progresiones cumplen las tres; por eso sirve.
+// Resumen: Lazy propagation donde la actualizacion no suma una constante sino 1, 2, 3, ... a lo
+// largo del rango
+// Detalle: Lazy propagation donde la actualizacion no suma una constante sino 1, 2, 3, ... a lo
+// largo del rango. La clave es que una progresion aritmetica se describe con DOS numeros, el
+// primer termino A y la diferencia D, y que dos progresiones se SUMAN componente a componente.
+// Por eso el lazy es el par (A, D), y componer dos actualizaciones pendientes es sumar los
+// pares. Al empujar a los hijos, el izquierdo recibe (A, D) tal cual, pero el derecho arranca
+// mas adelante en la progresion: recibe (A + lenLeft*D, D). Ese corrimiento es lo unico nuevo
+// respecto a un lazy de suma normal. La suma de la progresion sobre un nodo de largo len es
+// len*(2A + (len-1)*D)/2, y la division es exacta siempre: si len es par, listo; si es impar,
+// (len-1)*D es par. EL PATRON GENERAL: se puede hacer lazy de cualquier actualizacion que (1)
+// se describa con pocos numeros, (2) se pueda componer con otra del mismo tipo, y (3) permita
+// recalcular la suma del nodo sin bajar a las hojas. Las progresiones cumplen las tres; por eso
+// sirve.
 
 #include <bits/stdc++.h>
 using namespace std;

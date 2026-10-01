@@ -1,20 +1,20 @@
 // <3
 // Tema: CSES / Dijkstra con Cuatro Cantidades a la Vez
-// Un solo Dijkstra que ademas del costo minimo lleva otras tres cosas: cuantos caminos minimos hay
-// (modulo 1e9+7), el minimo de aristas de un camino minimo y el maximo.
-// LA IDEA ES QUE LAS CUATRO SE PROPAGAN CON LA MISMA REGLA, mirando si la distancia MEJORA o EMPATA:
-//   - si mejora: se reinicia todo copiando lo del nodo de donde se viene (caminos, y los conteos
-//     de aristas mas uno)
-//   - si empata: se ACUMULA, sumando los caminos y quedandose con el minimo y el maximo de aristas
-// Ese "si mejora reinicio, si empata acumulo" es el patron general para colgar estadisticas de un
-// Dijkstra, y sirve igual para contar caminos, sumar pesos o llevar cualquier cosa asociativa.
-// El if (peso != distancia[actual]) continue descarta las entradas viejas de la cola, que es lo que
-// permite usar priority_queue sin decrease-key. Sin el se procesarian nodos con distancias
-// obsoletas y los acumulados saldrian mal, no solo lentos.
-// Los caminos se cuentan modulo 1e9+7 porque pueden ser astronomicos, mientras que las distancias
-// van en long long sin modulo: mezclar las dos cosas es el error clasico aqui.
-// Solo funciona porque los pesos son no negativos, que es lo que garantiza que un nodo ya sacado de
-// la cola no vuelva a mejorar. Con pesos negativos habria que irse a Bellman-Ford y la logica de
+// Resumen: Un solo Dijkstra que ademas del costo minimo lleva otras tres cosas
+// Detalle: Un solo Dijkstra que ademas del costo minimo lleva otras tres cosas: cuantos caminos
+// minimos hay (modulo 1e9+7), el minimo de aristas de un camino minimo y el maximo. LA IDEA ES
+// QUE LAS CUATRO SE PROPAGAN CON LA MISMA REGLA, mirando si la distancia MEJORA o EMPATA: - si
+// mejora: se reinicia todo copiando lo del nodo de donde se viene (caminos, y los conteos de
+// aristas mas uno) - si empata: se ACUMULA, sumando los caminos y quedandose con el minimo y el
+// maximo de aristas Ese "si mejora reinicio, si empata acumulo" es el patron general para
+// colgar estadisticas de un Dijkstra, y sirve igual para contar caminos, sumar pesos o llevar
+// cualquier cosa asociativa. El if (peso != distancia[actual]) continue descarta las entradas
+// viejas de la cola, que es lo que permite usar priority_queue sin decrease-key. Sin el se
+// procesarian nodos con distancias obsoletas y los acumulados saldrian mal, no solo lentos. Los
+// caminos se cuentan modulo 1e9+7 porque pueden ser astronomicos, mientras que las distancias
+// van en long long sin modulo: mezclar las dos cosas es el error clasico aqui. Solo funciona
+// porque los pesos son no negativos, que es lo que garantiza que un nodo ya sacado de la cola
+// no vuelva a mejorar. Con pesos negativos habria que irse a Bellman-Ford y la logica de
 // acumulacion se complica.
 
 #include <iostream>

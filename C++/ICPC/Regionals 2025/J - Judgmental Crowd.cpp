@@ -1,18 +1,19 @@
 // <3
 // Tema: String / KMP para Contar Ocurrencias Solapadas
-// Resuelve "Judgmental Crowd" (problema J, Regionals 2025): la reaccion del publico se calcula
-// contando cuantas veces aparecen tres palabras en la cadena y combinandolas con pesos,
-//     ha - boooo + 3 * bravo
-// EL DETALLE QUE DECIDE EL PROBLEMA es contar ocurrencias SOLAPADAS. Tras un match no se reinicia
-// j = 0 sino j = pi[j-1], que deja el automata en el sufijo mas largo que todavia sirve. Con "haha"
-// hay DOS ocurrencias de "ha" y no una; reiniciando en 0 se perderia la segunda cuando los patrones
-// se pisan (con "aa" dentro de "aaa" pasa lo mismo).
-// Se llama a la misma funcion KMP tres veces, una por palabra, porque los patrones son fijos y
-// cortos. Si fueran muchos patrones convendria Aho-Corasick, que los busca todos en una sola pasada.
-// La funcion de prefijos se calcula sobre el PATRON, no sobre el texto: pi[i] es el borde mas largo
-// de p[0..i], y es lo que permite retroceder sin volver atras en el texto. Por eso todo el conteo es
-// O(|s| + |p|).
-// Comprobado: con "haha" da 2, que son las dos ocurrencias de "ha".
+// Resumen: La reaccion del publico se calcula contando cuantas veces aparecen tres palabras en
+// la cadena y...
+// Detalle: Resuelve "Judgmental Crowd" (problema J, Regionals 2025): la reaccion del publico se
+// calcula contando cuantas veces aparecen tres palabras en la cadena y combinandolas con pesos,
+// ha - boooo + 3 * bravo EL DETALLE QUE DECIDE EL PROBLEMA es contar ocurrencias SOLAPADAS.
+// Tras un match no se reinicia j = 0 sino j = pi[j-1], que deja el automata en el sufijo mas
+// largo que todavia sirve. Con "haha" hay DOS ocurrencias de "ha" y no una; reiniciando en 0 se
+// perderia la segunda cuando los patrones se pisan (con "aa" dentro de "aaa" pasa lo mismo). Se
+// llama a la misma funcion KMP tres veces, una por palabra, porque los patrones son fijos y
+// cortos. Si fueran muchos patrones convendria Aho-Corasick, que los busca todos en una sola
+// pasada. La funcion de prefijos se calcula sobre el PATRON, no sobre el texto: pi[i] es el
+// borde mas largo de p[0..i], y es lo que permite retroceder sin volver atras en el texto. Por
+// eso todo el conteo es O(|s| + |p|). Comprobado: con "haha" da 2, que son las dos ocurrencias
+// de "ha".
 
 #include <bits/stdc++.h>
 using namespace std;

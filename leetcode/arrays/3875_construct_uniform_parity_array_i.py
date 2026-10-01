@@ -1,13 +1,14 @@
 # <3
 # Tema: LeetCode Hub / Paridad por Fuerza Bruta
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
-# LeetCode 3875 "Construct Uniform Parity Array I": decir si se puede dejar todo el arreglo con la
-# misma paridad usando restas entre elementos.
-# Tecnica: por cada elemento busca otro con el que la resta cambie su paridad, y cuenta cuantos
-# pueden quedar pares y cuantos impares. Es O(n^2).
-# Lo que importa es que par - impar es impar y par - par es par: la paridad del resultado sale de la
-# paridad de los dos operandos, nada mas. La version II usa eso para bajar a O(n).
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# LeetCode 3875 "Construct Uniform Parity Array I": decir si se puede dejar todo el arreglo con
+# la misma paridad usando restas entre elementos. Tecnica: por cada elemento busca otro con el
+# que la resta cambie su paridad, y cuenta cuantos pueden quedar pares y cuantos impares. Es
+# O(n^2). Lo que importa es que par - impar es impar y par - par es par: la paridad del
+# resultado sale de la paridad de los dos operandos, nada mas. La version II usa eso para bajar
+# a O(n).
 
 class Solution:
     def uniformArray(self, nums1: list[int]) -> bool:

@@ -1,12 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Simulacion de Cola
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 2073 "Time Needed to Buy Tickets": segundos hasta que la persona en la posicion k
-# termine de comprar, con la fila rotando.
-# Tecnica: rotar la lista con pop(0) y append restando uno, y mover k con ella. Sale directo
-# sin simular sumando por persona min(tickets[i], tickets[k]) y un +1 para los que van despues
-# de k, pero la simulacion es facil de escribir bajo presion.
+# termine de comprar, con la fila rotando. Tecnica: rotar la lista con pop(0) y append restando
+# uno, y mover k con ella. Sale directo sin simular sumando por persona min(tickets[i],
+# tickets[k]) y un +1 para los que van despues de k, pero la simulacion es facil de escribir
+# bajo presion.
 
 class Solution:
     def timeRequiredToBuy(self, tickets: List[int], k: int) -> int:

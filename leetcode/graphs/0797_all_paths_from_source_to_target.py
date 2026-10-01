@@ -1,12 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Backtracking de Caminos
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
-# LeetCode 797 "All Paths From Source to Target": todos los caminos del nodo 0 al ultimo en un DAG.
-# Tecnica: DFS con backtracking. path.append al entrar, path.pop al salir, y cuando se llega al
-# destino se guarda una COPIA de path (sin el .copy() se guardaria la misma lista que sigue
-# cambiando, que es el error clasico).
-# Aca marca ARISTAS visitadas; en un DAG no hace falta marcar nada, basta el backtracking.
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# LeetCode 797 "All Paths From Source to Target": todos los caminos del nodo 0 al ultimo en un
+# DAG. Tecnica: DFS con backtracking. path.append al entrar, path.pop al salir, y cuando se
+# llega al destino se guarda una COPIA de path (sin el .copy() se guardaria la misma lista que
+# sigue cambiando, que es el error clasico). Aca marca ARISTAS visitadas; en un DAG no hace
+# falta marcar nada, basta el backtracking.
 
 from collections import deque
 class Solution:

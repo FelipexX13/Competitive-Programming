@@ -1,15 +1,16 @@
 // <3
 // Tema: CSES / Bellman-Ford (Camino Maximo)
-// Camino de peso MAXIMO con aristas negativas, que es Bellman-Ford con la desigualdad volteada.
-// Se relaja n veces; si en la pasada n todavia mejora algo, hay un ciclo de ganancia infinita.
-// El detalle que hace correcto el problema: un ciclo positivo solo importa si se puede LLEGAR a
-// el desde el origen y desde el SALIR hacia el destino. Por eso los dos BFS previos, uno en el
-// grafo normal desde 1 y otro en el grafo INVERSO desde n: solo los nodos marcados en ambos
-// cuentan para detectar el ciclo. Sin ese filtro, un ciclo positivo en una parte inalcanzable
-// del grafo daria -1 de mentiras.
-// CUANDO USAR BELLMAN-FORD: pesos negativos (Dijkstra ya no sirve) o hay que DETECTAR ciclos
-// negativos, que es su unica ventaja real. Es O(n*m), mucho mas lento que Dijkstra, asi que con
-// pesos no negativos nunca se usa.
+// Resumen: Camino de peso MAXIMO con aristas negativas, que es Bellman-Ford con la desigualdad
+// volteada
+// Detalle: Camino de peso MAXIMO con aristas negativas, que es Bellman-Ford con la desigualdad
+// volteada. Se relaja n veces; si en la pasada n todavia mejora algo, hay un ciclo de ganancia
+// infinita. El detalle que hace correcto el problema: un ciclo positivo solo importa si se
+// puede LLEGAR a el desde el origen y desde el SALIR hacia el destino. Por eso los dos BFS
+// previos, uno en el grafo normal desde 1 y otro en el grafo INVERSO desde n: solo los nodos
+// marcados en ambos cuentan para detectar el ciclo. Sin ese filtro, un ciclo positivo en una
+// parte inalcanzable del grafo daria -1 de mentiras. CUANDO USAR BELLMAN-FORD: pesos negativos
+// (Dijkstra ya no sirve) o hay que DETECTAR ciclos negativos, que es su unica ventaja real. Es
+// O(n*m), mucho mas lento que Dijkstra, asi que con pesos no negativos nunca se usa.
 
 #include <iostream>
 #include <vector>

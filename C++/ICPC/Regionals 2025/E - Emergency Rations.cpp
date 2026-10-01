@@ -1,18 +1,19 @@
 // <3
 // Tema: Data Structures / Segment Tree sobre Coordenadas Comprimidas
-// Resuelve "Emergency Rations" (problema E, Regionals 2025). Las consultas traen posiciones que
-// llegan hasta valores enormes, asi que lo primero es COMPRIMIR: se juntan todos los |x| que
-// aparecen, se ordenan, se quitan repetidos, y el segment tree trabaja sobre esos indices.
-// EL DETALLE QUE SE OLVIDA: hay que incluir el 0 en la lista de coordenadas. Es un tamano valido
-// (caja vacia) y si no esta, las consultas que lo necesitan caen fuera del arreglo o se contestan
-// con el siguiente valor, que es otra respuesta.
-// Se comprime por valor ABSOLUTO porque el problema es simetrico: lo que importa es la distancia al
-// origen, no el lado. Eso ademas reduce a la mitad las coordenadas distintas.
-// PATRON GENERAL: cada vez que los indices son enormes pero la cantidad de valores distintos es
-// chica, se comprime. La plantilla esta en "Compresion de Coordenadas" de este cuaderno; lo unico
-// que cambia de problema a problema es QUE valores hay que meter en la lista, y ahi es donde se
-// falla: hay que incluir no solo los datos, sino tambien los extremos que las consultas puedan
-// necesitar (aqui, el 0).
+// Resumen: Resuelve "Emergency Rations" (problema E, Regionals 2025)
+// Detalle: Resuelve "Emergency Rations" (problema E, Regionals 2025). Las consultas traen
+// posiciones que llegan hasta valores enormes, asi que lo primero es COMPRIMIR: se juntan todos
+// los |x| que aparecen, se ordenan, se quitan repetidos, y el segment tree trabaja sobre esos
+// indices. EL DETALLE QUE SE OLVIDA: hay que incluir el 0 en la lista de coordenadas. Es un
+// tamano valido (caja vacia) y si no esta, las consultas que lo necesitan caen fuera del
+// arreglo o se contestan con el siguiente valor, que es otra respuesta. Se comprime por valor
+// ABSOLUTO porque el problema es simetrico: lo que importa es la distancia al origen, no el
+// lado. Eso ademas reduce a la mitad las coordenadas distintas. PATRON GENERAL: cada vez que
+// los indices son enormes pero la cantidad de valores distintos es chica, se comprime. La
+// plantilla esta en "Compresion de Coordenadas" de este cuaderno; lo unico que cambia de
+// problema a problema es QUE valores hay que meter en la lista, y ahi es donde se falla: hay
+// que incluir no solo los datos, sino tambien los extremos que las consultas puedan necesitar
+// (aqui, el 0).
 
 #include <bits/stdc++.h>
 using namespace std;

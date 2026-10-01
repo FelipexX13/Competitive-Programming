@@ -1,14 +1,14 @@
 # <3
 # Tema: Math / Matrix Exponentiation
-# Resuelve "Buses" (Maratona de Programacao da SBC 2013, problem H): dada una fila de longitud
-# N metros formada por buses (10 m) y minibuses (5 m), con K colores posibles para minibus y L
-# colores para bus, cuenta de cuantas formas distintas se puede armar la fila, entregando los
-# ultimos 6 digitos del resultado.
-# El numero de formas para una fila de largo 5*m sigue la recurrencia f(m) = k*f(m-1) + l*f(m-2)
-# (agregar al final un minibus de cualquier color o un bus de cualquier color), como un
-# Fibonacci ponderado. Arma la matriz de transicion M=[[k,l],[1,0]] y usa exponenciacion rapida
-# de matrices (mat_pow) para obtener f(m) en O(log m) modulo 10^6, ya que N puede ser hasta
-# 10^15.
+# Resumen: Dada una fila de longitud N metros formada por buses (10 m) y minibuses (5 m)
+# Detalle: Resuelve "Buses" (Maratona de Programacao da SBC 2013, problem H): dada una fila de
+# longitud N metros formada por buses (10 m) y minibuses (5 m), con K colores posibles para
+# minibus y L colores para bus, cuenta de cuantas formas distintas se puede armar la fila,
+# entregando los ultimos 6 digitos del resultado. El numero de formas para una fila de largo 5*m
+# sigue la recurrencia f(m) = k*f(m-1) + l*f(m-2) (agregar al final un minibus de cualquier
+# color o un bus de cualquier color), como un Fibonacci ponderado. Arma la matriz de transicion
+# M=[[k,l],[1,0]] y usa exponenciacion rapida de matrices (mat_pow) para obtener f(m) en O(log
+# m) modulo 10^6, ya que N puede ser hasta 10^15.
 
 def mat_mult(A, B, MOD):
     return [

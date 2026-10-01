@@ -161,6 +161,8 @@ GATILLOS = [
          "2-SAT", "Graph"),
         ("cuantos numeros entre A y B cumplen X",
          "digit DP", "Dynamic Programming"),
+        ("subsecuencia comun pero por pedazos seguidos",
+         "LCS con bloques de K: dos tablas", "Dynamic Programming"),
         ("palindromos, todos los centros",
          "Manacher", "String"),
         ("donde aparece este patron",

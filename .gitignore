@@ -10,3 +10,8 @@ __pycache__/
 
 # El notebook.pdf SI se versiona (generado por generate_notebook.py)
 !notebook.pdf
+
+# Borrador de la primera pasada: el generador corre dos veces para saber en que
+# pagina arranca cada subtitulo. Se borra solo al terminar, pero si la corrida
+# se interrumpe queda tirado y son 3 MB que no van al repo.
+.notebook_pasada1.pdf

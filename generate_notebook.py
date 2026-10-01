@@ -173,6 +173,8 @@ GATILLOS = [
          "compresion de coordenadas", "Data Structures"),
         ("fechas dadas como dia, mes y ano",
          "calendario a mano; OJO el ano bisiesto", "Implementation"),
+        ("partir un total en partes exactamente iguales",
+         "el tamano tiene que DIVIDIR el total", "Math"),
         ("subsecuencia creciente mas larga",
          "LIS en O(n log n) con lower_bound", "Dynamic Programming"),
         ("mochila, escoger con un tope",

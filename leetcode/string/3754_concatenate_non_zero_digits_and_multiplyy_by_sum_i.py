@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Manejo de Digitos
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (digitos de n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3754 "Concatenate Non-Zero Digits and Multiply by Sum I": pegar los digitos que no
 # son 0 y multiplicar ese numero por la suma de sus digitos. Tecnica: armar el string sin ceros,

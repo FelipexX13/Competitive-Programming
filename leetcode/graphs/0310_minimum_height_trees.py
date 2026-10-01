@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Pelar Hojas (Centro del Arbol)
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), pelando hojas por capas
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 310 "Minimum Height Trees": las raices que dan el arbol de altura minima. Tecnica:
 # pelar hojas por capas. Se meten a la cola todos los nodos de grado 1, se quitan todos a la

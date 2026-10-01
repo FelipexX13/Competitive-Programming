@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Verificar Sube y Baja
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), un barrido con una bandera
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 941 "Valid Mountain Array": decir si el arreglo sube estrictamente y luego baja
 # estrictamente. Tecnica: una bandera subiendo que solo puede cambiar una vez. Si vuelve a subir

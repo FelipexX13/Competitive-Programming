@@ -2,6 +2,7 @@
 // Tema: CSES / Busqueda por Bloques de Longitud
 // Resumen: La cadena infinita 123456789101112... se recorre por BLOQUES segun la cantidad de
 // digitos
+// O: (log k), saltando por bloques de longitud
 // Detalle: La cadena infinita 123456789101112... se recorre por BLOQUES segun la cantidad de
 // digitos: hay 9 numeros de 1 digito, 90 de 2, 900 de 3, o sea 9*10^(d-1) numeros de d digitos,
 // que aportan d*9*10^(d-1) caracteres. Se le resta a k bloque por bloque hasta que quepa, y ahi

@@ -1,7 +1,7 @@
 // <3
 // Tema: Graphs / Max Flow (Binary Search + Dinic)
-// Resumen: Hay P gasolineras con demanda D_i y R refinerias con stock E_j, con solo algunos
-// pares (refineria
+// Resumen: Menor tiempo para abastecer todas las gasolineras: binaria sobre la respuesta y Dinic
+// O: (V^2 * E * log(rango)): binaria sobre la respuesta y un Dinic por intento
 // Detalle: Resuelve "Gasoline" (Day 8, problema G - Contest 08 [Avanzados]): hay P gasolineras
 // con demanda D_i y R refinerias con stock E_j, con solo algunos pares (refineria,gasolinera)
 // habilitados por contrato y un tiempo de viaje T conocido para esos pares; hay que hallar el

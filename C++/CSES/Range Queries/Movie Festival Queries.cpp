@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Greedy + Binary Lifting sobre el Tiempo
 // Resumen: Maximo de peliculas que se pueden ver enteras dentro de [a,b]
+// O: (n log n + q log T), binary lifting sobre el tiempo
 // Detalle: Maximo de peliculas que se pueden ver enteras dentro de [a,b]. El greedy de
 // intervalos es el de siempre: ver primero la que TERMINA mas temprano entre las que empiezan
 // despues del momento actual (intercambio clasico: cambiar cualquier eleccion por la que

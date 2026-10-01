@@ -1,6 +1,7 @@
 # <3
 # Tema: Graph / DFS
-# Resumen: Un ladron debe cruzar una sala rectangular M x N, desde la esquina de entrada (0
+# Resumen: Cruzar una sala esquivando sensores: los que se tocan bloquean el paso, con DFS
+# O: (n^2) por comparar todos los pares de sensores
 # Detalle: Resuelve "Artwork" (Day 1, problema A - Maratona de Programacao da SBC 2019): un
 # ladron debe cruzar una sala rectangular M x N, desde la esquina de entrada (0,0) hasta la
 # esquina opuesta donde esta la obra, sin acercarse a menos de Si metros de ningun sensor de

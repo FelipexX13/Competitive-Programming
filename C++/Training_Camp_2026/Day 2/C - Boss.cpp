@@ -1,6 +1,7 @@
 // <3
 // Tema: Graph / BFS
 // Resumen: En un organigrama de N empleados donde X maneja directamente a Y
+// O: (n + m), BFS
 // Detalle: Resuelve "Boss" (Day 2, problema C - Maratona de Programacao da SBC 2013): en un
 // organigrama de N empleados donde X maneja directamente a Y, la operacion "T A B" intercambia
 // las POSICIONES que ocupan A y B dentro del organigrama (que nunca cambia), y "P E" pregunta

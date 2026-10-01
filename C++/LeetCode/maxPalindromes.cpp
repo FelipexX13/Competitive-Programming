@@ -2,6 +2,7 @@
 // Tema: String / Palindromos No Solapados (Greedy)
 // Resumen: Dado s y un k, hay que escoger la mayor cantidad posible de subcadenas palindromas
 // que no se solapen y que...
+// O: (n*k), probando solo los largos k y k+1
 // Detalle: r arranca en k-1, que es la primera posicion donde cabe algo de largo k. Resuelve
 // "Maximum Number of Non-overlapping Palindrome Substrings" (LeetCode 2472): dado s y un k, hay
 // que escoger la mayor cantidad posible de subcadenas palindromas que no se solapen y que midan

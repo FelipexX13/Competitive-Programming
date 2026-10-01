@@ -1,6 +1,7 @@
 // <3
 // Tema: Formulario / Secuencias Notables
 // Resumen: Las sucesiones que hay que reconocer de vista en un caso de ejemplo
+// O: (1) por la formula cerrada de cada sucesion
 // Detalle: Las sucesiones que hay que reconocer de vista en un caso de ejemplo, con los
 // primeros valores y el punto exacto donde se desbordan: 20! es el ultimo factorial que cabe en
 // long long, F(92) es el ultimo Fibonacci que cabe, y 2^31 ya no cabe en int. Saber el limite

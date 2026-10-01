@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Fuerza Bruta O(n^2)
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2); con frecuencias y prefijos seria (n + rango)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1365 "How Many Numbers Are Smaller Than the Current Number": para cada numero,
 # cuantos son menores. Tecnica: dos ciclos anidados. Con n hasta 500 alcanza. Con un arreglo de

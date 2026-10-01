@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Prefijos y Sufijos
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), prefijos y sufijos en dos diccionarios
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1658 "Minimum Operations to Reduce X to Zero": se quitan elementos solo de los
 # extremos hasta sumar exactamente x; minimo de operaciones. Tecnica: lo que se quita es un

@@ -1,7 +1,7 @@
 // <3
 // Tema: Math / Recurrencia (Fibonacci)
-// Resumen: Resuelve "Fractions are better when continued" (Day 3, problema F - Maratona SBC de
-// Programacao 2024)
+// Resumen: Numerador de la N-esima fraccion continua, que resulta ser Fibonacci
+// O: (N) con enteros grandes, o (log N) con fast doubling
 // Detalle: Resuelve "Fractions are better when continued" (Day 3, problema F - Maratona SBC de
 // Programacao 2024): dado un entero N, hay que hallar el numerador (en forma irreducible) de la
 // fraccion continua p_N definida recursivamente como p_0 = 1, p_1 = 1/(1+1), p_2 =

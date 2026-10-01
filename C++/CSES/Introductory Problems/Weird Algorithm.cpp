@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Simulacion Directa
 // Resumen: Simular el proceso de Collatz tal cual lo dice el enunciado, sin mas
+// O: (largo de la secuencia de Collatz), que no se sabe acotar
 // Detalle: Simular el proceso de Collatz tal cual lo dice el enunciado, sin mas. LO UNICO QUE
 // PUEDE FALLAR: el tipo. Con n hasta 10^6 los valores INTERMEDIOS de la secuencia se van muy
 // por encima de 10^9, asi que con int se desborda y el programa se cuelga o imprime basura.

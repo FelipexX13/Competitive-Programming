@@ -1,6 +1,7 @@
 // <3
 // Tema: Graph / Heavy-Light Decomposition
 // Resumen: Un arbol de n casas conectadas por calles con valor
+// O: (log^2 N) por consulta, heavy-light decomposition
 // Detalle: Resuelve "Los Ratones III" (Day 9, problema K - Contest 08 [Inicial & Avanzado]): un
 // arbol de n casas conectadas por calles con valor, donde Q cartas piden la suma de los valores
 // de las aristas en el camino entre u y v despues de multiplicar TODO ese camino por x, y las

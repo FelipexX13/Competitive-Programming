@@ -1,7 +1,6 @@
 // <3
 // Tema: Implementation / Template Base
-// Resumen: Includes, alias de tipos, constantes (MOD, INF, LLINF, EPS, PI), macros de recorrido
-// (all, forn, forr
+// Resumen: Plantilla de arranque: fast IO, alias, constantes, macros y los utiles que se olvidan
 // O: (1), es el esqueleto
 // Uso: punto de partida: fast IO, lectura de matriz, gcd/lcm, setprecision
 // Detalle: Plantilla de arranque para cualquier problema: includes, alias de tipos, constantes

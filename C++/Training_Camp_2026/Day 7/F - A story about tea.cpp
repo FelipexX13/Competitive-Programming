@@ -1,6 +1,7 @@
 // <3
 // Tema: Recursion / Constructive
 // Resumen: N botes deben viajar de Portugal a Inglaterra usando China como puerto auxiliar
+// O: (n), construccion directa
 // Detalle: Resuelve "A story about tea" (Day 7, problema F - Contest 07 [Avanzados]): N botes
 // deben viajar de Portugal a Inglaterra usando China como puerto auxiliar, siguiendo las reglas
 // de las Torres de Hanoi (cada viaje mueve el bote mas chico entre las dos pilas involucradas,

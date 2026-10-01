@@ -1,6 +1,7 @@
 // <3
 // Tema: Greedy / Puente y Linterna (version con indices)
 // Resumen: La otra solucion del problema B de ICPC 2024 ("The Bridge at Night")
+// O: (n log n) por el sort, igual que la version B
 // Detalle: La otra solucion del problema B de ICPC 2024 ("The Bridge at Night"), el clasico del
 // puente con una sola linterna. Misma estrategia que "B - The Bridge At Night" de esta carpeta,
 // escrita con un contador de cuantos quedan en vez de ir recortando el arreglo. Con los tiempos

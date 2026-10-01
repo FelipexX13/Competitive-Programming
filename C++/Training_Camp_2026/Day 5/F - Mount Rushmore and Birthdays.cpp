@@ -1,6 +1,7 @@
 // <3
 // Tema: Combinatorics / Probabilidad (Paradoja del cumpleanos)
 // Resumen: Dado N, el numero de dias que tiene un anio
+// O: (n), probabilidad por complemento
 // Detalle: Resuelve "Mount Rushmore and Birthdays" (Day 5, problema F - Contest 05
 // [Avanzados]): dado N, el numero de dias que tiene un anio, hay que hallar la minima cantidad
 // de personas necesarias en un cuarto para que la probabilidad de que dos compartan cumpleanos

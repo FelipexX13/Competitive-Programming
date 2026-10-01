@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Fuerza Bruta O(n^2)
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2), dos ciclos anidados; con diccionario seria O(n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1 "Two Sum": los indices de los dos numeros que suman target. Tecnica: dos ciclos
 # anidados probando todas las parejas. La version buena es un diccionario valor -> indice en una

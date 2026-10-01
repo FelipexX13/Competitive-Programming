@@ -1,7 +1,6 @@
 // <3
 // Tema: Greedy / Sliding Window
-// Resumen: Ventana de tamano variable para hallar el subarreglo mas largo que cumple una
-// condicion monotona (suma <= K
+// Resumen: Ventana de tamano variable para el subarreglo mas largo con condicion monotona
 // O: (n) amortizado, cada elemento entra y sale una vez
 // Uso: exige condicion monotona; con negativos NO sirve, usa prefijos + map
 // Detalle: Ventana de tamano variable para hallar el subarreglo mas largo que cumple una

@@ -2,6 +2,7 @@
 // Tema: String / KMP para Contar Ocurrencias Solapadas
 // Resumen: La reaccion del publico se calcula contando cuantas veces aparecen tres palabras en
 // la cadena y...
+// O: (|s| + |p|), KMP contando ocurrencias solapadas
 // Detalle: Resuelve "Judgmental Crowd" (problema J, Regionals 2025): la reaccion del publico se
 // calcula contando cuantas veces aparecen tres palabras en la cadena y combinandolas con pesos,
 // ha - boooo + 3 * bravo EL DETALLE QUE DECIDE EL PROBLEMA es contar ocurrencias SOLAPADAS.

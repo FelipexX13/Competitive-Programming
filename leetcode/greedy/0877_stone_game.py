@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Greedy que Acierta por Casualidad
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n log n) por el sort; la respuesta real es True siempre, (1)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 877 "Stone Game": dos jugadores toman de los extremos de una fila de montones y gana
 # quien junte mas piedras. Tecnica del codigo: ordena los montones y los reparte alternando de

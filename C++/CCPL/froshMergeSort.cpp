@@ -1,6 +1,7 @@
 // <3
 // Tema: Divide and Conquer / Conteo de Inversiones con Merge Sort
 // Resumen: La otra forma de resolver "Frosh Week" (problema F, CCPL)
+// O: (n log n), inversiones contando en la fusion
 // Detalle: La otra forma de resolver "Frosh Week" (problema F, CCPL), la misma del archivo
 // "frosh" pero sin ninguna estructura de datos. La equivalencia del problema es la misma: el
 // minimo de intercambios de vecinos para ordenar la fila es exactamente el numero de

@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Prefijo Secuencial
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n + respuesta)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 2996 "Smallest Missing Integer Greater Than Sequential Prefix Sum": se suma el
 # prefijo mas largo donde cada numero es el anterior mas 1, y se busca el menor entero ausente

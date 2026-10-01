@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / DFS con Memoizacion en Matriz
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n*m), cada celda se memoiza una vez
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 329 "Longest Increasing Path in a Matrix": el camino mas largo que siempre sube.
 # Tecnica: DFS con memoizacion. Como solo se puede ir a celdas MAYORES, el grafo no tiene ciclos

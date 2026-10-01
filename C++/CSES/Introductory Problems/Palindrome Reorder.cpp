@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Conteo de Frecuencias
 // Resumen: Un palindromo se puede armar si y solo si a lo sumo UNA letra tiene frecuencia impar
+// O: (n + 26), frecuencias y armar las dos mitades
 // Detalle: Un palindromo se puede armar si y solo si a lo sumo UNA letra tiene frecuencia
 // impar, la que quedaria en el centro. Se cuentan frecuencias, se cuentan las impares y si hay
 // mas de una no hay solucion. Para construirlo: media frecuencia de cada letra en orden va a la

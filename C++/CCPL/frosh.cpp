@@ -1,6 +1,7 @@
 // <3
 // Tema: Data Structures / Conteo de Inversiones con Fenwick
 // Resumen: Hay n estudiantes en fila y solo se pueden intercambiar PARES CONSECUTIVOS
+// O: (n log n), inversiones con Fenwick
 // Detalle: Resuelve "Frosh Week" (problema F, CCPL): hay n estudiantes en fila y solo se pueden
 // intercambiar PARES CONSECUTIVOS; se pide el minimo de intercambios para dejarlos ordenados.
 // LO QUE HAY QUE VER ES LA EQUIVALENCIA, porque el resto es una plantilla: cada intercambio de

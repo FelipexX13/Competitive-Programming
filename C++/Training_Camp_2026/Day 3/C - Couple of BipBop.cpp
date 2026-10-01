@@ -2,6 +2,7 @@
 // Tema: String Algorithms / Suffix Array + LCP
 // Resumen: Bob y Charlie empiezan a bailar cada uno en un verso aleatorio de una cancion de N
 // versos y siguen la...
+// O: (N log N) por el suffix array; con LCP el barrido es (N)
 // Detalle: Resuelve "Couple of BipBop" (Day 3, problema C - Maratona SBC de Programacao 2024):
 // Bob y Charlie empiezan a bailar cada uno en un verso aleatorio de una cancion de N versos y
 // siguen la coreografia hasta desincronizarse o llegar al final de la cancion; hay que calcular

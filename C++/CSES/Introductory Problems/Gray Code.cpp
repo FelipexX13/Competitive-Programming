@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Identidad i XOR (i >> 1)
 // Resumen: El codigo Gray de i es exactamente i ^ (i >> 1)
+// O: (2^n), que es el tamano de la salida
 // Detalle: El codigo Gray de i es exactamente i ^ (i >> 1). Eso es todo: no hay recursion ni
 // construccion por niveles, es una sola operacion por numero. POR QUE FUNCIONA: al pasar de i a
 // i+1 cambia una racha de bits bajos, y el xor con el desplazamiento hace que ese cambio se

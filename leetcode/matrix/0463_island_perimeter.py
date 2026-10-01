@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Recorrido de Matriz
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n*m), un solo barrido
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 463 "Island Perimeter": perimetro de la isla dibujada con 1 en una matriz. Tecnica:
 # por cada celda de tierra se cuentan sus vecinos de tierra y se aporta 4 - vecinos. No hace

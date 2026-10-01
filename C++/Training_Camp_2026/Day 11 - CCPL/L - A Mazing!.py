@@ -2,6 +2,7 @@
 # Tema: Graph / DFS
 # Resumen: Un problema interactivo donde hay que explorar un laberinto de celdas cuadradas
 # moviendose...
+# O: (n*m), DFS en la grilla
 # Detalle: Resuelve "A Mazing!" (Day 11, problema L - CCPL (Kattis)): un problema interactivo
 # donde hay que explorar un laberinto de celdas cuadradas moviendose (up/down/left/right) segun
 # las respuestas del juez ("wall", "ok", "solved"), sin conocer el mapa de antemano, hasta

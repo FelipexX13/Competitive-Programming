@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Ventana con Frecuencias
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), el mismo molde con k fijo en 2
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3090 "Maximum Length Substring With Two Occurrences": la subcadena mas larga donde
 # ninguna letra aparece mas de dos veces. Tecnica: el mismo molde del 2958 pero con k fijo en 2.

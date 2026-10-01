@@ -1,6 +1,7 @@
 // <3
 // Tema: Combinatorics / Combinatoria (Factoriales Modulares)
 // Resumen: Calcula n coeficientes binomiales C(a,b) modulo 1e9+7
+// O: (MAXN) de precalculo y (1) por binomial
 // Detalle: Resuelve "Binomial Coefficients" (Day 10, problema J - Contest 09 [Avanzados]):
 // calcula n coeficientes binomiales C(a,b) modulo 1e9+7. Precomputa fact[i] = i! mod MOD para
 // todo i hasta MAXN=1e6, y su inverso modular invFact[i] de atras hacia adelante en O(MAXN)

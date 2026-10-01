@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / DSU (Union-Find)
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2) en el peor caso: el find no comprime caminos
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 684 "Redundant Connection": la arista que sobra en un arbol al que le agregaron una.
 # Tecnica: DSU. Se van uniendo las aristas en orden y la PRIMERA que encuentre los dos extremos

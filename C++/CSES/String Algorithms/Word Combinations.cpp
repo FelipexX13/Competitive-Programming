@@ -1,7 +1,6 @@
 // <3
 // Tema: CSES / Trie + DP de Segmentacion (Conteo)
-// Resumen: Cuantas formas hay de partir s en palabras del diccionario. dp[i] = formas de armar
-// el prefijo s[0..i)
+// Resumen: De cuantas formas se parte s en palabras del diccionario: trie mas DP de segmentacion
 // O: (n * largo maximo) tras armar el trie
 // Uso: Node con nxt[26] y end; dp[j+1] += dp[i] al cerrar una palabra
 // Detalle: Cuantas formas hay de partir s en palabras del diccionario. dp[i] = formas de armar

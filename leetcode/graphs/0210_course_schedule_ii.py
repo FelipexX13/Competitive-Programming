@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Orden Topologico de Kahn
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n+m), el mismo Kahn devolviendo el orden
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 210 "Course Schedule II": devolver un orden valido de los cursos, o vacio si no hay.
 # Tecnica: el mismo Kahn del 207, pero devolviendo el orden en vez de un booleano. Lo unico que

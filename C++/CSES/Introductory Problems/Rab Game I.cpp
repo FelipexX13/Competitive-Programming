@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Construccion por Rotacion de Bloque
 // Resumen: Construccion con dos condiciones de imposibilidad
+// O: (n), rotar un bloque
 // Detalle: Construccion con dos condiciones de imposibilidad: a + b no puede pasar de n, y a y
 // b tienen que ser cero los dos o ninguno, que es lo que verifica (a == 0) != (b == 0). La
 // primera fila es la identidad. La segunda rota un bloque de tamano a+b: se sacan los a

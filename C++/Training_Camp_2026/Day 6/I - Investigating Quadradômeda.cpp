@@ -1,7 +1,7 @@
 // <3
 // Tema: Math / Recurrencias y busqueda de intervalo factible
-// Resumen: Resuelve "Investigating Quadradomeda" (Day 6, problema I - Maratona SBC de
-// Programacao 2025)
+// Resumen: Radios enteros tangentes entre estrellas alineadas: recurrencia e intervalo factible
+// O: (n), recurrencia con el intervalo factible de radios
 // Detalle: Resuelve "Investigating Quadradomeda" (Day 6, problema I - Maratona SBC de
 // Programacao 2025): N estrellas alineadas consecutivamente en horizontal o vertical deben
 // orbitarse con radios enteros R_i >= 1, cada uno estrictamente menor que la distancia d_i a la

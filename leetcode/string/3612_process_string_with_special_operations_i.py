@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Simulacion de Operaciones
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2): el # duplica y el % invierte, y eso copia todo
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3612 "Process String with Special Operations I": simular una cadena donde * borra el
 # ultimo, # duplica todo y % invierte. Tecnica: simulacion directa sobre el string. Es O(n^2)

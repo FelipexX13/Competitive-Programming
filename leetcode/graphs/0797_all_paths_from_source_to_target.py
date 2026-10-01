@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Backtracking de Caminos
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (2^n * n) en el peor caso, porque esa es la cantidad de caminos
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 797 "All Paths From Source to Target": todos los caminos del nodo 0 al ultimo en un
 # DAG. Tecnica: DFS con backtracking. path.append al entrar, path.pop al salir, y cuando se

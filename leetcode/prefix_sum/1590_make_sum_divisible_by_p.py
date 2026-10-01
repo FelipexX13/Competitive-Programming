@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Residuos de Prefijos
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), residuo de prefijo -> ultima posicion
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1590 "Make Sum Divisible by P": quitar el subarreglo mas corto para que lo que queda
 # sea multiplo de p. Tecnica: si la suma total deja residuo f, el subarreglo que se quita tiene

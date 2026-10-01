@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Deteccion de Ciclo con BFS
-// Resumen: Se busca un ciclo en grafo no dirigido
+// Resumen: Hallar un ciclo en grafo no dirigido y reconstruirlo subiendo por los padres
+// O: (n + m), BFS excluyendo al padre inmediato
 // Detalle: Se busca un ciclo en grafo no dirigido: si durante el recorrido aparece una arista
 // hacia un nodo YA visitado que no es el padre inmediato, ahi se cierra un ciclo, y se
 // reconstruye subiendo por los padres desde los dos extremos de esa arista. La trampa del no

@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Pila de Parentesis con Reverso
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2): cada cierre reconstruye la cadena entera
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1190 "Reverse Substrings Between Each Pair of Parentheses": invertir lo que hay
 # dentro de cada par de parentesis, respetando el anidamiento. Tecnica: pila con las posiciones

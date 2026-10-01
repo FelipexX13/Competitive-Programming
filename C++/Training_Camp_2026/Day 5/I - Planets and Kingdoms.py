@@ -1,6 +1,7 @@
 # <3
 # Tema: Graph / Componentes Fuertemente Conexas (Kosaraju)
 # Resumen: Dados n planetas y m teleportadores dirigidos
+# O: (n + m), SCC con Kosaraju
 # Detalle: Resuelve "Planets and Kingdoms" (Day 5, problema I - Contest 05 [Avanzados]): dados n
 # planetas y m teleportadores dirigidos, dos planetas pertenecen al mismo reino si y solo si
 # existe una ruta de a a b y de b a a; hay que hallar todos los reinos (componentes fuertemente

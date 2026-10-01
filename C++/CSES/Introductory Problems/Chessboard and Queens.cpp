@@ -2,6 +2,7 @@
 // Tema: CSES / Backtracking con Poda por Diagonales
 // Resumen: Las 8 reinas con backtracking fila por fila, que es lo que baja el espacio de
 // busqueda
+// O: (8!) acotado por las podas de diagonales
 // Detalle: Las 8 reinas con backtracking fila por fila, que es lo que baja el espacio de
 // busqueda: poniendo una reina por fila, las filas ya no hay que revisarlas. LO QUE VALE COPIAR
 // SON LOS INDICES DE DIAGONAL, que es donde todo el mundo se equivoca: diag2[row + col] -> las

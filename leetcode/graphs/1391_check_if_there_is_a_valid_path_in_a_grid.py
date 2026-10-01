@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Compatibilidad de Tubos en Matriz
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n*m), DFS con visitados sobre la cuadricula
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1391 "Check if There is a Valid Path in a Grid": una cuadricula de tubos numerados 1
 # a 6; decir si se puede ir de la esquina de arriba a la de abajo. Tecnica: DFS donde moverse

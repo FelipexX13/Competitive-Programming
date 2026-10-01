@@ -1,6 +1,7 @@
 // <3
 // Tema: Formulario / Algebra y Ecuaciones
 // Resumen: Resolver e igualar ecuaciones: cuadratica con discriminante
+// O: (1) cada formula; es hoja de consulta, no algoritmo
 // Detalle: Resolver e igualar ecuaciones: cuadratica con discriminante, Vieta para sacar suma y
 // producto de raices sin calcularlas, sistemas 2x2 por Cramer, productos notables, leyes de
 // exponentes y logaritmos, y proporciones y promedios. Incluye la version numericamente estable

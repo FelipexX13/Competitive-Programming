@@ -1,6 +1,7 @@
 // <3
 // Tema: String / Remove Duplicate Letters
 // Resumen: Busca construir el menor string lexicografico que contiene cada letra una sola vez
+// O: (n), pila monotona con conteo de lo que falta
 // Detalle: Intento manual (greedy) de "Remove Duplicate Letters": busca construir el menor
 // string lexicografico que contiene cada letra una sola vez, escogiendo la siguiente letra mas
 // pequena posible que aun permita completar las letras restantes. Version explicativa de la

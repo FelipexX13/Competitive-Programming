@@ -2,6 +2,7 @@
 # Tema: Combinatorics / Paridad de Binomiales (Kummer)
 # Resumen: Hay que repartir las 2^N cadenas binarias de longitud N entre Carla y Daniel de forma
 # que la probabilidad...
+# O: (log n), paridad del binomial por Kummer
 # Detalle: Resuelve "Less Coin Tosses" (Day 1, problema L - Maratona de Programacao da SBC
 # 2019): hay que repartir las 2^N cadenas binarias de longitud N entre Carla y Daniel de forma
 # que la probabilidad de ganar sea igual sin importar el sesgo de la moneda, lo cual solo se

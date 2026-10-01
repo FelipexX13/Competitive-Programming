@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Casos de Mayusculas
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), compara contra upper() y lower()
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 520 "Detect Capital": decir si el uso de mayusculas es valido (todas, ninguna, o solo
 # la primera). Tecnica: comparar la palabra contra su upper() y su lower(); si coincide con

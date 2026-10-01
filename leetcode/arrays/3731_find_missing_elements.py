@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Faltantes entre el Minimo y el Maximo
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n * rango) por el 'in' sobre la lista; con set seria (rango)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3731 "Find Missing Elements": los valores que faltan estrictamente entre el minimo y
 # el maximo del arreglo. Tecnica: recorrer el rango preguntando si cada valor esta. OJO: usa if

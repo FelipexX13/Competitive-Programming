@@ -1,6 +1,7 @@
 // <3
 // Tema: Formulario / Trampas de C++
 // Resumen: Los errores que compilan sin una sola advertencia y dan respuesta equivocada
+// O: no aplica: es la lista de lo que muerde en C++
 // Detalle: Los errores que compilan sin una sola advertencia y dan respuesta equivocada:
 // division entera con negativos, overflow porque int*int se calcula en int antes de guardarse
 // en long long, pow devolviendo 999999999999999 en vez de 10^15, y comparadores de sort que

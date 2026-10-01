@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Orden de Primera y Ultima Aparicion
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), un barrido con cuatro sets
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3121 "Count the Number of Special Characters II": igual que la I, pero exigiendo que
 # la ULTIMA minuscula aparezca antes de la PRIMERA mayuscula. Tecnica: un barrido con varios

@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Flood Fill en Grilla (BFS)
 // Resumen: Contar componentes conexas en una grilla
+// O: (n*m), cada celda se visita una vez
 // Detalle: Contar componentes conexas en una grilla. Se barre celda por celda y, al encontrar
 // una libre sin visitar, se lanza un BFS que marca todo su cuarto y se suma uno al total.
 // Marcar la celda como visitada AL ENCOLARLA (no al sacarla) es lo que evita que entre dos

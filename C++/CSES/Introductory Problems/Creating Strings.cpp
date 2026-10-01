@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Backtracking sobre Frecuencias
 // Resumen: Generar todas las permutaciones DISTINTAS
+// O: (cantidad de permutaciones * n)
 // Detalle: Generar todas las permutaciones DISTINTAS, y el truco esta en recorrer el ALFABETO
 // en cada posicion en vez de recorrer las posiciones del string. Como se elige "cual letra va
 // aqui" y cada letra se considera una sola vez por nivel, las repetidas no generan duplicados:

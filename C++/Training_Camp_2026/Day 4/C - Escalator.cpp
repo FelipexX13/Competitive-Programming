@@ -1,6 +1,7 @@
 // <3
 // Tema: Simulation / Greedy
 // Resumen: Una escalera doble tarda 10 segundos en cruzar a cualquier persona
+// O: (N), greedy en una pasada
 // Detalle: Resuelve "Escalator" (Day 4, problema C - Contest 04 [Avanzados]): una escalera
 // doble tarda 10 segundos en cruzar a cualquier persona, arranca en la direccion del primero
 // que llega estando detenida, y si alguien llega en direccion contraria a la que se mueve debe

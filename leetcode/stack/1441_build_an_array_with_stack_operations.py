@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Simulacion de Pila
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1441 "Build an Array With Stack Operations": la lista de Push y Pop para construir el
 # arreglo objetivo leyendo 1, 2, 3, ... n. Tecnica: recorrer de 1 a n haciendo Push siempre, y

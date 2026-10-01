@@ -1,7 +1,6 @@
 // <3
 // Tema: Dynamic Programming / Digit DP
-// Resumen: Cuenta cuantos numeros de 0 a X cumplen una propiedad definida sobre sus digitos
-// (aqui
+// Resumen: Contar numeros de 0 a X por una propiedad de sus digitos, con el flag tight
 // O: (digitos * estados * 10), aqui 20*200*2*10
 // Uso: solve_digitdp(B,d) - solve_digitdp(A-1,d)  // rango [A,B]
 // Detalle: Cuenta cuantos numeros de 0 a X cumplen una propiedad definida sobre sus digitos

@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Probar Todos los Pares
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n*m), todos los pares en los dos ordenes
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3633 "Earliest Finish Time for Land and Water Rides I": hay que subirse a una
 # atraccion de tierra y una de agua, en cualquier orden; minimizar cuando se termina. Tecnica:

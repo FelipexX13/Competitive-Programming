@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Observacion que Colapsa el Problema
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), solo el maximo y el minimo
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3689 "Maximum Total Subarray Value I": escoger k subarreglos y sumar (max - min) de
 # cada uno; maximizar. Tecnica: tres lineas. El mejor subarreglo posible es el arreglo COMPLETO,

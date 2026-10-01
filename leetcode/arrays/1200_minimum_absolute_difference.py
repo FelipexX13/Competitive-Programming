@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Diferencia Minima en Ordenado
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n log n) por el sort; los dos barridos son lineales
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1200 "Minimum Absolute Difference": todos los pares con la diferencia absoluta
 # minima. Tecnica: ordenar. La diferencia minima SIEMPRE esta entre dos vecinos del arreglo

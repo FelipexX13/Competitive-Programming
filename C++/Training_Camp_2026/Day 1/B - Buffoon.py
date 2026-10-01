@@ -1,6 +1,7 @@
 # <3
 # Tema: Implementation / Arreglos
 # Resumen: En la eleccion del bufon de la corte, N candidatos reciben votos y gana el mas votado
+# O: (n), es el maximo del arreglo
 # Detalle: Resuelve "Buffoon" (Day 1, problema B - Maratona de Programacao da SBC 2019): en la
 # eleccion del bufon de la corte, N candidatos reciben votos y gana el mas votado, rompiendo
 # empates a favor de quien se registro primero. Carlos se aseguro de ser el primero en

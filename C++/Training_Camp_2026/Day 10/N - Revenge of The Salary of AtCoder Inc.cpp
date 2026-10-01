@@ -1,7 +1,7 @@
 // <3
 // Tema: Dynamic Programming / Valor Esperado
-// Resumen: Resuelve "Revenge of The Salary of AtCoder Inc." (Day 10, problema N - Contest 09
-// [Avanzados])
+// Resumen: Valor esperado del salario con un dado de N caras, modulo 998244353
+// O: (N), valor esperado hacia atras
 // Detalle: Resuelve "Revenge of The Salary of AtCoder Inc." (Day 10, problema N - Contest 09
 // [Avanzados]): con un dado de N caras y x=0, en cada ronda se tira el dado (resultado y); si
 // x<y se cobra A_y yen y x pasa a valer y, si no el proceso termina. Hay que hallar el valor

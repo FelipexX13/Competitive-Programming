@@ -1,6 +1,7 @@
 // <3
 // Tema: Number Theory / Number Theory (Criba y Factorizacion)
 // Resumen: Dados n enteros, imprime la cantidad de divisores de cada uno
+// O: (n log log n) la criba, (log n) factorizar cada consulta
 // Detalle: Resuelve "Counting Divisors" (Day 10, problema I - Contest 09 [Avanzados]): dados n
 // enteros, imprime la cantidad de divisores de cada uno. Precomputa con una criba de
 // Eratosthenes (sieve) la lista de primos hasta MX=1e6; para cada consulta k, la funcion

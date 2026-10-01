@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / DFS que Sube Informacion
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), un DFS que sube suma y cantidad
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 2265 "Count Nodes Equal to Average of Subtree": cuantos nodos valen exactamente el
 # promedio entero de su subarbol. Tecnica: DFS que devuelve DOS valores hacia arriba, la suma y

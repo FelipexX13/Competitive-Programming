@@ -2,6 +2,7 @@
 // Tema: Combinatorics / Ranking
 // Resumen: Construye el k-esimo palindromo mas pequeno lexicograficamente que se puede formar
 // reordenando el string s...
+// O: (n + 26), frecuencias y las dos mitades
 // Detalle: Construye el k-esimo palindromo mas pequeno lexicograficamente que se puede formar
 // reordenando el string s (o "" si no existen k reordenamientos posibles). Solo arma la mitad
 // izquierda del palindromo (mas el caracter central si el largo es impar) y la refleja: para

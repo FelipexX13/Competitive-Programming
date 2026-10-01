@@ -1,6 +1,7 @@
 // <3
 // Tema: Data Structures / Fenwick Tree (Consultas offline)
 // Resumen: Dada una secuencia a_1..a_n y q consultas (i, j)
+// O: ((n + q) log n), consultas offline con Fenwick
 // Detalle: Resuelve "D-query" (Day 5, problema H - Contest 05 [Avanzados]): dada una secuencia
 // a_1..a_n y q consultas (i, j), para cada una hay que responder cuantos elementos distintos
 // hay en la subsecuencia a_i..a_j. Ordena las consultas por su extremo derecho j (vector order)

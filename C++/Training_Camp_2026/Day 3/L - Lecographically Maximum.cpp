@@ -1,7 +1,7 @@
 // <3
 // Tema: Greedy / Bit Manipulation
-// Resumen: Resuelve "Lecographically Maximum" (Day 3, problema L - Maratona SBC de Programacao
-// 2024)
+// Resumen: Secuencia lexicograficamente maxima intercambiando bits sueltos entre elementos
+// O: (n * bits), se reparten los bits por posicion
 // Detalle: Resuelve "Lecographically Maximum" (Day 3, problema L - Maratona SBC de Programacao
 // 2024): dada una lista de N enteros y una operacion que intercambia el k-esimo bit entre dos
 // elementos cualquiera de la lista, hay que encontrar la secuencia lexicograficamente maxima

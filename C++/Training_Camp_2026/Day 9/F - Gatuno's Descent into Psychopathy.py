@@ -1,7 +1,7 @@
 # <3
 # Tema: Math / Logaritmos
-# Resumen: Resuelve "Gatuno's Descent into Psychopathy" (Day 9, problema F - Contest 08 [Inicial
-# & Avanzado])
+# Resumen: Minimo n con H1 * ((B-1)/B)^n por debajo de un umbral: se despeja con logaritmos
+# O: (1), se despeja con logaritmos
 # Detalle: Resuelve "Gatuno's Descent into Psychopathy" (Day 9, problema F - Contest 08 [Inicial
 # & Avanzado]): el corazon de Gatuno de tamano H1 se reduce con cada mordida segun H_n = H1 *
 # ((B-1)/B)^n, donde B es el "factor de brutalidad"; se pide el minimo numero de mordidas n para

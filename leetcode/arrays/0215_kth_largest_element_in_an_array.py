@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Counting Sort Parcial
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n + rango); con heap (n log k), con quickselect (n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 215 "Kth Largest Element in an Array": el k-esimo mas grande. Tecnica: frecuencias en
 # un diccionario y barrido del maximo hacia abajo acumulando hasta pasar de k. Es O(n + rango).

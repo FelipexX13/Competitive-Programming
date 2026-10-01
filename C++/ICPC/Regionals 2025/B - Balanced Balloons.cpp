@@ -2,6 +2,7 @@
 // Tema: Dynamic Programming / DP con Arreglo de Diferencias
 // Resumen: Contar secuencias donde el promedio se mantiene entero en cada paso, modulo
 // 998244353
+// O: (K^2), DP con arreglo de diferencias
 // Detalle: Resuelve "Balanced Balloons" (problema B, Regionals 2025): contar secuencias donde
 // el promedio se mantiene entero en cada paso, modulo 998244353. El estado es dp[q] = cuantas
 // secuencias de i elementos tienen promedio actual q. Al agregar el elemento i+1, el nuevo

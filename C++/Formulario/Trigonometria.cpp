@@ -1,6 +1,7 @@
 // <3
 // Tema: Formulario / Trigonometria
 // Resumen: Conversion grados-radianes, la tabla de valores exactos
+// O: (1) cada formula; es hoja de consulta
 // Detalle: Conversion grados-radianes, la tabla de valores exactos, las identidades que se usan
 // para simplificar antes de programar, y las leyes de senos y cosenos para resolver un
 // triangulo del que solo se conocen algunos lados o angulos. El detalle practico mas

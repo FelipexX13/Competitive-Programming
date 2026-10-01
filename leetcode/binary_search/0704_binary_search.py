@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Busqueda Binaria
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (log n), la plantilla de libro
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 704 "Binary Search": buscar un valor en un arreglo ordenado. Tecnica: la binaria de
 # libro con ini <= fin y los saltos mitad+1 / mitad-1. Es la plantilla mas corta y la que hay

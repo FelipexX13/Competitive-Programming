@@ -1,6 +1,7 @@
 # <3
 # Tema: Geometry / Bounding Box de una Elipse Rotada
 # Resumen: NO ES MIO: codigo de Stiven Correa, del repo del equipo (carpeta RPC/)
+# O: (1), formulas de la elipse rotada
 # Detalle: NO ES MIO: codigo de Stiven Correa, del repo del equipo (carpeta RPC/). Resuelve
 # "Eclipse" (RPC 2026-07, problema E): dados los dos focos de una elipse y el largo a de la
 # cuerda, dar el rectangulo mas pequeno (alineado a los ejes) que la contiene. Tecnica: de la

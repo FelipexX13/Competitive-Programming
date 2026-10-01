@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Sustitucion de Plantilla
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n + conocimiento), un solo barrido
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1807 "Evaluate the Bracket Pairs of a String": reemplazar cada (clave) por su valor,
 # o por ? si no se conoce. Tecnica: diccionario con el conocimiento y un barrido que al ver un

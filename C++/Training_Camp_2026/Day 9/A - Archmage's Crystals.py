@@ -1,6 +1,7 @@
 # <3
 # Tema: Number Theory / Divisibilidad
 # Resumen: Un archimago tiene n cristales con potencias a_i
+# O: (raiz de n) por divisibilidad
 # Detalle: Resuelve "Archmage's Crystals" (Day 9, problema A - Contest 08 [Inicial & Avanzado]):
 # un archimago tiene n cristales con potencias a_i; cada hechizo de fusion toma dos cristales
 # x,y y los reemplaza por uno de poder x+y, reduciendo la cantidad de cristales en 1. Se busca

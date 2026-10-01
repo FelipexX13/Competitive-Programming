@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Filtrar en el Sitio
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2): cada remove() recorre la lista
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 27 "Remove Element": quitar todas las apariciones de val y devolver cuantos quedaron.
 # Tecnica: remove() en un while hasta que no quede ninguno, y despues rellena el final. OJO:

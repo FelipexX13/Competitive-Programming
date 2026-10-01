@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Monotonic Stack + Binary Lifting
 // Resumen: Dos tecnicas encadenadas, y la combinacion es lo que vale
+// O: (n log n) de tabla y (log n) por consulta
 // Detalle: Dos tecnicas encadenadas, y la combinacion es lo que vale. Primero una PILA MONOTONA
 // de derecha a izquierda calcula nxt[i], el siguiente edificio mas alto que i. Eso deja un
 // arbol implicito donde el padre de i es nxt[i]: desde i, los edificios que se ven son i,

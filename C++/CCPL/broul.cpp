@@ -2,6 +2,7 @@
 // Tema: Number Theory / Modular Arithmetic
 // Resumen: Calcula el número mínimo de saltos de tamaño 3*b necesarios para cubrir la distancia
 // vertical abs(a-c)
+// O: (log n), exponenciacion modular
 // Detalle: Calcula el número mínimo de saltos de tamaño 3*b necesarios para cubrir la distancia
 // vertical abs(a-c), o determina si no es posible porque la distancia no es múltiplo de b.
 

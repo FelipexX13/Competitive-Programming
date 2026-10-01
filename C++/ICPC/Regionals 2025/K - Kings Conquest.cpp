@@ -2,6 +2,7 @@
 // Tema: Implementation / Maximizar Area del Rectangulo Envolvente
 // Resumen: Dados unos reyes en el plano y k movimientos, maximizar el area del rectangulo que
 // los encierra a todos
+// O: (n + k), bounding box y las dos formas de gastar los k
 // Detalle: Resuelve "Kings Conquest" (problema K, Regionals 2025): dados unos reyes en el plano
 // y k movimientos, maximizar el area del rectangulo que los encierra a todos. Solo importa el
 // BOUNDING BOX, o sea minX, maxX, minY, maxY: el area es (ancho)*(alto) y los reyes de adentro

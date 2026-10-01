@@ -1,6 +1,7 @@
 # <3
 # Tema: Math / Algebra
 # Resumen: El maestro Wei empezo a programar en el ano W y el discipulo Kai en el ano K (W < K)
+# O: (1), se despeja con algebra
 # Detalle: Resuelve "The Wisdom of Master Wei" (Day 10, problema E - Contest 09 [Avanzados]): el
 # maestro Wei empezo a programar en el ano W y el discipulo Kai en el ano K (W < K); hay que
 # hallar el ano exacto Y en el que la experiencia del maestro (Y-W anos) sea el doble de la de

@@ -1,6 +1,7 @@
 // <3
 // Tema: String / Trie + DP de Segmentacion (Maximo)
 // Resumen: Partir cada cadena en tokens para que la suma de puntajes sea MAXIMA
+// O: (n * largo maximo) tras armar el trie del diccionario
 // Detalle: Resuelve "Spacebar Tokenizer" (problema E, ICPC 2024): partir cada cadena en tokens
 // para que la suma de puntajes sea MAXIMA. Cada token del diccionario vale su puntaje, y el
 // enunciado dice que CUALQUIER otro token vale 0: se puede cortar donde sea. dp[i] = mejor

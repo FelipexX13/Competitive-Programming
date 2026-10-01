@@ -1,6 +1,7 @@
 # <3
 # Tema: Graph / DFS
-# Resumen: Un arbol enraizado de N miembros de mafia (el 1 es el jefe
+# Resumen: Interrogar a K mafiosos de un arbol para denunciar al maximo, subiendo al jefe
+# O: (n), DFS sobre el grafo funcional
 # Detalle: Resuelve "Denouncing Mafia" (Day 1, problema D - Maratona de Programacao da SBC
 # 2019): un arbol enraizado de N miembros de mafia (el 1 es el jefe, cada quien tiene un
 # superior directo) donde interrogar a alguien obliga a subir denunciando a su superior hasta

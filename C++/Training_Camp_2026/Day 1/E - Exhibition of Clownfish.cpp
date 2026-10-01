@@ -1,7 +1,7 @@
 // <3
 // Tema: Greedy / DP
-// Resumen: Resuelve "Exhibition of Clownfish" (Day 1, problema E - Maratona de Programacao da
-// SBC 2019)
+// Resumen: Minimo de movimientos para que ninguna pecera quede con machos y sin hembra
+// O: (n log n) por ordenar; la decision despues es lineal
 // Detalle: Resuelve "Exhibition of Clownfish" (Day 1, problema E - Maratona de Programacao da
 // SBC 2019): N peceras con M machos y F hembras cada una; si al final de la noche una pecera
 // queda con machos pero sin hembras, uno de ellos muta a hembra. Zelius puede mover un pez por

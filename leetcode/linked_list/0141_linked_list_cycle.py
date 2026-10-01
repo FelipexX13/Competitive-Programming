@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Liebre y Tortuga
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n) tiempo y (1) memoria, que es la gracia de Floyd
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 141 "Linked List Cycle": decir si la lista tiene un ciclo. Tecnica: dos punteros, uno
 # avanza de a uno y el otro de a dos. Si hay ciclo se encuentran; si no, el rapido llega al

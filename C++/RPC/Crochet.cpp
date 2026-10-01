@@ -2,6 +2,7 @@
 // Tema: Implementation / Date Parsing
 // Resumen: Calcula la diferencia de tiempo (hacia adelante) entre dos momentos dados como dia
 // de la semana + hora
+// O: (1) por caso, arreglo de 14 dias para el wrap
 // Detalle: Calcula la diferencia de tiempo (hacia adelante) entre dos momentos dados como dia
 // de la semana + hora. Usa un arreglo de 14 dias (2 semanas) para manejar el wrap-around cuando
 // el segundo momento cae en la siguiente semana.

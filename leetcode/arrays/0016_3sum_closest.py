@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Ordenar y Dos Punteros
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2) tras ordenar en O(n log n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 16 "3Sum Closest": los tres numeros cuya suma quede mas cerca de target. Tecnica:
 # ordenar, fijar el primero y barrer los otros dos con punteros desde los extremos. Si la suma

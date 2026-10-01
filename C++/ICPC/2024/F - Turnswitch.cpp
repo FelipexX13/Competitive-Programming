@@ -1,6 +1,7 @@
 // <3
 // Tema: Implementation / Lights Out (Primera Fila Forzada)
-// Resumen: Resuelve "Turnswitch" (problema F, ICPC 2024)
+// Resumen: Lights Out en grilla n x n: fijada la primera fila, todo el resto queda forzado
+// O: (2^n * n^2): se prueban las 2^n primeras filas y cada una propaga
 // Detalle: Resuelve "Turnswitch" (problema F, ICPC 2024). Una grilla n x n de interruptores que
 // estan en '|' o en '-'; girar uno lo cambia a el y a sus cuatro vecinos. El codigo busca el
 // minimo de giros para dejar todo igual, probando las dos opciones (todo '|' o todo '-'). Es un

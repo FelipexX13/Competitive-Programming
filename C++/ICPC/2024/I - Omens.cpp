@@ -2,6 +2,7 @@
 // Tema: Geometry / Probabilidad de Circulo Contenido
 // Resumen: Caen dos piedras uniformemente al azar dentro de un rectangulo L x W y se dibuja el
 // circulo que las tiene...
+// O: (n) por consulta, cuatro desigualdades sobre el borde convexo
 // Detalle: Resuelve "Omens" (problema I, ICPC 2024): caen dos piedras uniformemente al azar
 // dentro de un rectangulo L x W y se dibuja el circulo que las tiene como DIAMETRO (centro en
 // el punto medio, radio la mitad de la distancia). Se pide la probabilidad de que ese circulo

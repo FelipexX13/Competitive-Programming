@@ -2,6 +2,7 @@
 // Tema: Binary Search / Greedy (busqueda binaria sobre la respuesta)
 // Resumen: Una muralla de N segmentos consecutivos con alturas x_i se refuerza una unica vez
 // eligiendo un segmento
+// O: (n log(rango)), binaria sobre la respuesta
 // Detalle: Resuelve "Minas Gerais' walls" (Day 6, problema M - Maratona SBC de Programacao
 // 2025): una muralla de N segmentos consecutivos con alturas x_i se refuerza una unica vez
 // eligiendo un segmento, que recibe K bloques extra, el segmento a su izquierda K-1, y asi en

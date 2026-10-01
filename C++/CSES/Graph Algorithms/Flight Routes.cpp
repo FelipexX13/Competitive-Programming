@@ -2,6 +2,7 @@
 // Tema: CSES / K Caminos Mas Cortos
 // Resumen: Los k caminos mas cortos al nodo n, con la variante de Dijkstra que en vez de UNA
 // distancia por nodo guarda...
+// O: (k*m log(k*m)), guardando las k mejores por nodo
 // Detalle: Los k caminos mas cortos al nodo n, con la variante de Dijkstra que en vez de UNA
 // distancia por nodo guarda las k mejores en un priority_queue de maximos por nodo. Cada nodo
 // se puede sacar de la cola hasta k veces, y ahi esta la clave: la k-esima vez que un nodo sale

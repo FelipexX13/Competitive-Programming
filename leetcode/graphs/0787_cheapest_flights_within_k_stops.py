@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / DP con Estado (nodo, saltos)
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n*k*m) por los estados (nodo, saltos) memoizados
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 787 "Cheapest Flights Within K Stops": el vuelo mas barato con a lo mas k escalas.
 # Tecnica: no es Dijkstra puro porque el limite de escalas mete una dimension mas. El estado es

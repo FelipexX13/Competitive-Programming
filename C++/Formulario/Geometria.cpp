@@ -1,6 +1,7 @@
 // <3
 // Tema: Formulario / Geometria
 // Resumen: Formulas de geometria que se usan sin pensar pero se olvidan bajo presion
+// O: (1) las primitivas; (n) area y perimetro de poligono
 // Detalle: Formulas de geometria que se usan sin pensar pero se olvidan bajo presion: areas,
 // Heron, shoelace, Pick, sector y segmento circular, y el significado del signo del producto
 // cruz. La regla que mas salva: si los datos son enteros, trabajar con cross/dot y distancias

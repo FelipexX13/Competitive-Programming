@@ -2,6 +2,7 @@
 // Tema: CSES / Lazy Propagation con Suma y Asignacion
 // Resumen: Lazy propagation con DOS tipos de actualizacion (sumar x al rango y ASIGNAR x al
 // rango)
+// O: (log n) por operacion, lazy con suma y asignacion
 // Detalle: Lazy propagation con DOS tipos de actualizacion (sumar x al rango y ASIGNAR x al
 // rango), y todo el problema es como se componen cuando se encuentran en un mismo nodo. Se
 // mantiene el invariante "lo pendiente es: primero asignar lazySet (si hasSet), despues sumar

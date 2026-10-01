@@ -1,6 +1,7 @@
 // <3
 // Tema: Geometry / K Vecinos Mutuos y Clasificacion de Componentes
 // Resumen: Cada estrella mira a sus K vecinas mas cercanas
+// O: (n^2) por comparar todos los pares de nodos
 // Detalle: Resuelve "Celestial Veins" (problema C, ICPC 2025): cada estrella mira a sus K
 // vecinas mas cercanas, dos estrellas quedan unidas solo si CADA UNA esta entre las K de la
 // otra (vinculo mutuo), y hay que clasificar cada componente conexa en una de cinco formas y

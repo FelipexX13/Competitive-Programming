@@ -2,6 +2,7 @@
 // Tema: Arrays / Brute Force
 // Resumen: Cuenta subarreglos donde "target" es mayoria (aparece en mas de la mitad de las
 // posiciones)
+// O: (n^2), todos los subarreglos
 // Detalle: Cuenta subarreglos donde "target" es mayoria (aparece en mas de la mitad de las
 // posiciones). Fuerza bruta O(n^2): para cada inicio i expande el final j acumulando cuantas
 // veces aparece target en el subarreglo actual y compara el doble de esa cuenta contra el

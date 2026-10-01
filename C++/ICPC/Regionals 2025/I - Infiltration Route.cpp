@@ -2,6 +2,7 @@
 // Tema: Graph / BFS sobre Grafo Producto (dos fichas a la vez)
 // Resumen: Hay que mover DOS posiciones a la vez por un grafo dirigido y llegar a una
 // configuracion objetivo
+// O: ((n*m)^2) sobre el grafo producto de las dos fichas
 // Detalle: Resuelve "Infiltration Route" (problema I, Regionals 2025): hay que mover DOS
 // posiciones a la vez por un grafo dirigido y llegar a una configuracion objetivo. LA TECNICA
 // ES EL GRAFO PRODUCTO: el estado no es un nodo sino un PAR (p1, p2), mas alguna bandera extra

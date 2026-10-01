@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Dijkstra
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (m log n), Dijkstra con heap
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 743 "Network Delay Time": cuanto tarda una senal en llegar a todos los nodos.
 # Tecnica: Dijkstra con heap. La respuesta es la MAYOR de las distancias minimas; si alguna

@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Casos por Paridad
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (1), tres casos por paridad
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 2481 "Minimum Cuts to Divide a Circle": cortes minimos para partir un circulo en n
 # pedazos iguales. Tecnica: cada corte es un DIAMETRO y parte el circulo en dos, asi que con n

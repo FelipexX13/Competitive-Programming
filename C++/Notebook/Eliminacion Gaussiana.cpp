@@ -1,6 +1,6 @@
 // <3
 // Tema: Math / Eliminacion Gaussiana (mod p)
-// Resumen: Resuelve sistemas lineales A x = b sobre Z_p con p PRIMO
+// Resumen: Resolver A x = b modulo p primo: Gauss con inverso modular en vez de dividir
 // O: (n^2 * m) en modulo p primo
 // Uso: gauss(a,m,sol,incompatible,p) -> grados de libertad; determinante(a,p)
 // Detalle: Resuelve sistemas lineales A x = b sobre Z_p con p PRIMO, que es lo que aparece

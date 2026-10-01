@@ -1,7 +1,7 @@
 // <3
 // Tema: Combinatorics / Permutation Cycles
-// Resumen: Resuelve "Lines of Containers" (Day 2, problema G - Maratona de Programacao da SBC
-// 2013)
+// Resumen: Si la grua puede reordenar los contenedores: ciclos de la permutacion por filas
+// O: (L*C), ciclos de la permutacion de filas y columnas
 // Detalle: Resuelve "Lines of Containers" (Day 2, problema G - Maratona de Programacao da SBC
 // 2013): un cargamento de L filas por C columnas de contenedores, numerados 1..LC en orden, fue
 // desordenado moviendo filas y columnas completas con una grua; hay que determinar si la grua

@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Prefix Sums 2D
 // Resumen: Prefix sums en dos dimensiones, donde lo unico nuevo es la inclusion-exclusion
+// O: (n^2) de construccion y (1) por consulta
 // Detalle: Prefix sums en dos dimensiones, donde lo unico nuevo es la inclusion-exclusion: al
 // construir se suma arriba e izquierda y se RESTA la diagonal, que se conto dos veces, y al
 // consultar el rectangulo se hace lo mismo al reves con las cuatro esquinas. CUANDO USAR:

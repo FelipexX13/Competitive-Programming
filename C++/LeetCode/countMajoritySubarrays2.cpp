@@ -1,6 +1,7 @@
 // <3
 // Tema: Arrays / Prefix Sums
 // Resumen: Misma idea que countMajoritySubarrays.cpp pero en O(n)
+// O: (n log n), prefijos mas conteo de inversiones
 // Detalle: Misma idea que countMajoritySubarrays.cpp pero en O(n): transforma el arreglo a +1
 // (target) / -1 (cualquier otro valor) y cuenta subarreglos con suma positiva. Como el balance
 // (prefijo acumulado desplazado por n) cambia en +-1 en cada paso, usa un arreglo pre[]

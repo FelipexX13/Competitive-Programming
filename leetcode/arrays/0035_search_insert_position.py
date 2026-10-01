@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Busqueda Lineal
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n) lineal; el problema pide O(log n) con binaria
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 35 "Search Insert Position": donde esta el target, o donde habria que insertarlo.
 # Tecnica: recorrer hasta el primer valor mayor o igual. Es O(n). El problema pide O(log n): es

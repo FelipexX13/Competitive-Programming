@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Primer Positivo Faltante
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n + maximo) tiempo, (n) memoria; se pedia O(1) de memoria
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 41 "First Missing Positive": el menor entero positivo que no esta en el arreglo.
 # Tecnica: set con todos los valores y probar 1, 2, 3, ... hasta que falte uno. OJO: el problema

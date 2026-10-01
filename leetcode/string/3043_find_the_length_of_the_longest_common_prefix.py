@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Prefijos en un Set
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n * digitos) metiendo todos los prefijos en sets
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3043 "Find the Length of the Longest Common Prefix": el prefijo comun mas largo entre
 # cualquier numero del primer arreglo y cualquiera del segundo. Tecnica: se meten TODOS los

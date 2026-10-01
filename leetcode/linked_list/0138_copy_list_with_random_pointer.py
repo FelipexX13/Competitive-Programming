@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Atajo de Libreria
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n) por el deepcopy, pero se salta el ejercicio
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 138 "Copy List with Random Pointer": copia profunda de una lista con un puntero extra
 # que apunta a cualquier nodo. Tecnica del codigo: copy.deepcopy(head). Una linea y pasa. OJO:

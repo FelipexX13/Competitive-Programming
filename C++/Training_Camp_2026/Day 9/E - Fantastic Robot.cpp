@@ -1,6 +1,7 @@
 // <3
 // Tema: Graph / Dijkstra
-// Resumen: HERBIE debe llegar desde una celda a otra en una matriz binaria (0 = libre
+// Resumen: Llegar en una matriz ejecutando ordenes completas, no pasos sueltos: Dijkstra
+// O: (m log n), Dijkstra
 // Detalle: Resuelve "Fantastic Robot" (Day 9, problema E - Contest 08 [Inicial & Avanzado]):
 // HERBIE debe llegar desde una celda a otra en una matriz binaria (0 = libre, 1 = pared) pero
 // no puede moverse instruccion por instruccion, sino que debe ejecutar completa una de sus

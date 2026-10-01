@@ -2,6 +2,7 @@
 // Tema: String / Z-Function
 // Resumen: Cuenta cuantos t != "a" permiten partir s en trozos que sean t o "a", usando al
 // menos un t
+// O: (n + m), funcion Z
 // Detalle: Resuelve "a String Problem" (Codeforces): cuenta cuantos t != "a" permiten partir s
 // en trozos que sean t o "a", usando al menos un t. Si s es todo 'a', cualquier bloque de 2 a n
 // letras sirve, o sea n-1. Si no, todo t valido tiene que cubrir el primer caracter distinto de

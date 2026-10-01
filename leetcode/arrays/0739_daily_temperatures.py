@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Siguiente Dia mas Caliente
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2) en el peor caso; con pila monotona es (n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 739 "Daily Temperatures": para cada dia, cuantos dias faltan para uno mas caliente.
 # Tecnica del codigo: busqueda hacia adelante con un cache por temperatura, reusando el

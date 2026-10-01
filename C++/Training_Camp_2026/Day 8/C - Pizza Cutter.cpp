@@ -2,6 +2,7 @@
 // Tema: Combinatorics / Euler's Formula
 // Resumen: El abuelo Giuseppe corta una pizza rectangular con H cortes que entran por el lado
 // izquierdo y salen por el...
+// O: (1), formula de Euler para caras
 // Detalle: Resuelve "Pizza Cutter" (Day 8, problema C - Contest 08 [Avanzados]): el abuelo
 // Giuseppe corta una pizza rectangular con H cortes que entran por el lado izquierdo y salen
 // por el derecho, y V cortes que entran por abajo y salen por arriba (cada corte es una curva

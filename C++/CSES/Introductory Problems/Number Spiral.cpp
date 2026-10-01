@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Formula por Capas
 // Resumen: La espiral se lee por CAPAS: la capa k son las celdas con max(fila, columna) = k
+// O: (1) por consulta, formula por capas
 // Detalle: La espiral se lee por CAPAS: la capa k son las celdas con max(fila, columna) = k, y
 // toda la capa va entre (k-1)^2+1 y k^2. Segun la paridad de k la capa se recorre en un sentido
 // o en el otro, y de ahi salen las cuatro formulas de los ifs. CUANDO USAR: el problema pide el

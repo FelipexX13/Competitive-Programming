@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / DSU sobre Parejas
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2) en el peor caso: el find no comprime caminos
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 765 "Couples Holding Hands": intercambios minimos para que cada pareja quede junta.
 # Tecnica: se piensa por SILLAS, no por personas. Cada par de sillas (0,1), (2,3), ... es un

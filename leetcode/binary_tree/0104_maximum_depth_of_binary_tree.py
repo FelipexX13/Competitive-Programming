@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / DFS en Arbol Binario
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), visita cada nodo una vez
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 104 "Maximum Depth of Binary Tree": profundidad del arbol. Tecnica: dos funciones
 # mutuamente recursivas que bajan por derecha e izquierda guardando la profundidad de cada hoja

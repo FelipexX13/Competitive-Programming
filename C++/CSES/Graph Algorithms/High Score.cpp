@@ -2,6 +2,7 @@
 // Tema: CSES / Bellman-Ford (Camino Maximo)
 // Resumen: Camino de peso MAXIMO con aristas negativas, que es Bellman-Ford con la desigualdad
 // volteada
+// O: (n*m), Bellman-Ford maximizando y marcando ciclos positivos
 // Detalle: Camino de peso MAXIMO con aristas negativas, que es Bellman-Ford con la desigualdad
 // volteada. Se relaja n veces; si en la pasada n todavia mejora algo, hay un ciclo de ganancia
 // infinita. El detalle que hace correcto el problema: un ciclo positivo solo importa si se

@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Quitar Repetidos en Ordenado
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2): el pop(i) de cada paso es O(n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 26 "Remove Duplicates from Sorted Array": dejar cada valor una vez, en el sitio.
 # Tecnica: recorrer DE ATRAS hacia adelante y hacer pop cuando el actual es igual al anterior.

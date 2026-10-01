@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Dijkstra con Priority Queue
 // Resumen: Dijkstra clasico en O(m log n) con priority_queue de minimos
+// O: (m log n), Dijkstra con heap
 // Detalle: Dijkstra clasico en O(m log n) con priority_queue de minimos. Los dos detalles que
 // importan: la cola guarda el par (distancia, nodo) en ese orden para que ordene por distancia,
 // y el if(dist > distancia[actual]) continue descarta las entradas viejas que quedaron en la

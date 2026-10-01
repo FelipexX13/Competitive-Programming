@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Binaria sobre Monotonia
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (log n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 852 "Peak Index in a Mountain Array": la posicion del pico de un arreglo que sube y
 # luego baja. Tecnica: binaria comparando con el vecino. Si arr[m] > arr[m+1] el pico esta en m

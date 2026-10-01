@@ -2,6 +2,7 @@
 // Tema: Math / Optimization
 // Resumen: Dado S y M, halla el costo minimo de escoger k enteros positivos cuyo producto sea
 // al menos S
+// O: (n log n) por el sort
 // Detalle: Problema estilo Codeforces: dado S y M, halla el costo minimo de escoger k enteros
 // positivos cuyo producto sea al menos S, donde usar mas de un factor (k>1) cuesta M por cada
 // factor extra ((k-1)*M). Para cada k candidato calcula la suma minima de k factores con

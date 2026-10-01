@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Conteo con Frecuencias
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (10^3 = 1000), tres ciclos sobre los digitos
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3483 "Unique 3-Digit Event Numbers": cuantos numeros distintos de 3 cifras se pueden
 # armar con los digitos dados, que sean pares y no empiecen por 0. Tecnica: arreglo de

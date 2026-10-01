@@ -2,6 +2,7 @@
 // Tema: String / Rotacion Minima (Dos Punteros)
 // Resumen: Las huellas se guardan de forma circular, asi que ABCD, BCDA, CDAB y DABC son la
 // misma
+// O: (n), rotacion minima con dos punteros
 // Detalle: Resuelve "Fingerprints" (problema F, ICPC 2025): las huellas se guardan de forma
 // circular, asi que ABCD, BCDA, CDAB y DABC son la misma. Hay que quedarse con una sola copia
 // de cada huella distinta, representada por su rotacion lexicograficamente menor. La rotacion

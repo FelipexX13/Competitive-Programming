@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Maximo por Prefijo y Minimo por Sufijo
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n) tiempo y memoria
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3904 "Smallest Stable Index II": el primer indice donde (maximo del prefijo) menos
 # (minimo del sufijo) no pasa de k. Tecnica: se precalcula el minimo de cada SUFIJO recorriendo

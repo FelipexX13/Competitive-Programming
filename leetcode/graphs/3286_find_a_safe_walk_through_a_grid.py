@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Busqueda con Vida Restante
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n*m) con la poda de mejor vida; sin ella seria exponencial
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3286 "Find a Safe Walk Through a Grid": cruzar la cuadricula sin que la vida llegue a
 # 0, perdiendo 1 en cada celda marcada. Tecnica: busqueda con el estado (celda, vida) y la poda

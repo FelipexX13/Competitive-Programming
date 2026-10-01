@@ -2,6 +2,7 @@
 // Tema: Data Structures / Conteo de Inversiones y Redondeo Exacto
 // Resumen: Cuenta las inversiones de la secuencia de alturas (pares i < j con h[i] > h[j]) y
 // responde la fraccion que...
+// O: (n log n), inversiones con Fenwick sobre coordenadas comprimidas
 // Detalle: Resuelve "Skyline" (problema K, ICPC 2024): cuenta las inversiones de la secuencia
 // de alturas (pares i < j con h[i] > h[j]) y responde la fraccion que son del total de pares,
 // inversiones / (N(N-1)/2), con 3 decimales. El conteo es el de "frosh" (Frosh Week, CCPL, en

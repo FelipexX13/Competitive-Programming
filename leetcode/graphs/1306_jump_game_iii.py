@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / DFS con Visitados
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), cada posicion se visita una vez
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1306 "Jump Game III": desde start se salta arr[i] a izquierda o derecha; llegar a un
 # 0. Tecnica: DFS marcando visitados. Cada posicion tiene dos salidas, i+arr[i] e i-arr[i], asi

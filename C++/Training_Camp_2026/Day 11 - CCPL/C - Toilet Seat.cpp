@@ -2,6 +2,7 @@
 // Tema: Simulation / Ad Hoc
 // Resumen: Dada una secuencia de preferencias 'U' (arriba) o 'D' (abajo) de personas que usan
 // el bano una tras otra
+// O: (n) por caso
 // Detalle: Resuelve "Toilet Seat" (Day 11, problema C - CCPL (Kattis)): dada una secuencia de
 // preferencias 'U' (arriba) o 'D' (abajo) de personas que usan el bano una tras otra, donde el
 // primer caracter es la posicion inicial del asiento, pide calcular cuantos ajustes de asiento

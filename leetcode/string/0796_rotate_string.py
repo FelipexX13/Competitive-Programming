@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Rotacion de Cadena
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2) probando cada arranque; con s+s o KMP seria (n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 796 "Rotate String": decir si goal es una rotacion de s. Tecnica: para cada posicion
 # donde aparece la primera letra de goal, se compara dando la vuelta con el modulo (el k = 0

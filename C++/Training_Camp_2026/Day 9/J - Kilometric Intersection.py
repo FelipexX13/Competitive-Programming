@@ -1,7 +1,7 @@
 # <3
 # Tema: Geometry / Geometria 1D
-# Resumen: Resuelve "Kilometric Intersection" (Day 9, problema J - Contest 08 [Inicial &
-# Avanzado])
+# Resumen: Largo de la interseccion de dos intervalos de la recta, 0 si solo se tocan en un punto
+# O: (1), interseccion de dos intervalos
 # Detalle: Resuelve "Kilometric Intersection" (Day 9, problema J - Contest 08 [Inicial &
 # Avanzado]): dados dos intervalos cerrados [a,b] y [c,d] sobre una recta (tramos de carretera
 # en kilometros), se pide la longitud de su interseccion, siendo 0 si no se superponen o solo se

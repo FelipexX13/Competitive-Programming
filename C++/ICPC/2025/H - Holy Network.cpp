@@ -2,6 +2,7 @@
 // Tema: Graph / Clique Maximo (Bron-Kerbosch con Pivote)
 // Resumen: Dados N numeros, hallar el grupo mas grande en el que CADA PAR comparta un factor
 // mayor que 1
+// O: (3^(n/3)) en el peor caso, Bron-Kerbosch con pivote
 // Detalle: Resuelve "Holy Network" (problema H, ICPC 2025): dados N numeros, hallar el grupo
 // mas grande en el que CADA PAR comparta un factor mayor que 1. LA TRAMPA ES "CADA PAR". Que el
 // grupo este conectado NO alcanza: hay que pedir que todos con todos sean compatibles, o sea un

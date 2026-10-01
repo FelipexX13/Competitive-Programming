@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Intercalar Dos Mitades
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1470 "Shuffle the Array": intercalar la primera mitad con la segunda. Tecnica: cortar
 # por la mitad y meter alternando. Directo.

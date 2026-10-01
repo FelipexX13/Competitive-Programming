@@ -1,6 +1,7 @@
 // <3
 // Tema: Number Theory / Diferencia de Cuadrados
-// Resumen: Resuelve "SquareDiff" (problema C, ICPC 2024)
+// Resumen: Si n es diferencia de dos cuadrados; toda la solucion es la condicion n mod 4 != 2
+// O: (1), es la condicion n mod 4 != 2
 // Detalle: Resuelve "SquareDiff" (problema C, ICPC 2024). El codigo responde si n se puede
 // escribir como diferencia de dos cuadrados, y toda la solucion es una condicion: n = a^2 - b^2
 // tiene solucion <=> n mod 4 != 2 Por que: a^2 - b^2 = (a - b)(a + b), y esos dos factores

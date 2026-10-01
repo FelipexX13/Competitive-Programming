@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Prefijos Pares e Impares por Separado
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), dos arreglos de prefijos (pares e impares)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1664 "Ways to Make a Fair Array": cuantos indices se pueden borrar para que la suma
 # de posiciones pares quede igual a la de impares. Tecnica: DOS arreglos de prefijos, uno de las

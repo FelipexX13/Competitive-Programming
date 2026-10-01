@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / BFS de Bicoloreo (Bipartito)
 // Resumen: Bicoloreo por BFS: se pinta el primer nodo de 1 y cada vecino del color opuesto
+// O: (n + m), BFS pintando dos colores
 // Detalle: Bicoloreo por BFS: se pinta el primer nodo de 1 y cada vecino del color opuesto. Si
 // en algun momento aparece una arista entre dos nodos del MISMO color, el grafo tiene un ciclo
 // impar y no es bipartito. El for de afuera reinicia el BFS en cada componente, que es lo que

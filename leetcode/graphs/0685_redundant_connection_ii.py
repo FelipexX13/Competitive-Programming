@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Ciclo en Grafo Dirigido por Casos
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2) por el stack.index() del ciclo; el DFS solo es (n+m)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 685 "Redundant Connection II": la arista que sobra, pero en un arbol DIRIGIDO.
 # Tecnica: hay dos sintomas posibles y se tratan por separado. Un nodo con grado de entrada 2

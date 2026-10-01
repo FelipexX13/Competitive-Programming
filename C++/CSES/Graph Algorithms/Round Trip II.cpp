@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Ciclo en Grafo Dirigido (DFS de Tres Colores)
 // Resumen: Encontrar un ciclo en un grafo DIRIGIDO con DFS de tres colores
+// O: (n + m), DFS de tres colores
 // Detalle: Encontrar un ciclo en un grafo DIRIGIDO con DFS de tres colores: 0 = sin visitar, 1
 // = en la pila (gris), 2 = terminado (negro). Hay ciclo si y solo si aparece una arista hacia
 // un nodo GRIS, porque ese nodo es un ancestro en la rama actual. Una arista hacia un negro NO

@@ -1,6 +1,7 @@
 // <3
 // Tema: Dynamic Programming / Prefix Sums
 // Resumen: Cuenta los arreglos "zigzag" de longitud n con valores en [l
+// O: (n), sumas de prefijos
 // Detalle: Cuenta los arreglos "zigzag" de longitud n con valores en [l, r] (cada elemento
 // alterna entre mayor y menor que su vecino), modulo 1e9+7. DP sobre la longitud manteniendo,
 // para cada valor, cuantas secuencias terminan subiendo (up) o bajando (down); las transiciones

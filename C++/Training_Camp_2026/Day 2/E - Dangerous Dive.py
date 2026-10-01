@@ -1,6 +1,7 @@
 # <3
 # Tema: Data Structures / Hash Set
 # Resumen: De N buzos voluntarios que fueron a una mision, se conocen los R que regresaron
+# O: (n), un set
 # Detalle: Resuelve "Dangerous Dive" (Day 2, problema E - Maratona de Programacao da SBC 2013):
 # de N buzos voluntarios que fueron a una mision, se conocen los R que regresaron; hay que
 # reportar, en orden ascendente, los identificadores de los que NO volvieron (o '*' si volvieron

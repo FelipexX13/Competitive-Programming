@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Greedy de Maximo Prefijo
 // Resumen: Greedy: recorriendo de izquierda a derecha
+// O: (n), un barrido con el maximo del prefijo
 // Detalle: Greedy: recorriendo de izquierda a derecha, cada elemento que sea menor que el
 // maximo visto tiene que subir hasta ese maximo, y el costo se acumula. Nunca conviene subir un
 // elemento por encima de lo necesario ni bajar ninguno, porque las operaciones solo suman. POR

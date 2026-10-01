@@ -1,6 +1,7 @@
 // <3
 // Tema: Formulario / Tabla ASCII
 // Resumen: Tabla ASCII de los caracteres imprimibles (32 a 126) en cuatro columnas
+// O: no aplica: es la tabla de codigos
 // Detalle: Tabla ASCII de los caracteres imprimibles (32 a 126) en cuatro columnas, mas los
 // valores y trucos que se usan de verdad: c - '0' para el digito, c - 'a' para el indice de la
 // letra, y que 'a' - 'A' = 32 permite cambiar de caso con un xor. Incluye la nota del '\r' de

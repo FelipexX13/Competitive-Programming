@@ -1,6 +1,7 @@
 // <3
 // Tema: Implementation / Clasificacion de Cadenas por Prefijo
 // Resumen: Cada reporte que llega es una cadena de una lista fija y vale cierto puntaje
+// O: (n) por cadena
 // Detalle: Cada reporte que llega es una cadena de una lista fija y vale cierto puntaje:
 // UnreasonableProblemArrangement vale 10, WrongProblemX vale 100, SameProblemX vale 30,
 // UnreasonableLimitForProblemX vale 5, WeakTestsForProblemX vale 3 y BadProblemX vale 1, donde

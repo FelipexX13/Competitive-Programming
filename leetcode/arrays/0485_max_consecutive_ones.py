@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Racha Maxima
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), un contador que se reinicia en cada cero
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 485 "Max Consecutive Ones": la racha mas larga de unos. Tecnica: un contador que se
 # reinicia en cada cero. El if del final es porque si el arreglo termina en 1, la ultima racha

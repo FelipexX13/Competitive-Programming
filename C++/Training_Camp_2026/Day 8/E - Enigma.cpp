@@ -1,6 +1,7 @@
 // <3
 // Tema: Strings / Brute Force Matching
 // Resumen: Dado un mensaje cifrado y un crib (palabra que se asume esta en el mensaje original)
+// O: (n*m), comparacion directa
 // Detalle: Resuelve "Enigma" (Day 8, problema E - Contest 08 [Avanzados]): dado un mensaje
 // cifrado y un crib (palabra que se asume esta en el mensaje original), hay que contar en
 // cuantas posiciones puede empezar el crib dentro del mensaje cifrado, sabiendo que la maquina

@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Fuerza Bruta con Poda
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (limit^2); por inclusion-exclusion seria (1)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 2928 "Distribute Candies Among Children I": repartir n dulces entre 3 ninos sin que
 # ninguno reciba mas de limit. Tecnica: dos ciclos anidados sobre lo que recibe el primero y el

@@ -1,7 +1,7 @@
 # <3
 # Tema: Math / Ad-hoc
-# Resumen: Resuelve "Attention to the Meeting" (Day 3, problema A - Maratona SBC de Programacao
-# 2024)
+# Resumen: Duracion maxima de N discursos iguales con pausas de 1 minuto dentro de un tiempo tope
+# O: (1), se despeja de una desigualdad
 # Detalle: Resuelve "Attention to the Meeting" (Day 3, problema A - Maratona SBC de Programacao
 # 2024): Vinicius quiere saber la duracion maxima que puede tener cada uno de los N discursos de
 # una reunion, sabiendo que todos duran lo mismo, que hay una pausa de 1 minuto entre discursos

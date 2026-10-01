@@ -1,6 +1,7 @@
 // <3
 // Tema: Trees / Small-to-Large Merging (DSU on Tree)
 // Resumen: Dado un arbol con raiz en el nodo 1 donde cada nodo tiene un color
+// O: (N log^2 N), small to large sobre el arbol
 // Detalle: Resuelve "Distinct Colors" (Day 4, problema M - Contest 04 [Avanzados]): dado un
 // arbol con raiz en el nodo 1 donde cada nodo tiene un color, hay que calcular para cada nodo
 // la cantidad de colores distintos en su subarbol. Hace un DFS iterativo para obtener un orden

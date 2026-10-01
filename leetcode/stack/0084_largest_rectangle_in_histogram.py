@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Pila Monotona (version enredada)
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2) por el cruce de rangos del final; con pila monotona es (n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 84 "Largest Rectangle in Histogram": el rectangulo de area maxima bajo el histograma.
 # Tecnica del codigo: dos pasadas con pila guardando para cada altura los rangos donde

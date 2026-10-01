@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Construccion Divide y Conquista
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n log n): T(n) = T(n/2) + O(n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 932 "Beautiful Array": una permutacion de 1 a n donde nunca haya i < k < j con
 # arr[k]*2 == arr[i]+arr[j]. Tecnica: construccion recursiva. Si un arreglo sirve para n/2,

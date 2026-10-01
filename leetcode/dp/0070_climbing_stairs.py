@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Memoizacion
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n) tiempo y memoria; bottom-up con dos variables es (1) de memoria
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 70 "Climbing Stairs": de cuantas formas se sube una escalera de n subiendo 1 o 2.
 # Tecnica: Fibonacci con memoizacion, arreglo vis donde 0 significa sin calcular. Es el ejemplo

@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Numero Faltante
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n log n) por el sort; con Gauss o XOR seria (n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 268 "Missing Number": el numero de 0 a n que falta. Tecnica: ordenar y buscar la
 # primera posicion donde nums[i] != i. Es O(n log n) por el sort. Sale en O(n) sin ordenar de

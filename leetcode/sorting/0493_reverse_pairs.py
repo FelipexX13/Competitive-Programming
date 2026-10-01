@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Contar en la Fusion del Merge Sort
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n log n), contando durante la fusion
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 493 "Reverse Pairs": contar pares i < j con nums[i] > 2 * nums[j]. Tecnica: la de
 # contar inversiones, pero con el 2. Durante el merge sort, al fusionar dos mitades YA

@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Deshacer el Proceso al Reves
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n log n log(maximo)) por el modulo que salta varias restas de golpe
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1354 "Construct Target Array With Multiple Sums": desde un arreglo de unos, cada paso
 # reemplaza un elemento por la suma total; decir si se llega al objetivo. Tecnica: ir AL REVES.

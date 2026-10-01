@@ -1,6 +1,7 @@
 // <3
 // Tema: Greedy / Sorted Pairing
 // Resumen: Calcula la suma de diferencias absolutas entre pares ordenados de dos arreglos
+// O: (n log n) por el sort
 // Detalle: Calcula la suma de diferencias absolutas entre pares ordenados de dos arreglos.
 // Ordena ambos y suma las diferencias elemento a elemento.
 

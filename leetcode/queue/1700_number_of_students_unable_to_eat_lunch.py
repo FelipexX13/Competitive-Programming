@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Simulacion de Cola
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2) simulando con pop(0); contando los dos tipos seria (n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1700 "Number of Students Unable to Eat Lunch": los que no comen porque el sandwich de
 # arriba no les gusta y se van al final de la fila. Tecnica: simular la fila con pop(0) y

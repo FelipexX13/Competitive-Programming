@@ -2,6 +2,7 @@
 // Tema: Math / Greedy
 // Resumen: Un colegio tiene M clases y N frutas, y para cada fruta i y clase j se conoce
 // G[i][j]
+// O: (n log n) por el sort
 // Detalle: Resuelve "A healthy menu" (Day 6, problema A - Maratona SBC de Programacao 2025): un
 // colegio tiene M clases y N frutas, y para cada fruta i y clase j se conoce G[i][j], la
 // cantidad de estudiantes de esa clase a quienes les gusta esa fruta (un estudiante puede

@@ -1,6 +1,7 @@
 // <3
 // Tema: Data Structures / Fenwick Tree (Offline Queries)
 // Resumen: Dado un arreglo de N numeros y varias consultas (i, j, k)
+// O: ((n + q) log n), consultas offline con Fenwick
 // Detalle: Resuelve "K-query" (Day 4, problema I - Contest 04 [Avanzados]): dado un arreglo de
 // N numeros y varias consultas (i, j, k), hay que responder cuantos elementos del subarreglo
 // [i, j] son mayores que k. Ordena las consultas por k descendente y los elementos del arreglo

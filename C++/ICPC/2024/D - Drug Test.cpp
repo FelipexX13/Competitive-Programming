@@ -1,6 +1,7 @@
 // <3
 // Tema: Math / 2-Coloreo por Suma Potencia de 2
-// Resumen: Resuelve "Drug Test" (problema D, ICPC 2024)
+// Resumen: Partir 1..N en dos tipos para que x y su complemento a potencia de 2 queden opuestos
+// O: (N), un for aprovechando que el complemento siempre es menor
 // Detalle: Resuelve "Drug Test" (problema D, ICPC 2024). El codigo le asigna a cada x de 1 a N
 // un tipo, A o P, con el 0 fijo en P, de forma que x y p - x queden con tipos OPUESTOS, siendo
 // p la menor potencia de 2 que es mayor o igual a x (o sea, x y su complemento suman potencia

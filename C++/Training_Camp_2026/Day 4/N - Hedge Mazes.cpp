@@ -1,6 +1,7 @@
 // <3
 // Tema: Graph / Biconnected Components (Block-Cut Tree) + LCA
-// Resumen: Dado un laberinto de R salas y C corredores, para cada consulta (S
+// Resumen: Si hay exactamente un camino simple entre dos salas: block-cut tree mas LCA
+// O: (n + m) el block-cut tree, (log n) por consulta con LCA
 // Detalle: Resuelve "Hedge Mazes" (Day 4, problema N - Contest 04 [Avanzados]): dado un
 // laberinto de R salas y C corredores, para cada consulta (S, T) hay que decidir si existe
 // exactamente un camino simple entre S y T (si hay un ciclo en el medio, existiria mas de un

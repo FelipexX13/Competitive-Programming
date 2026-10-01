@@ -2,6 +2,7 @@
 // Tema: Formulario / Teoria de Numeros
 // Resumen: Divisores, phi, gcd, aritmetica modular y CRT, con las tablas hasta 20 para revisar
 // a mano un caso chico
+// O: (n log log n) la criba, (log n) el gcd y la exponenciacion
 // Detalle: Divisores, phi, gcd, aritmetica modular y CRT, con las tablas hasta 20 para revisar
 // a mano un caso chico. La mitad de los problemas de numeros se resuelven sabiendo que d(n),
 // sigma(n) y phi(n) salen directo de la factorizacion, y que en modular dividir significa

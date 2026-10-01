@@ -1,6 +1,7 @@
 // <3
 // Tema: Math / Brute Force
 // Resumen: Dada una permutacion de 0..n-1, determina si es antiaritmetica
+// O: (n^2), probando todos los pares
 // Detalle: Resuelve "Antiarithmetic?" (Day 11, problema H - CCPL (Kattis)): dada una
 // permutacion de 0..n-1, determina si es antiaritmetica, es decir si no existen tres indices
 // i<j<k tales que los valores p_i,p_j,p_k formen una progresion aritmetica (ninguna

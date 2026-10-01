@@ -1,6 +1,7 @@
 // <3
 // Tema: Graph / Componentes Fuente de la Condensacion (Tarjan)
-// Resumen: Resuelve "Lumina" (problema J, ICPC 2024)
+// Resumen: Minimo de gemas a encender a mano: componentes fuente de la condensacion de SCC
+// O: (n^2) por armar el grafo de alcance; el Tarjan es (n+m)
 // Detalle: Resuelve "Lumina" (problema J, ICPC 2024). Cada gema ilumina a las que caen dentro
 // de SU radio, y el codigo cuenta el minimo de gemas que hay que encender a mano para que al
 // final todas queden encendidas. EL GRAFO ES DIRIGIDO aunque venga de circulos: u alcanza a v

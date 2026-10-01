@@ -2,6 +2,7 @@
 // Tema: Combinatorics / Conteo de Distintos con Inventario de Frecuencias
 // Resumen: Dado un arreglo de digitos, contar cuantos numeros DISTINTOS de tres cifras se
 // pueden armar usando tres de...
+// O: (1000), tres ciclos sobre los digitos con inventario de frecuencias
 // Detalle: Resuelve "Unique 3-Digit Even Numbers" (LeetCode 3483): dado un arreglo de digitos,
 // contar cuantos numeros DISTINTOS de tres cifras se pueden armar usando tres de ellos, sin
 // cero inicial y que el resultado sea par. La trampa es "distintos". Si uno cuenta

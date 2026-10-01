@@ -1,6 +1,7 @@
 # <3
 # Tema: Greedy / Sorting
 # Resumen: En un cajon con n tipos de tenedores, cada tipo con a_i unidades
+# O: (n log n) por el sort
 # Detalle: Resuelve "Finding Forks" (Day 11, problema A - CCPL (Kattis)): en un cajon con n
 # tipos de tenedores, cada tipo con a_i unidades, al menos dos lugares del cajon quedaron vacios
 # porque no se recuerda que tipo va en cada lugar tras lavarlos. Pide el minimo numero de

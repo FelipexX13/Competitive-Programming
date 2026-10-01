@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Raiz Entera
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (raiz de x); con binaria seria (log x)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 69 "Sqrt(x)": la parte entera de la raiz cuadrada, sin usar sqrt. Tecnica: probar i =
 # 0, 1, 2, ... hasta que i*i pase de x. Es O(raiz de x), suficiente aqui. Con busqueda binaria

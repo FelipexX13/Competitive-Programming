@@ -1,6 +1,7 @@
 // <3
 // Tema: Formulario / Rectas y Conicas
-// Resumen: Geometria analitica de toda la vida
+// Resumen: Formulario: la recta en sus cuatro formas, paralelas, perpendiculares, corte y conicas
+// O: (1) cada formula, incluido el corte por Cramer
 // Detalle: Geometria analitica de toda la vida: pendiente, las cuatro formas de escribir una
 // recta, cuando dos son paralelas o perpendiculares, donde se cortan, y las ecuaciones de
 // circunferencia, parabola, elipse e hiperbola. El corte de dos rectas se resuelve por Cramer,

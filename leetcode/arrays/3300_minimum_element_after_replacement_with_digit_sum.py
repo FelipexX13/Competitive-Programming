@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Suma de Digitos
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n * digitos)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3300 "Minimum Element After Replacement With Digit Sum": el minimo despues de cambiar
 # cada numero por la suma de sus digitos. Tecnica: pasar a string, sumar los digitos y quedarse

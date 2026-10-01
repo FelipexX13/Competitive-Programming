@@ -2,6 +2,7 @@
 // Tema: CSES / Deteccion de Ciclo con Pila (DFS Iterativo)
 // Resumen: El mismo problema que Round Trip pero cambiando la cola por una PILA, o sea DFS en
 // vez de BFS
+// O: (n + m), DFS iterativo con pila explicita
 // Detalle: El mismo problema que Round Trip pero cambiando la cola por una PILA, o sea DFS en
 // vez de BFS, escrito de forma iterativa. Para detectar ciclos da igual cual de los dos se use,
 // y esa es la ensenanza: la estructura es lo unico que cambia entre BFS y DFS. Vale tener las

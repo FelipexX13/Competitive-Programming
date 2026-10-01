@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Agrupar de Atras hacia Adelante
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), dos barridos
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 482 "License Key Formatting": reagrupar la llave en bloques de k separados por guion,
 # donde solo el PRIMER grupo puede ser mas corto. Tecnica: como el grupo corto queda al inicio,

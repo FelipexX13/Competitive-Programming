@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Counting Sort
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n + rango), counting sort
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 912 "Sort an Array": ordenar, sin usar el sort de la libreria. Tecnica: counting sort
 # con diccionario de frecuencias y un barrido del minimo al maximo. Es O(n + rango), asi que

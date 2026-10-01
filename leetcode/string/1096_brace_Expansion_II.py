@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Expansion Recursiva de Llaves
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (salida * n): exponencial en el peor caso, porque la salida lo es
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1096 "Brace Expansion II": expandir una expresion con llaves y comas anidadas.
 # Tecnica: se busca la PRIMERA llave que cierra y su llave que abre mas cercana hacia atras

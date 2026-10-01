@@ -1,6 +1,7 @@
 // <3
 // Tema: Implementation / Fuerza Bruta O(n^2) sobre Subperiodos
-// Resumen: Probar TODOS los subperiodos
+// Resumen: Contar subperiodos con tantos depositos como retiros, por fuerza bruta O(n^2)
+// O: (n^2); medido, 5 casos de 10000 en 94 ms
 // Detalle: La otra forma de resolver "Account Qualifying" (problema A, ICPC 2025): probar TODOS
 // los subperiodos. Se mapea deposito a +1, retiro a -1 y saldo a 0, y cada tramo con suma 0
 // tiene tantos depositos como retiros. Es O(n^2), que con n = 10000 son 10^8 sumas. Medido: 5

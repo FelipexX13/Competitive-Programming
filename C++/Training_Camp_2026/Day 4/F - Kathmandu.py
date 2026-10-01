@@ -2,6 +2,7 @@
 # Tema: Greedy / Simulation
 # Resumen: Durante un vuelo de duracion D hay M comidas servidas en instantes y_i (hay que estar
 # despierto para comer)
+# O: (n), simulacion
 # Detalle: Resuelve "Kathmandu" (Day 4, problema F - Contest 04 [Avanzados]): durante un vuelo
 # de duracion D hay M comidas servidas en instantes y_i (hay que estar despierto para comer), y
 # hay que decidir si se puede dormir T minutos seguidos sin interrupcion sin perderse ninguna

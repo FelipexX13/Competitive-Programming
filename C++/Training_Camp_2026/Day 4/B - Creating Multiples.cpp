@@ -1,6 +1,7 @@
 // <3
 // Tema: Number Theory / Modular Arithmetic
-// Resumen: Dado un numero N de L digitos en base B
+// Resumen: Bajar un solo digito para que el numero sea multiplo de B+1, usando la suma alternada
+// O: (L * B), probando bajar cada digito
 // Detalle: Resuelve "Creating Multiples" (Day 4, problema B - Contest 04 [Avanzados]): dado un
 // numero N de L digitos en base B, hay que reducir (nunca aumentar) como mucho un digito para
 // que el numero resultante M sea multiplo de B+1, eligiendo la solucion que minimice M. Usa que

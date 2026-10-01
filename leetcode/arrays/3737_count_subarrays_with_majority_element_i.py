@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Contar por Bloques Iguales
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n) sobre los bloques, pero NO cuenta lo que pide el enunciado
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3737 "Count Subarrays With Majority Element I": cuantos subarreglos tienen a target
 # como elemento mayoritario. Tecnica del codigo: cuenta los bloques consecutivos de target y

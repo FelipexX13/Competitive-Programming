@@ -1,6 +1,7 @@
 // <3
 // Tema: Strings / Suffix Automaton
 // Resumen: Dado un string A de N caracteres y un conjunto S de M strings
+// O: (n) de construccion, (largo) por palabra consultada
 // Detalle: Resuelve "Beautiful Words" (Day 4, problema A - Contest 04 [Avanzados]): dado un
 // string A de N caracteres y un conjunto S de M strings, el score de una permutacion ciclica
 // B_i de A es el largo del substring mas largo de B_i que tambien aparece como substring de

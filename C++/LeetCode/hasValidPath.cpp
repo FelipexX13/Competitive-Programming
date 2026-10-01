@@ -2,6 +2,7 @@
 // Tema: Dynamic Programming / Camino en Grilla con Balance de Parentesis
 // Resumen: En una grilla de '(' y ')' hay que decir si existe un camino de la esquina superior
 // izquierda a la inferior...
+// O: (n*m*(n+m)) por el estado (celda, balance)
 // Detalle: Resuelve "Check if There Is a Valid Parentheses String Path" (LeetCode 2267): en una
 // grilla de '(' y ')' hay que decir si existe un camino de la esquina superior izquierda a la
 // inferior derecha, moviendose solo abajo o a la derecha, cuya cadena sea de parentesis valida.

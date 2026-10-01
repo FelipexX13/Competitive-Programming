@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Rotacion Minima (Dos Punteros)
 // Resumen: La rotacion lexicograficamente menor en O(n) con dos candidatos i y j
+// O: (n), dos punteros sobre s+s
 // Detalle: La rotacion lexicograficamente menor en O(n) con dos candidatos i y j. Se trabaja
 // sobre s + s (asi toda rotacion es un substring de largo n) y se comparan las rotaciones que
 // empiezan en i y en j caracter por caracter hasta que difieren en la posicion k. EL SALTO QUE

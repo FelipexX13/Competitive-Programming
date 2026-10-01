@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Cola
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n) el pop por el pop(0); con dos pilas seria (1) amortizado
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 232 "Implement Queue using Stacks": cola con push, pop, peek y empty. Tecnica del
 # codigo: una sola lista con append al final y pop(0) al inicio. OJO: el problema pide hacerlo

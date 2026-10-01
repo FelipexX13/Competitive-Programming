@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Periodo de una Cadena
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2) probando cada largo de bloque; con KMP es (n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 459 "Repeated Substring Pattern": decir si la cadena es un bloque repetido. Tecnica:
 # probar cada largo de bloque de 1 hasta n/2 y verificar que la cadena entera sea ese bloque

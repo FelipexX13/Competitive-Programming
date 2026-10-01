@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / DP en Dos Cadenas
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n*m) tiempo y memoria
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 115 "Distinct Subsequences": cuantas subsecuencias de s son iguales a t. Tecnica:
 # dp[i][j] = de cuantas formas se forma t[j:] usando s[i:]. Si las letras coinciden hay dos

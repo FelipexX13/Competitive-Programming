@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / DP sobre Residuos
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n*k), un vector de residuos por posicion
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3524 "Find X Value of Array I": para cada residuo, cuantos subarreglos tienen
 # producto congruente con ese residuo modulo k. Tecnica: dp[i][r] = cuantos subarreglos que

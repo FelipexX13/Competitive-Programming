@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Interseccion de Rectangulos
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (1)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 836 "Rectangle Overlap": decir si dos rectangulos alineados a los ejes se traslapan
 # en area. Tecnica: la interseccion de dos rectangulos es otro rectangulo, con ancho

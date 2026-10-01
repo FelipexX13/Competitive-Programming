@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Invertir Lista Ligada
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n) tiempo y (n) memoria; con tres punteros seria (1) de memoria
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 206 "Reverse Linked List": invertir la lista. Tecnica del codigo: pasar los valores a
 # un arreglo y reconstruir la lista al reves. Funciona pero gasta O(n) de memoria. La forma

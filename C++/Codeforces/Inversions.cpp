@@ -1,6 +1,7 @@
 // <3
 // Tema: Combinatorics / Conteo de Inversiones (cadena repetida)
 // Resumen: Cuenta las inversiones de S repetida N veces (N hasta 1e12) modulo 1e9+7
+// O: (n log n) con Fenwick sobre la cadena repetida
 // Detalle: Cuenta las inversiones de S repetida N veces (N hasta 1e12) modulo 1e9+7, es decir
 // pares i<j donde la letra de i va despues en el alfabeto que la de j. No se puede construir la
 // cadena, asi que se cuenta la contribucion de cada posicion por separado. Una posicion i con

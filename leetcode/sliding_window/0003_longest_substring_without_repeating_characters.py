@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Ventana Deslizante con Set
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), cada letra entra y sale una vez
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3 "Longest Substring Without Repeating Characters": la subcadena mas larga sin letras
 # repetidas. Tecnica: dos punteros y un set con las letras de la ventana. Si la letra de la

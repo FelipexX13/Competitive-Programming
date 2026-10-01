@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Invariantes Aritmeticos
 // Resumen: Sin simular nada: dos condiciones cerradas
+// O: (1) por caso, son dos invariantes
 // Detalle: Sin simular nada: dos condiciones cerradas. Cada movimiento quita 3 monedas en
 // total, asi que (a+b) tiene que ser divisible por 3. Y cada movimiento quita al menos 1 de
 // cada pila, asi que ninguna puede ser mas del DOBLE de la otra, max(a,b) <= 2*min(a,b). Las

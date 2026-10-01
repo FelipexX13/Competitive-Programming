@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / KMP (Busqueda de Patron)
 // Resumen: KMP: cuantas veces aparece p en s, en O(n + m)
+// O: (n + m), KMP
 // Detalle: KMP: cuantas veces aparece p en s, en O(n + m). Primero la funcion de prefijos de p,
 // pi[i] = el largo del borde mas largo de p[0..i]. Despues se recorre s manteniendo j, cuanto
 // del patron ya coincide; cuando falla, en vez de volver a empezar se retrocede a pi[j-1], que

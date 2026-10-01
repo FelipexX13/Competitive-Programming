@@ -1,6 +1,7 @@
 // <3
 // Tema: Number Theory / BFS sobre Residuos
-// Resumen: Resuelve "Only1s0s" (problema H, ICPC 2024)
+// Resumen: El menor multiplo de N escrito solo con unos y ceros: BFS sobre los residuos modulo N
+// O: (N), BFS sobre los N residuos
 // Detalle: Resuelve "Only1s0s" (problema H, ICPC 2024). El codigo busca el menor multiplo M de
 // N que se escribe solo con unos y ceros, y responde M / N. M puede tener muchisimos digitos,
 // asi que no se busca entre numeros sino entre RESIDUOS modulo N: dos numeros con el mismo

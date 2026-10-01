@@ -2,6 +2,7 @@
 // Tema: Graph / BFS
 // Resumen: Halla la longitud de la transformacion mas corta de beginWord a endWord cambiando
 // una letra a la vez
+// O: (n * largo * 26), BFS sobre el diccionario
 // Detalle: Resuelve "Word Ladder": halla la longitud de la transformacion mas corta de
 // beginWord a endWord cambiando una letra a la vez, usando solo palabras de wordList. BFS por
 // niveles donde cada palabra es un nodo y dos palabras se conectan si difieren en exactamente

@@ -1,6 +1,7 @@
 # <3
 # Tema: Simulation / Cycle Detection
 # Resumen: Hay N interruptores que alternan (encienden/apagan) subconjuntos de M focos
+# O: (n), deteccion de ciclos en el grafo funcional
 # Detalle: Resuelve "Switches" (Day 8, problema I - Contest 08 [Avanzados]): hay N interruptores
 # que alternan (encienden/apagan) subconjuntos de M focos; el conserje los presiona en el orden
 # fijo 1,2,...,N,1,2,... y se detiene apenas todos los focos quedan apagados a la vez; dado el

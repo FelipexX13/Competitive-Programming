@@ -1,7 +1,7 @@
 // <3
 // Tema: Combinatorics / Formula Cerrada con Inverso Modular
-// Resumen: Con n puntos alineados hay que contar de cuantas formas se dibujan k segmentos que
-// no se solapen (si pueden...
+// Resumen: Contar k segmentos sin solaparse sobre n puntos: colapsa en el binomial C(n+k-1, 2k)
+// O: (k) por el binomial con inverso modular
 // Detalle: Resuelve "Number of Sets of K Non-Overlapping Line Segments" (LeetCode 1621): con n
 // puntos alineados hay que contar de cuantas formas se dibujan k segmentos que no se solapen
 // (si pueden compartir un extremo), modulo 1e9+7. Toda la DP se colapsa en un solo binomial: la

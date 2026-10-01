@@ -2,6 +2,7 @@
 // Tema: CSES / Dijkstra sobre Grafo de Capas
 // Resumen: Dijkstra donde el estado no es solo la ciudad sino el par (ciudad, ya use el
 // descuento)
+// O: (m log n), Dijkstra sobre el grafo de dos capas
 // Detalle: Dijkstra donde el estado no es solo la ciudad sino el par (ciudad, ya use el
 // descuento). Es la tecnica de GRAFO DE CAPAS o grafo producto: se duplica el grafo, en la capa
 // 0 nada esta usado y en la capa 1 el descuento ya se gasto, y las aristas que aplican el

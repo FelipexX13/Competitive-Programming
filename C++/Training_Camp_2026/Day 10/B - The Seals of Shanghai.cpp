@@ -2,6 +2,7 @@
 // Tema: Number Theory / Number Theory (GCD y Divisores)
 // Resumen: Eligiendo un modulo fijo M > 1, cada sello con numero A_i se desbloquea en la ronda
 // de su residuo A_i mod M
+// O: (raiz de n) por buscar divisores
 // Detalle: Resuelve "The Seals of Shanghai" (Day 10, problema B - Contest 09 [Avanzados]):
 // eligiendo un modulo fijo M > 1, cada sello con numero A_i se desbloquea en la ronda de su
 // residuo A_i mod M; hay que hallar el minimo numero de residuos distintos (rondas) necesarias

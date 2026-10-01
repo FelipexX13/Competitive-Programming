@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Dos Punteros sobre Cuadrados
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (raiz de c), dos punteros sobre los cuadrados
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 633 "Sum of Square Numbers": decir si c se puede escribir como a^2 + b^2. Tecnica: se
 # avanza a2 desde 0 y se baja b1 desde floor(sqrt(c)) al mismo tiempo, probando en cada paso si

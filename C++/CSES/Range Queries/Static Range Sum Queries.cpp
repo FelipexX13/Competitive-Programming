@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Prefix Sums
-// Resumen: La estructura mas barata que existe
+// Resumen: Suma de rango con el arreglo fijo: prefijos, O(n) de construccion y O(1) por consulta
+// O: (n) de construccion y (1) por consulta
 // Detalle: La estructura mas barata que existe: pref[i] = suma de los primeros i, y la suma de
 // [a,b] sale como pref[b] - pref[a-1]. Construccion O(n), consulta O(1), y ni una linea de
 // estructura. CUANDO USAR: el arreglo NO cambia y la operacion tiene INVERSA (suma, xor,

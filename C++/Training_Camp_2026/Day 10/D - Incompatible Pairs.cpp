@@ -2,6 +2,7 @@
 // Tema: Greedy / Prefijos sobre Secuencias Balanceadas
 // Resumen: Una secuencia de N bailarines Yang ('(') y Yin (')') donde cada Yang debe
 // emparejarse con un Yin posterior
+// O: (n), prefijos sobre la secuencia balanceada
 // Detalle: Resuelve "Incompatible Pairs" (Day 10, problema D - Contest 09 [Avanzados]): una
 // secuencia de N bailarines Yang ('(') y Yin (')') donde cada Yang debe emparejarse con un Yin
 // posterior; un par (i, j) es incompatible si al formarlo los bailarines restantes ya no pueden

@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Floyd-Warshall
 // Resumen: Floyd-Warshall, la solucion canonica de todos-contra-todos
+// O: (n^3) tiempo y (n^2) memoria
 // Detalle: Floyd-Warshall, la solucion canonica de todos-contra-todos: tres for anidados donde
 // el de AFUERA es el nodo intermedio k. Ese orden no es negociable, y es el error numero uno de
 // esta plantilla: si k va por dentro, el algoritmo no considera caminos con varios intermedios

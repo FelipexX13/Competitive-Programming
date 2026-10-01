@@ -1,6 +1,7 @@
 # <3
 # Tema: Constructive Algorithms / Hashing
 # Resumen: N bloques numerados 1..N tienen cada uno un color
+# O: (n), hashing de bloques
 # Detalle: Resuelve "Handling the Blocks" (Day 4, problema E - Contest 04 [Avanzados]): N
 # bloques numerados 1..N tienen cada uno un color, y en cada turno se pueden intercambiar dos
 # bloques que compartan color; hay que decidir si es posible ordenar la secuencia de forma

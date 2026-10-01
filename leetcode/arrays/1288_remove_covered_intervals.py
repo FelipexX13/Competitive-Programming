@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Intervalos Cubiertos
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2); ordenando bien seria (n log n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1288 "Remove Covered Intervals": cuantos intervalos quedan despues de borrar los que
 # estan contenidos en otro. Tecnica: comparar todos los pares, O(n^2). La version buena: ordenar

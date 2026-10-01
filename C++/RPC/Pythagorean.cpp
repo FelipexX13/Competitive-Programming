@@ -1,6 +1,7 @@
 // <3
 // Tema: Number Theory / Ternas Pitagoricas
 // Resumen: Dado n, cuenta en cuantas ternas pitagoricas participa, separando cuatro casos
+// O: (n) sobre las ternas generadas
 // Detalle: Dado n, cuenta en cuantas ternas pitagoricas participa, separando cuatro casos: n
 // como hipotenusa (primitivas y no primitivas) y n como cateto (primitivas y no primitivas).
 // Para n como hipotenusa recorre cada cateto a y verifica si n*n - a*a es cuadrado perfecto,

@@ -1,6 +1,7 @@
 # <3
 # Tema: Implementation / Ad Hoc
 # Resumen: Alice, Beto y Clara juegan "cero o uno" mostrando cada uno la mano con un valor 0 o 1
+# O: (n)
 # Detalle: Resuelve "Zero or One" (Day 2, problema A - Maratona de Programacao da SBC 2013):
 # Alice, Beto y Clara juegan "cero o uno" mostrando cada uno la mano con un valor 0 o 1; gana
 # quien elige un valor distinto al de los otros dos, y si nadie queda en esa situacion (todos

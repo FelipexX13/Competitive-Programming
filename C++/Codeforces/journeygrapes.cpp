@@ -2,6 +2,7 @@
 // Tema: Number Theory / GCD and LCM
 // Resumen: Calcula a dividido entre mcd(a,b), que es el multiplicador para obtener mcm(a,b)
 // desde b
+// O: (log(min(a,b))) por el gcd
 // Detalle: Calcula a dividido entre mcd(a,b), que es el multiplicador para obtener mcm(a,b)
 // desde b.
 

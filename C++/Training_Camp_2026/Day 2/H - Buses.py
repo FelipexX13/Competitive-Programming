@@ -1,6 +1,7 @@
 # <3
 # Tema: Math / Matrix Exponentiation
 # Resumen: Dada una fila de longitud N metros formada por buses (10 m) y minibuses (5 m)
+# O: (k^3 log m), exponenciacion de matrices
 # Detalle: Resuelve "Buses" (Day 2, problema H - Maratona de Programacao da SBC 2013): dada una
 # fila de longitud N metros formada por buses (10 m) y minibuses (5 m), con K colores posibles
 # para minibus y L colores para bus, cuenta de cuantas formas distintas se puede armar la fila,

@@ -1,6 +1,7 @@
 // <3
 // Tema: Data Structures / Heap con Borrado Perezoso
 // Resumen: Hay n enteros no negativos y q operaciones
+// O: (n log n), heap con borrado perezoso
 // Detalle: Resuelve "Aquarium Bubble Lights" (Codeforces, problema B): hay n enteros no
 // negativos y q operaciones; en cada una PRIMERO se le resta 1 a todos (sin bajar de cero) y
 // DESPUES, si x no es cero, se hace a[x] = max(a[x], v). Tras cada operacion hay que decir

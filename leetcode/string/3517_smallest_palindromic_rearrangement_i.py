@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Palindromo Lexicograficamente Menor
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n + 26), frecuencias y armar las dos mitades
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3517 "Smallest Palindromic Rearrangement I": reordenar las letras para formar el
 # palindromo alfabeticamente menor. Tecnica: se cuentan las letras, se parte cada cuenta a la

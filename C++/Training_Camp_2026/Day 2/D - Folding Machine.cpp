@@ -1,7 +1,7 @@
 // <3
 // Tema: Search / State-Space BFS
-// Resumen: Una cinta de N celdas se puede doblar por cualquier punto entre celdas adyacentes
-// (incluso en los extremos
+// Resumen: Doblar una cinta sumando las celdas superpuestas: BFS sobre el espacio de estados
+// O: (estados * transiciones), BFS sobre el espacio de estados
 // Detalle: Resuelve "Folding Machine" (Day 2, problema D - Maratona de Programacao da SBC
 // 2013): una cinta de N celdas se puede doblar por cualquier punto entre celdas adyacentes
 // (incluso en los extremos, lo que invierte la cinta), sumando los valores de las celdas que

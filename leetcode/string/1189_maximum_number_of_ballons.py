@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Frecuencias con Letras Repetidas
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), contar cinco letras
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1189 "Maximum Number of Balloons": cuantas veces se puede armar la palabra balloon.
 # Tecnica: contar b, a, l, o, n y dividir entre lo que pide la palabra. La trampa es que la l y

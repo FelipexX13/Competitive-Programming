@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Palindromo en Lista Ligada
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2) por el insert(0,...); con liebre y tortuga seria (n) y (1) de memoria
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 234 "Palindrome Linked List": decir si la lista se lee igual al reves. Tecnica: se
 # mide el largo, se parte a la mitad y se guardan la primera mitad en orden y la segunda al

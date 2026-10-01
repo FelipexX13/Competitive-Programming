@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Ventana con Frecuencias
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), ventana con diccionario de frecuencias
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 2958 "Length of Longest Subarray With at Most K Frequency": el subarreglo mas largo
 # donde ningun valor aparece mas de k veces. Tecnica: ventana deslizante con diccionario de

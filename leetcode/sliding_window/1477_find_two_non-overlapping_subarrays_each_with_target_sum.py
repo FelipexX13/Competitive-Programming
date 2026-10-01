@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Dos Ventanas sin Traslape
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n log n) por ordenar los candidatos por donde terminan
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1477 "Find Two Non-overlapping Sub-arrays Each With Target Sum": dos subarreglos que
 # sumen target cada uno y que juntos sean lo mas cortos posible. Tecnica: primero una ventana

@@ -2,6 +2,7 @@
 // Tema: Trees / Segment Tree
 // Resumen: Se mantiene un arbol genealogico donde nacen hijos (agregados al final de la lista
 // de hijos de su padre) y...
+// O: (log N) por operacion, segment tree
 // Detalle: Resuelve "Monarchy in Vertigo" (Day 4, problema H - Contest 04 [Avanzados]): se
 // mantiene un arbol genealogico donde nacen hijos (agregados al final de la lista de hijos de
 // su padre) y mueren personas, y tras cada muerte hay que reportar quien es el nuevo monarca

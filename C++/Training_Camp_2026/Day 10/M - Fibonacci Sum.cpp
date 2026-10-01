@@ -2,6 +2,7 @@
 // Tema: Math / Fibonacci (Fast Doubling)
 // Resumen: Para T casos con N y M (hasta 1e9), calcula la suma F(N)+F(N+1)+...+F(M) modulo
 // 1e9+7
+// O: (log n), fast doubling
 // Detalle: Resuelve "Fibonacci Sum" (Day 10, problema M - Contest 09 [Avanzados]): para T casos
 // con N y M (hasta 1e9), calcula la suma F(N)+F(N+1)+...+F(M) modulo 1e9+7. Usa la identidad
 // telescopica de que la suma de Fibonacci sum_{i=0}^{k} F(i) = F(k+2) - 1, por lo que la suma

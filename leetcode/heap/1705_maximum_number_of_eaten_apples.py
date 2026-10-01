@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Heap por Fecha de Vencimiento
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n log n), un heap por fecha de vencimiento
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1705 "Maximum Number of Eaten Apples": cada dia aparecen manzanas que se danan en
 # cierta fecha y se puede comer una por dia; maximizar cuantas se comen. Tecnica: heap minimo

@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Ordenar y Buscar
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n log n): sort mas una binaria por elemento
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3759 "Count Elements With At Least K Greater Values": cuantos elementos tienen al
 # menos k elementos estrictamente mayores. Tecnica: ordenar y para cada posicion buscar con

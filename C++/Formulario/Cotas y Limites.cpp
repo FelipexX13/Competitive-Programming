@@ -1,6 +1,7 @@
 // <3
 // Tema: Formulario / Cotas y Limites
 // Resumen: La tabla que se mira ANTES de escribir codigo
+// O: no aplica: es la tabla que se mira ANTES de escribir codigo
 // Detalle: La tabla que se mira ANTES de escribir codigo: dado el n del enunciado, que
 // complejidad cabe en el tiempo limite, hasta donde llega cada tipo entero y cuanta memoria
 // ocupa un arreglo. Leer n <= 20 y pensar en bitmask, o n <= 450 y pensar en Floyd-Warshall,

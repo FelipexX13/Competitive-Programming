@@ -2,6 +2,7 @@
 // Tema: CSES / Greedy Lexicografico con Cota de Factibilidad
 // Resumen: Se arma la respuesta caracter por caracter tomando siempre la letra mas chica
 // posible
+// O: (n * 26), greedy lexicografico con cota de factibilidad
 // Detalle: Se arma la respuesta caracter por caracter tomando siempre la letra mas chica
 // posible, pero antes de fijarla se verifica que lo que queda TODAVIA se pueda terminar. La
 // cota es la clave: con r caracteres por poner, ninguna letra puede quedar con mas de (r+1)/2

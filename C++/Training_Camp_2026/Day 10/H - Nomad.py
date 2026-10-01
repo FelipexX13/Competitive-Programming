@@ -1,6 +1,7 @@
 # <3
 # Tema: Greedy / Constructive Algorithms
 # Resumen: Kai debe dormir exactamente D noches alternando entre N lugares
+# O: (n), construccion directa
 # Detalle: Resuelve "Nomad" (Day 10, problema H - Contest 09 [Avanzados]): Kai debe dormir
 # exactamente D noches alternando entre N lugares, cada uno con un limite d_i de dias
 # CONSECUTIVOS que tolera antes de expulsarlo; hay que construir un plan de D dias que nunca

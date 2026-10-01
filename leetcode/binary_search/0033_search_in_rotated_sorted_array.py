@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Busqueda en Arreglo Rotado
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n) en el peor caso por el ini+=1/fin-=1; la binaria limpia es (log n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 33 "Search in Rotated Sorted Array": buscar un valor en un arreglo ordenado que fue
 # rotado. Tecnica del codigo: binaria con casos, y cuando no puede decidir de que lado esta el

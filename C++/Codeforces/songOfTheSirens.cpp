@@ -1,6 +1,7 @@
 // <3
 // Tema: String / KMP sobre Cadena Recursiva (Duplicacion)
 // Resumen: Hay n+1 canciones definidas por s_{i+1} = s_i + t[i] + s_i
+// O: (|t| + |s| * log k), KMP sobre la cadena que se duplica
 // Detalle: Resuelve "Song of the Sirens" (Codeforces, problema G): hay n+1 canciones definidas
 // por s_{i+1} = s_i + t[i] + s_i, y cada consulta pide cuantas veces aparece un nombre w dentro
 // de s_k, modulo 1e9+7. La cadena crece al doble en cada paso, asi que s_n puede medir 2^100000

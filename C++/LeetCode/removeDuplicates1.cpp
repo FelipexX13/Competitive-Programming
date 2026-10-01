@@ -2,6 +2,7 @@
 // Tema: String / Monotonic Stack
 // Resumen: Devuelve el menor string lexicografico que contiene cada letra de s exactamente una
 // vez
+// O: (n), pila monotona
 // Detalle: Resuelve "Remove Duplicate Letters": devuelve el menor string lexicografico que
 // contiene cada letra de s exactamente una vez. Usa una pila monotona, sacando letras mayores
 // mientras todavia aparezcan mas adelante (cnt > 0) y no esten ya en el resultado.

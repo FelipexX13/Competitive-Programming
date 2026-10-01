@@ -1,6 +1,7 @@
 // <3
 // Tema: Number Theory / Divisors
 // Resumen: Dado un poema de N versos con longitudes l_1..l_N
+// O: (raiz de n) por buscar divisores
 // Detalle: Resuelve "Aesthetics in poetry" (Day 7, problema A - Contest 07 [Avanzados]): dado
 // un poema de N versos con longitudes l_1..l_N, hay que hallar el menor entero K>1 (K-elegante)
 // tal que N sea multiplo de K y, para cada resto i=0..K-1 al dividir las longitudes por K, haya

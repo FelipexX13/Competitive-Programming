@@ -1,6 +1,7 @@
 // <3
 // Tema: Graph / Max Flow
 // Resumen: Dada una red de n computadoras y m conexiones dirigidas con capacidad c
+// O: (V^2 * E) con Dinic; en grafos de unidades baja mucho
 // Detalle: Resuelve "Download Speed" (Day 7, problema H - Contest 07 [Avanzados]): dada una red
 // de n computadoras y m conexiones dirigidas con capacidad c, hay que hallar la velocidad
 // maxima a la que Kotivalo (computadora n) puede descargar datos del servidor (computadora 1)

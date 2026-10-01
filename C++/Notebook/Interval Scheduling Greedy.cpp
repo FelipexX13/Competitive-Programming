@@ -1,7 +1,6 @@
 // <3
 // Tema: Greedy / Interval Scheduling
-// Resumen: Maximo numero de intervalos que se pueden elegir sin que se solapen (tareas con hora
-// de inicio y fin
+// Resumen: Maximo de intervalos sin solaparse: ordenar por hora de FIN, no de inicio
 // O: (n log n), ordenar por FIN y tomar el que no choque
 // Uso: ordenar por v[i].second y avanzar mientras inicio >= ultimo_fin
 // Detalle: Maximo numero de intervalos que se pueden elegir sin que se solapen (tareas con hora

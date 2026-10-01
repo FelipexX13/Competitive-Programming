@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Prefix XOR
 // Resumen: Idem prefix sums pero con xor, y funciona por la misma razon
+// O: (n) de construccion y (1) por consulta
 // Detalle: Idem prefix sums pero con xor, y funciona por la misma razon: el xor es su propia
 // inversa, asi que pref[r] ^ pref[l-1] cancela todo lo de antes de l. Los elementos repetidos
 // se anulan de a pares. CUANDO USAR: ver que el xor tiene inversa es lo que abre la puerta.

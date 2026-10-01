@@ -1,6 +1,7 @@
 // <3
 // Tema: Game Theory / Posiciones Perdedoras (potencias de 2)
 // Resumen: Determina el ganador de un juego analizando si N+2 es potencia de 2
+// O: (log n), posiciones perdedoras en potencias de 2
 // Detalle: Determina el ganador de un juego analizando si N+2 es potencia de 2. Si lo es, el
 // segundo jugador gana ("mastermei"), si no, el primero ("the greatest").
 

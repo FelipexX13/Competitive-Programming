@@ -1,6 +1,7 @@
 // <3
 // Tema: Greedy / Budget Optimization
-// Resumen: Dado un presupuesto c y costos a, b
+// Resumen: Maximo de posters con presupuesto c, comprando al menos uno de cada tipo
+// O: (1), formula sobre el presupuesto
 // Detalle: Dado un presupuesto c y costos a, b, calcula el maximo de posters que se pueden
 // comprar comprando al menos uno de cada tipo.
 

@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Secuencia Autodescriptiva
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), con el s += optimizado de CPython
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 481 "Magical String": la cadena de 1 y 2 donde los grupos de iguales tienen las
 # longitudes que la cadena misma describe; contar los 1 entre los primeros n. Tecnica: se

@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Siguiente Mayor con Pila
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), cada nodo entra y sale de la pila una vez
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1019 "Next Greater Node In Linked List": para cada nodo, el primer valor mayor que
 # aparece despues. Tecnica: pila monotona decreciente que guarda valores Y posiciones. Cuando

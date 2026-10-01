@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Greedy de Tercias
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n log n) por el sort
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 2144 "Minimum Cost of Buying Candies With Discount": por cada dos dulces comprados,
 # el tercero (mas barato de los tres) es gratis. Tecnica: ordenar y recorrer DE MAYOR A MENOR

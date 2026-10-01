@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Evaluacion en Notacion Polaca
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2) por el lit[0:len-2] que copia en cada operador; con pop() seria (n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 150 "Evaluate Reverse Polish Notation": evaluar una expresion en notacion postfija.
 # Tecnica: pila de numeros. Si el token es numero se empuja; si es operador se sacan los DOS de

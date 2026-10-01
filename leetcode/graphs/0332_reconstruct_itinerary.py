@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Camino Euleriano (Hierholzer)
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (m log m) por ordenar los destinos; Hierholzer es (m)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 332 "Reconstruct Itinerary": usar todos los tiquetes una sola vez, empezando en JFK y
 # escogiendo el itinerario lexicograficamente menor. Tecnica: Hierholzer iterativo. Se avanza

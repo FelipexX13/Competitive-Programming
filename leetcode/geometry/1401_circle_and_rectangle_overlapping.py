@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Punto mas Cercano en un Rectangulo
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (1), el clamp del centro al rectangulo
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1401 "Circle and Rectangle Overlapping": decir si un circulo toca un rectangulo.
 # Tecnica: el truco es el CLAMP. Se recorta el centro del circulo al rectangulo con max(x1,

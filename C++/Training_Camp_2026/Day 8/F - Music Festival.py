@@ -1,6 +1,7 @@
 # <3
 # Tema: Dynamic Programming / Bitmask DP
 # Resumen: Hay N <= 10 escenarios, cada uno con varios shows con horario [inicio
+# O: (2^n * n), bitmask DP
 # Detalle: Resuelve "Music Festival" (Day 8, problema F - Contest 08 [Avanzados]): hay N <= 10
 # escenarios, cada uno con varios shows con horario [inicio,fin) y una cantidad de canciones
 # conocidas del artista; hay que elegir un show por cada escenario (viendolo completo, sin

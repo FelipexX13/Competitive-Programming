@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Numeros Romanos
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2) por los pop(i); con un solo barrido seria (n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 13 "Roman to Integer": convertir un numero romano a entero. Tecnica: dos
 # diccionarios, uno de simbolos sueltos y otro de los seis pares restadores (IV, IX, XL, XC, CD,

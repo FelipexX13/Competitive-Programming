@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Los Dos mas Baratos
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2) generando todos los pares; con los dos minimos seria (n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 2706 "Buy Two Chocolates": comprar dos chocolates sin quedar en rojo, devolviendo lo
 # que sobra. Tecnica: genera todas las parejas y toma la suma minima, O(n^2). Basta con los dos

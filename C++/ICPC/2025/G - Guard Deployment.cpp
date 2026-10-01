@@ -1,6 +1,7 @@
 // <3
 // Tema: Geometry / Convex Hull y Barrido Angular
-// Resumen: Hay edificios rectangulares con altura
+// Resumen: Perimetro del convex hull de los edificios y altura minima para que las torres se vean
+// O: (H^2) por el barrido angular; el convex hull es (H log H)
 // Detalle: Resuelve "Guard Deployment" (problema G, ICPC 2025): hay edificios rectangulares con
 // altura, y hay que dar el perimetro de la cerca convexa mas corta que los encierra y la altura
 // minima comun de las torres para que todas se vean entre si. Son dos problemas sueltos

@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / BFS Multifuente + BFS de Escape
 // Resumen: Dos BFS encadenados, y el primero es el truco que vale aprender
+// O: (n*m), un BFS multifuente de monstruos y otro de escape
 // Detalle: Dos BFS encadenados, y el primero es el truco que vale aprender: un BFS MULTIFUENTE,
 // con TODOS los monstruos encolados con distancia 0 a la vez. Eso da, en una sola pasada
 // O(n*m), la distancia de cada celda al monstruo mas cercano, que es lo mismo que correr un BFS

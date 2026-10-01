@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Fuerza Bruta sobre Digitos
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (rango * digitos); la version II pide digit DP
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3751 "Total Waviness of Numbers in Range I": contar los picos y valles de los digitos
 # de todos los numeros del rango. Tecnica: recorrer el rango entero y en cada numero mirar las

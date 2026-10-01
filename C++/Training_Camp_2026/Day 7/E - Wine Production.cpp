@@ -1,6 +1,7 @@
 // <3
 // Tema: Data Structures / Mo's Algorithm
 // Resumen: Dadas las temperaturas de N dias y Q consultas de rango [l,r]
+// O: ((n + q) raiz de n), Mo
 // Detalle: Resuelve "Wine Production" (Day 7, problema E - Contest 07 [Avanzados]): dadas las
 // temperaturas de N dias y Q consultas de rango [l,r], hay que calcular para cada rango la
 // "calidad" x maxima tal que existan al menos x temperaturas distintas que se repitan al menos

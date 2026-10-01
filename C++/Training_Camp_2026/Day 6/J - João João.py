@@ -2,6 +2,7 @@
 # Tema: Ad Hoc / Conjuntos
 # Resumen: Ya se crearon 10 tareas para un examen, cada una con un nivel de dificultad entre 1 y
 # 4
+# O: (n), operaciones de conjuntos
 # Detalle: Resuelve "Joao Joao" (Day 6, problema J - Maratona SBC de Programacao 2025): ya se
 # crearon 10 tareas para un examen, cada una con un nivel de dificultad entre 1 y 4, y se
 # necesita saber cuantas tareas nuevas hacen falta para poder armar un examen con exactamente 4

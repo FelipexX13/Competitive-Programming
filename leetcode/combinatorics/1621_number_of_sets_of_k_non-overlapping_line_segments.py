@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Stars and Bars
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (k) por el comb de Python; es una sola formula
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1621 "Number of Sets of K Non-Overlapping Line Segments": cuantas formas hay de
 # dibujar k segmentos que no se traslapen sobre n puntos. Tecnica: una sola linea, comb(n+k-1,

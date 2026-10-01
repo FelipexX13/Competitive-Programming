@@ -1,7 +1,7 @@
 // <3
 // Tema: Combinatorics / Construction
-// Resumen: Problema de construccion (el nombre sugiere relacion con subconjuntos de suma
-// prohibida)
+// Resumen: Construir una permutacion sin puntos fijos intercambiando cada par de consecutivos
+// O: (n), intercambiar consecutivos de a dos
 // Detalle: Problema de construccion (el nombre sugiere relacion con subconjuntos de suma
 // prohibida): arma una permutacion de 1..n intercambiando cada pareja de consecutivos (p[1]=2,
 // p[2]=1, p[3]=4, p[4]=3, ...), de forma que p[i] != i para todo i (derangement simple) y cada

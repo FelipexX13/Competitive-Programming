@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Greedy por Frecuencia
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n + 26 log 26) por ordenar las frecuencias
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3016 "Minimum Number of Pushes to Type Word II": lo mismo pero con letras repetidas.
 # Tecnica: ahora SI importa el orden. Se cuentan frecuencias, se ordena de mayor a menor y se

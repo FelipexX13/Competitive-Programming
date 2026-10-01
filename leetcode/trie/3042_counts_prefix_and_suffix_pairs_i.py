@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Trie hacia Adelante y al Reves
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2 * largo), compara todos los pares
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3042 "Count Prefix and Suffix Pairs I": contar pares donde una palabra es a la vez
 # prefijo y sufijo de la otra. Tecnica: dos tries por palabra, uno con la palabra derecha y otro

@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Avanzar hasta la Mitad
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n+m); el problema pide O(log(n+m)) con binaria
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 4 "Median of Two Sorted Arrays": la mediana de dos arreglos ordenados. Tecnica: dos
 # punteros que avanzan como en un merge, pero sin construir el arreglo fusionado, solo contando

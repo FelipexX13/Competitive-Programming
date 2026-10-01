@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Contar Subcadenas
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (patrones * |word|)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1967 "Number of Strings That Appear as Substrings in Word": cuantos patrones aparecen
 # en la palabra. Tecnica: el operador in de Python sobre cada patron. Dos lineas.

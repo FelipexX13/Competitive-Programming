@@ -1,6 +1,7 @@
 // <3
 // Tema: Graph / 2-SAT (Kosaraju)
-// Resumen: Resuelve "Signal Coverage" (problema G, ICPC 2024)
+// Resumen: Escoger antenas con restricciones de a dos variables: 2-SAT resuelto con Kosaraju
+// O: (n + m), 2-SAT con Kosaraju sobre el grafo de implicaciones
 // Detalle: Resuelve "Signal Coverage" (problema G, ICPC 2024). Cada antena se instala o no; hay
 // parejas de las que AL MENOS UNA debe instalarse, y dos antenas que coinciden en tiempo (sus
 // intervalos se cruzan) y en espacio (sus circulos se tocan) NO pueden instalarse las dos. El

@@ -2,6 +2,7 @@
 // Tema: CSES / Funcion de Prefijos (Cadena de Bordes)
 // Resumen: Todos los bordes de s (prefijos que tambien son sufijos) salen de la funcion de
 // prefijos
+// O: (n), funcion de prefijos
 // Detalle: Todos los bordes de s (prefijos que tambien son sufijos) salen de la funcion de
 // prefijos, sin buscar nada mas. El borde mas largo es pi[n-1]; y el siguiente mas largo es el
 // borde mas largo DE ESE BORDE, o sea pi[pi[n-1] - 1]; y asi hasta llegar a 0. POR QUE LA

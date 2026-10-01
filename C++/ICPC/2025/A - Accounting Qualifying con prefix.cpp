@@ -2,6 +2,7 @@
 // Tema: Data Structures / Prefix Sums con Primera Aparicion
 // Resumen: De una lista de transacciones hay que dar el mayor deposito d, el mayor retiro w (el
 // mas negativo) y r
+// O: (n), prefijos con la primera aparicion de cada valor
 // Detalle: Resuelve "Account Qualifying" (problema A, ICPC 2025): de una lista de transacciones
 // hay que dar el mayor deposito d, el mayor retiro w (el mas negativo) y r, el largo del
 // subperiodo mas largo con TANTOS depositos como retiros. EL TRUCO DE r: se mapea deposito a

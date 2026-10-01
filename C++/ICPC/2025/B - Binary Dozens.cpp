@@ -1,6 +1,7 @@
 // <3
 // Tema: Number Theory / Modulo de un Binario Gigante
 // Resumen: Dado un numero en binario de hasta 500 bits
+// O: (largo del binario), un barrido acumulando el residuo
 // Detalle: Resuelve "Binary Dozens" (problema B, ICPC 2025): dado un numero en binario de hasta
 // 500 bits, dar su resto al dividir por 12. 500 bits son numeros de hasta 10^150, asi que no
 // hay tipo entero que los guarde. Pero el resto si se puede calcular leyendo los digitos de

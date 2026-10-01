@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Repetido y Faltante
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n log n) por el sort; con las sumas de Gauss seria (n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 645 "Set Mismatch": en un arreglo de 1 a n, cual valor se duplico y cual falta.
 # Tecnica: ordenar y mirar los vecinos. Si dos son iguales, ese es el repetido; si la diferencia

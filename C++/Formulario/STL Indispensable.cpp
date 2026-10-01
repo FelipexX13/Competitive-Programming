@@ -2,6 +2,7 @@
 // Tema: Formulario / STL Indispensable
 // Resumen: Las funciones de la libreria estandar que la gente reimplementa a mano por no saber
 // que existen
+// O: depende del contenedor: (log n) en map y set, (1) en los hash
 // Detalle: Las funciones de la libreria estandar que la gente reimplementa a mano por no saber
 // que existen, y las que se usan mal por un detalle: next_permutation solo recorre las n! si el
 // vector arranca ordenado (verificado: desde {1,2,3} da 6 permutaciones, desde {3,1,2} solo 2),

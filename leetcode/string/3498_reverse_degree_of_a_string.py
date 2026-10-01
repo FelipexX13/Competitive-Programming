@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Suma Ponderada
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), suma ponderada en una pasada
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3498 "Reverse Degree of a String": sumar, por cada letra, su posicion invertida en el
 # alfabeto (a vale 26, z vale 1) por su posicion en la cadena. Tecnica: diccionario con los 26

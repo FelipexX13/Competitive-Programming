@@ -2,6 +2,7 @@
 // Tema: CSES / Identidad MEX = XOR
 // Resumen: Se pide la grilla donde cada celda es el MEX de lo que ya hay a su izquierda en la
 // fila y arriba en la...
+// O: (n^2), que es el tamano de la salida
 // Detalle: Se pide la grilla donde cada celda es el MEX de lo que ya hay a su izquierda en la
 // fila y arriba en la columna, y resulta que eso es EXACTAMENTE i ^ j. Una sola linea, sin
 // construir nada ni calcular ningun MEX. Verificado calculando el MEX de verdad en una grilla

@@ -1,6 +1,7 @@
 // <3
 // Tema: Dynamic Programming / Steiner Tree
 // Resumen: Un reino tiene N ciudades, K de ellas capitales
+// O: (3^k * n + 2^k * m log n), Steiner tree sobre k terminales
 // Detalle: Resuelve "Joining Capitals" (Day 8, problema J - Contest 08 [Avanzados]): un reino
 // tiene N ciudades, K de ellas capitales; hay que construir lineas de transmision (costo =
 // distancia euclidiana) de forma que todas las capitales queden conectadas entre si por un

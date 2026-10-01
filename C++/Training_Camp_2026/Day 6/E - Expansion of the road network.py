@@ -1,7 +1,7 @@
 # <3
 # Tema: Graph / Tree Reconstruction (BFS por capas)
-# Resumen: Resuelve "Expansion of the road network" (Day 6, problema E - Maratona SBC de
-# Programacao 2025)
+# Resumen: Reconstruir el arbol original de un grafo al que le agregaron atajos: BFS por capas
+# O: (n + m), BFS por capas
 # Detalle: Resuelve "Expansion of the road network" (Day 6, problema E - Maratona SBC de
 # Programacao 2025): el mapa actual de N ciudades y M caminos pudo haber surgido de un arbol
 # original (un camino unico entre cada par de ciudades) al que se le agrego una carretera

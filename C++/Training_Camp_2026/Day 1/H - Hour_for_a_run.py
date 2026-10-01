@@ -2,6 +2,7 @@
 # Tema: Math / Implementation
 # Resumen: Vinicius corre V vueltas a una pista con N carteles igualmente espaciados y quiere
 # saber
+# O: (n)
 # Detalle: Resuelve "Hour for a Run" (Day 1, problema H - Maratona de Programacao da SBC 2019):
 # Vinicius corre V vueltas a una pista con N carteles igualmente espaciados y quiere saber, para
 # cada decil (10%, 20%, ..., 90% del entrenamiento), cuantos carteles debe contar como minimo

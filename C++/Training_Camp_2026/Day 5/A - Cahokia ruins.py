@@ -1,6 +1,7 @@
 # <3
 # Tema: Math / Simulacion
-# Resumen: Al entrar a una sala rectangular H x W
+# Resumen: En cuanto tiempo chocan dos paredes que se acercan a 1 m/s en una sala H x W
+# O: (H), una pasada por las filas
 # Detalle: Resuelve "Cahokia ruins" (Day 5, problema A - Contest 05 [Avanzados]): al entrar a
 # una sala rectangular H x W, las paredes este y oeste empiezan a moverse una hacia la otra a 1
 # m/s cada una; cada fila i tiene un ancho de pared (arreglos left y right en el codigo) medido

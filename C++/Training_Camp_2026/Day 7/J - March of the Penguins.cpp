@@ -1,6 +1,7 @@
 // <3
 // Tema: Graph / Max Flow
 // Resumen: Hay N tempanos de hielo con coordenadas (x,y)
+// O: (V^2 * E) con Dinic, probando cada tempano como destino
 // Detalle: Resuelve "March of the Penguins" (Day 7, problema J - Contest 07 [Avanzados]): hay N
 // tempanos de hielo con coordenadas (x,y), cada uno con n_i pinguinos y un limite m_i de saltos
 // que se pueden dar desde el (un pinguino puede saltar de un tempano a otro si la distancia

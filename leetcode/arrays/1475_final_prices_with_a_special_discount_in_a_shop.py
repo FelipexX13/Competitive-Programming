@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Siguiente Menor o Igual
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2); con pila monotona seria (n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1475 "Final Prices With a Special Discount in a Shop": a cada precio se le resta el
 # primer precio posterior que sea menor o igual. Tecnica: busqueda hacia adelante, O(n^2). Con n

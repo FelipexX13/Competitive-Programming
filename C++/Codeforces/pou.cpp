@@ -2,6 +2,7 @@
 // Tema: Math / Fibonacci Fast Doubling
 // Resumen: Calcula el n-ésimo número de Fibonacci modulo 2026 usando exponenciación rápida de
 // matriz
+// O: (log n), Fibonacci con fast doubling
 // Detalle: Calcula el n-ésimo número de Fibonacci modulo 2026 usando exponenciación rápida de
 // matriz.
 

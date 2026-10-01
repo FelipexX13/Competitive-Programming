@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Intervalos Cerrados por Letra
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (26^2 + 26*n), por el barrido de validacion de cada letra
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1520 "Maximum Number of Non-Overlapping Substrings": la mayor cantidad de subcadenas
 # que no se traslapen y donde cada letra que aparece, aparezca COMPLETA. Tecnica: para cada

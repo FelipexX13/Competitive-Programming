@@ -2,6 +2,7 @@
 # Tema: Dynamic Programming / Binary Search
 # Resumen: Una llanta de circunferencia C tiene N agujeros a distancias F_i desde una marca de
 # referencia
+# O: (log N), binaria
 # Detalle: Resuelve "Patches" (Day 2, problema I - Maratona de Programacao da SBC 2013): una
 # llanta de circunferencia C tiene N agujeros a distancias F_i desde una marca de referencia;
 # hay dos tipos de parche, de largo T1 y T2, y cada parche cubre de forma continua todos los

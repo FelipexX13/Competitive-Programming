@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Sumar Uno a un Numero por Digitos
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (L^2) con L digitos, por el 10**c que se recalcula en cada paso
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 66 "Plus One": sumar 1 a un numero dado como arreglo de digitos. Tecnica: aca arma el
 # entero completo multiplicando por potencias de 10, le suma 1 y lo vuelve a partir en digitos.

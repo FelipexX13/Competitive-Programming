@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Rerooting en Arbol
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), tres DFS: tamanos, respuesta de la raiz y rerooting
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 834 "Sum of Distances in Tree": para cada nodo, la suma de distancias a todos los
 # demas. Tecnica: tres DFS. El primero calcula el TAMANO de cada subarbol, el segundo la

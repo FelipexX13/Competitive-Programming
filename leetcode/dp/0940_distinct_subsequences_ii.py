@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / DP con Resta de Repetidos
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), duplicar y restar la aparicion previa
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 940 "Distinct Subsequences II": cuantas subsecuencias DISTINTAS tiene una cadena.
 # Tecnica: cada letra nueva duplica las subsecuencias (con y sin ella), asi que dp = dp*2. Para

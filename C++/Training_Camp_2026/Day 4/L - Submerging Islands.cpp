@@ -2,6 +2,7 @@
 // Tema: Graph / Articulation Points (Tarjan)
 // Resumen: Dado un grafo de N islas conectadas por M puentes, hay que contar cuantas islas, al
 // sumergirse
+// O: (n + m), puntos de articulacion con Tarjan
 // Detalle: Resuelve "Submerging Islands" (Day 4, problema L - Contest 04 [Avanzados]): dado un
 // grafo de N islas conectadas por M puentes, hay que contar cuantas islas, al sumergirse,
 // desconectarian partes de la ciudad. Es el clasico problema de puntos de articulacion: hace un

@@ -2,6 +2,7 @@
 // Tema: CSES / DSU (Union-Find)
 // Resumen: DSU con compresion de camino y union por tamano, que juntas dan casi O(1) amortizado
 // por operacion
+// O: (n + m) con DSU casi constante por operacion
 // Detalle: DSU con compresion de camino y union por tamano, que juntas dan casi O(1) amortizado
 // por operacion. Se unen todas las aristas dadas y despues se recorre 1..n preguntando quien es
 // su propio padre: esos son los representantes, uno por componente. Con c componentes hacen

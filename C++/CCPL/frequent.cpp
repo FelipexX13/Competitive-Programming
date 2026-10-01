@@ -1,6 +1,7 @@
 // <3
 // Tema: Data Structures / Sparse Table sobre Bloques Iguales
 // Resumen: Un arreglo de n enteros NO DECRECIENTE y q consultas [i,j]
+// O: (n log n) de tabla y (1) por consulta, sparse table sobre bloques
 // Detalle: Resuelve "Frequent Values" (problema E, CCPL): un arreglo de n enteros NO
 // DECRECIENTE y q consultas [i,j]; para cada una hay que decir cuantas veces aparece el valor
 // mas repetido de ese rango. LA LLAVE DEL PROBLEMA ES QUE EL ARREGLO VIENE ORDENADO, y sin eso

@@ -1,6 +1,7 @@
 // <3
 // Tema: Greedy / Prefix Sums
 // Resumen: Dados N votantes con coordenadas (x,y) y preferencia 'b' o 'w'
+// O: (n), sumas de prefijos
 // Detalle: Resuelve "Maximizing Advertising" (Day 7, problema B - Contest 07 [Avanzados]):
 // dados N votantes con coordenadas (x,y) y preferencia 'b' o 'w', hay que elegir dos
 // rectangulos disjuntos de lados paralelos a los ejes (uno para PSD, otro para PS) que

@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Elemento Mayoritario
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n) tiempo y memoria; Boyer-Moore lo hace con (1)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 169 "Majority Element": el que aparece mas de n/2 veces. Tecnica: diccionario de
 # frecuencias y se toma el maximo. O(n) tiempo, O(n) memoria. El algoritmo de Boyer-Moore lo

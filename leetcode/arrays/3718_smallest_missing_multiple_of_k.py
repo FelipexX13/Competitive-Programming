@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Buscar el Primer Multiplo Ausente
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (respuesta): prueba todos los enteros y filtra por k
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3718 "Smallest Missing Multiple of K": el menor multiplo de k que no esta en el
 # arreglo. Tecnica: set con los valores y probar k, 2k, 3k, ... hasta que falte uno. El ciclo

@@ -1,6 +1,7 @@
 // <3
 // Tema: Data Structures / Fenwick Tree (Prefix Minimum, Dominancia 3D)
 // Resumen: Cada uno de N competidores tiene un ranking en 3 competencias distintas
+// O: (n log n), Fenwick de minimos para dominancia 3D
 // Detalle: Resuelve "The day of the competitors" (Day 4, problema J - Contest 04 [Avanzados]):
 // cada uno de N competidores tiene un ranking en 3 competencias distintas, un competidor es
 // "excelente" si ningun otro lo supera en las tres a la vez, y hay que contar cuantos

@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Comparar un Binario con su Reverso
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (bits de n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3750 "Minimum Number of Flips to Reverse Binary String": cuantos bits hay que cambiar
 # para que el binario de n sea igual a su reverso. Tecnica: bin(n)[2:] da el binario sin el 0b,

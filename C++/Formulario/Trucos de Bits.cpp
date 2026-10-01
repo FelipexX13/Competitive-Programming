@@ -2,6 +2,7 @@
 // Tema: Formulario / Trucos de Bits
 // Resumen: Identidades de bits con la situacion concreta en la que sirve cada una, que es la
 // parte que no se deduce
+// O: (1) cada truco, que es justamente la gracia
 // Detalle: Identidades de bits con la situacion concreta en la que sirve cada una, que es la
 // parte que no se deduce: n & (n-1) es "potencia de 2", n & -n es el avance del Fenwick, y el
 // xor se usa porque a^a=0 deja solo lo que aparece un numero impar de veces. Los valores de los

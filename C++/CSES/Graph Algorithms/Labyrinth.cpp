@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / BFS con Reconstruccion de Camino
 // Resumen: BFS en grilla guardando de donde vino cada celda en la matriz anterior[][]
+// O: (n*m), BFS guardando de donde se llego a cada celda
 // Detalle: BFS en grilla guardando de donde vino cada celda en la matriz anterior[][], y al
 // final se sube desde el destino hasta el origen leyendo esos padres y se invierte. La
 // direccion de cada paso se deduce comparando coordenadas con el padre. CUANDO USAR: cuando el

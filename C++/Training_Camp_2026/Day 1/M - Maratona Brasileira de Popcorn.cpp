@@ -1,7 +1,7 @@
 // <3
 // Tema: Greedy / Binary Search
-// Resumen: Resuelve "Maratona Brasileira de Popcorn" (Day 1, problema M - Maratona de
-// Programacao da SBC 2019)
+// Resumen: Repartir bolsas en C tramos contiguos minimizando el peor: binaria sobre la respuesta
+// O: (n log(suma)), binaria sobre la respuesta con un greedy (n)
 // Detalle: Resuelve "Maratona Brasileira de Popcorn" (Day 1, problema M - Maratona de
 // Programacao da SBC 2019): N bolsas de palomitas en fila deben repartirse en C tramos
 // contiguos (uno por competidor), cada competidor come a lo sumo T unidades por segundo, y se

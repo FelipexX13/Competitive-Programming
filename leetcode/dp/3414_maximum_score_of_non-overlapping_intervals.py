@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / DP de Intervalos con Binaria
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n log n * 4), con el desempate lexicografico encima
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3414 "Maximum Score of Non-Overlapping Intervals": escoger hasta 4 intervalos que no
 # se traslapen maximizando el peso, y devolver los indices mas pequenos en orden lexicografico.

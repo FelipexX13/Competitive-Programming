@@ -1,7 +1,6 @@
 // <3
 // Tema: Math / Divisores de la Suma Total
-// Resumen: Hay n puntos en un circulo y se dan los n HUECOS entre puntos consecutivos (dist[i]
-// va del punto i al i+1
+// Resumen: Quitar los minimos puntos de un circulo para que el resto quede equiespaciado
 // O: (sqrt(S) + d(S)*n^2) en el peor caso, pero los dos filtros lo dejan casi lineal
 // Uso: lee n y los n huecos del circulo; imprime cuantos puntos quitar, o -1
 // Detalle: Hay n puntos en un circulo y se dan los n HUECOS entre puntos consecutivos (dist[i]

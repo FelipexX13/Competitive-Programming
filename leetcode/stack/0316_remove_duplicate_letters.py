@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Pila Monotona Lexicografica
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), cada letra entra y sale de la pila una vez
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 316 "Remove Duplicate Letters": dejar una sola copia de cada letra y que el resultado
 # sea el lexicograficamente menor. Tecnica: pila monotona con dos apoyos, un Counter de lo que

@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Heap Maximo de Tamano k
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n*m log k) en el peor caso, recorriendo todas las parejas
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 373 "Find K Pairs with Smallest Sums": los k pares (a, b) de menor suma. Tecnica:
 # heap de tamano k con los signos invertidos (Python solo trae heap minimo, asi que se guarda

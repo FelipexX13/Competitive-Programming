@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Greedy sobre Ordenado
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n log n) por el sort; los pop(0) suman (n^2) encima
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1561 "Maximum Number of Coins You Can Get": se reparten los montones en tercias y de
 # cada tercia uno se queda con el del medio; maximizar lo propio. Tecnica: ordenar y de cada

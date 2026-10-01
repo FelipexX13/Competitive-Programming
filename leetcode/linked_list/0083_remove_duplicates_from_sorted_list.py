@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Recorrido de Lista Ligada
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), una pasada
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 83 "Remove Duplicates from Sorted List": quitar los repetidos de una lista ordenada.
 # Tecnica: como esta ordenada, los repetidos estan pegados, asi que basta recordar el ultimo

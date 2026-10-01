@@ -1,7 +1,7 @@
 # <3
 # Tema: Math / Bit Manipulation
-# Resumen: La palabra S(x) se define recursivamente como S(x) = S(p(x)) + x + S(p(x)) (con
-# S('a')='a'
+# Resumen: La letra en la posicion n de una palabra recursiva gigante: ruler sequence
+# O: (n * bits)
 # Detalle: Resuelve "Meme Wars" (Day 7, problema G - Contest 07 [Avanzados]): la palabra S(x) se
 # define recursivamente como S(x) = S(p(x)) + x + S(p(x)) (con S('a')='a', y p(x) la letra
 # anterior), y hay que hallar la letra en la posicion n de la enorme palabra S('z'). Esta es la

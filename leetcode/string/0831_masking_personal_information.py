@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Enmascarar por Formato
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), es manejo de casos
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 831 "Masking Personal Information": tapar un correo o un telefono segun reglas fijas.
 # Tecnica: primero decide si es telefono o correo intentando convertir el ultimo caracter a

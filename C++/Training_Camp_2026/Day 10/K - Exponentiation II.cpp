@@ -1,6 +1,7 @@
 // <3
 // Tema: Number Theory / Exponenciacion Modular (Torre de Exponentes)
 // Resumen: Calcula a^(b^c) modulo 1e9+7 para n consultas, con a, b, c hasta 1e9
+// O: (log n) por nivel de la torre, con el teorema de Euler
 // Detalle: Resuelve "Exponentiation II" (Day 10, problema K - Contest 09 [Avanzados]): calcula
 // a^(b^c) modulo 1e9+7 para n consultas, con a, b, c hasta 1e9, donde el exponente b^c es
 // demasiado grande para calcularlo directamente. Usa el Pequeno Teorema de Fermat: como MOD es

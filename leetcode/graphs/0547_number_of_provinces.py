@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Componentes Conexas
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2), que es leer la matriz de adyacencia
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 547 "Number of Provinces": cuantos grupos de ciudades conectadas hay. Tecnica: contar
 # componentes conexas con DFS y un set de visitados. Cada vez que se arranca un DFS nuevo se

@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Grafo con Pesos Multiplicativos
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (consultas * (n+m)) por el DFS de cada una; con DSU con pesos es casi (1)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 399 "Evaluate Division": dadas razones a/b, responder consultas de otras razones.
 # Tecnica: grafo donde la arista a -> b pesa a/b y la inversa b -> a pesa 1/v. La respuesta de

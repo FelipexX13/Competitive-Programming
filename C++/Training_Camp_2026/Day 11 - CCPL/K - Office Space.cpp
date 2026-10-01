@@ -1,6 +1,7 @@
 // <3
 // Tema: Geometry / 2D Difference Array (Coordinate Compression)
 // Resumen: En una oficina rectangular de w x h pies
+// O: (n^2) sobre las coordenadas comprimidas, arreglo de diferencias 2D
 // Detalle: Resuelve "Office Space" (Day 11, problema K - CCPL (Kattis)): en una oficina
 // rectangular de w x h pies, hasta 20 empleados piden un cubiculo rectangular (esquinas
 // suroeste y noreste); pide reportar el area total, el area sin reclamar, el area en conflicto

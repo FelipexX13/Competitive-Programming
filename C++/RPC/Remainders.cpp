@@ -2,6 +2,7 @@
 // Tema: Number Theory / Reconstruccion con Divisores
 // Resumen: Reconstruye el multiconjunto oculto K a partir de la sucesion S(n) = suma de (n mod
 // k) para todo k en K
+// O: (raiz de n) buscando divisores
 // Detalle: Reconstruye el multiconjunto oculto K a partir de la sucesion S(n) = suma de (n mod
 // k) para todo k en K, dados S(1)..S(N). Se apoya en dos observaciones: como todo k es al menos
 // 2, 1 mod k = 1 y por tanto S(1) es directamente el tamano |K|; y al mirar la diferencia S(n)

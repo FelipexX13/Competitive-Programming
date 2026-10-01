@@ -1,7 +1,7 @@
 # <3
 # Tema: Ad-hoc / Simulation
-# Resumen: Resuelve "Enigma of the Jewelry Case" (Day 3, problema E - Maratona SBC de
-# Programacao 2024)
+# Resumen: Deshacer K rotaciones de 90 grados de una matriz NxN creciente por filas y columnas
+# O: (N^2) por rotacion, con K mod 4 rotaciones efectivas
 # Detalle: Resuelve "Enigma of the Jewelry Case" (Day 3, problema E - Maratona SBC de
 # Programacao 2024): la princesa de Nlogonia tenia una caja NxN donde los valores crecen
 # estrictamente por fila y por columna (de izquierda a derecha y de arriba a abajo); su hermana

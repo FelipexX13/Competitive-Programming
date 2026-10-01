@@ -2,6 +2,7 @@
 // Tema: Greedy / Huffman sobre Frecuencias Variables en el Tiempo
 // Resumen: Cada simbolo tiene una frecuencia que cambia con el tiempo, f_i(t), lineal a trozos
 // con un quiebre en m_i
+// O: (n log n) por el heap de Huffman
 // Detalle: Resuelve "Efficient Encoding" (problema E, ICPC 2025): cada simbolo tiene una
 // frecuencia que cambia con el tiempo, f_i(t), lineal a trozos con un quiebre en m_i. Para cada
 // t se arma el mejor codigo prefijo (Huffman) y se paga C(t) = suma de f_i(t) por el largo de

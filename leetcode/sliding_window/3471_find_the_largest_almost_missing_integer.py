@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Contar en Cuantas Ventanas Aparece
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n*k) por rehacer el set de cada ventana; incremental seria (n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3471 "Find the Largest Almost Missing Integer": el mayor valor que aparece en
 # exactamente UNA de las ventanas de tamano k. Tecnica: para cada ventana se saca el set de sus

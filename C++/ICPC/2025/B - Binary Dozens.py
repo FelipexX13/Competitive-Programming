@@ -1,6 +1,7 @@
 # <3
 # Tema: Number Theory / Modulo de un Binario Gigante (Python)
 # Resumen: El resto entre 12 de un numero binario de hasta 500 bits
+# O: (largo del binario); en Python los enteros son ilimitados
 # Detalle: La version en Python del problema B de ICPC 2025 ("Binary Dozens"): el resto entre 12
 # de un numero binario de hasta 500 bits. En Python son dos lineas porque los enteros son de
 # precision arbitraria: int(b, 2) convierte la cadena binaria completa (aunque mida 10^150) y

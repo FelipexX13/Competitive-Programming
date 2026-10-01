@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Suma con Acarreo en Lista Ligada
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n+m), dos pasadas
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 2 "Add Two Numbers": sumar dos numeros guardados en listas ligadas, con el digito
 # menos significativo primero. Tecnica: recorrer las dos listas a la vez sumando digito por

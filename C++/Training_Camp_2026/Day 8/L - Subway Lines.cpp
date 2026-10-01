@@ -1,6 +1,7 @@
 // <3
 // Tema: Graphs / LCA (Binary Lifting)
 // Resumen: En un sistema de subte con forma de arbol
+// O: (n log n) de tabla y (log n) por consulta, LCA con binary lifting
 // Detalle: Resuelve "Subway Lines" (Day 8, problema L - Contest 08 [Avanzados]): en un sistema
 // de subte con forma de arbol, las lineas de tren van y vuelven entre pares de estaciones
 // terminales (hojas), pasando por el unico camino entre ellas; dadas Q consultas con dos pares

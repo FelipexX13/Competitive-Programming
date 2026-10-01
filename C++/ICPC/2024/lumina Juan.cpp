@@ -2,6 +2,7 @@
 // Tema: Graph / Componentes Fuente con Kosaraju
 // Resumen: El minimo de gemas a encender a mano para que la reaccion en cadena las encienda
 // todas
+// O: (n^2) por armar el grafo; el Kosaraju es (n+m)
 // Detalle: La otra solucion del problema J de ICPC 2024 ("Lumina"): el minimo de gemas a
 // encender a mano para que la reaccion en cadena las encienda todas. La respuesta es la
 // cantidad de componentes fuertemente conexas SIN aristas entrantes desde otra componente. A

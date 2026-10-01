@@ -2,6 +2,7 @@
 // Tema: Graph / Clique Maximo con Backtracking Iterativo
 // Resumen: El grupo mas grande donde CADA PAR comparte un factor mayor que 1, o sea un clique
 // maximo
+// O: exponencial en el peor caso, acotada por las podas
 // Detalle: La otra solucion correcta del problema H de ICPC 2025 ("Holy Network"): el grupo mas
 // grande donde CADA PAR comparte un factor mayor que 1, o sea un clique maximo. A diferencia de
 // la version con Bron-Kerbosch (el archivo "H - Holy Network" de esta carpeta), esta hace un

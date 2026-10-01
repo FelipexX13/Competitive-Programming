@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Cubetas por Potencia de 2 + Segment Tree
 // Resumen: La version por rangos del clasico "menor suma que no se puede formar"
+// O: (n log n + q*30 log n), cubetas por potencia de 2
 // Detalle: La version por rangos del clasico "menor suma que no se puede formar". El greedy de
 // siempre es ordenar las monedas y mantener sum: si la siguiente moneda es <= sum+1 se absorbe,
 // si no la respuesta es sum+1. Ordenar cada rango seria O(n log n) por consulta; lo que lo

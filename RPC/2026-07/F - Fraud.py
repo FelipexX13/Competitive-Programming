@@ -1,6 +1,7 @@
 # <3
 # Tema: Implementation / Maquina de Estados por Objeto
 # Resumen: NO ES MIO: codigo de Stiven Correa, del repo del equipo (carpeta RPC/)
+# O: (n), una maquina de estados por objeto
 # Detalle: NO ES MIO: codigo de Stiven Correa, del repo del equipo (carpeta RPC/). Resuelve
 # "Fraud" (RPC 2026-07, problema F): una lista de pickup y putdown; decir si la secuencia es
 # consistente, o sea que cada objeto se recoge una vez y se suelta una vez. Tecnica: un

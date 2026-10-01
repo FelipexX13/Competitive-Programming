@@ -1,6 +1,7 @@
 // <3
 // Tema: Graph / Circuito Euleriano (Algoritmo de Hierholzer)
 // Resumen: Dado un plano de n cruces y m calles bidireccionales
+// O: (n + m), circuito euleriano con Hierholzer
 // Detalle: Resuelve "Mail Delivery" (Day 5, problema J - Contest 05 [Avanzados]): dado un plano
 // de n cruces y m calles bidireccionales, hay que encontrar una ruta que empiece y termine en
 // la oficina postal (cruce 1) y recorra cada calle exactamente una vez, o determinar que es

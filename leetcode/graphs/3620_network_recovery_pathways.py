@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Binaria sobre la Respuesta en un DAG
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (m log(peso maximo)): binaria sobre la respuesta y un barrido topologico por intento
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3620 "Network Recovery Pathways": maximizar el peso MINIMO de las aristas del camino,
 # con el costo total del camino acotado por k. Tecnica: binaria sobre la respuesta. Se fija un

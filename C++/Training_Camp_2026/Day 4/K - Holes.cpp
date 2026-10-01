@@ -2,6 +2,7 @@
 // Tema: Data Structures / Sqrt Decomposition
 // Resumen: Hay N agujeros en fila, cada uno con una potencia que hace saltar la bola a la
 // posicion i+a_i
+// O: (raiz de N) por operacion, sqrt decomposition
 // Detalle: Resuelve "Holes" (Day 4, problema K - Contest 04 [Avanzados]): hay N agujeros en
 // fila, cada uno con una potencia que hace saltar la bola a la posicion i+a_i, y hay que
 // soportar M operaciones que cambian la potencia de un agujero o tiran una bola por un agujero,

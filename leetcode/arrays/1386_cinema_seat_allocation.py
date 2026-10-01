@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Grupos de Sillas por Fila
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (r log r) con r reservas; NO depende de n, que llega a 10^9
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1386 "Cinema Seat Allocation": maximo de familias de 4 que se pueden sentar juntas,
 # con algunas sillas reservadas. Tecnica: en cada fila solo hay tres bloques posibles de 4

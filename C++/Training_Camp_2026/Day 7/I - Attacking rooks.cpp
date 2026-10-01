@@ -1,6 +1,7 @@
 // <3
 // Tema: Graph / Bipartite Matching
 // Resumen: En un tablero NxN con algunas casillas ocupadas por peones ('X')
+// O: (V*E), emparejamiento bipartito con Kuhn
 // Detalle: Resuelve "Attacking rooks" (Day 7, problema I - Contest 07 [Avanzados]): en un
 // tablero NxN con algunas casillas ocupadas por peones ('X'), dos torres se atacan si comparten
 // fila o columna sin un peon entre medio; hay que colocar el maximo numero de torres en

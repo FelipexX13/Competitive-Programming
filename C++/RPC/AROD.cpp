@@ -2,6 +2,7 @@
 // Tema: Geometry / Triangle Classification
 // Resumen: Clasifica triángulos en una grilla de p×q puntos como agudos, rectos, obtusos o
 // degenerados
+// O: (1) por caso, clasificar el triangulo
 // Detalle: Clasifica triángulos en una grilla de p×q puntos como agudos, rectos, obtusos o
 // degenerados. Utiliza análisis de productos para determinar el tipo de ángulo en cada
 // triángulo.

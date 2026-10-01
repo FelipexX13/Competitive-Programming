@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Greedy Creciente
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n log n) por el sort
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 2126 "Destroying Asteroids": la nave absorbe la masa de cada asteroide que destruye;
 # decir si puede con todos. Tecnica: ordenar y atacar del mas pequeno al mas grande. Si en ese

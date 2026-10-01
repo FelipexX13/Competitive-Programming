@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Dijkstra desde Cada Nodo
 // Resumen: Distancias entre TODOS los pares resueltas con n Dijkstras, uno por nodo
+// O: (n*m log n), un Dijkstra por nodo
 // Detalle: Distancias entre TODOS los pares resueltas con n Dijkstras, uno por nodo, en vez del
 // Floyd-Warshall que suele ser la respuesta esperada. Trae un atajo: si un nodo tiene grado 1,
 // su unico camino al resto pasa por su vecino, asi que se copia la fila del vecino sumando el

@@ -1,6 +1,7 @@
 // <3
 // Tema: Graph / Bipartite Matching
 // Resumen: Dado un tablero NxN con K caballos ya colocados
+// O: (V*E), emparejamiento bipartito sobre el tablero bicoloreado
 // Detalle: Resuelve "Knights In The Board" (Day 7, problema K - Contest 07 [Avanzados]): dado
 // un tablero NxN con K caballos ya colocados, hay que hallar el minimo numero de caballos a
 // remover para que ninguno ataque a otro (movimiento en L de ajedrez). El grafo de ataques

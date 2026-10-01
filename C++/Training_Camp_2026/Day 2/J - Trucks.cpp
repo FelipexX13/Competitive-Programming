@@ -2,6 +2,7 @@
 // Tema: Graph / Kruskal Reconstruction Tree
 // Resumen: Nlogonia es un archipielago de N islas unidas por M puentes, cada uno con un limite
 // maximo de peso W
+// O: (m log m), Kruskal reconstruction tree
 // Detalle: Resuelve "Trucks" (Day 2, problema J - Maratona de Programacao da SBC 2013):
 // Nlogonia es un archipielago de N islas unidas por M puentes, cada uno con un limite maximo de
 // peso W; para S sitios de competencia hay que hallar el mayor peso que puede transportarse por

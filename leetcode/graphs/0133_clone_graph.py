@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Clonar Grafo con Diccionario
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n+m), un DFS con el mapa original -> copia
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 133 "Clone Graph": copia profunda de un grafo no dirigido. Tecnica: DFS con un
 # diccionario original -> copia. Antes de recorrer los vecinos se registra la copia en el

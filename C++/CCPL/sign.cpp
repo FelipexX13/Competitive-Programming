@@ -2,6 +2,7 @@
 // Tema: String / Maximo Solape Sufijo-Prefijo (KMP)
 // Resumen: Un letrero muestra k caracteres; en cada paso todo se corre una posicion a la
 // izquierda y entra una letra...
+// O: (n + m), el solape sale de la funcion de prefijos de KMP
 // Detalle: Resuelve "Scrolling Sign" (problema H, CCPL): un letrero muestra k caracteres; en
 // cada paso todo se corre una posicion a la izquierda y entra una letra nueva por la derecha.
 // Hay que mostrar w palabras de k letras en orden, metiendo la menor cantidad de letras

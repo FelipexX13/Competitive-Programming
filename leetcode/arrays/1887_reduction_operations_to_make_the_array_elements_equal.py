@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Contar por Escalones
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n log n) por el sort; contar escalones es lineal
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1887 "Reduction Operations to Make the Array Elements Equal": operaciones para
 # igualar todo al minimo, bajando cada vez el maximo al siguiente valor distinto. Tecnica:

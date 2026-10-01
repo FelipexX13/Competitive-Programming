@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / BFS de Camino Minimo con Reconstruccion
 // Resumen: Mismo patron que Labyrinth pero en grafo general
+// O: (n + m), BFS con arreglo de padres
 // Detalle: Mismo patron que Labyrinth pero en grafo general: BFS desde n hacia 1 guardando
 // siguiente[] y la distancia en cuantos[]. Arrancar del destino tiene su gracia: los punteros
 // ya quedan apuntando hacia adelante y el camino se imprime directo, sin invertir nada. El

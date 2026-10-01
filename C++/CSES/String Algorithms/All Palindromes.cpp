@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Manacher (Palindromo Mas Largo que Termina en Cada Posicion)
 // Resumen: Para cada posicion, el palindromo mas largo que TERMINA ahi
+// O: (n), Manacher
 // Detalle: Para cada posicion, el palindromo mas largo que TERMINA ahi. Primero Manacher con
 // centinelas distintos en los extremos ('$' al inicio, '^' al final), que es el truco para que
 // el while de expansion no necesite chequear limites: al llegar a los bordes los centinelas

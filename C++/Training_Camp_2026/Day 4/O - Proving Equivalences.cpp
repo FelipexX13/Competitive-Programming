@@ -1,6 +1,7 @@
 // <3
 // Tema: Graph / Strongly Connected Components (Tarjan)
 // Resumen: Dadas n proposiciones y m implicaciones ya probadas entre ellas
+// O: (n + m), SCC con Tarjan y contar fuentes y sumideros
 // Detalle: Resuelve "Proving Equivalences" (Day 4, problema O - Contest 04 [Avanzados]): dadas
 // n proposiciones y m implicaciones ya probadas entre ellas, hay que calcular el minimo numero
 // de implicaciones adicionales necesarias para probar que todas son equivalentes entre si.

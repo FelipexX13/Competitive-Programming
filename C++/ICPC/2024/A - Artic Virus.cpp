@@ -1,6 +1,7 @@
 // <3
 // Tema: Dynamic Programming / DP sobre Intervalos con Bandera de Inversion
 // Resumen: Decidir si una cadena es un virus segun la gramatica phi
+// O: (n^2) por cadena, DP de intervalos con bandera de inversion
 // Detalle: Resuelve "Arctic Virus" (problema A, ICPC 2024): decidir si una cadena es un virus
 // segun la gramatica phi ::= A | T | phiC | A phi | A phi^-1 | G phi^-1 C, donde phi^-1 es phi
 // al reves. Responde simple (la cadena es A o T), mutation (es virus y mide 2 o mas) o doomed.

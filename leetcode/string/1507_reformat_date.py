@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Formateo de Fecha
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (1), tres campos y un diccionario de meses
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1507 "Reformat Date": pasar "20th Oct 2052" a "2052-10-20". Tecnica: split,
 # diccionario de mes a numero, y quitar las dos ultimas letras del dia (st, nd, rd, th) con

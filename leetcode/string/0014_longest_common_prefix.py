@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Prefijo Comun por Columnas
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n * largo del prefijo), comparando por columnas
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 14 "Longest Common Prefix": el prefijo comun mas largo de un arreglo de cadenas.
 # Tecnica: comparar por COLUMNAS. Se mira la letra i de todas las palabras y en el primer

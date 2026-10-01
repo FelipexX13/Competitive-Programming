@@ -1,7 +1,7 @@
 // <3
 // Tema: Number Theory / Criba de Factor Primo Minimo + Inclusion-Exclusion
-// Resumen: Resuelve "Ingredients that may Harm You" (Day 3, problema I - Maratona SBC de
-// Programacao 2024)
+// Resumen: Platillos que comparten un primo con X: criba de menor factor e inclusion-exclusion
+// O: (n log n) la criba, (2^primos de X) por consulta
 // Detalle: Resuelve "Ingredients that may Harm You" (Day 3, problema I - Maratona SBC de
 // Programacao 2024): en un restaurante self-service con N platillos identificados por numeros
 // (donde cada primo que los divide representa un ingrediente basico, con multiplicidad), cada

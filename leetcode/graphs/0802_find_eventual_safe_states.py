@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Nodos que No Llegan a un Ciclo
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n*(n+m)) por el visited.clear() de cada nodo; con tres colores es (n+m)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 802 "Find Eventual Safe States": los nodos desde los que todo camino termina en un
 # nodo sin salidas. Tecnica: DFS que devuelve True si desde el nodo no se alcanza ningun ciclo,

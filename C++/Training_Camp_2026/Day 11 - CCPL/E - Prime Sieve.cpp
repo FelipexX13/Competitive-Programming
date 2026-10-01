@@ -1,6 +1,7 @@
 // <3
 // Tema: Number Theory / Sieve of Eratosthenes
 // Resumen: Dado un limite n (hasta 10^8) y q consultas x
+// O: (n log log n) la criba, (1) por consulta
 // Detalle: Resuelve "Prime Sieve" (Day 11, problema E - CCPL (Kattis)): dado un limite n (hasta
 // 10^8) y q consultas x, pide primero cuantos numeros primos hay menores o iguales a n, y luego
 // para cada consulta si x es primo (1) o compuesto (0). Implementa una criba de Eratosthenes

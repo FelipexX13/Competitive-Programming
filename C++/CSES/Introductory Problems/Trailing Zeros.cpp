@@ -1,7 +1,7 @@
 // <3
 // Tema: CSES / Formula de Legendre
-// Resumen: Los ceros al final de n! los deciden los factores 5, no los 2, porque un cero
-// necesita un par (2
+// Resumen: Ceros al final de n!: los deciden los factores 5, por la formula de Legendre
+// O: (log n), formula de Legendre dividiendo entre potencias de 5
 // Detalle: Los ceros al final de n! los deciden los factores 5, no los 2, porque un cero
 // necesita un par (2,5) y los 2 sobran siempre. La cuenta es la formula de Legendre: floor(n/5)
 // + floor(n/25) + floor(n/125) + ..., que el while hace dividiendo n entre 5 repetidamente y

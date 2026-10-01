@@ -2,6 +2,7 @@
 // Tema: CSES / DP sobre DAG en Orden Topologico
 // Resumen: Contar caminos de 1 a n en un DAG: caminos[v] = suma de caminos[u] sobre las aristas
 // u -> v
+// O: (n + m), DP en orden topologico
 // Detalle: Contar caminos de 1 a n en un DAG: caminos[v] = suma de caminos[u] sobre las aristas
 // u -> v. La recurrencia es obvia; lo que la hace correcta es el ORDEN: hay que procesar un
 // nodo solo cuando ya se sumaron TODOS sus predecesores, y eso es exactamente lo que garantiza

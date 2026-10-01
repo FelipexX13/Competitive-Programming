@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Pila de Llamadas
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (logs), una pila de llamadas
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 636 "Exclusive Time of Functions": tiempo propio de cada funcion, sin contar lo que
 # gasta en las que llama. Tecnica: pila con los ids de las funciones abiertas y una variable val

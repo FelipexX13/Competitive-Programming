@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Fuerza Bruta 2^n
 // Resumen: N <= 20, o sea 2^20 = ~10^6 subconjuntos: cabe de sobra, asi que se prueban todos
+// O: (2^n), todos los subconjuntos
 // Detalle: n <= 20, o sea 2^20 = ~10^6 subconjuntos: cabe de sobra, asi que se prueban todos.
 // La recursion decide para cada posicion si el elemento va a un grupo o al otro. EL DETALLE
 // BONITO: no hace falta llevar las dos sumas. Con el total fijo, la diferencia entre grupos es

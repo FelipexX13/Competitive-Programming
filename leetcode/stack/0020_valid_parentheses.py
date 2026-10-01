@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Pila de Parentesis
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), una pila
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 20 "Valid Parentheses": decir si una cadena de (), [] y {} esta bien balanceada.
 # Tecnica: pila. Al abrir se empuja un codigo (1, 2, 3) y al cerrar se exige que la cima sea el

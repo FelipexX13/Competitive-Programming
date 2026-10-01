@@ -1,7 +1,7 @@
 # <3
 # Tema: Simulation / Circular Queue
-# Resumen: Un grupo de ninios en circulo es dividido en dos equipos aplicando repetidamente una
-# rima (como "eeny meeny...
+# Resumen: Repartir ninios en dos equipos contando una rima en circulo, tipo Josephus
+# O: (n*k) simulando la ronda; con la formula de Josephus seria (n)
 # Detalle: Resuelve "Eeny Meeny" (Day 11, problema B - CCPL (Kattis)): un grupo de ninios en
 # circulo es dividido en dos equipos aplicando repetidamente una rima (como "eeny meeny miny
 # moe"): se cuenta en sentido horario, saltando a los ninios ya elegidos, hasta la ultima

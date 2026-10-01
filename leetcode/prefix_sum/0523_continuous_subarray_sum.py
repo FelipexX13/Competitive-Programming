@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Residuos de Prefijos
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), residuo de prefijo -> primera posicion
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 523 "Continuous Subarray Sum": decir si hay un subarreglo de largo al menos 2 con
 # suma multiplo de k. Tecnica: la suma de [i+1..j] es multiplo de k si los prefijos i y j dejan

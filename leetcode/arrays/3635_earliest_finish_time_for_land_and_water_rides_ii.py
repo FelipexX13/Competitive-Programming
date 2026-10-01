@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Fijar el Mejor Primero
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n+m): basta la atraccion que termina mas temprano de cada tipo
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3635 "Earliest Finish Time for Land and Water Rides II": lo mismo que el 3633, pero
 # con arreglos grandes. Tecnica: no hace falta probar todos los pares. Para la primera atraccion

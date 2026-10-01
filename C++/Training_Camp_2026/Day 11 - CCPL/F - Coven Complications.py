@@ -1,6 +1,7 @@
 # <3
 # Tema: Greedy / Sorting (Prefix Sums)
 # Resumen: Un grafo de n comunidades brujas unidas por m portales
+# O: (n log n) por el sort, mas prefijos lineales
 # Detalle: Resuelve "Coven Complications" (Day 11, problema F - CCPL (Kattis)): un grafo de n
 # comunidades brujas unidas por m portales, donde las comunidades con f_i=0 son propias y las
 # que tienen f_i>0 ferrets son rivales. Cada dia se sella una comunidad propia sin sellar, y ese

@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Construccion por Bloques de 4
 // Resumen: La suma total es n*(n+1)/2, y para partirla en dos mitades iguales tiene que ser PAR
+// O: (n), construccion por bloques de 4
 // Detalle: La suma total es n*(n+1)/2, y para partirla en dos mitades iguales tiene que ser
 // PAR, lo que solo pasa si n mod 4 es 0 o 3. Ese es todo el criterio de imposibilidad. La
 // construccion aprovecha que cuatro consecutivos se parten perfecto: {i, i+3} y {i+1, i+2}

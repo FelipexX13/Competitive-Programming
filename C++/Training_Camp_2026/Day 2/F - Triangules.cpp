@@ -2,6 +2,7 @@
 // Tema: Math / Prefix Sums
 // Resumen: Dados N puntos sobre un circulo, descritos por las longitudes de arco entre puntos
 // consecutivos
+// O: (n), sumas de prefijos
 // Detalle: Resuelve "Triangles" (Day 2, problema F - Maratona de Programacao da SBC 2013):
 // dados N puntos sobre un circulo, descritos por las longitudes de arco entre puntos
 // consecutivos, cuenta cuantos triangulos equilateros distintos se pueden formar usando esos

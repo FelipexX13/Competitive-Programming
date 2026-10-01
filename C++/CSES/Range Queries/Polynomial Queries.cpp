@@ -2,6 +2,7 @@
 // Tema: CSES / Lazy Propagation de Progresiones Aritmeticas
 // Resumen: Lazy propagation donde la actualizacion no suma una constante sino 1, 2, 3, ... a lo
 // largo del rango
+// O: (log n) por operacion, lazy de progresiones aritmeticas
 // Detalle: Lazy propagation donde la actualizacion no suma una constante sino 1, 2, 3, ... a lo
 // largo del rango. La clave es que una progresion aritmetica se describe con DOS numeros, el
 // primer termino A y la diferencia D, y que dos progresiones se SUMAN componente a componente.

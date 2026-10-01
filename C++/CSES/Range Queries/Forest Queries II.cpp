@@ -2,6 +2,7 @@
 // Tema: CSES / Fenwick 2D
 // Resumen: Fenwick en dos dimensiones: un for anidado dentro de otro, cada uno con el mismo i &
 // -i de siempre
+// O: (log^2 n) por operacion, Fenwick 2D
 // Detalle: Fenwick en dos dimensiones: un for anidado dentro de otro, cada uno con el mismo i &
 // -i de siempre. Actualizar una celda y consultar el rectangulo de (1,1) a (x,y) cuestan
 // O(log^2 n), y un rectangulo cualquiera sale por inclusion-exclusion con las cuatro esquinas,

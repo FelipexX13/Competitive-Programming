@@ -2,6 +2,7 @@
 // Tema: Math / Fibonacci (Zeckendorf-like Greedy)
 // Resumen: Dado N, hay que construir una secuencia de ejercicios tipo A/B (terminada en B) tal
 // que la cantidad de...
+// O: (log n), greedy tipo Zeckendorf sobre Fibonacci
 // Detalle: Resuelve "Getting in Shape" (Day 4, problema D - Contest 04 [Avanzados]): dado N,
 // hay que construir una secuencia de ejercicios tipo A/B (terminada en B) tal que la cantidad
 // de formas de completarla saltandose opcionalmente el ejercicio siguiente a cada A sea

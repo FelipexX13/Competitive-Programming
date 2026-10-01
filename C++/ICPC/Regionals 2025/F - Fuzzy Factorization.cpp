@@ -1,6 +1,7 @@
 // <3
 // Tema: Number Theory / Factorizacion de un Numero Gigante Redondeado
 // Resumen: Factorizar un numero que llega como cadena y que esta redondeado
+// O: (raiz de Y), probando divisores
 // Detalle: Resuelve "Fuzzy Factorization" (problema F, Regionals 2025): factorizar un numero
 // que llega como cadena y que esta redondeado, o sea que todo lo que sigue despues de los
 // primeros digitos significativos son ceros. LA OBSERVACION QUE LO RESUELVE: si el numero tiene

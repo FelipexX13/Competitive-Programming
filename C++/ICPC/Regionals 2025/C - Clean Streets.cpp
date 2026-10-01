@@ -2,6 +2,7 @@
 // Tema: Binary Search / Busqueda sobre la Respuesta con Fracciones Exactas
 // Resumen: Elegir trabajadores con tarifas y ventanas de disponibilidad para limpiar S calles
 // al menor costo
+// O: (N log(rango)), binaria sobre la respuesta con fracciones exactas
 // Detalle: Resuelve "Clean Streets" (problema C, Regionals 2025): elegir trabajadores con
 // tarifas y ventanas de disponibilidad para limpiar S calles al menor costo. Se busca sobre la
 // RAZON r = costo por hora. Para un r fijo, un trabajador sirve si su intervalo [L/H, U/H]

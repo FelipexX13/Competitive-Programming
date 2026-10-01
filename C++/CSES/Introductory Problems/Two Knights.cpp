@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Conteo por Complemento
 // Resumen: Contar por el complemento: total de parejas menos las que se atacan
+// O: (n), una formula por tablero
 // Detalle: Contar por el complemento: total de parejas menos las que se atacan. El total es
 // C(k^2, 2) = k^2*(k^2-1)/2, y las parejas que se atacan son 4*(k-1)*(k-2), porque cada
 // rectangulo de 2x3 aporta exactamente 2 ataques y hay (k-1)*(k-2) de ellos en cada una de las

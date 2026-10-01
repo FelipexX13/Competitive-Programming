@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Exponenciacion Modular Rapida
 // Resumen: 2^n mod (10^9+7) con exponenciacion binaria
+// O: (log n), exponenciacion rapida
 // Detalle: 2^n mod (10^9+7) con exponenciacion binaria: se eleva al cuadrado y se va
 // recorriendo el exponente bit por bit, O(log n) multiplicaciones. POR QUE NO pow(2, n): pow es
 // de double, pierde precision pasando de 2^53 y no sabe de modulos. Para exponentes grandes con

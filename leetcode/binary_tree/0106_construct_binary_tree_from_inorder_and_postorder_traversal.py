@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Divide y Conquista sobre Recorridos
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2) por el inorder.index(); con un mapa de posiciones seria (n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 106 "Construct Binary Tree from Inorder and Postorder Traversal": reconstruir el
 # arbol a partir de sus recorridos inorden y postorden. Tecnica: el ULTIMO de postorden es la

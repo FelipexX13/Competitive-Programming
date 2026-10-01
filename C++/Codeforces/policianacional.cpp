@@ -2,6 +2,7 @@
 // Tema: String / Partition and Permutation
 // Resumen: Divide una cadena en 3 partes, las reorganiza y verifica si forma otra cadena
 // objetivo
+// O: (n log n) por el sort
 // Detalle: Divide una cadena en 3 partes, las reorganiza y verifica si forma otra cadena
 // objetivo. Si es posible, imprime ambas descomposiciones ordenadas.
 

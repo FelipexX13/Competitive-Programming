@@ -1,7 +1,7 @@
 # <3
 # Tema: Data Structures / Persistencia (DFS + Rollback)
-# Resumen: Resuelve "The Declaration of Independence" (Day 5, problema D - Contest 05
-# [Avanzados])
+# Resumen: Versiones de un documento que se ramifican: DFS sobre el arbol de versiones con rollback
+# O: (total de operaciones), DFS sobre el arbol de versiones con rollback
 # Detalle: Resuelve "The Declaration of Independence" (Day 5, problema D - Contest 05
 # [Avanzados]): el documento empieza vacio (version 0) y cada query crea una nueva version a
 # partir de otra version v ya existente: "E v x" copia la version v y agrega la oracion x al

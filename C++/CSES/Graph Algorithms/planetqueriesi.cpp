@@ -2,6 +2,7 @@
 // Tema: CSES / Binary Lifting sobre Grafo Funcional
 // Resumen: Cada planeta tiene EXACTAMENTE un teletransporte de salida, asi que la estructura es
 // un grafo funcional
+// O: (n log k) de tabla y (log k) por consulta
 // Detalle: Cada planeta tiene EXACTAMENTE un teletransporte de salida, asi que la estructura es
 // un grafo funcional: una funcion x -> siguiente[x]. Las consultas piden donde se termina tras
 // k saltos, con k hasta 10^9. BINARY LIFTING: siguiente[j][i] es a donde se llega desde i con

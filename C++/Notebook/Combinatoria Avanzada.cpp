@@ -1,6 +1,6 @@
 // <3
 // Tema: Combinatorics / Combinatoria Avanzada (Lucas, Catalan, Stirling)
-// Resumen: Formulas combinatorias que van mas alla del C(n
+// Resumen: Lucas, Catalan, Stirling y multinomial, mas alla del binomial basico
 // O: (1) por C tras precomputar(); Lucas O(log_p n)
 // Uso: precomputar() una vez; luego C(n,k), multinomial(v), catalan(n)
 // Detalle: Formulas combinatorias que van mas alla del C(n,k) basico con factoriales

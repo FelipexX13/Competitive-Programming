@@ -1,6 +1,7 @@
 // <3
 // Tema: Combinatorics / Ranking de Combinaciones
 // Resumen: Dado un subconjunto de tamano k escrito en orden creciente
+// O: (n*k), ranking de combinaciones con binomiales
 // Detalle: Resuelve "Discrete Catalog" (problema D, ICPC 2025): dado un subconjunto de tamano k
 // escrito en orden creciente, decir que posicion ocupa en la lista de TODOS los subconjuntos de
 // tamano k ordenados lexicograficamente, contando desde 0. LA IDEA ES CONTAR LO QUE VA ANTES,

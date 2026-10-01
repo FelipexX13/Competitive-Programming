@@ -1,6 +1,7 @@
 // <3
 // Tema: Number Theory / Big Exponentiation
 // Resumen: Calcula N^D usando BigInteger para manejar resultados con exponentes muy grandes
+// O: (log n) multiplicaciones de BigInteger
 // Detalle: Calcula N^D usando BigInteger para manejar resultados con exponentes muy grandes.
 
 import java.util.*;

@@ -1,6 +1,7 @@
 // <3
 // Tema: Game Theory / Nim con Segment Tree
 // Resumen: Frank y Juan juegan duelos de Nim sobre un rango de columnas [l,r]
+// O: (log n) por operacion: Nim con segment tree de XOR
 // Detalle: Resuelve "Juan vs Frank" (Day 9, problema I - Contest 08 [Inicial & Avanzado]):
 // Frank y Juan juegan duelos de Nim sobre un rango de columnas [l,r], donde cada columna es un
 // monton de fragmentos y en cada turno se retiran fragmentos de una sola columna; pierde quien

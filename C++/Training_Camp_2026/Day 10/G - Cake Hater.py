@@ -1,6 +1,7 @@
 # <3
 # Tema: Simulation / Brute Force
 # Resumen: Una receta de pastel con N pasos, cada uno con su propia lista de ingredientes
+# O: (n^2), fuerza bruta
 # Detalle: Resuelve "Cake Hater" (Day 10, problema G - Contest 09 [Avanzados]): una receta de
 # pastel con N pasos, cada uno con su propia lista de ingredientes; Antonio omite un conjunto
 # fijo de B ingredientes que no le gustan (donts) de un total de A. El pastel se arruina en el

@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Trie
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (largo de la palabra) por operacion
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 208 "Implement Trie (Prefix Tree)": insertar, buscar palabra exacta y buscar prefijo.
 # Tecnica: trie clasico con un diccionario de hijos por nodo y una bandera isEndLetter para

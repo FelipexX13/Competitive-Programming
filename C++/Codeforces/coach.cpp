@@ -2,6 +2,7 @@
 // Tema: Math / Polynomial Composition
 // Resumen: Calcula la composición de polinomios P(Q(x)) usando multiplicación polinómica
 // modular
+// O: (n), composicion de polinomios
 // Detalle: Calcula la composición de polinomios P(Q(x)) usando multiplicación polinómica
 // modular. El resultado es modular 998244353 y tiene grado máximo n*m.
 

@@ -2,6 +2,7 @@
 // Tema: CSES / Camino Mas Largo en DAG (DFS con Memo)
 // Resumen: Camino con mas nodos de 1 a n en un DAG, con DFS memoizado: mejor[u] = 1 + max de
 // mejor[hijo]
+// O: (n + m), DFS con memo sobre el DAG
 // Detalle: Camino con mas nodos de 1 a n en un DAG, con DFS memoizado: mejor[u] = 1 + max de
 // mejor[hijo]. En un grafo cualquiera el camino mas largo es NP-dificil; aqui es lineal SOLO
 // porque no hay ciclos, y eso hay que tenerlo presente antes de intentarlo en otro problema. EL

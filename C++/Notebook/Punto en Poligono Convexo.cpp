@@ -1,7 +1,6 @@
 // <3
 // Tema: Geometry / Punto en Poligono Convexo (O(log n))
-// Resumen: Arma el casco convexo de un conjunto de puntos y luego responde muchas consultas del
-// tipo "este punto esta...
+// Resumen: Casco convexo y despues muchas consultas de punto adentro, en log n por consulta
 // O: (n log n) el hull, (log n) cada consulta
 // Uso: h = convexHull(p); inside(h,q) con h antihorario y sin colineales
 // Detalle: Arma el casco convexo de un conjunto de puntos y luego responde muchas consultas del

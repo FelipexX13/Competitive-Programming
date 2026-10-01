@@ -2,6 +2,7 @@
 // Tema: Formulario / Combinatoria
 // Resumen: Conteos clasicos con sus primeros valores para identificar la sucesion en la salida
 // de ejemplo
+// O: (k) nCr y nPr por el ciclo; (1) si se precalculan factoriales
 // Detalle: Conteos clasicos con sus primeros valores para identificar la sucesion en la salida
 // de ejemplo: 1, 2, 5, 14, 42 son Catalan; 1, 1, 2, 5, 15, 52 son Bell; 1, 0, 1, 2, 9, 44 son
 // desarreglos. Incluye el triangulo de Pascal hasta n=10 y las identidades que permiten cerrar

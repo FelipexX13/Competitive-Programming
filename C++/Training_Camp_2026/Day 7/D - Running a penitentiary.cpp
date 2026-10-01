@@ -2,6 +2,7 @@
 // Tema: Data Structures / Segment Tree
 // Resumen: N guardias vigilan cada uno un intervalo de celdas [L,R], y hay que soportar Q
 // operaciones
+// O: (log n) por operacion, segment tree
 // Detalle: Resuelve "Running a penitentiary" (Day 7, problema D - Contest 07 [Avanzados]): N
 // guardias vigilan cada uno un intervalo de celdas [L,R], y hay que soportar Q operaciones:
 // cambiar el intervalo de un guardia, o, dado un rango de guardias [a,b], calcular cuantas

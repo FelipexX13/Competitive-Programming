@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Paridad con el Menor Impar
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), dos barridos quedandose con el minimo de cada paridad
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3876 "Construct Uniform Parity Array II": lo mismo que el 3875 pero con arreglos
 # grandes. Tecnica: solo hacen falta el menor par y el menor IMPAR del arreglo. Para volver

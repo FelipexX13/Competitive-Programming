@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Sumas a Izquierda y Derecha
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2) por el sum() de cada posicion; con prefijos seria (n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 2574 "Left and Right Sum Differences": para cada posicion, el valor absoluto de la
 # suma de lo que hay a su izquierda menos lo de su derecha. Tecnica: sum() de los dos pedazos en

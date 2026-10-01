@@ -1,6 +1,7 @@
 # <3
 # Tema: Simulation / Ad Hoc
 # Resumen: En un torneo de piedra-papel-tijera con n jugadores
+# O: (n log n) por ordenar el ranking final
 # Detalle: Resuelve "Rock-Paper-Scissors Tournament" (Day 11, problema D - CCPL (Kattis)): en un
 # torneo de piedra-papel-tijera con n jugadores, cada par de jugadores disputa k partidas
 # (kn(n-1)/2 partidas en total); dado el movimiento de cada jugador en cada partida, pide el

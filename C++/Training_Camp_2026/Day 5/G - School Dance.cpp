@@ -2,6 +2,7 @@
 // Tema: Graph / Bipartite Matching (Algoritmo de Kuhn)
 // Resumen: Hay N chicos y M chicas, y una lista de K parejas potenciales (chico, chica)
 // dispuestos a bailar juntos
+// O: (V*E), emparejamiento bipartito con Kuhn
 // Detalle: Resuelve "School Dance" (Day 5, problema G - Contest 05 [Avanzados]): hay N chicos y
 // M chicas, y una lista de K parejas potenciales (chico, chica) dispuestos a bailar juntos; hay
 // que hallar el maximo numero de parejas de baile que se pueden formar (cada chico y cada chica

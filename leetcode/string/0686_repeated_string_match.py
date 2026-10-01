@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Repetir hasta Contener
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (|a|*|b|): se repite a hasta |b|/|a| + 5 veces y el 'in' cuesta
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 686 "Repeated String Match": cuantas veces hay que repetir a para que b quede
 # adentro. Tecnica: repetir a mientras no contenga b. El limite len(b)//len(a) + 5 es la parte

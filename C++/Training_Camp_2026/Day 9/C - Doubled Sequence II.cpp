@@ -2,6 +2,7 @@
 // Tema: Constructive Algorithms / Secuencias de Langford
 // Resumen: Para un n dado, construir una secuencia de longitud 2n donde cada valor de 1 a n
 // aparece exactamente dos...
+// O: (n), construccion de Langford
 // Detalle: Resuelve "Doubled Sequence II" (Day 9, problema C - Contest 08 [Inicial &
 // Avanzado]): para un n dado, construir una secuencia de longitud 2n donde cada valor de 1 a n
 // aparece exactamente dos veces y, para cada i, la distancia entre sus dos ocurrencias es

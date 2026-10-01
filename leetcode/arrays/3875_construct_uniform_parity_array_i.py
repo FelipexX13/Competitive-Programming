@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Paridad por Fuerza Bruta
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2), todos los pares
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3875 "Construct Uniform Parity Array I": decir si se puede dejar todo el arreglo con
 # la misma paridad usando restas entre elementos. Tecnica: por cada elemento busca otro con el

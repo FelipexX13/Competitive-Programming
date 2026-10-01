@@ -2,6 +2,7 @@
 // Tema: CSES / DP sobre el Automata de KMP
 // Resumen: Cuenta cuantas cadenas de largo n sobre un alfabeto de 26 letras CONTIENEN un patron
 // dado, modulo 1e9+7
+// O: (n * m * 26), DP sobre el automata de KMP
 // Detalle: Cuenta cuantas cadenas de largo n sobre un alfabeto de 26 letras CONTIENEN un patron
 // dado, modulo 1e9+7. LA IDEA CENTRAL: en vez de contar las que lo contienen, se cuenta con una
 // DP donde el estado es "cuanto del patron llevo casado". Se construye el AUTOMATA de KMP:

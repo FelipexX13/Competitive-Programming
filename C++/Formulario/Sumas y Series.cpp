@@ -1,6 +1,7 @@
 // <3
 // Tema: Formulario / Sumas y Series
-// Resumen: Las sumas cerradas que mas se repiten
+// Resumen: Formulario: sumas cerradas con sus primeros valores, para reconocer la sucesion
+// O: (1) cada suma cerrada, contra (n) de sumar a mano
 // Detalle: Las sumas cerradas que mas se repiten, cada una con sus primeros valores para
 // reconocer el patron directamente en el ejemplo del enunciado: si la salida crece 1, 3, 6, 10,
 // 15 es Gauss; 1, 4, 9, 16 son cuadrados; 1, 5, 14, 30 es suma de cuadrados; 1, 9, 36, 100 es

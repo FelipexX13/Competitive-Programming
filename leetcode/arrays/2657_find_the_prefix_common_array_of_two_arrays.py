@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Interseccion de Prefijos
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2) por rehacer los sets; incremental seria (n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 2657 "Find the Prefix Common Array of Two Arrays": para cada i, cuantos valores estan
 # en los primeros i+1 de las dos permutaciones. Tecnica: reconstruye los dos sets en cada paso y

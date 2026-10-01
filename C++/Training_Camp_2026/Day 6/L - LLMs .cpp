@@ -2,6 +2,7 @@
 // Tema: Simulation / Brute Force
 // Resumen: Bruno arma un predictor de palabras "SBC" a partir de un diccionario de palabras con
 // vectores 2D
+// O: (n^2), fuerza bruta
 // Detalle: Resuelve "LLMs" (Day 6, problema L - Maratona SBC de Programacao 2025): Bruno arma
 // un predictor de palabras "SBC" a partir de un diccionario de palabras con vectores 2D, un
 // texto base de conocimiento y consultas; para cada consulta, se buscan en el texto base todas

@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Dijkstra con Cuatro Cantidades a la Vez
 // Resumen: Un solo Dijkstra que ademas del costo minimo lleva otras tres cosas
+// O: (m log n), Dijkstra arrastrando cuatro cantidades a la vez
 // Detalle: Un solo Dijkstra que ademas del costo minimo lleva otras tres cosas: cuantos caminos
 // minimos hay (modulo 1e9+7), el minimo de aristas de un camino minimo y el maximo. LA IDEA ES
 // QUE LAS CUATRO SE PROPAGAN CON LA MISMA REGLA, mirando si la distancia MEJORA o EMPATA: - si

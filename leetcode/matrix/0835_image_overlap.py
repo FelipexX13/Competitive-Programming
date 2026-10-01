@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Conteo de Desplazamientos
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (u1*u2) con u = cantidad de unos; peor caso (n^4)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 835 "Image Overlap": deslizando una imagen binaria sobre otra, maximo de unos que se
 # superponen. Tecnica: en vez de probar cada traslacion, se saca la lista de posiciones con 1 de

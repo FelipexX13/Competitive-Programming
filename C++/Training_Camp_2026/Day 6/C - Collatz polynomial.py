@@ -2,6 +2,7 @@
 # Tema: Simulation / Ad Hoc
 # Resumen: Aline crea una variante de la Conjetura de Collatz para polinomios con coeficientes 0
 # o 1
+# O: (pasos de Collatz)
 # Detalle: Resuelve "Collatz polynomial" (Day 6, problema C - Maratona SBC de Programacao 2025):
 # Aline crea una variante de la Conjetura de Collatz para polinomios con coeficientes 0 o 1. Si
 # el polinomio tiene termino independiente, se multiplica por (x+1) y se le suma 1, descartando

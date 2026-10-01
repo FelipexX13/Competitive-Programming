@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Separar en Dos Listas
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), una pasada armando dos listas
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 328 "Odd Even Linked List": reordenar para que queden primero las posiciones impares
 # y despues las pares, conservando el orden relativo. Tecnica: se arman dos listas mientras se

@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Simulacion con los Dos Mayores
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2): cada max() y cada remove() recorren; con heap seria (n log n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1046 "Last Stone Weight": choque de las dos piedras mas pesadas hasta que quede una.
 # Tecnica: max() y remove() en un while. Es O(n^2) porque cada max recorre todo. Es el ejercicio

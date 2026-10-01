@@ -2,6 +2,7 @@
 // Tema: Formulario / Probabilidad Geometrica y Areas Raras
 // Resumen: Para los problemas que en realidad son matematica pura y lo dificil no es
 // programarlos sino plantear el...
+// O: (1) cada formula; es hoja de consulta
 // Detalle: Para los problemas que en realidad son matematica pura y lo dificil no es
 // programarlos sino plantear el area: "cual es la probabilidad de que un punto al azar del
 // jardin caiga dentro de algun circulo", "cuanto vale en promedio", "que tan seguido se

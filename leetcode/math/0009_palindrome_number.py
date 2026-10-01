@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Palindromo con Dos Punteros
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (digitos de x)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 9 "Palindrome Number": decir si un entero se lee igual al reves. Tecnica: pasarlo a
 # string y comparar el caracter i con el de la otra punta hasta la mitad. OJO: los negativos

@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Conteo por Magnitud
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (log n), por bandas de magnitud
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3870 "Count Commas in Range I": cuantas comas de separador de miles se escriben en
 # total al listar los numeros hasta n. Tecnica: la cantidad de comas de un numero depende solo

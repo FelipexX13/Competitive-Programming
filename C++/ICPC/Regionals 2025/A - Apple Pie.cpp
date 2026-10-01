@@ -1,6 +1,7 @@
 // <3
 // Tema: Graph / Existencia de Camino Euleriano con Aristas Ocultas
-// Resumen: Resuelve "Apple Pie" (problema A, Regionals 2025)
+// Resumen: Completar el tramo tapado de una secuencia: existe camino euleriano en un multigrafo?
+// O: (n + m), grados y conectividad del multigrafo
 // Detalle: Resuelve "Apple Pie" (problema A, Regionals 2025). Se conoce un prefijo L y un
 // sufijo R de una secuencia, y la parte del medio quedo tapada por la torta: hay que decidir si
 // existe alguna forma de completarla. EL MODELO: cada elemento consecutivo de la secuencia es

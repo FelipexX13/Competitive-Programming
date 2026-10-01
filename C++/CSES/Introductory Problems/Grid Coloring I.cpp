@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Greedy Local con 4 Colores
 // Resumen: Greedy celda por celda: se prueba A, B, C
+// O: (n*m), greedy local con 4 colores
 // Detalle: Greedy celda por celda: se prueba A, B, C, D y se toma el primero que no choque con
 // el color ORIGINAL de la celda, con la celda de arriba y con la de la izquierda. POR QUE NUNCA
 // SE ATASCA: son 3 restricciones y 4 colores, asi que por conteo siempre queda al menos uno

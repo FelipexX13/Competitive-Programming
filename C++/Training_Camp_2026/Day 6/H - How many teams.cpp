@@ -2,6 +2,7 @@
 // Tema: Bitmask DP / SOS (Sum over Subsets) + Inclusion-Exclusion
 // Resumen: N estudiantes tienen cada uno un subconjunto de K habilidades (representado como
 // bitmask)
+// O: (2^k * k), SOS DP mas inclusion-exclusion
 // Detalle: Resuelve "How many teams?" (Day 6, problema H - Maratona SBC de Programacao 2025): N
 // estudiantes tienen cada uno un subconjunto de K habilidades (representado como bitmask), un
 // equipo de 3 estudiantes tiene como conjunto de habilidades la union de las de sus miembros, y

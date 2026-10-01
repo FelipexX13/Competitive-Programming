@@ -1,6 +1,7 @@
 // <3
 // Tema: Game Theory / Sprague-Grundy
-// Resumen: En un tablero indexado por filas y columnas, un jugador elige una canica en (l
+// Resumen: Juego de canicas hacia el origen: Sprague-Grundy sobre las dos coordenadas
+// O: (n), XOR de los valores de Grundy
 // Detalle: Resuelve "Marbles" (Day 8, problema B - Contest 08 [Avanzados]): en un tablero
 // indexado por filas y columnas, un jugador elige una canica en (l,c) y un entero u>0 y la
 // mueve a (l-u,c), (l,c-u) o (l-u,c-u) sin salir del tablero; el primero en llevar una canica a

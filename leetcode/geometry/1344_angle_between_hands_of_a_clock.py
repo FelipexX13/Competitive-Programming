@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Angulos de un Reloj
 # Resumen: NO ES MIO: codigo de Stiven Correa, del repo del equipo (carpeta leetcode/)
 #
+# O: (1)
 # Detalle: NO ES MIO: codigo de Stiven Correa, del repo del equipo (carpeta leetcode/). LeetCode
 # 1344 "Angle Between Hands of a Clock": angulo menor entre las manecillas. Tecnica: el minutero
 # avanza 6 grados por minuto; la hora avanza 30 grados por hora PERO tambien se mueve con los

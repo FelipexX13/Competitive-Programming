@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Busqueda de Subcadena
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n*m) el find de Python en el peor caso; con KMP es (n+m)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 28 "Find the Index of the First Occurrence in a String": la posicion de la primera
 # aparicion de needle en haystack. Tecnica: haystack.index(needle) y listo. Sirve como

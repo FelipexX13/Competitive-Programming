@@ -1,7 +1,7 @@
 // <3
 // Tema: Combinatorics / Probabilidad (Valor esperado con inverso modular)
-// Resumen: Resuelve "Frangolino ali na mesa" (Day 6, problema F - Maratona SBC de Programacao
-// 2025)
+// Resumen: Valor esperado cuando cada comando es una de dos cosas al 50%, con inverso modular
+// O: (Q log MOD) por el inverso modular de cada paso
 // Detalle: Resuelve "Frangolino ali na mesa" (Day 6, problema F - Maratona SBC de Programacao
 // 2025): un robot mesero recibe Q comandos, cada uno con un argumento X_i, pero cada comando es
 // en realidad "ir a la mesa X_i" o "pedir X_i milanesas en la mesa actual" con 50% de

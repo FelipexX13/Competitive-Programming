@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / El que Aparece Una Vez
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n) tiempo y memoria; con XOR seria (1) de memoria
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 136 "Single Number": el unico elemento que no esta repetido. Tecnica: diccionario de
 # frecuencias y se busca el que da 1. El truco elegante es el XOR de todo el arreglo: a ^ a = 0,

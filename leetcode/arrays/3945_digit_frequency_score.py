@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Frecuencia de Digitos
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (digitos de n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3945 "Digit Frequency Score": sumar cada digito multiplicado por cuantas veces
 # aparece. Tecnica: diccionario de frecuencias sobre los caracteres y suma de digito por

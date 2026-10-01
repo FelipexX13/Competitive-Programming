@@ -2,6 +2,7 @@
 // Tema: Graph / DSU (enfoque INCORRECTO para este problema)
 // Resumen: Une dos numeros cuando comparten un factor, y responde el tamano de la componente
 // mas grande
+// O: (n^2 log V); rapida pero NO resuelve el problema
 // Detalle: Intento del problema H de ICPC 2025 ("Holy Network") con DSU: une dos numeros cuando
 // comparten un factor, y responde el tamano de la componente mas grande. ESTA VERSION ESTA MAL
 // Y SE GUARDA JUSTAMENTE POR ESO. El enunciado pide que CADA PAR del grupo comparta un factor,

@@ -1,6 +1,6 @@
 // <3
 // Tema: Data Structures / Ordered Set (PBDS)
-// Resumen: Estructura basada en politicas de GNU
+// Resumen: set indexado de GNU: find_by_order(k) y order_of_key(x), las dos en O(log n)
 // O: (log n) insertar, borrar, find_by_order y order_of_key
 // Uso: s.find_by_order(k) -> k-esimo (0-indexado); s.order_of_key(x) -> menores
 // Detalle: Estructura basada en politicas de GNU: funciona como un set<> normal pero ademas

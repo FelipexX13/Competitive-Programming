@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Orden Topologico (Kahn)
 // Resumen: Orden topologico con el algoritmo de Kahn
+// O: (n + m), Kahn con grados de entrada
 // Detalle: Orden topologico con el algoritmo de Kahn: se meten a la cola los nodos con grado de
 // entrada 0 (nadie los obliga a esperar), y cada vez que se saca uno se le "quita" la arista a
 // sus vecinos; el que se queda sin prerrequisitos entra a la cola. El orden en que salen de la

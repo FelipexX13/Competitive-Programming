@@ -1,7 +1,7 @@
 // <3
 // Tema: Combinatorics / Tecnica de Contribucion
-// Resumen: Dado un arreglo a_1..a_n, se pide la suma de S(L,R) = suma de a_i en [L,R] sobre
-// TODOS los pares (L
+// Resumen: Suma de todos los subarreglos: tecnica de contribucion, cada a_i aparece un numero fijo
+// O: (n), tecnica de contribucion
 // Detalle: Resuelve "Bytelandia's stones" (Day 9, problema B - Contest 08 [Inicial &
 // Avanzado]): dado un arreglo a_1..a_n, se pide la suma de S(L,R) = suma de a_i en [L,R] sobre
 // TODOS los pares (L,R) posibles. En vez de calcular cada subarreglo, usa la tecnica de

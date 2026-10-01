@@ -1,6 +1,7 @@
 // <3
 // Tema: Implementation / Simulacion con Parsing de Codigo
 // Resumen: Hay L "primelocks", cada uno con la forma prlck i
+// O: (lineas de codigo * pasos simulados)
 // Detalle: Resuelve "Impossible Primebox" (problema I, ICPC 2025): hay L "primelocks", cada uno
 // con la forma prlck i: x = x [* Ai] [+ Bi] if Pi div x jumpto {prlck ji | end} else jumpto
 // {prlck mi | end} Se arranca en el candado 0 con un x inicial y se sigue saltando hasta caer

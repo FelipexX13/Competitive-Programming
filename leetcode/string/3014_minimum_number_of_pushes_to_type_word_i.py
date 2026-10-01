@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Asignacion por Bloques de 8
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), orden de aparicion
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3014 "Minimum Number of Pushes to Type Word I": costo minimo de teclear la palabra,
 # con 8 teclas disponibles y sin letras repetidas. Tecnica: las primeras 8 letras distintas

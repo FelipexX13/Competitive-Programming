@@ -2,6 +2,7 @@
 // Tema: Implementation / Generacion de Numeros con Digitos Distintos
 // Resumen: Para cada N del caso de prueba, busca todos los pares (s1, s2) con s1 / s2 = N donde
 // s1 y s2 tienen
+// O: (cantidad de numeros con digitos distintos), generados una vez
 // Detalle: Para cada N del caso de prueba, busca todos los pares (s1, s2) con s1 / s2 = N donde
 // s1 y s2 tienen, cada uno por su lado, TODOS sus digitos distintos, y los imprime como "s1 /
 // s2 = N". La idea es precalcular UNA SOLA VEZ la lista de todos los numeros con digitos

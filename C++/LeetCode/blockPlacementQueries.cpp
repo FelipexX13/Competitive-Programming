@@ -2,6 +2,7 @@
 // Tema: Data Structures / Segment Tree
 // Resumen: Usa un segment tree de maximos y un set de obstaculos para determinar si un bloque
 // de tamano sz cabe en...
+// O: (q log n), segment tree de maximos
 // Detalle: Resuelve "Block Placement Queries": usa un segment tree de maximos y un set de
 // obstaculos para determinar si un bloque de tamano sz cabe en algun hueco del rango [0, x].
 

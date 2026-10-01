@@ -1,6 +1,7 @@
 // <3
 // Tema: Number Theory / Number Theory (LCM via Factorizacion de Ciclos)
-// Resumen: Partiendo del arreglo ordenado [1..n]
+// Resumen: Rondas hasta que una permutacion vuelve al orden: LCM de los largos de sus ciclos
+// O: (n log n), ciclos mas LCM por factorizacion
 // Detalle: Resuelve "Permutation Rounds" (Day 10, problema L - Contest 09 [Avanzados]):
 // partiendo del arreglo ordenado [1..n], en cada ronda todo elemento en la posicion i se mueve
 // a la posicion p_i segun una permutacion fija; hay que hallar tras cuantas rondas el arreglo

@@ -1,6 +1,7 @@
 // <3
 // Tema: String / Simulation
 // Resumen: Procesa una cadena aplicando operaciones sobre un string acumulador
+// O: (n^2), el duplicar y el invertir copian todo
 // Detalle: Procesa una cadena aplicando operaciones sobre un string acumulador: '*' borra el
 // ultimo caracter, '#' duplica el contenido actual, '%' lo invierte, y cualquier otro caracter
 // se agrega al final. Devuelve el string resultante.

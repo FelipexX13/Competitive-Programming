@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Fuerza Bruta
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (respuesta - n) * digitos; con los limites del problema la respuesta esta cerca
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3345 "Smallest Divisible Digit Product I": el menor numero mayor o igual que n cuyo
 # producto de digitos sea multiplo de t. Tecnica: probar n, n+1, n+2, ... calculando math.prod

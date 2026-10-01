@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Merge Sort
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n log n) por el merge sort; ya venian ordenados, bastaba (n+m)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 88 "Merge Sorted Array": mezclar dos arreglos ya ordenados dentro del primero.
 # Tecnica: aca hace merge sort completo de la concatenacion. Lo que vale del archivo es la

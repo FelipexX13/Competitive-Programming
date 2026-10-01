@@ -1,6 +1,7 @@
 // <3
 // Tema: Dynamic Programming / Interval Scheduling
 // Resumen: Una fila de 2N jianzhi con simbolos repetidos (cada simbolo aparece dos veces)
+// O: (n log n) por ordenar por fin; el greedy es (n)
 // Detalle: Resuelve "Yuyuan Market" (Day 10, problema A - Contest 09 [Avanzados]): una fila de
 // 2N jianzhi con simbolos repetidos (cada simbolo aparece dos veces), donde solo se pueden
 // comprar pares (posicion i, posicion j>i) del mismo simbolo, sin cruzar hacia atras una vez

@@ -2,6 +2,7 @@
 // Tema: Formulario / Areas y Volumenes
 // Resumen: Areas de figuras planas y volumenes de cuerpos, incluidas las que uno cree recordar
 // y termina equivocando
+// O: (1) cada formula; es hoja de consulta, no algoritmo
 // Detalle: Areas de figuras planas y volumenes de cuerpos, incluidas las que uno cree recordar
 // y termina equivocando: el rombo es d1*d2/2 (no lado por lado), el cono y la piramide llevan
 // el tercio, y el perimetro de la elipse NO tiene formula cerrada elemental, solo la

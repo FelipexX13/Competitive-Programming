@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / BFS en Grilla
 // Resumen: BFS de caballo sobre la grilla: la distancia en SALTOS es el numero de aristas
+// O: (n^2), BFS en la grilla
 // Detalle: BFS de caballo sobre la grilla: la distancia en SALTOS es el numero de aristas, y
 // BFS la da porque todos los movimientos cuestan lo mismo. Los 8 movimientos van en los
 // arreglos dx y dy, que es como se evitan 8 bloques de codigo repetido. Se usa dist

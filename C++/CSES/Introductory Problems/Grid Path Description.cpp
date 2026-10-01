@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Backtracking con Poda de Zona Encerrada
 // Resumen: Backtracking sobre las 48 posiciones del camino
+// O: (2^48) en teoria, pero las podas lo bajan a millones
 // Detalle: Backtracking sobre las 48 posiciones del camino, con los '?' abriendo las 4
 // direcciones y las letras fijas forzando una sola. Sin poda esto no pasa ni de lejos. LA PODA
 // ES TODO EL PROBLEMA: si la celda actual tiene libres arriba y abajo pero ocupadas izquierda y

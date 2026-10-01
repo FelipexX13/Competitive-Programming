@@ -1,7 +1,7 @@
 // <3
 // Tema: Greedy / Puente y Linterna
-// Resumen: Resuelve "The Bridge At Night" (problema B, ICPC 2024), el clasico del puente con
-// una sola linterna
+// Resumen: Cruzar un puente de a dos con una linterna en tiempo minimo: greedy sobre los ordenados
+// O: (n log n) por el sort; el greedy despues es (n)
 // Detalle: Resuelve "The Bridge At Night" (problema B, ICPC 2024), el clasico del puente con
 // una sola linterna: cruzan a lo sumo dos a la vez, al paso del mas lento, y alguien tiene que
 // devolver la linterna. El codigo calcula el tiempo minimo para pasar a todos. Se ordenan los

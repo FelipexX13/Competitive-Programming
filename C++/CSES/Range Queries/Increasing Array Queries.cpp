@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Monotonic Stack + Binary Lifting con Costos
 // Resumen: Para cada consulta [l,r], el minimo de sumas para que el tramo quede no decreciente
+// O: (n log n), pila monotona mas binary lifting con costos
 // Detalle: Para cada consulta [l,r], el minimo de sumas para que el tramo quede no decreciente.
 // La solucion optima es subir cada elemento al MAXIMO DE PREFIJO del tramo, y ese maximo solo
 // cambia en los "siguientes mayores". Entonces el tramo se parte en bloques: desde i, todo

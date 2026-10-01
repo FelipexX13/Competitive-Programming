@@ -2,6 +2,7 @@
 // Tema: Dynamic Programming / Bitmask SOS DP
 // Resumen: Una torre de n pisos con k <= 15 habitaciones por piso (capacidad C[i][j]) y
 // escaleras que solo suben de...
+// O: (2^k * k), SOS DP sobre mascaras
 // Detalle: Resuelve "El Juego del Calamar" (Day 9, problema D - Contest 08 [Inicial &
 // Avanzado]): una torre de n pisos con k <= 15 habitaciones por piso (capacidad C[i][j]) y
 // escaleras que solo suben de piso i a i+1; en cada turno se descartan jugadores sobrantes por

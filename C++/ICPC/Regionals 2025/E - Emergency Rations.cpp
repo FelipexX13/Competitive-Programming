@@ -1,6 +1,7 @@
 // <3
 // Tema: Data Structures / Segment Tree sobre Coordenadas Comprimidas
-// Resumen: Resuelve "Emergency Rations" (problema E, Regionals 2025)
+// Resumen: Consultas con posiciones enormes: comprimir coordenadas y montar el segment tree encima
+// O: (q log q), segment tree sobre las coordenadas comprimidas
 // Detalle: Resuelve "Emergency Rations" (problema E, Regionals 2025). Las consultas traen
 // posiciones que llegan hasta valores enormes, asi que lo primero es COMPRIMIR: se juntan todos
 // los |x| que aparecen, se ordenan, se quitan repetidos, y el segment tree trabaja sobre esos

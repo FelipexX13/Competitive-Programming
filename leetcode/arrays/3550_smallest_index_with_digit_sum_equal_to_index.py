@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Suma de Digitos
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n * digitos)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3550 "Smallest Index With Digit Sum Equal to Index": el primer indice donde la suma
 # de digitos del valor es igual al indice. Tecnica: sum(map(int, str(x))) por elemento, que es

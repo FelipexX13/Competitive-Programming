@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Fusion de Listas Ligadas
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n+m), cirugia de punteros en el sitio
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 21 "Merge Two Sorted Lists": mezclar dos listas ligadas ordenadas. Tecnica del
 # codigo: cirugia de punteros en el sitio, insertando los nodos de una lista dentro de la otra

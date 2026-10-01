@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Segment Tree con Nodo Compuesto
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n*k*log n): el merge del nodo cuesta (k)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3525 "Find X Value of Array II": con actualizaciones de una posicion, contar cuantos
 # prefijos de un sufijo del arreglo tienen producto congruente con x modulo k. Tecnica: segment

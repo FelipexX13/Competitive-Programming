@@ -1,6 +1,7 @@
 # <3
 # Tema: Dynamic Programming / Subset Sum (Knapsack)
 # Resumen: Alice y Bob reciben N bolsas de caramelos que se reparten en el orden dado
+# O: (n * suma), subset sum clasico
 # Detalle: Resuelve "Karamell" (Day 3, problema K - Maratona SBC de Programacao 2024): Alice y
 # Bob reciben N bolsas de caramelos que se reparten en el orden dado, entregando cada bolsa a
 # quien tenga menos caramelos en ese momento (en caso de empate, a Alice); hay que encontrar un

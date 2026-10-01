@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Repeticiones Consecutivas
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2 / |word|) por los hash de cada posicion
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1668 "Maximum Repeating Substring": el mayor k tal que word repetido k veces esta
 # dentro de sequence. Tecnica: desde cada posicion se prueba word*1, word*2, ... hasta que no

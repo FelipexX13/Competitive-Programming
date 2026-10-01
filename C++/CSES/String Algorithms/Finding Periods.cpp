@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Periodos = n - Bordes
 // Resumen: Un periodo p de s es un desplazamiento tal que s[i] = s[i+p] para todo i valido
+// O: (n), los periodos salen de la cadena de bordes
 // Detalle: Un periodo p de s es un desplazamiento tal que s[i] = s[i+p] para todo i valido. La
 // equivalencia que resuelve el problema: p es periodo <=> n - p es un borde porque "s[i] =
 // s[i+p] para todo i" dice exactamente que el prefijo de largo n-p es igual al sufijo de largo

@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Factorial con un Filtro
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n) para el filtro, mas el factorial
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3577 "Count the Number of Computer Unlocking Permutations": en cuantos ordenes se
 # pueden desbloquear todos los computadores. Tecnica: si el primero no es el de complejidad

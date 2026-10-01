@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Sparse Table
 // Resumen: Sparse table: st[k][i] es el minimo de los 2^k elementos que arrancan en i
+// O: (n log n) de tabla y (1) por consulta
 // Detalle: Sparse table: st[k][i] es el minimo de los 2^k elementos que arrancan en i. Se
 // construye en O(n log n) partiendo cada rango en dos mitades de 2^(k-1), y cada consulta se
 // responde en O(1) cubriendo [l,r] con DOS bloques de tamano 2^k que se solapan. Solaparse no

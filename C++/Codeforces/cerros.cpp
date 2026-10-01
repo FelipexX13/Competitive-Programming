@@ -1,6 +1,7 @@
 // <3
 // Tema: Greedy / Segment Counting
 // Resumen: Cuenta la cantidad de segmentos contiguos con elementos >= k en un arreglo
+// O: (n), un barrido contando segmentos
 // Detalle: Cuenta la cantidad de segmentos contiguos con elementos >= k en un arreglo. Cada vez
 // que encuentra un elemento >= k después de uno < k, incrementa el contador.
 

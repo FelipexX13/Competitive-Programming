@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Triangulo de Pascal
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2), que es el tamano de la salida
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 118 "Pascal's Triangle": las primeras numRows filas del triangulo. Tecnica: cada fila
 # sale de la anterior sumando vecinos, con un 1 en cada punta. Es la recurrencia C(n,k) =

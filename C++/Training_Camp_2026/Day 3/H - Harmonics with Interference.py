@@ -1,7 +1,7 @@
 # <3
 # Tema: Brute Force / Backtracking (Enumeracion de bits desconocidos)
-# Resumen: Resuelve "Harmonics with Interference" (Day 3, problema H - Maratona SBC de
-# Programacao 2024)
+# Resumen: Rellenar los bits perdidos de M y N para que M sea divisible por N: backtracking
+# O: (2^desconocidos), backtracking sobre los bits perdidos
 # Detalle: Resuelve "Harmonics with Interference" (Day 3, problema H - Maratona SBC de
 # Programacao 2024): Arthur envia un mensaje binario M junto con una secuencia de control N tal
 # que el entero representado por M es divisible por el entero representado por N; Bruna recibe

@@ -1,7 +1,7 @@
 # <3
 # Tema: Math / Recursion (Simulacion tipo Josephus)
-# Resumen: En una fila de N personas, un detector defectuoso se activa en forma alternada (la
-# persona 1 no lo activa
+# Resumen: Fila donde uno de cada dos pasa al final: recursion tipo Josephus
+# O: (n), recursion tipo Josephus
 # Detalle: Resuelve "Metal detector" (Day 5, problema C - Contest 05 [Avanzados]): en una fila
 # de N personas, un detector defectuoso se activa en forma alternada (la persona 1 no lo activa,
 # la 2 si, la 3 no, y asi sucesivamente), cada persona que lo activa se manda al final de la

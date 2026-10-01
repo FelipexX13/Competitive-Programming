@@ -2,6 +2,7 @@
 // Tema: Binary Search / Two Pointers
 // Resumen: Dado el precio a_i de cada una de N categorias de joyas, un cliente debe elegir dos
 // categorias distintas
+// O: (n log n) por el sort; los dos punteros son (n)
 // Detalle: Resuelve "Black Hills golden jewels" (Day 5, problema B - Contest 05 [Avanzados]):
 // dado el precio a_i de cada una de N categorias de joyas, un cliente debe elegir dos
 // categorias distintas, y ningun cliente puede repetir una combinacion ya elegida por otro; hay

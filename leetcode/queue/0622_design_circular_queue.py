@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Cola Circular con Arreglo Fijo
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (1) todas las operaciones
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 622 "Design Circular Queue": cola de capacidad fija con enQueue, deQueue, Front y
 # Rear. Tecnica: arreglo de tamano k con dos indices, ini y rea, que dan la vuelta al llegar a

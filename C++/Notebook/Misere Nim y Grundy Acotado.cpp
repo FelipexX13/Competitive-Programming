@@ -1,7 +1,6 @@
 // <3
 // Tema: Game Theory / Misere Nim y Grundy Acotado
-// Resumen: Dos variantes del Nim que NO se resuelven con el XOR normal (ese caso ya esta
-// cubierto en "Marbles" con...
+// Resumen: Las dos variantes del Nim que NO salen con el XOR normal
 // O: (n) misere_nim, (1) grundy_bounded
 // Uso: misere_nim(pilas) -> gana el primero?; grundy_bounded(n,k) = n % (k+1)
 // Detalle: Dos variantes del Nim que NO se resuelven con el XOR normal (ese caso ya esta

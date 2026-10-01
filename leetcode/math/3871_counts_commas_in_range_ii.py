@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Conteo por Bandas de Magnitud
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (log n), bajando potencia de 10 por potencia de 10
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3871 "Count Commas in Range II": la misma cuenta de comas, pero con rangos grandes.
 # Tecnica: bajar por bandas. Se toma la potencia de 10 mas cercana por debajo de n, se cuenta

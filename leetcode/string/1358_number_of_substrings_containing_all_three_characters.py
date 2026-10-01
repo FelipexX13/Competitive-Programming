@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Contar Subcadenas con las Tres Letras
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2); con ventana deslizante seria (n) y sobraria el caso cableado
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1358 "Number of Substrings Containing All Three Characters": cuantas subcadenas
 # tienen al menos una a, una b y una c. Tecnica: para cada inicio i se busca el primer final j

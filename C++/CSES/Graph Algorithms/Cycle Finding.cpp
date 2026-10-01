@@ -2,6 +2,7 @@
 // Tema: CSES / Bellman-Ford (Ciclo Negativo)
 // Resumen: Bellman-Ford usado no para hallar distancias sino para DETECTAR un ciclo negativo y
 // devolverlo
+// O: (n*m), Bellman-Ford con la n-esima ronda como detector
 // Detalle: Bellman-Ford usado no para hallar distancias sino para DETECTAR un ciclo negativo y
 // devolverlo. Se relaja n veces; si en la ultima pasada todavia hubo una mejora, esa mejora
 // solo pudo venir de un ciclo negativo, y el nodo donde ocurrio queda guardado. EL TRUCO DE LA

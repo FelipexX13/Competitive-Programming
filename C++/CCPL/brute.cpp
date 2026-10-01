@@ -1,6 +1,7 @@
 // <3
 // Tema: Graph / MST con Prim (Grafo Denso)
 // Resumen: Una caja fuerte con N llaves de 4 digitos que hay que desbloquear todas
+// O: (n^2), Prim para grafo denso
 // Detalle: Resuelve "Anti-brute Force Lock" (problema B, CCPL 2026): una caja fuerte con N
 // llaves de 4 digitos que hay que desbloquear todas. Los diales arrancan en 0000, cada rueda
 // gira de 0 a 9 dando la vuelta (de 9 se pasa a 0), y hay un boton JUMP que lleva los diales

@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Buscar Repetidos
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n), cortando en el primer repetido
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 217 "Contains Duplicate": decir si hay algun valor repetido. Tecnica: diccionario
 # como set, y se corta en el primer repetido. Cortar temprano es la unica gracia; tambien sale

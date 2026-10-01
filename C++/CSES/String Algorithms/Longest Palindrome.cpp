@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Manacher
 // Resumen: Manacher: el palindromo mas largo en O(n)
+// O: (n), Manacher
 // Detalle: Manacher: el palindromo mas largo en O(n). Se intercala '#' entre letras para que
 // los palindromos pares y los impares se vuelvan todos impares, y para cada centro se guarda
 // p[i], el radio del palindromo mas largo ahi. LO QUE LO HACE LINEAL: se mantiene el palindromo

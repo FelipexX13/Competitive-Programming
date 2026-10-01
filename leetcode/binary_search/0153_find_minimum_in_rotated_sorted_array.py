@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Busqueda en Arreglo Rotado
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (log n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 153 "Find Minimum in Rotated Sorted Array": el minimo de un ordenado y rotado.
 # Tecnica: binaria comparando el medio contra los extremos. Si nums[ini] > nums[m] el punto de

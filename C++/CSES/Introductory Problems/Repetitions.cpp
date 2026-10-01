@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Barrido Lineal de Rachas
 // Resumen: Una pasada llevando el largo de la racha actual y el maximo visto
+// O: (n), un barrido de rachas
 // Detalle: Una pasada llevando el largo de la racha actual y el maximo visto. Al cambiar el
 // caracter se cierra la racha y se reinicia en 1. EL BUG CLASICO: la ultima racha nunca se
 // cierra dentro del for, porque no hay un cambio de caracter que la corte. Por eso hay que

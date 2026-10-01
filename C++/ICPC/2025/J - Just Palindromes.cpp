@@ -1,6 +1,7 @@
 // <3
 // Tema: String / Palindromo Ignorando Simbolos
 // Resumen: Decir si una frase es palindroma ignorando espacios, puntuacion y mayusculas
+// O: (n), dos punteros saltando los simbolos
 // Detalle: Resuelve "Just Palindromes!" (problema J, ICPC 2025): decir si una frase es
 // palindroma ignorando espacios, puntuacion y mayusculas. Se filtra dejando solo letras y
 // pasandolas a minuscula, y despues es el chequeo de dos punteros de siempre. Lo unico que hay

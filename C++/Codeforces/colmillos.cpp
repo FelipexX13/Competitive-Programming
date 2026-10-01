@@ -1,6 +1,7 @@
 // <3
 // Tema: Graph / Tree Degree Analysis
 // Resumen: Calcula cuántos pares de nodos pueden removerse de un árbol para desconectarlo
+// O: (n), grados del arbol
 // Detalle: Calcula cuántos pares de nodos pueden removerse de un árbol para desconectarlo. Es n
 // menos la suma de los dos mayores grados de los nodos.
 

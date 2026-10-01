@@ -2,6 +2,7 @@
 // Tema: Simulation / Ad Hoc
 // Resumen: Se simulan N juegos del problema de Monty Hall donde el jugador siempre elige la
 // puerta 1 y luego siempre...
+// O: (1)
 // Detalle: Resuelve "Unraveling Monty Hall" (Day 8, problema D - Contest 08 [Avanzados]): se
 // simulan N juegos del problema de Monty Hall donde el jugador siempre elige la puerta 1 y
 // luego siempre cambia a la otra puerta cerrada tras que el presentador revela una cabra; dado

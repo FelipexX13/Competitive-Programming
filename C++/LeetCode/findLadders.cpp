@@ -2,6 +2,7 @@
 // Tema: Graph / BFS Backtracking
 // Resumen: Encuentra TODAS las secuencias de transformacion mas cortas de beginWord a endWord
 // cambiando una letra a la...
+// O: (n * largo * 26) el BFS, mas el backtracking de los caminos
 // Detalle: Resuelve "Word Ladder II": encuentra TODAS las secuencias de transformacion mas
 // cortas de beginWord a endWord cambiando una letra a la vez. BFS por niveles guardando los
 // padres de cada palabra, y luego backtracking desde endWord para reconstruir todos los caminos

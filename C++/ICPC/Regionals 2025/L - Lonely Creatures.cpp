@@ -2,6 +2,7 @@
 // Tema: Geometry / Contar Cruces de Cuerdas con Fenwick
 // Resumen: Cada criatura define una recta que corta una parabola en dos puntos, o sea una
 // CUERDA de la region
+// O: (n log n), cruces de cuerdas contadas como inversiones con Fenwick
 // Detalle: Resuelve "Lonely Creatures" (problema L, Regionals 2025): cada criatura define una
 // recta que corta una parabola en dos puntos, o sea una CUERDA de la region, y hay que contar
 // cuantos pares de cuerdas se cruzan por dentro. DOS PASOS, Y EL PRIMERO ES EL QUE SE PIENSA:

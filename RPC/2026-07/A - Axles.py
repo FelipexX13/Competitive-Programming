@@ -1,6 +1,7 @@
 # <3
 # Tema: Greedy / Emparejar Extremos
 # Resumen: NO ES MIO: codigo de Stiven Correa, del repo del equipo (carpeta RPC/)
+# O: (n log n) por ordenar los diametros de cada eje
 # Detalle: NO ES MIO: codigo de Stiven Correa, del repo del equipo (carpeta RPC/). Resuelve
 # "Axles" (RPC 2026-07, problema A): las ruedas se agrupan por eje y en cada eje se emparejan de
 # dos en dos; minimizar la suma de los desbalances. Tecnica: por cada eje se ordenan los

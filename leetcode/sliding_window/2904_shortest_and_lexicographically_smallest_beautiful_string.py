@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Ventana con Conteo Exacto
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n^2) por el min() sobre las candidatas al final
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 2904 "Shortest and Lexicographically Smallest Beautiful String": la subcadena mas
 # corta con exactamente k unos, y entre las de ese largo la menor alfabeticamente. Tecnica:

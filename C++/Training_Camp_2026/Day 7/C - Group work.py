@@ -2,6 +2,7 @@
 # Tema: Combinatorics / Suma de Subconjuntos (2^n)
 # Resumen: Dada una clase de N estudiantes, cuenta cuantos grupos distintos de al menos 2
 # estudiantes se pueden formar...
+# O: (2^n), todos los subconjuntos
 # Detalle: Resuelve "Group work" (Day 7, problema C - Contest 07 [Avanzados]): dada una clase de
 # N estudiantes, cuenta cuantos grupos distintos de al menos 2 estudiantes se pueden formar (dos
 # grupos son distintos si difieren en al menos un estudiante). La respuesta es la suma de

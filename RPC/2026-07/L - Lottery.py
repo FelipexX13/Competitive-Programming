@@ -1,6 +1,7 @@
 # <3
 # Tema: Implementation / Umbral de Frecuencia
 # Resumen: NO ES MIO: codigo de Stiven Correa, del repo del equipo (carpeta RPC/)
+# O: (n log n) por ordenar la respuesta; el conteo es (n)
 # Detalle: NO ES MIO: codigo de Stiven Correa, del repo del equipo (carpeta RPC/). Resuelve
 # "Lottery" (RPC 2026-07, problema L): de todos los numeros jugados, los que aparecen mas de 2n
 # veces, en orden; -1 si no hay ninguno. Tecnica: diccionario de frecuencias y se agrega al

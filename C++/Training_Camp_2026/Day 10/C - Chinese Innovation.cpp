@@ -2,6 +2,7 @@
 // Tema: Graph / Dijkstra con Nodos Virtuales
 // Resumen: Un imperio de n ciudades con m caminos bidireccionales con costo, mas k tipos de
 // teletransportadores
+// O: (m log n), Dijkstra con nodos virtuales por grupo
 // Detalle: Resuelve "Chinese Innovation" (Day 10, problema C - Contest 09 [Avanzados]): un
 // imperio de n ciudades con m caminos bidireccionales con costo, mas k tipos de
 // teletransportadores; dos ciudades con teletransportador del mismo tipo se conectan

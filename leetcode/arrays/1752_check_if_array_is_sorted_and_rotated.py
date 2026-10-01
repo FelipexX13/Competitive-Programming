@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Ordenado y Rotado
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n log n) por el sorted; contar las bajadas lo deja en (n)
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1752 "Check if Array Is Sorted and Rotated": decir si el arreglo es una rotacion de
 # su version ordenada. Tecnica del codigo: busca donde arranca el minimo y compara dando la

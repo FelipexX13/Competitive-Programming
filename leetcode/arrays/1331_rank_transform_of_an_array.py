@@ -2,6 +2,7 @@
 # Tema: LeetCode Hub / Compresion de Coordenadas
 # Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# O: (n log n) por el sorted(set(arr))
 # Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1331 "Rank Transform of an Array": reemplazar cada valor por su puesto en el orden.
 # Tecnica: sorted(set(arr)) y un diccionario valor -> puesto. Eso es exactamente COMPRESION DE

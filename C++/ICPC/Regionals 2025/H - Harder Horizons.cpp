@@ -2,6 +2,7 @@
 // Tema: Implementation / Conteo de Records
 // Resumen: Cuenta cuantos elementos son mayores que TODOS los anteriores, o sea los "records" o
 // maximos de prefijo
+// O: (n), contar records en una pasada
 // Detalle: Resuelve "Harder Horizons" (problema H, Regionals 2025): cuenta cuantos elementos
 // son mayores que TODOS los anteriores, o sea los "records" o maximos de prefijo. Una sola
 // pasada llevando el maximo visto: si el actual lo supera, se cuenta y se actualiza. O(n) y

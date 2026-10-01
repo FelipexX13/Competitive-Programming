@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Construccion Directa
 // Resumen: En vez de buscar, se CONSTRUYE: primero todos los pares y despues todos los impares
+// O: (n), construccion directa
 // Detalle: En vez de buscar, se CONSTRUYE: primero todos los pares y despues todos los impares.
 // Dos numeros de la misma paridad difieren en al menos 2, asi que dentro de cada mitad no hay
 // problema, y en la frontera se juntan el ultimo par con el 1, que para n >= 4 tambien difieren

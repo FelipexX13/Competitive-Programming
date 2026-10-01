@@ -1,6 +1,7 @@
 // <3
 // Tema: CSES / Recursion Clasica
 // Resumen: La recursion de siempre: mover n-1 al auxiliar, mover el disco grande al destino
+// O: (2^n), que es la cantidad de movimientos
 // Detalle: La recursion de siempre: mover n-1 al auxiliar, mover el disco grande al destino,
 // mover los n-1 del auxiliar al destino. El caso base es n == 0 y no hace nada. El total es 2^n
 // - 1 movimientos, que se imprime antes porque se sabe de formula. LO QUE HAY QUE VER: los tres

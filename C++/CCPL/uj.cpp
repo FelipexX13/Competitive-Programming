@@ -1,6 +1,7 @@
 // <3
 // Tema: Number Theory / Big Exponentiation
-// Resumen: Calcula p^q usando aritmética de precisión arbitraria (boost
+// Resumen: Calcula p^q con precision arbitraria, para exponentes muy grandes
+// O: (log n) multiplicaciones de enteros grandes
 // Detalle: Calcula p^q usando aritmética de precisión arbitraria (boost::multiprecision) para
 // manejar resultados con exponentes muy grandes.
 

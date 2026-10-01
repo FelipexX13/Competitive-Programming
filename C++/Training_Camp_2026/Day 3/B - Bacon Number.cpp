@@ -2,6 +2,7 @@
 // Tema: Graph / BFS
 // Resumen: Dadas N peliculas con sus actores, hay que responder Q consultas que piden conectar
 // dos actores x e y...
+// O: (n + m), BFS por capas
 // Detalle: Resuelve "Bacon Number" (Day 3, problema B - Maratona SBC de Programacao 2024):
 // dadas N peliculas con sus actores, hay que responder Q consultas que piden conectar dos
 // actores x e y mediante una secuencia alternada actor-pelicula-actor-...-pelicula-actor, donde

@@ -1,7 +1,8 @@
 // <3
 // Tema: Number Theory / Big Exponentiation
-// Calcula p^q usando aritmética de precisión arbitraria (boost::multiprecision)
-// para manejar resultados con exponentes muy grandes.
+// Resumen: Calcula p^q usando aritmética de precisión arbitraria (boost
+// Detalle: Calcula p^q usando aritmética de precisión arbitraria (boost::multiprecision) para
+// manejar resultados con exponentes muy grandes.
 
 #include <bits/stdc++.h>
 #include <boost/multiprecision/cpp_int.hpp>

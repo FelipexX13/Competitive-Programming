@@ -1,11 +1,12 @@
 # <3
 # Tema: LeetCode Hub / Manejo de Digitos
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
-# LeetCode 3754 "Concatenate Non-Zero Digits and Multiply by Sum I": pegar los digitos que no son 0
-# y multiplicar ese numero por la suma de sus digitos.
-# Tecnica: armar el string sin ceros, sumar los digitos y multiplicar. El try/except cubre el caso
-# de que no quede ningun digito (n era todo ceros), donde int('') falla.
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# LeetCode 3754 "Concatenate Non-Zero Digits and Multiply by Sum I": pegar los digitos que no
+# son 0 y multiplicar ese numero por la suma de sus digitos. Tecnica: armar el string sin ceros,
+# sumar los digitos y multiplicar. El try/except cubre el caso de que no quede ningun digito (n
+# era todo ceros), donde int('') falla.
 
 class Solution:
     def sumAndMultiply(self, n: int) -> int:

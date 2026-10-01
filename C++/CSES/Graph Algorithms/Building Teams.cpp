@@ -1,12 +1,13 @@
 // <3
 // Tema: CSES / BFS de Bicoloreo (Bipartito)
-// Bicoloreo por BFS: se pinta el primer nodo de 1 y cada vecino del color opuesto. Si en algun
-// momento aparece una arista entre dos nodos del MISMO color, el grafo tiene un ciclo impar y no
-// es bipartito. El for de afuera reinicia el BFS en cada componente, que es lo que se olvida.
-// CUANDO USAR: cada vez que un problema pida partir en DOS grupos con "estos dos no pueden ir
-// juntos", o preguntar si se puede 2-colorear. Bipartito equivale a no tener ciclos de longitud
-// impar. Y es el prerrequisito para matching bipartito: si el problema habla de emparejar dos
-// conjuntos, lo primero es verificar que el grafo sea bipartito.
+// Resumen: Bicoloreo por BFS: se pinta el primer nodo de 1 y cada vecino del color opuesto
+// Detalle: Bicoloreo por BFS: se pinta el primer nodo de 1 y cada vecino del color opuesto. Si
+// en algun momento aparece una arista entre dos nodos del MISMO color, el grafo tiene un ciclo
+// impar y no es bipartito. El for de afuera reinicia el BFS en cada componente, que es lo que
+// se olvida. CUANDO USAR: cada vez que un problema pida partir en DOS grupos con "estos dos no
+// pueden ir juntos", o preguntar si se puede 2-colorear. Bipartito equivale a no tener ciclos
+// de longitud impar. Y es el prerrequisito para matching bipartito: si el problema habla de
+// emparejar dos conjuntos, lo primero es verificar que el grafo sea bipartito.
 
 #include <iostream>
 #include <vector>

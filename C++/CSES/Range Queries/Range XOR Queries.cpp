@@ -1,11 +1,11 @@
 // <3
 // Tema: CSES / Prefix XOR
-// Idem prefix sums pero con xor, y funciona por la misma razon: el xor es su propia inversa, asi
-// que pref[r] ^ pref[l-1] cancela todo lo de antes de l. Los elementos repetidos se anulan de a
-// pares.
-// CUANDO USAR: ver que el xor tiene inversa es lo que abre la puerta. Mismo patron para cualquier
-// grupo abeliano: suma, xor, producto modular con inversos. Para min o max NO aplica, porque no
-// hay nada que "deshaga" un minimo.
+// Resumen: Idem prefix sums pero con xor, y funciona por la misma razon
+// Detalle: Idem prefix sums pero con xor, y funciona por la misma razon: el xor es su propia
+// inversa, asi que pref[r] ^ pref[l-1] cancela todo lo de antes de l. Los elementos repetidos
+// se anulan de a pares. CUANDO USAR: ver que el xor tiene inversa es lo que abre la puerta.
+// Mismo patron para cualquier grupo abeliano: suma, xor, producto modular con inversos. Para
+// min o max NO aplica, porque no hay nada que "deshaga" un minimo.
 
 #include <bits/stdc++.h>
 using namespace std;

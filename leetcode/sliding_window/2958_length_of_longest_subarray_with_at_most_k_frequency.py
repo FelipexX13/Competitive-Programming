@@ -1,11 +1,11 @@
 # <3
 # Tema: LeetCode Hub / Ventana con Frecuencias
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 2958 "Length of Longest Subarray With at Most K Frequency": el subarreglo mas largo
-# donde ningun valor aparece mas de k veces.
-# Tecnica: ventana deslizante con diccionario de frecuencias. Cuando un valor llega a k+1 se
-# encoge por la izquierda hasta que deje de pasarse.
+# donde ningun valor aparece mas de k veces. Tecnica: ventana deslizante con diccionario de
+# frecuencias. Cuando un valor llega a k+1 se encoge por la izquierda hasta que deje de pasarse.
 # La bandera f es para no volver a contar el elemento de la derecha mientras la ventana se
 # encoge; con el patron normal (un while adentro del for) no hace falta.
 

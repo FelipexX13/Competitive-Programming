@@ -1,14 +1,16 @@
 // <3
 // Tema: Greedy / Interval Scheduling
+// Resumen: Maximo numero de intervalos que se pueden elegir sin que se solapen (tareas con hora
+// de inicio y fin
 // O: (n log n), ordenar por FIN y tomar el que no choque
 // Uso: ordenar por v[i].second y avanzar mientras inicio >= ultimo_fin
-// Maximo numero de intervalos que se pueden elegir sin que se solapen (tareas con hora de
-// inicio y fin, salones, reservas). Es el greedy clasico y no debe confundirse con la DP de
-// intervalos de "Yuyuan Market", que optimiza otra cosa (cantidad y luego costo).
-// La clave es ordenar por hora de FIN, no por inicio ni por duracion: al quedarse siempre
-// con el intervalo que termina antes, se deja la mayor cantidad de tiempo libre para los que
-// siguen, y se puede probar por intercambio que ninguna otra eleccion mejora el resultado.
-// Ordenar por inicio o por duracion da respuestas incorrectas.
+// Detalle: Maximo numero de intervalos que se pueden elegir sin que se solapen (tareas con hora
+// de inicio y fin, salones, reservas). Es el greedy clasico y no debe confundirse con la DP de
+// intervalos de "Yuyuan Market", que optimiza otra cosa (cantidad y luego costo). La clave es
+// ordenar por hora de FIN, no por inicio ni por duracion: al quedarse siempre con el intervalo
+// que termina antes, se deja la mayor cantidad de tiempo libre para los que siguen, y se puede
+// probar por intercambio que ninguna otra eleccion mejora el resultado. Ordenar por inicio o
+// por duracion da respuestas incorrectas.
 
 #include <bits/stdc++.h>
 

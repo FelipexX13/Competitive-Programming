@@ -1,9 +1,11 @@
 // <3
 // Tema: Formulario / Combinatoria
-// Conteos clasicos con sus primeros valores para identificar la sucesion en la salida de
-// ejemplo: 1, 2, 5, 14, 42 son Catalan; 1, 1, 2, 5, 15, 52 son Bell; 1, 0, 1, 2, 9, 44 son
-// desarreglos. Incluye el triangulo de Pascal hasta n=10 y las identidades que permiten
-// cerrar una sumatoria antes de escribir una sola linea de codigo.
+// Resumen: Conteos clasicos con sus primeros valores para identificar la sucesion en la salida
+// de ejemplo
+// Detalle: Conteos clasicos con sus primeros valores para identificar la sucesion en la salida
+// de ejemplo: 1, 2, 5, 14, 42 son Catalan; 1, 1, 2, 5, 15, 52 son Bell; 1, 0, 1, 2, 9, 44 son
+// desarreglos. Incluye el triangulo de Pascal hasta n=10 y las identidades que permiten cerrar
+// una sumatoria antes de escribir una sola linea de codigo.
 
 // =============== COMBINATORIA ===============
 //

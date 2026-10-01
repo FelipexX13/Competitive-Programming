@@ -1,9 +1,11 @@
 // <3
 // Tema: Formulario / Teoria de Numeros
-// Divisores, phi, gcd, aritmetica modular y CRT, con las tablas hasta 20 para revisar
-// a mano un caso chico. La mitad de los problemas de numeros se resuelven sabiendo
-// que d(n), sigma(n) y phi(n) salen directo de la factorizacion, y que en modular
-// dividir significa multiplicar por el inverso.
+// Resumen: Divisores, phi, gcd, aritmetica modular y CRT, con las tablas hasta 20 para revisar
+// a mano un caso chico
+// Detalle: Divisores, phi, gcd, aritmetica modular y CRT, con las tablas hasta 20 para revisar
+// a mano un caso chico. La mitad de los problemas de numeros se resuelven sabiendo que d(n),
+// sigma(n) y phi(n) salen directo de la factorizacion, y que en modular dividir significa
+// multiplicar por el inverso.
 
 // =============== TEORIA DE NUMEROS ===============
 //

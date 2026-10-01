@@ -1,12 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Fusionar Intervalos
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
-# LeetCode 56 "Merge Intervals": unir los intervalos que se traslapan.
-# Tecnica: ordenar por inicio y barrer con un intervalo abierto; si el siguiente empieza antes de
-# que el actual termine, se estira el final al maximo, y si no, se cierra y se abre uno nuevo.
-# Ordenar por inicio es lo que garantiza que solo hay que mirar el intervalo anterior. Es el molde
-# de casi todos los problemas de intervalos.
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# LeetCode 56 "Merge Intervals": unir los intervalos que se traslapan. Tecnica: ordenar por
+# inicio y barrer con un intervalo abierto; si el siguiente empieza antes de que el actual
+# termine, se estira el final al maximo, y si no, se cierra y se abre uno nuevo. Ordenar por
+# inicio es lo que garantiza que solo hay que mirar el intervalo anterior. Es el molde de casi
+# todos los problemas de intervalos.
 
 class Solution:
     def merge(self, intervals: List[List[int]]) -> List[List[int]]:

@@ -1,16 +1,17 @@
 // <3
 // Tema: CSES / Manacher
-// Manacher: el palindromo mas largo en O(n). Se intercala '#' entre letras para que los
-// palindromos pares y los impares se vuelvan todos impares, y para cada centro se guarda p[i], el
-// radio del palindromo mas largo ahi.
-// LO QUE LO HACE LINEAL: se mantiene el palindromo que llega mas a la derecha (center, right).
-// Si i cae dentro de el, su espejo 2*center - i ya se calculo, y p[i] arranca en min(right - i,
-// p[espejo]) en vez de en 0. Solo se expande lo que sobresale de right, y right nunca retrocede.
-// Para volver a la cadena original: con separadores, el palindromo de radio p[i] centrado en i
-// mide p[i] letras reales y empieza en (i - p[i]) / 2.
-// OJO, ESTE ARCHIVO TIENE UN BUCLE DE DEPURACION AL FINAL: despues de imprimir la respuesta
-// recorre p e imprime p[i] para cada i impar. Con la entrada "aybabtu" sale "bab" y 7 lineas de
-// mas (comprobado). En CSES eso es Wrong Answer; hay que borrar ese for antes de enviar.
+// Resumen: Manacher: el palindromo mas largo en O(n)
+// Detalle: Manacher: el palindromo mas largo en O(n). Se intercala '#' entre letras para que
+// los palindromos pares y los impares se vuelvan todos impares, y para cada centro se guarda
+// p[i], el radio del palindromo mas largo ahi. LO QUE LO HACE LINEAL: se mantiene el palindromo
+// que llega mas a la derecha (center, right). Si i cae dentro de el, su espejo 2*center - i ya
+// se calculo, y p[i] arranca en min(right - i, p[espejo]) en vez de en 0. Solo se expande lo
+// que sobresale de right, y right nunca retrocede. Para volver a la cadena original: con
+// separadores, el palindromo de radio p[i] centrado en i mide p[i] letras reales y empieza en
+// (i - p[i]) / 2. OJO, ESTE ARCHIVO TIENE UN BUCLE DE DEPURACION AL FINAL: despues de imprimir
+// la respuesta recorre p e imprime p[i] para cada i impar. Con la entrada "aybabtu" sale "bab"
+// y 7 lineas de mas (comprobado). En CSES eso es Wrong Answer; hay que borrar ese for antes de
+// enviar.
 
 #include <bits/stdc++.h>
 using namespace std;

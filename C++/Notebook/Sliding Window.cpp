@@ -1,14 +1,16 @@
 // <3
 // Tema: Greedy / Sliding Window
+// Resumen: Ventana de tamano variable para hallar el subarreglo mas largo que cumple una
+// condicion monotona (suma <= K
 // O: (n) amortizado, cada elemento entra y sale una vez
 // Uso: exige condicion monotona; con negativos NO sirve, usa prefijos + map
-// Ventana de tamano variable para hallar el subarreglo mas largo que cumple una condicion
-// monotona (suma <= K, a lo sumo K distintos, etc). Cada elemento entra y sale de la ventana
-// a lo sumo una vez, asi que el costo total es O(n) aunque haya dos ciclos anidados.
-// La condicion tiene que ser monotona: si un rango cumple, cualquier subrango tambien debe
+// Detalle: Ventana de tamano variable para hallar el subarreglo mas largo que cumple una
+// condicion monotona (suma <= K, a lo sumo K distintos, etc). Cada elemento entra y sale de la
+// ventana a lo sumo una vez, asi que el costo total es O(n) aunque haya dos ciclos anidados. La
+// condicion tiene que ser monotona: si un rango cumple, cualquier subrango tambien debe
 // cumplir. Por eso funciona con sumas de numeros no negativos, pero NO si el arreglo tiene
-// negativos (ahi encoger la ventana no garantiza reducir la suma y hay que usar prefijos con
-// un map o un deque monotono).
+// negativos (ahi encoger la ventana no garantiza reducir la suma y hay que usar prefijos con un
+// map o un deque monotono).
 
 #include <bits/stdc++.h>
 

@@ -1,29 +1,28 @@
 // <3
 // Tema: Graph / 2-SAT (Kosaraju)
-// Resuelve "Signal Coverage" (problema G, ICPC 2024). Cada antena se instala o no; hay parejas
-// de las que AL MENOS UNA debe instalarse, y dos antenas que coinciden en tiempo (sus intervalos
-// se cruzan) y en espacio (sus circulos se tocan) NO pueden instalarse las dos. El codigo decide
-// si se puede y da una asignacion.
-// Todas las restricciones son de dos variables, y eso es 2-SAT:
-//     al menos una:     xu OR xv
-//     no las dos:       NOT xi OR NOT xj
-// Cada clausula (a OR b) se vuelve dos implicaciones, NOT a -> b y NOT b -> a. Con la codificacion
-// 2i = instalada, 2i+1 = no instalada, negar es un xor con 1.
-// Se sacan las componentes fuertemente conexas con Kosaraju. Hay solucion si y solo si ninguna
-// variable queda en la misma componente que su negacion (eso seria x implica NOT x implica x).
-// LA TRAMPA DE LA ASIGNACION: Kosaraju numera las componentes en ORDEN TOPOLOGICO, y la regla es
-// x verdadera si comp[x] > comp[NOT x]. Con Tarjan la numeracion sale al reves y la desigualdad
-// se voltea. Mezclar las dos da asignaciones que violan restricciones sin avisar.
-// El choque de circulos va en enteros: dist^2 <= (r1 + r2)^2, sin raiz cuadrada. El borde cuenta
-// (tangentes chocan) y los dias tambien: activa de b a e+1, asi que chocan si max(b) <= min(e).
-// OJO CON LA LECTURA: cada antena viene como "r x y b e", con el radio PRIMERO. La primera version
-// leia "x y r b e" y respondia "11" en el primer caso del sample, instalando dos antenas que se
-// cubren. Corregida, se valido contra fuerza bruta en 1800 casos (incluye tangentes y dias que
-// se tocan), sin una sola salida invalida.
-// RIESGO DE MEMORIA: se revisan todos los pares, y si muchas antenas se solapan las clausulas
-// crecen como n^2. Medido con todas solapadas: 6000 antenas piden 371 MB, y con las 10000 del
-// enunciado seria del orden de 1 GB. Si el juez trae un caso asi de denso, la salida es no
-// guardar las aristas de conflicto y recalcularlas al recorrer, como hace "J - Lumina".
+// Resumen: Resuelve "Signal Coverage" (problema G, ICPC 2024)
+// Detalle: Resuelve "Signal Coverage" (problema G, ICPC 2024). Cada antena se instala o no; hay
+// parejas de las que AL MENOS UNA debe instalarse, y dos antenas que coinciden en tiempo (sus
+// intervalos se cruzan) y en espacio (sus circulos se tocan) NO pueden instalarse las dos. El
+// codigo decide si se puede y da una asignacion. Todas las restricciones son de dos variables,
+// y eso es 2-SAT: al menos una: xu OR xv no las dos: NOT xi OR NOT xj Cada clausula (a OR b) se
+// vuelve dos implicaciones, NOT a -> b y NOT b -> a. Con la codificacion 2i = instalada, 2i+1 =
+// no instalada, negar es un xor con 1. Se sacan las componentes fuertemente conexas con
+// Kosaraju. Hay solucion si y solo si ninguna variable queda en la misma componente que su
+// negacion (eso seria x implica NOT x implica x). LA TRAMPA DE LA ASIGNACION: Kosaraju numera
+// las componentes en ORDEN TOPOLOGICO, y la regla es x verdadera si comp[x] > comp[NOT x]. Con
+// Tarjan la numeracion sale al reves y la desigualdad se voltea. Mezclar las dos da
+// asignaciones que violan restricciones sin avisar. El choque de circulos va en enteros: dist^2
+// <= (r1 + r2)^2, sin raiz cuadrada. El borde cuenta (tangentes chocan) y los dias tambien:
+// activa de b a e+1, asi que chocan si max(b) <= min(e). OJO CON LA LECTURA: cada antena viene
+// como "r x y b e", con el radio PRIMERO. La primera version leia "x y r b e" y respondia "11"
+// en el primer caso del sample, instalando dos antenas que se cubren. Corregida, se valido
+// contra fuerza bruta en 1800 casos (incluye tangentes y dias que se tocan), sin una sola
+// salida invalida. RIESGO DE MEMORIA: se revisan todos los pares, y si muchas antenas se
+// solapan las clausulas crecen como n^2. Medido con todas solapadas: 6000 antenas piden 371 MB,
+// y con las 10000 del enunciado seria del orden de 1 GB. Si el juez trae un caso asi de denso,
+// la salida es no guardar las aristas de conflicto y recalcularlas al recorrer, como hace "J -
+// Lumina".
 
 #include <bits/stdc++.h>
 using namespace std;

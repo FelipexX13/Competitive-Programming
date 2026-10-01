@@ -1,15 +1,17 @@
 # <3
 # Tema: Dynamic Programming / Subset Sum (Knapsack)
-# Resuelve "Karamell" (Day 3, problema K - Maratona SBC de Programacao 2024): Alice y Bob reciben
-# N bolsas de caramelos que se reparten en el orden dado, entregando cada bolsa a quien tenga
-# menos caramelos en ese momento (en caso de empate, a Alice); hay que encontrar un orden de las
-# bolsas tal que ambos terminen con la misma cantidad de caramelos, o determinar que es imposible.
-# El codigo primero descarta el caso de suma total impar. Luego usa una DP de subset-sum
-# (dp[i][s], con bytearray por fila para ahorrar memoria) para determinar si existe un subconjunto
-# de bolsas cuya suma sea la mitad del total, y reconstruye ese subconjunto (sub). Finalmente
-# separa las bolsas en dos grupos (alice/bob) segun pertenezcan o no a ese subconjunto y las
-# intercala de forma greedy, dandole siempre la siguiente bolsa al que menos lleva acumulado,
-# reproduciendo la regla de reparto del enunciado para garantizar el empate final.
+# Resumen: Alice y Bob reciben N bolsas de caramelos que se reparten en el orden dado
+# Detalle: Resuelve "Karamell" (Day 3, problema K - Maratona SBC de Programacao 2024): Alice y
+# Bob reciben N bolsas de caramelos que se reparten en el orden dado, entregando cada bolsa a
+# quien tenga menos caramelos en ese momento (en caso de empate, a Alice); hay que encontrar un
+# orden de las bolsas tal que ambos terminen con la misma cantidad de caramelos, o determinar
+# que es imposible. El codigo primero descarta el caso de suma total impar. Luego usa una DP de
+# subset-sum (dp[i][s], con bytearray por fila para ahorrar memoria) para determinar si existe
+# un subconjunto de bolsas cuya suma sea la mitad del total, y reconstruye ese subconjunto
+# (sub). Finalmente separa las bolsas en dos grupos (alice/bob) segun pertenezcan o no a ese
+# subconjunto y las intercala de forma greedy, dandole siempre la siguiente bolsa al que menos
+# lleva acumulado, reproduciendo la regla de reparto del enunciado para garantizar el empate
+# final.
 
 import sys
 input = sys.stdin.readline

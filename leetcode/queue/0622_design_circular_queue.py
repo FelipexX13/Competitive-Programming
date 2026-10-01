@@ -1,12 +1,12 @@
 # <3
 # Tema: LeetCode Hub / Cola Circular con Arreglo Fijo
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 622 "Design Circular Queue": cola de capacidad fija con enQueue, deQueue, Front y
-# Rear.
-# Tecnica: arreglo de tamano k con dos indices, ini y rea, que dan la vuelta al llegar a k. El
-# tamano se guarda aparte, y eso es lo que permite distinguir vacia de llena sin desperdiciar
-# una casilla. Rear() usa rea-1 porque rea apunta a la siguiente libre.
+# Rear. Tecnica: arreglo de tamano k con dos indices, ini y rea, que dan la vuelta al llegar a
+# k. El tamano se guarda aparte, y eso es lo que permite distinguir vacia de llena sin
+# desperdiciar una casilla. Rear() usa rea-1 porque rea apunta a la siguiente libre.
 
 class MyCircularQueue:
     

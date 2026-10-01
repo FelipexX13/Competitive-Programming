@@ -1,32 +1,30 @@
 // <3
 // Tema: Data Structures / Sparse Table sobre Bloques Iguales
-// Resuelve "Frequent Values" (problema E, CCPL): un arreglo de n enteros NO DECRECIENTE y q
-// consultas [i,j]; para cada una hay que decir cuantas veces aparece el valor mas repetido de
-// ese rango.
-// LA LLAVE DEL PROBLEMA ES QUE EL ARREGLO VIENE ORDENADO, y sin eso no habria solucion facil.
-// Al estar ordenado, los valores iguales quedan pegados en BLOQUES contiguos, asi que la
-// pregunta deja de ser sobre valores y pasa a ser sobre longitudes de bloque. Si el arreglo
-// llegara desordenado esto no sirve: ahi tocaria Mo, que esta en la ficha de CSES.
-// Un rango [i,j] toca a lo sumo tres cosas:
-//   - el PEDAZO del bloque donde cae i, que va de i hasta el final de su bloque
-//   - el PEDAZO del bloque donde cae j, desde el inicio de ese bloque hasta j
-//   - los bloques COMPLETOS que quedan en el medio
-// Los dos pedazos se calculan con una resta, y para los bloques completos hay que pedir el
-// maximo de un rango de longitudes, que es exactamente lo que responde una sparse table en
-// O(1). La respuesta es el mayor de los tres.
-// EL CASO QUE SE OLVIDA: si i y j caen en el MISMO bloque no hay medio ni dos pedazos, y la
-// respuesta es j - i + 1 directo. Si uno no separa ese caso, el rango de bloques del medio sale
-// invertido (bi+1 > bj-1) y la consulta a la sparse table se va a leer basura. Por eso el
-// maxRango devuelve 0 cuando l > r, que es el segundo cinturon de seguridad.
-// POR QUE SPARSE TABLE Y NO SEGMENT TREE: el arreglo de longitudes no cambia nunca, y el maximo
-// es idempotente, asi que se pueden solapar los dos bloques de la consulta y responder en O(1).
-// Un segment tree daria O(log n) y mas codigo, y solo hace falta si hubiera actualizaciones.
-// Costo O(n log n) para construir y O(1) por consulta. Medido con n = q = 100000: 0.09 s,
-// incluyendo los adversarios de todos iguales (un solo bloque) y todos distintos (n bloques).
-// Verificado contra fuerza bruta: 19407 consultas sobre 3000 arreglos aleatorios con bloques de
-// repetidos, sin una sola diferencia, mas los tres casos del sample (1, 4, 3).
-// OJO CON LA ENTRADA: los casos vienen uno tras otro y se acaban con una linea con un 0 solo,
-// asi que el while lee n y corta cuando es cero, sin leer q en ese ultimo.
+// Resumen: Un arreglo de n enteros NO DECRECIENTE y q consultas [i,j]
+// Detalle: Resuelve "Frequent Values" (problema E, CCPL): un arreglo de n enteros NO
+// DECRECIENTE y q consultas [i,j]; para cada una hay que decir cuantas veces aparece el valor
+// mas repetido de ese rango. LA LLAVE DEL PROBLEMA ES QUE EL ARREGLO VIENE ORDENADO, y sin eso
+// no habria solucion facil. Al estar ordenado, los valores iguales quedan pegados en BLOQUES
+// contiguos, asi que la pregunta deja de ser sobre valores y pasa a ser sobre longitudes de
+// bloque. Si el arreglo llegara desordenado esto no sirve: ahi tocaria Mo, que esta en la ficha
+// de CSES. Un rango [i,j] toca a lo sumo tres cosas: - el PEDAZO del bloque donde cae i, que va
+// de i hasta el final de su bloque - el PEDAZO del bloque donde cae j, desde el inicio de ese
+// bloque hasta j - los bloques COMPLETOS que quedan en el medio Los dos pedazos se calculan con
+// una resta, y para los bloques completos hay que pedir el maximo de un rango de longitudes,
+// que es exactamente lo que responde una sparse table en O(1). La respuesta es el mayor de los
+// tres. EL CASO QUE SE OLVIDA: si i y j caen en el MISMO bloque no hay medio ni dos pedazos, y
+// la respuesta es j - i + 1 directo. Si uno no separa ese caso, el rango de bloques del medio
+// sale invertido (bi+1 > bj-1) y la consulta a la sparse table se va a leer basura. Por eso el
+// maxRango devuelve 0 cuando l > r, que es el segundo cinturon de seguridad. POR QUE SPARSE
+// TABLE Y NO SEGMENT TREE: el arreglo de longitudes no cambia nunca, y el maximo es
+// idempotente, asi que se pueden solapar los dos bloques de la consulta y responder en O(1). Un
+// segment tree daria O(log n) y mas codigo, y solo hace falta si hubiera actualizaciones. Costo
+// O(n log n) para construir y O(1) por consulta. Medido con n = q = 100000: 0.09 s, incluyendo
+// los adversarios de todos iguales (un solo bloque) y todos distintos (n bloques). Verificado
+// contra fuerza bruta: 19407 consultas sobre 3000 arreglos aleatorios con bloques de repetidos,
+// sin una sola diferencia, mas los tres casos del sample (1, 4, 3). OJO CON LA ENTRADA: los
+// casos vienen uno tras otro y se acaban con una linea con un 0 solo, asi que el while lee n y
+// corta cuando es cero, sin leer q en ese ultimo.
 
 #include <bits/stdc++.h>
 using namespace std;

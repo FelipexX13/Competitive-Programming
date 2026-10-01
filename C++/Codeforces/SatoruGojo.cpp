@@ -1,11 +1,13 @@
 // <3
 // Tema: Math / Optimization
-// Problema estilo Codeforces: dado S y M, halla el costo minimo de escoger k enteros positivos
-// cuyo producto sea al menos S, donde usar mas de un factor (k>1) cuesta M por cada factor extra
-// ((k-1)*M). Para cada k candidato calcula la suma minima de k factores con producto >= S usando
-// la raiz k-esima entera de S (los factores optimos son r y r+1, ya que por AM-GM la suma se
-// minimiza haciendolos lo mas parejos posible) y prueba todos los k de 1 a 62 para quedarse con
-// el mejor total.
+// Resumen: Dado S y M, halla el costo minimo de escoger k enteros positivos cuyo producto sea
+// al menos S
+// Detalle: Problema estilo Codeforces: dado S y M, halla el costo minimo de escoger k enteros
+// positivos cuyo producto sea al menos S, donde usar mas de un factor (k>1) cuesta M por cada
+// factor extra ((k-1)*M). Para cada k candidato calcula la suma minima de k factores con
+// producto >= S usando la raiz k-esima entera de S (los factores optimos son r y r+1, ya que
+// por AM-GM la suma se minimiza haciendolos lo mas parejos posible) y prueba todos los k de 1 a
+// 62 para quedarse con el mejor total.
 
 #include <bits/stdc++.h>
 using namespace std;

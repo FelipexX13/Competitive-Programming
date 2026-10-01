@@ -1,8 +1,9 @@
 // <3
 // Tema: Math / Construction
-// Problema de construccion estilo Codeforces: para cada n, imprime un arreglo de n enteros
-// positivos (o -1 si n=2, caso imposible). Para n=1 usa [1]; para n>=3 arranca con [1,2,3] y
-// cada elemento siguiente se hace igual a la suma acumulada de todos los anteriores
+// Resumen: Para cada n, imprime un arreglo de n enteros positivos (o -1 si n=2, caso imposible)
+// Detalle: Problema de construccion estilo Codeforces: para cada n, imprime un arreglo de n
+// enteros positivos (o -1 si n=2, caso imposible). Para n=1 usa [1]; para n>=3 arranca con
+// [1,2,3] y cada elemento siguiente se hace igual a la suma acumulada de todos los anteriores
 // (duplicandola en cada paso), construyendo una secuencia donde cada nuevo termino "rompe" el
 // balance de las sumas de prefijos previas.
 

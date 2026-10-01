@@ -1,12 +1,14 @@
 // <3
 // Tema: Math / Fibonacci (Fast Doubling)
-// Resuelve "Fibonacci Sum" (Day 10, problema M - Contest 09 [Avanzados]): para T casos con N y M
-// (hasta 1e9), calcula la suma F(N)+F(N+1)+...+F(M) modulo 1e9+7. Usa la identidad telescopica de
-// que la suma de Fibonacci sum_{i=0}^{k} F(i) = F(k+2) - 1, por lo que la suma pedida es F(M+2) -
-// F(N+1) mod MOD (visible en la linea fibmod(b+2) - fibmod(a+1)). Cada F(n) se calcula en O(log n)
-// con el algoritmo de duplicacion rapida (fast doubling), que recorre los bits de n de mas a menos
-// significativo aplicando las formulas F(2k)=F(k)*(2*F(k+1)-F(k)) y F(2k+1)=F(k)^2+F(k+1)^2 en
-// aritmetica modular.
+// Resumen: Para T casos con N y M (hasta 1e9), calcula la suma F(N)+F(N+1)+...+F(M) modulo
+// 1e9+7
+// Detalle: Resuelve "Fibonacci Sum" (Day 10, problema M - Contest 09 [Avanzados]): para T casos
+// con N y M (hasta 1e9), calcula la suma F(N)+F(N+1)+...+F(M) modulo 1e9+7. Usa la identidad
+// telescopica de que la suma de Fibonacci sum_{i=0}^{k} F(i) = F(k+2) - 1, por lo que la suma
+// pedida es F(M+2) - F(N+1) mod MOD (visible en la linea fibmod(b+2) - fibmod(a+1)). Cada F(n)
+// se calcula en O(log n) con el algoritmo de duplicacion rapida (fast doubling), que recorre
+// los bits de n de mas a menos significativo aplicando las formulas F(2k)=F(k)*(2*F(k+1)-F(k))
+// y F(2k+1)=F(k)^2+F(k+1)^2 en aritmetica modular.
 
 #include <bits/stdc++.h>
 using namespace std;

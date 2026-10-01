@@ -1,19 +1,19 @@
 // <3
 // Tema: Greedy / Puente y Linterna
-// Resuelve "The Bridge At Night" (problema B, ICPC 2024), el clasico del puente con una sola
-// linterna: cruzan a lo sumo dos a la vez, al paso del mas lento, y alguien tiene que devolver la
-// linterna. El codigo calcula el tiempo minimo para pasar a todos.
-// Se ordenan los tiempos y, mientras queden mas de 3, se mandan al otro lado LOS DOS MAS LENTOS
-// (y, z) con la mejor de dos estrategias, siendo a y b los dos mas rapidos:
-//     a + 2b + z   cruzan a y b, vuelve a, cruzan y y z juntos, vuelve b
-//     2a + y + z   a acompana a z, vuelve; a acompana a y, vuelve
-// La primera gana cuando los lentos son MUY lentos, porque paga z una sola vez para los dos; la
+// Resumen: Resuelve "The Bridge At Night" (problema B, ICPC 2024), el clasico del puente con
+// una sola linterna
+// Detalle: Resuelve "The Bridge At Night" (problema B, ICPC 2024), el clasico del puente con
+// una sola linterna: cruzan a lo sumo dos a la vez, al paso del mas lento, y alguien tiene que
+// devolver la linterna. El codigo calcula el tiempo minimo para pasar a todos. Se ordenan los
+// tiempos y, mientras queden mas de 3, se mandan al otro lado LOS DOS MAS LENTOS (y, z) con la
+// mejor de dos estrategias, siendo a y b los dos mas rapidos: a + 2b + z cruzan a y b, vuelve
+// a, cruzan y y z juntos, vuelve b 2a + y + z a acompana a z, vuelve; a acompana a y, vuelve La
+// primera gana cuando los lentos son MUY lentos, porque paga z una sola vez para los dos; la
 // segunda cuando no, porque solo usa al mas rapido de ida y vuelta. Cada ronda deja el problema
-// igual pero con dos personas menos.
-// Casos base: con 3 quedan a + b + c (a acompana a c, vuelve, cruza con b); con 2, el mas lento;
-// con 1, el unico.
-// Con 1, 2, 5 y 10, que es el acertijo famoso, da 17 (comprobado corriendo este codigo): la
-// estrategia ingenua de que el rapido acompane a todos da 19.
+// igual pero con dos personas menos. Casos base: con 3 quedan a + b + c (a acompana a c,
+// vuelve, cruza con b); con 2, el mas lento; con 1, el unico. Con 1, 2, 5 y 10, que es el
+// acertijo famoso, da 17 (comprobado corriendo este codigo): la estrategia ingenua de que el
+// rapido acompane a todos da 19.
 
 #include <bits/stdc++.h>
 using namespace std;

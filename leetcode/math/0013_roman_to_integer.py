@@ -1,12 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Numeros Romanos
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
-# LeetCode 13 "Roman to Integer": convertir un numero romano a entero.
-# Tecnica: dos diccionarios, uno de simbolos sueltos y otro de los seis pares restadores (IV,
-# IX, XL, XC, CD, CM). Primero se consumen los pares y despues se suma lo que sobro.
-# La forma clasica es un solo barrido: si el valor actual es menor que el siguiente, se resta.
-# Sale mas corto y no hace falta el segundo diccionario.
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# LeetCode 13 "Roman to Integer": convertir un numero romano a entero. Tecnica: dos
+# diccionarios, uno de simbolos sueltos y otro de los seis pares restadores (IV, IX, XL, XC, CD,
+# CM). Primero se consumen los pares y despues se suma lo que sobro. La forma clasica es un solo
+# barrido: si el valor actual es menor que el siguiente, se resta. Sale mas corto y no hace
+# falta el segundo diccionario.
 
 class Solution:
     def romanToInt(self, s: str) -> int:

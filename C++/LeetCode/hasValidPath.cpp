@@ -1,23 +1,24 @@
 // <3
 // Tema: Dynamic Programming / Camino en Grilla con Balance de Parentesis
-// Resuelve "Check if There Is a Valid Parentheses String Path" (LeetCode 2267): en una grilla de
-// '(' y ')' hay que decir si existe un camino de la esquina superior izquierda a la inferior
-// derecha, moviendose solo abajo o a la derecha, cuya cadena sea de parentesis valida.
+// Resumen: En una grilla de '(' y ')' hay que decir si existe un camino de la esquina superior
+// izquierda a la inferior...
+// Detalle: Resuelve "Check if There Is a Valid Parentheses String Path" (LeetCode 2267): en una
+// grilla de '(' y ')' hay que decir si existe un camino de la esquina superior izquierda a la
+// inferior derecha, moviendose solo abajo o a la derecha, cuya cadena sea de parentesis valida.
 // LA IDEA: del camino recorrido solo importa el BALANCE (+1 por '(', -1 por ')'), no la cadena
 // entera. Dos caminos que llegan a la misma casilla con el mismo balance tienen exactamente el
 // mismo futuro, asi que el estado es (i, j, balance) y se memoiza. Es la misma idea de fondo de
-// la ficha "Parentesis Balanceados" de este cuaderno, llevada a una grilla.
-// El balance nunca pasa del largo del camino, m+n-1, asi que la memo es m * n * (m+n): con la
-// grilla maxima de 100 x 100 son unos 2 millones de estados, que caben de sobra.
-// Un balance negativo se corta en el acto: un ')' de mas ya no lo arregla nada que venga despues.
-// PODAS QUE NO HACEN FALTA PERO CORTAN TRABAJO: si el camino tiene largo impar (m+n-1 impar) la
-// respuesta es false sin mirar nada; si el balance supera las casillas que faltan,
-// (m-1-i) + (n-1-j), ya no se alcanza a cerrar; y la primera casilla tiene que ser '(' y la
-// ultima ')'.
-// OJO: la funcion valid y la cadena s que se arma en dfs no se usan para la respuesta, la memo
-// sobre el balance ya decide todo. Se pueden borrar sin cambiar nada.
-// Verificado con los dos ejemplos de LeetCode y contra la fuerza bruta de probar TODOS los
-// caminos en 3000 grillas de hasta 6x6, sin un solo fallo. Una grilla de 99 x 100 tarda ~20 ms.
+// la ficha "Parentesis Balanceados" de este cuaderno, llevada a una grilla. El balance nunca
+// pasa del largo del camino, m+n-1, asi que la memo es m * n * (m+n): con la grilla maxima de
+// 100 x 100 son unos 2 millones de estados, que caben de sobra. Un balance negativo se corta en
+// el acto: un ')' de mas ya no lo arregla nada que venga despues. PODAS QUE NO HACEN FALTA PERO
+// CORTAN TRABAJO: si el camino tiene largo impar (m+n-1 impar) la respuesta es false sin mirar
+// nada; si el balance supera las casillas que faltan, (m-1-i) + (n-1-j), ya no se alcanza a
+// cerrar; y la primera casilla tiene que ser '(' y la ultima ')'. OJO: la funcion valid y la
+// cadena s que se arma en dfs no se usan para la respuesta, la memo sobre el balance ya decide
+// todo. Se pueden borrar sin cambiar nada. Verificado con los dos ejemplos de LeetCode y contra
+// la fuerza bruta de probar TODOS los caminos en 3000 grillas de hasta 6x6, sin un solo fallo.
+// Una grilla de 99 x 100 tarda ~20 ms.
 
 class Solution {
 public:

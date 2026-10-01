@@ -1,13 +1,14 @@
 // <3
 // Tema: CSES / Dijkstra desde Cada Nodo
-// Distancias entre TODOS los pares resueltas con n Dijkstras, uno por nodo, en vez del
+// Resumen: Distancias entre TODOS los pares resueltas con n Dijkstras, uno por nodo
+// Detalle: Distancias entre TODOS los pares resueltas con n Dijkstras, uno por nodo, en vez del
 // Floyd-Warshall que suele ser la respuesta esperada. Trae un atajo: si un nodo tiene grado 1,
 // su unico camino al resto pasa por su vecino, asi que se copia la fila del vecino sumando el
-// peso de esa arista y se ahorra un Dijkstra completo.
-// CUANDO CADA UNO: Floyd-Warshall es O(n^3) y se escribe en tres lineas, asi que con n <= 500 es
-// lo que uno hace. n Dijkstras es O(n*m log n), que gana cuando el grafo es DISPERSO (m del orden
-// de n), y pierde feo si es denso. Tambien hay que recordar quedarse con la arista mas barata
-// entre cada par y que Floyd aguanta pesos negativos sin ciclos negativos, mientras Dijkstra no.
+// peso de esa arista y se ahorra un Dijkstra completo. CUANDO CADA UNO: Floyd-Warshall es
+// O(n^3) y se escribe en tres lineas, asi que con n <= 500 es lo que uno hace. n Dijkstras es
+// O(n*m log n), que gana cuando el grafo es DISPERSO (m del orden de n), y pierde feo si es
+// denso. Tambien hay que recordar quedarse con la arista mas barata entre cada par y que Floyd
+// aguanta pesos negativos sin ciclos negativos, mientras Dijkstra no.
 
 #include <iostream>
 #include <vector>

@@ -1,13 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Heap por Fecha de Vencimiento
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 1705 "Maximum Number of Eaten Apples": cada dia aparecen manzanas que se danan en
-# cierta fecha y se puede comer una por dia; maximizar cuantas se comen.
-# Tecnica: heap minimo con la pareja (dia en que se dana, cuantas quedan). Cada dia se come de
-# las que vencen PRIMERO, que es el greedy correcto: guardar una que vence lejos nunca es
-# peor que guardar una que vence ya.
-# OJO: usa try/except para detectar el heap vacio en vez de revisar el tamano.
+# cierta fecha y se puede comer una por dia; maximizar cuantas se comen. Tecnica: heap minimo
+# con la pareja (dia en que se dana, cuantas quedan). Cada dia se come de las que vencen
+# PRIMERO, que es el greedy correcto: guardar una que vence lejos nunca es peor que guardar una
+# que vence ya. OJO: usa try/except para detectar el heap vacio en vez de revisar el tamano.
 
 import heapq
 

@@ -1,10 +1,11 @@
 // <3
 // Tema: Formulario / Datos que no se Deducen
-// Hechos sueltos que si no te los sabes no los inventas en media hora de competencia: el xor
-// de 1..n tiene periodo 4, el ultimo digito de a^b cicla cada 4, un numero es cuadrado
-// perfecto si y solo si tiene una cantidad impar de divisores, y la cantidad de nodos de
-// grado impar de cualquier grafo siempre es par.
-// Las tablas de xor y de ultimo digito estan verificadas corriendo el codigo.
+// Resumen: Hechos sueltos que si no te los sabes no los inventas en media hora de competencia
+// Detalle: Hechos sueltos que si no te los sabes no los inventas en media hora de competencia:
+// el xor de 1..n tiene periodo 4, el ultimo digito de a^b cicla cada 4, un numero es cuadrado
+// perfecto si y solo si tiene una cantidad impar de divisores, y la cantidad de nodos de grado
+// impar de cualquier grafo siempre es par. Las tablas de xor y de ultimo digito estan
+// verificadas corriendo el codigo.
 
 // =============== DATOS QUE NO SE DEDUCEN ===============
 //

@@ -1,18 +1,18 @@
 // <3
 // Tema: Implementation / Lights Out (Primera Fila Forzada)
-// Resuelve "Turnswitch" (problema F, ICPC 2024). Una grilla n x n de interruptores que estan en
-// '|' o en '-'; girar uno lo cambia a el y a sus cuatro vecinos. El codigo busca el minimo de
-// giros para dejar todo igual, probando las dos opciones (todo '|' o todo '-').
-// Es un "Lights Out", y tiene dos datos que lo desarman. Primero, el orden de los giros no
-// importa y girar dos veces el mismo es no girarlo, asi que cada interruptor se gira 0 o 1 vez.
-// Segundo, y es la clave: SI SE DECIDE LA PRIMERA FILA, TODO LO DEMAS QUEDA FORZADO. Una vez
-// resuelta la fila r-1, la unica forma de arreglar la casilla (r-1, c) que siga mal es girar
-// (r, c), porque es el ultimo interruptor que la toca. Entonces la fila siguiente no se elige: se
-// deduce.
-// Asi la busqueda baja de 2^(n*n) a 2^n combinaciones de la primera fila, cada una completada en
-// O(n^2), y al final solo hay que ver si la ultima fila quedo bien.
-// CUANDO USAR: cualquier puzzle de "presionar cambia a los vecinos" en una grilla. Si n es
-// grande para 2^n, el mismo sistema se resuelve con eliminacion gaussiana sobre GF(2).
+// Resumen: Resuelve "Turnswitch" (problema F, ICPC 2024)
+// Detalle: Resuelve "Turnswitch" (problema F, ICPC 2024). Una grilla n x n de interruptores que
+// estan en '|' o en '-'; girar uno lo cambia a el y a sus cuatro vecinos. El codigo busca el
+// minimo de giros para dejar todo igual, probando las dos opciones (todo '|' o todo '-'). Es un
+// "Lights Out", y tiene dos datos que lo desarman. Primero, el orden de los giros no importa y
+// girar dos veces el mismo es no girarlo, asi que cada interruptor se gira 0 o 1 vez. Segundo,
+// y es la clave: SI SE DECIDE LA PRIMERA FILA, TODO LO DEMAS QUEDA FORZADO. Una vez resuelta la
+// fila r-1, la unica forma de arreglar la casilla (r-1, c) que siga mal es girar (r, c), porque
+// es el ultimo interruptor que la toca. Entonces la fila siguiente no se elige: se deduce. Asi
+// la busqueda baja de 2^(n*n) a 2^n combinaciones de la primera fila, cada una completada en
+// O(n^2), y al final solo hay que ver si la ultima fila quedo bien. CUANDO USAR: cualquier
+// puzzle de "presionar cambia a los vecinos" en una grilla. Si n es grande para 2^n, el mismo
+// sistema se resuelve con eliminacion gaussiana sobre GF(2).
 
 #include <bits/stdc++.h>
 using namespace std;

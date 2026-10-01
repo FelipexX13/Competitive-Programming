@@ -1,17 +1,17 @@
 // <3
 // Tema: Greedy / Two Pointers (Container With Most Water)
+// Resumen: Paredes verticales de altura h[i] en la posicion i
 // O: (n), dos punteros desde los extremos
 // Uso: maxArea(h) -> {area, {i, j}}
-// Paredes verticales de altura h[i] en la posicion i: elegir dos que, junto con el eje x,
-// formen el recipiente de mayor area (j - i) * min(h[i], h[j]). Fuerza bruta es O(n^2);
-// con dos punteros desde los extremos es O(n).
-// Por que se mueve la pared MAS BAJA: el agua queda topada por ella. Cualquier recipiente entre
-// esa pared y una interior es mas angosto y sigue topado por la misma altura (o menos), asi
-// que nunca supera al actual: esa pared ya dio su mejor recipiente y se puede descartar.
-// Si miden lo mismo, ninguna de las dos mejora con una pared interior: mover cualquiera.
-// El area puede pasar de 2^31 (1e9 * 1e5): usar long long.
-// No confundir con Trapping Rain Water (el agua que retienen TODAS las barras): tambien es de
-// dos punteros, pero en cada posicion suma min(maxIzq, maxDer) - h[i].
+// Detalle: Paredes verticales de altura h[i] en la posicion i: elegir dos que, junto con el eje
+// x, formen el recipiente de mayor area (j - i) * min(h[i], h[j]). Fuerza bruta es O(n^2); con
+// dos punteros desde los extremos es O(n). Por que se mueve la pared MAS BAJA: el agua queda
+// topada por ella. Cualquier recipiente entre esa pared y una interior es mas angosto y sigue
+// topado por la misma altura (o menos), asi que nunca supera al actual: esa pared ya dio su
+// mejor recipiente y se puede descartar. Si miden lo mismo, ninguna de las dos mejora con una
+// pared interior: mover cualquiera. El area puede pasar de 2^31 (1e9 * 1e5): usar long long. No
+// confundir con Trapping Rain Water (el agua que retienen TODAS las barras): tambien es de dos
+// punteros, pero en cada posicion suma min(maxIzq, maxDer) - h[i].
 
 #include <bits/stdc++.h>
 

@@ -1,13 +1,13 @@
 // <3
 // Tema: CSES / BFS con Reconstruccion de Camino
-// BFS en grilla guardando de donde vino cada celda en la matriz anterior[][], y al final se sube
-// desde el destino hasta el origen leyendo esos padres y se invierte. La direccion de cada paso
-// se deduce comparando coordenadas con el padre.
-// CUANDO USAR: cuando el problema no pide solo la DISTANCIA sino el camino en si. La regla es
-// que BFS da el camino minimo solo si todas las aristas pesan lo mismo; con pesos distintos toca
-// Dijkstra, y con pesos 0 y 1 la version barata es 0-1 BFS con deque.
-// Ojo con marcar: aqui se marca al encolar, y la celda 'B' se detecta ANTES de pisarla para no
-// perder el destino.
+// Resumen: BFS en grilla guardando de donde vino cada celda en la matriz anterior[][]
+// Detalle: BFS en grilla guardando de donde vino cada celda en la matriz anterior[][], y al
+// final se sube desde el destino hasta el origen leyendo esos padres y se invierte. La
+// direccion de cada paso se deduce comparando coordenadas con el padre. CUANDO USAR: cuando el
+// problema no pide solo la DISTANCIA sino el camino en si. La regla es que BFS da el camino
+// minimo solo si todas las aristas pesan lo mismo; con pesos distintos toca Dijkstra, y con
+// pesos 0 y 1 la version barata es 0-1 BFS con deque. Ojo con marcar: aqui se marca al encolar,
+// y la celda 'B' se detecta ANTES de pisarla para no perder el destino.
 
 #include <bits/stdc++.h>
 using namespace std;

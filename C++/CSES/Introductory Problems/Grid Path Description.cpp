@@ -1,15 +1,15 @@
 // <3
 // Tema: CSES / Backtracking con Poda de Zona Encerrada
-// Backtracking sobre las 48 posiciones del camino, con los '?' abriendo las 4 direcciones y las
-// letras fijas forzando una sola. Sin poda esto no pasa ni de lejos.
-// LA PODA ES TODO EL PROBLEMA: si la celda actual tiene libres arriba y abajo pero ocupadas
-// izquierda y derecha (o al reves), el camino acaba de partir el tablero en dos y una de las
-// mitades queda inalcanzable. Se corta ahi mismo. Esa sola condicion baja el arbol de busqueda de
-// inviable a instantaneo.
-// CUANDO USAR ESTE TIPO DE PODA: en caminos hamiltonianos o recorridos que deben cubrir todo, la
-// poda util casi siempre es de CONECTIVIDAD, o sea detectar temprano que quedo una region a la que
-// ya no se puede llegar. La version fuerte es correr un flood fill en cada nodo; esta version
-// barata mira solo los cuatro vecinos y alcanza.
+// Resumen: Backtracking sobre las 48 posiciones del camino
+// Detalle: Backtracking sobre las 48 posiciones del camino, con los '?' abriendo las 4
+// direcciones y las letras fijas forzando una sola. Sin poda esto no pasa ni de lejos. LA PODA
+// ES TODO EL PROBLEMA: si la celda actual tiene libres arriba y abajo pero ocupadas izquierda y
+// derecha (o al reves), el camino acaba de partir el tablero en dos y una de las mitades queda
+// inalcanzable. Se corta ahi mismo. Esa sola condicion baja el arbol de busqueda de inviable a
+// instantaneo. CUANDO USAR ESTE TIPO DE PODA: en caminos hamiltonianos o recorridos que deben
+// cubrir todo, la poda util casi siempre es de CONECTIVIDAD, o sea detectar temprano que quedo
+// una region a la que ya no se puede llegar. La version fuerte es correr un flood fill en cada
+// nodo; esta version barata mira solo los cuatro vecinos y alcanza.
 
 #include <bits/stdc++.h>
 using namespace std;

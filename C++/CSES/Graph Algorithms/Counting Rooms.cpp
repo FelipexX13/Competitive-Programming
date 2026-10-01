@@ -1,13 +1,14 @@
 // <3
 // Tema: CSES / Flood Fill en Grilla (BFS)
-// Contar componentes conexas en una grilla. Se barre celda por celda y, al encontrar una libre
-// sin visitar, se lanza un BFS que marca todo su cuarto y se suma uno al total. Marcar la celda
-// como visitada AL ENCOLARLA (no al sacarla) es lo que evita que entre dos veces a la cola.
-// Aqui se reusa la matriz de entrada como arreglo de visitados poniendo 'X': ahorra memoria y
-// una estructura aparte.
-// CUANDO USAR: cualquier problema de grilla que pregunte cuantas regiones, islas, lagos o
-// manchas hay, o el tamano de la region que contiene a una celda. BFS y DFS dan lo mismo aqui;
-// se prefiere BFS iterativo porque con 1000x1000 celdas un DFS recursivo puede reventar la pila.
+// Resumen: Contar componentes conexas en una grilla
+// Detalle: Contar componentes conexas en una grilla. Se barre celda por celda y, al encontrar
+// una libre sin visitar, se lanza un BFS que marca todo su cuarto y se suma uno al total.
+// Marcar la celda como visitada AL ENCOLARLA (no al sacarla) es lo que evita que entre dos
+// veces a la cola. Aqui se reusa la matriz de entrada como arreglo de visitados poniendo 'X':
+// ahorra memoria y una estructura aparte. CUANDO USAR: cualquier problema de grilla que
+// pregunte cuantas regiones, islas, lagos o manchas hay, o el tamano de la region que contiene
+// a una celda. BFS y DFS dan lo mismo aqui; se prefiere BFS iterativo porque con 1000x1000
+// celdas un DFS recursivo puede reventar la pila.
 
 #include <bits/stdc++.h>
 using namespace std;

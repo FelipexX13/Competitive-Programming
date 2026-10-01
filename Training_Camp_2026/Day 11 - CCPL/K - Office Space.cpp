@@ -1,6 +1,7 @@
 // <3
 // Tema: Geometry / 2D Difference Array (Coordinate Compression)
-// Resuelve "Office Space" (Kattis): en una oficina rectangular de w x h pies, hasta 20
+// Resumen: En una oficina rectangular de w x h pies
+// Detalle: Resuelve "Office Space" (Kattis): en una oficina rectangular de w x h pies, hasta 20
 // empleados piden un cubiculo rectangular (esquinas suroeste y noreste); pide reportar el area
 // total, el area sin reclamar, el area en conflicto (solicitada por 2 o mas empleados) y, para
 // cada empleado, el area que tiene garantizada (lo que pidio menos lo que se solapa con otros).

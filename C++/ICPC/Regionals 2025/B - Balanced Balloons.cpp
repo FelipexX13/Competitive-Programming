@@ -1,22 +1,22 @@
 // <3
 // Tema: Dynamic Programming / DP con Arreglo de Diferencias
-// Resuelve "Balanced Balloons" (problema B, Regionals 2025): contar secuencias donde el promedio se
-// mantiene entero en cada paso, modulo 998244353.
-// El estado es dp[q] = cuantas secuencias de i elementos tienen promedio actual q. Al agregar el
-// elemento i+1, el nuevo promedio q2 tiene que cumplir que el aporte quede entre 1 y K:
-//     1 <= (i+1)*q2 - i*q <= K
-// que despejando da un INTERVALO de q2 validos: de ceil((i*q+1)/(i+1)) hasta floor((i*q+K)/(i+1)).
-// EL TRUCO QUE LO HACE VIABLE: cada q manda su dp[q] a un intervalo CONTIGUO de destinos. Sumar uno
-// por uno seria O(K) por origen y O(K^2) por paso. Con un ARREGLO DE DIFERENCIAS se marca +dp[q] en
-// lo y -dp[q] en hi+1, y al final una suma de prefijos reconstruye toda la fila de golpe: O(K) por
-// paso en vez de O(K^2).
-// Ese patron -"la transicion va a un rango, no a un punto"- es el que convierte muchas DP
-// cuadraticas en lineales, y vale reconocerlo: si al escribir la transicion sale un for sobre un
-// intervalo, casi siempre se puede cambiar por diferencias.
-// El N = min(N, K) del principio es una poda real: pasadas K personas ya no aparecen promedios
-// nuevos, asi que iterar mas es trabajo perdido.
-// La resta modular se hace con (x - y + MOD) % MOD para no quedarse en negativo, que es el error
-// clasico de los arreglos de diferencias con modulo.
+// Resumen: Contar secuencias donde el promedio se mantiene entero en cada paso, modulo
+// 998244353
+// Detalle: Resuelve "Balanced Balloons" (problema B, Regionals 2025): contar secuencias donde
+// el promedio se mantiene entero en cada paso, modulo 998244353. El estado es dp[q] = cuantas
+// secuencias de i elementos tienen promedio actual q. Al agregar el elemento i+1, el nuevo
+// promedio q2 tiene que cumplir que el aporte quede entre 1 y K: 1 <= (i+1)*q2 - i*q <= K que
+// despejando da un INTERVALO de q2 validos: de ceil((i*q+1)/(i+1)) hasta floor((i*q+K)/(i+1)).
+// EL TRUCO QUE LO HACE VIABLE: cada q manda su dp[q] a un intervalo CONTIGUO de destinos. Sumar
+// uno por uno seria O(K) por origen y O(K^2) por paso. Con un ARREGLO DE DIFERENCIAS se marca
+// +dp[q] en lo y -dp[q] en hi+1, y al final una suma de prefijos reconstruye toda la fila de
+// golpe: O(K) por paso en vez de O(K^2). Ese patron -"la transicion va a un rango, no a un
+// punto"- es el que convierte muchas DP cuadraticas en lineales, y vale reconocerlo: si al
+// escribir la transicion sale un for sobre un intervalo, casi siempre se puede cambiar por
+// diferencias. El N = min(N, K) del principio es una poda real: pasadas K personas ya no
+// aparecen promedios nuevos, asi que iterar mas es trabajo perdido. La resta modular se hace
+// con (x - y + MOD) % MOD para no quedarse en negativo, que es el error clasico de los arreglos
+// de diferencias con modulo.
 
 #include <bits/stdc++.h>
 using namespace std;

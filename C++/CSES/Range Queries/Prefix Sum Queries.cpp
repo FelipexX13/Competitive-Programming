@@ -1,19 +1,21 @@
 // <3
 // Tema: CSES / Segment Tree con Nodo Compuesto
+// Resumen: Segment tree donde cada nodo guarda DOS cosas: la suma del rango y el mejor prefijo
+// del rango
 // O: (log n) por operacion; el Node guarda suma y mejor prefijo
 // Uso: SegmentTree st(a); st.update(1,1,n,pos,v); st.query(1,1,n,l,r)
-// Segment tree donde cada nodo guarda DOS cosas: la suma del rango y el mejor prefijo del rango.
-// Es el ejemplo mas chico de la tecnica que hace al segment tree util de verdad: si la respuesta
-// sola no se puede combinar, se guarda tambien lo que haga falta para poder combinarla.
-// EL MERGE ES TODO: el mejor prefijo de la union es o el mejor prefijo de la izquierda, o toda la
-// izquierda mas el mejor prefijo de la derecha. max(a.pref, a.sum + b.pref). Sin llevar la suma no
-// habria forma de escribir esa segunda opcion, y por eso van juntas.
-// COMO SE DISENA UN NODO ASI: se escribe a mano como seria la respuesta de la union en funcion de
-// las dos mitades, y cada cosa que aparece en esa formula y no se tiene, se agrega al nodo. Se
-// repite hasta que cierre. Es un proceso mecanico, no hay que adivinar.
-// CUANDO USAR: la pregunta del rango no es una operacion asociativa simple pero SI se puede
-// componer con un poco mas de informacion. Maximo prefijo, maximo subarreglo, cantidad de
-// parentesis sin cerrar, la subsecuencia creciente mas larga por bloques.
+// Detalle: Segment tree donde cada nodo guarda DOS cosas: la suma del rango y el mejor prefijo
+// del rango. Es el ejemplo mas chico de la tecnica que hace al segment tree util de verdad: si
+// la respuesta sola no se puede combinar, se guarda tambien lo que haga falta para poder
+// combinarla. EL MERGE ES TODO: el mejor prefijo de la union es o el mejor prefijo de la
+// izquierda, o toda la izquierda mas el mejor prefijo de la derecha. max(a.pref, a.sum +
+// b.pref). Sin llevar la suma no habria forma de escribir esa segunda opcion, y por eso van
+// juntas. COMO SE DISENA UN NODO ASI: se escribe a mano como seria la respuesta de la union en
+// funcion de las dos mitades, y cada cosa que aparece en esa formula y no se tiene, se agrega
+// al nodo. Se repite hasta que cierre. Es un proceso mecanico, no hay que adivinar. CUANDO
+// USAR: la pregunta del rango no es una operacion asociativa simple pero SI se puede componer
+// con un poco mas de informacion. Maximo prefijo, maximo subarreglo, cantidad de parentesis sin
+// cerrar, la subsecuencia creciente mas larga por bloques.
 
 #include <bits/stdc++.h>
 using namespace std;

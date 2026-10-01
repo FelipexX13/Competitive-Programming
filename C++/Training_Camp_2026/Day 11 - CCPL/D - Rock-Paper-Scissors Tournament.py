@@ -1,11 +1,13 @@
 # <3
 # Tema: Simulation / Ad Hoc
-# Resuelve "Rock-Paper-Scissors Tournament" (Day 11, problema D - CCPL (Kattis)): en un torneo de
-# piedra-papel-tijera con n jugadores, cada par de jugadores disputa k partidas (kn(n-1)/2
-# partidas en total); dado el movimiento de cada jugador en cada partida, pide el promedio de
-# victorias w/(w+l) de cada jugador, redondeado a tres decimales, o "-" si nunca gano ni perdio.
-# Simula partida por partida, aplicando las reglas de piedra-papel-tijera para acumular victorias
-# en `w[]` y derrotas en `l[]` por jugador, y al final calcula e imprime el promedio de cada uno.
+# Resumen: En un torneo de piedra-papel-tijera con n jugadores
+# Detalle: Resuelve "Rock-Paper-Scissors Tournament" (Day 11, problema D - CCPL (Kattis)): en un
+# torneo de piedra-papel-tijera con n jugadores, cada par de jugadores disputa k partidas
+# (kn(n-1)/2 partidas en total); dado el movimiento de cada jugador en cada partida, pide el
+# promedio de victorias w/(w+l) de cada jugador, redondeado a tres decimales, o "-" si nunca
+# gano ni perdio. Simula partida por partida, aplicando las reglas de piedra-papel-tijera para
+# acumular victorias en `w[]` y derrotas en `l[]` por jugador, y al final calcula e imprime el
+# promedio de cada uno.
 
 n = list(map(int, input().split()))
 if len(n) != 1:

@@ -1,11 +1,13 @@
 // <3
 // Tema: Number Theory / Number Theory (Criba y Factorizacion)
-// Resuelve "Counting Divisors" (Day 10, problema I - Contest 09 [Avanzados]): dados n enteros,
-// imprime la cantidad de divisores de cada uno. Precomputa con una criba de Eratosthenes (sieve)
-// la lista de primos hasta MX=1e6; para cada consulta k, la funcion divisors factoriza k probando
-// solo los primos precomputados (hasta sqrt(n)) y acumula el conteo de divisores con la formula
-// producto de (exponente_i + 1) para cada primo, multiplicando por 2 al final si queda un factor
-// primo residual mayor a 1 (el propio n si es primo grande).
+// Resumen: Dados n enteros, imprime la cantidad de divisores de cada uno
+// Detalle: Resuelve "Counting Divisors" (Day 10, problema I - Contest 09 [Avanzados]): dados n
+// enteros, imprime la cantidad de divisores de cada uno. Precomputa con una criba de
+// Eratosthenes (sieve) la lista de primos hasta MX=1e6; para cada consulta k, la funcion
+// divisors factoriza k probando solo los primos precomputados (hasta sqrt(n)) y acumula el
+// conteo de divisores con la formula producto de (exponente_i + 1) para cada primo,
+// multiplicando por 2 al final si queda un factor primo residual mayor a 1 (el propio n si es
+// primo grande).
 
 #include <bits/stdc++.h>
 using namespace std;

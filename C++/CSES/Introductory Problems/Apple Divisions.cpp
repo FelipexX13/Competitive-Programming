@@ -1,13 +1,14 @@
 // <3
 // Tema: CSES / Fuerza Bruta 2^n
-// n <= 20, o sea 2^20 = ~10^6 subconjuntos: cabe de sobra, asi que se prueban todos. La recursion
-// decide para cada posicion si el elemento va a un grupo o al otro.
-// EL DETALLE BONITO: no hace falta llevar las dos sumas. Con el total fijo, la diferencia entre
-// grupos es |total - 2*sum|, asi que basta una sola variable.
-// COMO RECONOCER QUE CABE LA FUERZA BRUTA: mirar n en las restricciones. n <= 20 grita 2^n (o
-// bitmask DP); n <= 10 grita n! (permutaciones); n <= 40 grita meet in the middle. Ese mapeo de
-// n a tecnica es de lo mas rentable que hay en competitiva.
-// La version con mascara de bits (for mask = 0 hasta 1<<n) hace lo mismo sin recursion.
+// Resumen: N <= 20, o sea 2^20 = ~10^6 subconjuntos: cabe de sobra, asi que se prueban todos
+// Detalle: n <= 20, o sea 2^20 = ~10^6 subconjuntos: cabe de sobra, asi que se prueban todos.
+// La recursion decide para cada posicion si el elemento va a un grupo o al otro. EL DETALLE
+// BONITO: no hace falta llevar las dos sumas. Con el total fijo, la diferencia entre grupos es
+// |total - 2*sum|, asi que basta una sola variable. COMO RECONOCER QUE CABE LA FUERZA BRUTA:
+// mirar n en las restricciones. n <= 20 grita 2^n (o bitmask DP); n <= 10 grita n!
+// (permutaciones); n <= 40 grita meet in the middle. Ese mapeo de n a tecnica es de lo mas
+// rentable que hay en competitiva. La version con mascara de bits (for mask = 0 hasta 1<<n)
+// hace lo mismo sin recursion.
 
 #include <bits/stdc++.h>
 using namespace std;

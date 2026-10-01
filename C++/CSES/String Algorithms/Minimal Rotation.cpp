@@ -1,16 +1,17 @@
 // <3
 // Tema: CSES / Rotacion Minima (Dos Punteros)
-// La rotacion lexicograficamente menor en O(n) con dos candidatos i y j. Se trabaja sobre s + s
-// (asi toda rotacion es un substring de largo n) y se comparan las rotaciones que empiezan en i y
-// en j caracter por caracter hasta que difieren en la posicion k.
-// EL SALTO QUE HACE QUE SEA LINEAL: si s[i+k] > s[j+k], no solo la rotacion en i pierde; tambien
-// pierden las que empiezan en i+1, ..., i+k, porque cada una se puede emparejar con la que
-// empieza en j+1, ..., j+k y pierde por la misma posicion. Por eso i salta a i+k+1 de una. Como
-// i y j solo avanzan y ninguno pasa de n, el total es O(n).
-// Si k llega a n, las dos rotaciones son iguales (la cadena es periodica) y cualquiera sirve.
-// El if (i == j) j++ evita comparar un candidato consigo mismo.
-// Alternativas: el algoritmo de Booth (con funcion de fallo) o el sufijo minimo de Lyndon. Esta
-// version de dos punteros es la mas corta de escribir y la mas facil de recordar.
+// Resumen: La rotacion lexicograficamente menor en O(n) con dos candidatos i y j
+// Detalle: La rotacion lexicograficamente menor en O(n) con dos candidatos i y j. Se trabaja
+// sobre s + s (asi toda rotacion es un substring de largo n) y se comparan las rotaciones que
+// empiezan en i y en j caracter por caracter hasta que difieren en la posicion k. EL SALTO QUE
+// HACE QUE SEA LINEAL: si s[i+k] > s[j+k], no solo la rotacion en i pierde; tambien pierden las
+// que empiezan en i+1, ..., i+k, porque cada una se puede emparejar con la que empieza en j+1,
+// ..., j+k y pierde por la misma posicion. Por eso i salta a i+k+1 de una. Como i y j solo
+// avanzan y ninguno pasa de n, el total es O(n). Si k llega a n, las dos rotaciones son iguales
+// (la cadena es periodica) y cualquiera sirve. El if (i == j) j++ evita comparar un candidato
+// consigo mismo. Alternativas: el algoritmo de Booth (con funcion de fallo) o el sufijo minimo
+// de Lyndon. Esta version de dos punteros es la mas corta de escribir y la mas facil de
+// recordar.
 
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,6 +1,9 @@
 // <3
 // Tema: Number Theory / GCD and LCM
-// Calcula a dividido entre mcd(a,b), que es el multiplicador para obtener mcm(a,b) desde b.
+// Resumen: Calcula a dividido entre mcd(a,b), que es el multiplicador para obtener mcm(a,b)
+// desde b
+// Detalle: Calcula a dividido entre mcd(a,b), que es el multiplicador para obtener mcm(a,b)
+// desde b.
 
 #include <bits/stdc++.h>
 using namespace std;

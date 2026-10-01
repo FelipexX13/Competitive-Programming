@@ -1,17 +1,18 @@
 // <3
 // Tema: Combinatorics / Conteo de Inversiones (cadena repetida)
-// Cuenta las inversiones de S repetida N veces (N hasta 1e12) modulo 1e9+7, es decir pares
-// i<j donde la letra de i va despues en el alfabeto que la de j. No se puede construir la
-// cadena, asi que se cuenta la contribucion de cada posicion por separado.
-// Una posicion i con letra c aporta dos cosas: dentro de su propia copia aporta suf =
-// cuantas letras menores que c hay de i en adelante, y eso ocurre igual en las N copias
-// (N*suf); contra las copias posteriores le sirven TODAS las letras menores que c de la
-// cadena completa (freqGod[c]), una vez por cada par ordenado de copias, o sea N(N-1)/2.
-// freqAtras[i] guarda cuantas letras menores que cada letra quedan desde i hasta el final, y
-// freqGod acumula las frecuencias globales. La division entre 2 va con inverso modular
-// (Fermat, modpow(b, MOD-2)) porque N(N-1)/2 ya se calcula en modulo.
-// Nota: el if de freqGod == freqAtras es redundante, las dos ramas dan el mismo valor
-// (cuando suf == freqGod[c], N(N+1)/2*freqGod == N(N-1)/2*freqGod + N*suf).
+// Resumen: Cuenta las inversiones de S repetida N veces (N hasta 1e12) modulo 1e9+7
+// Detalle: Cuenta las inversiones de S repetida N veces (N hasta 1e12) modulo 1e9+7, es decir
+// pares i<j donde la letra de i va despues en el alfabeto que la de j. No se puede construir la
+// cadena, asi que se cuenta la contribucion de cada posicion por separado. Una posicion i con
+// letra c aporta dos cosas: dentro de su propia copia aporta suf = cuantas letras menores que c
+// hay de i en adelante, y eso ocurre igual en las N copias (N*suf); contra las copias
+// posteriores le sirven TODAS las letras menores que c de la cadena completa (freqGod[c]), una
+// vez por cada par ordenado de copias, o sea N(N-1)/2. freqAtras[i] guarda cuantas letras
+// menores que cada letra quedan desde i hasta el final, y freqGod acumula las frecuencias
+// globales. La division entre 2 va con inverso modular (Fermat, modpow(b, MOD-2)) porque
+// N(N-1)/2 ya se calcula en modulo. Nota: el if de freqGod == freqAtras es redundante, las dos
+// ramas dan el mismo valor (cuando suf == freqGod[c], N(N+1)/2*freqGod == N(N-1)/2*freqGod +
+// N*suf).
 
 #include <bits/stdc++.h>
 using namespace std;

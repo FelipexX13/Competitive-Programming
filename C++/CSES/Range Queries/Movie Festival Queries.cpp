@@ -1,15 +1,16 @@
 // <3
 // Tema: CSES / Greedy + Binary Lifting sobre el Tiempo
-// Maximo de peliculas que se pueden ver enteras dentro de [a,b]. El greedy de intervalos es el de
-// siempre: ver primero la que TERMINA mas temprano entre las que empiezan despues del momento
-// actual (intercambio clasico: cambiar cualquier eleccion por la que termina antes nunca empeora).
-// Aqui el truco es indexar por TIEMPO, no por pelicula: nxt[t] = el fin mas temprano de una
-// pelicula que empieza en t o despues. Se calcula con un minimo de sufijos, y queda como una
-// funcion t -> nxt[t] que es justo "ver la siguiente pelicula".
-// Sobre esa funcion se monta binary lifting: up[k][t] es el momento tras ver 2^k peliculas, y cada
-// consulta cuenta cuantos saltos caben antes de pasarse de b. O(log T) por consulta.
-// Es el mismo patron que "Visible Building Queries": un puntero, doubling encima, y contar saltos.
-// La tabla up[20][10^6] ocupa unos 80 MB, que es el precio de indexar por tiempo.
+// Resumen: Maximo de peliculas que se pueden ver enteras dentro de [a,b]
+// Detalle: Maximo de peliculas que se pueden ver enteras dentro de [a,b]. El greedy de
+// intervalos es el de siempre: ver primero la que TERMINA mas temprano entre las que empiezan
+// despues del momento actual (intercambio clasico: cambiar cualquier eleccion por la que
+// termina antes nunca empeora). Aqui el truco es indexar por TIEMPO, no por pelicula: nxt[t] =
+// el fin mas temprano de una pelicula que empieza en t o despues. Se calcula con un minimo de
+// sufijos, y queda como una funcion t -> nxt[t] que es justo "ver la siguiente pelicula". Sobre
+// esa funcion se monta binary lifting: up[k][t] es el momento tras ver 2^k peliculas, y cada
+// consulta cuenta cuantos saltos caben antes de pasarse de b. O(log T) por consulta. Es el
+// mismo patron que "Visible Building Queries": un puntero, doubling encima, y contar saltos. La
+// tabla up[20][10^6] ocupa unos 80 MB, que es el precio de indexar por tiempo.
 
 #include <bits/stdc++.h>
 using namespace std;

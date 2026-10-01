@@ -1,12 +1,13 @@
 // <3
 // Tema: Graph / Max Flow
-// Resuelve "Download Speed" (Day 7, problema H - Contest 07 [Avanzados]): dada una red de n
-// computadoras y m conexiones dirigidas con capacidad c, hay que hallar la velocidad maxima a la
-// que Kotivalo (computadora n) puede descargar datos del servidor (computadora 1) usando la red.
-// Es el problema clasico de flujo maximo: la struct network implementa Dinic (BFS por niveles para
-// construir el grafo por capas + DFS de flujo bloqueante con aristas residuales), y max_flow(1, a)
-// calcula el flujo maximo entre el servidor y la computadora de Kotivalo, que es exactamente la
-// velocidad de descarga pedida.
+// Resumen: Dada una red de n computadoras y m conexiones dirigidas con capacidad c
+// Detalle: Resuelve "Download Speed" (Day 7, problema H - Contest 07 [Avanzados]): dada una red
+// de n computadoras y m conexiones dirigidas con capacidad c, hay que hallar la velocidad
+// maxima a la que Kotivalo (computadora n) puede descargar datos del servidor (computadora 1)
+// usando la red. Es el problema clasico de flujo maximo: la struct network implementa Dinic
+// (BFS por niveles para construir el grafo por capas + DFS de flujo bloqueante con aristas
+// residuales), y max_flow(1, a) calcula el flujo maximo entre el servidor y la computadora de
+// Kotivalo, que es exactamente la velocidad de descarga pedida.
 
 #include <bits/stdc++.h>
 

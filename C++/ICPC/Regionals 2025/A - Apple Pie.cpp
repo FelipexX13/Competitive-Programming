@@ -1,22 +1,22 @@
 // <3
 // Tema: Graph / Existencia de Camino Euleriano con Aristas Ocultas
-// Resuelve "Apple Pie" (problema A, Regionals 2025). Se conoce un prefijo L y un sufijo R de una
-// secuencia, y la parte del medio quedo tapada por la torta: hay que decidir si existe alguna forma
-// de completarla.
-// EL MODELO: cada elemento consecutivo de la secuencia es una ARISTA entre dos valores, asi que la
-// secuencia entera es un camino en un multigrafo. Lo conocido (L y R) fija unas aristas; lo tapado
-// tiene que ser un camino que use EXACTAMENTE las aristas restantes. O sea, la pregunta es si las
-// aristas que sobran forman un CAMINO EULERIANO entre dos extremos dados.
-// LAS CONDICIONES DE EULER, que es lo que hay que tener a mano:
-//   - camino cerrado (circuito): todos los grados son PARES y el grafo es conexo sobre las aristas
-//   - camino abierto: exactamente DOS vertices de grado impar, y son los extremos
-// La funcion canEuler separa cuatro casos segun cuantos extremos se conocen (los dos, solo el
-// inicio, solo el final, ninguno), porque en cada uno la paridad que hay que exigir cambia.
-// EL CHEQUEO DE CONEXIDAD NO ES OPCIONAL: los grados pueden cuadrar perfectamente y aun asi el
-// grafo estar partido en dos componentes con aristas, y entonces no hay camino. Se revisa solo
-// sobre los vertices que tienen alguna arista; los aislados no estorban.
-// El caso de 0 elementos tapados va aparte: ahi basta pegar L y R y ver si la secuencia resultante
-// es valida, sin nada de Euler.
+// Resumen: Resuelve "Apple Pie" (problema A, Regionals 2025)
+// Detalle: Resuelve "Apple Pie" (problema A, Regionals 2025). Se conoce un prefijo L y un
+// sufijo R de una secuencia, y la parte del medio quedo tapada por la torta: hay que decidir si
+// existe alguna forma de completarla. EL MODELO: cada elemento consecutivo de la secuencia es
+// una ARISTA entre dos valores, asi que la secuencia entera es un camino en un multigrafo. Lo
+// conocido (L y R) fija unas aristas; lo tapado tiene que ser un camino que use EXACTAMENTE las
+// aristas restantes. O sea, la pregunta es si las aristas que sobran forman un CAMINO EULERIANO
+// entre dos extremos dados. LAS CONDICIONES DE EULER, que es lo que hay que tener a mano: -
+// camino cerrado (circuito): todos los grados son PARES y el grafo es conexo sobre las aristas
+// - camino abierto: exactamente DOS vertices de grado impar, y son los extremos La funcion
+// canEuler separa cuatro casos segun cuantos extremos se conocen (los dos, solo el inicio, solo
+// el final, ninguno), porque en cada uno la paridad que hay que exigir cambia. EL CHEQUEO DE
+// CONEXIDAD NO ES OPCIONAL: los grados pueden cuadrar perfectamente y aun asi el grafo estar
+// partido en dos componentes con aristas, y entonces no hay camino. Se revisa solo sobre los
+// vertices que tienen alguna arista; los aislados no estorban. El caso de 0 elementos tapados
+// va aparte: ahi basta pegar L y R y ver si la secuencia resultante es valida, sin nada de
+// Euler.
 
 #include <bits/stdc++.h>
 using namespace std;

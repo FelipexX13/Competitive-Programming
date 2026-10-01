@@ -1,13 +1,14 @@
 # <3
 # Tema: LeetCode Hub / Fusion de Listas Ligadas
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
-# LeetCode 21 "Merge Two Sorted Lists": mezclar dos listas ligadas ordenadas.
-# Tecnica del codigo: cirugia de punteros en el sitio, insertando los nodos de una lista dentro
-# de la otra segun cual cabeza sea menor, y al final se pega la cola que sobro.
-# OJO: es dificil de seguir y tiene casos simetricos duplicados. El truco que lo vuelve corto es
-# el NODO CENTINELA: se crea un ListNode(0) falso, se van colgando nodos de la lista menor y al
-# final se devuelve centinela.next. Asi desaparecen todos los if de bordes.
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# LeetCode 21 "Merge Two Sorted Lists": mezclar dos listas ligadas ordenadas. Tecnica del
+# codigo: cirugia de punteros en el sitio, insertando los nodos de una lista dentro de la otra
+# segun cual cabeza sea menor, y al final se pega la cola que sobro. OJO: es dificil de seguir y
+# tiene casos simetricos duplicados. El truco que lo vuelve corto es el NODO CENTINELA: se crea
+# un ListNode(0) falso, se van colgando nodos de la lista menor y al final se devuelve
+# centinela.next. Asi desaparecen todos los if de bordes.
 
 # Definition for singly-linked list.
 # class ListNode:

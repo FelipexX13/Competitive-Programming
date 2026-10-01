@@ -1,10 +1,12 @@
 // <3
 // Tema: Formulario / STL Indispensable
-// Las funciones de la libreria estandar que la gente reimplementa a mano por no saber que
-// existen, y las que se usan mal por un detalle: next_permutation solo recorre las n! si el
-// vector arranca ordenado (verificado: desde {1,2,3} da 6 permutaciones, desde {3,1,2} solo
-// 2), y substr toma (inicio, CANTIDAD) y no (inicio, fin).
-// Tener esta lista a mano ahorra escribir veinte lineas que ya vienen hechas y probadas.
+// Resumen: Las funciones de la libreria estandar que la gente reimplementa a mano por no saber
+// que existen
+// Detalle: Las funciones de la libreria estandar que la gente reimplementa a mano por no saber
+// que existen, y las que se usan mal por un detalle: next_permutation solo recorre las n! si el
+// vector arranca ordenado (verificado: desde {1,2,3} da 6 permutaciones, desde {3,1,2} solo 2),
+// y substr toma (inicio, CANTIDAD) y no (inicio, fin). Tener esta lista a mano ahorra escribir
+// veinte lineas que ya vienen hechas y probadas.
 
 // =============== STL INDISPENSABLE ===============
 //

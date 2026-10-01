@@ -1,8 +1,11 @@
 // <3
 // Tema: Graph / BFS Backtracking
-// Resuelve "Word Ladder II": encuentra TODAS las secuencias de transformacion mas cortas de
-// beginWord a endWord cambiando una letra a la vez. BFS por niveles guardando los padres de cada
-// palabra, y luego backtracking desde endWord para reconstruir todos los caminos minimos.
+// Resumen: Encuentra TODAS las secuencias de transformacion mas cortas de beginWord a endWord
+// cambiando una letra a la...
+// Detalle: Resuelve "Word Ladder II": encuentra TODAS las secuencias de transformacion mas
+// cortas de beginWord a endWord cambiando una letra a la vez. BFS por niveles guardando los
+// padres de cada palabra, y luego backtracking desde endWord para reconstruir todos los caminos
+// minimos.
 
 #include <bits/stdc++.h>
 

@@ -1,23 +1,22 @@
 // <3
 // Tema: Geometry / Contar Cruces de Cuerdas con Fenwick
-// Resuelve "Lonely Creatures" (problema L, Regionals 2025): cada criatura define una recta que corta
-// una parabola en dos puntos, o sea una CUERDA de la region, y hay que contar cuantos pares de
-// cuerdas se cruzan por dentro.
-// DOS PASOS, Y EL PRIMERO ES EL QUE SE PIENSA:
-//   1) Sacar los extremos de cada cuerda resolviendo la ecuacion cuadratica A*x^2 - M*x + (B-C) = 0.
-//      El discriminante D = M^2 - 4A(B-C) decide: si es negativo o cero la recta no entra al
-//      interior y esa criatura se descarta.
-//   2) Dos cuerdas (l1,r1) y (l2,r2) se cruzan por dentro si y solo si sus extremos se INTERCALAN:
-//      l1 < l2 < r1 < r2. Ordenando por el extremo izquierdo, contar los cruces se vuelve contar
-//      INVERSIONES sobre los extremos derechos, que es lo que hace el Fenwick.
-// El desempate importa: si dos cuerdas comparten el extremo izquierdo no se cruzan por dentro (se
-// tocan en la frontera), y por eso el orden y las comparaciones usan < y no <=. Ese detalle cambia
-// la respuesta y no lo avisa ningun caso chico.
-// Los extremos son reales, asi que se comprimen con lowerBound y upperBound escritos a mano sobre
-// long double, y con EPS para los empates. Cuando se puede, es preferible comparar en enteros (como
-// en "C - Clean Streets"); aqui las raices son irracionales y no queda opcion.
-// Es el mismo conteo de inversiones de "frosh" (Frosh Week, CCPL) de este cuaderno, aplicado a
-// geometria.
+// Resumen: Cada criatura define una recta que corta una parabola en dos puntos, o sea una
+// CUERDA de la region
+// Detalle: Resuelve "Lonely Creatures" (problema L, Regionals 2025): cada criatura define una
+// recta que corta una parabola en dos puntos, o sea una CUERDA de la region, y hay que contar
+// cuantos pares de cuerdas se cruzan por dentro. DOS PASOS, Y EL PRIMERO ES EL QUE SE PIENSA:
+// 1) Sacar los extremos de cada cuerda resolviendo la ecuacion cuadratica A*x^2 - M*x + (B-C) =
+// 0. El discriminante D = M^2 - 4A(B-C) decide: si es negativo o cero la recta no entra al
+// interior y esa criatura se descarta. 2) Dos cuerdas (l1,r1) y (l2,r2) se cruzan por dentro si
+// y solo si sus extremos se INTERCALAN: l1 < l2 < r1 < r2. Ordenando por el extremo izquierdo,
+// contar los cruces se vuelve contar INVERSIONES sobre los extremos derechos, que es lo que
+// hace el Fenwick. El desempate importa: si dos cuerdas comparten el extremo izquierdo no se
+// cruzan por dentro (se tocan en la frontera), y por eso el orden y las comparaciones usan < y
+// no <=. Ese detalle cambia la respuesta y no lo avisa ningun caso chico. Los extremos son
+// reales, asi que se comprimen con lowerBound y upperBound escritos a mano sobre long double, y
+// con EPS para los empates. Cuando se puede, es preferible comparar en enteros (como en "C -
+// Clean Streets"); aqui las raices son irracionales y no queda opcion. Es el mismo conteo de
+// inversiones de "frosh" (Frosh Week, CCPL) de este cuaderno, aplicado a geometria.
 
 #include <bits/stdc++.h>
 using namespace std;

@@ -1,9 +1,11 @@
 // <3
 // Tema: Combinatorics / Construction
-// Problema de construccion (el nombre sugiere relacion con subconjuntos de suma prohibida):
-// arma una permutacion de 1..n intercambiando cada pareja de consecutivos (p[1]=2, p[2]=1,
-// p[3]=4, p[4]=3, ...), de forma que p[i] != i para todo i (derangement simple) y cada indice
-// queda emparejado con su vecino inmediato.
+// Resumen: Problema de construccion (el nombre sugiere relacion con subconjuntos de suma
+// prohibida)
+// Detalle: Problema de construccion (el nombre sugiere relacion con subconjuntos de suma
+// prohibida): arma una permutacion de 1..n intercambiando cada pareja de consecutivos (p[1]=2,
+// p[2]=1, p[3]=4, p[4]=3, ...), de forma que p[i] != i para todo i (derangement simple) y cada
+// indice queda emparejado con su vecino inmediato.
 
 #include <bits/stdc++.h>
 using namespace std;

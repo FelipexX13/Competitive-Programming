@@ -1,19 +1,19 @@
 // <3
 // Tema: Geometry / Area Circulo-Poligono
+// Resumen: Area de la interseccion entre un circulo y un poligono
 // O: (n) por circulo, con n = lados del poligono
 // Uso: circleRectangleArea(cx,cy,r,w,h); triangleCircleArea(p,q,r)
-// Area de la interseccion entre un circulo y un poligono, usando el truco de sumar areas con
-// signo arista por arista: se traslada todo para dejar el circulo en el origen y se recorre el
-// poligono sumando triangleCircleArea de cada arista, de modo que las contribuciones de fuera
-// se cancelan solas y al final basta el valor absoluto. Funciona con el poligono en cualquier
-// orientacion y sin importar si el circulo queda dentro, fuera o a medias.
-// Para cada arista p-q se resuelve |p + t*d|^2 = r^2, una cuadratica en t, para hallar donde
-// corta la circunferencia; esos cortes parten el segmento en tramos. Cada tramo se clasifica
-// mirando su punto medio: si cae dentro del circulo aporta el area del triangulo (cross/2), y
-// si cae fuera aporta la del sector circular (r^2*angulo/2, con atan2 para quedarse con el
-// angulo con signo correcto).
-// Aqui se usa con un rectangulo [0,w]x[0,h] para calcular la probabilidad de que un punto
-// uniforme caiga dentro del circulo, y con eso el valor esperado de la suma de los v.
+// Detalle: Area de la interseccion entre un circulo y un poligono, usando el truco de sumar
+// areas con signo arista por arista: se traslada todo para dejar el circulo en el origen y se
+// recorre el poligono sumando triangleCircleArea de cada arista, de modo que las contribuciones
+// de fuera se cancelan solas y al final basta el valor absoluto. Funciona con el poligono en
+// cualquier orientacion y sin importar si el circulo queda dentro, fuera o a medias. Para cada
+// arista p-q se resuelve |p + t*d|^2 = r^2, una cuadratica en t, para hallar donde corta la
+// circunferencia; esos cortes parten el segmento en tramos. Cada tramo se clasifica mirando su
+// punto medio: si cae dentro del circulo aporta el area del triangulo (cross/2), y si cae fuera
+// aporta la del sector circular (r^2*angulo/2, con atan2 para quedarse con el angulo con signo
+// correcto). Aqui se usa con un rectangulo [0,w]x[0,h] para calcular la probabilidad de que un
+// punto uniforme caiga dentro del circulo, y con eso el valor esperado de la suma de los v.
 
 #include <bits/stdc++.h>
 using namespace std;

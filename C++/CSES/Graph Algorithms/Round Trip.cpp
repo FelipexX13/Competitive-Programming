@@ -1,12 +1,13 @@
 // <3
 // Tema: CSES / Deteccion de Ciclo con BFS
-// Se busca un ciclo en grafo no dirigido: si durante el recorrido aparece una arista hacia un
-// nodo YA visitado que no es el padre inmediato, ahi se cierra un ciclo, y se reconstruye
-// subiendo por los padres desde los dos extremos de esa arista.
-// La trampa del no dirigido es justamente excluir al padre: si no, toda arista u-v se ve como
-// ciclo de largo 2 apenas se vuelve a mirar.
-// CUANDO USAR: "existe un ciclo", "hay que devolverlo". En grafo DIRIGIDO esto no aplica: ahi se
-// usa DFS con tres colores (blanco, gris, negro) y el ciclo es una arista hacia un gris.
+// Resumen: Se busca un ciclo en grafo no dirigido
+// Detalle: Se busca un ciclo en grafo no dirigido: si durante el recorrido aparece una arista
+// hacia un nodo YA visitado que no es el padre inmediato, ahi se cierra un ciclo, y se
+// reconstruye subiendo por los padres desde los dos extremos de esa arista. La trampa del no
+// dirigido es justamente excluir al padre: si no, toda arista u-v se ve como ciclo de largo 2
+// apenas se vuelve a mirar. CUANDO USAR: "existe un ciclo", "hay que devolverlo". En grafo
+// DIRIGIDO esto no aplica: ahi se usa DFS con tres colores (blanco, gris, negro) y el ciclo es
+// una arista hacia un gris.
 
 #include <iostream>
 #include <vector>

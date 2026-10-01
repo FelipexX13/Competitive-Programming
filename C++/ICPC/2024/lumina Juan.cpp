@@ -1,21 +1,22 @@
 // <3
 // Tema: Graph / Componentes Fuente con Kosaraju
-// La otra solucion del problema J de ICPC 2024 ("Lumina"): el minimo de gemas a encender a mano
-// para que la reaccion en cadena las encienda todas. La respuesta es la cantidad de componentes
-// fuertemente conexas SIN aristas entrantes desde otra componente.
-// A diferencia de "J - Lumina" de esta carpeta, que usa Tarjan, esta usa KOSARAJU: un DFS sobre el
-// grafo normal que apila los nodos por orden de terminacion, y despues un DFS sobre el grafo INVERSO
-// tomando los nodos en orden inverso de esa pila. Cada arbol del segundo recorrido es una componente.
-// CUAL CONVIENE: Kosaraju es mas facil de recordar (dos DFS y un reverse) pero necesita construir el
-// grafo inverso, o sea el doble de memoria. Tarjan hace una sola pasada y no lo necesita, pero la
-// logica de low[] y la pila es mas facil de escribir mal. Para un cuaderno vale tener las dos.
-// OJO CON EL ORDEN DE NUMERACION: Kosaraju numera las componentes en orden topologico y Tarjan al
-// reves. Aqui solo se cuentan las fuentes, asi que da igual, pero en 2-SAT esa diferencia voltea la
-// regla de asignacion (ver "G - Signal Coverage" de esta carpeta).
-// El grafo es DIRIGIDO e IMPLICITO: u alcanza a v si v cae dentro del radio de u, y como cada gema
-// tiene su propio radio eso no es simetrico. Las aristas no se guardan, se recalculan con
-// dist^2 <= r^2 en enteros.
-// Verificado con los tres casos del sample (1, 2, 2).
+// Resumen: El minimo de gemas a encender a mano para que la reaccion en cadena las encienda
+// todas
+// Detalle: La otra solucion del problema J de ICPC 2024 ("Lumina"): el minimo de gemas a
+// encender a mano para que la reaccion en cadena las encienda todas. La respuesta es la
+// cantidad de componentes fuertemente conexas SIN aristas entrantes desde otra componente. A
+// diferencia de "J - Lumina" de esta carpeta, que usa Tarjan, esta usa KOSARAJU: un DFS sobre
+// el grafo normal que apila los nodos por orden de terminacion, y despues un DFS sobre el grafo
+// INVERSO tomando los nodos en orden inverso de esa pila. Cada arbol del segundo recorrido es
+// una componente. CUAL CONVIENE: Kosaraju es mas facil de recordar (dos DFS y un reverse) pero
+// necesita construir el grafo inverso, o sea el doble de memoria. Tarjan hace una sola pasada y
+// no lo necesita, pero la logica de low[] y la pila es mas facil de escribir mal. Para un
+// cuaderno vale tener las dos. OJO CON EL ORDEN DE NUMERACION: Kosaraju numera las componentes
+// en orden topologico y Tarjan al reves. Aqui solo se cuentan las fuentes, asi que da igual,
+// pero en 2-SAT esa diferencia voltea la regla de asignacion (ver "G - Signal Coverage" de esta
+// carpeta). El grafo es DIRIGIDO e IMPLICITO: u alcanza a v si v cae dentro del radio de u, y
+// como cada gema tiene su propio radio eso no es simetrico. Las aristas no se guardan, se
+// recalculan con dist^2 <= r^2 en enteros. Verificado con los tres casos del sample (1, 2, 2).
 
 #include <iostream>
 #include <vector>

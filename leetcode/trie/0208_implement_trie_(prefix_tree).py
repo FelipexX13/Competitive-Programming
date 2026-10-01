@@ -1,9 +1,9 @@
 # <3
 # Tema: LeetCode Hub / Trie
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
-# LeetCode 208 "Implement Trie (Prefix Tree)": insertar, buscar palabra exacta y buscar
-# prefijo.
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# LeetCode 208 "Implement Trie (Prefix Tree)": insertar, buscar palabra exacta y buscar prefijo.
 # Tecnica: trie clasico con un diccionario de hijos por nodo y una bandera isEndLetter para
 # distinguir 'la palabra termina aqui' de 'solo es un prefijo'. Esa bandera es toda la
 # diferencia entre search y startsWith.

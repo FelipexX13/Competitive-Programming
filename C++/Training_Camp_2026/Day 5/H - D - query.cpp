@@ -1,12 +1,13 @@
 // <3
 // Tema: Data Structures / Fenwick Tree (Consultas offline)
-// Resuelve "D-query" (Day 5, problema H - Contest 05 [Avanzados]): dada una secuencia a_1..a_n y q
-// consultas (i, j), para cada una hay que responder cuantos elementos distintos hay en la
-// subsecuencia a_i..a_j. Ordena las consultas por su extremo derecho j (vector order) y las
-// procesa offline avanzando un puntero curJ de izquierda a derecha: por cada nueva posicion, si el
-// valor ya aparecio antes (lastPos) le resta 1 en el BIT a su ocurrencia previa y suma 1 en la
-// posicion actual, de modo que el BIT siempre cuenta, para cada valor, solo su ultima ocurrencia
-// hasta curJ; la respuesta de cada consulta es query(j) - query(i-1).
+// Resumen: Dada una secuencia a_1..a_n y q consultas (i, j)
+// Detalle: Resuelve "D-query" (Day 5, problema H - Contest 05 [Avanzados]): dada una secuencia
+// a_1..a_n y q consultas (i, j), para cada una hay que responder cuantos elementos distintos
+// hay en la subsecuencia a_i..a_j. Ordena las consultas por su extremo derecho j (vector order)
+// y las procesa offline avanzando un puntero curJ de izquierda a derecha: por cada nueva
+// posicion, si el valor ya aparecio antes (lastPos) le resta 1 en el BIT a su ocurrencia previa
+// y suma 1 en la posicion actual, de modo que el BIT siempre cuenta, para cada valor, solo su
+// ultima ocurrencia hasta curJ; la respuesta de cada consulta es query(j) - query(i-1).
 
 #include <bits/stdc++.h>
 using namespace std;

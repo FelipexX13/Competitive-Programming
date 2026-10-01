@@ -1,18 +1,17 @@
 // <3
 // Tema: Number Theory / BFS sobre Residuos
-// Resuelve "Only1s0s" (problema H, ICPC 2024). El codigo busca el menor multiplo M de N que se
-// escribe solo con unos y ceros, y responde M / N.
-// M puede tener muchisimos digitos, asi que no se busca entre numeros sino entre RESIDUOS modulo
-// N: dos numeros con el mismo residuo se comportan igual de ahi en adelante (agregarles un digito
-// lleva al mismo residuo), asi que basta quedarse con el primero que llega a cada residuo. Hay a
-// lo sumo N estados, y el BFS termina en O(N).
-// Siempre existe: entre 1, 11, 111, ... (N+1 numeros) dos tienen el mismo residuo, y su resta es
-// un multiplo de N hecho de unos y ceros.
-// POR QUE SALE EL MENOR: el BFS encuentra primero los mas cortos, y dentro del mismo largo, como
-// se agrega el 0 antes que el 1 y la cola ya viene ordenada, los numeros salen en orden creciente.
-// Asi que la primera vez que se alcanza el residuo 0 es con el menor M. Se reconstruye con
-// parent[] y digit[].
-// Al final M se divide entre N como en la escuela, digito por digito con el resto, porque no cabe
+// Resumen: Resuelve "Only1s0s" (problema H, ICPC 2024)
+// Detalle: Resuelve "Only1s0s" (problema H, ICPC 2024). El codigo busca el menor multiplo M de
+// N que se escribe solo con unos y ceros, y responde M / N. M puede tener muchisimos digitos,
+// asi que no se busca entre numeros sino entre RESIDUOS modulo N: dos numeros con el mismo
+// residuo se comportan igual de ahi en adelante (agregarles un digito lleva al mismo residuo),
+// asi que basta quedarse con el primero que llega a cada residuo. Hay a lo sumo N estados, y el
+// BFS termina en O(N). Siempre existe: entre 1, 11, 111, ... (N+1 numeros) dos tienen el mismo
+// residuo, y su resta es un multiplo de N hecho de unos y ceros. POR QUE SALE EL MENOR: el BFS
+// encuentra primero los mas cortos, y dentro del mismo largo, como se agrega el 0 antes que el
+// 1 y la cola ya viene ordenada, los numeros salen en orden creciente. Asi que la primera vez
+// que se alcanza el residuo 0 es con el menor M. Se reconstruye con parent[] y digit[]. Al
+// final M se divide entre N como en la escuela, digito por digito con el resto, porque no cabe
 // en ningun tipo entero. El 10LL en la transicion evita el desborde de cur * 10.
 
 #include <bits/stdc++.h>

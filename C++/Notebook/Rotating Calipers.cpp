@@ -1,21 +1,21 @@
 // <3
 // Tema: Geometry / Rotating Calipers (Par Mas Lejano)
+// Resumen: Par de puntos mas lejano (diametro del conjunto) en O(n log n)
 // O: (n log n) el hull, (n) el diametro
 // Uso: h = convexHull(p); diameter(h) -> {dist^2, {P,Q}}  // dist^2, no dist
-// Par de puntos mas lejano (diametro del conjunto) en O(n log n). El par optimo siempre son
-// dos vertices del casco convexo, asi que se arma el casco y se recorre con dos punteros:
-// para cada arista (i, i+1) se avanza j mientras el triangulo (i, i+1, j) crezca en area.
-// Donde deja de crecer, j es el vertice mas lejano a la recta de esa arista (su antipodal).
-// Como j solo avanza y da a lo sumo una vuelta, el recorrido cuesta O(n).
-// Detalle que la version ingenua olvida: el antipodal se mide contra LOS DOS extremos de la
-// arista (i e i+1); medir solo contra i puede perder el par optimo.
-// Todo en enteros con distancia AL CUADRADO: exacto, sin sqrt ni EPS (coordenadas hasta ~1e9
-// para que no desborde long long). El casco sale sin repetidos ni colineales, que es lo que
-// necesita el while (con colineales el area deja de ser estrictamente unimodal).
-// Casos borde: un solo punto distinto -> 0; todos colineales -> el casco tiene 2 puntos.
-// El mismo recorrido de antipodales resuelve: ancho minimo del conjunto (minimo, sobre las
-// aristas, de la distancia a su antipodal), rectangulo de area minima que lo cubre y
-// distancia entre dos poligonos convexos.
+// Detalle: Par de puntos mas lejano (diametro del conjunto) en O(n log n). El par optimo
+// siempre son dos vertices del casco convexo, asi que se arma el casco y se recorre con dos
+// punteros: para cada arista (i, i+1) se avanza j mientras el triangulo (i, i+1, j) crezca en
+// area. Donde deja de crecer, j es el vertice mas lejano a la recta de esa arista (su
+// antipodal). Como j solo avanza y da a lo sumo una vuelta, el recorrido cuesta O(n). Detalle
+// que la version ingenua olvida: el antipodal se mide contra LOS DOS extremos de la arista (i e
+// i+1); medir solo contra i puede perder el par optimo. Todo en enteros con distancia AL
+// CUADRADO: exacto, sin sqrt ni EPS (coordenadas hasta ~1e9 para que no desborde long long). El
+// casco sale sin repetidos ni colineales, que es lo que necesita el while (con colineales el
+// area deja de ser estrictamente unimodal). Casos borde: un solo punto distinto -> 0; todos
+// colineales -> el casco tiene 2 puntos. El mismo recorrido de antipodales resuelve: ancho
+// minimo del conjunto (minimo, sobre las aristas, de la distancia a su antipodal), rectangulo
+// de area minima que lo cubre y distancia entre dos poligonos convexos.
 
 #include <bits/stdc++.h>
 

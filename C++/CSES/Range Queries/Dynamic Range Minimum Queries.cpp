@@ -1,15 +1,16 @@
 // <3
 // Tema: CSES / Segment Tree (Minimo)
+// Resumen: Segment tree de minimos con actualizacion puntual, en O(log n) cada operacion
 // O: (log n) update y query, (n) build
 // Uso: st.build(1,1,n,a); st.update(1,1,n,pos,v); st.query(1,1,n,l,r)
-// Segment tree de minimos con actualizacion puntual, en O(log n) cada operacion. El nodo p cubre
-// [l,r] y sus hijos son 2p y 2p+1; por eso el arreglo se reserva de tamano 4n, que es la cota
-// segura para cualquier n (no solo potencias de 2).
-// CUANDO USAR SEGMENT TREE Y NO OTRA COSA: la operacion es asociativa pero NO tiene inversa (min,
-// max, gcd), asi que restar no es opcion y Fenwick queda descartado, y ADEMAS el arreglo cambia,
-// lo que descarta la sparse table. Ese cruce es exactamente el nicho del segment tree.
-// Es la plantilla de la que salen todas las variantes: cambiando el min por otra operacion
-// asociativa sirve igual, y agregandole lazy se actualizan rangos completos.
+// Detalle: Segment tree de minimos con actualizacion puntual, en O(log n) cada operacion. El
+// nodo p cubre [l,r] y sus hijos son 2p y 2p+1; por eso el arreglo se reserva de tamano 4n, que
+// es la cota segura para cualquier n (no solo potencias de 2). CUANDO USAR SEGMENT TREE Y NO
+// OTRA COSA: la operacion es asociativa pero NO tiene inversa (min, max, gcd), asi que restar
+// no es opcion y Fenwick queda descartado, y ADEMAS el arreglo cambia, lo que descarta la
+// sparse table. Ese cruce es exactamente el nicho del segment tree. Es la plantilla de la que
+// salen todas las variantes: cambiando el min por otra operacion asociativa sirve igual, y
+// agregandole lazy se actualizan rangos completos.
 
 #include <bits/stdc++.h>
 using namespace std;

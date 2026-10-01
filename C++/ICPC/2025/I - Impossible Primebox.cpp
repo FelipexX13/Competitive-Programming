@@ -1,37 +1,33 @@
 // <3
 // Tema: Implementation / Simulacion con Parsing de Codigo
-// Resuelve "Impossible Primebox" (problema I, ICPC 2025): hay L "primelocks", cada uno con la
-// forma
-//     prlck i:
-//     x = x [* Ai] [+ Bi]
-//     if Pi div x jumpto {prlck ji | end} else jumpto {prlck mi | end}
-// Se arranca en el candado 0 con un x inicial y se sigue saltando hasta caer en un end. Hay que
-// hallar el MENOR x inicial con el que el candado i se ejecuta exactamente Ki veces, para todos.
-// El enunciado promete que la clave existe y es menor que 50000, asi que la solucion es probar
-// x = 0, 1, 2, ... y quedarse con el primero que cumpla: no hay que invertir nada.
-// LO QUE DE VERDAD CUESTA ES LEER LA ENTRADA, porque el formato tiene partes OPCIONALES: el
-// "* Ai" puede no estar, el "+ Bi" puede no estar, y los destinos son "prlck j" o "end", que
-// ocupan distinta cantidad de palabras. Leer con >> palabra por palabra y decidir segun lo que
-// aparece es mucho mas seguro que intentar un patron fijo con getline.
-//   linea 2: "x = x" y despues, mientras siga habiendo operador, se lee "* A" o "+ B"
-//   linea 3: "if P div x jumpto <destino> else jumpto <destino>", donde <destino> es "end"
-//            (una palabra) o "prlck" seguido del numero (dos palabras)
-// Para saber donde termina la linea 2 sin depender de saltos de linea, se mira si la siguiente
-// palabra es "if": ahi empieza la linea 3.
-// "Pi div x" significa "Pi divide a x", o sea x % Pi == 0. Leerlo al reves es el error facil.
-// EL CORTE POR CICLO INFINITO ES OBLIGATORIO: con un x malo el proceso puede no terminar nunca.
-// Como cada Ki es a lo sumo 1000 y hay a lo sumo 10 candados, un recorrido valido no puede dar
-// mas de 10000 pasos; si se pasa de ahi, ese x no sirve y se corta. Ademas, apenas un contador
-// supera su Ki ya se puede abandonar, y eso es lo que hace que la mayoria de los x se descarten
-// en pocos pasos.
-// SOBRE EL TIEMPO, PARA QUE NO SORPRENDA: el peor caso teorico es 50000 candidatos por 10000
-// pasos. Medido con 5 casos armados a proposito para que ninguna x sirva y el recorrido siempre
-// llegue a los 10000 pasos: 15.5 s en total, unos 3 s por caso. El enunciado promete que la clave
-// EXISTE y es menor que 50000, asi que en cualquier entrada legitima se encuentra antes y no se
-// paga ese costo; el sample completo corre en 12 ms. Si aun asi diera TLE, lo siguiente seria
-// detectar ciclos guardando los estados (candado, residuos) ya vistos.
-// EL VALOR DE x NO SE PUEDE GUARDAR: con A hasta 1000 por paso y hasta 10000 pasos, x llega a
-// tener miles de digitos. Pero de x solo se pregunta si P lo divide, asi que se lleva x MODULO el
+// Resumen: Hay L "primelocks", cada uno con la forma prlck i
+// Detalle: Resuelve "Impossible Primebox" (problema I, ICPC 2025): hay L "primelocks", cada uno
+// con la forma prlck i: x = x [* Ai] [+ Bi] if Pi div x jumpto {prlck ji | end} else jumpto
+// {prlck mi | end} Se arranca en el candado 0 con un x inicial y se sigue saltando hasta caer
+// en un end. Hay que hallar el MENOR x inicial con el que el candado i se ejecuta exactamente
+// Ki veces, para todos. El enunciado promete que la clave existe y es menor que 50000, asi que
+// la solucion es probar x = 0, 1, 2, ... y quedarse con el primero que cumpla: no hay que
+// invertir nada. LO QUE DE VERDAD CUESTA ES LEER LA ENTRADA, porque el formato tiene partes
+// OPCIONALES: el "* Ai" puede no estar, el "+ Bi" puede no estar, y los destinos son "prlck j"
+// o "end", que ocupan distinta cantidad de palabras. Leer con >> palabra por palabra y decidir
+// segun lo que aparece es mucho mas seguro que intentar un patron fijo con getline. linea 2: "x
+// = x" y despues, mientras siga habiendo operador, se lee "* A" o "+ B" linea 3: "if P div x
+// jumpto <destino> else jumpto <destino>", donde <destino> es "end" (una palabra) o "prlck"
+// seguido del numero (dos palabras) Para saber donde termina la linea 2 sin depender de saltos
+// de linea, se mira si la siguiente palabra es "if": ahi empieza la linea 3. "Pi div x"
+// significa "Pi divide a x", o sea x % Pi == 0. Leerlo al reves es el error facil. EL CORTE POR
+// CICLO INFINITO ES OBLIGATORIO: con un x malo el proceso puede no terminar nunca. Como cada Ki
+// es a lo sumo 1000 y hay a lo sumo 10 candados, un recorrido valido no puede dar mas de 10000
+// pasos; si se pasa de ahi, ese x no sirve y se corta. Ademas, apenas un contador supera su Ki
+// ya se puede abandonar, y eso es lo que hace que la mayoria de los x se descarten en pocos
+// pasos. SOBRE EL TIEMPO, PARA QUE NO SORPRENDA: el peor caso teorico es 50000 candidatos por
+// 10000 pasos. Medido con 5 casos armados a proposito para que ninguna x sirva y el recorrido
+// siempre llegue a los 10000 pasos: 15.5 s en total, unos 3 s por caso. El enunciado promete
+// que la clave EXISTE y es menor que 50000, asi que en cualquier entrada legitima se encuentra
+// antes y no se paga ese costo; el sample completo corre en 12 ms. Si aun asi diera TLE, lo
+// siguiente seria detectar ciclos guardando los estados (candado, residuos) ya vistos. EL VALOR
+// DE x NO SE PUEDE GUARDAR: con A hasta 1000 por paso y hasta 10000 pasos, x llega a tener
+// miles de digitos. Pero de x solo se pregunta si P lo divide, asi que se lleva x MODULO el
 // primo de cada candado. La transformacion x = x*A + B se traduce a los residuos sin cambiar
 // nada, porque (x*A + B) mod P depende solo de x mod P. Con L <= 10 son 10 residuos por paso.
 // Verificado con los dos casos del sample (10 y 255) y con una fuerza bruta independiente

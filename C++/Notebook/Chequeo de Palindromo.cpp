@@ -1,14 +1,16 @@
 // <3
 // Tema: String / Chequeo de Palindromo
+// Resumen: Las tres formas de preguntar "esto es palindromo", segun cuantas veces lo vayas a
+// preguntar
 // O: (1) por consulta tras O(n^2) de tabla; manacher es O(n)
 // Uso: tablaPalindromos(s)[l][r]; manacher(s) -> {d1,d2} impar/par
-// Las tres formas de preguntar "esto es palindromo", segun cuantas veces lo vayas a preguntar.
-// Para una consulta suelta basta el chequeo de dos punteros en O(n) y sin memoria extra. Si el
-// problema pregunta por muchos rangos [l,r] distintos, conviene precalcular la tabla pal[i][j]
-// en O(n^2) y responder cada consulta en O(1). Y si n es grande y hace falta el palindromo mas
-// largo, ahi ya toca Manacher en O(n).
-// La regla para elegir: cuenta cuantas consultas vas a hacer. Una sola, dos punteros; muchas
-// sobre n <= 2000, la tabla; n de 10^5 o mas, Manacher.
+// Detalle: Las tres formas de preguntar "esto es palindromo", segun cuantas veces lo vayas a
+// preguntar. Para una consulta suelta basta el chequeo de dos punteros en O(n) y sin memoria
+// extra. Si el problema pregunta por muchos rangos [l,r] distintos, conviene precalcular la
+// tabla pal[i][j] en O(n^2) y responder cada consulta en O(1). Y si n es grande y hace falta el
+// palindromo mas largo, ahi ya toca Manacher en O(n). La regla para elegir: cuenta cuantas
+// consultas vas a hacer. Una sola, dos punteros; muchas sobre n <= 2000, la tabla; n de 10^5 o
+// mas, Manacher.
 
 #include <bits/stdc++.h>
 using namespace std;

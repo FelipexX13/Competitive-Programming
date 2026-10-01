@@ -1,14 +1,15 @@
 # <3
 # Tema: LeetCode Hub / Prefijos en un Set
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3043 "Find the Length of the Longest Common Prefix": el prefijo comun mas largo entre
-# cualquier numero del primer arreglo y cualquiera del segundo.
-# Tecnica: se meten TODOS los prefijos de los numeros del primer arreglo en un set y se busca cual
-# aparece tambien en el set del segundo. Eso evita comparar todos los pares.
-# OJO: compara con int(i) para quedarse con el mayor, pero lo que se busca es el mas LARGO. Con
-# numeros de la misma cantidad de digitos coincide, pero el criterio correcto es len().
-# Con un trie esto es el ejercicio natural, y sale mas claro.
+# cualquier numero del primer arreglo y cualquiera del segundo. Tecnica: se meten TODOS los
+# prefijos de los numeros del primer arreglo en un set y se busca cual aparece tambien en el set
+# del segundo. Eso evita comparar todos los pares. OJO: compara con int(i) para quedarse con el
+# mayor, pero lo que se busca es el mas LARGO. Con numeros de la misma cantidad de digitos
+# coincide, pero el criterio correcto es len(). Con un trie esto es el ejercicio natural, y sale
+# mas claro.
 
 class Solution:
     def longestCommonPrefix(self, arr1: List[int], arr2: List[int]) -> int:

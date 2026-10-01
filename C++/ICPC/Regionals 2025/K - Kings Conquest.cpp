@@ -1,22 +1,21 @@
 // <3
 // Tema: Implementation / Maximizar Area del Rectangulo Envolvente
-// Resuelve "Kings Conquest" (problema K, Regionals 2025): dados unos reyes en el plano y k
-// movimientos, maximizar el area del rectangulo que los encierra a todos.
-// Solo importa el BOUNDING BOX, o sea minX, maxX, minY, maxY: el area es (ancho)*(alto) y los reyes
-// de adentro no cambian nada. Con esa reduccion hay dos formas de gastar los k movimientos:
-//   - bestTwoKing: repartir los k entre ancho y alto, probando las k+1 divisiones posibles. Sale de
-//     estirar la caja por lados opuestos.
-//   - bestOneKing: mover UN rey hacia una de las cuatro diagonales (+-k, +-k) y recalcular la caja.
-//     Cubre el caso en que conviene sacar un solo rey lejos en vez de repartir.
-// Se toma el maximo de las dos. El caso n == 1 va aparte: con un solo rey el area es 1 y las
-// formulas no aplican.
-// OJO CON EL DESBORDE: el area es ancho por alto y las coordenadas pueden ser grandes, asi que todo
-// va en long long. Es el tipo de problema donde la respuesta cabe pero el producto intermedio no,
-// si se descuida el tipo.
-// El +1 en w y h es porque se cuentan CASILLAS y no distancias: de la coordenada 3 a la 7 hay 5
-// casillas, no 4.
-// OJO: usa structured bindings (auto [a, b]), que piden C++17. En el juez compila, pero con
-// un g++ viejo hay que volver a .first y .second.
+// Resumen: Dados unos reyes en el plano y k movimientos, maximizar el area del rectangulo que
+// los encierra a todos
+// Detalle: Resuelve "Kings Conquest" (problema K, Regionals 2025): dados unos reyes en el plano
+// y k movimientos, maximizar el area del rectangulo que los encierra a todos. Solo importa el
+// BOUNDING BOX, o sea minX, maxX, minY, maxY: el area es (ancho)*(alto) y los reyes de adentro
+// no cambian nada. Con esa reduccion hay dos formas de gastar los k movimientos: - bestTwoKing:
+// repartir los k entre ancho y alto, probando las k+1 divisiones posibles. Sale de estirar la
+// caja por lados opuestos. - bestOneKing: mover UN rey hacia una de las cuatro diagonales (+-k,
+// +-k) y recalcular la caja. Cubre el caso en que conviene sacar un solo rey lejos en vez de
+// repartir. Se toma el maximo de las dos. El caso n == 1 va aparte: con un solo rey el area es
+// 1 y las formulas no aplican. OJO CON EL DESBORDE: el area es ancho por alto y las coordenadas
+// pueden ser grandes, asi que todo va en long long. Es el tipo de problema donde la respuesta
+// cabe pero el producto intermedio no, si se descuida el tipo. El +1 en w y h es porque se
+// cuentan CASILLAS y no distancias: de la coordenada 3 a la 7 hay 5 casillas, no 4. OJO: usa
+// structured bindings (auto [a, b]), que piden C++17. En el juez compila, pero con un g++ viejo
+// hay que volver a .first y .second.
 
 #include <bits/stdc++.h>
 using namespace std;

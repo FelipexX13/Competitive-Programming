@@ -1,11 +1,11 @@
 # <3
 # Tema: LeetCode Hub / Conteo de Desplazamientos
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
-# LeetCode 835 "Image Overlap": deslizando una imagen binaria sobre otra, maximo de unos que
-# se superponen.
-# Tecnica: en vez de probar cada traslacion, se saca la lista de posiciones con 1 de cada
-# imagen y para cada par se anota el desplazamiento (dr, dc) en un diccionario. El
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# LeetCode 835 "Image Overlap": deslizando una imagen binaria sobre otra, maximo de unos que se
+# superponen. Tecnica: en vez de probar cada traslacion, se saca la lista de posiciones con 1 de
+# cada imagen y para cada par se anota el desplazamiento (dr, dc) en un diccionario. El
 # desplazamiento que mas veces aparece ES la respuesta. O(u1*u2) con u = cantidad de unos.
 
 class Solution:

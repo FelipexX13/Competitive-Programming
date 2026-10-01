@@ -1,15 +1,17 @@
 // <3
 // Tema: CSES / Fenwick de Diferencias
+// Resumen: La vuelta de tuerca: en vez de guardar los valores, el Fenwick guarda las
+// DIFERENCIAS
 // O: (log n) por operacion
 // Uso: add(l,+x) y add(r+1,-x); sum(i) da el valor de la posicion i
-// La vuelta de tuerca: en vez de guardar los valores, el Fenwick guarda las DIFERENCIAS. Sumar x
-// a todo el rango [a,b] son dos operaciones puntuales, add(a, x) y add(b+1, -x), y consultar la
-// posicion k es la suma de prefijo hasta k. O sea que el mismo Fenwick que hace
-// "actualizacion puntual + consulta de rango" tambien hace lo contrario,
-// "actualizacion de rango + consulta puntual", solo cambiando lo que se guarda.
-// CUANDO USAR: el problema actualiza rangos completos y pregunta por posiciones sueltas. Si
-// necesita actualizar rangos Y consultar rangos, ahi si toca el Fenwick doble o un segment tree
-// con lazy propagation.
+// Detalle: La vuelta de tuerca: en vez de guardar los valores, el Fenwick guarda las
+// DIFERENCIAS. Sumar x a todo el rango [a,b] son dos operaciones puntuales, add(a, x) y
+// add(b+1, -x), y consultar la posicion k es la suma de prefijo hasta k. O sea que el mismo
+// Fenwick que hace "actualizacion puntual + consulta de rango" tambien hace lo contrario,
+// "actualizacion de rango + consulta puntual", solo cambiando lo que se guarda. CUANDO USAR: el
+// problema actualiza rangos completos y pregunta por posiciones sueltas. Si necesita actualizar
+// rangos Y consultar rangos, ahi si toca el Fenwick doble o un segment tree con lazy
+// propagation.
 
 #include <bits/stdc++.h>
 using namespace std;

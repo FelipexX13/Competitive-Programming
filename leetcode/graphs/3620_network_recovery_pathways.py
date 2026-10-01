@@ -1,14 +1,14 @@
 # <3
 # Tema: LeetCode Hub / Binaria sobre la Respuesta en un DAG
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3620 "Network Recovery Pathways": maximizar el peso MINIMO de las aristas del camino,
-# con el costo total del camino acotado por k.
-# Tecnica: binaria sobre la respuesta. Se fija un umbral mid, se borran todas las aristas de peso
-# menor, y con el orden topologico se calcula el camino mas BARATO que queda; si cabe en k, el
-# umbral es alcanzable y se busca mas arriba.
-# Maximizar un minimo casi siempre sale asi: binaria sobre el valor y una verificacion facil.
-# El orden topologico es lo que permite el camino minimo en O(m) sin Dijkstra, porque es un DAG.
+# con el costo total del camino acotado por k. Tecnica: binaria sobre la respuesta. Se fija un
+# umbral mid, se borran todas las aristas de peso menor, y con el orden topologico se calcula el
+# camino mas BARATO que queda; si cabe en k, el umbral es alcanzable y se busca mas arriba.
+# Maximizar un minimo casi siempre sale asi: binaria sobre el valor y una verificacion facil. El
+# orden topologico es lo que permite el camino minimo en O(m) sin Dijkstra, porque es un DAG.
 
 from collections import deque
 

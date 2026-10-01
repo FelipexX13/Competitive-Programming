@@ -1,13 +1,14 @@
 // <3
 // Tema: Dynamic Programming / Interval Scheduling
-// Resuelve "Yuyuan Market" (Day 10, problema A - Contest 09 [Avanzados]): una fila de 2N jianzhi
-// con simbolos repetidos (cada simbolo aparece dos veces), donde solo se pueden comprar pares
-// (posicion i, posicion j>i) del mismo simbolo, sin cruzar hacia atras una vez elegido un par. Hay
-// que maximizar la cantidad de pares comprados y, entre los que logran el maximo, minimizar la
-// suma de distancias j-i. Cada simbolo define un intervalo [L[v], R[v]] (primera y segunda
-// aparicion); es DP de intervalos sobre la posicion p: cnt[p]/len[p] guardan el mejor (cantidad,
-// costo) usando las primeras p posiciones, y endAtL[p] permite extender el DP tomando el intervalo
-// que termina en p desde el estado anterior a su inicio.
+// Resumen: Una fila de 2N jianzhi con simbolos repetidos (cada simbolo aparece dos veces)
+// Detalle: Resuelve "Yuyuan Market" (Day 10, problema A - Contest 09 [Avanzados]): una fila de
+// 2N jianzhi con simbolos repetidos (cada simbolo aparece dos veces), donde solo se pueden
+// comprar pares (posicion i, posicion j>i) del mismo simbolo, sin cruzar hacia atras una vez
+// elegido un par. Hay que maximizar la cantidad de pares comprados y, entre los que logran el
+// maximo, minimizar la suma de distancias j-i. Cada simbolo define un intervalo [L[v], R[v]]
+// (primera y segunda aparicion); es DP de intervalos sobre la posicion p: cnt[p]/len[p] guardan
+// el mejor (cantidad, costo) usando las primeras p posiciones, y endAtL[p] permite extender el
+// DP tomando el intervalo que termina en p desde el estado anterior a su inicio.
 
 #include <bits/stdc++.h>
 using namespace std;

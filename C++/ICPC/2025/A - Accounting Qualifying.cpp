@@ -1,19 +1,18 @@
 // <3
 // Tema: Implementation / Fuerza Bruta O(n^2) sobre Subperiodos
-// La otra forma de resolver "Account Qualifying" (problema A, ICPC 2025): probar TODOS los
-// subperiodos. Se mapea deposito a +1, retiro a -1 y saldo a 0, y cada tramo con suma 0 tiene
-// tantos depositos como retiros.
-// Es O(n^2), que con n = 10000 son 10^8 sumas. Medido: 5 casos del tamano maximo en 94 ms, o sea
-// que pasa, pero la version con sumas de prefijo (el otro archivo A de esta carpeta) hace lo mismo
-// en O(n) y tarda 20 ms.
-// POR QUE NO TIENE PODAS: la primera version de este archivo intentaba cortar el ciclo interno
-// contando cuantos positivos y negativos quedaban disponibles, y estaba mal: el break se evaluaba
-// ANTES de comprobar si la suma era 0, asi que descartaba tramos validos. Con el primer caso del
-// sample daba r = 3 en vez de 4. Una fuerza bruta sin podas es corta y no se equivoca; si hace
-// falta velocidad, lo que corresponde es cambiar de algoritmo, no parchear el ciclo.
-// Lo de d y w es igual que en la otra version: si no hay depositos d es 0 y si no hay retiros w
-// es 0, de ahi el max(0, ...) y el min(0, ...).
-// Verificado contra fuerza bruta en 2900 casos, sin fallos.
+// Resumen: Probar TODOS los subperiodos
+// Detalle: La otra forma de resolver "Account Qualifying" (problema A, ICPC 2025): probar TODOS
+// los subperiodos. Se mapea deposito a +1, retiro a -1 y saldo a 0, y cada tramo con suma 0
+// tiene tantos depositos como retiros. Es O(n^2), que con n = 10000 son 10^8 sumas. Medido: 5
+// casos del tamano maximo en 94 ms, o sea que pasa, pero la version con sumas de prefijo (el
+// otro archivo A de esta carpeta) hace lo mismo en O(n) y tarda 20 ms. POR QUE NO TIENE PODAS:
+// la primera version de este archivo intentaba cortar el ciclo interno contando cuantos
+// positivos y negativos quedaban disponibles, y estaba mal: el break se evaluaba ANTES de
+// comprobar si la suma era 0, asi que descartaba tramos validos. Con el primer caso del sample
+// daba r = 3 en vez de 4. Una fuerza bruta sin podas es corta y no se equivoca; si hace falta
+// velocidad, lo que corresponde es cambiar de algoritmo, no parchear el ciclo. Lo de d y w es
+// igual que en la otra version: si no hay depositos d es 0 y si no hay retiros w es 0, de ahi
+// el max(0, ...) y el min(0, ...). Verificado contra fuerza bruta en 2900 casos, sin fallos.
 
 #include <bits/stdc++.h>
 using namespace std;

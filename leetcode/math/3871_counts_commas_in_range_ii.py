@@ -1,12 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Conteo por Bandas de Magnitud
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3871 "Count Commas in Range II": la misma cuenta de comas, pero con rangos grandes.
 # Tecnica: bajar por bandas. Se toma la potencia de 10 mas cercana por debajo de n, se cuenta
 # cuantos numeros hay de ahi a n (todos con la misma cantidad de comas, (digitos-1)//3), se suma
-# y se repite con n = potencia - 1 hasta llegar por debajo de 1000.
-# Ese partir el rango en tramos donde la respuesta es constante es la idea reutilizable.
+# y se repite con n = potencia - 1 hasta llegar por debajo de 1000. Ese partir el rango en
+# tramos donde la respuesta es constante es la idea reutilizable.
 
 class Solution:
     def countCommas(self, n: int) -> int:

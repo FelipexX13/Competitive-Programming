@@ -1,13 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Fuerza Bruta sobre Digitos
-# NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
+# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
 #
+# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
 # LeetCode 3751 "Total Waviness of Numbers in Range I": contar los picos y valles de los digitos
-# de todos los numeros del rango.
-# Tecnica: recorrer el rango entero y en cada numero mirar las ternas de digitos consecutivos: es
-# pico si el del medio es mayor que sus dos vecinos, valle si es menor.
-# Es la version I, con rango chico. La II pediria digit DP, o sea contar por posicion en vez de
-# recorrer numero por numero.
+# de todos los numeros del rango. Tecnica: recorrer el rango entero y en cada numero mirar las
+# ternas de digitos consecutivos: es pico si el del medio es mayor que sus dos vecinos, valle si
+# es menor. Es la version I, con rango chico. La II pediria digit DP, o sea contar por posicion
+# en vez de recorrer numero por numero.
 
 class Solution:
     def totalWaviness(self, num1: int, num2: int) -> int:

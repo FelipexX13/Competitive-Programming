@@ -1,15 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Pila de Parentesis con Reverso
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Invertir lo que hay dentro de cada par de parentesis, respetando el anidamiento
 # O: (n^2): cada cierre reconstruye la cadena entera
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 1190 "Reverse Substrings Between Each Pair of Parentheses": invertir lo que hay
-# dentro de cada par de parentesis, respetando el anidamiento. Tecnica: pila con las posiciones
-# de los parentesis que abren. Al encontrar uno que cierra se invierte el pedazo de adentro y se
-# reescribe la cadena sin los parentesis. El i -= 2 es para reacomodar el indice despues de que
-# la cadena se acorto en dos caracteres. Modificar la cadena adentro del ciclo es lo delicado;
-# con una pila de STRINGS acumulados no hay que tocar indices.
+# Detalle: LeetCode 1190 "Reverse Substrings Between Each Pair of Parentheses": invertir lo que
+# hay dentro de cada par de parentesis, respetando el anidamiento. Tecnica: pila con las
+# posiciones de los parentesis que abren. Al encontrar uno que cierra se invierte el pedazo de
+# adentro y se reescribe la cadena sin los parentesis. El i -= 2 es para reacomodar el indice
+# despues de que la cadena se acorto en dos caracteres. Modificar la cadena adentro del ciclo es
+# lo delicado; con una pila de STRINGS acumulados no hay que tocar indices.
 
 class Solution:
     def reverseParentheses(self, s: str) -> str:

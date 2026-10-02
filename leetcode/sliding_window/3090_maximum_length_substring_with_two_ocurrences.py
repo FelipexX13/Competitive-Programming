@@ -1,13 +1,11 @@
 # <3
 # Tema: LeetCode Hub / Ventana con Frecuencias
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: La subcadena mas larga donde ninguna letra aparece mas de dos veces
 # O: (n), el mismo molde con k fijo en 2
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 3090 "Maximum Length Substring With Two Occurrences": la subcadena mas larga donde
-# ninguna letra aparece mas de dos veces. Tecnica: el mismo molde del 2958 pero con k fijo en 2.
-# Diccionario de frecuencias, y cuando una letra llega a 3 se encoge por la izquierda hasta que
-# vuelva a 2.
+# Detalle: LeetCode 3090 "Maximum Length Substring With Two Occurrences": la subcadena mas larga
+# donde ninguna letra aparece mas de dos veces. Tecnica: el mismo molde del 2958 pero con k fijo
+# en 2. Diccionario de frecuencias, y cuando una letra llega a 3 se encoge por la izquierda
+# hasta que vuelva a 2.
 
 class Solution:
     def maximumLengthSubstring(self, s: str) -> int:

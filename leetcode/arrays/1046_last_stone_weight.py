@@ -1,13 +1,11 @@
 # <3
 # Tema: LeetCode Hub / Simulacion con los Dos Mayores
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Choque de las dos piedras mas pesadas hasta que quede una
 # O: (n^2): cada max() y cada remove() recorren; con heap seria (n log n)
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 1046 "Last Stone Weight": choque de las dos piedras mas pesadas hasta que quede una.
-# Tecnica: max() y remove() en un while. Es O(n^2) porque cada max recorre todo. Es el ejercicio
-# de HEAP MAXIMO: con heapq y los valores negados, cada choque cuesta O(log n) y el total queda
-# O(n log n). Ver heap/0373 en esta misma carpeta para ese truco del signo.
+# Detalle: LeetCode 1046 "Last Stone Weight": choque de las dos piedras mas pesadas hasta que
+# quede una. Tecnica: max() y remove() en un while. Es O(n^2) porque cada max recorre todo. Es
+# el ejercicio de HEAP MAXIMO: con heapq y los valores negados, cada choque cuesta O(log n) y el
+# total queda O(n log n). Ver heap/0373 en esta misma carpeta para ese truco del signo.
 
 class Solution:
     def lastStoneWeight(self, stones: List[int]) -> int:

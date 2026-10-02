@@ -1,13 +1,11 @@
 # <3
 # Tema: LeetCode Hub / Palindromo Filtrando Caracteres
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Palindromo ignorando mayusculas, espacios y signos
 # O: (n), un filtro y dos punteros
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 125 "Valid Palindrome": palindromo ignorando mayusculas, espacios y signos. Tecnica:
-# primero se limpia la cadena dejando solo letras y digitos, y despues se compara con dos
-# punteros desde las puntas. OJO: deja un print(guar). En Python el filtro sale mas corto con
-# i.isalnum().
+# Detalle: LeetCode 125 "Valid Palindrome": palindromo ignorando mayusculas, espacios y signos.
+# Tecnica: primero se limpia la cadena dejando solo letras y digitos, y despues se compara con
+# dos punteros desde las puntas. OJO: deja un print(guar). En Python el filtro sale mas corto
+# con i.isalnum().
 
 class Solution:
     def isPalindrome(self, s: str) -> bool:

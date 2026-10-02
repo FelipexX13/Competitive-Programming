@@ -1,12 +1,10 @@
 # <3
 # Tema: LeetCode Hub / Rotacion de Cadena
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Decir si goal es una rotacion de s
 # O: (n^2) probando cada arranque; con s+s o KMP seria (n)
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 796 "Rotate String": decir si goal es una rotacion de s. Tecnica: para cada posicion
-# donde aparece la primera letra de goal, se compara dando la vuelta con el modulo (el k = 0
-# cuando se pasa del final). El truco de una linea: goal esta en s+s si y solo si es una
+# Detalle: LeetCode 796 "Rotate String": decir si goal es una rotacion de s. Tecnica: para cada
+# posicion donde aparece la primera letra de goal, se compara dando la vuelta con el modulo (el
+# k = 0 cuando se pasa del final). El truco de una linea: goal esta en s+s si y solo si es una
 # rotacion. Y si hay que hacerlo rapido para cadenas grandes, es KMP sobre s+s.
 
 class Solution:

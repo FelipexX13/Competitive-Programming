@@ -1,16 +1,16 @@
 # <3
 # Tema: Geometry / Bounding Box de una Elipse Rotada
-# Resumen: NO ES MIO: codigo de Stiven Correa, del repo del equipo (carpeta RPC/)
+# Resumen: Dados los dos focos de una elipse y el largo a de la cuerda
 # O: (1), formulas de la elipse rotada
-# Detalle: NO ES MIO: codigo de Stiven Correa, del repo del equipo (carpeta RPC/). Resuelve
-# "Eclipse" (RPC 2026-07, problema E): dados los dos focos de una elipse y el largo a de la
-# cuerda, dar el rectangulo mas pequeno (alineado a los ejes) que la contiene. Tecnica: de la
-# definicion de elipse, el semieje mayor es A = a/2 y la distancia del centro a cada foco es c =
-# d/2, asi que el semieje menor sale de B = raiz(A^2 - c^2). El centro es el punto medio de los
-# focos. La parte que vale: la elipse esta ROTADA (el eje mayor va en la direccion de un foco al
-# otro), y la extension en X de una elipse rotada es raiz((A*ux)^2 + (B*vx)^2), donde u es el
-# vector unitario del eje mayor y v el perpendicular. Igual para Y. Es la formula del bounding
-# box de una elipse en cualquier orientacion, y no es obvia si uno no la ha visto.
+# Detalle: Resuelve "Eclipse" (RPC 2026-07, problema E): dados los dos focos de una elipse y el
+# largo a de la cuerda, dar el rectangulo mas pequeno (alineado a los ejes) que la contiene.
+# Tecnica: de la definicion de elipse, el semieje mayor es A = a/2 y la distancia del centro a
+# cada foco es c = d/2, asi que el semieje menor sale de B = raiz(A^2 - c^2). El centro es el
+# punto medio de los focos. La parte que vale: la elipse esta ROTADA (el eje mayor va en la
+# direccion de un foco al otro), y la extension en X de una elipse rotada es raiz((A*ux)^2 +
+# (B*vx)^2), donde u es el vector unitario del eje mayor y v el perpendicular. Igual para Y. Es
+# la formula del bounding box de una elipse en cualquier orientacion, y no es obvia si uno no la
+# ha visto.
 
 import math
 

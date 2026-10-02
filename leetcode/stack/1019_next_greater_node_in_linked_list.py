@@ -1,14 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Siguiente Mayor con Pila
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Para cada nodo, el primer valor mayor que aparece despues
 # O: (n), cada nodo entra y sale de la pila una vez
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 1019 "Next Greater Node In Linked List": para cada nodo, el primer valor mayor que
-# aparece despues. Tecnica: pila monotona decreciente que guarda valores Y posiciones. Cuando
-# llega uno mas grande, se le resuelve la respuesta a todos los de la pila que sean menores.
-# Cada elemento entra y sale una vez, asi que es O(n). El patron next greater element se usa en
-# muchisimos problemas; este es la version de lista ligada, pero con arreglo es identico.
+# Detalle: LeetCode 1019 "Next Greater Node In Linked List": para cada nodo, el primer valor
+# mayor que aparece despues. Tecnica: pila monotona decreciente que guarda valores Y posiciones.
+# Cuando llega uno mas grande, se le resuelve la respuesta a todos los de la pila que sean
+# menores. Cada elemento entra y sale una vez, asi que es O(n). El patron next greater element
+# se usa en muchisimos problemas; este es la version de lista ligada, pero con arreglo es
+# identico.
 
 # Definition for singly-linked list.
 # class ListNode:

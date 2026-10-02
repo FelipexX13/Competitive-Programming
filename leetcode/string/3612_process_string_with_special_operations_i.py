@@ -1,13 +1,11 @@
 # <3
 # Tema: LeetCode Hub / Simulacion de Operaciones
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Simular una cadena donde * borra el ultimo, # duplica todo y % invierte
 # O: (n^2): el # duplica y el % invierte, y eso copia todo
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 3612 "Process String with Special Operations I": simular una cadena donde * borra el
-# ultimo, # duplica todo y % invierte. Tecnica: simulacion directa sobre el string. Es O(n^2)
-# porque duplicar e invertir copian todo. La version II no se puede simular (la cadena se vuelve
-# gigantesca) y hay que ir AL REVES, rastreando de donde viene el caracter que se pide.
+# Detalle: LeetCode 3612 "Process String with Special Operations I": simular una cadena donde *
+# borra el ultimo, # duplica todo y % invierte. Tecnica: simulacion directa sobre el string. Es
+# O(n^2) porque duplicar e invertir copian todo. La version II no se puede simular (la cadena se
+# vuelve gigantesca) y hay que ir AL REVES, rastreando de donde viene el caracter que se pide.
 
 class Solution:
     def processStr(self, s: str) -> str:

@@ -1,14 +1,12 @@
 # <3
 # Tema: LeetCode Hub / Orden Topologico de Kahn
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Devolver un orden valido de los cursos, o vacio si no hay
 # O: (n+m), el mismo Kahn devolviendo el orden
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 210 "Course Schedule II": devolver un orden valido de los cursos, o vacio si no hay.
-# Tecnica: el mismo Kahn del 207, pero devolviendo el orden en vez de un booleano. Lo unico que
-# cambia es que primero invierte cada par, porque el enunciado da [curso, prerrequisito] y el
-# grafo necesita la arista prerrequisito -> curso. Equivocarse en la direccion de la arista es
-# el error clasico de este problema.
+# Detalle: LeetCode 210 "Course Schedule II": devolver un orden valido de los cursos, o vacio si
+# no hay. Tecnica: el mismo Kahn del 207, pero devolviendo el orden en vez de un booleano. Lo
+# unico que cambia es que primero invierte cada par, porque el enunciado da [curso,
+# prerrequisito] y el grafo necesita la arista prerrequisito -> curso. Equivocarse en la
+# direccion de la arista es el error clasico de este problema.
 
 from collections import deque
 class Solution:

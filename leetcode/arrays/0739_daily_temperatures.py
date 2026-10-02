@@ -1,14 +1,12 @@
 # <3
 # Tema: LeetCode Hub / Siguiente Dia mas Caliente
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Para cada dia, cuantos dias faltan para uno mas caliente
 # O: (n^2) en el peor caso; con pila monotona es (n)
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 739 "Daily Temperatures": para cada dia, cuantos dias faltan para uno mas caliente.
-# Tecnica del codigo: busqueda hacia adelante con un cache por temperatura, reusando el
-# resultado de la vez anterior que aparecio ese mismo valor. Es ingenioso pero en el peor caso
-# sigue siendo O(n^2) y cuesta leerlo. Esto es el problema de PILA MONOTONA por excelencia: se
-# lleva una pila de indices con temperaturas decrecientes y cuando llega una mas alta se
+# Detalle: LeetCode 739 "Daily Temperatures": para cada dia, cuantos dias faltan para uno mas
+# caliente. Tecnica del codigo: busqueda hacia adelante con un cache por temperatura, reusando
+# el resultado de la vez anterior que aparecio ese mismo valor. Es ingenioso pero en el peor
+# caso sigue siendo O(n^2) y cuesta leerlo. Esto es el problema de PILA MONOTONA por excelencia:
+# se lleva una pila de indices con temperaturas decrecientes y cuando llega una mas alta se
 # resuelven todos los de la pila que sean menores. O(n) y diez lineas. La version de pila esta
 # en stack/1019 de esta misma carpeta.
 

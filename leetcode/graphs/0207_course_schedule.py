@@ -1,11 +1,9 @@
 # <3
 # Tema: LeetCode Hub / Orden Topologico de Kahn
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Decir si se pueden tomar todos los cursos respetando los prerrequisitos
 # O: (n+m), Kahn con los grados de entrada
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 207 "Course Schedule": decir si se pueden tomar todos los cursos respetando los
-# prerrequisitos. Tecnica: Kahn. Se cuentan los grados de ENTRADA, se meten a la cola los de
+# Detalle: LeetCode 207 "Course Schedule": decir si se pueden tomar todos los cursos respetando
+# los prerrequisitos. Tecnica: Kahn. Se cuentan los grados de ENTRADA, se meten a la cola los de
 # grado 0 y al sacar uno se baja el grado de sus vecinos. Si al final el orden no tiene los n
 # nodos, hay un ciclo. Detectar ciclo en dirigido con Kahn es contar cuantos salieron, y eso es
 # toda la gracia.

@@ -1,14 +1,12 @@
 # <3
 # Tema: LeetCode Hub / Verificar Sube y Baja
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Decir si el arreglo sube estrictamente y luego baja estrictamente
 # O: (n), un barrido con una bandera
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 941 "Valid Mountain Array": decir si el arreglo sube estrictamente y luego baja
-# estrictamente. Tecnica: una bandera subiendo que solo puede cambiar una vez. Si vuelve a subir
-# despues de haber bajado, no es montana; si alguna diferencia es 0, tampoco (tiene que ser
-# estricto). Los casos que hay que cuidar son los que el codigo pone al inicio y al final: menos
-# de 3 elementos, y que nunca haya bajado.
+# Detalle: LeetCode 941 "Valid Mountain Array": decir si el arreglo sube estrictamente y luego
+# baja estrictamente. Tecnica: una bandera subiendo que solo puede cambiar una vez. Si vuelve a
+# subir despues de haber bajado, no es montana; si alguna diferencia es 0, tampoco (tiene que
+# ser estricto). Los casos que hay que cuidar son los que el codigo pone al inicio y al final:
+# menos de 3 elementos, y que nunca haya bajado.
 
 class Solution:
     def validMountainArray(self, arr: List[int]) -> bool:

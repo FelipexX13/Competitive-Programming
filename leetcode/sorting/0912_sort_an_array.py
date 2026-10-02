@@ -1,13 +1,11 @@
 # <3
 # Tema: LeetCode Hub / Counting Sort
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Ordenar, sin usar el sort de la libreria
 # O: (n + rango), counting sort
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 912 "Sort an Array": ordenar, sin usar el sort de la libreria. Tecnica: counting sort
-# con diccionario de frecuencias y un barrido del minimo al maximo. Es O(n + rango), asi que
-# solo conviene cuando el rango de valores es chico; aca los valores llegan a 5*10^4 y cabe. Con
-# valores grandes y dispersos esto se vuelve lentisimo.
+# Detalle: LeetCode 912 "Sort an Array": ordenar, sin usar el sort de la libreria. Tecnica:
+# counting sort con diccionario de frecuencias y un barrido del minimo al maximo. Es O(n +
+# rango), asi que solo conviene cuando el rango de valores es chico; aca los valores llegan a
+# 5*10^4 y cabe. Con valores grandes y dispersos esto se vuelve lentisimo.
 
 class Solution:
     def sortArray(self, nums: list[int]) -> list[int]:

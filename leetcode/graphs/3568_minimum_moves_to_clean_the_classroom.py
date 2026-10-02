@@ -1,10 +1,8 @@
 # <3
 # Tema: LeetCode Hub / Dijkstra sobre (nodo, bitmask) con Poda de Pareto
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Recoger toda la basura L de una cuadricula con energia limitada, recargando en las R
 # O: (2^L * V^2 log) con L basuras y V celdas clave, por el Dijkstra sobre estados
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 3568 "Minimum Moves to Clean the Classroom": recoger toda la basura L de una
+# Detalle: LeetCode 3568 "Minimum Moves to Clean the Classroom": recoger toda la basura L de una
 # cuadricula con energia limitada, recargando en las R. Tecnica: el estado es (posicion
 # especial, mascara de basura recogida) y se explora con heap, o sea Dijkstra sobre estados.
 # Primero comprime la cuadricula a un grafo solo entre las celdas que importan (S, L y R) con

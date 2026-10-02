@@ -1,12 +1,10 @@
 # <3
 # Tema: LeetCode Hub / Suma de Digitos
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: El primer indice donde la suma de digitos del valor es igual al indice
 # O: (n * digitos)
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 3550 "Smallest Index With Digit Sum Equal to Index": el primer indice donde la suma
-# de digitos del valor es igual al indice. Tecnica: sum(map(int, str(x))) por elemento, que es
-# la forma corta de sumar digitos en Python.
+# Detalle: LeetCode 3550 "Smallest Index With Digit Sum Equal to Index": el primer indice donde
+# la suma de digitos del valor es igual al indice. Tecnica: sum(map(int, str(x))) por elemento,
+# que es la forma corta de sumar digitos en Python.
 
 class Solution:
     def smallestIndex(self, nums: List[int]) -> int:

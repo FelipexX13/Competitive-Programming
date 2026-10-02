@@ -1,14 +1,12 @@
 # <3
 # Tema: LeetCode Hub / Fuerza Bruta
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: El menor numero mayor o igual que n cuyo producto de digitos sea multiplo de t
 # O: (respuesta - n) * digitos; con los limites del problema la respuesta esta cerca
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 3345 "Smallest Divisible Digit Product I": el menor numero mayor o igual que n cuyo
-# producto de digitos sea multiplo de t. Tecnica: probar n, n+1, n+2, ... calculando math.prod
-# de los digitos. Con los limites del problema (t hasta 10) la respuesta esta muy cerca, asi que
-# la fuerza bruta alcanza. Sirve de recordatorio de math.prod, que ahorra escribir el ciclo del
-# producto.
+# Detalle: LeetCode 3345 "Smallest Divisible Digit Product I": el menor numero mayor o igual que
+# n cuyo producto de digitos sea multiplo de t. Tecnica: probar n, n+1, n+2, ... calculando
+# math.prod de los digitos. Con los limites del problema (t hasta 10) la respuesta esta muy
+# cerca, asi que la fuerza bruta alcanza. Sirve de recordatorio de math.prod, que ahorra
+# escribir el ciclo del producto.
 
 import math
 class Solution:

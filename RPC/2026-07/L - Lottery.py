@@ -1,13 +1,12 @@
 # <3
 # Tema: Implementation / Umbral de Frecuencia
-# Resumen: NO ES MIO: codigo de Stiven Correa, del repo del equipo (carpeta RPC/)
+# Resumen: De todos los numeros jugados, los que aparecen mas de 2n veces, en orden; -1 si no hay ninguno
 # O: (n log n) por ordenar la respuesta; el conteo es (n)
-# Detalle: NO ES MIO: codigo de Stiven Correa, del repo del equipo (carpeta RPC/). Resuelve
-# "Lottery" (RPC 2026-07, problema L): de todos los numeros jugados, los que aparecen mas de 2n
-# veces, en orden; -1 si no hay ninguno. Tecnica: diccionario de frecuencias y se agrega al
-# resultado en el momento en que uno pasa el umbral, no al final. El set evita repetirlo si
-# sigue apareciendo. El print(*res) desempaca la lista en argumentos y la imprime separada por
-# espacios, que es la forma corta de sacar una lista en una sola linea en Python.
+# Detalle: Resuelve "Lottery" (RPC 2026-07, problema L): de todos los numeros jugados, los que
+# aparecen mas de 2n veces, en orden; -1 si no hay ninguno. Tecnica: diccionario de frecuencias
+# y se agrega al resultado en el momento en que uno pasa el umbral, no al final. El set evita
+# repetirlo si sigue apareciendo. El print(*res) desempaca la lista en argumentos y la imprime
+# separada por espacios, que es la forma corta de sacar una lista en una sola linea en Python.
 
 from collections import defaultdict
 n = int(input())

@@ -1,13 +1,11 @@
 # <3
 # Tema: LeetCode Hub / DP en Dos Cadenas
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Cuantas subsecuencias de s son iguales a t
 # O: (n*m) tiempo y memoria
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 115 "Distinct Subsequences": cuantas subsecuencias de s son iguales a t. Tecnica:
-# dp[i][j] = de cuantas formas se forma t[j:] usando s[i:]. Si las letras coinciden hay dos
-# opciones, usarla o no, y se SUMAN; si no coinciden solo queda avanzar en s. Los dp[i][n] = 1
-# son el caso base, t ya se termino. Va de atras hacia adelante, que es lo natural cuando el
+# Detalle: LeetCode 115 "Distinct Subsequences": cuantas subsecuencias de s son iguales a t.
+# Tecnica: dp[i][j] = de cuantas formas se forma t[j:] usando s[i:]. Si las letras coinciden hay
+# dos opciones, usarla o no, y se SUMAN; si no coinciden solo queda avanzar en s. Los dp[i][n] =
+# 1 son el caso base, t ya se termino. Va de atras hacia adelante, que es lo natural cuando el
 # estado son sufijos.
 
 class Solution:

@@ -1,12 +1,10 @@
 # <3
 # Tema: LeetCode Hub / Racha Maxima
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: La racha mas larga de unos
 # O: (n), un contador que se reinicia en cada cero
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 485 "Max Consecutive Ones": la racha mas larga de unos. Tecnica: un contador que se
-# reinicia en cada cero. El if del final es porque si el arreglo termina en 1, la ultima racha
-# nunca se comparo adentro del ciclo. Ese caso del final es el error clasico de todos los
+# Detalle: LeetCode 485 "Max Consecutive Ones": la racha mas larga de unos. Tecnica: un contador
+# que se reinicia en cada cero. El if del final es porque si el arreglo termina en 1, la ultima
+# racha nunca se comparo adentro del ciclo. Ese caso del final es el error clasico de todos los
 # problemas de rachas.
 
 class Solution:

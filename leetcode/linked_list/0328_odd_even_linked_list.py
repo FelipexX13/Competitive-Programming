@@ -1,15 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Separar en Dos Listas
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Reordenar para que queden primero las posiciones impares y despues las pares, conservando el orden relativo
 # O: (n), una pasada armando dos listas
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 328 "Odd Even Linked List": reordenar para que queden primero las posiciones impares
-# y despues las pares, conservando el orden relativo. Tecnica: se arman dos listas mientras se
-# recorre, una con las posiciones impares y otra con las pares, y al final se pega la de pares
-# al final de la de impares. La variable voy lleva la posicion, no el valor, que es lo que puede
-# confundir al leerlo. El caso de un solo nodo va aparte porque ahi la lista de pares nunca se
-# crea.
+# Detalle: LeetCode 328 "Odd Even Linked List": reordenar para que queden primero las posiciones
+# impares y despues las pares, conservando el orden relativo. Tecnica: se arman dos listas
+# mientras se recorre, una con las posiciones impares y otra con las pares, y al final se pega
+# la de pares al final de la de impares. La variable voy lleva la posicion, no el valor, que es
+# lo que puede confundir al leerlo. El caso de un solo nodo va aparte porque ahi la lista de
+# pares nunca se crea.
 
 # Definition for singly-linked list.
 # class ListNode:

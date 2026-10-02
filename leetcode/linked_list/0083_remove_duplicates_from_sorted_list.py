@@ -1,14 +1,12 @@
 # <3
 # Tema: LeetCode Hub / Recorrido de Lista Ligada
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Quitar los repetidos de una lista ordenada
 # O: (n), una pasada
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 83 "Remove Duplicates from Sorted List": quitar los repetidos de una lista ordenada.
-# Tecnica: como esta ordenada, los repetidos estan pegados, asi que basta recordar el ultimo
-# valor visto y solo copiar cuando cambia. Aca construye una lista NUEVA en vez de saltarse
-# nodos. En el sitio seria mas barato: si nodo.val == nodo.next.val entonces nodo.next =
-# nodo.next.next.
+# Detalle: LeetCode 83 "Remove Duplicates from Sorted List": quitar los repetidos de una lista
+# ordenada. Tecnica: como esta ordenada, los repetidos estan pegados, asi que basta recordar el
+# ultimo valor visto y solo copiar cuando cambia. Aca construye una lista NUEVA en vez de
+# saltarse nodos. En el sitio seria mas barato: si nodo.val == nodo.next.val entonces nodo.next
+# = nodo.next.next.
 
 # Definition for singly-linked list.
 # class ListNode:

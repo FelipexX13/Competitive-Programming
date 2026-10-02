@@ -1,16 +1,14 @@
 # <3
 # Tema: LeetCode Hub / Ciclo en Grafo Dirigido por Casos
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: La arista que sobra, pero en un arbol DIRIGIDO
 # O: (n^2) por el stack.index() del ciclo; el DFS solo es (n+m)
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 685 "Redundant Connection II": la arista que sobra, pero en un arbol DIRIGIDO.
-# Tecnica: hay dos sintomas posibles y se tratan por separado. Un nodo con grado de entrada 2
-# (dos padres) y/o un ciclo. Un DFS con el set visiting detecta el ciclo y guarda sus aristas;
-# despues se mira si hay nodo con dos padres. Si solo hay ciclo, se devuelve la ultima arista
-# del ciclo en el orden de entrada; si hay nodo con dos padres, la que haya que quitar es la que
-# ademas esta en el ciclo. Es bastante mas delicado que la version I: aqui lo que importa son
-# los CASOS, no la estructura.
+# Detalle: LeetCode 685 "Redundant Connection II": la arista que sobra, pero en un arbol
+# DIRIGIDO. Tecnica: hay dos sintomas posibles y se tratan por separado. Un nodo con grado de
+# entrada 2 (dos padres) y/o un ciclo. Un DFS con el set visiting detecta el ciclo y guarda sus
+# aristas; despues se mira si hay nodo con dos padres. Si solo hay ciclo, se devuelve la ultima
+# arista del ciclo en el orden de entrada; si hay nodo con dos padres, la que haya que quitar es
+# la que ademas esta en el ciclo. Es bastante mas delicado que la version I: aqui lo que importa
+# son los CASOS, no la estructura.
 
 from collections import defaultdict
 

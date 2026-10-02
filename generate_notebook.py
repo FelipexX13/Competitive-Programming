@@ -168,7 +168,7 @@ GATILLOS = [
         ("donde aparece este patron",
          "KMP, o funcion Z", "String"),
         ("muchas comparaciones de subcadenas",
-         "hashing doble", "String"),
+         "hashing mod 2^61-1, y LCP por binaria", "String"),
         ("prefijos de un diccionario",
          "trie", "String"),
         ("MUCHOS patrones contra un mismo texto",
@@ -205,12 +205,30 @@ GATILLOS = [
          "primitivas: cross, dot, orientacion", "Geometry"),
         ("el poligono mas chico que cubre los puntos",
          "convex hull", "Geometry"),
+        ("donde se cortan rectas, segmentos, circulos",
+         "intersecciones y distancias", "Geometry"),
+        ("los dos puntos mas cercanos",
+         "closest pair por barrido", "Geometry"),
         ("cuantos divisores, o factorizar muchos",
          "criba con menor factor primo", "Number Theory"),
         ("dividir en modulo",
          "inverso modular (Fermat)", "Number Theory"),
         ("congruencias simultaneas",
-         "teorema chino del resto", "Number Theory"),
+         "CRT, aunque no sean coprimos", "Number Theory"),
+        ("inverso o ecuacion con modulo NO primo",
+         "Euclides extendido", "Number Theory"),
+        ("cuantos de 1..n son coprimos con n",
+         "phi de Euler", "Number Theory"),
+        ("es primo? factorizar un numero de 10^18",
+         "Miller-Rabin + Pollard rho", "Number Theory"),
+        ("recurrencia lineal con n hasta 10^18",
+         "exponenciacion de matrices", "Math"),
+        ("multiplicar polinomios, sumas de pares",
+         "NTT mod 998244353", "Math"),
+        ("la funcion sube y despues baja",
+         "busqueda ternaria", "Binary Search"),
+        ("numero de cientos de cifras, sin modulo",
+         "Python: el int no tiene tope", "Implementation"),
     ]),
     ("Trampas que cuestan el problema entero", [
         ("dos numeros de 10^9 multiplicados",
@@ -232,7 +250,9 @@ GATILLOS = [
         ("la respuesta cabe pero el intermedio no",
          "reordena la formula o divide antes", "Formulario"),
         ("recursion profunda en Python",
-         "sys.setrecursionlimit, o hazlo iterativo", ""),
+         "memo con dict, no @lru_cache (revienta)", "Implementation"),
+        ("da WA y no se ve por que",
+         "stress test contra fuerza bruta", "Implementation"),
     ]),
 ]
 
@@ -1221,7 +1241,10 @@ class NotebookPDF:
         self.y -= 10
 
         tope = self.y
-        alto_fila = 8.6
+        # 8.0 y no 8.6: con 85 filas, a 8.6 la cola del mapa de secciones (las 6 de
+        # CSES del final) se pasaba sola a una segunda pagina, y esta hoja tiene que
+        # ser UNA. Probado: 8.3 y 8.1 todavia no caben; 8.0 si, y se lee igual.
+        alto_fila = 8.0
         # La senal es lo que se escanea (uno compara contra el texto del
         # enunciado), asi que se queda con la mayor parte del ancho.
         ancho_senal = self.col_width * 0.52
@@ -1569,6 +1592,13 @@ class NotebookPDF:
 
         # Portada/TOC
         self.draw_cover(self.groups)
+
+        # El contenido arranca arriba a la izquierda de la pagina nueva que deja
+        # draw_cover. Sin reiniciar esto heredaba la columna y la altura de la hoja
+        # de GATILLOS: si esa hoja quedaba llena hasta abajo, el primer titulo "no
+        # cabia" y salia una pagina en blanco entre el indice y la seccion 1.
+        self.col = 0
+        self.y = self.content_top
 
         # Contenido
         section_num = 0

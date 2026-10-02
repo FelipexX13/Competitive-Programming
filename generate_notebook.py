@@ -124,7 +124,7 @@ GATILLOS = [
         ("conectar todo al menor costo",
          "MST: Kruskal + DSU", "Graph"),
         ("quedaron en el mismo grupo?",
-         "DSU (union-find)", "Graph"),
+         "DSU (union-find)", "Data Structures"),
         ("hay ciclo en un grafo dirigido?",
          "Kahn, o DFS de tres colores", "Graph"),
         ("dependencias, en que orden hacerlo",
@@ -488,19 +488,22 @@ def scan_files(root: Path):
             topic = "CSES: " + carpeta
 
         # Los de leetcode/ van igual: apartado propio al final, subdividido por
-        # la carpeta del Hub (arrays, graphs, string, ...). Van aparte a
-        # proposito y NO mezclados en las secciones por tema, porque no son
-        # codigo nuestro: los escribieron Juan Jose Lozano y Stiven Correa y
-        # cada encabezado lo dice. Son referencia, no algo que uno vaya a copiar
-        # en un contest sin leerlo. Training_Camp_2026/ y RPC/ si entran a las
-        # secciones normales: son problemas de contest que ya vienen con su
-        # "Tema:" puesto.
+        # la carpeta del Hub (arrays, graphs, string, ...). Son problemas de
+        # practica sueltos, no de contest, asi que van despues de todo lo demas.
+        # Training_Camp_2026/ y RPC/ si entran a las secciones normales: son
+        # problemas de contest que ya vienen con su "Tema:" puesto.
         if partes and partes[0] == "leetcode":
             carpeta = partes[1] if len(partes) > 2 else "Sin Carpeta"
             bonito = carpeta.replace("_", " ").title()
             # title() deja "Dp" y "Dsu"; las siglas van en mayuscula sostenida.
             bonito = {"Dp": "DP", "Dsu": "DSU"}.get(bonito, bonito)
             topic = "Hub LeetCode: " + bonito
+
+        # Lo de C++/Notebook/ son plantillas, no ejercicios: van a secciones
+        # propias "Plantillas: <tema>", al frente del notebook, para no tener que
+        # buscar la estructura entre las soluciones de problemas.
+        if "Notebook" in partes:
+            topic = "Plantillas: " + TOPIC_ALIASES.get(topic, topic)
 
         entries.append({
             "name": fp.stem,
@@ -559,13 +562,20 @@ def source_tag(path):
 def group_by_topic(entries):
     """Agrupa entradas por tema en el orden definido."""
     groups = OrderedDict()
-    for section in SECTION_ORDER:
+    temas = set(e["topic"] for e in entries)
+    # Primero todo lo que NO es un ejercicio: el Formulario (informacion) y las
+    # plantillas, en el orden de SECTION_ORDER. Despues los ejercicios.
+    rango = lambda s: SECTION_ORDER.index(s) if s in SECTION_ORDER else len(SECTION_ORDER)
+    plantillas = sorted((t for t in temas if t.startswith("Plantillas: ")),
+                        key=lambda t: (rango(t[len("Plantillas: "):]), t))
+    primero = (["Formulario"] if "Formulario" in temas else []) + plantillas
+    normales = [s for s in SECTION_ORDER if s != "Formulario" and s in temas]
+    for section in primero + normales:
         group = [e for e in entries if e["topic"] == section]
-        if group:
-            groups[section] = sorted(group, key=lambda e: e["subtopic"].lower())
+        groups[section] = sorted(group, key=lambda e: e["subtopic"].lower())
 
-    known = set(SECTION_ORDER)
-    extra = sorted(set(e["topic"] for e in entries if e["topic"] not in known))
+    known = set(primero) | set(normales)
+    extra = sorted(t for t in temas if t not in known)
     # Al final van, en este orden: lo demas, CSES, y de ultimo el Hub. El Hub
     # queda atras porque es material de consulta ajeno, no la parte del notebook
     # que uno abre en medio de un contest.
@@ -1217,6 +1227,15 @@ class NotebookPDF:
         # numeros de esta hoja no se desincronizan cuando cambian las secciones.
         num_de = {nombre: i for i, nombre in enumerate(self.groups, 1)}
 
+        # Una tecnica puede tener plantilla Y ejercicios: se muestran los dos
+        # numeros, "plantilla/ejercicios". Las filas del mapa (seccion con "#"
+        # delante) muestran solo el numero de esa seccion.
+        def numero(seccion):
+            if seccion.startswith("#"):
+                return str(num_de.get(seccion[1:], ""))
+            nums = [num_de[n] for n in ("Plantillas: " + seccion, seccion) if n in num_de]
+            return "/".join(map(str, nums))
+
         self.col = 0
         # content_top ya viene por debajo de la barra del encabezado; arrancar
         # mas arriba mete el titulo encima de la barra negra.
@@ -1233,7 +1252,7 @@ class NotebookPDF:
             MARGIN_LEFT, self.y,
             "Para cuando el problema no te suena a nada. Busca la senal, "
             "quedate con el nombre de la tecnica y de ahi usa el indice. "
-            "El numero de la derecha es la seccion.")
+            "El numero de la derecha es la seccion: plantilla/ejercicios.")
         self.y -= 12
         self.c.setStrokeColor(BG_MID)
         self.c.setLineWidth(0.6)
@@ -1258,19 +1277,24 @@ class NotebookPDF:
         # serian puro ruido, porque nadie resuelve un problema de contest
         # saltando a "Hub LeetCode: Trie". Es material de consulta, va al final.
         plural = lambda k: "1 entrada" if k == 1 else "%d entradas" % k
-        mapa, hub_desde, hub_hasta, hub_n = [], None, None, 0
+        # Las plantillas tambien se colapsan en una fila: los numeros de cada
+        # una ya salen en las filas de arriba (plantilla/ejercicios).
+        mapa, colapsadas = [], OrderedDict()
         for nombre, items in self.groups.items():
-            if nombre.startswith("Hub LeetCode: "):
-                if hub_desde is None:
-                    hub_desde = num_de[nombre]
-                hub_hasta = num_de[nombre]
-                hub_n += len(items)
+            for prefijo, rotulo in (("Plantillas: ", "Plantillas"),
+                                    ("Hub LeetCode: ", "Hub LeetCode")):
+                if nombre.startswith(prefijo):
+                    if rotulo not in colapsadas:
+                        colapsadas[rotulo] = [num_de[nombre], num_de[nombre], 0]
+                        mapa.append(rotulo)
+                    colapsadas[rotulo][1] = num_de[nombre]
+                    colapsadas[rotulo][2] += len(items)
+                    break
             else:
-                mapa.append((nombre, plural(len(items)), nombre))
-        if hub_desde is not None:
-            mapa.append(("Hub LeetCode (referencia, del equipo)",
-                         "%s, secciones %d-%d" % (plural(hub_n), hub_desde,
-                                                  hub_hasta), ""))
+                mapa.append((nombre, plural(len(items)), "#" + nombre))
+        mapa = [(f, "%s, secciones %d-%d" % (plural(colapsadas[f][2]), colapsadas[f][0],
+                                              colapsadas[f][1]), "")
+                if isinstance(f, str) else f for f in mapa]
         bloques = list(GATILLOS) + [("Secciones del notebook", mapa)]
 
         for titulo, filas in bloques:
@@ -1333,11 +1357,11 @@ class NotebookPDF:
                     x + ancho_senal, base,
                     self.recortar(tecnica, TEXT_FONT_BOLD, 6.4,
                                   self.col_width - ancho_senal - 20))
-                if seccion in num_de:
+                if numero(seccion):
                     self.c.setFont(TEXT_FONT, 6.4)
                     self.c.setFillColor(TEXT_GRAY)
                     self.c.drawRightString(x + self.col_width - 2, base,
-                                           str(num_de[seccion]))
+                                           numero(seccion))
                 self.y -= alto_fila
 
         self._draw_header()
@@ -1502,7 +1526,10 @@ class NotebookPDF:
                 # Guardar info del link para aplicar despues de generar bookmarks
                 link_rect = (toc_x + 8, toc_y - 2,
                              toc_x + toc_col_width, toc_y + TOC_SIZE)
-                self.toc_links.append((toc_page_idx, link_rect, bookmark_key))
+                # Pagina ABSOLUTA del PDF (self.page_num), no toc_page_idx: ese cuenta
+                # desde la portada, y antes de la portada estan el reparto y los
+                # gatillos, asi que los links quedaban pegados en esas paginas.
+                self.toc_links.append((self.page_num, link_rect, bookmark_key))
 
                 toc_y -= 11
 
@@ -1579,6 +1606,64 @@ class NotebookPDF:
 
             y -= 9.5
 
+    def draw_description_index(self):
+        """Indice por descripcion: para cuando uno se acuerda de QUE pedia el
+        problema ("cuenta subarreglos donde target es mayoria") pero no del nombre
+        ni de la tecnica. Va agrupado por seccion, en el orden del notebook, asi
+        las descripciones parecidas quedan cerca; a la derecha, referencia y pagina.
+        """
+        col_w = (PAGE_W - MARGIN_LEFT * 2 - 30) / 2
+        xs = [MARGIN_LEFT + 10, MARGIN_LEFT + 10 + col_w + 10]
+        top = PAGE_H - MARGIN_TOP - 20
+        tam = TOC_SIZE - 1.5
+        ANCHO_REF = 46                        # "12.34" + numero de pagina
+
+        self.c.setFont(TEXT_FONT_BOLD, 12)
+        self.c.setFillColor(TEXT_BLACK)
+        self.c.drawString(MARGIN_LEFT + 10, top, "Indice por descripcion")
+        y_start = top - 18
+        y, col = y_start, 0
+
+        def lugar(alto):
+            nonlocal y, col, y_start
+            if y - alto < MARGIN_BOTTOM + 10:
+                col += 1
+                if col > 1:
+                    self.c.showPage()
+                    self.page_num += 1
+                    self.c.setFont(TEXT_FONT_BOLD, 11)
+                    self.c.setFillColor(TEXT_BLACK)
+                    self.c.drawString(MARGIN_LEFT + 10, top, "Indice por descripcion (cont.)")
+                    col = 0
+                y = y_start
+
+        for section_num, (section_name, items) in enumerate(self.groups.items(), 1):
+            filas = [(it["description"], f"{section_num}.{idx + 1}", f"sec_{section_num}_{idx}")
+                     for idx, it in enumerate(items) if it["description"]]
+            if not filas:
+                continue
+            lugar(10 + 9 * 2)                 # el titulo no queda solo al pie
+            self.c.setFont(TOC_FONT_BOLD, TOC_SIZE)
+            self.c.setFillColor(BG_MID)
+            self.c.drawString(xs[col], y, f"{section_num}  {section_name}")
+            y -= 10
+            for desc, ref, clave in sorted(filas, key=lambda f: f[0].lower()):
+                lugar(9)
+                x = xs[col]
+                self.c.setFont(TOC_FONT, tam)
+                self.c.setFillColor(TEXT_BLACK)
+                self.c.drawString(x + 6, y, self.recortar(desc, TOC_FONT, tam,
+                                                          col_w - ANCHO_REF - 8))
+                self.c.setFillColor(TEXT_GRAY)
+                self.c.drawRightString(x + col_w - 18, y, ref)
+                num = self.page_of.get(clave)
+                if num:
+                    self.c.setFont(TOC_FONT_BOLD, tam)
+                    self.c.setFillColor(TEXT_BLACK)
+                    self.c.drawRightString(x + col_w, y, str(num))
+                y -= 9
+            y -= 4
+
     def generate(self, silencioso=False):
         if not silencioso:
             print(f"  Generando notebook con "
@@ -1593,8 +1678,17 @@ class NotebookPDF:
         # Portada/TOC
         self.draw_cover(self.groups)
 
+        # Los otros dos indices, pegados al normal: por nombre de problema y por
+        # descripcion. Los tres juntos al frente, para buscar sin dar vueltas.
+        self.draw_problem_index()
+        self.c.showPage()
+        self.page_num += 1
+        self.draw_description_index()
+        self.c.showPage()
+        self.page_num += 1
+
         # El contenido arranca arriba a la izquierda de la pagina nueva que deja
-        # draw_cover. Sin reiniciar esto heredaba la columna y la altura de la hoja
+        # el ultimo indice. Sin reiniciar esto heredaba la columna y la altura de la hoja
         # de GATILLOS: si esa hoja quedaba llena hasta abajo, el primer titulo "no
         # cabia" y salia una pagina en blanco entre el indice y la seccion 1.
         self.col = 0
@@ -1622,11 +1716,6 @@ class NotebookPDF:
                     self.draw_formulario(item["code"])
                 else:
                     self.draw_code(item["code"])
-
-        self._draw_header()
-        self.c.showPage()
-        self.page_num += 1
-        self.draw_problem_index()
 
         self._draw_header()
         self.c.save()

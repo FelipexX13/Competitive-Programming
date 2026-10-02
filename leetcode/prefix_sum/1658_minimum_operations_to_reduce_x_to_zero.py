@@ -1,11 +1,9 @@
 # <3
 # Tema: LeetCode Hub / Prefijos y Sufijos
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Se quitan elementos solo de los extremos hasta sumar exactamente x; minimo de operaciones
 # O: (n), prefijos y sufijos en dos diccionarios
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 1658 "Minimum Operations to Reduce X to Zero": se quitan elementos solo de los
-# extremos hasta sumar exactamente x; minimo de operaciones. Tecnica: lo que se quita es un
+# Detalle: LeetCode 1658 "Minimum Operations to Reduce X to Zero": se quitan elementos solo de
+# los extremos hasta sumar exactamente x; minimo de operaciones. Tecnica: lo que se quita es un
 # PREFIJO mas un SUFIJO. Se arman las dos sumas acumuladas y dos diccionarios suma -> primera
 # posicion, y para cada prefijo se busca el sufijo que complete x. La condicion i + pos + 2 <= n
 # evita que se traslapen. La otra forma es sliding window sobre el subarreglo del medio, que

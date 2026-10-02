@@ -1,13 +1,11 @@
 # <3
 # Tema: LeetCode Hub / Triangulo de Pascal
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Las primeras numRows filas del triangulo
 # O: (n^2), que es el tamano de la salida
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 118 "Pascal's Triangle": las primeras numRows filas del triangulo. Tecnica: cada fila
-# sale de la anterior sumando vecinos, con un 1 en cada punta. Es la recurrencia C(n,k) =
-# C(n-1,k-1) + C(n-1,k) construida hacia abajo, sin factoriales y sin division. Asi se construye
-# la tabla de binomiales cuando hay que consultarla muchas veces.
+# Detalle: LeetCode 118 "Pascal's Triangle": las primeras numRows filas del triangulo. Tecnica:
+# cada fila sale de la anterior sumando vecinos, con un 1 en cada punta. Es la recurrencia
+# C(n,k) = C(n-1,k-1) + C(n-1,k) construida hacia abajo, sin factoriales y sin division. Asi se
+# construye la tabla de binomiales cuando hay que consultarla muchas veces.
 
 class Solution:
     def generate(self, numRows: int) -> List[List[int]]:

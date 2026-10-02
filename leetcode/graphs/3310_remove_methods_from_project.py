@@ -1,14 +1,12 @@
 # <3
 # Tema: LeetCode Hub / Alcanzabilidad y Contaminacion
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Borrar el metodo k y todo lo que solo el invoca, salvo que algo de afuera dependa de eso
 # O: (n+m), un DFS y un barrido de aristas
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 3310 "Remove Methods From Project": borrar el metodo k y todo lo que solo el invoca,
-# salvo que algo de afuera dependa de eso. Tecnica: DFS desde k para marcar todo lo alcanzable
-# (el grupo a borrar). Despues se revisa si alguna arista entra al grupo desde AFUERA; si si, no
-# se puede borrar nada y se devuelve todo. Ese chequeo de arista que cruza el borde es la parte
-# que la gente olvida.
+# Detalle: LeetCode 3310 "Remove Methods From Project": borrar el metodo k y todo lo que solo el
+# invoca, salvo que algo de afuera dependa de eso. Tecnica: DFS desde k para marcar todo lo
+# alcanzable (el grupo a borrar). Despues se revisa si alguna arista entra al grupo desde
+# AFUERA; si si, no se puede borrar nada y se devuelve todo. Ese chequeo de arista que cruza el
+# borde es la parte que la gente olvida.
 
 class Solution:
     def dfs(self, nodo, dic, vis):

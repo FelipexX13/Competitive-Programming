@@ -1,15 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Probar Todos los Pares
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Hay que subirse a una atraccion de tierra y una de agua, en cualquier orden; minimizar cuando se termina
 # O: (n*m), todos los pares en los dos ordenes
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 3633 "Earliest Finish Time for Land and Water Rides I": hay que subirse a una
-# atraccion de tierra y una de agua, en cualquier orden; minimizar cuando se termina. Tecnica:
-# probar todas las parejas en los dos ordenes, O(n*m). Lo importante es el if: si al terminar la
-# primera ya paso la hora de apertura de la segunda, se arranca de una; si no, hay que esperar.
-# Ese max(hora de llegada, apertura) es el corazon del problema. Hay que probar los DOS ordenes
-# porque tierra-agua y agua-tierra dan resultados distintos.
+# Detalle: LeetCode 3633 "Earliest Finish Time for Land and Water Rides I": hay que subirse a
+# una atraccion de tierra y una de agua, en cualquier orden; minimizar cuando se termina.
+# Tecnica: probar todas las parejas en los dos ordenes, O(n*m). Lo importante es el if: si al
+# terminar la primera ya paso la hora de apertura de la segunda, se arranca de una; si no, hay
+# que esperar. Ese max(hora de llegada, apertura) es el corazon del problema. Hay que probar los
+# DOS ordenes porque tierra-agua y agua-tierra dan resultados distintos.
 
 class Solution:
     def earliestFinishTime(self, landStartTime: List[int], landDuration: List[int], waterStartTime: List[int], waterDuration: List[int]) -> int:

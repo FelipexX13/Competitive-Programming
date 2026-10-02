@@ -1,14 +1,12 @@
 # <3
 # Tema: LeetCode Hub / Ventana con Frecuencias
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: El subarreglo mas largo donde ningun valor aparece mas de k veces
 # O: (n), ventana con diccionario de frecuencias
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 2958 "Length of Longest Subarray With at Most K Frequency": el subarreglo mas largo
-# donde ningun valor aparece mas de k veces. Tecnica: ventana deslizante con diccionario de
-# frecuencias. Cuando un valor llega a k+1 se encoge por la izquierda hasta que deje de pasarse.
-# La bandera f es para no volver a contar el elemento de la derecha mientras la ventana se
-# encoge; con el patron normal (un while adentro del for) no hace falta.
+# Detalle: LeetCode 2958 "Length of Longest Subarray With at Most K Frequency": el subarreglo
+# mas largo donde ningun valor aparece mas de k veces. Tecnica: ventana deslizante con
+# diccionario de frecuencias. Cuando un valor llega a k+1 se encoge por la izquierda hasta que
+# deje de pasarse. La bandera f es para no volver a contar el elemento de la derecha mientras la
+# ventana se encoge; con el patron normal (un while adentro del for) no hace falta.
 
 class Solution:
     def maxSubarrayLength(self, nums: List[int], k: int) -> int:

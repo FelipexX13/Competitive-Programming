@@ -1,14 +1,12 @@
 # <3
 # Tema: LeetCode Hub / Paridad con el Menor Impar
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Lo mismo que el 3875 pero con arreglos grandes
 # O: (n), dos barridos quedandose con el minimo de cada paridad
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 3876 "Construct Uniform Parity Array II": lo mismo que el 3875 pero con arreglos
-# grandes. Tecnica: solo hacen falta el menor par y el menor IMPAR del arreglo. Para volver
-# impar un numero par basta restarle el menor impar, y eso solo se puede si el resultado sigue
-# siendo positivo, de ahi el i - menor_impar >= 1. Dos pasadas lineales en vez de los pares del
-# 3875. Quedarse con el minimo de cada paridad es lo que convierte el O(n^2) en O(n).
+# Detalle: LeetCode 3876 "Construct Uniform Parity Array II": lo mismo que el 3875 pero con
+# arreglos grandes. Tecnica: solo hacen falta el menor par y el menor IMPAR del arreglo. Para
+# volver impar un numero par basta restarle el menor impar, y eso solo se puede si el resultado
+# sigue siendo positivo, de ahi el i - menor_impar >= 1. Dos pasadas lineales en vez de los
+# pares del 3875. Quedarse con el minimo de cada paridad es lo que convierte el O(n^2) en O(n).
 
 class Solution:
     def uniformArray(self, nums1: list[int]) -> bool:

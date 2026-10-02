@@ -1,15 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Camino Euleriano (Hierholzer)
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Usar todos los tiquetes una sola vez, empezando en JFK y escogiendo el itinerario lexicograficamente menor
 # O: (m log m) por ordenar los destinos; Hierholzer es (m)
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 332 "Reconstruct Itinerary": usar todos los tiquetes una sola vez, empezando en JFK y
-# escogiendo el itinerario lexicograficamente menor. Tecnica: Hierholzer iterativo. Se avanza
-# consumiendo aristas hasta quedarse atascado; el nodo donde uno se atasca se fija al camino y
-# se retrocede. Al final se INVIERTE el camino. Ordenar los destinos y sacarlos en orden es lo
-# que garantiza el menor lexicografico. OJO: deja un diccionario itinerarios cableado que no se
-# usa para nada.
+# Detalle: LeetCode 332 "Reconstruct Itinerary": usar todos los tiquetes una sola vez, empezando
+# en JFK y escogiendo el itinerario lexicograficamente menor. Tecnica: Hierholzer iterativo. Se
+# avanza consumiendo aristas hasta quedarse atascado; el nodo donde uno se atasca se fija al
+# camino y se retrocede. Al final se INVIERTE el camino. Ordenar los destinos y sacarlos en
+# orden es lo que garantiza el menor lexicografico. OJO: deja un diccionario itinerarios
+# cableado que no se usa para nada.
 
 from collections import defaultdict
 

@@ -1,14 +1,12 @@
 # <3
 # Tema: LeetCode Hub / Pelar Hojas (Centro del Arbol)
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Las raices que dan el arbol de altura minima
 # O: (n), pelando hojas por capas
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 310 "Minimum Height Trees": las raices que dan el arbol de altura minima. Tecnica:
-# pelar hojas por capas. Se meten a la cola todos los nodos de grado 1, se quitan todos a la
-# vez, aparecen hojas nuevas, y se repite hasta que queden 1 o 2 nodos: esos son el CENTRO del
-# arbol y la respuesta. Un arbol siempre tiene uno o dos centros, nunca tres, y eso es lo que
-# justifica el while > 2. El mismo pelado por capas sirve para el diametro y para varios
+# Detalle: LeetCode 310 "Minimum Height Trees": las raices que dan el arbol de altura minima.
+# Tecnica: pelar hojas por capas. Se meten a la cola todos los nodos de grado 1, se quitan todos
+# a la vez, aparecen hojas nuevas, y se repite hasta que queden 1 o 2 nodos: esos son el CENTRO
+# del arbol y la respuesta. Un arbol siempre tiene uno o dos centros, nunca tres, y eso es lo
+# que justifica el while > 2. El mismo pelado por capas sirve para el diametro y para varios
 # problemas de arboles.
 
 from collections import defaultdict, deque

@@ -1,15 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Deshacer el Proceso al Reves
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Desde un arreglo de unos, cada paso reemplaza un elemento por la suma total; decir si se llega al objetivo
 # O: (n log n log(maximo)) por el modulo que salta varias restas de golpe
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 1354 "Construct Target Array With Multiple Sums": desde un arreglo de unos, cada paso
-# reemplaza un elemento por la suma total; decir si se llega al objetivo. Tecnica: ir AL REVES.
-# El mayor del arreglo tuvo que ser el ultimo escrito, asi que antes valia mayor - (suma del
-# resto); con un heap maximo se devuelve ese paso y se repite. El modulo evita hacer las restas
-# una por una cuando el resto es pequeno. OJO: deja un print de depuracion adentro del ciclo y
-# varios cortes ad hoc.
+# Detalle: LeetCode 1354 "Construct Target Array With Multiple Sums": desde un arreglo de unos,
+# cada paso reemplaza un elemento por la suma total; decir si se llega al objetivo. Tecnica: ir
+# AL REVES. El mayor del arreglo tuvo que ser el ultimo escrito, asi que antes valia mayor -
+# (suma del resto); con un heap maximo se devuelve ese paso y se repite. El modulo evita hacer
+# las restas una por una cuando el resto es pequeno. OJO: deja un print de depuracion adentro
+# del ciclo y varios cortes ad hoc.
 
 import heapq
 class Solution:

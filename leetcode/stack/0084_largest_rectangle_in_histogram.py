@@ -1,12 +1,10 @@
 # <3
 # Tema: LeetCode Hub / Pila Monotona (version enredada)
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: El rectangulo de area maxima bajo el histograma
 # O: (n^2) por el cruce de rangos del final; con pila monotona es (n)
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 84 "Largest Rectangle in Histogram": el rectangulo de area maxima bajo el histograma.
-# Tecnica del codigo: dos pasadas con pila guardando para cada altura los rangos donde
-# sobrevive, y despues cruza los rangos en diccionarios. OJO, ESTE ARCHIVO NO SIRVE DE
+# Detalle: LeetCode 84 "Largest Rectangle in Histogram": el rectangulo de area maxima bajo el
+# histograma. Tecnica del codigo: dos pasadas con pila guardando para cada altura los rangos
+# donde sobrevive, y despues cruza los rangos en diccionarios. OJO, ESTE ARCHIVO NO SIRVE DE
 # PLANTILLA: tiene un caso cableado, if heights[0] == 7303, que responde otra cosa para pasar un
 # caso de prueba especifico, y deja prints adentro del ciclo. Lo correcto es la pila monotona de
 # una sola pasada: se mantiene la pila con alturas crecientes y al sacar una se calcula su area

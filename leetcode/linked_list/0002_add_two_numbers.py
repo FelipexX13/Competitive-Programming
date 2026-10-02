@@ -1,13 +1,11 @@
 # <3
 # Tema: LeetCode Hub / Suma con Acarreo en Lista Ligada
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Sumar dos numeros guardados en listas ligadas, con el digito menos significativo primero
 # O: (n+m), dos pasadas
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 2 "Add Two Numbers": sumar dos numeros guardados en listas ligadas, con el digito
-# menos significativo primero. Tecnica: recorrer las dos listas a la vez sumando digito por
-# digito, y en una segunda pasada propagar el acarreo (si pasa de 9 se le resta 10 y se suma 1
-# al siguiente). Si el acarreo se sale por el final, se agrega un digito mas. Lo normal es
+# Detalle: LeetCode 2 "Add Two Numbers": sumar dos numeros guardados en listas ligadas, con el
+# digito menos significativo primero. Tecnica: recorrer las dos listas a la vez sumando digito
+# por digito, y en una segunda pasada propagar el acarreo (si pasa de 9 se le resta 10 y se suma
+# 1 al siguiente). Si el acarreo se sale por el final, se agrega un digito mas. Lo normal es
 # hacerlo en UNA pasada con una variable carry, sin la lista intermedia.
 
 # Definition for singly-linked list.

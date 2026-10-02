@@ -1,14 +1,12 @@
 # <3
 # Tema: LeetCode Hub / Interseccion de Prefijos
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Para cada i, cuantos valores estan en los primeros i+1 de las dos permutaciones
 # O: (n^2) por rehacer los sets; incremental seria (n)
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 2657 "Find the Prefix Common Array of Two Arrays": para cada i, cuantos valores estan
-# en los primeros i+1 de las dos permutaciones. Tecnica: reconstruye los dos sets en cada paso y
-# los cruza, o sea O(n^2). Incremental es O(n): se mantienen dos sets que van creciendo y en
-# cada paso solo se revisa si el valor nuevo de A ya estaba en B (y al contrario). Reconstruir
-# en vez de actualizar es el error tipico de este tipo de problema.
+# Detalle: LeetCode 2657 "Find the Prefix Common Array of Two Arrays": para cada i, cuantos
+# valores estan en los primeros i+1 de las dos permutaciones. Tecnica: reconstruye los dos sets
+# en cada paso y los cruza, o sea O(n^2). Incremental es O(n): se mantienen dos sets que van
+# creciendo y en cada paso solo se revisa si el valor nuevo de A ya estaba en B (y al
+# contrario). Reconstruir en vez de actualizar es el error tipico de este tipo de problema.
 
 class Solution:
     def findThePrefixCommonArray(self, A: List[int], B: List[int]) -> List[int]:

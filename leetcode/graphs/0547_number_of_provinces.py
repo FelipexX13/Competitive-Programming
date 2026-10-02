@@ -1,14 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Componentes Conexas
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Cuantos grupos de ciudades conectadas hay
 # O: (n^2), que es leer la matriz de adyacencia
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 547 "Number of Provinces": cuantos grupos de ciudades conectadas hay. Tecnica: contar
-# componentes conexas con DFS y un set de visitados. Cada vez que se arranca un DFS nuevo se
-# suma una componente. OJO: recorre los nodos del diccionario graph, no el rango 0..n-1. Si una
-# ciudad no tiene ninguna arista no queda en el diccionario; aca no falla porque la matriz
-# siempre marca la diagonal, pero con lista de adyacencia habria que recorrer range(n).
+# Detalle: LeetCode 547 "Number of Provinces": cuantos grupos de ciudades conectadas hay.
+# Tecnica: contar componentes conexas con DFS y un set de visitados. Cada vez que se arranca un
+# DFS nuevo se suma una componente. OJO: recorre los nodos del diccionario graph, no el rango
+# 0..n-1. Si una ciudad no tiene ninguna arista no queda en el diccionario; aca no falla porque
+# la matriz siempre marca la diagonal, pero con lista de adyacencia habria que recorrer
+# range(n).
 
 from collections import defaultdict
 class Solution:

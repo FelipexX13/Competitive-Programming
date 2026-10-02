@@ -1,15 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Palindromo en Lista Ligada
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Decir si la lista se lee igual al reves
 # O: (n^2) por el insert(0,...); con liebre y tortuga seria (n) y (1) de memoria
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 234 "Palindrome Linked List": decir si la lista se lee igual al reves. Tecnica: se
-# mide el largo, se parte a la mitad y se guardan la primera mitad en orden y la segunda al
-# reves (con insert(0, ...)), y se comparan. La bandera flag maneja el caso de largo impar,
-# donde el elemento del centro se ignora. OJO: deja dos prints, y el insert(0, ...) es O(n) cada
-# vez, asi que esa parte es O(n^2). La version O(1) de memoria: liebre y tortuga para hallar el
-# medio, invertir la segunda mitad en el sitio y comparar.
+# Detalle: LeetCode 234 "Palindrome Linked List": decir si la lista se lee igual al reves.
+# Tecnica: se mide el largo, se parte a la mitad y se guardan la primera mitad en orden y la
+# segunda al reves (con insert(0, ...)), y se comparan. La bandera flag maneja el caso de largo
+# impar, donde el elemento del centro se ignora. OJO: deja dos prints, y el insert(0, ...) es
+# O(n) cada vez, asi que esa parte es O(n^2). La version O(1) de memoria: liebre y tortuga para
+# hallar el medio, invertir la segunda mitad en el sitio y comparar.
 
 # Definition for singly-linked list.
 # class ListNode:

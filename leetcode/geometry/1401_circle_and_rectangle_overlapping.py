@@ -1,13 +1,11 @@
 # <3
 # Tema: LeetCode Hub / Punto mas Cercano en un Rectangulo
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Decir si un circulo toca un rectangulo
 # O: (1), el clamp del centro al rectangulo
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 1401 "Circle and Rectangle Overlapping": decir si un circulo toca un rectangulo.
-# Tecnica: el truco es el CLAMP. Se recorta el centro del circulo al rectangulo con max(x1,
-# min(cx, x2)), lo que da el punto del rectangulo mas cercano al centro; si ese punto queda a
-# distancia <= r, hay traslape. Dos lineas y cero casos especiales. Este clamp es muy
+# Detalle: LeetCode 1401 "Circle and Rectangle Overlapping": decir si un circulo toca un
+# rectangulo. Tecnica: el truco es el CLAMP. Se recorta el centro del circulo al rectangulo con
+# max(x1, min(cx, x2)), lo que da el punto del rectangulo mas cercano al centro; si ese punto
+# queda a distancia <= r, hay traslape. Dos lineas y cero casos especiales. Este clamp es muy
 # reutilizable en geometria de cajas.
 
 class Solution:

@@ -1,11 +1,9 @@
 # <3
 # Tema: LeetCode Hub / Contar por Escalones
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Operaciones para igualar todo al minimo, bajando cada vez el maximo al siguiente valor distinto
 # O: (n log n) por el sort; contar escalones es lineal
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 1887 "Reduction Operations to Make the Array Elements Equal": operaciones para
-# igualar todo al minimo, bajando cada vez el maximo al siguiente valor distinto. Tecnica:
+# Detalle: LeetCode 1887 "Reduction Operations to Make the Array Elements Equal": operaciones
+# para igualar todo al minimo, bajando cada vez el maximo al siguiente valor distinto. Tecnica:
 # ordenar y en cada cambio de valor sumar cuantos elementos quedan a la derecha. Cada uno de
 # esos va a tener que bajar ese escalon. Contar por escalones en vez de simular es lo que lo
 # vuelve O(n log n).

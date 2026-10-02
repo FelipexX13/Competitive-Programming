@@ -1,11 +1,9 @@
 # <3
 # Tema: LeetCode Hub / Fusionar Intervalos
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Unir los intervalos que se traslapan
 # O: (n log n), manda el sort; el barrido es lineal
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 56 "Merge Intervals": unir los intervalos que se traslapan. Tecnica: ordenar por
-# inicio y barrer con un intervalo abierto; si el siguiente empieza antes de que el actual
+# Detalle: LeetCode 56 "Merge Intervals": unir los intervalos que se traslapan. Tecnica: ordenar
+# por inicio y barrer con un intervalo abierto; si el siguiente empieza antes de que el actual
 # termine, se estira el final al maximo, y si no, se cierra y se abre uno nuevo. Ordenar por
 # inicio es lo que garantiza que solo hay que mirar el intervalo anterior. Es el molde de casi
 # todos los problemas de intervalos.

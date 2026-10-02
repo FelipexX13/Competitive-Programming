@@ -1,11 +1,9 @@
 # <3
 # Tema: LeetCode Hub / Frecuencia de Digitos
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Sumar cada digito multiplicado por cuantas veces aparece
 # O: (digitos de n)
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 3945 "Digit Frequency Score": sumar cada digito multiplicado por cuantas veces
-# aparece. Tecnica: diccionario de frecuencias sobre los caracteres y suma de digito por
+# Detalle: LeetCode 3945 "Digit Frequency Score": sumar cada digito multiplicado por cuantas
+# veces aparece. Tecnica: diccionario de frecuencias sobre los caracteres y suma de digito por
 # frecuencia. OJO: reusa el nombre v para el numero y para el valor del diccionario. No rompe
 # nada porque el primero ya no se usa, pero es de esas cosas que en un problema mas largo si
 # muerden.

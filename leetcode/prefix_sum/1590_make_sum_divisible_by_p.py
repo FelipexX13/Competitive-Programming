@@ -1,14 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Residuos de Prefijos
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Quitar el subarreglo mas corto para que lo que queda sea multiplo de p
 # O: (n), residuo de prefijo -> ultima posicion
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 1590 "Make Sum Divisible by P": quitar el subarreglo mas corto para que lo que queda
-# sea multiplo de p. Tecnica: si la suma total deja residuo f, el subarreglo que se quita tiene
-# que dejar residuo f tambien. Con prefijos: se busca un residuo anterior igual a (suma_actual -
-# f) mod p en un diccionario residuo -> ultima posicion. El (suma - f) % p en Python ya sale
-# positivo. La condicion longitud < len(nums) es porque no se puede quitar todo el arreglo.
+# Detalle: LeetCode 1590 "Make Sum Divisible by P": quitar el subarreglo mas corto para que lo
+# que queda sea multiplo de p. Tecnica: si la suma total deja residuo f, el subarreglo que se
+# quita tiene que dejar residuo f tambien. Con prefijos: se busca un residuo anterior igual a
+# (suma_actual - f) mod p en un diccionario residuo -> ultima posicion. El (suma - f) % p en
+# Python ya sale positivo. La condicion longitud < len(nums) es porque no se puede quitar todo
+# el arreglo.
 
 class Solution:
     def minSubarray(self, nums: List[int], p: int) -> int:

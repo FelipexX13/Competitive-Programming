@@ -1,14 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Heap Maximo de Tamano k
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Los k pares (a, b) de menor suma
 # O: (n*m log k) en el peor caso, recorriendo todas las parejas
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 373 "Find K Pairs with Smallest Sums": los k pares (a, b) de menor suma. Tecnica:
-# heap de tamano k con los signos invertidos (Python solo trae heap minimo, asi que se guarda
-# -valor para simular un maximo) y un diccionario suma -> lista de pares para poder reconstruir
-# cuales eran. OJO: arranca con un caso especial cableado, if nums1 == nums2 and 3 not in nums1
-# responde [[1,1]]*k. Eso es un parche para un caso de prueba, no parte de la solucion.
+# Detalle: LeetCode 373 "Find K Pairs with Smallest Sums": los k pares (a, b) de menor suma.
+# Tecnica: heap de tamano k con los signos invertidos (Python solo trae heap minimo, asi que se
+# guarda -valor para simular un maximo) y un diccionario suma -> lista de pares para poder
+# reconstruir cuales eran. OJO: arranca con un caso especial cableado, if nums1 == nums2 and 3
+# not in nums1 responde [[1,1]]*k. Eso es un parche para un caso de prueba, no parte de la
+# solucion.
 
 import heapq
 class Solution:

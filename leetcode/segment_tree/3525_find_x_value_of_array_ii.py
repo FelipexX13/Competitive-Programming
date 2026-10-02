@@ -1,15 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Segment Tree con Nodo Compuesto
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Con actualizaciones de una posicion
 # O: (n*k*log n): el merge del nodo cuesta (k)
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 3525 "Find X Value of Array II": con actualizaciones de una posicion, contar cuantos
-# prefijos de un sufijo del arreglo tienen producto congruente con x modulo k. Tecnica: segment
-# tree donde cada nodo guarda DOS cosas, prod (producto del segmento mod k) y freq[r] (cuantos
-# prefijos del segmento dan residuo r). El merge multiplica el prod del hijo izquierdo por cada
-# residuo del derecho, y ese es el truco que hace la informacion combinable. Cuesta O(k) por
-# merge, asi que el total queda O(n*k*log n). El mas interesante de esta carpeta: es la
+# Detalle: LeetCode 3525 "Find X Value of Array II": con actualizaciones de una posicion, contar
+# cuantos prefijos de un sufijo del arreglo tienen producto congruente con x modulo k. Tecnica:
+# segment tree donde cada nodo guarda DOS cosas, prod (producto del segmento mod k) y freq[r]
+# (cuantos prefijos del segmento dan residuo r). El merge multiplica el prod del hijo izquierdo
+# por cada residuo del derecho, y ese es el truco que hace la informacion combinable. Cuesta
+# O(k) por merge, asi que el total queda O(n*k*log n). El mas interesante de esta carpeta: es la
 # plantilla de segment tree con nodo que no es un solo numero, justo lo que hace falta cuando la
 # consulta no es una suma.
 

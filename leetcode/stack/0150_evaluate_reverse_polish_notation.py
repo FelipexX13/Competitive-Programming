@@ -1,14 +1,12 @@
 # <3
 # Tema: LeetCode Hub / Evaluacion en Notacion Polaca
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Evaluar una expresion en notacion postfija
 # O: (n^2) por el lit[0:len-2] que copia en cada operador; con pop() seria (n)
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 150 "Evaluate Reverse Polish Notation": evaluar una expresion en notacion postfija.
-# Tecnica: pila de numeros. Si el token es numero se empuja; si es operador se sacan los DOS de
-# arriba, se opera y se devuelve el resultado. Al final queda uno solo. El orden importa,
-# lit[-2] es el izquierdo y lit[-1] el derecho. La division usa int(a/b) y no a//b porque el
-# problema pide truncar hacia cero y // de Python redondea hacia abajo.
+# Detalle: LeetCode 150 "Evaluate Reverse Polish Notation": evaluar una expresion en notacion
+# postfija. Tecnica: pila de numeros. Si el token es numero se empuja; si es operador se sacan
+# los DOS de arriba, se opera y se devuelve el resultado. Al final queda uno solo. El orden
+# importa, lit[-2] es el izquierdo y lit[-1] el derecho. La division usa int(a/b) y no a//b
+# porque el problema pide truncar hacia cero y // de Python redondea hacia abajo.
 
 class Solution:
     def evalRPN(self, tokens: List[str]) -> int:

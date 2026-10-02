@@ -1,14 +1,12 @@
 # <3
 # Tema: LeetCode Hub / Coloreo a Dos Colores
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Decir si el grafo se puede partir en dos grupos sin aristas internas
 # O: (n+m), DFS pintando dos colores
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 785 "Is Graph Bipartite?": decir si el grafo se puede partir en dos grupos sin
-# aristas internas. Tecnica: DFS pintando 1 y -1 alternado. Si alguna arista une dos nodos del
-# MISMO color, no es bipartito. El ciclo externo por todos los nodos es porque el grafo puede
-# venir desconectado. Bipartito equivale a no tener ciclos de longitud impar, y esto es la forma
-# de verificarlo.
+# Detalle: LeetCode 785 "Is Graph Bipartite?": decir si el grafo se puede partir en dos grupos
+# sin aristas internas. Tecnica: DFS pintando 1 y -1 alternado. Si alguna arista une dos nodos
+# del MISMO color, no es bipartito. El ciclo externo por todos los nodos es porque el grafo
+# puede venir desconectado. Bipartito equivale a no tener ciclos de longitud impar, y esto es la
+# forma de verificarlo.
 
 from collections import defaultdict
 class Solution:

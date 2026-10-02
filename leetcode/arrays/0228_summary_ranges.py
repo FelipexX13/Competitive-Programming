@@ -1,12 +1,10 @@
 # <3
 # Tema: LeetCode Hub / Agrupar Rangos Consecutivos
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Barrer y cortar cada vez que el siguiente no es el actual mas 1
 # O: (n), un solo barrido
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 228 "Summary Ranges": resumir un arreglo ordenado en rangos como "0->2". Tecnica:
-# barrer y cortar cada vez que el siguiente no es el actual mas 1. El try/except es lo que
-# maneja el final del arreglo, donde nums[i+1] se sale. Depender del except para cerrar el
+# Detalle: LeetCode 228 "Summary Ranges": resumir un arreglo ordenado en rangos como "0->2".
+# Tecnica: barrer y cortar cada vez que el siguiente no es el actual mas 1. El try/except es lo
+# que maneja el final del arreglo, donde nums[i+1] se sale. Depender del except para cerrar el
 # ultimo rango es fragil; queda mas claro con un for hasta n-1 y el cierre afuera del ciclo.
 
 class Solution:

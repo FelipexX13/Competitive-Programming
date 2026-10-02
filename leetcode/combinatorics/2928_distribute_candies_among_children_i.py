@@ -1,15 +1,13 @@
 # <3
 # Tema: LeetCode Hub / Fuerza Bruta con Poda
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Repartir n dulces entre 3 ninos sin que ninguno reciba mas de limit
 # O: (limit^2); por inclusion-exclusion seria (1)
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 2928 "Distribute Candies Among Children I": repartir n dulces entre 3 ninos sin que
-# ninguno reciba mas de limit. Tecnica: dos ciclos anidados sobre lo que recibe el primero y el
-# segundo; el tercero queda determinado. Los continue son la poda, si con lo que ya se dio mas
-# 2*limit no se alcanza n, no hay caso. OJO: deja cuatro prints de depuracion adentro del ciclo,
-# y con eso se vuelve lentisimo. Tambien se puede por inclusion-exclusion: C(n+2,2) menos los
-# casos donde alguno pasa limit.
+# Detalle: LeetCode 2928 "Distribute Candies Among Children I": repartir n dulces entre 3 ninos
+# sin que ninguno reciba mas de limit. Tecnica: dos ciclos anidados sobre lo que recibe el
+# primero y el segundo; el tercero queda determinado. Los continue son la poda, si con lo que ya
+# se dio mas 2*limit no se alcanza n, no hay caso. OJO: deja cuatro prints de depuracion adentro
+# del ciclo, y con eso se vuelve lentisimo. Tambien se puede por inclusion-exclusion: C(n+2,2)
+# menos los casos donde alguno pasa limit.
 
 class Solution:
     def distributeCandies(self, n: int, limit: int) -> int:

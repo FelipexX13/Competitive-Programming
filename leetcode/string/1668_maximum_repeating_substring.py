@@ -1,14 +1,12 @@
 # <3
 # Tema: LeetCode Hub / Repeticiones Consecutivas
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: El mayor k tal que word repetido k veces esta dentro de sequence
 # O: (n^2 / |word|) por los hash de cada posicion
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 1668 "Maximum Repeating Substring": el mayor k tal que word repetido k veces esta
-# dentro de sequence. Tecnica: desde cada posicion se prueba word*1, word*2, ... hasta que no
-# calce. OJO: compara con hash() en vez de comparar las cadenas directamente. hash() de Python
-# puede coincidir para cadenas distintas, asi que es una comparacion con riesgo y no aporta
-# velocidad porque igual construye el string. Con == es mas corto y mas seguro.
+# Detalle: LeetCode 1668 "Maximum Repeating Substring": el mayor k tal que word repetido k veces
+# esta dentro de sequence. Tecnica: desde cada posicion se prueba word*1, word*2, ... hasta que
+# no calce. OJO: compara con hash() en vez de comparar las cadenas directamente. hash() de
+# Python puede coincidir para cadenas distintas, asi que es una comparacion con riesgo y no
+# aporta velocidad porque igual construye el string. Con == es mas corto y mas seguro.
 
 class Solution:
     def maxRepeating(self, sequence: str, word: str) -> int:

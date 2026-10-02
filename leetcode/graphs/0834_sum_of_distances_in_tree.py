@@ -1,12 +1,10 @@
 # <3
 # Tema: LeetCode Hub / Rerooting en Arbol
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Para cada nodo, la suma de distancias a todos los demas
 # O: (n), tres DFS: tamanos, respuesta de la raiz y rerooting
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 834 "Sum of Distances in Tree": para cada nodo, la suma de distancias a todos los
-# demas. Tecnica: tres DFS. El primero calcula el TAMANO de cada subarbol, el segundo la
-# respuesta de la raiz, y el tercero la propaga a los hijos con la formula clave: res[hijo] =
+# Detalle: LeetCode 834 "Sum of Distances in Tree": para cada nodo, la suma de distancias a
+# todos los demas. Tecnica: tres DFS. El primero calcula el TAMANO de cada subarbol, el segundo
+# la respuesta de la raiz, y el tercero la propaga a los hijos con la formula clave: res[hijo] =
 # res[padre] - tamano(hijo) + (n - tamano(hijo)) que dice que al mover la raiz un paso, los
 # nodos del subarbol quedan uno mas cerca y el resto uno mas lejos. Esa es la tecnica de
 # REROOTING y aparece mucho en arboles. OJO: dfs3 usa res[curr] != 0 como marca de ya calculado,

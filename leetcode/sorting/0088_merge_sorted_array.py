@@ -1,12 +1,10 @@
 # <3
 # Tema: LeetCode Hub / Merge Sort
-# Resumen: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/)
-#
+# Resumen: Mezclar dos arreglos ya ordenados dentro del primero
 # O: (n log n) por el merge sort; ya venian ordenados, bastaba (n+m)
-# Detalle: NO ES MIO: codigo de Juan Jose Lozano, del repo del equipo (carpeta leetcode/).
-# LeetCode 88 "Merge Sorted Array": mezclar dos arreglos ya ordenados dentro del primero.
-# Tecnica: aca hace merge sort completo de la concatenacion. Lo que vale del archivo es la
-# plantilla limpia de merge sort. OJO: los arreglos YA venian ordenados, asi que basta la
+# Detalle: LeetCode 88 "Merge Sorted Array": mezclar dos arreglos ya ordenados dentro del
+# primero. Tecnica: aca hace merge sort completo de la concatenacion. Lo que vale del archivo es
+# la plantilla limpia de merge sort. OJO: los arreglos YA venian ordenados, asi que basta la
 # funcion combinar() sola en O(n+m) en vez de volver a ordenar todo.
 
 class Solution:

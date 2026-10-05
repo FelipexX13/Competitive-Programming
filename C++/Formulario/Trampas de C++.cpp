@@ -29,6 +29,21 @@
 //     accumulate(v.begin(), v.end(), 0LL) suma en long long
 //     Regla: si el resultado pasa de 2*10^9, todo el camino en ll.
 //
+// Una suma de terminos ya reducidos NO esta reducida  (verificado, costo un problema)
+//     for (...) P += nCr(i,m) * nCr(n-1-i,m) % MOD;   <- cada termino cabe
+//     ...pero P NO. Con n-k+1 terminos de hasta 10^9, P llega a 10^15: cabe en
+//     ll, asi que nada avisa. El problema aparece si ese P se usa como BASE:
+//         modpow(P, MOD-2)   ->   adentro hace a = a*a % MOD
+//         con a = 10^10 eso es 10^20 y el tope de ll es 9.2*10^18   DESBORDA
+//     O sea: no revienta donde se suma, revienta una linea despues.
+//     Medido: con k = 3 aguanta hasta n = 2000 y se rompe en n = 5001; con
+//     n = 101 aguanta hasta k = 5 y se rompe en k = 7. Los casos de ejemplo
+//     del enunciado pasan y los grandes no, que es la peor forma de fallar.
+//     DOS ARREGLOS, pon los dos:
+//         P = (P + termino) % MOD;        al acumular
+//         ll modpow(ll a, ll e) { a %= MOD; ... }   guarda de una linea que
+//                                                   te cubre para siempre
+//
 // pow y sqrt son de punto flotante  (verificado que falla)
 //     (long long)pow(10,15) = 999999999999999   le falta 1
 //     (long long)pow(5,15)  = 30517578124       le falta 1
